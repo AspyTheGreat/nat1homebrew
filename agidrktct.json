@@ -37193,23 +37193,6 @@
       ]
     },
     {
-      "name": "Protection of the Blade",
-      "source": "DRK",
-      "page": 111,
-      "srd": true,
-      "featureType": [
-        "EI"
-      ],
-      "prerequisite": [
-        {
-          "pact": "Blade"
-        }
-      ],
-      "entries": [
-        "You gain proficiency in Medium armor."
-      ]
-    },
-    {
       "name": "Pact of the Blade (variant)",
       "source": "DRK",
       "page": 107,
