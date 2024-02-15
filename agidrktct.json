@@ -19959,6 +19959,206 @@
       ]
     },
     {
+      "name": "The Croupier",
+      "source": "DRK",
+      "page": 1,
+      "className": "Warlock",
+      "classSource": "DRK",
+      "subclassShortName": "Croupier",
+      "subclassSource": "DRK",
+      "level": 1,
+      "header": 1,
+      "entries": [
+        "Tales and rumours occasionally spill from the taverns of men who appear to be perhaps too charming, a tad more deft or quite a bit smooth in the way they operate. Perhaps they've played the violin too well for his time or they've caught the hearts of one too many an admirer or, most commonly, they find themselves with too many winning hands. So tales and rumors become myth of men succumbing to the dealings of an opportunistic power and for once, they're right.",
+        "Entities of many vareity take the form of The Croupier when they come to strike a wager with their beneficiaries, usually appealing to their greed or their desire for more charm or even simply a want for the skill they offer. These beings can be tricksters, agents of chaos, enjoyers of the arts, observers of luck or even sheerly malignant. They take the form of a simple dealer luring their victims with bets eventually culminating in a stacked contract. Since after all:-",
+        "The house always wins.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Croupier's Pact Spells|Warlock|DRK|Croupier|DRK|1"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "\"Is this your card?\"|Warlock|DRK|Croupier|DRK|1"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Cardistry|Warlock|DRK|Croupier|DRK|1"
+        }
+      ]
+    },
+    {
+      "name": "\"Is this your card?\"",
+      "source": "DRK",
+      "page": 1,
+      "className": "Warlock",
+      "classSource": "DRK",
+      "subclassShortName": "Croupier",
+      "subclassSource": "DRK",
+      "level": 1,
+      "header": 2,
+      "entries": [
+        "At 1st level when you choose this pact, your patron bestows his conduit for your Warlock spells; The Eldtritch Deck. You can spend 1 hour in ritual to summon the deck in your hand or convert an appropriate arcane focus to one. you may only have one at a time and attempting to create another will result the previous deck disappearing, leaving an arcane focus behind if it was used.",
+        "The deck counts as an arcane focus and appears as a pack of cards to a game of your choosing. It appears non-magical to divination magic and when drawn from the pack, produces the exact cards for whichever game is being played upto a total of 400 cards. Any cards outside the pack disappear after 24 hours. You may also choose to know the exact position and faces of cards in the deck.",
+        "You become proficient with {@filter gaming sets|items|source=phb|miscellaneous=mundane|type=gaming set} and learn the {@spell prestidigitation} spell. When you use it, you can conceal the verbal and somatic components of the spell as ordinary conversation and card handling.",
+        {
+          "type": "inset",
+          "name": "Eldritch Cards(Optional)",
+          "entries": [
+            "When you cast {@spell eldritch blast} with the Eldritch Deck, instead of beams you can choose to give them the appearance of cards produced from your deck."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Croupier's Pact Spells",
+      "source": "DRK",
+      "page": 1,
+      "className": "Warlock",
+      "classSource": "DRK",
+      "subclassShortName": "Croupier",
+      "subclassSource": "DRK",
+      "level": 1,
+      "header": 2,
+      "entries": [
+        "The Croupier lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+        {
+          "type": "table",
+          "caption": "Croupier's Pact Spells",
+          "colLabels": [
+            "Warlock Level",
+            "Spells"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "1st",
+              "{@spell fog cloud}, {@spell color spray}"
+            ],
+            [
+              "3rd",
+              "{@spell spray of cards|bmt}, {@spell wristpocket|egw}"
+            ],
+            [
+              "5th",
+              "{@spell antagonize|bmt}, {@spell incite greed|ai}"
+            ],
+            [
+              "7th",
+              "{@spell confusion}, {@spell mordenkainen's private sanctum}"
+            ],
+            [
+              "9th",
+              "{@spell mislead}, {@spell skill empowerment}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cardistry",
+      "source": "DRK",
+      "page": 1,
+      "className": "Warlock",
+      "classSource": "DRK",
+      "subclassShortName": "Croupier",
+      "subclassSource": "DRK",
+      "level": 1,
+      "header": 2,
+      "entries": [
+        "Your patron grants you the house edge; A set of abilities for you to choose from known as 'Tricks'. You know of one of your choice from the table below when you get this feature and can know as many as the number of warlock spell slots you possess, learning a new one when you gain another slot.",
+        "When you use a Trick, you must spend a warlock spell slot for the spellcasting involved with the Trick and you may not use the same Trick again until you finish a short or a long rest. You cannot use multiple tricks on the same spell. You may replace a Trick you know for another when you gain a level in this class.",
+        {
+          "type": "list",
+          "items": [
+            "{@b Pick-up:} You may use this trick when you cast a spell to disappear in a cloud of cards and turn {@condition invisible} until the beginning of your next turn.",
+            "{@b Reveal:} When a creature targets you with a attack roll or a spell, you may use this Trick and cast a spell with the casting time of an action and targeting only that creature if within range of the spell.",
+            "{@b Throw:} When you use the {@action cast a spell} action, you may use this Trick by throwing a card at a point within 30 feet of you. The spell is then cast as though you were standing at that point.",
+            "{@b Deal:} You can use this Trick by using an action to store a spell of a casting time of an Action, bonus action or reaction spending a warlock spell slot in the process. A person wielding this card may then use the corresponing action to cast the spell with your save DC, spell attack bonus and spellcasting ability, spending the card in the proccess. 8 hours after making this card, it disappears.",
+            "{@b Flip:} You can use this Trick by casting a spell with the casting time of an action as a bonus action.",
+            "{@b Flourish:} When you cast a spell you can use this Trick to bedazzle creatures around you with your stage magic. 3 creatures of your choice 60 feet away from you must succeed on a Wisdom saving throw or all become {@condition charmed} by you or all {@condition blinded} (your choice) until the start of your next turn.",
+            "{@b Split:} When you cast a spell that targets a single creature, you can use this Trick to target a second. If the spell includes an attack roll or a saving throw, both are subject to it. After seeing the results, you may pick one of them and they take the full effect of the spell.",
+            "{@b Hole:} You can use this Trick to cast a spell wihtout its somatic and verbal components.",
+            "{@b Shuffle:} At the start of your turn you may choose to use this Trick by rolling {@dice 2d8|2 d8s}, rerolling any repeats then picking one. Until the start of your next turn, you are able to use the corresponding Trick in the table once."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sharp Instincts",
+      "source": "DRK",
+      "page": 1,
+      "className": "Warlock",
+      "classSource": "DRK",
+      "subclassShortName": "Croupier",
+      "subclassSource": "DRK",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "At the 6th level, your Senses and Skills as a gambler becomed honed. Pick one of the streams from below when you get this feature. You receive its benefits.",
+        {
+          "type": "list",
+          "items": [
+            "{@b Showmanship:} You gain proficiency in Charisma(Performance) checks and your proficiency bonus is doubled when making them.",
+            "{@b Deceit:} You gain proficiency in Charisma(Performance) checks and your proficiency bonus is doubled when making them.",
+            "{@b Finesse:} You gain proficiency in Dexterity(Sleight-of-Hand) checks and your proficiency bonus is doubled when making them.",
+            "{@b Flair:} Your proficiency bonus is doubled when making checks with Gaming Sets.",
+            "{@b Wariness:} You gain proficiency in Wisdom(Insight) checks and your proficiency bonus is doubled when making them.",
+            "{@b Mistrust:} You get a hidden +5 bonus to checks to determine an illusion that your DM applies."
+          ]
+        },
+        "If you are already proficient in a skill that you picked a stream for, you may pick another from the Warlock class skills."
+      ]
+    },
+    {
+      "name": "Lady Luck's Kiss",
+      "source": "DRK",
+      "page": 1,
+      "className": "Warlock",
+      "classSource": "DRK",
+      "subclassShortName": "Croupier",
+      "subclassSource": "DRK",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "You know the {@spell fortune's favor|egw} spell and can cast it once at its lowest level without a material component. When cast this way, the duration lasts for 8 hours instead. You have it always prepared and it doesn't count towards your spells known limit."
+      ]
+    },
+    {
+      "name": "Wild Card",
+      "source": "DRK",
+      "page": 1,
+      "className": "Warlock",
+      "classSource": "DRK",
+      "subclassShortName": "Croupier",
+      "subclassSource": "DRK",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "At the 10th level, your patron hides a few tricks up your sleeve.",
+        "Once per long rest, you may cast a warlock spell of a slot that is available that you haven't prepared.",
+        "You also gain a wild card in the form of an additional special warlock spell slot. When casting with the wild card, you may use any applicable Trick you know in conjuction with it without spending a use of the Trick. You regain use of it after a long rest."
+      ]
+    },
+    {
+      "name": "The House Always Wins",
+      "source": "DRK",
+      "page": 1,
+      "className": "Warlock",
+      "classSource": "DRK",
+      "subclassShortName": "Croupier",
+      "subclassSource": "DRK",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "At the 14th level, your patron grants you his greatest boon, an unstable connection to the weave. You gain possession of 2 special dice in the form of a d4 and a d6, gaining a d8 as well at the 15th level in this class.",
+        "Whenever you spend a warlock spell slot, you may roll a d4. If casting from the 6th or 7th level Mystic Arcanum, roll a d6 or a d8 if casting from the 8th or 9th level Mystic Arcanum. If any of these dice rolls roll their maximum, you regain the spell slot or use of the Mystic Arcanum.",
+        "After rolling any of these dice, you may once spend a spell slot to roll it again. Once regained, that die cannot be used until a long rest."
+      ]
+    },
+    {
       "name": "Style of Poise",
       "className": "Flickwrist",
       "source": "tct",
@@ -31678,6 +31878,47 @@
       "classSource": "TCE"
     },
     {
+      "name": "The Croupier",
+      "shortName": "Croupier",
+      "source": "tct",
+      "className": "Warlock",
+      "classSource": "DRK",
+      "page": 1,
+      "additionalSpells": [
+        {
+          "prepared": {
+            "1": [
+              "color spray",
+              "fog cloud"
+            ],
+            "3": [
+              "spray of cards|bmt",
+              "wristpocket|egw"
+            ],
+            "5": [
+              "incite greed|ai",
+              "antagonize|bmt"
+            ],
+            "9": [
+              "confusion",
+              "mordenkainen's private sanctum"
+            ],
+            "11": [
+              "mislead",
+              "skill empowerment"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "The Croupier|Warlock|DRK|Croupier|tct|1",
+        "Sharp Instincts|Warlock|DRK|Croupier|tct|6",
+        "Lady Luck's Kiss|Warlock|DRK|Croupier|tct|6",
+        "Wild Card|Warlock|DRK|Croupier|tct|10",
+        "The House Always Wins|Warlock|DRK|Croupier|tct|14"
+      ]
+    },
+    {
       "name": "Way of Awakend Mind",
       "shortName": "Awakened Mind",
       "source": "tct",
@@ -37190,6 +37431,23 @@
         "You learn the {@spell find familiar} spell and can cast it as a ritual. The spell doesn't count against your number of spells known.",
         "When you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: {@creature imp}, {@creature pseudodragon}, {@creature quasit}, or {@creature sprite}.",
         "Additionally, when you take the {@action Attack} action or cast {@spell eldritch blast}, you allow your familiar to use its reaction to make one attack of its own."
+      ]
+    },
+    {
+      "name": "Protection of the Blade",
+      "source": "DRK",
+      "page": 111,
+      "srd": true,
+      "featureType": [
+        "EI"
+      ],
+      "prerequisite": [
+        {
+          "pact": "Blade"
+        }
+      ],
+      "entries": [
+        "You gain proficiency in Medium armor."
       ]
     },
     {
