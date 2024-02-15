@@ -20069,59 +20069,20 @@
       "header": 2,
       "entries": [
         "Your patron grants you the house edge; A set of abilities for you to choose from known as 'Tricks'. You know of one of your choice from the table below when you get this feature and can know as many as the number of warlock spell slots you possess, learning a new one when you gain another slot.",
-        "When you use a Trick, you must spend a warlock spell slot for the spellcasting involved abd you may not use the same Trick again until you finish a short or a long rest. You cannot use multiple tricks on the same spell. You may replace a Trick you know for another when you gain a level in this class.",
+        "When you use a Trick, you must spend a warlock spell slot for the spellcasting involved with the Trick and you may not use the same Trick again until you finish a short or a long rest. You cannot use multiple tricks on the same spell. You may replace a Trick you know for another when you gain a level in this class.",
         {
-          "type": "table",
-          "caption": "Cardistry",
-          "colLabels": [
-            "Tricks",
-            "Effect"
-          ],
-          "colStyles": [
-            "col-2 text-center",
-            "col-10"
-          ],
-          "rows": [
-            [
-              "1.Pick-Up",
-              "You may use this trick when you cast a spell to disappear in a cloud and turn {@condition invisible} until the beginning of your next turn."
-            ],
-            [
-              "2.Reveal",
-              "When a creature targets you with a attack roll or a spell, you may use this Trick and cast a spell with the casting time of an action and targeting only that creature if within range of the spell."
-            ],
-            [
-              "3.Throw",
-              "When you use the {@action cast a spell} action, you may use this Trick by throwing a card at a point within 30 feet of you. The spell is then cast as though you were standing at that point."
-            ],
-            [
-              "4.Deal",
-              "You can use this Trick by using an action to store a spell of a casting time of an Action, bonus action or reaction spending a warlock spell slot in the process. A person wielding this card may then use the corresponing action to cast the spell with your save DC, spell attack bonus and spellcasting ability, spending the card in the proccess."
-            ],
-            [
-              "5.Flip",
-              "You can use this Trick by casting a spell with the casting time of an action as a bonus action."
-            ],
-            [
-              "6.Flourish",
-              "When you cast a spell you can use this Trick to bedazzle creatures around you with your stage magic. 3 creatures of your choice 60 feet away from you must succeed on a Wisdom saving throw or all become {@condition charmed} by you or all {@condition blinded} (your choice) until the start of your next turn."
-            ],
-            [
-              "7.Split",
-              "When you cast a spell that targets a single creature, you can use this Trick to target a second. If the spell includes an attack roll or a saving throw, both are subject to it. After seeing the results, you may pick one of them and they take the full effect of the spell."
-            ],
-            [
-              "8.Hole",
-              "You can use this Trick to cast a spell wihtout its somatic and verbal components."
-            ],
-            [
-              "9.Shuffle",
-              "At the start of your turn you may choose to use this Trick by rolling {@roll 2d8|2 d8s}, rerolling any repeats then picking one. Until the start of your next turn, you are able to use the corresponding Trick in the table once."
-            ]
-          ],
-          "data": {
-            "tableInclude": true
-          }
+          "type": "list",
+          "items": [
+            "{@b Pick-up:} You may use this trick when you cast a spell to disappear in a cloud of cards and turn {@condition invisible} until the beginning of your next turn.",
+            "{@b Reveal:} When a creature targets you with a attack roll or a spell, you may use this Trick and cast a spell with the casting time of an action and targeting only that creature if within range of the spell.",
+            "{@b Throw:} When you use the {@action cast a spell} action, you may use this Trick by throwing a card at a point within 30 feet of you. The spell is then cast as though you were standing at that point.",
+            "{@b Deal:} You can use this Trick by using an action to store a spell of a casting time of an Action, bonus action or reaction spending a warlock spell slot in the process. A person wielding this card may then use the corresponing action to cast the spell with your save DC, spell attack bonus and spellcasting ability, spending the card in the proccess. 8 hours after making this card, it disappears.",
+            "{@b Flip:} You can use this Trick by casting a spell with the casting time of an action as a bonus action.",
+            "{@b Flourish:} When you cast a spell you can use this Trick to bedazzle creatures around you with your stage magic. 3 creatures of your choice 60 feet away from you must succeed on a Wisdom saving throw or all become {@condition charmed} by you or all {@condition blinded} (your choice) until the start of your next turn.",
+            "{@b Split:} When you cast a spell that targets a single creature, you can use this Trick to target a second. If the spell includes an attack roll or a saving throw, both are subject to it. After seeing the results, you may pick one of them and they take the full effect of the spell.",
+            "{@b Hole:} You can use this Trick to cast a spell wihtout its somatic and verbal components.",
+            "{@b Shuffle:} At the start of your turn you may choose to use this Trick by rolling {@dice 2d8|2 d8s}, rerolling any repeats then picking one. Until the start of your next turn, you are able to use the corresponding Trick in the table once."
+          ]
         }
       ]
     },
@@ -20194,7 +20155,7 @@
       "entries": [
         "At the 14th level, your patron grants you his greatest boon, an unstable connection to the weave. You gain possession of 2 special dice in the form of a d4 and a d6, gaining a d8 as well at the 15th level in this class.",
         "Whenever you spend a warlock spell slot, you may roll a d4. If casting from the 6th or 7th level Mystic Arcanum, roll a d6 or a d8 if casting from the 8th or 9th level Mystic Arcanum. If any of these dice rolls roll their maximum, you regain the spell slot or use of the Mystic Arcanum.",
-        "Once regained, that die cannot be used until a long rest."
+        "After rolling any of these dice, you may once spend a spell slot to roll it again. Once regained, that die cannot be used until a long rest."
       ]
     },
     {
