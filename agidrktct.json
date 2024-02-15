@@ -19960,12 +19960,12 @@
     },
     {
       "name": "The Croupier",
-      "source": "tct",
+      "source": "DRK",
       "page": 1,
       "className": "Warlock",
       "classSource": "DRK",
       "subclassShortName": "Croupier",
-      "subclassSource": "tct",
+      "subclassSource": "DRK",
       "level": 1,
       "header": 1,
       "entries": [
@@ -19974,26 +19974,26 @@
         "The house always wins.",
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Croupier's Pact Spells|Warlock|DRK|Croupier|tct|1"
+          "subclassFeature": "Croupier's Pact Spells|Warlock|DRK|Croupier|DRK|1"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "\"Is this your card?\"|Warlock|DRK|Croupier|tct|1"
+          "subclassFeature": "\"Is this your card?\"|Warlock|DRK|Croupier|DRK|1"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Cardistry|Warlock|DRK|Croupier|tct|1"
+          "subclassFeature": "Cardistry|Warlock|DRK|Croupier|DRK|1"
         }
       ]
     },
     {
       "name": "\"Is this your card?\"",
-      "source": "tct",
+      "source": "DRK",
       "page": 1,
       "className": "Warlock",
       "classSource": "DRK",
       "subclassShortName": "Croupier",
-      "subclassSource": "tct",
+      "subclassSource": "DRK",
       "level": 1,
       "header": 2,
       "entries": [
@@ -20011,12 +20011,12 @@
     },
     {
       "name": "Croupier's Pact Spells",
-      "source": "tct",
+      "source": "DRK",
       "page": 1,
       "className": "Warlock",
       "classSource": "DRK",
       "subclassShortName": "Croupier",
-      "subclassSource": "tct",
+      "subclassSource": "DRK",
       "level": 1,
       "header": 2,
       "entries": [
@@ -20059,12 +20059,12 @@
     },
     {
       "name": "Cardistry",
-      "source": "tct",
+      "source": "DRK",
       "page": 1,
       "className": "Warlock",
       "classSource": "DRK",
       "subclassShortName": "Croupier",
-      "subclassSource": "tct",
+      "subclassSource": "DRK",
       "level": 1,
       "header": 2,
       "entries": [
@@ -20088,12 +20088,12 @@
     },
     {
       "name": "Sharp Instincts",
-      "source": "tct",
+      "source": "DRK",
       "page": 1,
       "className": "Warlock",
       "classSource": "DRK",
       "subclassShortName": "Croupier",
-      "subclassSource": "tct",
+      "subclassSource": "DRK",
       "level": 6,
       "header": 2,
       "entries": [
@@ -20114,12 +20114,12 @@
     },
     {
       "name": "Lady Luck's Kiss",
-      "source": "tct",
+      "source": "DRK",
       "page": 1,
       "className": "Warlock",
       "classSource": "DRK",
       "subclassShortName": "Croupier",
-      "subclassSource": "tct",
+      "subclassSource": "DRK",
       "level": 6,
       "header": 2,
       "entries": [
@@ -20128,12 +20128,12 @@
     },
     {
       "name": "Wild Card",
-      "source": "tct",
+      "source": "DRK",
       "page": 1,
       "className": "Warlock",
       "classSource": "DRK",
       "subclassShortName": "Croupier",
-      "subclassSource": "tct",
+      "subclassSource": "DRK",
       "level": 10,
       "header": 2,
       "entries": [
@@ -20144,12 +20144,12 @@
     },
     {
       "name": "The House Always Wins",
-      "source": "tct",
+      "source": "DRK",
       "page": 1,
       "className": "Warlock",
       "classSource": "DRK",
       "subclassShortName": "Croupier",
-      "subclassSource": "tct",
+      "subclassSource": "DRK",
       "level": 14,
       "header": 2,
       "entries": [
