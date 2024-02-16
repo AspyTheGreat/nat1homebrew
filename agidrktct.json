@@ -10388,14 +10388,14 @@
           "type": "entries",
           "name": "Frequency Shift",
           "entries": [
-            "If you are hit with an attack while attuned to this armor, you can as a reaction switch the frequency of the vibrating plates to negate some of the damage. Roll {@dice 3d8} and subtract that from the damage dealt to you for that attack, unless it is psychic damage. You can adjust the frequency of this armor a number of times equal to your proficiency modifier+1. Your uses recharge after a long rest."
+            "If you are hit with an attack while attuned to this armor, you can as a reaction switch the frequency of the vibrating plates to negate some of the damage. Roll {@dice 3d8} and subtract that from the damage dealt to you for that attack, unless it is psychic damage. You can adjust the frequency of this armor a number of times equal to your proficiency modifier+1. Your uses recharge after a long rest."
           ]
         },
         {
           "type": "entries",
           "name": "Resonance",
           "entries": [
-            "As a bonus action, you can attune the plates' frequency to the natural frequency of a single melee or ranged weapon. Thrown weapons cannot be affected this way. When the armor is attuned this way, your attacks with that weapon deal an extra {@dice 1d6} damage for 1 minute. During this time and till your next long rest, you also make Dexterity (Stealth) checks at disadvantage as the plates slowly realign. You can use this feature twice and your uses recharge after a long rest."
+            "As a bonus action, you can attune the plates' frequency to the natural frequency of a single melee or ranged weapon. Thrown weapons cannot be affected this way. When the armor is attuned this way, your attacks with that weapon deal an extra {@dice 1d6} damage for 1 minute. During this time and till your next long rest, you also make Dexterity (Stealth) checks at disadvantage as the plates slowly realign. You can use this feature twice and your uses recharge after a long rest."
           ]
         },
         "Mithral is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn't."
@@ -10411,13 +10411,13 @@
       "ac": 12,
       "armor": true,
       "entries": [
-        "The Regal looking set of armor is made from the pelt of a {@creature Noon Wolf|AspysGuidetoInfinitum}. Streaks of red flame shoot through the armor in periodic intervals warming those in the close vicinity of the armor. ",
+        "The Regal looking set of armor is made from the pelt of a {@creature Noon Wolf|AspysGuidetoInfinitum}. Streaks of red flame shoot through the armor in periodic intervals warming those in the close vicinity of the armor. ",
         "While wearing this armor, you have a +1 bonus to Armor Class, and you have resistance to fire damage.",
         {
           "type": "entries",
           "name": "Leaping Fire",
           "entries": [
-            "If you take more than 30 points of damage during a single creature's turn, the armor splits dealing 3d6 fire damage to each creature in a 5ft radius. The fire spit out then gathers into a {@creature fire elemental} as if you had cast the {@spell Summon Elemental} spell, overiding any spell you were concentrating on. The fire elemental is friendly to you and your allies as long as you hold concentration. For the duration of the spell or as long as the elemental is alive, the armor loses the fire resistance trait. The armor can split in this manner once and will not summon a fire elemental until the next dawn."
+            "If you take more than 30 points of damage during a single creature's turn, the armor splits dealing 3d6 fire damage to each creature in a 5ft radius. The fire spit out then gathers into a {@creature fire elemental} as if you had cast the {@spell Summon Elemental} spell, overiding any spell you were concentrating on. The fire elemental is friendly to you and your allies as long as you hold concentration. For the duration of the spell or as long as the elemental is alive, the armor loses the fire resistance trait. The armor can split in this manner once and will not summon a fire elemental until the next dawn."
           ]
         },
         "Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes."
@@ -10449,7 +10449,7 @@
           "type": "entries",
           "name": "Ill will",
           "entries": [
-            "When you take the attack action, you can choose to imbue this weapon with malice. On the next attack that hits, you deal this weapons normal damage and subject the target to the effects of the {@spell Harm} spell (DC 15). Once this ability is used, you cannot use it again before before a long rest. You can use a short rest to recharge this ability if you use 10 of your hit dice. You receive no healing from those hit dice but this feature is recharged."
+            "When you take the attack action, you can choose to imbue this weapon with malice. On the next attack that hits, you deal this weapons normal damage and subject the target to the effects of the {@spell Harm} spell (DC 15). Once this ability is used, you cannot use it again before before a long rest. You can use a short rest to recharge this ability if you use 10 of your hit dice. You receive no healing from those hit dice but this feature is recharged."
           ]
         },
         {
@@ -10485,7 +10485,7 @@
           "type": "entries",
           "name": "Fickle hope",
           "entries": [
-            "When you take the attack action, you can choose to imbue this weapon with malice. On the next attack that hits, you deal this weapons normal damage and subject the target to the effects of the {@spell Power Word Pain} spell (DC 16). The hitpoint limit for this casting is removed. Once this ability is used, you cannot use it again before before a long rest. You can use a short rest to recharge this ability if you use 15 of your hit dice. You receive no healing from those hit dice but this feature is recharged."
+            "When you take the attack action, you can choose to imbue this weapon with malice. On the next attack that hits, you deal this weapons normal damage and subject the target to the effects of the {@spell Power Word Pain} spell (DC 16). The hitpoint limit for this casting is removed. Once this ability is used, you cannot use it again before before a long rest. You can use a short rest to recharge this ability if you use 15 of your hit dice. You receive no healing from those hit dice but this feature is recharged."
           ]
         },
         {
@@ -10512,7 +10512,7 @@
           "type": "entries",
           "name": "Summon Ostinato.",
           "entries": [
-            "As an action, you can draw out the essence of music from this box and manifest it as an invisible creature. The summoned creature is controlled by the one that summoned it and it rolls its own initiative in combat. If the {@creature Ostinato|AspysGuidetoInfinitum} uses Aural symbiosis, it is unable to take actions other than Voracious Aura.",
+            "As an action, you can draw out the essence of music from this box and manifest it as an invisible creature. The summoned creature is controlled by the one that summoned it and it rolls its own initiative in combat. If the {@creature Ostinato|AspysGuidetoInfinitum} uses Aural symbiosis, it is unable to take actions other than Voracious Aura.",
             "If the ostinato is reduced to 0 hitpoints, it goes back into the box and cannot be summoned before a long rest."
           ]
         }
@@ -10542,7 +10542,7 @@
       "entries": [
         "This fabric rests as a pile of leaves when it is not worn. As an action, an attuned creature can will the leaves to form as armor or an item of clothing such as a scarf, a jacket, a cape or a hat if the leaves are within 30ft or doff it back to a pile of leaves to a location within 30ft.",
         "While wearing this as armor, you have a +3 bonus to Armor Class. Additionally, when in areas of thick vegetation or near a tree, you have advantage on Dexterity(stealth) check",
-        "When you take a short or long rest and when you attune to this fabric, you must choose a season to attune the fabric to. You can choose between Winter, Spring, Summer and autumn.\n\nYou get resistance of damage of a certain type associated with the fabric. Summer (Fire), Spring (Radiant), Winter (Cold), Autumn (Necrotic)",
+        "When you take a short or long rest and when you attune to this fabric, you must choose a season to attune the fabric to. You can choose between Winter, Spring, Summer and autumn.\n\nYou get resistance of damage of a certain type associated with the fabric. Summer (Fire), Spring (Radiant), Winter (Cold), Autumn (Necrotic)",
         {
           "type": "entries",
           "name": "Plant phase",
@@ -10552,14 +10552,14 @@
               "type": "entries",
               "name": "Tree stride",
               "entries": [
-                "You cast the {@spell tree stride} spell with this fabric. In addition to the effects of the spell, you gain an an additional effect based on the season the fabric is attuned to.",
+                "You cast the {@spell tree stride} spell with this fabric. In addition to the effects of the spell, you gain an an additional effect based on the season the fabric is attuned to.",
                 {
                   "type": "list",
                   "items": [
-                    "Winter. Once a turn, on the first attack you make when you walk out of a tree, you can add an additional 5d4 cold damage",
-                    "Spring. Once a turn, when you walk out of a tree, you can force a creature you can see within 10ft of you to make a Wisdom saving throw. On a failure, the creature is charmed. If you or your allies are currently engaged in hostilities with the target creature, it makes the save with advantage.",
-                    "Summer. Once a turn, the first attack you make when you walk out of a tree, is with advantage.",
-                    "Autumn. Once a turn, when you walk out of a tree, you can force a creature you can see within 30ft of you to make a Charisma saving throw. On a failure, you can move the creature upto 20ft in any direction."
+                    "Winter. Once a turn, on the first attack you make when you walk out of a tree, you can add an additional 5d4 cold damage",
+                    "Spring. Once a turn, when you walk out of a tree, you can force a creature you can see within 10ft of you to make a Wisdom saving throw. On a failure, the creature is charmed. If you or your allies are currently engaged in hostilities with the target creature, it makes the save with advantage.",
+                    "Summer. Once a turn, the first attack you make when you walk out of a tree, is with advantage.",
+                    "Autumn. Once a turn, when you walk out of a tree, you can force a creature you can see within 30ft of you to make a Charisma saving throw. On a failure, you can move the creature upto 20ft in any direction."
                   ]
                 }
               ]
@@ -10659,22 +10659,22 @@
       "entries": [
         "This Sword was forged in the divine realms and entrusted to a hero who was on a quest to quell the consequence of the Arcane Aftermath. This Sword was one of three boons that graced the world after the reality morphing event changed the face of Fer.",
         "The Blade resembles a relatively thin greatsword, with a hilt that looks like the inside of an atom. Despite its thin form, there is an intricate series of deep carvings in arcane script around the blade, removing just enough weight that it vibrates in constant pitch when struck. The runes also cause a dull glow that sheds dim light upto 15 feet in all directions. As a bonus action, the wielder can channel the blade’s energy to shed bright light in a 30ft radius.",
-        "Whenever a creature whose reality was altered, such as with the wish spell, time travel or as determined by the DM comes within 60ft of this blade, sweet celestial music permeates the atmosphere as the blade begins to mildly vibrate.  ",
+        "Whenever a creature whose reality was altered, such as with the wish spell, time travel or as determined by the DM comes within 60ft of this blade, sweet celestial music permeates the atmosphere as the blade begins to mildly vibrate.  ",
         "You have a +3 bonus to attack and damage rolls made with this magic weapon.",
-        "When you hit with an attack using this weapon, the target takes an extra {@dice 1d8} force damage as the blade vibrates and churns the insides of the target.",
+        "When you hit with an attack using this weapon, the target takes an extra {@dice 1d8} force damage as the blade vibrates and churns the insides of the target.",
         "The Blade has a pool of 15 charges when attuned to. Charges can be spent to do a number of things. At the end of a long rest, roll a {@dice d20}. On a 20, it regains all charges and has an additional 10 charges. On a 1, it regains 5 charges. On other rolls, it regains {@dice 1d12+3} charges upto 15.",
         {
           "type": "entries",
           "name": "Wrathful Reality",
           "entries": [
-            "You can expend a number of charges to deal extra damage against creatures. As a bonus action, you can charge the weapon's persussion with a frequency. Next time you hit a creature with a weapon attack before a short or long rest, You deal 1d8 psychic damage and an extra 1d8 for each charge loaded upto 5 charges. 2d8 if the creature is reality altered."
+            "You can expend a number of charges to deal extra damage against creatures. As a bonus action, you can charge the weapon's persussion with a frequency. Next time you hit a creature with a weapon attack before a short or long rest, You deal 1d8 psychic damage and an extra 1d8 for each charge loaded upto 5 charges. 2d8 if the creature is reality altered."
           ]
         },
         {
           "type": "entries",
           "name": "Paranoia's End",
           "entries": [
-            "After a long rest and before charges have been regained, Choose 7 levels of spells from the {@filter wizard spell list upto level 5|spells|level=1|level=2|level=3|level=4|level=5|class=Wizard}. You can cast these spells through this sword by spending spell level*2 number of charges without the need for any material components."
+            "After a long rest and before charges have been regained, Choose 7 levels of spells from the {@filter wizard spell list upto level 5|spells|level=1|level=2|level=3|level=4|level=5|class=Wizard}. You can cast these spells through this sword by spending spell level*2 number of charges without the need for any material components."
           ]
         },
         {
@@ -10710,7 +10710,7 @@
       "wondrous": true,
       "entries": [
         "This cloak was forged in the divine realms and entrusted to a hero who was on a quest to quell the consequence of the Arcane Aftermath. This Cloak was one of three boons that graced the world after the reality morphing event changed the face Fer.",
-        "The cloak in apprance resembles an old, grey mantle with a cape of velvet cloth. Plain grey with a belt of a darker grey. It's jagged at the edges and it looks like it was torn at the base. The wearer feels eons of knowledge coursing through the cloak. Arcane scribblings come to you instantly as if the cloak made of parchment. You can use the cloak to channel any {@filter Wizard spell of lvl5 and below|spells|level=1|level=2|level=3|level=4|level=5|class=Wizard} once a day and cast it without material components. As long as you are wearing this cloak and have enough materials, you can copy the channeled spell into your spellbook.",
+        "The cloak in apprance resembles an old, grey mantle with a cape of velvet cloth. Plain grey with a belt of a darker grey. It's jagged at the edges and it looks like it was torn at the base. The wearer feels eons of knowledge coursing through the cloak. Arcane scribblings come to you instantly as if the cloak made of parchment. You can use the cloak to channel any {@filter Wizard spell of lvl5 and below|spells|level=1|level=2|level=3|level=4|level=5|class=Wizard} once a day and cast it without material components. As long as you are wearing this cloak and have enough materials, you can copy the channeled spell into your spellbook.",
         "While you are wearing this cloak, you gain a +3 bonus to spell attack rolls and spell save DC. You also ignore half and three quarters cover when making a spell attack.",
         "Additionally, you gain expertise in any one of the intelligence skills you are proficient in.",
         "This cloak has a pool of 15 charges when attuned to. Charges can be spent to do a number of things. At the end of a long rest, roll a {@dice d20}. On a 20, it regains all charges and has an additional 10 charges. On a 1, it regains 5 charges. On other rolls, it regains {@dice 1d12+3} charges upto 15.",
@@ -10727,7 +10727,7 @@
           "entries": [
             "After a long rest, when you roll to regain charges, choose an element type and the cloak attunes to it. For the rest of the day, you are immune to this damage type, and when you cast a spell that rolls damage die of that element, the damage ignores resistance and immunity of the affected creature.",
             "Additionally, When you roll for damage of the attuned type, you can spend 1 charge to reroll a number of the damage dice up to 4+Spell level. You must use the new rolls. If the damage type is different, you can reroll upto 4 damage dice.",
-            "As a bonus action/Reaction(when you take damage) you can spend 4 charges to gain resistance to another element and gain the benefits of casting spells of that type. Doing so will drop your immunity to the first damage type."
+            "As a bonus action/Reaction(when you take damage) you can spend 4 charges to gain resistance to another element and gain the benefits of casting spells of that type. Doing so will drop your immunity to the first damage type."
           ]
         },
         {
@@ -10747,7 +10747,7 @@
               "type": "list",
               "items": [
                 "Spell attack rolls bonus increases to a +4 and Spell Save DC increases to a +4.",
-                "Arcane Absorption. If you cast a spell that requires concentration while you already concentrating on a spell, the initial spell doesn't drop but instead becomes duration-based for half the concentration duration."
+                "Arcane Absorption. If you cast a spell that requires concentration while you already concentrating on a spell, the initial spell doesn't drop but instead becomes duration-based for half the concentration duration."
               ]
             }
           ]
@@ -10776,7 +10776,7 @@
         "This dagger was forged in the divine realms and entrusted to a hero who was on a quest to quell the consequence of the Arcane Aftermath. This Dagger was one of four weapons that graced the world after the reality morphing event changed the face of Fer.",
         "This dagger shines as if it's made of satin fabric and yet, looks like it has an edge that can cut through bone. This blade shifts in and out of visibility for everyone except the one holding and attuned to it. Anyone who cannot see the dagger directly forgets about it's existence and all memories associated with it are rationalised into different narratives.",
         "You have a +3 bonus to attack and damage rolls made with this magic weapon.",
-        "When you hit with an attack using this weapon, the target takes an extra {@dice 1d8} Necrotic damage as the wound seeps with dark energies of the 9 hells",
+        "When you hit with an attack using this weapon, the target takes an extra {@dice 1d8} Necrotic damage as the wound seeps with dark energies of the 9 hells",
         "This dagger has a pool of 15 charges when attuned to. Charges can be spent to do a number of things. At the begining of a day, roll a {@dice d20}. On a 20, it regains all charges and has an additional 10 charges. On a 1, it regains 5 charges. On other rolls, it regains {@dice 1d12+3} charges upto 15.",
         {
           "type": "entries",
@@ -10849,20 +10849,20 @@
         "Area around this crossbow gradually sprouts shrubbery and grass. If left resting for a longer period of time, the nourishing energy becomes potent enough to sustain a little forest.",
         "When a creature within the inner range of this bow you can see rolls dice to regain hitpoints, you can use your reaction to reroll any number of that dice.",
         "You have a +3 bonus to attack and damage rolls made with this magic weapon.",
-        "When you hit with an attack using this weapon, the target takes an extra {@dice 1d8} force damage as vines begin to originate and wrap around the target.",
+        "When you hit with an attack using this weapon, the target takes an extra {@dice 1d8} force damage as vines begin to originate and wrap around the target.",
         "This bow has a pool of 15 charges when attuned to. Charges can be spent to do a number of things. At the begining of a day, roll a {@dice d20}. On a 20, it regains all charges and has an additional 10 charges. On a 1, it regains 5 charges. On other rolls, it regains {@dice 1d12+3} charges upto 15.",
         {
           "type": "entries",
           "name": "Cleansing flame",
           "entries": [
-            "When you take the attack action on your turn, you can use one or more of the attacks to target an ally instead. Spend 2 charges per attack. Do not roll for attack. Half way through its trajectory, the arrow shot disintegrates in flame that extinguishes by the time it reaches its target, the final few embers of flame washing over the target. The target gains the benefit of a casting of {@spell cure wounds} at lvl1."
+            "When you take the attack action on your turn, you can use one or more of the attacks to target an ally instead. Spend 2 charges per attack. Do not roll for attack. Half way through its trajectory, the arrow shot disintegrates in flame that extinguishes by the time it reaches its target, the final few embers of flame washing over the target. The target gains the benefit of a casting of {@spell cure wounds} at lvl1."
           ]
         },
         {
           "type": "entries",
           "name": "Nature magic",
           "entries": [
-            "After a long rest and before charges have been regained, Choose 7 levels of spells from the {@filter druid spell list upto level 5|spells|level=1|level=2|level=3|level=4|level=5|class=Druid}. You can cast these spells through this bow by spending level*2 number of charges without the need for any material components."
+            "After a long rest and before charges have been regained, Choose 7 levels of spells from the {@filter druid spell list upto level 5|spells|level=1|level=2|level=3|level=4|level=5|class=Druid}. You can cast these spells through this bow by spending level*2 number of charges without the need for any material components."
           ]
         },
         {
@@ -10882,7 +10882,7 @@
               "type": "list",
               "items": [
                 "Attacks and Damage rolls get a +4 bonus.",
-                "Cleansing flame applies Cure wounds at level 2",
+                "Cleansing flame applies Cure wounds at level 2",
                 "The extra damage increases to 1d12."
               ]
             }
@@ -31880,7 +31880,7 @@
     {
       "name": "The Croupier",
       "shortName": "Croupier",
-      "source": "tct",
+      "source": "DRK",
       "className": "Warlock",
       "classSource": "DRK",
       "page": 1,
@@ -31911,11 +31911,11 @@
         }
       ],
       "subclassFeatures": [
-        "The Croupier|Warlock|DRK|Croupier|tct|1",
-        "Sharp Instincts|Warlock|DRK|Croupier|tct|6",
-        "Lady Luck's Kiss|Warlock|DRK|Croupier|tct|6",
-        "Wild Card|Warlock|DRK|Croupier|tct|10",
-        "The House Always Wins|Warlock|DRK|Croupier|tct|14"
+        "The Croupier|Warlock|DRK|Croupier|DRK|1",
+        "Sharp Instincts|Warlock|DRK|Croupier|DRK|6",
+        "Lady Luck's Kiss|Warlock|DRK|Croupier|DRK|6",
+        "Wild Card|Warlock|DRK|Croupier|DRK|10",
+        "The House Always Wins|Warlock|DRK|Croupier|DRK|14"
       ]
     },
     {
