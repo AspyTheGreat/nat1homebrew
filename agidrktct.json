@@ -3,16 +3,6 @@
   "_meta": {
     "sources": [
       {
-        "json": "tct",
-        "abbreviation": "TCT",
-        "color": "c700d1",
-        "full": "The Compendia Toleverica",
-        "authors": [
-          "Senna Illirotor"
-        ],
-        "version": "1.1.3"
-      },
-      {
         "abbreviation": "AGI",
         "authors": [
           "Aspy"
@@ -32,6 +22,16 @@
           "Dark Poison"
         ],
         "version": "1.0.0"
+      },
+      {
+        "json": "tct",
+        "abbreviation": "TCT",
+        "color": "c700d1",
+        "full": "The Compendia Toleverica",
+        "authors": [
+          "Senna Illirotor"
+        ],
+        "version": "1.1.3"
       }
     ],
     "currencyConversions": {
