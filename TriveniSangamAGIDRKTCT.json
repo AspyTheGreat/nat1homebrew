@@ -59,6 +59,9 @@
         }
       ]
     },
+    "optionalFeatureTypes": {
+      "GS": "Gunblade Stance"
+    },
     "dateAdded": 0,
     "dateLastModified": 0
   },
