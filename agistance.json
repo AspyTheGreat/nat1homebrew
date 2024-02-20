@@ -89,11 +89,11 @@
             6
           ],
           "colStyles": [
-            "col-6 text-center",
-            "col-6 text-center",
-            "col-6 text-center",
-            "col-6 text-center",
-            "col-6 text-center"
+            "col-1 text-center",
+            "col-6",
+            "col-6",
+            "col-6",
+            "col-6"
           ],
           "rows": [
             [
