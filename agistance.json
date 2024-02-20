@@ -57,11 +57,11 @@
         "Originating from the elite Cassius recon groups, Mysticshift Duelists blend emerging scientific insights and a deepening arcane understanding, born from a world where the weave of magic is unraveling. These pioneers of martial and mystical arts integrated newfound arcane knowledge into their combat techniques, crafting a refined martial art that harmonizes elemental forces with physical prowess. Over the years, their practices spread beyond Cassius, evolving into a distinguished discipline. Today, Mysticshift Duelists are renowned warriors who embody the art of transformation, leveraging elemental stances to dynamically adapt in combat. Their path demands a profound comprehension of both the elements and one's inner self, attracting those intrigued by the challenge of mastering such versatile and potent powers.",
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Elemental Stance Initiation|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|3"
+          "subclassFeature": "Gunblade Training|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|3"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Gunblade Training|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|3"
+          "subclassFeature": "Elemental Stance Initiation|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|3"
         }
       ]
     },
@@ -90,10 +90,10 @@
           ],
           "colStyles": [
             "col-1 text-center",
-            "col-11",
-            "col-11",
-            "col-11",
-            "col-11"
+            "col-2",
+            "col-3",
+            "col-4",
+            "col-5"
           ],
           "rows": [
             [
