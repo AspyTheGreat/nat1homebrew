@@ -19808,6 +19808,249 @@
   ],
   "subclassFeature": [
     {
+      "name": "The Mysticshift Duelist",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Fighter",
+      "classSource": "DRK",
+      "subclassShortName": "Mysticshift Duelist",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "Originating from the elite Cassius recon groups, Mysticshift Duelists blend emerging scientific insights and a deepening arcane understanding, born from a world where the weave of magic is unraveling. These pioneers of martial and mystical arts integrated newfound arcane knowledge into their combat techniques, crafting a refined martial art that harmonizes elemental forces with physical prowess. Over the years, their practices spread beyond Cassius, evolving into a distinguished discipline. Today, Mysticshift Duelists are renowned warriors who embody the art of transformation, leveraging elemental stances to dynamically adapt in combat. Their path demands a profound comprehension of both the elements and one's inner self, attracting those intrigued by the challenge of mastering such versatile and potent powers.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Arms of the Mysticshift|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Elemental Stance Initiation|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|3"
+        }
+      ]
+    },
+    {
+      "name": "Arms of the Mysticshift",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Fighter",
+      "classSource": "DRK",
+      "subclassShortName": "Mysticshift Duelist",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "{@i 3rd-level Mysticshift Duelist feature}",
+        "Upon embarking on the path of the Mysticshift Duelist, you commit to mastering the art of combat through both traditional weaponry and the precise application of firearms. This unique synthesis of martial disciplines forms the foundation of your journey, preparing you for the eventual creation of your signature weapon—the Elemental Gunblade.",
+        "At 3rd level, you gain proficiency with one melee weapon and one firearm of your choice. These weapons become the focal point of your training, each representing one half of the duality you seek to master. Through rigorous practice, you learn to channel elemental energies into every strike and shot, laying the groundwork for the fusion of these disciplines.",
+        "Your dedication to mastering both the blade and the bullet grants you unique combat advantages. When wielding your chosen melee weapon or firearm, you gain a +1 bonus to attack rolls and the attacks count as magical for the purpose of overcomming resistance."
+      ]
+    },
+    {
+      "name": "Elemental Stance Initiation",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Fighter",
+      "classSource": "DRK",
+      "subclassShortName": "Mysticshift Duelist",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "{@i 3rd-level Mysticshift Duelist feature}",
+        "Starting at 3rd level, you gain the ability to adopt elemental stances, each offering unique enhancements to your attacks. When you make a weapon attack, you may choose one of your stances to activate it, adding the effects from the stance if it hits. Repeated attacks made with the same stance grants additional effects stacking based on the number of successful attacks made. Switching stances resets the stacks to 0.",
+        "The saving throw DC for stance effects is 8 + your proficiency bonus + your Strength or Dexterity modifier (whichever is higher).",
+        "Select two stances initially, you may choose an additional stance when you reach the 7th, 10th and 15th level in this class.",
+        {
+          "type": "table",
+          "caption": "Stances",
+          "colLabels": [
+            "Elemental Stance",
+            "1-2",
+            "3-4",
+            "5",
+            "6"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-2",
+            "col-3",
+            "col-4",
+            "col-5"
+          ],
+          "rows": [
+            [
+              "Blaze Reprisal Stance",
+              "Add {@dice 1d8} fire damage to attacks.",
+              "Attacks ignite targets, dealing {@dice 1d8} ongoing fire damage for 1 turn.",
+              "Create a blaze around the target, dealing {@dice 2d8} fire damage to enemies within 10 feet.",
+              "Unleash a fiery explosion on hit, dealing {@dice 4d8} fire damage to all enemies within 30 feet. Requires a Dexterity saving throw."
+            ],
+            [
+              "Glacial Guard",
+              "Gain +1 AC and deal {@dice 1d4} cold damage to melee attackers.",
+              "Attacks slow the target, reducing their speed by 10 feet until your next turn.",
+              "Freeze the ground, making it difficult terrain in a 15-foot radius around the target.",
+              "Encase targets in ice on hit, {@condition stunned} for 1 turn. Requires a Constitution saving throw."
+            ],
+            [
+              "Tempest Fury",
+              "Increase movement speed by 10 feet and add {@dice 1d4} lightning damage to attacks.",
+              "Attacks push enemies back 10 feet.",
+              "Gain advantage on all Dexterity saving throws and skill checks.",
+              "Create a tempest on hit, dealing {@dice 2d8} lightning damage to the target and up to two additional enemies within 20 feet."
+            ],
+            [
+              "Stone Bulwark",
+              "Gain +2 to all saving throws and resistance to nonmagical bludgeoning, piercing, and slashing damage.",
+              "Attacks fortify you, granting temporary hit points equal to {@dice 1d6} + your Constitution modifier.",
+              "Attacks can cause the earth to grasp enemies, reducing their speed to 0 until the end of their next turn.",
+              "Trigger a localized earthquake, knocking enemies within 20 feet prone. Requires a Strength saving throw."
+            ],
+            [
+              "Void Embrace",
+              "Attacks deal an additional {@dice 1d6} necrotic damage, healing you for half the amount dealt.",
+              "Diminish enemy strength, reducing their damage output by {@dice 1d4} for 1 turn.",
+              "Silence enemies hit, preventing them from casting spells for 1 turn. Requires a Wisdom saving throw.",
+              "Consume life force, dealing {@dice 3d6} necrotic damage and gaining temporary hit points equal to the damage dealt. Affects all enemies within 15 feet."
+            ],
+            [
+              "Solar Flare",
+              "Add {@dice 1d6} radiant damage to attacks and dispel magical darkness in a 10-foot radius.",
+              "Illuminate targets, granting advantage on attacks against them and dealing {@dice 1d6} additional radiant damage.",
+              "Enemies hit are {@condition blinded} for 1 turn. Requires a Constitution saving throw.",
+              "A radiant burst expands from you, blinding all enemies within 20 feet and dealing {@dice 3d8} radiant damage. Requires a Constitution saving throw."
+            ],
+            [
+              "Aether Wind",
+              "Attacks extend your reach by 5 feet and add {@dice 1d4} force damage.",
+              "Generate an updraft with each hit, granting you the ability to ignore difficult terrain.",
+              "Gain a flying speed of 30 feet for 1 turn.",
+              "Create a vortex on hit, pulling up to three enemies within 30 feet towards the target. Requires a Strength saving throw."
+            ],
+            [
+              "Nature's Bind",
+              "Attacks deal an additional {@dice 1d6} poison damage and slow enemies by 10 feet.",
+              "Entangle enemies hit, reducing their speed to 0 until they succeed on a Strength saving throw.",
+              "Vines grapple the target, {@condition restraining} them for 1 turn. Requires a Strength saving throw.",
+              "A massive vine burst restrains all enemies within 20 feet, dealing {@dice 3d6} poison damage. Requires a Strength saving throw."
+            ]
+          ]
+        },
+        "Upon reaching 6 successful attacks in the same stance, unleash the specified effect. Stacks reset to 1 thereafter."
+      ]
+    },
+    {
+      "name": "Bond of Blade and Bullet",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Fighter",
+      "classSource": "DRK",
+      "subclassShortName": "Mysticshift Duelist",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 7,
+      "header": 1,
+      "entries": [
+        "{@i 7rd-level Mysticshift Duelist feature}",
+        "At 7th level, you gain the ability to combine your chosen melee weapon and firearm into a singular, powerful weapon: the Elemental Gunblade. This fusion requires a ritual that spans a day and a night, during which you must channel elemental energies into the weapons, binding them with your own spirit. The resulting Elemental Gunblade is a masterwork of craftsmanship and arcane power, unique to you and unusable by anyone else.",
+        " Upon completing the ritual, you gain proficiency with your Elemental Gunblade, which retains the properties of both the original melee weapon and firearm. The elemental gunblade also counts as one of your chosen weapons and benefits from the +1 bonus to attack rolls.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Elemental Reverb|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|7"
+        }
+      ]
+    },
+    {
+      "name": "Elemental Reverb",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Fighter",
+      "classSource": "DRK",
+      "subclassShortName": "Mysticshift Duelist",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 7,
+      "header": 2,
+      "entries": [
+        "At 7th level, you gain the ability to instantly channel the full force of an Elemental Stance through your Gunblade. Once per short rest, as part of an attack, you can apply one of your known stance's max stack effect on your target.",
+        "Additionally, when you switch stances from max stacks, the energy release emits a 15-foot radius elemental shockwave, dealing {@dice 2d8} force damage and pushing creatures of your choice back 5 feet on a failed Dexterity save."
+      ]
+    },
+    {
+      "name": "Stance Weaving",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Fighter",
+      "classSource": "DRK",
+      "subclassShortName": "Mysticshift Duelist",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 7,
+      "header": 1,
+      "entries": [
+        "{@i 7rd-level Mysticshift Duelist feature}",
+        "By 7th level, you have mastered the ability to shift between your known elemental stances in such rapid fluidity that they have begun to weave more effectively. ",
+        "As a bonus action on your turn, you enter a perfect weave state for 1 minute. If you have a stance active, you gain 5 stacks in it immediately. While in this state, when you switch to a new stance the effects from the previous one linger until the next switch. You must also switch stances every turn to keep perfect weave active. You lose perfect weave at the end of your turn if you have not switched stances atleast once.   ",
+        "You may enter this state as many times as your proficiency bonus and uses recharge on a short rest"
+      ]
+    },
+    {
+      "name": "Elemental Resilience",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Fighter",
+      "classSource": "DRK",
+      "subclassShortName": "Mysticshift Duelist",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 10,
+      "header": 1,
+      "entries": [
+        "{@i 10th-level Mysticshift Duelist feature}",
+        "Your mastery over the elemental forces not only empowers your attacks but also fortifies your resolve and vitality. This mastery manifests in two key ways:",
+        {
+          "type": "list",
+          "items": [
+            "Defensive Harmony: You gain a bonus to all saving throws equal to half the number of stacks (rounded down) you have in any stance. This bonus reflects your heightened elemental awareness, enhancing your ability to evade or withstand harmful effects.",
+            "Elemental Transference: When you switch stances, the accumulated elemental energy rejuvenates you, healing you for an amount equal to the number of stacks in the previous stance before the switch. This healing represents the restorative power of the elements flowing through you, a reward for your strategic mastery over the elemental stances."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Elemental Gunblade Ascendance",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Fighter",
+      "classSource": "DRK",
+      "subclassShortName": "Mysticshift Duelist",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 15,
+      "header": 1,
+      "entries": [
+        "{@i 15th-level Mysticshift Duelist feature}",
+        "Your mastery of the elemental stances allows you to unleash a devastating Ascendant Attack, channeling the full might of your chosen element through your Elemental Gunblade.",
+        "Upon reaching the maximum stacks in an elemental stance twice in a row, you gain the ability to perform an Ascendant Attack associated with that stance for the next one minute. You may use this special ascendant attack in place of one of your extra attacks. These powerful attacks can be used once per long rest for each stance.",
+        "The Ascendant Attacks are as follows:",
+        {
+          "type": "list",
+          "items": [
+            "Inferno Vortex (Blaze Reprisal Stance): Create a 30-foot radius vortex of fire at a point you can see within 120 feet. Creatures in the area must make a Dexterity saving throw, taking {@dice 6d6} fire damage on a failed save, or half as much damage on a successful one. The area becomes difficult terrain, and creatures that fail the save are also {@condition blinded} by the intense flames for 1 minute. An affected creature at the end of each of its turns may repeat the saving throw to try and end the blindness.",
+            "Frost Sigil (Glacial Guard): Summon a sigil on the ground within a 60-foot radius. Creatures in the area must make a Constitution saving throw, taking {@dice 4d6} cold damage on a failed save and becoming {@condition slowed} for 1 minute on a failed save. The ground becomes difficult terrain. An affected creature at the end of each of its turns may repeat the saving throw to try and end the slowness.",
+            "Lightning Tempest (Tempest Fury): Target up to three creatures you can see within 150 feet. Each must make a Dexterity saving throw, taking {@dice 5d6} lightning damage on a failed save, or half as much damage on a successful one. Affected creatures are also {@condition stunned} until the end of your next turn.",
+            "Earthshaker Pulse (Stone Bulwark): Cause an earthquake in a 50-foot radius around you. Enemies must make a Strength saving throw or be {@condition knocked prone} and take {@dice 4d6} bludgeoning damage. The affected area becomes difficult terrain.",
+            "Abyssal Drain (Void Embrace): Release a 20-foot radius wave of dark energy. Enemies within range must make a Wisdom saving throw, taking {@dice 5d6} necrotic damage on a failed save, or half as much damage on a successful one. You gain temporary hit points equal to the highest damage dealt to one target.",
+            "Radiant Dawn (Solar Flare): Emit a 60-foot radius burst of radiant light. Enemies within the burst must make a Constitution saving throw or be {@condition blinded} for 1 minute and take {@dice 5d6} radiant damage. Allies in the area gain temporary hit points equal to your fighter level. An affected creature at the end of each of its turns may repeat the saving throw to try and end the blindness.",
+            "Galeforce Dash (Aether Wind): Transform into a gust of wind, moving up to 100 feet in a line that is 5 feet wide. Each creature in the line must make a Dexterity saving throw, taking {@dice 4d6} force damage on a failed save, and is {@condition pushed} 15 feet to the side of the line on a failed save.",
+            "Verdant Cataclysm (Nature's Bind): Cause a 40-foot radius of thorny vines to erupt. Creatures in the area must make a Strength saving throw or be {@condition restrained} and take {@dice 4d6} piercing damage at the start of each of their turns. On a success, the creature is no longer restrained and moves to the nearest unoccupied space outside the vines. The area becomes difficult terrain."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Elemental Resonance",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Fighter",
+      "classSource": "DRK",
+      "subclassShortName": "Mysticshift Duelist",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 18,
+      "header": 1,
+      "entries": [
+        "At 18th level, select an elemental stance at dawn; its base effect is always on. When you hit max stacks on your selected stance, you can activate Elemental Resonance for 1 minute, maximizing your chosen stance's effects without needing stacks on each attack. This power surge ends if you're incapacitated or prone.",
+        "Once Elemental resonance ends, you may use it again after a long rest."
+      ]
+    },
+    {
       "name": "Way of Awakened Mind",
       "className": "Monk",
       "source": "tct",
@@ -31867,6 +32110,35 @@
   ],
   "subclass": [
     {
+      "name": "Mysticshift Duelist",
+      "shortName": "Mysticshift Duelist",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Fighter",
+      "classSource": "DRK",
+      "optionalfeatureProgression": [
+        {
+          "name": "Gunblade Stances",
+          "featureType": [
+            "GS"
+          ],
+          "progression": {
+            "3": 2,
+            "7": 3,
+            "10": 4,
+            "15": 5
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "The Mysticshift Duelist|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|3",
+        "Bond of Blade and Bullet|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|7",
+        "Stance Weaving|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|7",
+        "Elemental Resilience|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|10",
+        "Elemental Gunblade Ascendance|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|15",
+        "Elemental Resonance|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|18"
+      ]
+    },
+    {
       "name": "Saboteur",
       "shortName": "Saboteur",
       "source": "tct",
@@ -37723,6 +37995,110 @@
         "When you cast a spell that targets only one creature and doesn't have a range of self, you can spend a number of sorcery points equal to the spell's level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip).",
         "If you twin a spell that requires concentration, you make concentration checks to maintain that spell at disadvantage.",
         "To be eligible, a spell must be incapable of targeting more than one creature at the spell's current level. For example, {@spell magic missile} and {@spell scorching ray} aren't eligible, but {@spell ray of frost} and {@spell chromatic orb} are."
+      ]
+    },
+    {
+      "name": "Blaze Reprisal",
+      "source": "AspysGuidetoInfinitum",
+      "featureType": [
+        "GS"
+      ],
+      "entries": [
+        "1-2: Adds {@dice 1d8} fire damage to attacks.",
+        "3-4: Attacks cause targets to ignite, dealing {@dice 1d8} fire damage at the start of their next turn.",
+        "5: Attacks create a blaze around the target, dealing {@dice 2d8} fire damage to enemies within 10 feet.",
+        "6: Unleash a fiery explosion, dealing {@dice 4d8} fire damage to all enemies within 30 feet of you. Requires a Dexterity saving throw."
+      ]
+    },
+    {
+      "name": "Glacial Guard",
+      "source": "AspysGuidetoInfinitum",
+      "featureType": [
+        "GS"
+      ],
+      "entries": [
+        "1-2: Gain +1 AC and deal {@dice 1d4} cold damage to melee attackers.",
+        "3-4: Attacks slow the target, reducing their speed by 10 feet until your next turn.",
+        "5: Freeze the ground, making it difficult terrain in a 15-foot radius around the target.",
+        "6: Encase targets in ice on hit, {@condition stunned} for 1 turn. Requires a Constitution saving throw."
+      ]
+    },
+    {
+      "name": "Tempest Fury",
+      "source": "AspysGuidetoInfinitum",
+      "featureType": [
+        "GS"
+      ],
+      "entries": [
+        "1-2: Increase movement speed by 10 feet. Attacks add {@dice 1d4} lightning damage.",
+        "3-4: Attacks push enemies back 10 feet.",
+        "5: Gain advantage on all Dexterity saving throws and skill checks.",
+        "6: Create a tempest on hit, dealing {@dice 2d8} lightning damage to the target and up to two additional enemies within 20 feet."
+      ]
+    },
+    {
+      "name": "Stone Bulwark",
+      "source": "AspysGuidetoInfinitum",
+      "featureType": [
+        "GS"
+      ],
+      "entries": [
+        "1-2: Gain +2 to all saving throws. Resistance to nonmagical bludgeoning, piercing, and slashing damage.",
+        "3-4: Attacks fortify you, granting temporary hit points equal to {@dice 1d6} + your Constitution modifier.",
+        "5: Attacks cause the earth to grasp enemies, reducing their speed to 0 until the end of their next turn.",
+        "6: Trigger a localized earthquake, knocking enemies within 20 feet prone. Requires a Strength saving throw."
+      ]
+    },
+    {
+      "name": "Void Embrace",
+      "source": "AspysGuidetoInfinitum",
+      "featureType": [
+        "GS"
+      ],
+      "entries": [
+        "1-2: Attacks deal an additional {@dice 1d6} necrotic damage, healing you for half the amount dealt.",
+        "3-4: Diminish enemy strength, reducing their damage output by {@dice 1d4} for 1 turn.",
+        "5: Silence enemies hit, preventing them from casting spells for 1 turn. Requires a Wisdom saving throw.",
+        "6: Consume life force, dealing {@dice 3d6} necrotic damage to all enemies within 15 feet. You gain temporary hit points equal to the damage dealt."
+      ]
+    },
+    {
+      "name": "Solar Flare",
+      "source": "AspysGuidetoInfinitum",
+      "featureType": [
+        "GS"
+      ],
+      "entries": [
+        "1-2: Add {@dice 1d6} radiant damage to attacks. Dispel magical darkness in a 10-foot radius.",
+        "3-4: Illuminate targets, granting advantage on attacks against them and dealing {@dice 1d6} additional radiant damage.",
+        "5: Enemies hit are {@condition blinded} for 1 turn. Requires a Constitution saving throw.",
+        "6: A radiant burst expands from you, blinding all enemies within 20 feet and dealing {@dice 3d8} radiant damage. Requires a Constitution saving throw."
+      ]
+    },
+    {
+      "name": "Aether Wind",
+      "source": "AspysGuidetoInfinitum",
+      "featureType": [
+        "GS"
+      ],
+      "entries": [
+        "1-2: Attacks extend your reach by 5 feet and add {@dice 1d4} force damage.",
+        "3-4: Generate an updraft with each hit, allowing you to ignore difficult terrain.",
+        "5: Gain a flying speed of 30 feet for 1 turn.",
+        "6: Create a vortex on hit, pulling up to three enemies within 30 feet towards the target. Requires a Strength saving throw."
+      ]
+    },
+    {
+      "name": "Nature's Bind",
+      "source": "AspysGuidetoInfinitum",
+      "featureType": [
+        "GS"
+      ],
+      "entries": [
+        "1-2: Attacks deal an additional {@dice 1d6} poison damage and slow enemies by 10 feet.",
+        "3-4: Entangle enemies hit, reducing their speed to 0 until they succeed on a Strength saving throw.",
+        "5: Vines grapple the target, {@condition restraining} them for 1 turn. Requires a Strength saving throw.",
+        "6: A massive vine burst restrains all enemies within 20 feet, dealing {@dice 3d6} poison damage. Requires a Strength saving throw."
       ]
     }
   ]
