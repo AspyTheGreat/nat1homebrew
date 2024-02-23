@@ -60,7 +60,8 @@
       ]
     },
     "optionalFeatureTypes": {
-      "GS": "Gunblade Stance"
+      "GS": "Gunblade Stance",
+      "CW": "Chronomancer Wells"
     },
     "dateAdded": 0,
     "dateLastModified": 0
@@ -17277,9 +17278,1115 @@
           "source": "DRK"
         }
       ]
+    },
+    {
+      "name": "Mesmer",
+      "source": "AspysGuidetoInfinitum",
+      "hd": {
+        "number": 2,
+        "faces": 4
+      },
+      "proficiency": [
+        "dex",
+        "cha"
+      ],
+      "startingProficiencies": {
+        "armor": [
+          "light"
+        ],
+        "weapons": [
+          "simple",
+          "{@item rapier|phb|rapiers}",
+          "{@item shortsword|phb|shortswords}"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "arcana",
+                "deception",
+                "insight",
+                "perception",
+                "persuasion",
+                "stealth"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "default": [
+          "(a) a {@item rapier|phb} or (b) a {@item shortsword|phb}",
+          "(a) an {@item arcane focus|phb} or (b) a {@item component pouch|phb}",
+          "(a) an {@item entertainer's pack|phb} or (b) a {@item scholar's pack|phb}",
+          "Two {@item dagger|phb|daggers}"
+        ],
+        "goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
+        "defaultData": [
+          {
+            "a": [
+              "rapier|phb"
+            ],
+            "b": [
+              "shortsword|phb"
+            ]
+          },
+          {
+            "a": [
+              "arcane focus|phb"
+            ],
+            "b": [
+              "component pouch|phb"
+            ]
+          },
+          {
+            "a": [
+              "entertainer's pack|phb"
+            ],
+            "b": [
+              "scholar's pack|phb"
+            ]
+          },
+          {
+            "_": [
+              {
+                "item": "dagger|phb",
+                "quantity": 2
+              }
+            ]
+          }
+        ]
+      },
+      "multiclassing": {
+        "requirements": {
+          "int": 13
+        }
+      },
+      "preparedSpells": "<$level$> + <$int_mod$>",
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "Cantrips Known"
+          ],
+          "rows": [
+            [
+              3
+            ],
+            [
+              3
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              6
+            ]
+          ]
+        },
+        {
+          "title": "Spell Slots per Spell Level",
+          "colLabels": [
+            "{@filter 1st|spells|level=1|class=mesmer (AGI)}",
+            "{@filter 2nd|spells|level=2|class=mesmer (AGI)}",
+            "{@filter 3rd|spells|level=3|class=mesmer (AGI)}",
+            "{@filter 4th|spells|level=4|class=mesmer (AGI)}",
+            "{@filter 5th|spells|level=5|class=mesmer (AGI)}",
+            "{@filter 6th|spells|level=6|class=mesmer (AGI)}",
+            "{@filter 7th|spells|level=7|class=mesmer (AGI)}",
+            "{@filter 8th|spells|level=8|class=mesmer (AGI)}",
+            "{@filter 9th|spells|level=9|class=mesmer (AGI)}",
+            "{@filter 10th|spells|level=10|class=mesmer (AGI)}"
+          ],
+          "rows": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              2,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              2,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              2,
+              2,
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "Spellcasting|Mesmer|AspysGuidetoInfinitum|1",
+        "Replicate|Mesmer|AspysGuidetoInfinitum|1",
+        "Shatter|Mesmer|AspysGuidetoInfinitum|2",
+        {
+          "classFeature": "Mesmer Elite Specialization|Mesmer|AspysGuidetoInfinitum|3",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Mesmer|AspysGuidetoInfinitum|4",
+        "Illusory Onslaught|Mesmer|AspysGuidetoInfinitum|6",
+        {
+          "classFeature": "Elite Specialization|Mesmer|AspysGuidetoInfinitum|6",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Mesmer|AspysGuidetoInfinitum|8",
+        {
+          "classFeature": "Elite Specialization|Mesmer|AspysGuidetoInfinitum|10",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Mesmer|AspysGuidetoInfinitum|12",
+        {
+          "classFeature": "Elite Specialization|Mesmer|AspysGuidetoInfinitum|14",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Mesmer|AspysGuidetoInfinitum|16",
+        "Master of Mirrors|Mesmer|AspysGuidetoInfinitum|18",
+        "Ability score Improvement|Mesmer|AspysGuidetoInfinitum|19",
+        "Quantum Illusionist|Mesmer|AspysGuidetoInfinitum|20",
+        "Echoes of Infinity|Mesmer|AspysGuidetoInfinitum|21",
+        "Paradoxical Existence|Mesmer|AspysGuidetoInfinitum|22"
+      ],
+      "subclassTitle": "Mesmer Elite Specialization",
+      "classSpells": [
+        "Acid Splash",
+        "Cackle|WitchWBN",
+        "Guidance",
+        "Light",
+        "Mending",
+        "Minor Illusion",
+        "Produce Flame",
+        "Resistance",
+        "Shillelagh",
+        "True Strike",
+        "Animal Friendship",
+        "Alarm",
+        "Bane",
+        "Bless",
+        "Command",
+        "Cure Wounds",
+        "Detect Evil and Good",
+        "Detect Magic",
+        "Detect Poison and Disease",
+        "Disguise Self",
+        "Fog Cloud",
+        "Heroism",
+        "Tasha's Hideous Laughter",
+        "Inflict Wounds",
+        "Protection from Evil and Good",
+        "Shield",
+        "Silent Image",
+        "Sleep",
+        "Speak with Animals",
+        "Witch's Grasp|WitchWBN",
+        "Aid",
+        "Animal Messenger",
+        "Arcane Lock",
+        "Augury",
+        "Blindness/Deafness",
+        "Breath of Belladonna|WitchWBN",
+        "Cleansing Crystal|WitchWBN",
+        "Continual Flame",
+        "Darkness",
+        "Darkvision",
+        "Detect Thoughts",
+        "Enhance Ability",
+        "Enlarge/Reduce",
+        "Gust of Wind",
+        "Heat Metal",
+        "Hold Person",
+        "Invisibility",
+        "Lesser Restoration",
+        "Levitate",
+        "Magic Mouth",
+        "Misty Step",
+        "Protection from Poison",
+        "Ray of Enfeeblement",
+        "See Invisibility",
+        "Scorching Ray",
+        "Shatter",
+        "Silence",
+        "Spider Climb",
+        "Tongue-Tie",
+        "Web",
+        "Bestow Curse",
+        "Clairvoyance",
+        "Counterspell",
+        "Create Poppet|WitchWBN",
+        "Dispel Magic",
+        "Fear",
+        "Fly",
+        "Gaseous Form",
+        "Glyph of Warding",
+        "Hypnotic Pattern",
+        "Magic Circle",
+        "Major Image",
+        "Nondetection",
+        "Phantom Steed",
+        "Protection from Energy",
+        "Remove Curse",
+        "Sending",
+        "Slow",
+        "Speak with Dead",
+        "Swineskin||WitchWBN",
+        "Leomund's Tiny Hut|PHB",
+        "Tongues",
+        "Water Breathing",
+        "Water Walk",
+        "Arcane Eye",
+        "Banishment",
+        "Confusion",
+        "Conjure Minor Elementals",
+        "Conjure Woodland Beings",
+        "Control Water",
+        "Death Ward",
+        "Dimension Door",
+        "Divination",
+        "Fabricate",
+        "Mordenkainen's Faithful Hound|PHB",
+        "Fire Shield",
+        "Giant Insect",
+        "Locate Creature",
+        "Polymorph",
+        "Mordenkainen's Private Sanctum|PHB",
+        "Leomund's Secret Chest|PHB",
+        "Spellwarping Curse|WitchWBN",
+        "Stone Shape",
+        "Stoneskin",
+        "Wall of Fire",
+        "Wyrding|WitchWBN",
+        "Animate Hut|WitchWBN",
+        "Animate Objects",
+        "Bigby's Hand|PHB",
+        "Awaken",
+        "Commune",
+        "Conjure Elemental",
+        "Contact Other Plane",
+        "Creation",
+        "Dispel Evil and Good",
+        "Dream",
+        "Geas",
+        "Greater Restoration",
+        "Hallow",
+        "Insect Plague",
+        "Legend Lore",
+        "Mass Cure Wounds",
+        "Modify Memory",
+        "Othershoes|WitchWBN",
+        "Passwall",
+        "Planar Binding",
+        "Scrying",
+        "Seeming",
+        "Telekinesis",
+        "Telepathic Bond",
+        "Teleportation Circle",
+        "Wall of Force",
+        "Wall of Stone",
+        "Conjure Fey",
+        "Contingency",
+        "Create Undead",
+        "Eyebite",
+        "Find the Path",
+        "Flesh to Stone",
+        "Forbiddance",
+        "Globe of Invulnerability",
+        "Guards and Wards",
+        "Harm",
+        "Heal",
+        "Heroes' Feast",
+        "Drawmij's Instant Summons",
+        "Otto's Irresistable Dance|PHB",
+        "Magic Jar",
+        "Planar Ally",
+        "Programmed Illusion",
+        "Transport Via Plants",
+        "True Seeing",
+        "Wall of Ice",
+        "Wall of Thorns",
+        "Etherealness",
+        "Finger of Death",
+        "Forcecage",
+        "Mordenkainen's Magnificent Mansion|PHB",
+        "Mirage Arcane",
+        "Plane Shift",
+        "Prismatic Spray",
+        "Prject Image",
+        "Regenerate",
+        "Reverse Gravity",
+        "Sequester",
+        "Simulacrum",
+        "Symbol",
+        "Teleport",
+        "Animal Shapes",
+        "Antimagic Field",
+        "Antipathy/Sympathy",
+        "Control Weather",
+        "Demiplane",
+        "Earthquake",
+        "Feeblemind",
+        "Maze",
+        "Mind Blank",
+        "Miser's Menace|WitchWBN",
+        "Power Word Stun",
+        "Astral Projection",
+        "Foresight",
+        "Gate",
+        "Imprisonment",
+        "Mass Heal",
+        "Power World Kill",
+        "Prismatic Wall",
+        "Shapechange",
+        "True Polymorph",
+        "Weird",
+        "Wish"
+      ],
+      "casterProgression": "full",
+      "spellcastingAbility": "int",
+      "fluff": [
+        {
+          "type": "section",
+          "name": "The Mesmer",
+          "source": "AspysGuidetoInfinitum",
+          "entries": [
+            "In the heart of a bustling city, a cloaked figure dances through the shadows, their footsteps silent against the cobblestone. With a flick of their wrist, illusions spring to life, weaving a tapestry of deception that leaves onlookers in awe and adversaries in confusion.",
+            "Amidst the chaos of battle, a serene warrior stands untouched, their enemies bewildered as their strikes meet only mirages. With a gentle whisper, the Mesmer bends the perception of friend and foe alike, shaping the battlefield with an artist’s precision and a tactician’s cunning.",
+            "Mesmers are masters of illusion, manipulation, and mental magic, blurring the lines between reality and fantasy. While some spellcasters rely on brute force or elemental power, a Mesmer’s strength lies in subtlety and finesse, influencing the world around them with delicate, yet potent, manipulations of the mind.",
+            {
+              "type": "entries",
+              "name": "The Art of Illusion",
+              "entries": [
+                "To a Mesmer, reality is but a canvas for their artistry. They craft illusions with such detail and depth that even the most discerning eye can be fooled. These illusions can protect allies, ensnare enemies, or simply beguile the senses. The most skilled Mesmers can make their illusions so convincing they can inflict physical harm, blurring the lines between the mental and the material."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Mental Dominion",
+              "entries": [
+                "Mesmers wield control over minds with unparalleled grace, manipulating memories, emotions, and perceptions. They can soothe the weary, inspire the despondent, or sow chaos among their enemies. This mental dominion extends to themselves, allowing Mesmers to maintain clarity in the face of confusion and resist attempts to ensnare their own minds."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Creating a Mesmer",
+              "entries": [
+                "When creating a Mesmer, consider how they discovered their unique talents. Were they born with an innate ability to perceive the fabric of reality differently, or did they learn their skills from a mentor, honing their craft through study and practice? Think about how your character uses their abilities - do they perform in grand theaters, deceive their way through political intrigue, or employ their skills in service of a greater cause?",
+                "Consider also your character’s attitude towards their powers. Do they view their illusions as an art form, a weapon, or a tool for change? How do they feel about the ethical implications of manipulating perception and memory?"
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Quick Build",
+              "entries": [
+                "You can quickly build a Mesmer by following these suggestions. First, Intelligence should be your highest ability score, followed by Charisma or Dexterity. Second, choose the {@spell minor illusion}, {@spell charm person}, and {@spell disguise self} cantrips to start embodying the Mesmer's capabilities in manipulating both mind and senses."
+              ]
+            }
+          ]
+        }
+      ],
+      "cantripProgression": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6
+      ]
     }
   ],
   "classFeature": [
+    {
+      "name": "Spellcasting",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "page": 3,
+      "level": 1,
+      "entries": [
+        "As a master of illusion and mental manipulation, you can cast mesmer spells. Your magic weaves complex illusions and manipulates the minds of those around you, bending perceptions to your will and controlling the flow of battle through cunning and subtlety.",
+        {
+          "type": "entries",
+          "name": "Cantrips",
+          "page": 3,
+          "entries": [
+            "At 1st level, you know three cantrips of your choice from the {@filter mesmer spell list|spells|class=mesmer (AGI)}. You gain additional mesmer cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Mesmer table."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Preparing and Casting Spells",
+          "page": 3,
+          "entries": [
+            "The Mesmer table shows how many spell slots you have to cast your mesmer spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+            "You prepare the list of mesmer spells that are available for you to cast, choosing from the {@filter mesmer spell list|spells|class=mesmer (AGI)}. When you do so, choose a number of mesmer spells equal to your Intelligence modifier + your mesmer level (minimum of one spell). The spells must be of a level for which you have spell slots.",
+            "For example, if you are a 3rd-level mesmer, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell {@spell illusionary force}, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
+            "You can change your list of prepared spells when you finish a long rest. Preparing a new list of mesmer spells requires time spent in meditation and mental exercises: at least 1 minute per spell level for each spell on your list."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Spellcasting Ability",
+          "page": 3,
+          "entries": [
+            "Intelligence is your spellcasting ability for your mesmer spells, as your magic hinges on your ability to deceive, manipulate, and outsmart. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a mesmer spell you cast and when making an attack roll with one.",
+            {
+              "type": "abilityDc",
+              "name": "Spell",
+              "attributes": [
+                "int"
+              ]
+            },
+            {
+              "type": "abilityAttackMod",
+              "name": "Spell",
+              "attributes": [
+                "int"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Ritual Casting",
+          "page": 3,
+          "entries": [
+            "You can cast any mesmer spell you know as a ritual if that spell has the ritual tag and you have the spell prepared."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Spellcasting Focus",
+          "page": 3,
+          "entries": [
+            "You can use an {@item arcane focus|phb} as a spellcasting focus for your mesmer spells. Mesmers often use objects that reflect their personal flair and the theatrical nature of their magic, such as mirrors, masks, or crystal orbs, as their arcane focuses. To use such an item, you must spend an hour in concentration, imbuing it with your magical essence."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Replicate",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "level": 1,
+      "entries": [
+        "Harnessing your mastery over illusion, you have the unique ability to create and manipulate clones of yourself to confuse, distract, and damage your enemies. These replicas are fundamental to your tactics, providing both offensive and defensive capabilities.",
+        {
+          "type": "entries",
+          "name": "Clone Creation",
+          "page": 4,
+          "entries": [
+            "At 1st level, you gain the Replicate ability, allowing you to create clones. A clone mimics your actions and serves as a distraction, it has the same AC as you had at the moment it was created, having 1 hit point and causing attacks against it to be made with disadvantage. It uses your modifiers to make saving throws.",
+            "At any point, you can have as many clones active as your proficiency bonus. ",
+            {
+              "type": "entries",
+              "name": "Mirror Image",
+              "entries": [
+                "Whenever you cast a spell of 1st level or higher, you can create a clone of yourself in an unoccupied space within 30 feet. The clone lasts for 1 minute or until destroyed."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Decoy",
+              "entries": [
+                "As a bonus action on your turn, create a clone in your space that lasts for 1 minute or until destroyed. You can then move up to your speed without provoking opportunity attacks."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "I'm The Real One!!!",
+          "page": 4,
+          "entries": [
+            "At the end of your turn, you can command one of your clones to make a single attack against a target within its range. Make a melee spell attack against a target within 5ft of a clone. On a hit, it deals psychic damage equal to {@dice 1d4} + your Intelligence modifier."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Shatter",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "level": 2,
+      "entries": [
+        "At 2nd level, your mastery over illusions deepens, granting you the power to shatter your clones for devastating effects. Each shatter ability triggers a unique effect that scales with the number of clones you shatter.",
+        {
+          "type": "entries",
+          "name": "Shatter Style",
+          "entries": [
+            "Using a bonus action, you can shatter any number of your active clones within 60 feet. The effects of shattering are enhanced by the number of clones shattered, making your illusions more than mere distractions.",
+            {
+              "type": "entries",
+              "name": "Mind Wrack",
+              "entries": [
+                "Shatter your clones to deal psychic damage to all enemies adjacent to each clone. Damage each clone deals increases with the number of clones: {@dice 1d6} for one clone, {@dice 2d6} for two clones, doubling the dice for each additional clone shattered."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Cry of Frustration",
+              "entries": [
+                "Shatter your clones to inflict confusion on enemies near the clones. Each creature that is adjacent to a clone must make a wisdom saving throw or be {@i confused} till the end of its next turn. Creatures next to multiple clones need to make multiple saving throws.",
+                "A {@i confused} creature on its turn is muddled with defening thoughts as the clones cries ring out. It may use its action to focus and end the confusion. If it uses its action, bonus action, movement or reaction to do anything else while confused, it takes {@dice 1d8} psychic damage and the confusion ends. The damage increases with the number of clones shattered. {@dice 1d8} for 1 clone, {@dice 2d8} for 2 clones and so on. "
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Diversion",
+              "entries": [
+                "Shatter your clones to daze and disrupts your enemies. Each creature that is adjacent to a clone must make a dexterity saving throw or immediately lose thier reactions. Creatures next to multiple clones need to make multiple saving throws. If a creature was concentrating, it also needs to make a contitution saving throw to maintain concentration. The DC for which is enhanced by the number of clones you shatter. DC 10 + Shattered clones. "
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Distortion",
+              "entries": [
+                "Shatter your clones to and grant yourself a moment of invulnerability. You gain a pool of {@dice d6}'s that you can use to reduce damage dealt to you. The pool is as large as the number of clones shattered.",
+                "When you take damage, you can roll dice from this pool and reduce the damage by that amount after any reductions from resistance."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "level": 4,
+      "entries": [
+        "When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "level": 8,
+      "entries": [
+        "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "level": 12,
+      "entries": [
+        "When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "level": 16,
+      "entries": [
+        "When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "level": 19,
+      "entries": [
+        "When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
+    {
+      "name": "Illusory Onslaught",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "level": 6,
+      "entries": [
+        "At 6th level, your mastery over illusions allows you to weave them into more complex and damaging forms. Your illusions are now capable of executing a simultaneous attack, overwhelming your foes with a barrage of strikes from multiple angles.",
+        {
+          "type": "entries",
+          "name": "Enhanced Clone Attack",
+          "page": 8,
+          "entries": [
+            "Whenever you use your 'I'm The Real One!!!' ability to command one of your clones to attack, you can now make a second attack with another clone against the same target or a different one within range. Each attack uses your spell attack modifier and deals psychic damage equal to 1d4 + your Intelligence modifier. This ability represents your clones' enhanced capacity to harm, further blurring the line between illusion and reality."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Tactical Reposition",
+          "page": 8,
+          "entries": [
+            "In addition, whenever you create a clone using any of your abilities, you can choose to swap places with any one of your existing clones on the battlefield. This swap can be triggered once per turn, allowing you to reposition strategically without provoking opportunity attacks, enhancing your battlefield mobility and deceit."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Master of Mirrors",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "level": 18,
+      "entries": [
+        "At 18th level, your command over illusions allows you to manipulate the fabric of reality itself. You become a Master of Mirrors, able to create perfect reflections of reality that can harm, protect, or deceive.",
+        {
+          "type": "entries",
+          "name": "Reality's Reflection",
+          "entries": [
+            "As an action, you can create a mirrored area on the battlefield up to 30 feet in diameter within 120 feet of you. This area becomes a reflection of reality for 1 minute. Enemies within the area are subjected to disorienting visions, granting advantage on attacks against them. Allies within the area receive a reflection of themselves that can take a single hit in their stead, disappearing afterward."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Mirror Walk",
+          "entries": [
+            "Once per long rest, you can step into one mirror and emerge from another within 1 mile that you have seen before. This teleportation can be used to traverse great distances instantly, escape danger, or enter secured locations."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Ultimate Shatter",
+          "entries": [
+            "You gain the ability to perform an Ultimate Shatter, instantly ending all of your active illusions and causing a massive explosion of psychic energy. Each enemy within 30 feet of a shattered illusion takes 10d6 psychic damage, and must make an Intelligence saving throw or be stunned until the end of their next turn. This ability can be used once per long rest."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Quantum Illusionist",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "level": 20,
+      "entries": [
+        "At 20th level, you achieve the pinnacle of illusion mastery, becoming a Quantum Illusionist. Your understanding of reality, illusion, and the space between allows you to manipulate the fabric of existence itself, altering outcomes to your advantage.",
+        {
+          "type": "entries",
+          "name": "Quantum Flux",
+          "page": 14,
+          "entries": [
+            "Once per long rest, as an action, you can activate Quantum Flux. For the next minute, you gain the following benefits:",
+            "- You can reroll any attack roll, saving throw, or ability check made by you or against you, choosing the preferred outcome.",
+            "- When you or any of your allies within 60 feet of you take damage, you can use your reaction to halve that damage.",
+            "- You can teleport up to 30 feet as a bonus action on each of your turns."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Reality Warp",
+          "page": 14,
+          "entries": [
+            "In addition, you gain the ability to cast the spell 'wish' once, without needing material components. After you use this ability, you must finish a long rest before you can use it again."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mesmer Elite Specialization",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "page": 6,
+      "level": 3,
+      "entries": [
+        "At 3rd level, Mesmers choose a specialization that provides unique abilities and enhancements:",
+        {
+          "type": "list",
+          "items": [
+            "Chronomancer: Masters of time, Chronomancers can manipulate the flow of battle, offering abilities like speeding up ally actions or creating temporal fields that slow enemies.",
+            "Mirage: Specializing in deception, Mirages gain abilities to evade attacks, create more convincing illusions, and even make their clones perform semi-independent actions.",
+            "Illusionist: Focusing on the potency of their illusions, Illusionists enhance the durability and effects of their clones, and gain abilities that make their shattering effects more devastating."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Choosing Your Path",
+          "page": 6,
+          "entries": [
+            "When you choose your specialization at 3rd level, you gain specific abilities related to that path. These abilities are designed to complement and enhance your existing Mesmer skills, providing new tactical options and strategies."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Elite Specialization",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "level": 6,
+      "entries": [
+        "At 6th level, you gain a feature granted by your Elite Specialization."
+      ]
+    },
+    {
+      "name": "Elite Specialization",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "level": 10,
+      "entries": [
+        "At 10th level, you gain a feature granted by your Elite Specialization."
+      ]
+    },
+    {
+      "name": "Elite Specialization",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "level": 14,
+      "entries": [
+        "At 14th level, you gain a feature granted by your Elite Specialization."
+      ]
+    },
+    {
+      "name": "Echoes of Infinity",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "page": 16,
+      "level": 21,
+      "entries": [
+        "Achieving level 21, you unlock the ability to call upon your alternate selves from different realities for assistance, manifesting the true power of a Quantum Illusionist.",
+        {
+          "type": "entries",
+          "name": "Multiversal Assistance",
+          "page": 16,
+          "entries": [
+            "Once per long rest, as an action, you can summon an echo of yourself from an alternate reality. This echo appears within 30 feet of you and possesses all the abilities and spells you have but cannot use 'Echoes of Infinity'. It acts on your initiative and follows your commands mentally. The echo lasts for 1 minute or until it drops to 0 hit points."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Paradoxical Existence",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "page": 17,
+      "level": 22,
+      "entries": [
+        "At 22nd level, your grasp on the fabric of reality allows you to blur the lines between presence and absence, existing in multiple realities simultaneously.",
+        {
+          "type": "entries",
+          "name": "Ubiquitous Presence",
+          "page": 17,
+          "entries": [
+            "You can spend 10 minutes to create a duplicate of yourself that lasts for 24 hours. This duplicate can perform any action you can, including spellcasting, but it cannot create another duplicate with 'Paradoxical Existence'. You can have up to two duplicates at any time, and you share a mental link, allowing you to see through their eyes and communicate.",
+            "If a duplicate is killed, you must make a DC 15 Constitution saving throw or suffer one level of exhaustion. Duplicates disappear if they are killed or when the duration ends."
+          ]
+        }
+      ]
+    },
     {
       "name": "Choreurgy",
       "source": "tct",
@@ -32109,6 +33216,44 @@
     }
   ],
   "subclass": [
+    {
+      "name": "Chronomancer",
+      "shortName": "Chronomancer",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "optionalfeatureProgression": [
+        {
+          "name": "Chronomancer Wells",
+          "featureType": [
+            "CW"
+          ],
+          "progression": {
+            "3": 2,
+            "6": 3,
+            "10": 4,
+            "14": 5
+          }
+        }
+      ],
+      "subclassFeatures": []
+    },
+    {
+      "name": "Mirage",
+      "shortName": "Mirage",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "subclassFeatures": []
+    },
+    {
+      "name": "Illusionist",
+      "shortName": "Illusionist",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "subclassFeatures": []
+    },
     {
       "name": "Mysticshift Duelist",
       "shortName": "Mysticshift Duelist",
