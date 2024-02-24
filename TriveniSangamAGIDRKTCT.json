@@ -11003,6 +11003,654 @@
   ],
   "class": [
     {
+      "name": "Mesmer",
+      "source": "AspysGuidetoInfinitum",
+      "hd": {
+        "number": 2,
+        "faces": 4
+      },
+      "proficiency": [
+        "dex",
+        "cha"
+      ],
+      "startingProficiencies": {
+        "armor": [
+          "light"
+        ],
+        "weapons": [
+          "simple",
+          "{@item rapier|phb|rapiers}",
+          "{@item shortsword|phb|shortswords}"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "arcana",
+                "deception",
+                "insight",
+                "perception",
+                "persuasion",
+                "stealth"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "default": [
+          "(a) a {@item rapier|phb} or (b) a {@item shortsword|phb}",
+          "(a) an {@item arcane focus|phb} or (b) a {@item component pouch|phb}",
+          "(a) an {@item entertainer's pack|phb} or (b) a {@item scholar's pack|phb}",
+          "Two {@item dagger|phb|daggers}"
+        ],
+        "goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
+        "defaultData": [
+          {
+            "a": [
+              "rapier|phb"
+            ],
+            "b": [
+              "shortsword|phb"
+            ]
+          },
+          {
+            "a": [
+              "arcane focus|phb"
+            ],
+            "b": [
+              "component pouch|phb"
+            ]
+          },
+          {
+            "a": [
+              "entertainer's pack|phb"
+            ],
+            "b": [
+              "scholar's pack|phb"
+            ]
+          },
+          {
+            "_": [
+              {
+                "item": "dagger|phb",
+                "quantity": 2
+              }
+            ]
+          }
+        ]
+      },
+      "multiclassing": {
+        "requirements": {
+          "int": 13
+        }
+      },
+      "preparedSpells": "<$level$> + <$int_mod$>",
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "Cantrips Known"
+          ],
+          "rows": [
+            [
+              3
+            ],
+            [
+              3
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              6
+            ]
+          ]
+        },
+        {
+          "title": "Spell Slots per Spell Level",
+          "colLabels": [
+            "{@filter 1st|spells|level=1|class=mesmer (AGI)}",
+            "{@filter 2nd|spells|level=2|class=mesmer (AGI)}",
+            "{@filter 3rd|spells|level=3|class=mesmer (AGI)}",
+            "{@filter 4th|spells|level=4|class=mesmer (AGI)}",
+            "{@filter 5th|spells|level=5|class=mesmer (AGI)}",
+            "{@filter 6th|spells|level=6|class=mesmer (AGI)}",
+            "{@filter 7th|spells|level=7|class=mesmer (AGI)}",
+            "{@filter 8th|spells|level=8|class=mesmer (AGI)}",
+            "{@filter 9th|spells|level=9|class=mesmer (AGI)}",
+            "{@filter 10th|spells|level=10|class=mesmer (AGI)}"
+          ],
+          "rows": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              2,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              2,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              2,
+              2,
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "Spellcasting|Mesmer|AspysGuidetoInfinitum|1",
+        "Replicate|Mesmer|AspysGuidetoInfinitum|1",
+        "Shatter|Mesmer|AspysGuidetoInfinitum|2",
+        {
+          "classFeature": "Mesmer Elite Specialization|Mesmer|AspysGuidetoInfinitum|3",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Mesmer|AspysGuidetoInfinitum|4",
+        "Illusory Onslaught|Mesmer|AspysGuidetoInfinitum|6",
+        {
+          "classFeature": "Elite Specialization|Mesmer|AspysGuidetoInfinitum|6",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Mesmer|AspysGuidetoInfinitum|8",
+        {
+          "classFeature": "Elite Specialization|Mesmer|AspysGuidetoInfinitum|10",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Mesmer|AspysGuidetoInfinitum|12",
+        {
+          "classFeature": "Elite Specialization|Mesmer|AspysGuidetoInfinitum|14",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Mesmer|AspysGuidetoInfinitum|16",
+        "Master of Mirrors|Mesmer|AspysGuidetoInfinitum|18",
+        "Ability score Improvement|Mesmer|AspysGuidetoInfinitum|19",
+        "Quantum Illusionist|Mesmer|AspysGuidetoInfinitum|20",
+        "Echoes of Infinity|Mesmer|AspysGuidetoInfinitum|21",
+        "Paradoxical Existence|Mesmer|AspysGuidetoInfinitum|22"
+      ],
+      "subclassTitle": "Mesmer Elite Specialization",
+      "classSpells": [
+        "encode thoughts|ggr",
+        "mind sliver|tce",
+        "friends|phb",
+        "minor illusion|phb",
+        "vicious mockery|phb",
+        "animal friendship|phb",
+        "bane|phb",
+        "bless|phb",
+        "charm person|phb",
+        "color spray|phb",
+        "command|phb",
+        "compelled duel|phb",
+        "disguise self|phb",
+        "dissonant whispers|phb",
+        "distort value|ai",
+        "frost fingers|aspysguidetoinfinitum",
+        "heroism|phb",
+        "hex|phb",
+        "illusory script|phb",
+        "silent image|phb",
+        "silvery barbs|scc",
+        "sleep|phb",
+        "tasha's hideous laughter|phb",
+        "animal messenger|phb",
+        "becloud|tct",
+        "blur|phb",
+        "calm emotions|phb",
+        "crown of madness|phb",
+        "enthrall|phb",
+        "fool's speech|aspysguidetoinfinitum",
+        "gift of gab|ai",
+        "hibernation|aspysguidetoinfinitum",
+        "hold person|phb",
+        "invisibility|phb",
+        "jim's glowing coin|ai",
+        "magic mouth|phb",
+        "mirror image|phb",
+        "nathair's mischief|ftd",
+        "nystul's magic aura|phb",
+        "phantasmal force|phb",
+        "shadow blade|xge",
+        "silence|phb",
+        "suggestion|phb",
+        "tasha's mind whip|tce",
+        "zone of truth|phb",
+        "antagonize|bmt",
+        "awaken sin|tct",
+        "awaken sin|aspysguidetoinfinitum",
+        "catnap|xge",
+        "enemies abound|xge",
+        "fast friends|ai",
+        "fear|phb",
+        "hypnotic pattern|phb",
+        "incite greed|ai",
+        "major image|phb",
+        "motivational speech|ai",
+        "one-man band|tct",
+        "phantom steed|phb",
+        "accursed matrimony|tct",
+        "charm monster|xge",
+        "compulsion|phb",
+        "confusion|phb",
+        "dominate beast|phb",
+        "fool me once|tct",
+        "greater invisibility|phb",
+        "hallucinatory terrain|phb",
+        "mystic bolt|tct",
+        "mystic bolt|aspysguidetoinfinitum",
+        "phantasmal killer|phb",
+        "raulothim's psychic lance|ftd",
+        "scapegoat|aspysguidetoinfinitum",
+        "unluck|aspysguidetoinfinitum",
+        "waning valor|tct",
+        "creation|phb",
+        "dominate person|phb",
+        "dream|phb",
+        "geas|phb",
+        "godrage|tct",
+        "godrage|aspysguidetoinfinitum",
+        "hold monster|phb",
+        "mantle of dread|aspysguidetoinfinitum",
+        "mind mold|tct",
+        "mislead|phb",
+        "modify memory|phb",
+        "phoenix facade|tct",
+        "seeming|phb",
+        "synaptic static|xge",
+        "mass suggestion|phb",
+        "mental prison|xge",
+        "otto's irresistible dance|phb",
+        "programmed illusion|phb",
+        "mirage arcane|phb",
+        "power word fortify|drk",
+        "power word pain|xge",
+        "project image|phb",
+        "simulacrum|phb",
+        "antipathy/sympathy|phb",
+        "dominate monster|phb",
+        "feeblemind|phb",
+        "illusory dragon|xge",
+        "power word stun|phb",
+        "xenophobic rage|aspysguidetoinfinitum",
+        "night sky|aspysguidetoinfinitum",
+        "power word kill|phb",
+        "psychic scream|xge",
+        "weird|phb",
+        "blade ward|phb",
+        "booming blade|tce",
+        "control flames|xge",
+        "create bonfire|xge",
+        "dancing lights|phb",
+        "green-flame blade|tce",
+        "gust|xge",
+        "light|phb",
+        "mage hand|phb",
+        "mending|phb",
+        "prestidigitation|phb",
+        "snowball|tct",
+        "resistance|phb",
+        "produce flame|phb",
+        "sorcerous burst|drk",
+        "starry wisp|drk",
+        "thaumaturgy|phb",
+        "true strike|phb",
+        "absorb elements|xge"
+      ],
+      "casterProgression": "full",
+      "spellcastingAbility": "int",
+      "fluff": [
+        {
+          "type": "section",
+          "name": "The Mesmer",
+          "source": "AspysGuidetoInfinitum",
+          "entries": [
+            "In the heart of a bustling city, a cloaked figure dances through the shadows, their footsteps silent against the cobblestone. With a flick of their wrist, illusions spring to life, weaving a tapestry of deception that leaves onlookers in awe and adversaries in confusion.",
+            "Amidst the chaos of battle, a serene warrior stands untouched, their enemies bewildered as their strikes meet only mirages. With a gentle whisper, the Mesmer bends the perception of friend and foe alike, shaping the battlefield with an artist’s precision and a tactician’s cunning.",
+            "Mesmers are masters of illusion, manipulation, and mental magic, blurring the lines between reality and fantasy. While some spellcasters rely on brute force or elemental power, a Mesmer’s strength lies in subtlety and finesse, influencing the world around them with delicate, yet potent, manipulations of the mind.",
+            {
+              "type": "entries",
+              "name": "The Art of Illusion",
+              "entries": [
+                "To a Mesmer, reality is but a canvas for their artistry. They craft illusions with such detail and depth that even the most discerning eye can be fooled. These illusions can protect allies, ensnare enemies, or simply beguile the senses. The most skilled Mesmers can make their illusions so convincing they can inflict physical harm, blurring the lines between the mental and the material."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Mental Dominion",
+              "entries": [
+                "Mesmers wield control over minds with unparalleled grace, manipulating memories, emotions, and perceptions. They can soothe the weary, inspire the despondent, or sow chaos among their enemies. This mental dominion extends to themselves, allowing Mesmers to maintain clarity in the face of confusion and resist attempts to ensnare their own minds."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Creating a Mesmer",
+              "entries": [
+                "When creating a Mesmer, consider how they discovered their unique talents. Were they born with an innate ability to perceive the fabric of reality differently, or did they learn their skills from a mentor, honing their craft through study and practice? Think about how your character uses their abilities - do they perform in grand theaters, deceive their way through political intrigue, or employ their skills in service of a greater cause?",
+                "Consider also your character’s attitude towards their powers. Do they view their illusions as an art form, a weapon, or a tool for change? How do they feel about the ethical implications of manipulating perception and memory?"
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Quick Build",
+              "entries": [
+                "You can quickly build a Mesmer by following these suggestions. First, Intelligence should be your highest ability score, followed by Charisma or Dexterity. Second, choose the {@spell minor illusion}, {@spell charm person}, and {@spell disguise self} cantrips to start embodying the Mesmer's capabilities in manipulating both mind and senses."
+              ]
+            }
+          ]
+        }
+      ],
+      "cantripProgression": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6
+      ]
+    },
+    {
       "name": "Flickwrist",
       "source": "tct",
       "casterProgression": "1/3",
@@ -17278,719 +17926,6 @@
           "source": "DRK"
         }
       ]
-    },
-    {
-      "name": "Mesmer",
-      "source": "AspysGuidetoInfinitum",
-      "hd": {
-        "number": 2,
-        "faces": 4
-      },
-      "proficiency": [
-        "dex",
-        "cha"
-      ],
-      "startingProficiencies": {
-        "armor": [
-          "light"
-        ],
-        "weapons": [
-          "simple",
-          "{@item rapier|phb|rapiers}",
-          "{@item shortsword|phb|shortswords}"
-        ],
-        "skills": [
-          {
-            "choose": {
-              "from": [
-                "arcana",
-                "deception",
-                "insight",
-                "perception",
-                "persuasion",
-                "stealth"
-              ],
-              "count": 2
-            }
-          }
-        ]
-      },
-      "startingEquipment": {
-        "additionalFromBackground": true,
-        "default": [
-          "(a) a {@item rapier|phb} or (b) a {@item shortsword|phb}",
-          "(a) an {@item arcane focus|phb} or (b) a {@item component pouch|phb}",
-          "(a) an {@item entertainer's pack|phb} or (b) a {@item scholar's pack|phb}",
-          "Two {@item dagger|phb|daggers}"
-        ],
-        "goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
-        "defaultData": [
-          {
-            "a": [
-              "rapier|phb"
-            ],
-            "b": [
-              "shortsword|phb"
-            ]
-          },
-          {
-            "a": [
-              "arcane focus|phb"
-            ],
-            "b": [
-              "component pouch|phb"
-            ]
-          },
-          {
-            "a": [
-              "entertainer's pack|phb"
-            ],
-            "b": [
-              "scholar's pack|phb"
-            ]
-          },
-          {
-            "_": [
-              {
-                "item": "dagger|phb",
-                "quantity": 2
-              }
-            ]
-          }
-        ]
-      },
-      "multiclassing": {
-        "requirements": {
-          "int": 13
-        }
-      },
-      "preparedSpells": "<$level$> + <$int_mod$>",
-      "classTableGroups": [
-        {
-          "colLabels": [
-            "Cantrips Known"
-          ],
-          "rows": [
-            [
-              3
-            ],
-            [
-              3
-            ],
-            [
-              3
-            ],
-            [
-              4
-            ],
-            [
-              4
-            ],
-            [
-              4
-            ],
-            [
-              4
-            ],
-            [
-              4
-            ],
-            [
-              4
-            ],
-            [
-              5
-            ],
-            [
-              5
-            ],
-            [
-              5
-            ],
-            [
-              5
-            ],
-            [
-              5
-            ],
-            [
-              5
-            ],
-            [
-              5
-            ],
-            [
-              5
-            ],
-            [
-              5
-            ],
-            [
-              5
-            ],
-            [
-              5
-            ],
-            [
-              6
-            ],
-            [
-              6
-            ]
-          ]
-        },
-        {
-          "title": "Spell Slots per Spell Level",
-          "colLabels": [
-            "{@filter 1st|spells|level=1|class=mesmer (AGI)}",
-            "{@filter 2nd|spells|level=2|class=mesmer (AGI)}",
-            "{@filter 3rd|spells|level=3|class=mesmer (AGI)}",
-            "{@filter 4th|spells|level=4|class=mesmer (AGI)}",
-            "{@filter 5th|spells|level=5|class=mesmer (AGI)}",
-            "{@filter 6th|spells|level=6|class=mesmer (AGI)}",
-            "{@filter 7th|spells|level=7|class=mesmer (AGI)}",
-            "{@filter 8th|spells|level=8|class=mesmer (AGI)}",
-            "{@filter 9th|spells|level=9|class=mesmer (AGI)}",
-            "{@filter 10th|spells|level=10|class=mesmer (AGI)}"
-          ],
-          "rows": [
-            [
-              2,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
-            [
-              3,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
-            [
-              4,
-              2,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
-            [
-              4,
-              3,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
-            [
-              4,
-              3,
-              2,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
-            [
-              4,
-              3,
-              3,
-              0,
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
-            [
-              4,
-              3,
-              3,
-              1,
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
-            [
-              4,
-              3,
-              3,
-              2,
-              0,
-              0,
-              0,
-              0,
-              0
-            ],
-            [
-              4,
-              3,
-              3,
-              3,
-              1,
-              0,
-              0,
-              0,
-              0
-            ],
-            [
-              4,
-              3,
-              3,
-              3,
-              2,
-              0,
-              0,
-              0,
-              0
-            ],
-            [
-              4,
-              3,
-              3,
-              3,
-              2,
-              1,
-              0,
-              0,
-              0
-            ],
-            [
-              4,
-              3,
-              3,
-              3,
-              2,
-              1,
-              0,
-              0,
-              0
-            ],
-            [
-              4,
-              3,
-              3,
-              3,
-              2,
-              1,
-              1,
-              0,
-              0
-            ],
-            [
-              4,
-              3,
-              3,
-              3,
-              2,
-              1,
-              1,
-              0,
-              0
-            ],
-            [
-              4,
-              3,
-              3,
-              3,
-              2,
-              1,
-              1,
-              1,
-              0
-            ],
-            [
-              4,
-              3,
-              3,
-              3,
-              2,
-              1,
-              1,
-              1,
-              0
-            ],
-            [
-              4,
-              3,
-              3,
-              3,
-              2,
-              1,
-              1,
-              1,
-              1
-            ],
-            [
-              4,
-              3,
-              3,
-              3,
-              3,
-              1,
-              1,
-              1,
-              1
-            ],
-            [
-              4,
-              3,
-              3,
-              3,
-              3,
-              2,
-              1,
-              1,
-              1
-            ],
-            [
-              4,
-              3,
-              3,
-              3,
-              3,
-              2,
-              2,
-              1,
-              1
-            ],
-            [
-              4,
-              3,
-              3,
-              3,
-              3,
-              2,
-              2,
-              1,
-              1
-            ],
-            [
-              4,
-              3,
-              3,
-              3,
-              3,
-              2,
-              2,
-              2,
-              1,
-              1
-            ]
-          ]
-        }
-      ],
-      "classFeatures": [
-        "Spellcasting|Mesmer|AspysGuidetoInfinitum|1",
-        "Replicate|Mesmer|AspysGuidetoInfinitum|1",
-        "Shatter|Mesmer|AspysGuidetoInfinitum|2",
-        {
-          "classFeature": "Mesmer Elite Specialization|Mesmer|AspysGuidetoInfinitum|3",
-          "gainSubclassFeature": true
-        },
-        "Ability Score Improvement|Mesmer|AspysGuidetoInfinitum|4",
-        "Illusory Onslaught|Mesmer|AspysGuidetoInfinitum|6",
-        {
-          "classFeature": "Elite Specialization|Mesmer|AspysGuidetoInfinitum|6",
-          "gainSubclassFeature": true
-        },
-        "Ability Score Improvement|Mesmer|AspysGuidetoInfinitum|8",
-        {
-          "classFeature": "Elite Specialization|Mesmer|AspysGuidetoInfinitum|10",
-          "gainSubclassFeature": true
-        },
-        "Ability Score Improvement|Mesmer|AspysGuidetoInfinitum|12",
-        {
-          "classFeature": "Elite Specialization|Mesmer|AspysGuidetoInfinitum|14",
-          "gainSubclassFeature": true
-        },
-        "Ability Score Improvement|Mesmer|AspysGuidetoInfinitum|16",
-        "Master of Mirrors|Mesmer|AspysGuidetoInfinitum|18",
-        "Ability score Improvement|Mesmer|AspysGuidetoInfinitum|19",
-        "Quantum Illusionist|Mesmer|AspysGuidetoInfinitum|20",
-        "Echoes of Infinity|Mesmer|AspysGuidetoInfinitum|21",
-        "Paradoxical Existence|Mesmer|AspysGuidetoInfinitum|22"
-      ],
-      "subclassTitle": "Mesmer Elite Specialization",
-      "classSpells": [
-        "Acid Splash",
-        "Cackle|WitchWBN",
-        "Guidance",
-        "Light",
-        "Mending",
-        "Minor Illusion",
-        "Produce Flame",
-        "Resistance",
-        "Shillelagh",
-        "True Strike",
-        "Animal Friendship",
-        "Alarm",
-        "Bane",
-        "Bless",
-        "Command",
-        "Cure Wounds",
-        "Detect Evil and Good",
-        "Detect Magic",
-        "Detect Poison and Disease",
-        "Disguise Self",
-        "Fog Cloud",
-        "Heroism",
-        "Tasha's Hideous Laughter",
-        "Inflict Wounds",
-        "Protection from Evil and Good",
-        "Shield",
-        "Silent Image",
-        "Sleep",
-        "Speak with Animals",
-        "Witch's Grasp|WitchWBN",
-        "Aid",
-        "Animal Messenger",
-        "Arcane Lock",
-        "Augury",
-        "Blindness/Deafness",
-        "Breath of Belladonna|WitchWBN",
-        "Cleansing Crystal|WitchWBN",
-        "Continual Flame",
-        "Darkness",
-        "Darkvision",
-        "Detect Thoughts",
-        "Enhance Ability",
-        "Enlarge/Reduce",
-        "Gust of Wind",
-        "Heat Metal",
-        "Hold Person",
-        "Invisibility",
-        "Lesser Restoration",
-        "Levitate",
-        "Magic Mouth",
-        "Misty Step",
-        "Protection from Poison",
-        "Ray of Enfeeblement",
-        "See Invisibility",
-        "Scorching Ray",
-        "Shatter",
-        "Silence",
-        "Spider Climb",
-        "Tongue-Tie",
-        "Web",
-        "Bestow Curse",
-        "Clairvoyance",
-        "Counterspell",
-        "Create Poppet|WitchWBN",
-        "Dispel Magic",
-        "Fear",
-        "Fly",
-        "Gaseous Form",
-        "Glyph of Warding",
-        "Hypnotic Pattern",
-        "Magic Circle",
-        "Major Image",
-        "Nondetection",
-        "Phantom Steed",
-        "Protection from Energy",
-        "Remove Curse",
-        "Sending",
-        "Slow",
-        "Speak with Dead",
-        "Swineskin||WitchWBN",
-        "Leomund's Tiny Hut|PHB",
-        "Tongues",
-        "Water Breathing",
-        "Water Walk",
-        "Arcane Eye",
-        "Banishment",
-        "Confusion",
-        "Conjure Minor Elementals",
-        "Conjure Woodland Beings",
-        "Control Water",
-        "Death Ward",
-        "Dimension Door",
-        "Divination",
-        "Fabricate",
-        "Mordenkainen's Faithful Hound|PHB",
-        "Fire Shield",
-        "Giant Insect",
-        "Locate Creature",
-        "Polymorph",
-        "Mordenkainen's Private Sanctum|PHB",
-        "Leomund's Secret Chest|PHB",
-        "Spellwarping Curse|WitchWBN",
-        "Stone Shape",
-        "Stoneskin",
-        "Wall of Fire",
-        "Wyrding|WitchWBN",
-        "Animate Hut|WitchWBN",
-        "Animate Objects",
-        "Bigby's Hand|PHB",
-        "Awaken",
-        "Commune",
-        "Conjure Elemental",
-        "Contact Other Plane",
-        "Creation",
-        "Dispel Evil and Good",
-        "Dream",
-        "Geas",
-        "Greater Restoration",
-        "Hallow",
-        "Insect Plague",
-        "Legend Lore",
-        "Mass Cure Wounds",
-        "Modify Memory",
-        "Othershoes|WitchWBN",
-        "Passwall",
-        "Planar Binding",
-        "Scrying",
-        "Seeming",
-        "Telekinesis",
-        "Telepathic Bond",
-        "Teleportation Circle",
-        "Wall of Force",
-        "Wall of Stone",
-        "Conjure Fey",
-        "Contingency",
-        "Create Undead",
-        "Eyebite",
-        "Find the Path",
-        "Flesh to Stone",
-        "Forbiddance",
-        "Globe of Invulnerability",
-        "Guards and Wards",
-        "Harm",
-        "Heal",
-        "Heroes' Feast",
-        "Drawmij's Instant Summons",
-        "Otto's Irresistable Dance|PHB",
-        "Magic Jar",
-        "Planar Ally",
-        "Programmed Illusion",
-        "Transport Via Plants",
-        "True Seeing",
-        "Wall of Ice",
-        "Wall of Thorns",
-        "Etherealness",
-        "Finger of Death",
-        "Forcecage",
-        "Mordenkainen's Magnificent Mansion|PHB",
-        "Mirage Arcane",
-        "Plane Shift",
-        "Prismatic Spray",
-        "Prject Image",
-        "Regenerate",
-        "Reverse Gravity",
-        "Sequester",
-        "Simulacrum",
-        "Symbol",
-        "Teleport",
-        "Animal Shapes",
-        "Antimagic Field",
-        "Antipathy/Sympathy",
-        "Control Weather",
-        "Demiplane",
-        "Earthquake",
-        "Feeblemind",
-        "Maze",
-        "Mind Blank",
-        "Miser's Menace|WitchWBN",
-        "Power Word Stun",
-        "Astral Projection",
-        "Foresight",
-        "Gate",
-        "Imprisonment",
-        "Mass Heal",
-        "Power World Kill",
-        "Prismatic Wall",
-        "Shapechange",
-        "True Polymorph",
-        "Weird",
-        "Wish"
-      ],
-      "casterProgression": "full",
-      "spellcastingAbility": "int",
-      "fluff": [
-        {
-          "type": "section",
-          "name": "The Mesmer",
-          "source": "AspysGuidetoInfinitum",
-          "entries": [
-            "In the heart of a bustling city, a cloaked figure dances through the shadows, their footsteps silent against the cobblestone. With a flick of their wrist, illusions spring to life, weaving a tapestry of deception that leaves onlookers in awe and adversaries in confusion.",
-            "Amidst the chaos of battle, a serene warrior stands untouched, their enemies bewildered as their strikes meet only mirages. With a gentle whisper, the Mesmer bends the perception of friend and foe alike, shaping the battlefield with an artist’s precision and a tactician’s cunning.",
-            "Mesmers are masters of illusion, manipulation, and mental magic, blurring the lines between reality and fantasy. While some spellcasters rely on brute force or elemental power, a Mesmer’s strength lies in subtlety and finesse, influencing the world around them with delicate, yet potent, manipulations of the mind.",
-            {
-              "type": "entries",
-              "name": "The Art of Illusion",
-              "entries": [
-                "To a Mesmer, reality is but a canvas for their artistry. They craft illusions with such detail and depth that even the most discerning eye can be fooled. These illusions can protect allies, ensnare enemies, or simply beguile the senses. The most skilled Mesmers can make their illusions so convincing they can inflict physical harm, blurring the lines between the mental and the material."
-              ]
-            },
-            {
-              "type": "entries",
-              "name": "Mental Dominion",
-              "entries": [
-                "Mesmers wield control over minds with unparalleled grace, manipulating memories, emotions, and perceptions. They can soothe the weary, inspire the despondent, or sow chaos among their enemies. This mental dominion extends to themselves, allowing Mesmers to maintain clarity in the face of confusion and resist attempts to ensnare their own minds."
-              ]
-            },
-            {
-              "type": "entries",
-              "name": "Creating a Mesmer",
-              "entries": [
-                "When creating a Mesmer, consider how they discovered their unique talents. Were they born with an innate ability to perceive the fabric of reality differently, or did they learn their skills from a mentor, honing their craft through study and practice? Think about how your character uses their abilities - do they perform in grand theaters, deceive their way through political intrigue, or employ their skills in service of a greater cause?",
-                "Consider also your character’s attitude towards their powers. Do they view their illusions as an art form, a weapon, or a tool for change? How do they feel about the ethical implications of manipulating perception and memory?"
-              ]
-            },
-            {
-              "type": "entries",
-              "name": "Quick Build",
-              "entries": [
-                "You can quickly build a Mesmer by following these suggestions. First, Intelligence should be your highest ability score, followed by Charisma or Dexterity. Second, choose the {@spell minor illusion}, {@spell charm person}, and {@spell disguise self} cantrips to start embodying the Mesmer's capabilities in manipulating both mind and senses."
-              ]
-            }
-          ]
-        }
-      ],
-      "cantripProgression": [
-        3,
-        3,
-        3,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        5,
-        6,
-        6
-      ]
     }
   ],
   "classFeature": [
@@ -20947,7 +20882,7 @@
       "entries": [
         "{@i 3rd-level Mysticshift Duelist feature}",
         "Upon embarking on the path of the Mysticshift Duelist, you commit to mastering the art of combat through both traditional weaponry and the precise application of firearms. This unique synthesis of martial disciplines forms the foundation of your journey, preparing you for the eventual creation of your signature weapon—the Elemental Gunblade.",
-        "At 3rd level, you gain proficiency with one melee weapon and one firearm of your choice. These weapons become the focal point of your training, each representing one half of the duality you seek to master. Through rigorous practice, you learn to channel elemental energies into every strike and shot, laying the groundwork for the fusion of these disciplines.",
+        "At 3rd level, you gain proficiency with one {@filter melee weapon|items|category=basic|type=melee weapon} and one {@filter firearm|items|category=basic|type=firearm;modern;renaissance} of your choice. These weapons become the focal point of your training, each representing one half of the duality you seek to master. Through rigorous practice, you learn to channel elemental energies into every strike and shot, laying the groundwork for the fusion of these disciplines.",
         "Your dedication to mastering both the blade and the bullet grants you unique combat advantages. When wielding your chosen melee weapon or firearm, you gain a +1 bonus to attack rolls and the attacks count as magical for the purpose of overcomming resistance."
       ]
     },
@@ -33217,6 +33152,35 @@
   ],
   "subclass": [
     {
+      "name": "Mysticshift Duelist",
+      "shortName": "Mysticshift Duelist",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Fighter",
+      "classSource": "DRK",
+      "optionalfeatureProgression": [
+        {
+          "name": "Gunblade Stances",
+          "featureType": [
+            "GS"
+          ],
+          "progression": {
+            "3": 2,
+            "7": 3,
+            "10": 4,
+            "15": 5
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "The Mysticshift Duelist|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|3",
+        "Bond of Blade and Bullet|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|7",
+        "Stance Weaving|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|7",
+        "Elemental Resilience|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|10",
+        "Elemental Gunblade Ascendance|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|15",
+        "Elemental Resonance|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|18"
+      ]
+    },
+    {
       "name": "Chronomancer",
       "shortName": "Chronomancer",
       "source": "AspysGuidetoInfinitum",
@@ -33253,35 +33217,6 @@
       "className": "Mesmer",
       "classSource": "AspysGuidetoInfinitum",
       "subclassFeatures": []
-    },
-    {
-      "name": "Mysticshift Duelist",
-      "shortName": "Mysticshift Duelist",
-      "source": "AspysGuidetoInfinitum",
-      "className": "Fighter",
-      "classSource": "DRK",
-      "optionalfeatureProgression": [
-        {
-          "name": "Gunblade Stances",
-          "featureType": [
-            "GS"
-          ],
-          "progression": {
-            "3": 2,
-            "7": 3,
-            "10": 4,
-            "15": 5
-          }
-        }
-      ],
-      "subclassFeatures": [
-        "The Mysticshift Duelist|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|3",
-        "Bond of Blade and Bullet|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|7",
-        "Stance Weaving|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|7",
-        "Elemental Resilience|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|10",
-        "Elemental Gunblade Ascendance|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|15",
-        "Elemental Resonance|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|18"
-      ]
     },
     {
       "name": "Saboteur",
