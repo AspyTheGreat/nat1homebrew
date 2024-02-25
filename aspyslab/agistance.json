@@ -13,11 +13,1163 @@
       }
     ],
     "optionalFeatureTypes": {
-      "GS": "Gunblade Stance"
+      "GS": "Gunblade Stance",
+      "CW": "Chronomancer Wells"
     },
     "dateAdded": 0,
     "dateLastModified": 0
   },
+  "class": [
+    {
+      "name": "Mesmer",
+      "source": "AspysGuidetoInfinitum",
+      "hd": {
+        "number": 2,
+        "faces": 4
+      },
+      "proficiency": [
+        "dex",
+        "cha"
+      ],
+      "startingProficiencies": {
+        "armor": [
+          "light"
+        ],
+        "weapons": [
+          "simple",
+          "{@item rapier|phb|rapiers}",
+          "{@item shortsword|phb|shortswords}"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "arcana",
+                "deception",
+                "insight",
+                "perception",
+                "persuasion",
+                "stealth"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "default": [
+          "(a) a {@item rapier|phb} or (b) a {@item shortsword|phb}",
+          "(a) an {@item arcane focus|phb} or (b) a {@item component pouch|phb}",
+          "(a) an {@item entertainer's pack|phb} or (b) a {@item scholar's pack|phb}",
+          "Two {@item dagger|phb|daggers}"
+        ],
+        "goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
+        "defaultData": [
+          {
+            "a": [
+              "rapier|phb"
+            ],
+            "b": [
+              "shortsword|phb"
+            ]
+          },
+          {
+            "a": [
+              "arcane focus|phb"
+            ],
+            "b": [
+              "component pouch|phb"
+            ]
+          },
+          {
+            "a": [
+              "entertainer's pack|phb"
+            ],
+            "b": [
+              "scholar's pack|phb"
+            ]
+          },
+          {
+            "_": [
+              {
+                "item": "dagger|phb",
+                "quantity": 2
+              }
+            ]
+          }
+        ]
+      },
+      "multiclassing": {
+        "requirements": {
+          "int": 13
+        }
+      },
+      "preparedSpells": "<$level$> + <$int_mod$>",
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "Cantrips Known"
+          ],
+          "rows": [
+            [
+              3
+            ],
+            [
+              3
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              6
+            ]
+          ]
+        },
+        {
+          "title": "Spell Slots per Spell Level",
+          "colLabels": [
+            "{@filter 1st|spells|level=1|class=mesmer (AGI)}",
+            "{@filter 2nd|spells|level=2|class=mesmer (AGI)}",
+            "{@filter 3rd|spells|level=3|class=mesmer (AGI)}",
+            "{@filter 4th|spells|level=4|class=mesmer (AGI)}",
+            "{@filter 5th|spells|level=5|class=mesmer (AGI)}",
+            "{@filter 6th|spells|level=6|class=mesmer (AGI)}",
+            "{@filter 7th|spells|level=7|class=mesmer (AGI)}",
+            "{@filter 8th|spells|level=8|class=mesmer (AGI)}",
+            "{@filter 9th|spells|level=9|class=mesmer (AGI)}",
+            "{@filter 10th|spells|level=10|class=mesmer (AGI)}"
+          ],
+          "rows": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              2,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              2,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              2,
+              2,
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "Spellcasting|Mesmer|AspysGuidetoInfinitum|1",
+        "Replicate|Mesmer|AspysGuidetoInfinitum|1",
+        "Shatter|Mesmer|AspysGuidetoInfinitum|2",
+        {
+          "classFeature": "Mesmer Elite Specialization|Mesmer|AspysGuidetoInfinitum|3",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Mesmer|AspysGuidetoInfinitum|4",
+        "Illusory Onslaught|Mesmer|AspysGuidetoInfinitum|6",
+        {
+          "classFeature": "Elite Specialization|Mesmer|AspysGuidetoInfinitum|6",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Mesmer|AspysGuidetoInfinitum|8",
+        {
+          "classFeature": "Elite Specialization|Mesmer|AspysGuidetoInfinitum|10",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Mesmer|AspysGuidetoInfinitum|12",
+        {
+          "classFeature": "Elite Specialization|Mesmer|AspysGuidetoInfinitum|14",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Mesmer|AspysGuidetoInfinitum|16",
+        "Master of Mirrors|Mesmer|AspysGuidetoInfinitum|18",
+        "Ability score Improvement|Mesmer|AspysGuidetoInfinitum|19",
+        "Quantum Illusionist|Mesmer|AspysGuidetoInfinitum|20",
+        "Echoes of Infinity|Mesmer|AspysGuidetoInfinitum|21",
+        "Paradoxical Existence|Mesmer|AspysGuidetoInfinitum|22"
+      ],
+      "subclassTitle": "Mesmer Elite Specialization",
+      "classSpells": [
+        "encode thoughts|ggr",
+        "mind sliver|tce",
+        "friends|phb",
+        "minor illusion|phb",
+        "vicious mockery|phb",
+        "animal friendship|phb",
+        "bane|phb",
+        "bless|phb",
+        "charm person|phb",
+        "color spray|phb",
+        "command|phb",
+        "compelled duel|phb",
+        "disguise self|phb",
+        "dissonant whispers|phb",
+        "distort value|ai",
+        "frost fingers|aspysguidetoinfinitum",
+        "heroism|phb",
+        "hex|phb",
+        "illusory script|phb",
+        "silent image|phb",
+        "silvery barbs|scc",
+        "sleep|phb",
+        "tasha's hideous laughter|phb",
+        "animal messenger|phb",
+        "becloud|tct",
+        "blur|phb",
+        "calm emotions|phb",
+        "crown of madness|phb",
+        "enthrall|phb",
+        "fool's speech|aspysguidetoinfinitum",
+        "gift of gab|ai",
+        "hibernation|aspysguidetoinfinitum",
+        "hold person|phb",
+        "invisibility|phb",
+        "jim's glowing coin|ai",
+        "magic mouth|phb",
+        "mirror image|phb",
+        "nathair's mischief|ftd",
+        "nystul's magic aura|phb",
+        "phantasmal force|phb",
+        "shadow blade|xge",
+        "silence|phb",
+        "suggestion|phb",
+        "tasha's mind whip|tce",
+        "zone of truth|phb",
+        "antagonize|bmt",
+        "awaken sin|tct",
+        "awaken sin|aspysguidetoinfinitum",
+        "catnap|xge",
+        "enemies abound|xge",
+        "fast friends|ai",
+        "fear|phb",
+        "hypnotic pattern|phb",
+        "incite greed|ai",
+        "major image|phb",
+        "motivational speech|ai",
+        "one-man band|tct",
+        "phantom steed|phb",
+        "accursed matrimony|tct",
+        "charm monster|xge",
+        "compulsion|phb",
+        "confusion|phb",
+        "dominate beast|phb",
+        "fool me once|tct",
+        "greater invisibility|phb",
+        "hallucinatory terrain|phb",
+        "mystic bolt|tct",
+        "mystic bolt|aspysguidetoinfinitum",
+        "phantasmal killer|phb",
+        "raulothim's psychic lance|ftd",
+        "scapegoat|aspysguidetoinfinitum",
+        "unluck|aspysguidetoinfinitum",
+        "waning valor|tct",
+        "creation|phb",
+        "dominate person|phb",
+        "dream|phb",
+        "geas|phb",
+        "godrage|tct",
+        "godrage|aspysguidetoinfinitum",
+        "hold monster|phb",
+        "mantle of dread|aspysguidetoinfinitum",
+        "mind mold|tct",
+        "mislead|phb",
+        "modify memory|phb",
+        "phoenix facade|tct",
+        "seeming|phb",
+        "synaptic static|xge",
+        "mass suggestion|phb",
+        "mental prison|xge",
+        "otto's irresistible dance|phb",
+        "programmed illusion|phb",
+        "mirage arcane|phb",
+        "power word fortify|drk",
+        "power word pain|xge",
+        "project image|phb",
+        "simulacrum|phb",
+        "antipathy/sympathy|phb",
+        "dominate monster|phb",
+        "feeblemind|phb",
+        "illusory dragon|xge",
+        "power word stun|phb",
+        "xenophobic rage|aspysguidetoinfinitum",
+        "night sky|aspysguidetoinfinitum",
+        "power word kill|phb",
+        "psychic scream|xge",
+        "weird|phb",
+        "blade ward|phb",
+        "booming blade|tce",
+        "control flames|xge",
+        "create bonfire|xge",
+        "dancing lights|phb",
+        "green-flame blade|tce",
+        "gust|xge",
+        "light|phb",
+        "mage hand|phb",
+        "mending|phb",
+        "prestidigitation|phb",
+        "snowball|tct",
+        "resistance|phb",
+        "produce flame|phb",
+        "sorcerous burst|drk",
+        "starry wisp|drk",
+        "thaumaturgy|phb",
+        "true strike|phb",
+        "absorb elements|xge"
+      ],
+      "casterProgression": "full",
+      "spellcastingAbility": "int",
+      "fluff": [
+        {
+          "type": "section",
+          "name": "The Mesmer",
+          "source": "AspysGuidetoInfinitum",
+          "entries": [
+            "In the heart of a bustling city, a cloaked figure dances through the shadows, their footsteps silent against the cobblestone. With a flick of their wrist, illusions spring to life, weaving a tapestry of deception that leaves onlookers in awe and adversaries in confusion.",
+            "Amidst the chaos of battle, a serene warrior stands untouched, their enemies bewildered as their strikes meet only mirages. With a gentle whisper, the Mesmer bends the perception of friend and foe alike, shaping the battlefield with an artist’s precision and a tactician’s cunning.",
+            "Mesmers are masters of illusion, manipulation, and mental magic, blurring the lines between reality and fantasy. While some spellcasters rely on brute force or elemental power, a Mesmer’s strength lies in subtlety and finesse, influencing the world around them with delicate, yet potent, manipulations of the mind.",
+            {
+              "type": "entries",
+              "name": "The Art of Illusion",
+              "entries": [
+                "To a Mesmer, reality is but a canvas for their artistry. They craft illusions with such detail and depth that even the most discerning eye can be fooled. These illusions can protect allies, ensnare enemies, or simply beguile the senses. The most skilled Mesmers can make their illusions so convincing they can inflict physical harm, blurring the lines between the mental and the material."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Mental Dominion",
+              "entries": [
+                "Mesmers wield control over minds with unparalleled grace, manipulating memories, emotions, and perceptions. They can soothe the weary, inspire the despondent, or sow chaos among their enemies. This mental dominion extends to themselves, allowing Mesmers to maintain clarity in the face of confusion and resist attempts to ensnare their own minds."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Creating a Mesmer",
+              "entries": [
+                "When creating a Mesmer, consider how they discovered their unique talents. Were they born with an innate ability to perceive the fabric of reality differently, or did they learn their skills from a mentor, honing their craft through study and practice? Think about how your character uses their abilities - do they perform in grand theaters, deceive their way through political intrigue, or employ their skills in service of a greater cause?",
+                "Consider also your character’s attitude towards their powers. Do they view their illusions as an art form, a weapon, or a tool for change? How do they feel about the ethical implications of manipulating perception and memory?"
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Quick Build",
+              "entries": [
+                "You can quickly build a Mesmer by following these suggestions. First, Intelligence should be your highest ability score, followed by Charisma or Dexterity. Second, choose the {@spell minor illusion}, {@spell charm person}, and {@spell disguise self} cantrips to start embodying the Mesmer's capabilities in manipulating both mind and senses."
+              ]
+            }
+          ]
+        }
+      ],
+      "cantripProgression": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6
+      ]
+    }
+  ],
+  "classFeature": [
+    {
+      "name": "Spellcasting",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "page": 3,
+      "level": 1,
+      "entries": [
+        "As a master of illusion and mental manipulation, you can cast mesmer spells. Your magic weaves complex illusions and manipulates the minds of those around you, bending perceptions to your will and controlling the flow of battle through cunning and subtlety.",
+        {
+          "type": "entries",
+          "name": "Cantrips",
+          "page": 3,
+          "entries": [
+            "At 1st level, you know three cantrips of your choice from the {@filter mesmer spell list|spells|class=mesmer (AGI)}. You gain additional mesmer cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Mesmer table."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Preparing and Casting Spells",
+          "page": 3,
+          "entries": [
+            "The Mesmer table shows how many spell slots you have to cast your mesmer spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+            "You prepare the list of mesmer spells that are available for you to cast, choosing from the {@filter mesmer spell list|spells|class=mesmer (AGI)}. When you do so, choose a number of mesmer spells equal to your Intelligence modifier + your mesmer level (minimum of one spell). The spells must be of a level for which you have spell slots.",
+            "For example, if you are a 3rd-level mesmer, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell {@spell illusionary force}, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
+            "You can change your list of prepared spells when you finish a long rest. Preparing a new list of mesmer spells requires time spent in meditation and mental exercises: at least 1 minute per spell level for each spell on your list."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Spellcasting Ability",
+          "page": 3,
+          "entries": [
+            "Intelligence is your spellcasting ability for your mesmer spells, as your magic hinges on your ability to deceive, manipulate, and outsmart. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a mesmer spell you cast and when making an attack roll with one.",
+            {
+              "type": "abilityDc",
+              "name": "Spell",
+              "attributes": [
+                "int"
+              ]
+            },
+            {
+              "type": "abilityAttackMod",
+              "name": "Spell",
+              "attributes": [
+                "int"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Ritual Casting",
+          "page": 3,
+          "entries": [
+            "You can cast any mesmer spell you know as a ritual if that spell has the ritual tag and you have the spell prepared."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Spellcasting Focus",
+          "page": 3,
+          "entries": [
+            "You can use an {@item arcane focus|phb} as a spellcasting focus for your mesmer spells. Mesmers often use objects that reflect their personal flair and the theatrical nature of their magic, such as mirrors, masks, or crystal orbs, as their arcane focuses. To use such an item, you must spend an hour in concentration, imbuing it with your magical essence."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Replicate",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "level": 1,
+      "entries": [
+        "Harnessing your mastery over illusion, you have the unique ability to create and manipulate clones of yourself to confuse, distract, and damage your enemies. These replicas are fundamental to your tactics, providing both offensive and defensive capabilities.",
+        {
+          "type": "entries",
+          "name": "Clone Creation",
+          "page": 4,
+          "entries": [
+            "At 1st level, you gain the Replicate ability, allowing you to create clones. A clone mimics your actions and serves as a distraction, it has the same AC as you had at the moment it was created, having 1 hit point and causing attacks against it to be made with disadvantage. It uses your modifiers to make saving throws.",
+            "At any point, you can have as many clones active as your proficiency bonus. ",
+            {
+              "type": "entries",
+              "name": "Mirror Image",
+              "entries": [
+                "Whenever you cast a spell of 1st level or higher, you can create a clone of yourself in an unoccupied space within 30 feet. The clone lasts for 1 minute or until destroyed."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Decoy",
+              "entries": [
+                "As a bonus action on your turn, create a clone in your space that lasts for 1 minute or until destroyed. You can then move up to your speed without provoking opportunity attacks."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "I'm The Real One!!!",
+          "page": 4,
+          "entries": [
+            "At the end of your turn, you can command one of your clones to make a single attack against a target within its range. Make a melee spell attack against a target within 5ft of a clone. On a hit, it deals psychic damage equal to {@dice 1d4} + your Intelligence modifier."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Shatter",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "level": 2,
+      "entries": [
+        "At 2nd level, your mastery over illusions deepens, granting you the power to shatter your clones for devastating effects. Each shatter ability triggers a unique effect that scales with the number of clones you shatter.",
+        {
+          "type": "entries",
+          "name": "Shatter Style",
+          "entries": [
+            "Using a bonus action, you can shatter any number of your active clones within 60 feet. The effects of shattering are enhanced by the number of clones shattered, making your illusions more than mere distractions.",
+            {
+              "type": "entries",
+              "name": "Mind Wrack",
+              "entries": [
+                "Shatter your clones to deal psychic damage to all enemies adjacent to each clone. Damage each clone deals increases with the number of clones: {@dice 1d6} for one clone, {@dice 2d6} for two clones, doubling the dice for each additional clone shattered."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Cry of Frustration",
+              "entries": [
+                "Shatter your clones to inflict confusion on enemies near the clones. Each creature that is adjacent to a clone must make a wisdom saving throw or be {@i confused} till the end of its next turn. Creatures next to multiple clones need to make multiple saving throws.",
+                "A {@i confused} creature on its turn is muddled with defening thoughts as the clones cries ring out. It may use its action to focus and end the confusion. If it uses its action, bonus action, movement or reaction to do anything else while confused, it takes {@dice 1d8} psychic damage and the confusion ends. The damage increases with the number of clones shattered. {@dice 1d8} for 1 clone, {@dice 2d8} for 2 clones and so on. "
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Diversion",
+              "entries": [
+                "Shatter your clones to daze and disrupts your enemies. Each creature that is adjacent to a clone must make a dexterity saving throw or immediately lose thier reactions. Creatures next to multiple clones need to make multiple saving throws. If a creature was concentrating, it also needs to make a contitution saving throw to maintain concentration. The DC for which is enhanced by the number of clones you shatter. DC 10 + Shattered clones. "
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Distortion",
+              "entries": [
+                "Shatter your clones to and grant yourself a moment of invulnerability. You gain a pool of {@dice d6}'s that you can use to reduce damage dealt to you. The pool is as large as the number of clones shattered.",
+                "When you take damage, you can roll dice from this pool and reduce the damage by that amount after any reductions from resistance."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "level": 4,
+      "entries": [
+        "When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "level": 8,
+      "entries": [
+        "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "level": 12,
+      "entries": [
+        "When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "level": 16,
+      "entries": [
+        "When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "level": 19,
+      "entries": [
+        "When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
+    {
+      "name": "Illusory Onslaught",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "level": 6,
+      "entries": [
+        "At 6th level, your mastery over illusions allows you to weave them into more complex and damaging forms. Your illusions are now capable of executing a simultaneous attack, overwhelming your foes with a barrage of strikes from multiple angles.",
+        {
+          "type": "entries",
+          "name": "Enhanced Clone Attack",
+          "page": 8,
+          "entries": [
+            "Whenever you use your 'I'm The Real One!!!' ability to command one of your clones to attack, you can now make a second attack with another clone against the same target or a different one within range. Each attack uses your spell attack modifier and deals psychic damage equal to 1d4 + your Intelligence modifier. This ability represents your clones' enhanced capacity to harm, further blurring the line between illusion and reality."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Tactical Reposition",
+          "page": 8,
+          "entries": [
+            "In addition, whenever you create a clone using any of your abilities, you can choose to swap places with any one of your existing clones on the battlefield. This swap can be triggered once per turn, allowing you to reposition strategically without provoking opportunity attacks, enhancing your battlefield mobility and deceit."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Master of Mirrors",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "level": 18,
+      "entries": [
+        "At 18th level, your command over illusions allows you to manipulate the fabric of reality itself. You become a Master of Mirrors, able to create perfect reflections of reality that can harm, protect, or deceive.",
+        {
+          "type": "entries",
+          "name": "Reality's Reflection",
+          "entries": [
+            "As an action, you can create a mirrored area on the battlefield up to 30 feet in diameter within 120 feet of you. This area becomes a reflection of reality for 1 minute. Enemies within the area are subjected to disorienting visions, granting advantage on attacks against them. Allies within the area receive a reflection of themselves that can take a single hit in their stead, disappearing afterward."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Mirror Walk",
+          "entries": [
+            "Once per long rest, you can step into one mirror and emerge from another within 1 mile that you have seen before. This teleportation can be used to traverse great distances instantly, escape danger, or enter secured locations."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Ultimate Shatter",
+          "entries": [
+            "You gain the ability to perform an Ultimate Shatter, instantly ending all of your active illusions and causing a massive explosion of psychic energy. Each enemy within 30 feet of a shattered illusion takes 10d6 psychic damage, and must make an Intelligence saving throw or be stunned until the end of their next turn. This ability can be used once per long rest."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Quantum Illusionist",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "level": 20,
+      "entries": [
+        "At 20th level, you achieve the pinnacle of illusion mastery, becoming a Quantum Illusionist. Your understanding of reality, illusion, and the space between allows you to manipulate the fabric of existence itself, altering outcomes to your advantage.",
+        {
+          "type": "entries",
+          "name": "Quantum Flux",
+          "page": 14,
+          "entries": [
+            "Once per long rest, as an action, you can activate Quantum Flux. For the next minute, you gain the following benefits:",
+            "- You can reroll any attack roll, saving throw, or ability check made by you or against you, choosing the preferred outcome.",
+            "- When you or any of your allies within 60 feet of you take damage, you can use your reaction to halve that damage.",
+            "- You can teleport up to 30 feet as a bonus action on each of your turns."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Reality Warp",
+          "page": 14,
+          "entries": [
+            "In addition, you gain the ability to cast the spell 'wish' once, without needing material components. After you use this ability, you must finish a long rest before you can use it again."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mesmer Elite Specialization",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "page": 6,
+      "level": 3,
+      "entries": [
+        "At 3rd level, Mesmers choose a specialization that provides unique abilities and enhancements:",
+        {
+          "type": "list",
+          "items": [
+            "Chronomancer: Masters of time, Chronomancers can manipulate the flow of battle, offering abilities like speeding up ally actions or creating temporal fields that slow enemies.",
+            "Mirage: Specializing in deception, Mirages gain abilities to evade attacks, create more convincing illusions, and even make their clones perform semi-independent actions.",
+            "Illusionist: Focusing on the potency of their illusions, Illusionists enhance the durability and effects of their clones, and gain abilities that make their shattering effects more devastating."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Choosing Your Path",
+          "page": 6,
+          "entries": [
+            "When you choose your specialization at 3rd level, you gain specific abilities related to that path. These abilities are designed to complement and enhance your existing Mesmer skills, providing new tactical options and strategies."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Elite Specialization",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "level": 6,
+      "entries": [
+        "At 6th level, you gain a feature granted by your Elite Specialization."
+      ]
+    },
+    {
+      "name": "Elite Specialization",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "level": 10,
+      "entries": [
+        "At 10th level, you gain a feature granted by your Elite Specialization."
+      ]
+    },
+    {
+      "name": "Elite Specialization",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "level": 14,
+      "entries": [
+        "At 14th level, you gain a feature granted by your Elite Specialization."
+      ]
+    },
+    {
+      "name": "Echoes of Infinity",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "page": 16,
+      "level": 21,
+      "entries": [
+        "Achieving level 21, you unlock the ability to call upon your alternate selves from different realities for assistance, manifesting the true power of a Quantum Illusionist.",
+        {
+          "type": "entries",
+          "name": "Multiversal Assistance",
+          "page": 16,
+          "entries": [
+            "Once per long rest, as an action, you can summon an echo of yourself from an alternate reality. This echo appears within 30 feet of you and possesses all the abilities and spells you have but cannot use 'Echoes of Infinity'. It acts on your initiative and follows your commands mentally. The echo lasts for 1 minute or until it drops to 0 hit points."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Paradoxical Existence",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "page": 17,
+      "level": 22,
+      "entries": [
+        "At 22nd level, your grasp on the fabric of reality allows you to blur the lines between presence and absence, existing in multiple realities simultaneously.",
+        {
+          "type": "entries",
+          "name": "Ubiquitous Presence",
+          "page": 17,
+          "entries": [
+            "You can spend 10 minutes to create a duplicate of yourself that lasts for 24 hours. This duplicate can perform any action you can, including spellcasting, but it cannot create another duplicate with 'Paradoxical Existence'. You can have up to two duplicates at any time, and you share a mental link, allowing you to see through their eyes and communicate.",
+            "If a duplicate is killed, you must make a DC 15 Constitution saving throw or suffer one level of exhaustion. Duplicates disappear if they are killed or when the duration ends."
+          ]
+        }
+      ]
+    }
+  ],
+  "optionalfeature": [
+    {
+      "name": "Blaze Reprisal",
+      "source": "AspysGuidetoInfinitum",
+      "featureType": [
+        "GS"
+      ],
+      "entries": [
+        "1-2: Adds {@dice 1d8} fire damage to attacks.",
+        "3-4: Attacks cause targets to ignite, dealing {@dice 1d8} fire damage at the start of their next turn.",
+        "5: Attacks create a blaze around the target, dealing {@dice 2d8} fire damage to enemies within 10 feet.",
+        "6: Unleash a fiery explosion, dealing {@dice 4d8} fire damage to all enemies within 30 feet of you. Requires a Dexterity saving throw."
+      ]
+    },
+    {
+      "name": "Glacial Guard",
+      "source": "AspysGuidetoInfinitum",
+      "featureType": [
+        "GS"
+      ],
+      "entries": [
+        "1-2: Gain +1 AC and deal {@dice 1d4} cold damage to melee attackers.",
+        "3-4: Attacks slow the target, reducing their speed by 10 feet until your next turn.",
+        "5: Freeze the ground, making it difficult terrain in a 15-foot radius around the target.",
+        "6: Encase targets in ice on hit, {@condition stunned} for 1 turn. Requires a Constitution saving throw."
+      ]
+    },
+    {
+      "name": "Tempest Fury",
+      "source": "AspysGuidetoInfinitum",
+      "featureType": [
+        "GS"
+      ],
+      "entries": [
+        "1-2: Increase movement speed by 10 feet. Attacks add {@dice 1d4} lightning damage.",
+        "3-4: Attacks push enemies back 10 feet.",
+        "5: Gain advantage on all Dexterity saving throws and skill checks.",
+        "6: Create a tempest on hit, dealing {@dice 2d8} lightning damage to the target and up to two additional enemies within 20 feet."
+      ]
+    },
+    {
+      "name": "Stone Bulwark",
+      "source": "AspysGuidetoInfinitum",
+      "featureType": [
+        "GS"
+      ],
+      "entries": [
+        "1-2: Gain +2 to all saving throws. Resistance to nonmagical bludgeoning, piercing, and slashing damage.",
+        "3-4: Attacks fortify you, granting temporary hit points equal to {@dice 1d6} + your Constitution modifier.",
+        "5: Attacks cause the earth to grasp enemies, reducing their speed to 0 until the end of their next turn.",
+        "6: Trigger a localized earthquake, knocking enemies within 20 feet prone. Requires a Strength saving throw."
+      ]
+    },
+    {
+      "name": "Void Embrace",
+      "source": "AspysGuidetoInfinitum",
+      "featureType": [
+        "GS"
+      ],
+      "entries": [
+        "1-2: Attacks deal an additional {@dice 1d6} necrotic damage, healing you for half the amount dealt.",
+        "3-4: Diminish enemy strength, reducing their damage output by {@dice 1d4} for 1 turn.",
+        "5: Silence enemies hit, preventing them from casting spells for 1 turn. Requires a Wisdom saving throw.",
+        "6: Consume life force, dealing {@dice 3d6} necrotic damage to all enemies within 15 feet. You gain temporary hit points equal to the damage dealt."
+      ]
+    },
+    {
+      "name": "Solar Flare",
+      "source": "AspysGuidetoInfinitum",
+      "featureType": [
+        "GS"
+      ],
+      "entries": [
+        "1-2: Add {@dice 1d6} radiant damage to attacks. Dispel magical darkness in a 10-foot radius.",
+        "3-4: Illuminate targets, granting advantage on attacks against them and dealing {@dice 1d6} additional radiant damage.",
+        "5: Enemies hit are {@condition blinded} for 1 turn. Requires a Constitution saving throw.",
+        "6: A radiant burst expands from you, blinding all enemies within 20 feet and dealing {@dice 3d8} radiant damage. Requires a Constitution saving throw."
+      ]
+    },
+    {
+      "name": "Aether Wind",
+      "source": "AspysGuidetoInfinitum",
+      "featureType": [
+        "GS"
+      ],
+      "entries": [
+        "1-2: Attacks extend your reach by 5 feet and add {@dice 1d4} force damage.",
+        "3-4: Generate an updraft with each hit, allowing you to ignore difficult terrain.",
+        "5: Gain a flying speed of 30 feet for 1 turn.",
+        "6: Create a vortex on hit, pulling up to three enemies within 30 feet towards the target. Requires a Strength saving throw."
+      ]
+    },
+    {
+      "name": "Nature's Bind",
+      "source": "AspysGuidetoInfinitum",
+      "featureType": [
+        "GS"
+      ],
+      "entries": [
+        "1-2: Attacks deal an additional {@dice 1d6} poison damage and slow enemies by 10 feet.",
+        "3-4: Entangle enemies hit, reducing their speed to 0 until they succeed on a Strength saving throw.",
+        "5: Vines grapple the target, {@condition restraining} them for 1 turn. Requires a Strength saving throw.",
+        "6: A massive vine burst restrains all enemies within 20 feet, dealing {@dice 3d6} poison damage. Requires a Strength saving throw."
+      ]
+    }
+  ],
   "subclass": [
     {
       "name": "Mysticshift Duelist",
@@ -40,8 +1192,66 @@
         }
       ],
       "subclassFeatures": [
-        "The Mysticshift Duelist|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|3"
+        "The Mysticshift Duelist|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|3",
+        "Bond of Blade and Bullet|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|7",
+        "Stance Weaving|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|7",
+        "Elemental Resilience|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|10",
+        "Elemental Gunblade Ascendance|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|15",
+        "Elemental Resonance|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|18"
       ]
+    },
+    {
+      "name": "Planeswalker Duelist",
+      "shortName": "Planeswalker Duelist",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Wizard",
+      "classSource": "DRK",
+      "page": null,
+      "subclassFeatures": [
+        "Planar Infusion|Wizard|DRK|Planeswalker Duelist|AspysGuidetoInfinitum|2",
+        "Ethereal Step|Wizard|DRK|Planeswalker Duelist|AspysGuidetoInfinitum|2",
+        "Planar Strike|Wizard|DRK|Planeswalker Duelist|AspysGuidetoInfinitum|6",
+        "Planar Resilience|Wizard|DRK|Planeswalker Duelist|AspysGuidetoInfinitum|10",
+        "Reality Shift|Wizard|DRK|Planeswalker Duelist|AspysGuidetoInfinitum|14"
+      ]
+    },
+    {
+      "name": "Chronomancer",
+      "shortName": "Chronomancer",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "optionalfeatureProgression": [
+        {
+          "name": "Chronomancer Wells",
+          "featureType": [
+            "CW"
+          ],
+          "progression": {
+            "3": 2,
+            "6": 3,
+            "10": 4,
+            "14": 5
+          }
+        }
+      ],
+      "subclassFeatures": []
+    },
+    {
+      "name": "Mirage",
+      "shortName": "Mirage",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "subclassFeatures": []
+    },
+    {
+      "name": "Illusionist",
+      "shortName": "Illusionist",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "subclassFeatures": []
     }
   ],
   "subclassFeature": [
@@ -53,16 +1263,33 @@
       "subclassShortName": "Mysticshift Duelist",
       "subclassSource": "AspysGuidetoInfinitum",
       "level": 3,
+      "header": 1,
       "entries": [
         "Originating from the elite Cassius recon groups, Mysticshift Duelists blend emerging scientific insights and a deepening arcane understanding, born from a world where the weave of magic is unraveling. These pioneers of martial and mystical arts integrated newfound arcane knowledge into their combat techniques, crafting a refined martial art that harmonizes elemental forces with physical prowess. Over the years, their practices spread beyond Cassius, evolving into a distinguished discipline. Today, Mysticshift Duelists are renowned warriors who embody the art of transformation, leveraging elemental stances to dynamically adapt in combat. Their path demands a profound comprehension of both the elements and one's inner self, attracting those intrigued by the challenge of mastering such versatile and potent powers.",
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Gunblade Training|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|3"
+          "subclassFeature": "Arms of the Mysticshift|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|3"
         },
         {
           "type": "refSubclassFeature",
           "subclassFeature": "Elemental Stance Initiation|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|3"
         }
+      ]
+    },
+    {
+      "name": "Arms of the Mysticshift",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Fighter",
+      "classSource": "DRK",
+      "subclassShortName": "Mysticshift Duelist",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "{@i 3rd-level Mysticshift Duelist feature}",
+        "Upon embarking on the path of the Mysticshift Duelist, you commit to mastering the art of combat through both traditional weaponry and the precise application of firearms. This unique synthesis of martial disciplines forms the foundation of your journey, preparing you for the eventual creation of your signature weapon—the Elemental Gunblade.",
+        "At 3rd level, you gain proficiency with one {@filter melee weapon|items|category=basic|type=melee weapon} and one {@filter firearm|items|category=basic|type=firearm;modern;renaissance} of your choice. These weapons become the focal point of your training, each representing one half of the duality you seek to master. Through rigorous practice, you learn to channel elemental energies into every strike and shot, laying the groundwork for the fusion of these disciplines.",
+        "Your dedication to mastering both the blade and the bullet grants you unique combat advantages. When wielding your chosen melee weapon or firearm, you gain a +1 bonus to attack rolls and the attacks count as magical for the purpose of overcomming resistance."
       ]
     },
     {
@@ -73,11 +1300,12 @@
       "subclassShortName": "Mysticshift Duelist",
       "subclassSource": "AspysGuidetoInfinitum",
       "level": 3,
-      "header": 1,
+      "header": 2,
       "entries": [
         "{@i 3rd-level Mysticshift Duelist feature}",
-        "Starting 3rd level, you gain the ability to enter elemental stances, each enhancing your attacks in unique ways. Repeated attacks made while in the same stance grants additional effects based on the number of successful attacks made. Choose two stances when you get this feature.",
-        "You may choose an additional stance when you reach the 7th, 10th and 15th level in this class.",
+        "Starting at 3rd level, you gain the ability to adopt elemental stances, each offering unique enhancements to your attacks. When you make a weapon attack, you may choose one of your stances to activate it, adding the effects from the stance if it hits. Repeated attacks made with the same stance grants additional effects stacking based on the number of successful attacks made. Switching stances resets the stacks to 0.",
+        "The saving throw DC for stance effects is 8 + your proficiency bonus + your Strength or Dexterity modifier (whichever is higher).",
+        "Select two stances initially, you may choose an additional stance when you reach the 7th, 10th and 15th level in this class.",
         {
           "type": "table",
           "caption": "Stances",
@@ -85,8 +1313,8 @@
             "Elemental Stance",
             "1-2",
             "3-4",
-            5,
-            6
+            "5",
+            "6"
           ],
           "colStyles": [
             "col-1 text-center",
@@ -98,183 +1326,957 @@
           "rows": [
             [
               "Blaze Reprisal Stance",
-              "+1d4 fire damage on attacks.",
-              "Attacks cause the target to shed light, reducing their stealth.",
-              "Attacks ignite flammable objects.",
-              "A fiery explosion occurs on hit, dealing AoE fire damage to enemies within 5 feet of the target."
+              "Add {@dice 1d8} fire damage to attacks.",
+              "Attacks ignite targets, dealing {@dice 1d8} ongoing fire damage for 1 turn.",
+              "Create a blaze around the target, dealing {@dice 2d8} fire damage to enemies within 10 feet.",
+              "Unleash a fiery explosion on hit, dealing {@dice 4d8} fire damage to all enemies within 30 feet. Requires a Dexterity saving throw."
             ],
             [
               "Glacial Guard",
-              "+1 AC",
-              "Melee attackers take cold damage.",
-              "Ground within 5 feet becomes difficult terrain.",
-              "Encase a hit enemy in ice, stunning them for 1 turn."
+              "Gain +1 AC and deal {@dice 1d4} cold damage to melee attackers.",
+              "Attacks slow the target, reducing their speed by 10 feet until your next turn.",
+              "Freeze the ground, making it difficult terrain in a 15-foot radius around the target.",
+              "Encase targets in ice on hit, {@condition stunned} for 1 turn. Requires a Constitution saving throw."
             ],
             [
               "Tempest Fury",
-              "+5 feet movement speed.",
-              "Generate a gust with each attack, pushing enemies back.",
-              "Attacks grant advantage on the next skill check or saving throw.",
-              "Summon a localized storm on hit, causing lightning damage to the target and nearby enemies."
+              "Increase movement speed by 10 feet and add {@dice 1d4} lightning damage to attacks.",
+              "Attacks push enemies back 10 feet.",
+              "Gain advantage on all Dexterity saving throws and skill checks.",
+              "Create a tempest on hit, dealing {@dice 2d8} lightning damage to the target and up to two additional enemies within 20 feet."
             ],
             [
               "Stone Bulwark",
-              "+2 to saving throws",
-              "Gain resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.",
-              "Attacks can knock enemies prone.",
-              "Cause a minor earthquake to knock nearby enemies prone and deal damage."
+              "Gain +2 to all saving throws and resistance to nonmagical bludgeoning, piercing, and slashing damage.",
+              "Attacks fortify you, granting temporary hit points equal to {@dice 1d6} + your Constitution modifier.",
+              "Attacks can cause the earth to grasp enemies, reducing their speed to 0 until the end of their next turn.",
+              "Trigger a localized earthquake, knocking enemies within 20 feet prone. Requires a Strength saving throw."
             ],
             [
               "Void Embrace",
-              "+1d4 necrotic damage.",
-              "Siphon strength, reducing enemy damage.",
-              "Attacks silence casters for 1 turn.",
-              "Devour essence, severely weakening or possibly killing a low-health enemy outright."
+              "Attacks deal an additional {@dice 1d6} necrotic damage, healing you for half the amount dealt.",
+              "Diminish enemy strength, reducing their damage output by {@dice 1d4} for 1 turn.",
+              "Silence enemies hit, preventing them from casting spells for 1 turn. Requires a Wisdom saving throw.",
+              "Consume life force, dealing {@dice 3d6} necrotic damage and gaining temporary hit points equal to the damage dealt. Affects all enemies within 15 feet."
             ],
             [
               "Solar Flare",
-              "+1d4 radiant damage.",
-              "Attacks dispel magical darkness.",
-              "Illuminate targets, granting advantage on attacks against them.",
-              "A radiant burst blinds all enemies within a 10-foot radius."
+              "Add {@dice 1d6} radiant damage to attacks and dispel magical darkness in a 10-foot radius.",
+              "Illuminate targets, granting advantage on attacks against them and dealing {@dice 1d6} additional radiant damage.",
+              "Enemies hit are {@condition blinded} for 1 turn. Requires a Constitution saving throw.",
+              "A radiant burst expands from you, blinding all enemies within 20 feet and dealing {@dice 3d8} radiant damage. Requires a Constitution saving throw."
             ],
             [
               "Aether Wind",
-              "Increase reach by 5 feet.",
-              "Attacks generate a lift, allowing you to leap or dodge freely.",
-              "Gain a temporary flying speed.",
-              "Create a vortex, pulling enemies toward you or scattering them away."
+              "Attacks extend your reach by 5 feet and add {@dice 1d4} force damage.",
+              "Generate an updraft with each hit, granting you the ability to ignore difficult terrain.",
+              "Gain a flying speed of 30 feet for 1 turn.",
+              "Create a vortex on hit, pulling up to three enemies within 30 feet towards the target. Requires a Strength saving throw."
             ],
             [
-              "Nature\\'s Bind",
-              "+1d4 poison damage.",
-              "Attacks plant seeds of entanglement, slowing enemies.",
-              "Sprout thorny vines on hit, grappling the enemy.",
-              "A massive vine burst entangles all enemies within a 10-foot radius, restraining them."
+              "Nature's Bind",
+              "Attacks deal an additional {@dice 1d6} poison damage and slow enemies by 10 feet.",
+              "Entangle enemies hit, reducing their speed to 0 until they succeed on a Strength saving throw.",
+              "Vines grapple the target, {@condition restraining} them for 1 turn. Requires a Strength saving throw.",
+              "A massive vine burst restrains all enemies within 20 feet, dealing {@dice 3d6} poison damage. Requires a Strength saving throw."
             ]
           ]
-        }
+        },
+        "Upon reaching 6 successful attacks in the same stance, unleash the specified effect. Stacks reset to 1 thereafter."
       ]
     },
     {
-      "name": "Gunblade Training",
+      "name": "Bond of Blade and Bullet",
       "source": "AspysGuidetoInfinitum",
       "className": "Fighter",
       "classSource": "DRK",
       "subclassShortName": "Mysticshift Duelist",
       "subclassSource": "AspysGuidetoInfinitum",
-      "level": 3,
+      "level": 7,
       "header": 1,
       "entries": [
-        "{@i 3rd-level Mysticshift Duelist feature}",
-        "Upon embarking on the path of the Mysticshift Duelist, you commit to mastering the art of combat through both traditional weaponry and the precise application of firearms. This unique synthesis of martial disciplines forms the foundation of your journey, preparing you for the eventual creation of your signature weapon—the Elemental Gunblade.",
-        "At 3rd level, you gain proficiency with one melee weapon and one firearm of your choice. These weapons become the focal point of your training, each representing one half of the duality you seek to master. Through rigorous practice, you learn to channel elemental energies into every strike and shot, laying the groundwork for the fusion of these disciplines."
+        "{@i 7rd-level Mysticshift Duelist feature}",
+        "At 7th level, you gain the ability to combine your chosen melee weapon and firearm into a singular, powerful weapon: the Elemental Gunblade. This fusion requires a ritual that spans a day and a night, during which you must channel elemental energies into the weapons, binding them with your own spirit. The resulting Elemental Gunblade is a masterwork of craftsmanship and arcane power, unique to you and unusable by anyone else.",
+        " Upon completing the ritual, you gain proficiency with your Elemental Gunblade, which retains the properties of both the original melee weapon and firearm. The elemental gunblade also counts as one of your chosen weapons and benefits from the +1 bonus to attack rolls.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Elemental Reverb|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|7"
+        }
+      ]
+    },
+    {
+      "name": "Elemental Reverb",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Fighter",
+      "classSource": "DRK",
+      "subclassShortName": "Mysticshift Duelist",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 7,
+      "header": 2,
+      "entries": [
+        "At 7th level, you gain the ability to instantly channel the full force of an Elemental Stance through your Gunblade. Once per short rest, as part of an attack, you can apply one of your known stance's max stack effect on your target.",
+        "Additionally, when you switch stances from max stacks, the energy release emits a 15-foot radius elemental shockwave, dealing {@dice 2d8} force damage and pushing creatures of your choice back 5 feet on a failed Dexterity save."
+      ]
+    },
+    {
+      "name": "Stance Weaving",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Fighter",
+      "classSource": "DRK",
+      "subclassShortName": "Mysticshift Duelist",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 7,
+      "header": 1,
+      "entries": [
+        "{@i 7rd-level Mysticshift Duelist feature}",
+        "By 7th level, you have mastered the ability to shift between your known elemental stances in such rapid fluidity that they have begun to weave more effectively. ",
+        "As a bonus action on your turn, you enter a perfect weave state for 1 minute. If you have a stance active, you gain 5 stacks in it immediately. While in this state, when you switch to a new stance the effects from the previous one linger until the next switch. You must also switch stances every turn to keep perfect weave active. You lose perfect weave at the end of your turn if you have not switched stances atleast once.   ",
+        "You may enter this state as many times as your proficiency bonus and uses recharge on a short rest"
+      ]
+    },
+    {
+      "name": "Elemental Resilience",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Fighter",
+      "classSource": "DRK",
+      "subclassShortName": "Mysticshift Duelist",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 10,
+      "header": 1,
+      "entries": [
+        "{@i 10th-level Mysticshift Duelist feature}",
+        "Your mastery over the elemental forces not only empowers your attacks but also fortifies your resolve and vitality. This mastery manifests in two key ways:",
+        {
+          "type": "list",
+          "items": [
+            "Defensive Harmony: You gain a bonus to all saving throws equal to half the number of stacks (rounded down)       you have in any stance. This bonus reflects your heightened elemental awareness, enhancing your ability to evade or withstand harmful effects.",
+            "Elemental Transference: When you switch stances, the accumulated elemental energy rejuvenates you, healing you for an amount equal to the number of stacks in the previous stance before the switch. This healing represents the restorative power of the elements flowing through you, a reward for your strategic mastery over the elemental stances."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Elemental Gunblade Ascendance",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Fighter",
+      "classSource": "DRK",
+      "subclassShortName": "Mysticshift Duelist",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 15,
+      "header": 1,
+      "entries": [
+        "{@i 15th-level Mysticshift Duelist feature}",
+        "Your mastery of the elemental stances allows you to unleash a devastating Ascendant Attack, channeling the full might of your chosen element through your Elemental Gunblade.",
+        "Upon reaching the maximum stacks in an elemental stance twice in a row, you gain the ability to perform an Ascendant Attack associated with that stance for the next one minute. You may use this special ascendant attack in place of one of your extra attacks. These powerful attacks can be used once per long rest for each stance.",
+        "The Ascendant Attacks are as follows:",
+        {
+          "type": "list",
+          "items": [
+            "Inferno Vortex (Blaze Reprisal Stance): Create a 30-foot radius vortex of fire at a point you can see within 120 feet. Creatures in the area must make a Dexterity saving throw, taking {@dice 6d6} fire damage on a failed save, or half as much damage on a successful one. The area becomes difficult terrain, and creatures that fail the save are also {@condition blinded} by the intense flames for 1 minute. An affected creature at the end of each of its turns may repeat the saving throw to try and end the blindness.",
+            "Frost Sigil (Glacial Guard): Summon a sigil on the ground within a 60-foot radius. Creatures in the area must make a Constitution saving throw, taking {@dice 4d6} cold damage on a failed save and becoming {@condition slowed} for 1 minute on a failed save. The ground becomes difficult terrain. An affected creature at the end of each of its turns may repeat the saving throw to try and end the slowness.",
+            "Lightning Tempest (Tempest Fury): Target up to three creatures you can see within 150 feet. Each must make a Dexterity saving throw, taking {@dice 5d6} lightning damage on a failed save, or half as much damage on a successful one. Affected creatures are also {@condition stunned} until the end of your next turn.",
+            "Earthshaker Pulse (Stone Bulwark): Cause an earthquake in a 50-foot radius around you. Enemies must make a Strength saving throw or be {@condition knocked prone} and take {@dice 4d6} bludgeoning damage. The affected area becomes difficult terrain.",
+            "Abyssal Drain (Void Embrace): Release a 20-foot radius wave of dark energy. Enemies within range must make a Wisdom saving throw, taking {@dice 5d6} necrotic damage on a failed save, or half as much damage on a successful one. You gain temporary hit points equal to the highest damage dealt to one target.",
+            "Radiant Dawn (Solar Flare): Emit a 60-foot radius burst of radiant light. Enemies within the burst must make a Constitution saving throw or be {@condition blinded} for 1 minute and take {@dice 5d6} radiant damage. Allies in the area gain temporary hit points equal to your fighter level. An affected creature at the end of each of its turns may repeat the saving throw to try and end the blindness.",
+            "Galeforce Dash (Aether Wind): Transform into a gust of wind, moving up to 100 feet in a line that is 5 feet wide. Each creature in the line must make a Dexterity saving throw, taking {@dice 4d6} force damage on a failed save, and is {@condition pushed} 15 feet to the side of the line on a failed save.",
+            "Verdant Cataclysm (Nature's Bind): Cause a 40-foot radius of thorny vines to erupt. Creatures in the area must make a Strength saving throw or be {@condition restrained} and take {@dice 4d6} piercing damage at the start of each of their turns. On a success, the creature is no longer restrained and moves to the nearest unoccupied space outside the vines. The area becomes difficult terrain."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Elemental Resonance",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Fighter",
+      "classSource": "DRK",
+      "subclassShortName": "Mysticshift Duelist",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 18,
+      "header": 1,
+      "entries": [
+        "At 18th level, select an elemental stance at dawn; its base effect is always on. When you hit max stacks on your selected stance, you can activate Elemental Resonance for 1 minute, maximizing your chosen stance's effects without needing stacks on each attack. This power surge ends if you're incapacitated or prone.",
+        "Once Elemental resonance ends, you may use it again after a long rest."
+      ]
+    },
+    {
+      "name": "Planar Infusion",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Wizard",
+      "classSource": "DRK",
+      "subclassShortName": "Planeswalker Duelist",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 2,
+      "entries": [
+        "You can infuse your spells with the raw energy of the multiverse. Once per turn, when you cast a spell, you can choose one creature affected by the spell. The target takes an extra 1d8 damage of a type determined by the plane you're channeling (fire for the Elemental Plane of Fire, necrotic for the Shadowfell, etc.). This damage increases to 2d8 at 10th level and 3d8 at 14th level."
+      ]
+    },
+    {
+      "name": "Ethereal Step",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Wizard",
+      "classSource": "DRK",
+      "subclassShortName": "Planeswalker Duelist",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 2,
+      "entries": [
+        "As a bonus action, you can step into the Ethereal Plane, teleporting up to 30 feet to an unoccupied space you can see. Upon arrival, you can cast a cantrip as part of the same bonus action. You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest."
+      ]
+    },
+    {
+      "name": "Planar Strike",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Wizard",
+      "classSource": "DRK",
+      "subclassShortName": "Planeswalker Duelist",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 6,
+      "entries": [
+        "When you hit a creature with a spell attack, you can disrupt their connection to the current plane. The target must make a Wisdom saving throw against your spell save DC or be banished to a demiplane for 1 minute (the creature can attempt a new save at the end of each of its turns). After using this feature, you can't use it again until you finish a short or long rest."
+      ]
+    },
+    {
+      "name": "Planar Resilience",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Wizard",
+      "classSource": "DRK",
+      "subclassShortName": "Planeswalker Duelist",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 10,
+      "entries": [
+        "You gain resistance to damage types associated with other planes (choose two from acid, cold, fire, lightning, necrotic, or radiant) and advantage on saving throws against spells and effects originating from other planes."
+      ]
+    },
+    {
+      "name": "Reality Shift",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Wizard",
+      "classSource": "DRK",
+      "subclassShortName": "Planeswalker Duelist",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 14,
+      "entries": [
+        "Once per long rest, you can alter reality to match that of another plane for 1 minute. Choose an environment (Fiery, Icy, Stormy, etc.). The area in a 60-foot radius around you transforms to match this environment, granting you and your allies benefits aligned with the chosen plane (e.g., fire immunity in a Fiery environment) and imposing disadvantages on your enemies (e.g., vulnerability to fire in a Fiery environment)."
       ]
     }
   ],
-  "optionalfeature": [
+  "item": [
     {
-      "name": "Blaze Reprisal",
+      "name": "(Lathander) Vastavikta, The Reality Monger",
       "source": "AspysGuidetoInfinitum",
-      "featureType": [
-        "GS"
+      "type": "M",
+      "rarity": "artifact",
+      "weight": 2,
+      "weaponCategory": "martial",
+      "property": [
+        "H",
+        "2H"
       ],
+      "dmg1": "2d6",
+      "dmgType": "S",
+      "sword": true,
+      "weapon": false,
+      "reqAttune": "by a Paladin/Zealot Barbarian of Good/Neutral Alignment",
+      "bonusWeapon": "+4",
       "entries": [
-        "+1d4 fire damage on attacks.",
-        "Attacks cause the target to shed light, reducing their stealth.",
-        "Attacks ignite flammable objects.",
-        "A fiery explosion occurs on hit, dealing AoE fire damage to enemies within 5 feet of the target."
+        "This Sword was forged in the divine realms and entrusted to a hero who was on a quest to quell the consequence of the Arcane Aftermath. This Sword was one of three boons that graced the world after the reality morphing event changed the face of Fer.",
+        "The Blade resembles a relatively thin greatsword, with a hilt that looks like the inside of an atom. Despite its thin form, there is an intricate series of deep carvings in arcane script around the blade, removing just enough weight that it vibrates in constant pitch when struck. The runes also cause a dull glow that sheds dim light upto 15 feet in all directions. As a bonus action, the wielder can channel the blade’s energy to shed bright light in a 30ft radius.",
+        "Whenever a creature whose reality was altered, such as with the wish spell, time travel or as determined by the DM comes within 60ft of this blade, sweet celestial music permeates the atmosphere as the blade begins to mildly vibrate.  ",
+        "You have a +3 bonus to attack and damage rolls made with this magic weapon.",
+        "When you hit with an attack using this weapon, the target takes an extra {@dice 1d8} force damage as the blade vibrates and churns the insides of the target.",
+        "The Blade has a pool of 15 charges when attuned to. Charges can be spent to do a number of things. At the end of a long rest, roll a {@dice d20}. On a 20, it regains all charges and has an additional 10 charges. On a 1, it regains 5 charges. On other rolls, it regains {@dice 1d12+3} charges upto 15.",
+        {
+          "type": "entries",
+          "name": "Wrathful Reality",
+          "entries": [
+            "You can expend a number of charges to deal extra damage against creatures. As a bonus action, you can charge the weapon's persussion with a frequency. Next time you hit a creature with a weapon attack before a short or long rest, You deal 1d8 psychic damage and an extra 1d8 for each charge loaded upto 5 charges. 2d8 if the creature is reality altered."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Paranoia's End",
+          "entries": [
+            "After a long rest and before charges have been regained, Choose 7 levels of spells from the {@filter wizard spell list upto level 5|spells|level=1|level=2|level=3|level=4|level=5|class=Wizard}. You can cast these spells through this sword by spending spell level*2 number of charges without the need for any material components."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Arcane Sentinel",
+          "entries": [
+            "You always know the spell detect magic and can cast it using 1 charge. The radius is doubled and on spending another charge, your range becomes uninterrupted."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Vicinity breeds affinity, affinity breeds power, power yearns vicinity.",
+          "entries": [
+            "As long as one of the other 2 weapons of the arcane aftermath get within 1000ft of this weapon, the creature attuned to it always knows the direction to the weapon.",
+            "Once all three weapons of the arcane aftermath are within 30ft of eachother, they fuse with the creatures they are attuned to. All creatures attuned to these weapons recieve a +2 to any ability of thier choice. Make the following changes to Vastavikta.",
+            {
+              "type": "list",
+              "items": [
+                "Attacks and Damage rolls get a +4 bonus.",
+                "Wrathful Reality's charge limit increases to 7 charges.",
+                "The extra damage increases to 1d12."
+              ]
+            }
+          ]
+        }
       ]
     },
     {
-      "name": "Glacial Guard",
+      "name": "(Ioun) Ápeiro, the Keen Mantle",
       "source": "AspysGuidetoInfinitum",
-      "featureType": [
-        "GS"
-      ],
+      "rarity": "artifact",
+      "reqAttune": "by a wizard or a creature with the spellcasting feature",
+      "wondrous": true,
       "entries": [
-        "+1 AC",
-        "Melee attackers take cold damage.",
-        "Ground within 5 feet becomes difficult terrain.",
-        "Encase a hit enemy in ice, stunning them for 1 turn."
+        "This cloak was forged in the divine realms and entrusted to a hero who was on a quest to quell the consequence of the Arcane Aftermath. This Cloak was one of three boons that graced the world after the reality morphing event changed the face Fer.",
+        "The cloak in apprance resembles an old, grey mantle with a cape of velvet cloth. Plain grey with a belt of a darker grey. It's jagged at the edges and it looks like it was torn at the base. The wearer feels eons of knowledge coursing through the cloak. Arcane scribblings come to you instantly as if the cloak made of parchment. You can use the cloak to channel any {@filter Wizard spell of lvl5 and below|spells|level=1|level=2|level=3|level=4|level=5|class=Wizard} once a day and cast it without material components. As long as you are wearing this cloak and have enough materials, you can copy the channeled spell into your spellbook.",
+        "While you are wearing this cloak, you gain a +3 bonus to spell attack rolls and spell save DC. You also ignore half and three quarters cover when making a spell attack.",
+        "Additionally, you gain expertise in any one of the intelligence skills you are proficient in.",
+        "This cloak has a pool of 15 charges when attuned to. Charges can be spent to do a number of things. At the end of a long rest, roll a {@dice d20}. On a 20, it regains all charges and has an additional 10 charges. On a 1, it regains 5 charges. On other rolls, it regains {@dice 1d12+3} charges upto 15.",
+        {
+          "type": "entries",
+          "name": "Knowledge of the eons",
+          "entries": [
+            "You get the {@feat keen mind} feat as long as you are attuned to this cloak. If you already have the keen mind feat, you may choose a different feat while you attune to it. You may choose a different feat everytime you attune to this cloak but you must meet the pre-requisites for the feat."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Offensive barrier",
+          "entries": [
+            "After a long rest, when you roll to regain charges, choose an element type and the cloak attunes to it. For the rest of the day, you are immune to this damage type, and when you cast a spell that rolls damage die of that element, the damage ignores resistance and immunity of the affected creature.",
+            "Additionally, When you roll for damage of the attuned type, you can spend 1 charge to reroll a number of the damage dice up to 4+Spell level. You must use the new rolls. If the damage type is different, you can reroll upto 4 damage dice.",
+            "As a bonus action/Reaction(when you take damage) you can spend 4 charges to gain resistance to another element and gain the benefits of casting spells of that type. Doing so will drop your immunity to the first damage type."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Arcane Sentinel",
+          "entries": [
+            "You always know the spell detect magic and can cast it using 1 charge. The radius is doubled and on spending another charge, your range becomes uninterrupted."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Vicinity breeds affinity, affinity breeds power, power yearns vicinity.",
+          "entries": [
+            "As long as one of the other 2 weapons of the arcane aftermath get within 1000ft of this weapon, the creature attuned to it always knows the direction to the weapon.",
+            "Once all three weapons of the arcane aftermath are within 30ft of eachother, they fuse with the creatures they are attuned to. All creatures attuned to these weapons recieve a +2 to any ability of thier choice. Make the following changes to Ápeiro.",
+            {
+              "type": "list",
+              "items": [
+                "Spell attack rolls bonus increases to a +4 and Spell Save DC increases to a +4.",
+                "Arcane Absorption. If you cast a spell that requires concentration while you already concentrating on a spell, the initial spell doesn't drop but instead becomes duration-based for half the concentration duration."
+              ]
+            }
+          ]
+        }
       ]
     },
     {
-      "name": "Tempest Fury",
+      "name": "(Tiamat) Backbiter, The existential Crisis",
       "source": "AspysGuidetoInfinitum",
-      "featureType": [
-        "GS"
+      "baseItem": "dagger|PHB",
+      "type": "M",
+      "rarity": "artifact",
+      "reqAttune": "by a creature neutral/evil alignment)",
+      "weight": 1,
+      "weaponCategory": "simple",
+      "property": [
+        "F",
+        "L",
+        "T"
       ],
+      "range": "20/60",
+      "dmg1": "1d4",
+      "dmgType": "P",
+      "bonusWeapon": "+4",
       "entries": [
-        "+5 feet movement speed.",
-        "Generate a gust with each attack, pushing enemies back.",
-        "Attacks grant advantage on the next skill check or saving throw.",
-        "Summon a localized storm on hit, causing lightning damage to the target and nearby enemies."
+        "This dagger was forged in the divine realms and entrusted to a hero who was on a quest to quell the consequence of the Arcane Aftermath. This Dagger was one of four weapons that graced the world after the reality morphing event changed the face of Fer.",
+        "This dagger shines as if it's made of satin fabric and yet, looks like it has an edge that can cut through bone. This blade shifts in and out of visibility for everyone except the one holding and attuned to it. Anyone who cannot see the dagger directly forgets about it's existence and all memories associated with it are rationalised into different narratives.",
+        "You have a +3 bonus to attack and damage rolls made with this magic weapon.",
+        "When you hit with an attack using this weapon, the target takes an extra {@dice 1d8} Necrotic damage as the wound seeps with dark energies of the 9 hells",
+        "This dagger has a pool of 15 charges when attuned to. Charges can be spent to do a number of things. At the begining of a day, roll a {@dice d20}. On a 20, it regains all charges and has an additional 10 charges. On a 1, it regains 5 charges. On other rolls, it regains {@dice 1d12+3} charges upto 15.",
+        {
+          "type": "entries",
+          "name": "In Baator, Hide",
+          "entries": [
+            "In darkness, dim light or in Baator, the dagger draws in the shadows and clouds you from the untrained eye. While this is in effect, and if you have advantage on Dexterity checks, you can reroll one of the dice once."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Rend Memory",
+          "entries": [
+            "As an action, you can spend 2 charges to feint the target and make an attack against the target. When you expend charges this way, the target forgets about the existence of the dagger, assuming you are about to make an unarmed attack. The attack is considered a surprise attack. A creature already affected by this once in a 24h period is immune to the surprise and consequent uses just have advantage.",
+            "The dagger pulses inside the target for that attack and you can use your bonus action and spend 10 more charges to make the target forget one creature for 1h. Even if the target can see the creature, they see nothing."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Blink",
+          "entries": [
+            "You can expend 2 charges to cast misty step as a bonus action."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Arcane Sentinel",
+          "entries": [
+            "You always know the spell detect magic and can cast it using 1 charge. The radius is doubled and on spending another charge, your range becomes uninterrupted."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Vicinity breeds affinity, affinity breeds power, power yearns vicinity.",
+          "entries": [
+            "As long as one of the other 3 weapons of the arcane aftermath get within 1000ft of this weapon, the creature attuned to it always knows the direction to the weapon.",
+            "Once all four weapons of the arcane aftermath are within 30ft of eachother, they fuse with the creatures they are attuned to. All creatures attuned to these weapons recieve a +2 to any ability of thier choice. Make the following changes to Backbiter.",
+            {
+              "type": "list",
+              "items": [
+                "Attacks and Damage rolls get a +4 bonus.",
+                "You can chose to turn invisible while holding the dagger as an action. Anything you are wearing or carrying is invisible with you. You remain invisible until you sheath the dagger, until you attack or cast a spell, or until you use a bonus action to become visible again.",
+                "The extra damage increases to 1d12."
+              ]
+            }
+          ]
+        }
       ]
     },
     {
-      "name": "Stone Bulwark",
+      "name": "(Melora) Sanjeevani, The nourishing recurve",
       "source": "AspysGuidetoInfinitum",
-      "featureType": [
-        "GS"
+      "type": "R",
+      "rarity": "artifact",
+      "weight": 2,
+      "weaponCategory": "simple",
+      "property": [
+        "A",
+        "2H"
       ],
+      "range": "80/320",
+      "dmg1": "1d6",
+      "dmgType": "P",
+      "bow": true,
+      "weapon": true,
+      "ammoType": "arrow|phb",
+      "bonusWeapon": "+4",
       "entries": [
-        "+2 to saving throws",
-        "Gain resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.",
-        "Attacks can knock enemies prone.",
-        "Cause a minor earthquake to knock nearby enemies prone and deal damage."
+        "This Bow was forged in the divine realms and entrusted to a hero who was on a quest to quell the consequence of the Arcane Aftermath. This Bow was one of three weapons that graced the world after the reality morphing event changed the face of Fer. ",
+        "This bow, seemingly made of polished and engraved wood is not what it looks like. To the touch, it feels like holding warmth. This warmth finds its way deep inside the mind of the creature it's attuned to. This resting warmth allows the user to be proficient and choose either dexterity or thier spellcasting ability modifier to make attack and damage rolls.",
+        "Area around this crossbow gradually sprouts shrubbery and grass. If left resting for a longer period of time, the nourishing energy becomes potent enough to sustain a little forest.",
+        "When a creature within the inner range of this bow you can see rolls dice to regain hitpoints, you can use your reaction to reroll any number of that dice.",
+        "You have a +3 bonus to attack and damage rolls made with this magic weapon.",
+        "When you hit with an attack using this weapon, the target takes an extra {@dice 1d8} force damage as vines begin to originate and wrap around the target.",
+        "This bow has a pool of 15 charges when attuned to. Charges can be spent to do a number of things. At the begining of a day, roll a {@dice d20}. On a 20, it regains all charges and has an additional 10 charges. On a 1, it regains 5 charges. On other rolls, it regains {@dice 1d12+3} charges upto 15.",
+        {
+          "type": "entries",
+          "name": "Cleansing flame",
+          "entries": [
+            "When you take the attack action on your turn, you can use one or more of the attacks to target an ally instead. Spend 2 charges per attack. Do not roll for attack. Half way through its trajectory, the arrow shot disintegrates in flame that extinguishes by the time it reaches its target, the final few embers of flame washing over the target. The target gains the benefit of a casting of {@spell cure wounds} at lvl1."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Nature magic",
+          "entries": [
+            "After a long rest and before charges have been regained, Choose 7 levels of spells from the {@filter druid spell list upto level 5|spells|level=1|level=2|level=3|level=4|level=5|class=Druid}. You can cast these spells through this bow by spending level*2 number of charges without the need for any material components."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Arcane Sentinel",
+          "entries": [
+            "You always know the spell detect magic and can cast it using 1 charge. The radius is doubled and on spending another charge, your range becomes uninterrupted."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Vicinity breeds affinity, affinity breeds power, power yearns vicinity.",
+          "entries": [
+            "As long as one of the other 3 weapons of the arcane aftermath get within 1000ft of this weapon, the creature attuned to it always knows the direction to the weapon.",
+            "Once all four weapons of the arcane aftermath are within 30ft of eachother, they fuse with the creatures they are attuned to. All creatures attuned to these weapons recieve a +2 to any ability of thier choice. Make the following changes to Sanjeevani.",
+            {
+              "type": "list",
+              "items": [
+                "Attacks and Damage rolls get a +4 bonus.",
+                "Cleansing flame applies Cure wounds at level 2",
+                "The extra damage increases to 1d12."
+              ]
+            }
+          ]
+        }
       ]
     },
     {
-      "name": "Void Embrace",
+      "name": "(Akadi) Stormcaller, The Tempest's Bow",
       "source": "AspysGuidetoInfinitum",
-      "featureType": [
-        "GS"
+      "type": "R",
+      "rarity": "artifact",
+      "weight": 3,
+      "weaponCategory": "martial",
+      "property": [
+        "A",
+        "2H"
       ],
+      "range": "150/600",
+      "dmg1": "1d8",
+      "dmgType": "P",
+      "bow": true,
+      "weapon": true,
+      "ammoType": "arrow|phb",
+      "bonusWeapon": "+3",
+      "reqAttune": "by a follower of Akadi",
       "entries": [
-        "+1d4 necrotic damage.",
-        "Siphon strength, reducing enemy damage.",
-        "Attacks silence casters for 1 turn.",
-        "Devour essence, severely weakening or possibly killing a low-health enemy outright."
+        "Crafted from the heart of a storm cloud, this bow crackles with the essence of Akadi, Goddess of Storms and Air. It vibrates with a low hum, reminiscent of distant thunder, waiting to unleash its fury.",
+        "The string of the bow is made from a strand of wind itself, and arrows loosed from it trail lightning across the sky. The bow's power is such that its arrows can summon wind gusts to guide their path, ensuring they strike true.",
+        "You have a +3 bonus to attack and damage rolls made with this magic weapon. Upon striking a target, the arrow unleashes a burst of wind, potentially knocking the target prone if they fail a Strength saving throw (DC 15).",
+        "This bow has a pool of 20 charges for its special abilities. Charges can be spent to summon a storm on the battlefield, control winds for precise shots, or create barriers of gusting wind. Charges regenerate under stormy conditions.",
+        {
+          "type": "entries",
+          "name": "Storm's Fury",
+          "entries": [
+            "As an action, you can expend 5 charges to call down a lightning bolt (as per the spell) on a target hit by an arrow from this bow within the last round."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Wind's Guidance",
+          "entries": [
+            "When you take the Attack action, you can expend 1 charge to gain advantage on all arrow shots made with this bow until the end of the turn."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Galeforce Barrier",
+          "entries": [
+            "Expend 3 charges to create a wall of wind (as per the wind wall spell) that lasts for 1 minute."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Harmony of the Storm",
+          "entries": [
+            "This bow sings in the presence of other artifacts of Akadi, guiding its wielder to them. If within 1 mile of another artifact of Akadi, the wielder knows its direction."
+          ]
+        }
       ]
     },
     {
-      "name": "Solar Flare",
+      "name": "(Akadi) Tempest's Sovereignty, The Boundless Gale",
       "source": "AspysGuidetoInfinitum",
-      "featureType": [
-        "GS"
+      "type": "R",
+      "rarity": "divine arm",
+      "weight": 2,
+      "weaponCategory": "martial",
+      "property": [
+        "A",
+        "2H"
       ],
+      "range": "200/800",
+      "dmg1": "1d10",
+      "dmgType": "P",
+      "bow": true,
+      "weapon": true,
+      "ammoType": "arrow|phb",
+      "bonusWeapon": "+5",
+      "reqAttune": "by a devoted champion of Akadi",
       "entries": [
-        "+1d4 radiant damage.",
-        "Attacks dispel magical darkness.",
-        "Illuminate targets, granting advantage on attacks against them.",
-        "A radiant burst blinds all enemies within a 10-foot radius."
+        "Tempest's Sovereignty is a divine instrument of Akadi's will, embodying the boundless expanse of the skies and the unbridled power of the storm. Forged from a cloud solidified by divine essence and strings plucked from the winds of a hurricane, this bow commands the weather itself.",
+        "Arrows loosed from Tempest's Sovereignty ride the storm winds, their paths illuminated by bolts of lightning. They strike with the force of a tempest, their thunderclap booms heralding Akadi's dominion.",
+        "You have a +5 bonus to attack and damage rolls made with this magic weapon. Each arrow shot is enveloped in a sheath of lightning, dealing an additional {@dice 2d8} lightning damage on a hit.",
+        "This bow possesses 30 charges for invoking its divine powers, including summoning storms, directing lightning strikes, and controlling the winds with unparalleled mastery. Charges are replenished at dawn, and the bow regains 1d20+10 charges.",
+        {
+          "type": "entries",
+          "name": "Stormcaller's Wrath",
+          "entries": [
+            "Expend 10 charges to unleash a fury of the storm, creating a 60-foot radius storm centered on a point you can see within range. For 1 minute, lightning strikes at up to three points you choose within the storm's area, each strike dealing {@dice 4d10} lightning damage to creatures within 5 feet of the point."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Gale's Embrace",
+          "entries": [
+            "As a bonus action, expend 5 charges to grant yourself the ability to fly at a speed of 60 feet for 10 minutes, as winds lift you aloft. While flying, you have advantage on all attacks made with this bow."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Eye of the Hurricane",
+          "entries": [
+            "Expend 7 charges to create a 20-foot radius sphere of calm air centered on a point you can see within 120 feet. Within this sphere, allies gain immunity to lightning and thunder damage, and any sounds are silenced. The sphere lasts for 1 minute."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Dominion of the Sky",
+          "entries": [
+            "This bow resonates with other divine artifacts of Akadi, indicating their presence. If within 5 miles of another divine arm of Akadi, the wielder knows its direction and distance."
+          ]
+        }
       ]
     },
     {
-      "name": "Aether Wind",
+      "name": "(Talos) Fury of the Stormlord",
       "source": "AspysGuidetoInfinitum",
-      "featureType": [
-        "GS"
+      "type": "M",
+      "rarity": "artifact",
+      "weaponCategory": "martial",
+      "property": [
+        "H",
+        "L"
       ],
+      "dmg1": "1d12",
+      "dmgType": "S",
+      "axe": true,
+      "weapon": true,
+      "bonusWeapon": "+3",
+      "reqAttune": "by a follower of Talos",
       "entries": [
-        "Increase reach by 5 feet.",
-        "Attacks generate a lift, allowing you to leap or dodge freely.",
-        "Gain a temporary flying speed.",
-        "Create a vortex, pulling enemies toward you or scattering them away."
+        "This greataxe is the embodiment of Talos's relentless spirit, with a blade that crackles with storm energy. Its handle is wrapped in leather made from the hide of a mythical storm beast, and the head of the axe is adorned with motifs of thunder and lightning.",
+        "You have a +3 bonus to attack and damage rolls made with this magic weapon. On a critical hit, the axe unleashes a thunderclap audible up to 300 feet away, dealing an extra {@dice 2d6} thunder damage and potentially stunning the target.",
+        "The axe has 20 charges for its special abilities, including summoning localized storms and casting thunderous spells. Charges are replenished at dawn.",
+        {
+          "type": "entries",
+          "name": "Thunderstrike",
+          "entries": [
+            "Expend 5 charges to cast 'call lightning' at 5th level, with the axe as the spell's origin point."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Storm's Fury",
+          "entries": [
+            "As an action, expend 10 charges to surround yourself with a stormy aura for 1 minute. During this time, any creature striking you with a melee attack takes {@dice 2d8} lightning damage."
+          ]
+        }
       ]
     },
     {
-      "name": "Nature\\'s Bind",
+      "name": "(Talos) Tempest's Wrath, the Vortex Axe",
       "source": "AspysGuidetoInfinitum",
-      "featureType": [
-        "GS"
+      "type": "M",
+      "rarity": "divine arm",
+      "weaponCategory": "martial",
+      "property": [
+        "H",
+        "L"
       ],
+      "dmg1": "2d8",
+      "dmgType": "S",
+      "axe": true,
+      "weapon": true,
+      "bonusWeapon": "+5",
+      "reqAttune": "by a champion of Talos",
       "entries": [
-        "+1d4 poison damage.",
-        "Attacks plant seeds of entanglement, slowing enemies.",
-        "Sprout thorny vines on hit, grappling the enemy.",
-        "A massive vine burst entangles all enemies within a 10-foot radius, restraining them."
+        "Forged in the heart of a tornado and cooled in the depths of the ocean during a maelstrom, this greataxe is Talos's fury made manifest. The axe's blade constantly shifts with a storm's colors, and its edge seems to cut the very air.",
+        "You have a +5 bonus to attack and damage rolls made with this magic weapon. This axe controls the weather within a 5-mile radius, capable of summoning storms at the wielder's will.",
+        "Tempest's Wrath has 30 charges and regains 1d20+10 charges at dawn. Its abilities include commanding the winds, lightning, and thunder, embodying Talos's dominion over storms.",
+        {
+          "type": "entries",
+          "name": "Maelstrom's Call",
+          "entries": [
+            "Expend 15 charges to create a massive storm that covers a 1-mile radius for 1 hour. Within this storm, you can control wind speeds, call down lightning strikes, and create torrential rainfalls."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Stormlord's Command",
+          "entries": [
+            "As an action, expend 10 charges to fly at a speed of 80 feet for 10 minutes, summoning gusts of wind that buffet your foes, granting disadvantage on ranged attacks against you."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "(Pelor) Dawnbringer's Light",
+      "source": "AspysGuidetoInfinitum",
+      "type": "M",
+      "rarity": "artifact",
+      "weaponCategory": "martial",
+      "property": [
+        "V",
+        "L"
+      ],
+      "dmg1": "1d8",
+      "dmgType": "R",
+      "sword": true,
+      "weapon": true,
+      "bonusWeapon": "+3",
+      "reqAttune": "by a follower of Pelor",
+      "entries": [
+        "This radiant longsword is crafted from a single ray of the first morning's light, solidified and given form. The blade emits a warm, golden glow, illuminating darkness and purging evil with its mere presence.",
+        "You have a +3 bonus to attack and damage rolls made with this magic weapon. When you hit an undead or a creature of darkness, the sword deals an extra {@dice 2d6} radiant damage.",
+        "Dawnbringer's Light holds 20 charges for its special abilities, which include casting light-based spells and banishing shadows. It regains 1d10+10 charges at dawn.",
+        {
+          "type": "entries",
+          "name": "Sunburst",
+          "entries": [
+            "Expend 5 charges to cast 'sunburst' at 5th level, emanating from the sword."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Daybreak",
+          "entries": [
+            "As an action, expend 10 charges to fill a 60-foot radius with bright sunlight for 10 minutes. Within this area, allies gain advantage on saving throws against being charmed or frightened."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "(Pelor) Radiance of the High Sun",
+      "source": "AspysGuidetoInfinitum",
+      "type": "M",
+      "rarity": "divine arm",
+      "weaponCategory": "martial",
+      "property": [
+        "V",
+        "L"
+      ],
+      "dmg1": "2d8",
+      "dmgType": "R",
+      "sword": true,
+      "weapon": true,
+      "bonusWeapon": "+5",
+      "reqAttune": "by a champion of Pelor",
+      "entries": [
+        "Wrought from the core of a sun, this divine longsword is the pinnacle of Pelor's craftsmanship. Its blade blazes with a light so pure, it can cleave through darkness as if it were cloth.",
+        "You have a +5 bonus to attack and damage rolls made with this magic weapon. Against any creature that dwells in darkness or is of evil alignment, the sword deals an additional {@dice 3d6} radiant damage.",
+        "Radiance of the High Sun possesses 40 charges, regaining 1d20+20 charges at dawn. Its powers extend to controlling the sun's movement, altering day and night, and summoning celestial beings.",
+        {
+          "type": "entries",
+          "name": "Celestial Dawn",
+          "entries": [
+            "Expend 20 charges to create a day's light in a 1-mile radius that lasts for 12 hours. Within this light, undead and creatures of darkness have disadvantage on all rolls, and allies are healed for {@dice 4d8} hit points at the start of their turn."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Solar Flare",
+          "entries": [
+            "As an action, expend 15 charges to unleash a devastating wave of light in a 100-foot radius. Each creature of your choice in the area must make a Constitution saving throw or be blinded and take {@dice 6d6} radiant damage."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "(Erathis) Harmonizer's Gavel",
+      "source": "AspysGuidetoInfinitum",
+      "type": "M",
+      "rarity": "artifact",
+      "weaponCategory": "martial",
+      "property": [
+        "L"
+      ],
+      "dmg1": "1d8",
+      "dmgType": "B",
+      "hammer": true,
+      "weapon": true,
+      "bonusWeapon": "+3",
+      "reqAttune": "by a follower of Erathis",
+      "entries": [
+        "This warhammer embodies the principles of order, law, and civilization. Forged from metals mined from the depths of the most ancient cities, its head is inscribed with the first laws of creation.",
+        "You have a +3 bonus to attack and damage rolls made with this magic weapon. On a hit, the target is imbued with a sense of order, possibly halting their action if they fail a Wisdom saving throw (DC 15).",
+        "Harmonizer's Gavel holds 20 charges for its abilities, including enforcing law, creating constructs, and summoning guardians of order. It regains 1d10+10 charges at dawn.",
+        {
+          "type": "entries",
+          "name": "Edict of Harmony",
+          "entries": [
+            "Expend 5 charges to cast 'command' (without needing to maintain concentration) on any number of creatures within 30 feet of you."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Construct Conjuror",
+          "entries": [
+            "As an action, expend 10 charges to summon a guardian construct that obeys your commands for 1 hour."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "(Erathis) Order's Paramount Mace",
+      "source": "AspysGuidetoInfinitum",
+      "type": "M",
+      "rarity": "divine arm",
+      "weaponCategory": "martial",
+      "property": [
+        "L"
+      ],
+      "dmg1": "2d6",
+      "dmgType": "B",
+      "mace": true,
+      "weapon": true,
+      "bonusWeapon": "+5",
+      "reqAttune": "by a champion of Erathis",
+      "entries": [
+        "This mace is the ultimate instrument of law, its head crafted from a fragment of the first city's foundation stone. It shines with a light that pierces deceit and chaos, a beacon of civilization's might.",
+        "You have a +5 bonus to attack and damage rolls made with this magic weapon. Enemies hit by the mace are marked by the light of law, reducing their ability to lie or deceive for 24 hours.",
+        "Order's Paramount Mace has 30 charges, regaining 1d20+10 charges at dawn. Its powers extend to binding agreements, enforcing truth, and creating bastions of law.",
+        {
+          "type": "entries",
+          "name": "Bastion of the Just",
+          "entries": [
+            "Expend 15 charges to create a 60-foot radius sphere of divine law for 10 minutes. Within this sphere, all spells and effects that create chaos or disorder are suppressed."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Chains of Order",
+          "entries": [
+            "As an action, expend 10 charges to summon chains of light that bind a target creature. The creature must succeed on a Strength saving throw or be restrained for 1 minute."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "(Lliira) Jubilee's Whisper",
+      "source": "AspysGuidetoInfinitum",
+      "type": "R",
+      "rarity": "artifact",
+      "weaponCategory": "simple",
+      "property": [
+        "F",
+        "T",
+        "L"
+      ],
+      "dmg1": "1d6",
+      "dmgType": "P",
+      "rapier": true,
+      "weapon": true,
+      "bonusWeapon": "+3",
+      "reqAttune": "by a follower of Lliira",
+      "entries": [
+        "This rapier sings with the laughter of Lliira, its blade light and swift, crafted from a material as buoyant as joy itself. It vibrates slightly, as if eager to dance.",
+        "You have a +3 bonus to attack and damage rolls made with this magic weapon. On a successful hit, the target is affected by an uncontrollable urge to laugh, potentially losing their next action if they fail a Wisdom saving throw (DC 15).",
+        "Jubilee's Whisper holds 20 charges for its abilities, which include spreading happiness, calming emotions, and inducing laughter. It regains 1d10+10 charges at dawn.",
+        {
+          "type": "entries",
+          "name": "Festival's Call",
+          "entries": [
+            "Expend 5 charges to cast 'calm emotions' in a 20-foot radius centered on you."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Dance of Liberation",
+          "entries": [
+            "As an action, expend 10 charges to force all creatures of your choice within 30 feet to begin dancing joyously, effectively incapacitating them for 1 minute or until they take damage."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "(Lliira) Ecstasy's Echo",
+      "source": "AspysGuidetoInfinitum",
+      "type": "R",
+      "rarity": "divine arm",
+      "weaponCategory": "simple",
+      "property": [
+        "F",
+        "T",
+        "L"
+      ],
+      "dmg1": "2d6",
+      "dmgType": "P",
+      "rapier": true,
+      "weapon": true,
+      "bonusWeapon": "+5",
+      "reqAttune": "by a champion of Lliira",
+      "entries": [
+        "Forged from a ray of the setting sun's light and the first laugh of a newborn, this rapier embodies the essence of joy and freedom. Its hilt sparkles with gemstones that represent the myriad joys of life.",
+        "You have a +5 bonus to attack and damage rolls made with this magic weapon. Each strike releases a wave of euphoria, granting allies within 20 feet a bonus to their next attack roll or saving throw.",
+        "Ecstasy's Echo possesses 40 charges, regaining 1d20+20 charges at dawn. Its powers can instigate festivals, inspire courage, and banish sorrow.",
+        {
+          "type": "entries",
+          "name": "Rapture's Domain",
+          "entries": [
+            "Expend 20 charges to transform an area up to a 1-mile radius into a zone of sheer happiness for 12 hours. Within this zone, all creatures are immune to fear and despair."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Harmony's Resonance",
+          "entries": [
+            "As an action, expend 15 charges to release a sonorous melody that heals allies within 30 feet for {@dice 4d8} hit points and grants them immunity to being charmed or frightened for 1 minute."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "(Cyric) Whisper of Discord",
+      "source": "AspysGuidetoInfinitum",
+      "type": "M",
+      "rarity": "artifact",
+      "weaponCategory": "simple",
+      "property": [
+        "F",
+        "L"
+      ],
+      "dmg1": "1d6",
+      "dmgType": "P",
+      "dagger": true,
+      "weapon": true,
+      "bonusWeapon": "+3",
+      "reqAttune": "by a follower of Cyric",
+      "entries": [
+        "This dagger is as elusive as the truth in Cyric's realm, with a blade that seems to shift and blur, making its edges indistinct. Its handle is adorned with symbols of deceit and betrayal.",
+        "You have a +3 bonus to attack and damage rolls made with this magic weapon. On a hit, the target is afflicted with paranoia, doubting allies and hearing whispers of betrayal, imposing disadvantage on all their attack rolls against anyone but you for the next minute.",
+        "Whisper of Discord holds 20 charges for its deceptive abilities, including casting illusions, manipulating shadows, and sewing distrust. It regains 1d10+10 charges at dawn.",
+        {
+          "type": "entries",
+          "name": "Veil of Lies",
+          "entries": [
+            "Expend 5 charges to cast 'invisibility' on yourself. While invisible, your first attack from invisibility forces the target to make a Wisdom saving throw or be charmed by you for 1 hour or until you or your allies harm them."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Echoes of Strife",
+          "entries": [
+            "As an action, expend 10 charges to create an illusory duplicate of yourself within 30 feet. This duplicate can move and speak as directed and lasts for 10 minutes. If attacked, the duplicate dissipates."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "(Cyric) Shadow of the Deceiver",
+      "source": "AspysGuidetoInfinitum",
+      "type": "M",
+      "rarity": "divine arm",
+      "weaponCategory": "simple",
+      "property": [
+        "F",
+        "L"
+      ],
+      "dmg1": "2d6",
+      "dmgType": "P",
+      "dagger": true,
+      "weapon": true,
+      "bonusWeapon": "+5",
+      "reqAttune": "by a champion of Cyric",
+      "entries": [
+        "Forged in the shadows of the darkest deceit, this dagger embodies the very essence of Cyric's power. Its blade is a fragment of night, absorbing light and hope.",
+        "You have a +5 bonus to attack and damage rolls made with this magic weapon. On a successful hit, the target is ensnared in shadows, reducing their speed to 0 and imposing disadvantage on all saving throws for 1 turn.",
+        "Shadow of the Deceiver possesses 40 charges, regaining 1d20+20 charges at dawn. Its powers are mastery over darkness, illusions that can drive one to madness, and the ability to slip between shadows.",
+        {
+          "type": "entries",
+          "name": "Realm of Deceit",
+          "entries": [
+            "Expend 20 charges to envelop a 100-foot radius in an illusory landscape of your design for 10 minutes. Within this area, enemies are disoriented and have disadvantage on attack rolls and Wisdom (Perception) checks."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Nightmare's Embrace",
+          "entries": [
+            "As an action, expend 15 charges to plunge a creature you can see within 60 feet into a terrifying illusion. The target must succeed on a Wisdom saving throw or be frightened and take {@dice 4d6} psychic damage as it experiences its worst fears."
+          ]
+        }
       ]
     }
   ]
