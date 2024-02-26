@@ -23731,6 +23731,20 @@
 				"Consult the {@table Weapons|tct} and {@table Weapon Masteries|tct} tables for information on masteries and their abilities."
 			]
 		},
+{
+			"name": "Master of Armaments",
+			"source": "DRK",
+			"page": 72,
+			"srd": true,
+			"basicRules": true,
+			"className": "Fighter",
+			"classSource": "DRK",
+			"level": 9,
+			"entries": [
+				"You are a master of weapons. From 9th level, whenever you finish a Long Rest, you can choose any of the kinds of Mastery weaapons you're using and replace the Mastery property of each with another Mastery property. For examble, you could replace the Longsword's Sap property with the Push property.",
+				"These property changes apply only for you, not for others, and the changes end for you when you finish your next Long rest."
+			]
+		},
     {
       "name": "Rage",
       "source": "DRK",
@@ -27372,138 +27386,6 @@
         }
       ]
     },
-{
-			"name": "Armorer",
-			"shortName": "Armorer",
-			"source": "DRK",
-			"className": "Artificer",
-			"classSource": "DRK",
-			"page": 15,
-			"additionalSpells": [
-				{
-					"prepared": {
-						"3": [
-							"magic missile",
-							"thunderwave"
-						],
-						"5": [
-							"mirror image",
-							"shatter"
-						],
-						"9": [
-							"hypnotic pattern",
-							"lightning bolt"
-						],
-						"13": [
-							"fire shield",
-							"greater invisibility"
-						],
-						"17": [
-							"passwall",
-							"wall of force"
-						]
-					}
-				}
-			],
-			"subclassFeatures": [
-				"Armorer|Artificer|TCE|Armorer|TCE|3",
-				"Extra Attack|Artificer|TCE|Armorer|TCE|5",
-				"Armor Modifications|Artificer|TCE|Armorer|TCE|9",
-				"Perfected Armor|Artificer|TCE|Armorer|TCE|15"
-			]
-		},
-		{
-			"name": "Artillerist",
-			"shortName": "Artillerist",
-			"source": "DRK",
-			"className": "Artificer",
-			"classSource": "DRK",
-			"page": 17,
-			"otherSources": [
-				{
-					"source": "ERLW",
-					"page": 59
-				}
-			],
-			"additionalSpells": [
-				{
-					"prepared": {
-						"3": [
-							"shield",
-							"thunderwave"
-						],
-						"5": [
-							"scorching ray",
-							"shatter"
-						],
-						"9": [
-							"fireball",
-							"wind wall"
-						],
-						"13": [
-							"ice storm",
-							"wall of fire"
-						],
-						"17": [
-							"cone of cold",
-							"wall of force"
-						]
-					}
-				}
-			],
-			"subclassFeatures": [
-				"Artillerist|Artificer|TCE|Artillerist|TCE|3",
-				"Arcane Firearm|Artificer|TCE|Artillerist|TCE|5",
-				"Explosive Cannon|Artificer|TCE|Artillerist|TCE|9",
-				"Fortified Position|Artificer|TCE|Artillerist|TCE|15"
-			]
-		},
-		{
-			"name": "Battle Smith",
-			"shortName": "Battle Smith",
-			"source": "DRK",
-			"className": "Artificer",
-			"classSource": "DRK",
-			"page": 18,
-			"otherSources": [
-				{
-					"source": "ERLW",
-					"page": 60
-				}
-			],
-			"additionalSpells": [
-				{
-					"prepared": {
-						"3": [
-							"heroism",
-							"shield"
-						],
-						"5": [
-							"branding smite",
-							"warding bond"
-						],
-						"9": [
-							"aura of vitality",
-							"conjure barrage"
-						],
-						"13": [
-							"aura of purity",
-							"fire shield"
-						],
-						"17": [
-							"banishing smite",
-							"mass cure wounds"
-						]
-					}
-				}
-			],
-			"subclassFeatures": [
-				"Battle Smith|Artificer|TCE|Battle Smith|TCE|3",
-				"Extra Attack|Artificer|TCE|Battle Smith|TCE|5",
-				"Arcane Jolt|Artificer|TCE|Battle Smith|TCE|9",
-				"Improved Defender|Artificer|TCE|Battle Smith|TCE|15"
-			]
-		},
     {
       "name": "Alchemist",
       "source": "DRK",
@@ -39188,9 +39070,9 @@
 {
 			"name": "Circle of the Land",
 			"shortName": "Land",
-			"source": "PHB",
+			"source": "DRK",
 			"className": "Druid",
-			"classSource": "PHB",
+			"classSource": "DRK",
 			"page": 68,
 			"srd": true,
 			"additionalSpells": [
@@ -39445,9 +39327,9 @@
 		{
 			"name": "Circle of the Moon",
 			"shortName": "Moon",
-			"source": "PHB",
+			"source": "DRK",
 			"className": "Druid",
-			"classSource": "PHB",
+			"classSource": "DRK",
 			"page": 69,
 			"additionalSpells": [
 				{
@@ -39468,9 +39350,9 @@
 		{
 			"name": "Circle of Dreams",
 			"shortName": "Dreams",
-			"source": "XGE",
+			"source": "DRK",
 			"className": "Druid",
-			"classSource": "PHB",
+			"classSource": "DRK",
 			"page": 22,
 			"subclassFeatures": [
 				"Circle of Dreams|Druid||Dreams|XGE|2",
@@ -39543,9 +39425,9 @@
 		{
 			"name": "Circle of Stars",
 			"shortName": "Stars",
-			"source": "TCE",
+			"source": "DRK",
 			"className": "Druid",
-			"classSource": "PHB",
+			"classSource": "DRK",
 			"page": 38,
 			"additionalSpells": [
 				{
@@ -39571,9 +39453,9 @@
 		{
 			"name": "Circle of the Blighted",
 			"shortName": "Blighted",
-			"source": "TDCSR",
+			"source": "DRK",
 			"className": "Druid",
-			"classSource": "PHB",
+			"classSource": "DRK",
 			"page": 171,
 			"subclassFeatures": [
 				"Circle of the Blighted|Druid|PHB|Blighted|TDCSR|2",
@@ -40058,9 +39940,141 @@
         "Spirit Projection|Warlock||Undead|VRGR|14"
       ]
     },
+{
+			"name": "Armorer",
+			"shortName": "Armorer",
+			"source": "DRK",
+			"className": "Artificer",
+			"classSource": "DRK",
+			"page": 15,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"magic missile",
+							"thunderwave"
+						],
+						"5": [
+							"mirror image",
+							"shatter"
+						],
+						"9": [
+							"hypnotic pattern",
+							"lightning bolt"
+						],
+						"13": [
+							"fire shield",
+							"greater invisibility"
+						],
+						"17": [
+							"passwall",
+							"wall of force"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Armorer|Artificer|TCE|Armorer|TCE|3",
+				"Extra Attack|Artificer|TCE|Armorer|TCE|5",
+				"Armor Modifications|Artificer|TCE|Armorer|TCE|9",
+				"Perfected Armor|Artificer|TCE|Armorer|TCE|15"
+			]
+		},
+		{
+			"name": "Artillerist",
+			"shortName": "Artillerist",
+			"source": "DRK",
+			"className": "Artificer",
+			"classSource": "DRK",
+			"page": 17,
+			"otherSources": [
+				{
+					"source": "ERLW",
+					"page": 59
+				}
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"shield",
+							"thunderwave"
+						],
+						"5": [
+							"scorching ray",
+							"shatter"
+						],
+						"9": [
+							"fireball",
+							"wind wall"
+						],
+						"13": [
+							"ice storm",
+							"wall of fire"
+						],
+						"17": [
+							"cone of cold",
+							"wall of force"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Artillerist|Artificer|TCE|Artillerist|TCE|3",
+				"Arcane Firearm|Artificer|TCE|Artillerist|TCE|5",
+				"Explosive Cannon|Artificer|TCE|Artillerist|TCE|9",
+				"Fortified Position|Artificer|TCE|Artillerist|TCE|15"
+			]
+		},
+		{
+			"name": "Battle Smith",
+			"shortName": "Battle Smith",
+			"source": "DRK",
+			"className": "Artificer",
+			"classSource": "DRK",
+			"page": 18,
+			"otherSources": [
+				{
+					"source": "ERLW",
+					"page": 60
+				}
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"heroism",
+							"shield"
+						],
+						"5": [
+							"branding smite",
+							"warding bond"
+						],
+						"9": [
+							"aura of vitality",
+							"conjure barrage"
+						],
+						"13": [
+							"aura of purity",
+							"fire shield"
+						],
+						"17": [
+							"banishing smite",
+							"mass cure wounds"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Battle Smith|Artificer|TCE|Battle Smith|TCE|3",
+				"Extra Attack|Artificer|TCE|Battle Smith|TCE|5",
+				"Arcane Jolt|Artificer|TCE|Battle Smith|TCE|9",
+				"Improved Defender|Artificer|TCE|Battle Smith|TCE|15"
+			]
+		},
     {
-      "name": "Alchemist (DRK)",
-      "shortName": "Alchemist (DRK)",
+      "name": "Alchemist",
+      "shortName": "Alchemist",
       "source": "DRK",
       "className": "Artificer",
       "classSource": "TCE",
