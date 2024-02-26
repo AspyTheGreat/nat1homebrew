@@ -40048,10 +40048,10 @@
         }
       ],
       "subclassFeatures": [
-        "Alchemist|Artificer|TCE|Alchemist (DRK)|DRK|3",
-        "Alchemical Savant|Artificer|TCE|Alchemist (DRK)|DRK|5",
-        "Restorative Reagents|Artificer|TCE|Alchemist (DRK)|DRK|9",
-        "Chemical Mastery|Artificer|TCE|Alchemist (DRK)|DRK|15"
+        "Alchemist|Artificer|TCE|Alchemist|DRK|3",
+        "Alchemical Savant|Artificer|TCE|Alchemist|DRK|5",
+        "Restorative Reagents|Artificer|TCE|Alchemist|DRK|9",
+        "Chemical Mastery|Artificer|TCE|Alchemist|DRK|15"
       ]
     },
     {
@@ -40063,17 +40063,17 @@
       "page": 23,
       "subclassFeatures": [
         "Circle of the Shepherd|Druid||Shepherd|XGE|2",
-        "Mighty Summoner|Druid||Shepherd (DRK)|DRK|6",
+        "Mighty Summoner|Druid||Shepherd|DRK|6",
         "Guardian Spirit|Druid||Shepherd|XGE|10",
         "Faithful Summons|Druid||Shepherd|XGE|14"
       ]
     },
     {
-      "name": "Circle of Spores (DRK)",
-      "shortName": "Spores (DRK)",
+      "name": "Circle of Spores",
+      "shortName": "Spores",
       "source": "DRK",
       "className": "Druid",
-      "classSource": "PHB",
+      "classSource": "DRK",
       "page": 36,
       "otherSources": [
         {
@@ -40109,18 +40109,18 @@
         }
       ],
       "subclassFeatures": [
-        "Circle of Spores|Druid||Spores (DRK)|DRK|2",
+        "Circle of Spores|Druid||Spores|DRK|2",
         "Fungal Infestation|Druid||Spores|TCE|6",
         "Spreading Spores|Druid||Spores|TCE|10",
         "Fungal Body|Druid||Spores|TCE|14"
       ]
     },
     {
-      "name": "Circle of Wildfire (DRK)",
-      "shortName": "Wildfire (DRK)",
+      "name": "Circle of Wildfire",
+      "shortName": "Wildfire",
       "source": "DRK",
       "className": "Druid",
-      "classSource": "PHB",
+      "classSource": "DRK",
       "page": 39,
       "additionalSpells": [
         {
@@ -40149,7 +40149,7 @@
         }
       ],
       "subclassFeatures": [
-        "Circle of Wildfire|Druid||Wildfire (DRK)|DRK|2",
+        "Circle of Wildfire|Druid||Wildfire|DRK|2",
         "Enhanced Bond|Druid||Wildfire|TCE|6",
         "Cauterizing Flames|Druid||Wildfire|TCE|10",
         "Blazing Revival|Druid||Wildfire|TCE|14"
@@ -43392,10 +43392,10 @@
       "classSource": "DRK",
       "page": 178,
       "subclassFeatures": [
-        "College of Dance|Bard||Dance|DRK|3",
-        "Leading Evasion|Bard||Dance|DRK|6",
-        "Tandem Footwork|Bard||Dance|DRK|6",
-        "Irresistible Dance|Bard||Dance|DRK|14"
+        "College of Dance|Bard|DRK|Dance|DRK|3",
+        "Leading Evasion|Bard|DRK|Dance|DRK|6",
+        "Tandem Footwork|Bard|DRK|Dance|DRK|6",
+        "Irresistible Dance|Bard|DRK|Dance|DRK|14"
       ]
     }
   ],
