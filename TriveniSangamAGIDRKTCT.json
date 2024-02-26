@@ -17366,6 +17366,7 @@
         },
         "Primal Knowledge|Barbarian|DRK|3|DRK",
         "Ability Score Improvement|Barbarian|PHB|4",
+        "Weapon Mastery|Barbarian|DRK|4|DRK",
         "Extra Attack|Barbarian|PHB|5",
         "Fast Movement|Barbarian|PHB|5",
         {
@@ -17896,6 +17897,7 @@
           "classFeature": "Martial Archetype|Fighter||3",
           "gainSubclassFeature": true
         },
+        "Weapon Mastery|Fighter|DRK|4|DRK",
         "Ability Score Improvement|Fighter||4",
         "Martial Versatility|Fighter||4|TCE",
         "Extra Attack|Fighter||5",
@@ -17907,6 +17909,7 @@
         },
         "Ability Score Improvement|Fighter||8",
         "Indomitable|Fighter|DRK|9",
+        "Master of Armaments|Fighter|DRK|9|DRK",
         {
           "classFeature": "Martial Archetype feature|Fighter||10",
           "gainSubclassFeature": true
@@ -17914,7 +17917,6 @@
         "Extra Attack (2)|Fighter||11",
         "Ability Score Improvement|Fighter||12",
         "Indomitable (two uses)|Fighter||13",
-        "Weapon Adept (optional)|Fighter|DRK|13",
         "Ability Score Improvement|Fighter||14",
         {
           "classFeature": "Martial Archetype feature|Fighter||15",
@@ -18679,6 +18681,7 @@
           "gainSubclassFeature": true
         },
         "Ability Score Improvement|Monk|DRK|4",
+        "Weapon Mastery|Monk|DRK|4|DRK",
         "Slow Fall|Monk|DRK|4",
         "Extra Attack|Monk|DRK|5",
         "Stunning Strike|Monk|DRK|5",
@@ -19397,6 +19400,7 @@
         },
         "Primal Awareness|Ranger|DRK|3",
         "Ability Score Improvement|Ranger|DRK|4",
+        "Weapon Mastery|Ranger|DRK|4|DRK",
         "Martial Versatility|Ranger|DRK|4",
         "Extra Attack|Ranger|DRK|5",
         "Deft Explorer Improvement|Ranger|DRK|6",
@@ -20121,6 +20125,7 @@
         },
         "Steady Aim|Rogue|DRK|3",
         "Ability Score Improvement|Rogue|DRK|4",
+        "Weapon Mastery|Rogue|DRK|4|DRK",
         "Uncanny Dodge|Rogue|DRK|5",
         "Cunning Strike|Rogue|DRK|5",
         "Expertise|Rogue|DRK|6",
@@ -23648,6 +23653,84 @@
         }
       ]
     },
+    {
+	        "name": "Weapon Mastery",
+	        "source": "DRK",
+		"page": 46,
+		"srd": true,
+		"className": "Paladin",
+		"classSource": "DRK",
+		"level": 4,
+		"entries": [
+			"Starting at 4th level, Your training with weapons allows you to use the mastery property of three kinds of Simple or Martial weapons of your choice. Whenever you finish a Long rest, you can practice weapon drills and change one of those weapon choices.",
+			"Consult the {@table Weapons|tct} and {@table Weapon Masteries|tct} tables for information on masteries and their abilities."
+			]
+    },
+{
+			"name": "Weapon Mastery",
+			"source": "DRK",
+			"page": 46,
+			"srd": true,
+			"className": "Barbarian",
+			"classSource": "DRK",
+			"level": 4,
+			"entries": [
+				"Starting at 4th level, Your training with weapons allows you to use the mastery property of three kinds of Simple or Martial weapons of your choice. Whenever you finish a Long rest, you can practice weapon drills and change one of those weapon choices.",
+				"Consult the {@table Weapons|tct} and {@table Weapon Masteries|tct} tables for information on masteries and their abilities."
+			]
+		},
+{
+			"name": "Weapon Mastery",
+			"source": "DRK",
+			"page": 46,
+			"srd": true,
+			"className": "Fighter",
+			"classSource": "DRK",
+			"level": 4,
+			"entries": [
+				"Starting at 4th level, Your training with weapons allows you to use the mastery property of three kinds of Simple or Martial weapons of your choice. Whenever you finish a Long rest, you can practice weapon drills and change one of those weapon choices.",
+				"Consult the {@table Weapons|tct} and {@table Weapon Masteries|tct} tables for information on masteries and their abilities."
+			]
+		},
+{
+			"name": "Weapon Mastery",
+			"source": "DRK",
+			"page": 46,
+			"srd": true,
+			"className": "Ranger",
+			"classSource": "DRK",
+			"level": 4,
+			"entries": [
+				"Starting at 4th level, Your training with weapons allows you to use the mastery property of three kinds of Simple or Martial weapons of your choice. Whenever you finish a Long rest, you can practice weapon drills and change one of those weapon choices.",
+				"Consult the {@table Weapons|tct} and {@table Weapon Masteries|tct} tables for information on masteries and their abilities."
+			]
+		},
+{
+			"name": "Weapon Mastery",
+			"source": "DRK",
+			"page": 46,
+			"srd": true,
+			"className": "Rogue",
+			"classSource": "DRK",
+			"level": 4,
+			"entries": [
+				"Starting at 4th level, Your training with weapons allows you to use the mastery property of three kinds of Simple or Martial weapons of your choice. Whenever you finish a Long rest, you can practice weapon drills and change one of those weapon choices.",
+				"Consult the {@table Weapons|tct} and {@table Weapon Masteries|tct} tables for information on masteries and their abilities."
+			]
+		},
+{
+			"name": "Weapon Mastery",
+			"source": "DRK",
+			"page": 46,
+			"srd": true,
+			"className": "Monk",
+			"classSource": "DRK",
+			"level": 4,
+			"entries": [
+				"Starting at 4th level, Your training with weapons allows you to use the mastery property of three kinds of Simple or Martial weapons of your choice. Whenever you finish a Long rest, you can practice weapon drills and change one of those weapon choices.",
+				"Consult the {@table Weapons|tct} and {@table Weapon Masteries|tct} tables for information on masteries and their abilities."
+			]
+		},
     {
       "name": "Rage",
       "source": "DRK",
@@ -39399,9 +39482,9 @@
 		{
 			"name": "Circle of the Shepherd",
 			"shortName": "Shepherd",
-			"source": "XGE",
+			"source": "DRK",
 			"className": "Druid",
-			"classSource": "PHB",
+			"classSource": "DRK",
 			"page": 23,
 			"subclassFeatures": [
 				"Circle of the Shepherd|Druid||Shepherd|XGE|2",
@@ -39413,9 +39496,9 @@
 		{
 			"name": "Circle of Spores",
 			"shortName": "Spores",
-			"source": "TCE",
+			"source": "DRK",
 			"className": "Druid",
-			"classSource": "PHB",
+			"classSource": "DRK",
 			"page": 36,
 			"otherSources": [
 				{
@@ -39483,46 +39566,6 @@
 				"Cosmic Omen|Druid||Stars|TCE|6",
 				"Twinkling Constellations|Druid||Stars|TCE|10",
 				"Full of Stars|Druid||Stars|TCE|14"
-			]
-		},
-		{
-			"name": "Circle of Wildfire",
-			"shortName": "Wildfire",
-			"source": "TCE",
-			"className": "Druid",
-			"classSource": "PHB",
-			"page": 39,
-			"additionalSpells": [
-				{
-					"prepared": {
-						"2": [
-							"burning hands",
-							"cure wounds"
-						],
-						"3": [
-							"flaming sphere",
-							"scorching ray"
-						],
-						"5": [
-							"plant growth",
-							"revivify"
-						],
-						"7": [
-							"aura of life",
-							"fire shield"
-						],
-						"9": [
-							"flame strike",
-							"mass cure wounds"
-						]
-					}
-				}
-			],
-			"subclassFeatures": [
-				"Circle of Wildfire|Druid|DRK|Wildfire|DRK|2",
-				"Enhanced Bond|Druid||Wildfire|TCE|6",
-				"Cauterizing Flames|Druid||Wildfire|TCE|10",
-				"Blazing Revival|Druid||Wildfire|TCE|14"
 			]
 		},
 		{
@@ -40048,71 +40091,10 @@
         }
       ],
       "subclassFeatures": [
-        "Alchemist|Artificer|TCE|Alchemist|DRK|3",
-        "Alchemical Savant|Artificer|TCE|Alchemist|DRK|5",
-        "Restorative Reagents|Artificer|TCE|Alchemist|DRK|9",
-        "Chemical Mastery|Artificer|TCE|Alchemist|DRK|15"
-      ]
-    },
-    {
-      "name": "Circle of the Shepherd (DRK)",
-      "shortName": "Shepherd (DRK)",
-      "source": "DRK",
-      "className": "Druid",
-      "classSource": "PHB",
-      "page": 23,
-      "subclassFeatures": [
-        "Circle of the Shepherd|Druid||Shepherd|XGE|2",
-        "Mighty Summoner|Druid||Shepherd|DRK|6",
-        "Guardian Spirit|Druid||Shepherd|XGE|10",
-        "Faithful Summons|Druid||Shepherd|XGE|14"
-      ]
-    },
-    {
-      "name": "Circle of Spores",
-      "shortName": "Spores",
-      "source": "DRK",
-      "className": "Druid",
-      "classSource": "DRK",
-      "page": 36,
-      "otherSources": [
-        {
-          "source": "GGR",
-          "page": 26
-        }
-      ],
-      "additionalSpells": [
-        {
-          "known": {
-            "2": [
-              "chill touch#c"
-            ]
-          },
-          "prepared": {
-            "3": [
-              "blindness/deafness",
-              "gentle repose"
-            ],
-            "5": [
-              "animate dead",
-              "gaseous form"
-            ],
-            "7": [
-              "blight",
-              "confusion"
-            ],
-            "9": [
-              "cloudkill",
-              "contagion"
-            ]
-          }
-        }
-      ],
-      "subclassFeatures": [
-        "Circle of Spores|Druid||Spores|DRK|2",
-        "Fungal Infestation|Druid||Spores|TCE|6",
-        "Spreading Spores|Druid||Spores|TCE|10",
-        "Fungal Body|Druid||Spores|TCE|14"
+        "Alchemist|Artificer|DRK|Alchemist|DRK|3",
+        "Alchemical Savant|Artificer|DRK|Alchemist|DRK|5",
+        "Restorative Reagents|Artificer|DRK|Alchemist|DRK|9",
+        "Chemical Mastery|Artificer|DRK|Alchemist|DRK|15"
       ]
     },
     {
@@ -40149,7 +40131,7 @@
         }
       ],
       "subclassFeatures": [
-        "Circle of Wildfire|Druid||Wildfire|DRK|2",
+        "Circle of Wildfire|Druid|DRK|Wildfire|DRK|2",
         "Enhanced Bond|Druid||Wildfire|TCE|6",
         "Cauterizing Flames|Druid||Wildfire|TCE|10",
         "Blazing Revival|Druid||Wildfire|TCE|14"
