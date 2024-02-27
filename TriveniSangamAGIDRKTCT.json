@@ -13362,27 +13362,27 @@
 					"gainSubclassFeature": true
 				},
 				"Wild Shape Improvement|Druid||4",
-				"Ability Score Improvement|Druid||4",
+				"Ability Score Improvement|Rogue|DRK|4",
 				"Cantrip Versatility|Druid||4|TCE",
 				{
 					"classFeature": "Druid Circle feature|Druid||6",
 					"gainSubclassFeature": true
 				},
 				"Wild Shape Improvement|Druid||8",
-				"Ability Score Improvement|Druid||8",
+				"Ability Score Improvement|Rogue|DRK|8",
 				{
 					"classFeature": "Druid Circle feature|Druid||10",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Druid||12",
+				"Ability Score Improvement|Rogue|DRK|12",
 				{
 					"classFeature": "Druid Circle feature|Druid||14",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Druid||16",
+				"Ability Score Improvement|Rogue|DRK|16",
 				"Timeless Body|Druid||18",
 				"Beast Spells|Druid||18",
-				"Ability Score Improvement|Druid||19",
+				"Ability Score Improvement|Rogue|DRK|19",
 				"Archdruid|Druid||20"
 			],
 			"subclassTitle": "Druid Circle",
@@ -15234,29 +15234,29 @@
 					"gainSubclassFeature": true
 				},
 				"The Right Tool for the Job|Artificer|TCE|3",
-				"Ability Score Improvement|Artificer|TCE|4",
+				"Ability Score Improvement|Rogue|DRK|4",
 				{
 					"classFeature": "Artificer Specialist Feature|Artificer|TCE|5",
 					"gainSubclassFeature": true
 				},
 				"Tool Expertise|Artificer|TCE|6",
 				"Flash of Genius|Artificer|TCE|7",
-				"Ability Score Improvement|Artificer|TCE|8",
+				"Ability Score Improvement|Rogue|DRK|8",
 				{
 					"classFeature": "Artificer Specialist Feature|Artificer|TCE|9",
 					"gainSubclassFeature": true
 				},
 				"Magic Item Adept|Artificer|TCE|10",
 				"Spell-Storing Item|Artificer|TCE|11",
-				"Ability Score Improvement|Artificer|TCE|12",
+				"Ability Score Improvement|Rogue|DRK|12",
 				"Magic Item Savant|Artificer|TCE|14",
 				{
 					"classFeature": "Artificer Specialist Feature|Artificer|TCE|15",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Artificer|TCE|16",
+				"Ability Score Improvement|Rogue|DRK|16",
 				"Magic Item Master|Artificer|TCE|18",
-				"Ability Score Improvement|Artificer|TCE|19",
+				"Ability Score Improvement|Rogue|DRK|19",
 				"Soul of Artifice|Artificer|TCE|20"
 			],
 			"subclassTitle": "Artificer Specialist",
@@ -15692,7 +15692,7 @@
 					"gainSubclassFeatureHasContent": true
 				},
 				"Weapon Mastery|Paladin|DRK|4|DRK",
-				"Ability Score Improvement|Paladin||4",
+				"Ability Score Improvement|Rogue|DRK|4",
 				"Martial Versatility|Paladin||4|TCE",
 				"Extra Attack|Paladin||5",
 				"Aura of Protection|Paladin||6",
@@ -15700,18 +15700,18 @@
 					"classFeature": "Sacred Oath feature|Paladin||7",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Paladin||8",
+				"Ability Score Improvement|Rogue|DRK|8",
 				"Aura of Courage|Paladin||10",
 				"Improved Divine Smite|Paladin||11",
-				"Ability Score Improvement|Paladin||12",
+				"Ability Score Improvement|Rogue|DRK|12",
 				"Cleansing Touch|Paladin||14",
 				{
 					"classFeature": "Sacred Oath feature|Paladin||15",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Paladin||16",
+				"Ability Score Improvement|Rogue|DRK|16",
 				"Aura improvements|Paladin||18",
-				"Ability Score Improvement|Paladin||19",
+				"Ability Score Improvement|Rogue|DRK|19",
 				{
 					"classFeature": "Sacred Oath feature|Paladin||20",
 					"gainSubclassFeature": true
@@ -16632,7 +16632,7 @@
 					"gainSubclassFeature": true
 				},
 				"Expertise|Bard||3",
-				"Ability Score Improvement|Bard||4",
+				"Ability Score Improvement|Rogue|DRK|4",
 				"Bardic Versatility|Bard||4|TCE",
 				"Bardic Inspiration (d8)|Bard||5",
 				"Font of Inspiration|Bard||5",
@@ -16641,12 +16641,12 @@
 					"classFeature": "Bard College feature|Bard||6",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Bard||8",
+				"Ability Score Improvement|Rogue|DRK|8",
 				"Song of Rest (d8)|Bard||9",
 				"Bardic Inspiration (d10)|Bard||10",
 				"Expertise|Bard||10",
 				"Magical Secrets|Bard||10",
-				"Ability Score Improvement|Bard||12",
+				"Ability Score Improvement|Rogue|DRK|12",
 				"Song of Rest (d10)|Bard||13",
 				"Magical Secrets|Bard||14",
 				{
@@ -16654,10 +16654,10 @@
 					"gainSubclassFeature": true
 				},
 				"Bardic Inspiration (d12)|Bard||15",
-				"Ability Score Improvement|Bard||16",
+				"Ability Score Improvement|Rogue|DRK|16",
 				"Song of Rest (d12)|Bard||17",
 				"Magical Secrets|Bard||18",
-				"Ability Score Improvement|Bard||19",
+				"Ability Score Improvement|Rogue|DRK|19",
 				"Effortless Charm|Bard|DRK|20"
 			],
 			"subclassTitle": "Bard College",
@@ -17365,7 +17365,7 @@
           "gainSubclassFeature": true
         },
         "Primal Knowledge|Barbarian|DRK|3|DRK",
-        "Ability Score Improvement|Barbarian|PHB|4",
+        "Ability Score Improvement|Rogue|DRK|4",
         "Weapon Mastery|Barbarian|DRK|4|DRK",
         "Extra Attack|Barbarian|PHB|5",
         "Fast Movement|Barbarian|PHB|5",
@@ -17375,22 +17375,22 @@
         },
         "Feral Instinct|Barbarian|PHB|7",
         "Instinctive Pounce|Barbarian|PHB|7|TCE",
-        "Ability Score Improvement|Barbarian|PHB|8",
+        "Ability Score Improvement|Rogue|DRK|8",
         "Brutal Critical|Barbarian|DRK|9",
         {
           "classFeature": "Path feature|Barbarian||10",
           "gainSubclassFeature": true
         },
         "Relentless Rage|Barbarian|PHB|11",
-        "Ability Score Improvement|Barbarian|PHB|12",
+        "Ability Score Improvement|Rogue|DRK|12",
         {
           "classFeature": "Path feature|Barbarian||14",
           "gainSubclassFeature": true
         },
         "Persistent Rage|Barbarian|PHB|15",
-        "Ability Score Improvement|Barbarian|PHB|16",
+        "Ability Score Improvement|Rogue|DRK|16",
         "Indomitable Might|Barbarian|PHB|18",
-        "Ability Score Improvement|Barbarian|PHB|19",
+        "Ability Score Improvement|Rogue|DRK|19",
         "Primal Champion|Barbarian|DRK|20"
       ],
       "subclassTitle": "Primal Path",
@@ -17898,16 +17898,16 @@
           "gainSubclassFeature": true
         },
         "Weapon Mastery|Fighter|DRK|4|DRK",
-        "Ability Score Improvement|Fighter||4",
+       "Ability Score Improvement|Rogue|DRK|4",
         "Martial Versatility|Fighter||4|TCE",
         "Extra Attack|Fighter||5",
         "Tactical Shift|Fighter|DRK|5",
-        "Ability Score Improvement|Fighter||6",
+        "Ability Score Improvement|Fighter|DRK|6",
         {
           "classFeature": "Martial Archetype feature|Fighter||7",
           "gainSubclassFeature": true
         },
-        "Ability Score Improvement|Fighter||8",
+       "Ability Score Improvement|Rogue|DRK|8",
         "Indomitable|Fighter|DRK|9",
         "Master of Armaments|Fighter|DRK|9|DRK",
         {
@@ -17915,21 +17915,21 @@
           "gainSubclassFeature": true
         },
         "Extra Attack (2)|Fighter||11",
-        "Ability Score Improvement|Fighter||12",
+       "Ability Score Improvement|Rogue|DRK|12",
         "Indomitable (two uses)|Fighter||13",
-        "Ability Score Improvement|Fighter||14",
+        "Ability Score Improvement|Fighter|DRK|14",
         {
           "classFeature": "Martial Archetype feature|Fighter||15",
           "gainSubclassFeature": true
         },
-        "Ability Score Improvement|Fighter||16",
+        "Ability Score Improvement|Rogue|DRK|16",
         "Action Surge (two uses)|Fighter||17",
         "Unconquerable|Fighter|DRK|17",
         {
           "classFeature": "Martial Archetype feature|Fighter||18",
           "gainSubclassFeature": true
         },
-        "Ability Score Improvement|Fighter||19",
+       "Ability Score Improvement|Rogue|DRK|19",
         "Extra Attack (3)|Fighter||20"
       ],
       "subclassTitle": "Martial Archetype",
@@ -21000,28 +21000,28 @@
         "Font of Magic|Sorcerer|DRK|2",
         "Metamagic|Sorcerer|DRK|3",
         "Metamagic Options|Sorcerer|DRK|3|DRK",
-        "Ability Score Improvement|Sorcerer|DRK|4",
+        "Ability Score Improvement|Rogue|DRK|4",
         "Sorcerous Versatility|Sorcerer|DRK|4|DRK",
         "Magical Guidance|Sorcerer|DRK|5|DRK",
         {
           "classFeature": "Sorcerous Origin feature|Sorcerer|DRK|6",
           "gainSubclassFeature": true
         },
-        "Ability Score Improvement|Sorcerer|DRK|8",
+        "Ability Score Improvement|Rogue|DRK|8",
         "Innate Sorcery|Sorcerer|DRK|9",
         "Metamagic|Sorcerer|DRK|10",
-        "Ability Score Improvement|Sorcerer|DRK|12",
+       "Ability Score Improvement|Rogue|DRK|12",
         {
           "classFeature": "Sorcerous Origin feature|Sorcerer|DRK|14",
           "gainSubclassFeature": true
         },
-        "Ability Score Improvement|Sorcerer|DRK|16",
+       "Ability Score Improvement|Rogue|DRK|16",
         "Metamagic|Sorcerer|DRK|17",
         {
           "classFeature": "Sorcerous Origin feature|Sorcerer|DRK|18",
           "gainSubclassFeature": true
         },
-        "Ability Score Improvement|Sorcerer|DRK|19",
+        "Ability Score Improvement|Rogue|DRK|19",
         "Arcane Apotheosis|Sorcerer|DRK|20"
       ],
       "subclassTitle": "Sorcerous Origin",
@@ -21839,25 +21839,25 @@
           "gainSubclassFeature": true
         },
         "Cantrip Formulas|Wizard||3|TCE",
-        "Ability Score Improvement|Wizard||4",
+        "Ability Score Improvement|Rogue|DRK|4",
         "Memorize Spell|Wizard|DRK|5|DRK",
         {
           "classFeature": "Arcane Tradition feature|Wizard||6",
           "gainSubclassFeature": true
         },
-        "Ability Score Improvement|Wizard||8",
+       "Ability Score Improvement|Rogue|DRK|8",
         {
           "classFeature": "Arcane Tradition feature|Wizard||10",
           "gainSubclassFeature": true
         },
-        "Ability Score Improvement|Wizard||12",
+       "Ability Score Improvement|Rogue|DRK|12",
         {
           "classFeature": "Arcane Tradition feature|Wizard||14",
           "gainSubclassFeature": true
         },
-        "Ability Score Improvement|Wizard||16",
+        "Ability Score Improvement|Rogue|DRK|16",
         "Spell Mastery|Wizard||18",
-        "Ability Score Improvement|Wizard||19",
+       "Ability Score Improvement|Rogue|DRK|19",
         "Signature Spells|Wizard||20"
       ],
       "subclassTitle": "Arcane Tradition",
@@ -22512,28 +22512,28 @@
         },
         "Eldritch Invocations|Warlock||2",
         "Pact Boon|Warlock|DRK|3",
-        "Ability Score Improvement|Warlock||4",
+        "Ability Score Improvement|Rogue|DRK|4",
         "Eldritch Versatility|Warlock||4|TCE",
         {
           "classFeature": "Otherworldly Patron feature|Warlock||6",
           "gainSubclassFeature": true
         },
-        "Ability Score Improvement|Warlock||8",
+       "Ability Score Improvement|Rogue|DRK|8",
         {
           "classFeature": "Otherworldly Patron feature|Warlock||10",
           "gainSubclassFeature": true
         },
         "Mystic Arcanum (6th level)|Warlock||11",
-        "Ability Score Improvement|Warlock||12",
+       "Ability Score Improvement|Rogue|DRK|12",
         "Mystic Arcanum (7th level)|Warlock||13",
         {
           "classFeature": "Otherworldly Patron feature|Warlock||14",
           "gainSubclassFeature": true
         },
         "Mystic Arcanum (8th level)|Warlock||15",
-        "Ability Score Improvement|Warlock||16",
+        "Ability Score Improvement|Rogue|DRK|16",
         "Mystic Arcanum (9th level)|Warlock||17",
-        "Ability Score Improvement|Warlock||19",
+       "Ability Score Improvement|Rogue|DRK|19",
         "Eldritch Secrets|Warlock|DRK|20"
       ],
       "subclassTitle": "Otherworldly Patron",
@@ -23731,6 +23731,20 @@
 				"Consult the {@table Weapons|tct} and {@table Weapon Masteries|tct} tables for information on masteries and their abilities."
 			]
 		},
+
+    {
+      "name": "Ability Score Improvement",
+      "source": "DRK",
+      "page": 99,
+      "srd": true,
+      "className": "Fighter",
+      "classSource": "DRK",
+      "level": 6,
+      "entries": [
+        "When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. However, if you are atleast 19th level, that maximum increases to 22.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
 {
 			"name": "Master of Armaments",
 			"source": "DRK",
@@ -23745,6 +23759,20 @@
 				"These property changes apply only for you, not for others, and the changes end for you when you finish your next Long rest."
 			]
 		},
+
+    {
+      "name": "Ability Score Improvement",
+      "source": "DRK",
+      "page": 99,
+      "srd": true,
+      "className": "Fighter",
+      "classSource": "DRK",
+      "level": 14,
+      "entries": [
+        "When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. However, if you are atleast 19th level, that maximum increases to 22.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
 {
 			"name": "Eldritch Secrets",
 			"source": "DRK",
