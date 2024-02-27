@@ -12572,7 +12572,7 @@
 					"classFeature": "Divine Domain feature|Cleric||2",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Cleric||4",
+				"Ability Score Improvement|Rogue|DRK|4",
 				"Cantrip Versatility|Cleric||4|TCE",
 				"Destroy Undead (CR 1/2)|Cleric||5",
 				{
@@ -12583,7 +12583,7 @@
 					"classFeature": "Divine Domain feature|Cleric||6",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Cleric||8",
+				"Ability Score Improvement|Rogue|DRK|8",
 				"Destroy Undead (CR 1)|Cleric||8",
 				{
 					"classFeature": "Divine Domain feature|Cleric||8",
@@ -12591,9 +12591,9 @@
 				},
 				"Divine Intervention|Cleric||10",
 				"Destroy Undead (CR 2)|Cleric||11",
-				"Ability Score Improvement|Cleric||12",
+				"Ability Score Improvement|Rogue|DRK|12",
 				"Destroy Undead (CR 3)|Cleric||14",
-				"Ability Score Improvement|Cleric||16",
+				"Ability Score Improvement|Rogue|DRK|16",
 				"Destroy Undead (CR 4)|Cleric||17",
 				{
 					"classFeature": "Divine Domain feature|Cleric||17",
@@ -12603,7 +12603,7 @@
 					"classFeature": "Channel Divinity|Cleric||18",
 					"tableDisplayName": "Channel Divinity (3/rest)"
 				},
-				"Ability Score Improvement|Cleric||19",
+				"Ability Score Improvement|Rogue|DRK|19",
 				"Divine Intervention Improvement|Cleric||20"
 			],
 			"subclassTitle": "Divine Domain",
@@ -22534,7 +22534,7 @@
         "Ability Score Improvement|Warlock||16",
         "Mystic Arcanum (9th level)|Warlock||17",
         "Ability Score Improvement|Warlock||19",
-        "Eldritch Master|Warlock||20"
+        "Eldritch Secrets|Warlock|DRK|20"
       ],
       "subclassTitle": "Otherworldly Patron",
       "fluff": [
@@ -23745,6 +23745,19 @@
 				"These property changes apply only for you, not for others, and the changes end for you when you finish your next Long rest."
 			]
 		},
+{
+			"name": "Eldritch Secrets",
+			"source": "DRK",
+			"page": 72,
+			"srd": true,
+			"basicRules": true,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"level": 20,
+			"entries": [
+				"At 20th level, you begin unshackling the limits of Mystic Arcanum. Whenever you take a Short Rest, you can regain the use of one expended Mystic Arcanum."
+			]
+		},
     {
       "name": "Rage",
       "source": "DRK",
@@ -24175,7 +24188,7 @@
       "classSource": "DRK",
       "level": 4,
       "entries": [
-        "When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. However, if you are atleast 19th level, that maximum increases to 22.",
         "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
       ]
     },
@@ -24236,7 +24249,7 @@
       "classSource": "DRK",
       "level": 8,
       "entries": [
-        "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. However, if you are atleast 19th level, that maximum increases to 22.",
         "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
       ]
     },
@@ -24282,7 +24295,7 @@
       "classSource": "DRK",
       "level": 12,
       "entries": [
-        "When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. However, if you are atleast 19th level, that maximum increases to 22.",
         "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
       ]
     },
@@ -24307,7 +24320,7 @@
       "classSource": "DRK",
       "level": 16,
       "entries": [
-        "When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+         "When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. However, if you are atleast 19th level, that maximum increases to 22.",
         "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
       ]
     },
@@ -24344,7 +24357,7 @@
       "classSource": "DRK",
       "level": 19,
       "entries": [
-        "When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. However, if you are atleast 19th level, that maximum increases to 22.",
         "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
       ]
     },
@@ -24579,7 +24592,7 @@
       "classSource": "DRK",
       "level": 4,
       "entries": [
-        "When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. However, if you are atleast 19th level, that maximum increases to 22.",
         "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
       ]
     },
@@ -24645,7 +24658,7 @@
       "classSource": "DRK",
       "level": 8,
       "entries": [
-        "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+         "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. However, if you are atleast 19th level, that maximum increases to 22.",
         "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
       ]
     },
@@ -24713,7 +24726,7 @@
       "classSource": "DRK",
       "level": 12,
       "entries": [
-        "When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. However, if you are atleast 19th level, that maximum increases to 22.",
         "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
       ]
     },
@@ -24762,7 +24775,7 @@
       "classSource": "DRK",
       "level": 16,
       "entries": [
-        "When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. However, if you are atleast 19th level, that maximum increases to 22.",
         "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
       ]
     },
@@ -24787,7 +24800,7 @@
       "classSource": "DRK",
       "level": 19,
       "entries": [
-        "When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. However, if you are atleast 19th level, that maximum increases to 22.",
         "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
       ]
     },
@@ -24895,7 +24908,7 @@
       "classSource": "DRK",
       "level": 4,
       "entries": [
-        "When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+         "When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. However, if you are atleast 19th level, that maximum increases to 22.",
         "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
       ]
     },
@@ -25066,7 +25079,7 @@
       "classSource": "DRK",
       "level": 8,
       "entries": [
-        "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+         "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. However, if you are atleast 19th level, that maximum increases to 22.",
         "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
       ]
     },
@@ -25093,7 +25106,7 @@
       "classSource": "DRK",
       "level": 10,
       "entries": [
-        "When you reach 10th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "When you reach 10th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. However, if you are atleast 19th level, that maximum increases to 22.",
         "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
       ]
     },
@@ -25120,7 +25133,7 @@
       "classSource": "DRK",
       "level": 12,
       "entries": [
-        "When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. However, if you are atleast 19th level, that maximum increases to 22.",
         "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
       ]
     },
@@ -25251,7 +25264,7 @@
       "classSource": "DRK",
       "level": 16,
       "entries": [
-        "When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+         "When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. However, if you are atleast 19th level, that maximum increases to 22.",
         "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
       ]
     },
@@ -25291,7 +25304,7 @@
       "classSource": "DRK",
       "level": 19,
       "entries": [
-        "When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. However, if you are atleast 19th level, that maximum increases to 22.",
         "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
       ]
     },
@@ -25305,7 +25318,7 @@
       "classSource": "DRK",
       "level": 20,
       "entries": [
-        "At 20th level, you have an uncanny knack for succeeding when you need to. If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the {@dice d20} roll as a 20.",
+        "At 20th level, you have an uncanny knack for succeeding when you need to. If you fail an ability check, attack roll or saving throw, you can turn that roll into a 20. You can use this feature after the roll has been made, but before the rolls effects take place.",
         "Once you use this feature, you can't use it again until you finish a short or long rest."
       ]
     },
@@ -25498,7 +25511,7 @@
       "classSource": "DRK",
       "level": 4,
       "entries": [
-        "When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. However, if you are atleast 19th level, that maximum increases to 22.",
         "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
       ]
     },
@@ -25612,7 +25625,7 @@
       "classSource": "DRK",
       "level": 8,
       "entries": [
-        "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+         "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. However, if you are atleast 19th level, that maximum increases to 22.",
         "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
       ]
     },
@@ -25662,7 +25675,7 @@
       "classSource": "DRK",
       "level": 10,
       "entries": [
-        "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "When you reach 10th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. However, if you are atleast 19th level, that maximum increases to 22.",
         "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
       ]
     },
@@ -25687,7 +25700,7 @@
       "classSource": "DRK",
       "level": 12,
       "entries": [
-        "When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. However, if you are atleast 19th level, that maximum increases to 22.",
         "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
       ]
     },
@@ -25755,7 +25768,7 @@
       "classSource": "DRK",
       "level": 16,
       "entries": [
-        "When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+         "When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. However, if you are atleast 19th level, that maximum increases to 22.",
         "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
       ]
     },
@@ -25797,7 +25810,7 @@
       "classSource": "DRK",
       "level": 19,
       "entries": [
-        "When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. However, if you are atleast 19th level, that maximum increases to 22.",
         "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
       ]
     },
