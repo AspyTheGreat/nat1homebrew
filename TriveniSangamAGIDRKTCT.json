@@ -31280,6 +31280,167 @@
         "Once you use this feature, you can't do so again until you finish a long rest, unless you spend 5 sorcery points to use it again."
       ]
     },
+{
+			"name": "Arcane Soul",
+			"source": "DRK",
+			"page": 66,
+			"className": "Sorcerer",
+			"classSource": "DRK",
+			"subclassShortName": "Arcane",
+			"subclassSource": "DRK",
+			"level": 1,
+			"entries": [
+				"Most creatures spend years studying the weave, navigating the intricate methods to use its power. There are those however, who hold an inexplicable connection between themselves and the weave. This connection allows for them to more efficiently cast their spells.",
+				"As an Arcane soul sorcerer, you decide how you acquired your powers. Were you born with them? were you blessed by the deity of magic? or were you the the result of an experiment to better manipulate the weave? The choice is yours to make.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Spells|Sorcerer|DRK|Arcane|DRK|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Wellspring|Sorcerer|DRK|Arcane|DRK|1"
+				}
+			]
+		},
+		{
+			"name": "Arcane Spells",
+			"source": "DRK",
+			"page": 66,
+			"className": "Sorcerer",
+			"classSource": "DRK",
+			"subclassShortName": "Arcane",
+			"subclassSource": "DRK",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"{@i 1st-level Arcane Soul feature}",
+				"You learn additional spells when you reach certain levels in this class, as shown on the Arcane Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.",
+				"Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be from the Sorcerer spell list. However, a number of spells equal to your Proficiency Bonus can be {@filter from the sorcerer, warlock, or wizard spell list|spells|class=sorcerer;warlock;wizard|level=1;2;3;4;5}.",
+				{
+					"type": "table",
+					"caption": "Arcane Spells",
+					"colLabels": [
+						"Sorcerer Levels",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell detect magic}, {@spell magic missile}"
+						],
+						[
+							"3rd",
+							"{@spell fly}, {@spell kinetic tunnel|tct}"
+						],
+						[
+							"5th",
+							"{@spell hunger of Hadar}, {@spell sending}"
+						],
+						[
+							"7th",
+							"{@spell more magic missiles|tct}, {@spell arcane eye}"
+						],
+						[
+							"9th",
+							"{@spell spell legs|AGI}, {@spell telekinesis}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Arcane Wellspring",
+			"source": "DRK",
+			"page": 68,
+			"className": "Sorcerer",
+			"classSource": "DRK",
+			"subclassShortName": "Arcane",
+			"subclassSource": "DRK",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"{@i 1st-level Arcane Soul feature}",
+				"You can add your Charisma modifier to your Intelligence ({@skill Arcana}) checks, provided you have atleast one sorcery point.",
+				"Whenever you create a spell slot using your Font of Magic feature, you regain one sorcery point."
+			]
+		},
+		{
+			"name": "Refined Somaticism",
+			"source": "DRK",
+			"page": 68,
+			"className": "Sorcerer",
+			"classSource": "DRK",
+			"subclassShortName": "Arcane",
+			"subclassSource": "DRK",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Arcane Soul feature}",
+				"If you expend two or more Sorcery Points while casting a spell, you can treat it as though you upcast the spell by 1 level, provided that the upcast does not make the spell target additional creatures (eg: the {@spell hold person} or {@spell polymorph} spell)."
+			]
+		},
+		{
+			"name": "Transcendant Paradigm",
+			"source": "DRK",
+			"page": 68,
+			"className": "Sorcerer",
+			"classSource": "DRK",
+			"subclassShortName": "Arcane",
+			"subclassSource": "DRK",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Arcane Soul feature}",
+				"You gain a higher understanding of the weave, channeling its power in a more raw and potent manner.",
+				"As an action, you can enter a flow state for 1 minute, letting you seamlessly integrate sorcery points with your spellcasting. While in this form, you turn all of your remaining Spell Slots into Sorcery Points, subsequently removing the limit for holding sorcery points. In order to cast a spell, you expend a number of sorcery points equal to level you wish to cast the spell at.",
+				"The form stops if the minute passes, or if you choose to end it as a Bonus Action. When you do, you may choose to create spell slots using Sorcery Points, spending a number of them equal to the level of the spell slot you wish to create.",
+				"Once you use this feature, you cannot do so again unless you take a Long Rest, or spend 5 sorcery points to enter it again."
+			]
+		},
+		{
+			"name": "Tethered Weave",
+			"source": "DRK",
+			"page": 68,
+			"className": "Sorcerer",
+			"classSource": "DRK",
+			"subclassShortName": "Arcane",
+			"subclassSource": "DRK",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"{@i 18th-level Arcane Soul feature}",
+				"Your soul establishes a direct link to the weave, giving you the following benefits.",
+				{
+					"type": "list",
+					"items": [
+						"While your Transcendant Paradigm feature is active. you regain 1 sorcery point at the start of each turn. These sorcery points cannot be used to create spell slots, and disappear when you exit the flow state.",
+						"If you are subject to a saving throw against a spell, you can spend 2 Sorcery points to succeed on the saving throw."
+						
+					]
+				}
+			]
+		},
+		{
+			"name": "Arcane Dissociation",
+			"source": "DRK",
+			"page": 68,
+			"className": "Sorcerer",
+			"classSource": "DRK",
+			"subclassShortName": "Arcane",
+			"subclassSource": "DRK",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"{@i 18th-level Arcane Soul feature}",
+				"As an action, you can choose to sever your connection with the weave, expending all of your power in a burst of concentrated magic.",
+				"If you choose to do so, turn all of your spell slots into sorcery points. Each creature in a 120ft cone originating from you must make a Constitution saving throw against your Spell save DC. The creature takes an amount of force damage equal to (Total number of sorcery points*d8) on a failure, or half as much on a success.",
+				"The whiplash from this ability is severe, giving you {@dice 1d4}+1 stacks of {@condition exhaustion}. Additionally, you cannot cast spells, or regain spell slots/sorcery points as long as you have any of the stacks of {@condition exhaustion} from this feature."
+			]
+		},
     {
       "name": "Clockwork Soul",
       "source": "DRK",
@@ -41505,6 +41666,47 @@
         "Warping Implosion|Sorcerer|DRK|Aberrant Mind|DRK|18"
       ]
     },
+{
+			"name": "Arcane Soul",
+			"shortName": "Arcane",
+			"source": "DRK",
+			"className": "Sorcerer",
+			"classSource": "DRK",
+			"page": 66,
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"magic missile",
+							"detect magic"
+						],
+						"3": [
+							"invisibility",
+							"borrowed knowledge"
+						],
+						"5": [
+							"fly",
+							"kinetic tunnel|tct"
+						],
+						"7": [
+							"more magic missiles|tct",
+							"arcane eye"
+						],
+						"9": [
+							"spell legs|AGI",
+							"telekinesis"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Arcane Soul|Sorcerer|DRK|Arcane|DRK|1",
+				"Refined Somaticism|Sorcerer|DRK|Arcane|DRK|6",
+				"Transcendant Paradigm|Sorcerer|DRK|Arcane|DRK|14",
+				"Tethered Weave|Sorcerer|DRK|Arcane|DRK|18",
+				"Arcane Dissociation|Sorcerer|DRK|Arcane|DRK|18"
+			]
+		},
     {
       "name": "Clockwork Soul",
       "shortName": "Clockwork Soul",
