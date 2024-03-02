@@ -1671,8 +1671,8 @@
       "rechargeAmount": "1d20; on 20, +10 charges; on 1, 5 charges; else, 1d12+3 charges up to 15",
       "entries": [
         "Crafted from arboreal oak and bound with the heart iron of Arborea, this shield stands as a testament to Talos's unwavering resilience and determination. It is adorned with ancient runes of vigilance and persistence that glow in the heat of battle, bolstering the resolve of allies.",
-        "While wielding this shield, you gain a +3 bonus to AC and grant advantage on saving throws against effects that cause frightened, paralyzed, or restrained conditions to any number of creatures you choose within your sight.",
-        "The shield holds a pool of 15 charges for invoking its magical abilities. At the beginning of each day, the wielder rolls a d20. On a roll of 20, the shield regains all spent charges and gains an additional 10 charges (for a total of 25 that day). On a roll of 1, it regains 5 charges. Otherwise, it regains 1d12+3 charges up to a maximum of 15.",
+        "While wielding this shield, you gain a +3 bonus to AC and grant advantage on saving throws against effects that cause frightened, paralyzed, blinded or restrained conditions to any number of creatures you choose within your sight.",
+        "The shield holds a pool of 15 charges for invoking its magical abilities. At the beginning of each day, the wielder rolls a {@dice d20}. On a roll of 20, the shield regains all spent charges and gains an additional 10 charges (for a total of 25 that day). On a roll of 1, it regains 5 charges. Otherwise, it regains {@dice 1d12+3} charges up to a maximum of 15.",
         {
           "type": "entries",
           "name": "Rooted She Stands",
@@ -1717,7 +1717,7 @@
       "rechargeAmount": "1d20; on 20, regains all charges and an additional 10; on 1, regains 10 charges; else, 1d12+8 charges up to 20",
       "entries": [
         "The Aegis of Arborea, forged amidst a celestial tempest and nurtured by the vital essence of Arborea, transcends the mere concept of a shield. It embodies Talos's divine guardianship, brimming with the wild essence of untamed nature and emitting a resonant power that echoes the soul of its celestial domain.",
-        "This shield confers a +5 bonus to AC, reflecting its divine origin. Additionally, it grants the wielder and chosen allies advantage on saving throws against effects that would restrain, blind, paralyze, or stun.",
+        "While wielding the aegis, you gain a +5 bonus to AC and grant advantage on saving throws against effects that cause frightened, paralyzed, blinded or restrained conditions to any number of creatures you choose within your sight.",
         "The shield holds a pool of 20 charges for invoking its magical abilities. At the beginning of each day, the wielder rolls a d20. On a roll of 20, the shield regains all spent charges and gains an additional 10 charges (for a total of 30 that day). On a roll of 1, it regains 5 charges. Otherwise, it regains 1d12+8 charges up to a maximum of 15.",
         {
           "type": "entries",
@@ -1830,8 +1830,8 @@
       "entries": [
         "Forged from the heart of a celestial sun, this sword radiates with an unyielding light that pierces through the deepest shadows. Its blade, inscribed with ancient scriptures of Pelor, glows with a divine luminescence, offering hope and guidance to those who stand for justice and righteousness.",
         "In the presence of darkness, the sword's light intensifies, casting bright illumination within a 60-foot radius and revealing entities hidden by magic or shadow. This divine light renders {@condition invisible} creatures visible to the wielder.",
-        "Attacks with this sword deal an additional {@dice 2d8} radiant damage. Against undead, the damage increases to {@dice 3d8} radiant, symbolizing Pelor's dominion over light and life.",
-        "The sword holds a pool of 20 charges for invoking its magical abilities. At the beginning of each day, the wielder rolls a {@dice d20}. On a roll of 20, the flail regains all spent charges and gains an additional 10 charges (for a total of 30 that day). On a roll of 1, it regains 5 charges. Otherwise, it regains {@dice 1d12+8} charges up to a maximum of 20.",
+        "This sword grants a +5 bonus to attack and damage rolls. Attacks with this sword deal an additional {@dice 2d8} radiant damage. Against undead, the damage increases to {@dice 3d8} radiant, symbolizing Pelor's dominion over light and life.",
+        "The sword holds a pool of 20 charges for invoking its magical abilities. At the beginning of each day, the wielder rolls a {@dice d20}. On a roll of 20, the sword regains all spent charges and gains an additional 10 charges (for a total of 30 that day). On a roll of 1, it regains 5 charges. Otherwise, it regains {@dice 1d12+8} charges up to a maximum of 20.",
         {
           "type": "entries",
           "name": "Concentrated Light Slash",
@@ -1871,145 +1871,415 @@
       "rarity": "artifact",
       "reqAttune": "by a Bard or follower of Eldath",
       "entries": [
-        "Harmony of Ages is an exquisite lyre, crafted from ethereal wood harvested from the oldest trees in the Feywild and strings spun from the essence of time itself. Its frame is adorned with intricate carvings depicting scenes of the fey, beauty, and the flowing nature of time, pulsating with a gentle, otherworldly glow.",
-        "This artifact allows its wielder to channel the power of Eldath through music, weaving spells that control time and influence the minds and hearts of those who listen. Its melodies resonate across the realms, bridging the gap between the material world and the ethereal beauty of the Feywild.",
-        "Wielding Harmony of Ages grants a +3 bonus to spell attack rolls and spell save DCs for Bard spells. Additionally, when used to perform, it can captivate an audience, choose one creature that can see or hear your performance per minute. that creature is subject to the {@spell suggestion} spell. DC equal to your performance check roll.",
-        "The lyre holds 20 charges for its temporal and bardic abilities, replenishing at dawn: 1d20 roll; on 20, regains all charges and an additional 5; on 1, regains 5 charges; else, 1d12+3 charges up to 20.",
+        "Harmony of Ages is an ethereal lyre, its existence as timeless as the oldest tales of the Feywild. Crafted from wood that whispers of ancient forests and strings woven from the very threads of time, the instrument's melodies carry the power to bridge worlds and moments. Engraved with depictions of fey dances, serene landscapes, and temporal spirals, it glows with a soft, otherworldly light, inviting its wielder to explore the mysteries of beauty, art, and time.",
+        "This artifact bestows upon its wielder the unique ability to weave magic into their music, manipulating time's flow and captivating the hearts of those who hear its divine melodies. Its songs can bend the will of listeners, suggesting actions as if whispered by Eldath herself.",
+        "Wielding Harmony of Ages grants a +3 bonus to spell attack rolls and spell save DCs for Bard spells. Additionally, it enchants audiences with its performance, allowing the wielder to subject one creature per minute, that can see or hear the performance, to the effect of the {@spell suggestion} spell, with the DC set by the performance check.",
+        "The lyre holds a pool of 15 charges for invoking its magical abilities. At the beginning of each day, the wielder rolls a {@dice d20}. On a roll of 20, the lyre regains all spent charges and gains an additional 10 charges (for a total of 25 that day). On a roll of 1, it regains 5 charges. Otherwise, it regains {@dice 1d12+3} charges up to a maximum of 15.",
         {
           "type": "entries",
-          "name": "Temporal Chord",
+          "name": "T# Major",
           "entries": [
-            "As an action, you expend 5 charges to pluck a chord that resonates through the fabric of time. The wielder can hasten or slow the flow of time for up to 3 creatures within hearing distance, granting them either an additional bonus action or reducing their speed by half till the end of thier next turn. Unwilling creatures must make a Charisma saving throw against your spell save DC. "
+            "When you use the bardic inspiration featue, expend 5 charges to pluck a chord that weaves through the fabric of time. The wielder can hasten or slow the flow of time for up to 3 creatures within 60ft, offering them an extra bonus action or halving their speed until the end of their next turn. Unwilling targets may resist with a Charisma saving throw against the wielder's spell save DC."
           ]
         },
         {
           "type": "entries",
-          "name": "Eldath's Respite",
+          "name": "Wrath of the Feywild",
           "entries": [
-            "Expend 10 charges to play a melody that envelops the area in a calming aura. For the next minute, allies within 30 feet heal for 1d8 hit points at the start of their turn. Allies in the aura are also immune to being {@condition charmed} and {@condition frightened}."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Verse of Ages",
-          "entries": [
-            "Once per day, without expending charges, the wielder can perform a song that manipulates the very essence of time. Choose one event within the last hour to rewind, altering a single decision made by the wielder or an ally. This ability cannot reverse the effects of combat but can alter preparatory actions or decisions."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Arcane Sentinel",
-          "entries": [
-            "The wielder becomes attuned to the magic of the Feywild and gains the ability to cast *detect magic* at will, without expending a spell slot or charge. This reveals not only magical auras but also faint traces of fey magic, hinting at portals to the Feywild or the presence of fey creatures."
-          ]
-        }
-      ]
-    },
-    {
-      "name": "(Lathander) Vastavikta, The Reality Monger",
-      "source": "AspysGuidetoInfinitum",
-      "type": "M",
-      "rarity": "artifact",
-      "weight": 2,
-      "weaponCategory": "martial",
-      "property": [
-        "H",
-        "2H"
-      ],
-      "dmg1": "2d6",
-      "dmgType": "S",
-      "sword": true,
-      "weapon": false,
-      "reqAttune": "by a Paladin/Zealot Barbarian of Good/Neutral Alignment",
-      "bonusWeapon": "+4",
-      "entries": [
-        "This Sword was forged in the divine realms and entrusted to a hero who was on a quest to quell the consequence of the Arcane Aftermath. This Sword was one of three boons that graced the world after the reality morphing event changed the face of Fer.",
-        "The Blade resembles a relatively thin greatsword, with a hilt that looks like the inside of an atom. Despite its thin form, there is an intricate series of deep carvings in arcane script around the blade, removing just enough weight that it vibrates in constant pitch when struck. The runes also cause a dull glow that sheds dim light upto 15 feet in all directions. As a bonus action, the wielder can channel the blade’s energy to shed bright light in a 30ft radius.",
-        "Whenever a creature whose reality was altered, such as with the wish spell, time travel or as determined by the DM comes within 60ft of this blade, sweet celestial music permeates the atmosphere as the blade begins to mildly vibrate.  ",
-        "You have a +3 bonus to attack and damage rolls made with this magic weapon.",
-        "When you hit with an attack using this weapon, the target takes an extra {@dice 1d8} force damage as the blade vibrates and churns the insides of the target.",
-        "The Blade has a pool of 15 charges when attuned to. Charges can be spent to do a number of things. At the end of a long rest, roll a {@dice d20}. On a 20, it regains all charges and has an additional 10 charges. On a 1, it regains 5 charges. On other rolls, it regains {@dice 1d12+3} charges upto 15.",
-        {
-          "type": "entries",
-          "name": "Wrathful Reality",
-          "entries": [
-            "You can expend a number of charges to deal extra damage against creatures. As a bonus action, you can charge the weapon's persussion with a frequency. Next time you hit a creature with a weapon attack before a short or long rest, You deal 1d8 psychic damage and an extra 1d8 for each charge loaded upto 5 charges. 2d8 if the creature is reality altered."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Paranoia's End",
-          "entries": [
-            "After a long rest and before charges have been regained, Choose 7 levels of spells from the {@filter wizard spell list upto level 5|spells|level=1|level=2|level=3|level=4|level=5|class=Wizard}. You can cast these spells through this sword by spending spell level*2 number of charges without the need for any material components."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Arcane Sentinel",
-          "entries": [
-            "You always know the spell detect magic and can cast it using 1 charge. The radius is doubled and on spending another charge, your range becomes uninterrupted."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Vicinity breeds affinity, affinity breeds power, power yearns vicinity.",
-          "entries": [
-            "As long as one of the other 2 weapons of the arcane aftermath get within 1000ft of this weapon, the creature attuned to it always knows the direction to the weapon.",
-            "Once all three weapons of the arcane aftermath are within 30ft of eachother, they fuse with the creatures they are attuned to. All creatures attuned to these weapons recieve a +2 to any ability of thier choice. Make the following changes to Vastavikta.",
+            "When you use the bardic inspiration featue, Expend 5 charges to channel the untamed power of the Feywild, releasing its wrath upon the battlefield. Upon activation, the wielder unleashes a surge of fey energy, manifesting one of the following effects, chosen at the time of casting:",
             {
               "type": "list",
               "items": [
-                "Attacks and Damage rolls get a +4 bonus.",
-                "Wrathful Reality's charge limit increases to 7 charges.",
-                "The extra damage increases to 1d12."
+                "Feywild Storm: Call down a storm of radiant energy in a 30-foot radius centered on a point within sight. Enemies caught in the storm take {@dice 6d8} radiant damage and must succeed on a Dexterity saving throw or be blinded till the end of your next turn.",
+                "Thorned Grasp: Summon ethereal vines from the ground in a 20-foot square centered within 60ft. These vines lash out at all creatures in the area, dealing {@dice 6d6} piercing damage. Enemies must make a Strength saving throw against your spell save DC or be restrained by the entangling vines till the end of your next turn.",
+                "Wildfire Dance: Ignites the raw magic of the Feywild to send forth a wave of fire in a 60-foot cone. All creatures caught in the wave take {@dice 8d6} fire damage and must succeed on a Dexterity saving throw against your spell saving DC or catch fire, taking an additional {@dice 2d6} fire damage at the start of each of their turns until the the creature uses an action to extinguish it."
               ]
             }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Arcane Sentinel",
+          "entries": [
+            "Imbued with the essence of the Feywild, the wielder gains an innate ability to cast *detect magic* at will, without expending a spell slot or charge. This detection is uniquely sensitive to fey magic, revealing the hidden presence of fey creatures or gateways to the Feywild."
           ]
         }
       ]
     },
     {
-      "name": "(Lathander) Dawn's Rebirth, The Genesis Blade",
+      "name": "(Eldath) Eternal Serenade",
+      "source": "AspysGuidetoInfinitum",
+      "type": "INS",
+      "wondrous": true,
+      "rarity": "divine arm",
+      "reqAttune": "by a devoted champion of Eldath",
+      "entries": [
+        "Eternal Serenade is a divine harp, its strings shimmering with the light of stars and its body carved from wood that once formed the core of the Feywild's oldest tree. The harp's melody resonates with the very essence of creation, capable of mending the wounded soul and calming the restless heart. Its music transcends the barriers between worlds, inviting a harmony that echoes Eldath's eternal peace.",
+        "Wielding Eternal Serenade grants a +5 bonus to spell attack rolls and spell save DCs for Bard spells. Additionally, it enchants audiences with its performance, allowing the wielder to subject one creature per minute, that can see or hear the performance, to the effect of the {@spell suggestion} spell, with the DC set by the performance check.",
+        "The harp holds a pool of 20 charges for invoking its magical abilities. At the beginning of each day, the wielder rolls a {@dice d20}. On a roll of 20, the harp regains all spent charges and gains an additional 10 charges (for a total of 30 that day). On a roll of 1, it regains 5 charges. Otherwise, it regains {@dice 1d12+8} charges up to a maximum of 20.",
+        {
+          "type": "entries",
+          "name": "Melody of the Ages",
+          "entries": [
+            "When you use the bardic inspiration featue, Expend 8 charges to play a tune that weaves through the fabric of time itself. This melody allows the wielder to either accelerate or decelerate time for up to 5 creatures within 60ft. Accelerated allies gain an additional action till the end of thier next turn, while decelerated foes see their speed halved and AC reduced by 10 till the end of your next turn. Unwilling targets may attempt a Charisma saving throw against the wielder's spell save DC to resist."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Resonance of the Feywild",
+          "entries": [
+            "When you use the bardic inspiration featue, Expend 5 charges to invoke a symphony of the wild, creating an expansive sanctuary that harmonizes with extraplanar energy. This sanctuary, spanning a 60-foot radius centered on the lyre, lasts for 1 minute and manifests one of the effects as listed below. At anytime, while the santuary is active, you can spend 2 charges to immediately change the effect. You choose one when you activate this feature.",
+            {
+              "type": "list",
+              "items": [
+                "Healing Harmony: Allies within the sanctuary heal for {@dice 2d8} hit points at the start of their turn, as the music's soothing tones mend wounds and bolster spirits.",
+                "Veil of Serenity: The ground and upto 20ft high becomes difficult terrain for creatures of your choice, as ethereal vines and flowers sprout to slow their advance.",
+                "Melodic Guard: Allies in the aura gain {@dice 2d8} temporary hitpoints at the start of thier turns, and on Constitution saving throws to maintain concentration on spells, protected by a veil of music that shields their minds.",
+                "Resonant Retaliation: When creatures hostile to you within the sanctuary attempt to cast a spell or make an attack, the sanctuary produces a dissonant chord. The attacker must succeed on a Wisdom saving throw against the your spell save DC or the attack/spell fails and the caster/attacker takes 1d8 psychic damage, as the sanctuary itself seeks to preserve the peace."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Evergreen Harmony",
+          "entries": [
+            "Once per day, without expending charges, the wielder can initiate a performance that invokes Eldath's eternal blessing. This divine melody weaves a continuous aura of tranquility and resilience around the wielder, lasting for 24 hours. Eldath's Evergreen Harmony offers a steadfast connection to the serene and life-giving aspects of Eldath's domain, subtly reinforcing the bond between the natural world and those under its protection.",
+            {
+              "type": "list",
+              "items": [
+                "Continuous Protection: Allies within 60 feet of the wielder gain advantage on saving throws against being charmed or frightened, enveloped in an aura that soothes the mind and fortifies the spirit against manipulation and terror.",
+                "Regenerative Melody: The wielder and their allies within the aura regenerate hit points, restoring 1 hit point at the start of each hour.",
+                "Harmonic Shield: As a testament to Eldath's guardianship, the aura also grants a +1 bonus to AC to all within its reach, reflecting the protective canopy of a verdant forest."
+              ]
+            },
+            "For each additional charge expended (up to 5), the potency of Eldath's Evergreen Harmony intensifies, enhancing its effects:",
+            {
+              "type": "list",
+              "items": [
+                "Each charge increases the hit point regeneration by 1 per hour, up to a maximum of 6 hit points per hour with 5 additional charges spent.",
+                "Expend 3 or more additional charges to extend the aura's advantage against charm and fear to include immunity to the poisoned condition and resistance to poison damage."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Arcane Sentinel",
+          "entries": [
+            "Eternal Serenade sharpens the wielder's awareness of magical energies, allowing them to cast detect magic at will, without expending a spell slot or charge. With an additional charge, the detection becomes omniscient within 60 feet, unveiling even the most hidden magic, including illusions and enchantments."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "(Bhaal) Blade of the Death's Hand",
+      "type": "M",
+      "weight": 1,
+      "weaponCategory": "simple",
+      "property": [
+        "F",
+        "L",
+        "T"
+      ],
+      "range": "20/60",
+      "dmg1": "1d4",
+      "dmgType": "P",
+      "bonusWeapon": "+3",
+      "source": "AspysGuidetoInfinitum",
+      "rarity": "artifact",
+      "wondrous": true,
+      "reqAttune": "by a follower of Bhaal",
+      "entries": [
+        "This sinister dagger is forged from a metal that seems to absorb light, with a hilt wrapped in skin from an unknown creature. It is said to have been created in the darkest rituals to Bhaal, infused with the essence of death itself.",
+        "While wielding this dagger, you gain a +3 bonus to attack and damage rolls. Strikes from this dagger deal an additional {@dice 1d8} necrotic damage, as wounds inflicted fester with supernatural speed, sapping the strength of its victims. ",
+        "The dagger holds a pool of 15 charges for invoking its magical abilities. At the beginning of each day, the wielder rolls a {@dice d20}. On a roll of 20, the dagger regains all spent charges and gains an additional 10 charges (for a total of 25 that day). On a roll of 1, it regains 5 charges. Otherwise, it regains {@dice 1d12+3} charges up to a maximum of 15.",
+        {
+          "type": "entries",
+          "name": "Shadow Blink",
+          "entries": [
+            "When you take the attack action, Expend 5 charges to imbue the dagger with a shadowy essence and throw it towards a location within 60 feet. Upon the dagger's impact, you instantly blink to that location, reappearing with the dagger in hand."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Decay's Embrace",
+          "entries": [
+            "Expend 3 charges to curse a target that you hit with the weapon. For the next 10 minutes, whenever the cursed target attempts to heal through magical means, they suffer necrotic backlash causing them to take additional necrotic damage equal to half of your weapon damage roll. This curse highlights the insidious influence of Bhaal, turning attempts at recovery into opportunities for further affliction."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Arcane Sentinel",
+          "entries": [
+            "You always know the spell detect magic and can cast it using 1 charge. The radius is doubled, and spending another charge makes your detection capabilities uninterrupted."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "(Bhaal) Eclipse of the End",
       "source": "AspysGuidetoInfinitum",
       "type": "M",
       "rarity": "divine arm",
-      "weight": 2,
       "weaponCategory": "martial",
+      "dmg1": "2d8",
+      "dmgType": "Slashing",
       "property": [
-        "H",
+        "F"
+      ],
+      "weapon": true,
+      "reqAttune": "by a devoted champion of Bhaal",
+      "weight": 4,
+      "bonusWeapon": "+5",
+      "charges": 20,
+      "recharge": "dawn",
+      "rechargeAmount": "1d20; on 20, regains all charges and an additional 10; on 1, regains 10 charges; else, 1d12+5 charges up to 20",
+      "entries": [
+        "Forged under a blood moon, Eclipse of the End is a longsword with a serrated edge that whispers of death's inevitability. Its blade, dark as a moonless night, is rumored to be quenched in the blood of the god's enemies, forever thirsting for the lifeblood of the unwary.",
+        "Eclipse of the End grants its wielder a +5 bonus to attack and damage rolls and on a critical hit the target suffers an additional {@dice 4d8} necrotic damage as the blade leeches life from them to you, restoring an equivalent amount of your hit points.",
+        "The sword holds a reservoir of 20 divine charges, each a promise of demise and despair to those who stand against the wielder's dark purpose.",
+        {
+          "type": "entries",
+          "name": "Necrotic Surge",
+          "entries": [
+            "Expend 5 charges to cloak the blade in a shroud of necrotic energy for up to 1 minute as a free action. During this time, each successful hit against a living target causes a surge of necrotic pain. The affected target must succeed on a Constitution saving throw (DC 20) or suffer disadvantage on their attacks till the end of thier next turn."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Mark of Bhaal",
+          "entries": [
+            "As an action, expend 10 charges to mark a creature within sight. For the next hour, any attack you make against the marked target has a increased crit range of 1. On Expending 5 more charges, the crit range increases to 2. This reduction in crit range stacks with other features that reduce crit range."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Siphon Life",
+          "entries": [
+            "Once per day, without expending charges, landing a critical hit with this weapon allows the wielder to absorb the life force of the target, healing for half the total damage dealt. Expending 5 additional charges enhances this effect, granting the wielder temporary hit points equal to the damage dealt for 24 hours."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Arcane Sentinel",
+          "entries": [
+            "The wielder gains an acute sensitivity to the ebb and flow of magical energies, allowing them to cast detect magic at will using 1 charge. This ability is particularly attuned to the detection of necromancy magic, highlighting such auras with a chilling clarity."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "(Diana) Moonlit Sonata",
+      "source": "AspysGuidetoInfinitum",
+      "type": "R",
+      "rarity": "artifact",
+      "weight": 2,
+      "property": [
+        "A",
         "2H"
       ],
-      "dmg1": "3d6",
-      "dmgType": "Radiant",
-      "sword": true,
+      "dmg1": "1d6",
+      "range": "80/320",
+      "dmgType": "Piercing",
+      "bow": true,
       "weapon": true,
-      "reqAttune": "by a Paladin/Zealot Barbarian of Good/Neutral Alignment chosen by Lathander",
-      "bonusWeapon": "+5",
+      "reqAttune": "by a follower of Diana",
+      "weaponCategory": "simple",
+      "bonusWeapon": "+3",
+      "charges": 15,
+      "ammoType": "arrow|phb",
+      "recharge": "dawn",
+      "rechargeAmount": "1d20; on 20, +10 charges; on 1, 5 charges; else, 1d12+3 charges up to 15",
       "entries": [
-        "Dawn's Rebirth was forged at the first light of creation, its blade composed of condensed sunlight and divine essence. It is a beacon of hope, renewal, and the power to shape destiny.",
-        "The blade emits a radiant glow, illuminating a radius of 30 feet with bright light and an additional 30 feet with dim light. As a bonus action, the wielder can intensify the blade’s luminance, doubling the light's radius and dispelling any magical darkness within that area.",
-        "When a creature touched by darkness or evil comes within 60 feet of the blade, it sings a chord of the first dawn, vibrating with anticipation of banishing the shadow.",
-        "You have a +5 bonus to attack and damage rolls made with this magic weapon. On a hit, the target takes an additional {@dice 2d8} radiant damage as the blade sears with the light of creation.",
-        "Dawn's Rebirth possesses a pool of 30 charges for its divine abilities, focused on creation, restoration, and illumination. It regains 1d20+10 charges at dawn.",
+        "Forged under the light of a full moon and bathed in the waters of sacred springs, Moonlit Sonata is a shortbow whose string sings with the whispers of the night. Its frame, carved from moon-touched yew, glows faintly in moonlight, illuminating the wielder's path in darkness.",
+        "Wielding Moonlit Sonata grants a +3 bonus to attack rolls and inflicts an additional {@dice 1d8} radiant damage, as its arrows are imbued with the luminescence of the moon.",
+        "This bow is graced with the touch of Diana, offering guidance under the moon's watchful eye. The wielder and their allies within 30 feet gain enhanced night vision, allowing them to see in dim light as if it were bright light and in darkness as if it were dim light. Additionally, under the open night sky, the wielder and their allies gain advantage on Wisdom (Perception) checks and saving throws against illusions, as the moonlight reveals truths hidden in the shadows.",
+        "The shortbow holds a pool of 15 charges for invoking its magical abilities. At the beginning of each day, the wielder rolls a {@dice d20}. On a roll of 20, the shortbow regains all spent charges and gains an additional 10 charges (for a total of 25 that day). On a roll of 1, it regains 5 charges. Otherwise, it regains {@dice 1d12+3} charges up to a maximum of 15.",
         {
           "type": "entries",
-          "name": "Reforge Reality",
+          "name": "Lunar Volley",
           "entries": [
-            "Expend 10 charges to reshape the fabric of reality around you. As an action, you can alter the physical properties of one non-magical object not larger than a cube of 10 feet for 1 hour, or you can heal all allies within 30 feet for {@dice 4d8 + your spellcasting ability modifier} hit points."
+            "When you take the attack action, Expend 5 charges to unleash a volley of moonlit arrows instead of one of your attacks, each seeking a different target within range. You can attack up to three targets, rolling separately for each attack."
           ]
         },
         {
           "type": "entries",
-          "name": "Lathander's Dawn",
+          "name": "Twilight's Embrace",
           "entries": [
-            "Expend 15 charges to summon a miniature sun that floats above the battlefield for 10 minutes. The sun sheds bright light in a 100-foot radius and dim light for an additional 100 feet. Enemies within the bright light take {@dice 2d10} radiant damage at the start of their turn, while allies gain temporary hit points equal to the damage dealt at the start of theirs."
+            "Expend 3 charges to envelop an area in a 20-foot radius within 100 feet in twilight, creating dim light that lasts for 1 hour. Within this area, allies gain advantage on Dexterity(Stealth) checks and enemies suffer disadvantage on perception checks to detect them. Additional effects may be activated upon spending more charges.",
+            {
+              "type": "list",
+              "items": [
+                "Spend 5 Charges to give allies a +20 bonus to thier stealth checks",
+                "Spend 4 Charges to make this area movable, centered on you and extending out to 40ft instead."
+              ]
+            }
           ]
         },
         {
           "type": "entries",
-          "name": "Harmony of Creation",
+          "name": "Arcane Sentinel",
           "entries": [
-            "The presence of the other two weapons of the arcane aftermath within 1000 feet enhances Dawn's Rebirth. It allows the wielder to cast 'true resurrection' once, without material components, immediately returning to rest for a year and a day. The fusion of the triad grants a +3 to any ability score of their choice permanently, acknowledging their unity."
+            "You always know the spell detect magic and can cast it using 1 charge. The radius is doubled, and spending another charge makes your detection capabilities uninterrupted, embodying Diana's dominion over the night and its secrets."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "(Diana) Celestial Nocturne",
+      "source": "AspysGuidetoInfinitum",
+      "type": "R",
+      "rarity": "divine arm",
+      "weight": 2,
+      "property": [
+        "A",
+        "2H",
+        "H"
+      ],
+      "dmg1": "1d8",
+      "range": "150/600",
+      "dmgType": "Piercing",
+      "bow": true,
+      "weapon": true,
+      "reqAttune": "by a devoted champion of Diana",
+      "weaponCategory": "martial",
+      "bonusWeapon": "+5",
+      "charges": 20,
+      "ammoType": "arrow|phb",
+      "recharge": "dawn",
+      "rechargeAmount": "1d20; on 20, regains all charges and an additional 10; on 1, regains 10 charges; else, 1d12+5 charges up to 20",
+      "entries": [
+        "Celestial Nocturne, a divine longbow, was Diana's gift to her most faithful. Crafted under a lunar eclipse, its limbs are made from silvered wood that reflects the moon's phases. The bowstring, spun from moonlight, emits a soft glow, casting shadows that dance like twilight spirits.",
+        "Wielding Celestial Nocturne grants a +5 bonus to attack rolls and deals an additional {@dice 2d8} radiant damage, as its arrows are blessed by Diana's light. The bow enhances the wielder's affinity with the moon, allowing them to draw upon its various phases for guidance and strength.",
+        "This bow is graced with the touch of Diana, offering guidance under the moon's watchful eye. The wielder and their allies within 30 feet gain enhanced night vision, allowing them to see in dim light as if it were bright light and in darkness as if it were dim light. Additionally, under the open night sky, the wielder and their allies gain advantage on Wisdom (Perception) checks and saving throws against illusions, as the moonlight reveals truths hidden in the shadows.",
+        "hold scharges",
+        {
+          "type": "entries",
+          "name": "Moonbeam Volley",
+          "entries": [
+            "When you take the attack action, you may replace one of your attacks with a volley of moon beam. Expend 6 charges and shoot towards the sky to conjure beams of pure moonlight that strike from above, targeting up to five creatures within 100 feet. Roll to hit for each creature. On a hit, each creature takes {@dice 4d10} radiant damage."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Lunar Requiem",
+          "entries": [
+            "Expend 5 charges to summon a cascade of lunar energy, enveloping an ally within 60 feet in a radiant, protective cocoon. For 10 minutes, this Requiem grants the ally a +2 AC and advantage on saving throws against spells. More so, if the ally is reduced to 0 hit points while under the Requiem's effect, they are instead restored to 1 hit point and gain temporary hit points equal to 5d8 + your spellcasting ability modifier, as a burst of moonlight energy revitalizes them. This revival effect can only trigger once per use of Lunar Requiem.",
+            "Additionally, while under the effects of Lunar Requiem, the ally's appearance becomes ethereal, with a soft, moonlit glow surrounding them. This glow illuminates a 10-foot radius, allowing the ally to see in darkness as if it were dim light."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Twilight Dominion",
+          "entries": [
+            "Without expending charges, create a 40-foot radius of twilight around you for 1 hour once per day. This domain grants invisibility to you and your allies as long as you remain still and silent within it. Spending 5 additional charges extends the radius to 60 feet and allows movement within the domain without breaking invisibility."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Arcane Sentinel",
+          "entries": [
+            "You always know the spell detect magic and can cast it using 1 charge. The radius is doubled, and spending another charge makes your detection capabilities uninterrupted, offering insight into the hidden magics that illuminate or lurk within the night."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "(Erathis) Mantle of the Ethereal Order",
+      "source": "AspysGuidetoInfinitum",
+      "rarity": "artifact",
+      "reqAttune": "by a cleric, paladin, or any lawful alignment",
+      "wondrous": true,
+      "entries": [
+        "This divine mantle is woven from the threads of celestial fabric, infused with the essence of law and purity. It shimmers with a soft light, reflecting Erathis's commitment to order, and is adorned with symbols of her dominion over the Material Plane. Those who drape the Mantle of the Ethereal Order over their shoulders feel an overwhelming sense of purpose and clarity, driven to uphold the principles of civilization and harmony.",
+        "Wearing this mantle grants a +50 bonus to Max health. The wearer is also imbued with a serene aura that calms chaos and discord, radiating an influence of peace and order. This mantle creates an aura of 5ft that applies the effects of {@spell calm emotions} continously. In initiative, it casts calm emotions at the start of your turn.",
+        "The mantle enhances the wearer's diplomatic abilities, granting advantage on Persuasion and Insight checks. This effect symbolizes Erathis's role in fostering communication and understanding among civilizations.",
+        "The mantle holds a pool of 15 charges for invoking its divine abilities. At the beginning of each day, the wearer rolls a d20. On a roll of 20, the mantle regains all spent charges and gains an additional 10 charges. On a roll of 1, it regains 5 charges. Otherwise, it regains 1d12+3 charges up to a maximum of 15.",
+        {
+          "type": "entries",
+          "name": "Harmony's Call",
+          "entries": [
+            "Expend 5 charges to release a surge of calming energy in a 30-foot radius centered on the mantle. For 1 minute, this wave seeks to quell aggression, offering creatures within the area a moment of clarity and peace. Affected creatures must succeed on a Wisdom saving throw(DC 20) or be compelled to use their next turn to take no action that involves direct harm to others, such as attacking or casting harmful spells. Instead, they may move, use a non-aggressive action, or attempt to communicate peacefully.",
+            "Creatures that successfully save against this effect are immune to Harmony's Call for 24 hours. This ability does not affect creatures that are immune to being charmed."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Architect's Insight",
+          "entries": [
+            "Expend 3 charges to activate Architect's Insight for 10 minutes. Upon activation, you and your allies within a 30-foot radius gain unparalleled clarity and focus.",
+            "During this time, all affected creatures gain the following benefits:",
+            {
+              "type": "list",
+              "items": [
+                "Clear vision upto 2 miles.",
+                "Double proficiency bonus on skill checks related to crafting, building, or strategizing.",
+                "Creatures attempting to deceive or outmaneuver you within this radius have their intentions subtly revealed by Erathis’s light, granting you a +5 bonus to Insight checks against such deceptions."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Arcane Sentinel",
+          "entries": [
+            "The mantle sharpens the wearer's perception of magical auras, allowing them to cast *detect magic* at will, without expending a spell slot or charge. The detection is particularly sensitive to illusions and enchantments, revealing the truths that lie beneath the surface."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "(Erathis) Cloak of the Founding Order",
+      "source": "AspysGuidetoInfinitum",
+      "rarity": "divine arm",
+      "reqAttune": "by a cleric, paladin, or any lawful alignment",
+      "wondrous": true,
+      "entries": [
+        "The Cloak of the Founding Order is a celestial artifact, woven from the very essence of order and the foundational energies of the cosmos. It radiates with a divine light that structures chaos and illuminates the path toward civilization's zenith. Adorned with sacred geometries and symbols of the first cities, it empowers its wearer to shape the world according to Erathis' vision.",
+        "Wearing this cloak grants a +100 bonus to Max health. The wearer is also imbued with a serene aura that calms chaos and discord, radiating an influence of peace and order. This cloak creates an aura of 5ft that applies the effects of {@spell calm emotions} continously. In initiative, it casts calm emotions at the start of your turn.",
+        "This divine arm holds a reservoir of 20 charges, tapping into the primordial power of creation and law. Charges are replenished daily, with a unique mechanism reflecting the divine will.",
+        {
+          "type": "entries",
+          "name": "Decree of Order",
+          "entries": [
+            "If you have more than 10 charges, as an action you can expend all remaining charges to issue a divine decree in a 60-foot radius. For 1 minute, this decree enforces a magical contract of non-aggression, preventing any creature from initiating combat or casting spells intended to harm others. Those who attempt to break this contract must succeed on a Charisma saving throw (DC 20) or be rendered incapacitated for the duration, as they are overwhelmed by a compulsion to maintain peace."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Blueprints of Creation",
+          "entries": [
+            "Expend 3 charges to cast a spell from a curated list of creation and crafting spells without using a spell slot. This list includes *fabricate*, *wall of stone*, and *create or destroy water*, reflecting Erathis's domain over invention and civilization. Each casting uses a set number of charges, allowing for multiple uses throughout the day.",
+            {
+              "type": "list",
+              "items": [
+                "Fabricate (4 charges)",
+                "Wall of Stone (5 charges)",
+                "Create or Destroy Water (2 charges)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Covenant of the Just",
+          "entries": [
+            "Without expending charges, the wearer can invoke a covenant once per day. This covenant blesses an area of up to 100 feet in radius, lasting for 10 minutes. Within this sanctified ground, allies gain resistance to damage from chaotic creatures and advantage on saving throws against enchantments and illusions. Expending additional charges (up to 10) can extend the duration or amplify the resistances to include damage from any source not aligned with lawful good.",
+            {
+              "type": "list",
+              "items": [
+                "5 additional charges extend the duration by 10 minutes.",
+                "10 additional charges grant immunity to damage from chaotic creatures."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Arcane Sentinel",
+          "entries": [
+            "The cloak sharpens the wearer's perception of magical auras, allowing them to cast *detect magic* at will, without expending a spell slot or charge. This ability is especially attuned to detecting magic that upholds or disrupts order, highlighting the forces that shape or threaten the foundations of civilization."
           ]
         }
       ]
@@ -2746,76 +3016,6 @@
       ]
     },
     {
-      "name": "(Eldath) Serenity's Ripple",
-      "source": "AspysGuidetoInfinitum",
-      "type": "M",
-      "rarity": "artifact",
-      "weaponCategory": "simple",
-      "property": [
-        "L"
-      ],
-      "dmg1": "1d8",
-      "dmgType": "B",
-      "staff": true,
-      "weapon": true,
-      "bonusWeapon": "+3",
-      "reqAttune": "by a follower of Eldath",
-      "entries": [
-        "This staff, grown from the heartwood of a tree beside Eldath's sacred pool, carries the essence of tranquility. Its surface is smooth, with patterns that flow like water.",
-        "You have a +3 bonus to attack and damage rolls made with this magic weapon. When you hit a creature with this staff, you can choose to impose calm, granting advantage on saving throws against being frightened or angered for 1 minute.",
-        "Serenity's Ripple holds 20 charges for its peaceful abilities, including healing, calming emotions, and creating sanctuaries. It regains 1d10+10 charges at dawn.",
-        {
-          "type": "entries",
-          "name": "Pool of Tranquility",
-          "entries": [
-            "Expend 5 charges to create a 20-foot radius zone of peace. Within this zone, hostile actions are suppressed, and creatures are compelled to resolve conflicts peacefully."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Grove's Guardian",
-          "entries": [
-            "As an action, expend 10 charges to summon a guardian spirit of the grove. This spirit heals allies within 30 feet, granting them {@dice 2d8} hit points at the start of their turn."
-          ]
-        }
-      ]
-    },
-    {
-      "name": "(Eldath) Whisper of the Green",
-      "source": "AspysGuidetoInfinitum",
-      "type": "M",
-      "rarity": "divine arm",
-      "weaponCategory": "simple",
-      "property": [
-        "L"
-      ],
-      "dmg1": "2d8",
-      "dmgType": "B",
-      "staff": true,
-      "weapon": true,
-      "bonusWeapon": "+5",
-      "reqAttune": "by a champion of Eldath",
-      "entries": [
-        "Crafted from a branch of the eldest tree in Eldath's sacred grove, this staff embodies the deepest peace and the ancient power of nature. It hums with life, its leaves forever green and vibrant.",
-        "You have a +5 bonus to attack and damage rolls made with this magic weapon. On a successful hit, the staff releases a wave of tranquility, putting enemies to sleep (as per the 'sleep' spell, no spell slot required).",
-        "Whisper of the Green possesses 40 charges, regaining 1d20+20 charges at dawn. Its powers extend to mending wounds, purifying water, and protecting natural places.",
-        {
-          "type": "entries",
-          "name": "Sanctuary of Eldath",
-          "entries": [
-            "Expend 20 charges to create a 100-foot radius sanctuary that lasts for 24 hours. Within this sanctuary, violence is impossible, and creatures are healed over time, recovering {@dice 4d8} hit points every hour."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Harmony's Embrace",
-          "entries": [
-            "As an action, expend 15 charges to envelop allies within 50 feet in a protective embrace. For 10 minutes, they gain resistance to all damage and advantage on all Wisdom saving throws."
-          ]
-        }
-      ]
-    },
-    {
       "name": "(Daedalus) Mechanist's Crossbow",
       "source": "AspysGuidetoInfinitum",
       "type": "R",
@@ -3383,58 +3583,6 @@
           "name": "Call to Arms",
           "entries": [
             "As an action, expend 15 charges to summon celestial allies equivalent to a 'summon celestial' spell without expending a spell slot. These celestials obey your commands and fight to protect you and your allies for up to 1 hour."
-          ]
-        }
-      ]
-    },
-    {
-      "name": "(Bhaal) Blade of the Death's Hand",
-      "source": "AspysGuidetoInfinitum",
-      "rarity": "artifact",
-      "wondrous": true,
-      "reqAttune": "by a follower of Bhaal",
-      "entries": [
-        "This sinister dagger is forged from a metal that seems to absorb light, with a hilt wrapped in skin from an unknown creature. It is said to have been created in the darkest rituals to Bhaal, infused with the essence of death itself.",
-        "While wielding this dagger, you gain a +3 bonus to attack and damage rolls. When you deal a critical hit with this weapon, the target suffers an additional {@dice 4d6} necrotic damage as the blade leeches life from them to you, restoring an equivalent amount of your hit points.",
-        "Blade of the Death's Hand holds 20 charges for its abilities related to death, shadow manipulation, and fear induction. It regains 1d10+10 charges at dawn.",
-        {
-          "type": "entries",
-          "name": "Shadow Step",
-          "entries": [
-            "Expend 5 charges to cast 'misty step' as a bonus action, emerging from shadows at your destination."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Mark of Bhaal",
-          "entries": [
-            "As an action, expend 10 charges to mark a creature within sight. For the next hour, any attack you make against the marked target is considered a critical hit on a roll of 18-20."
-          ]
-        }
-      ]
-    },
-    {
-      "name": "(Bhaal) Harbinger of the Final Silence",
-      "source": "AspysGuidetoInfinitum",
-      "rarity": "divine arm",
-      "wondrous": true,
-      "reqAttune": "by a champion of Bhaal",
-      "entries": [
-        "A scythe that whispers promises of death, its blade forged in the abyss and quenched in the blood of the slain. It is a direct manifestation of Bhaal's will, capable of severing the threads of life with a mere whisper.",
-        "While wielding this scythe, you gain a +5 bonus to attack and damage rolls. Each strike against a living creature forces them to make a Constitution saving throw or be instantly slain if they are at or below 50 hit points.",
-        "Harbinger of the Final Silence possesses 40 charges, regaining 1d20+20 charges at dawn. Its powers extend to summoning shades of the dead, cloaking the wielder in shadows, and instilling terror in the hearts of enemies.",
-        {
-          "type": "entries",
-          "name": "Silence of the Grave",
-          "entries": [
-            "Expend 20 charges to unleash a wave of deathly energy in a 60-foot radius. Enemies within the area must make a Constitution saving throw, taking {@dice 8d8} necrotic damage on a failed save, or half as much on a successful one. Those slain by this effect rise as spirits that serve you for 24 hours."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Veil of Death",
-          "entries": [
-            "As an action, expend 15 charges to become an avatar of death for 1 minute. During this time, you are immune to all damage, and any melee attack you make that hits is treated as a critical hit."
           ]
         }
       ]
