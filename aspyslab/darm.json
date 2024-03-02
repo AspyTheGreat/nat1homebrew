@@ -2241,36 +2241,44 @@
         "This divine arm holds a reservoir of 20 charges, tapping into the primordial power of creation and law. Charges are replenished daily, with a unique mechanism reflecting the divine will.",
         {
           "type": "entries",
-          "name": "Decree of Order",
+          "name": "Divine Decree of Order",
           "entries": [
-            "If you have more than 10 charges, as an action you can expend all remaining charges to issue a divine decree in a 60-foot radius. For 1 minute, this decree enforces a magical contract of non-aggression, preventing any creature from initiating combat or casting spells intended to harm others. Those who attempt to break this contract must succeed on a Charisma saving throw (DC 20) or be rendered incapacitated for the duration, as they are overwhelmed by a compulsion to maintain peace."
+            "If you have more than 10 charges, as an action you can expend all remaining charges to issue a divine decree in a 60-foot radius. For 1 minute, this decree enforces a magical contract of non-aggression, preventing any creature from initiating combat or casting spells intended to harm others. Those who attempt to break this contract must succeed on a Charisma saving throw (DC 20) or be rendered {@condition incapacitated} till the contract is active, as they are overwhelmed by a compulsion to maintain peace. ",
+            "The side that casts the first spell or makes the first attack after the contract was enforced, immediately lose thier reaction and gain disadvantage on all attack rolls till the end of each of thier next turns. The contract ends after the first shot."
           ]
         },
         {
           "type": "entries",
           "name": "Blueprints of Creation",
           "entries": [
-            "Expend 3 charges to cast a spell from a curated list of creation and crafting spells without using a spell slot. This list includes *fabricate*, *wall of stone*, and *create or destroy water*, reflecting Erathis's domain over invention and civilization. Each casting uses a set number of charges, allowing for multiple uses throughout the day.",
+            "Spend charges to instantly cast spells that embody influence over craftsmanship and civilization.",
             {
               "type": "list",
               "items": [
-                "Fabricate (4 charges)",
-                "Wall of Stone (5 charges)",
-                "Create or Destroy Water (2 charges)"
+                "Fabricate (4 charges) - Mold raw materials into complex items.",
+                "Wall of Stone (5 charges) - Erect stone barriers or structures.",
+                "Create or Destroy Water (2 charges) - Summon or obliterate water.",
+                "Mending (1 charge) - Repair a small break or tear in an object.",
+                "Leomund’s Secret Chest (5 charges) - Hide an extradimensional chest.",
+                "Magnificent Mansion (7 charges) - Create a luxurious, extradimensional dwelling.",
+                "Conjure Celestial (8 charges) - Call forth a celestial being to assist."
               ]
             }
           ]
         },
         {
           "type": "entries",
-          "name": "Covenant of the Just",
+          "name": "Sanctum of Order",
           "entries": [
-            "Without expending charges, the wearer can invoke a covenant once per day. This covenant blesses an area of up to 100 feet in radius, lasting for 10 minutes. Within this sanctified ground, allies gain resistance to damage from chaotic creatures and advantage on saving throws against enchantments and illusions. Expending additional charges (up to 10) can extend the duration or amplify the resistances to include damage from any source not aligned with lawful good.",
+            "Once per day, this mantle grants the ability to manifest the essence of civilization, creating a grand hall that serves as a sanctuary and meeting place for allies. This hall appears on a flat surface within sight, is 100ft on a side and lasts for 12 hours. You may build it as you see fit at the time of casting. Creatures may enter the hall with your approval.",
             {
               "type": "list",
               "items": [
-                "5 additional charges extend the duration by 10 minutes.",
-                "10 additional charges grant immunity to damage from chaotic creatures."
+                "The interior is spacious and comfortable, accommodating up to 20 individuals.",
+                "Within the sanctum, allies regain double hitpoints when rolling hitdice.",
+                "There are a 1000 spectral bureaucrats hungry for a promotion and will do anything. Any creature inside the townhall, on saying the command word \"You should be mayor\" will recieve control of one bureaucrat.  ",
+                "A bureaucrat has 2AC, 1HP, can arrange food, replinishments and trading of mundane goods.",
+                "Among the 1000 bureaucrats, you will always find {@dice 1d20} bureaucrats that are proficient in each tool. Bureaucrats cannot go further than 200ft from the hall."
               ]
             }
           ]
@@ -2280,6 +2288,341 @@
           "name": "Arcane Sentinel",
           "entries": [
             "The cloak sharpens the wearer's perception of magical auras, allowing them to cast *detect magic* at will, without expending a spell slot or charge. This ability is especially attuned to detecting magic that upholds or disrupts order, highlighting the forces that shape or threaten the foundations of civilization."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "(Ioun) Ápeiro, the Keen Mantle",
+      "source": "AspysGuidetoInfinitum",
+      "rarity": "artifact",
+      "reqAttune": "by a wizard or a creature with the spellcasting feature",
+      "wondrous": true,
+      "entries": [
+        "This cloak was forged in the divine realms and entrusted to a hero who was on a quest to quell the consequence of the Arcane Aftermath. This Cloak was one of three boons that graced the world after the reality morphing event changed the face Fer.",
+        "The cloak in apprance resembles an old, grey mantle with a cape of velvet cloth. Plain grey with a belt of a darker grey. It's jagged at the edges and it looks like it was torn at the base. The wearer feels eons of knowledge coursing through the cloak. Arcane scribblings come to you instantly as if the cloak made of parchment. You can use the cloak to channel any {@filter Wizard spell of lvl5 and below|spells|level=1|level=2|level=3|level=4|level=5|class=Wizard} once a day and cast it without material components. As long as you are wearing this cloak and have enough materials, you can copy the channeled spell into your spellbook.",
+        "While you are wearing this cloak, you gain a +3 bonus to spell attack rolls and spell save DC. You also ignore half and three quarters cover when making a spell attack.",
+        "Additionally, you gain expertise in any one of the intelligence skills you are proficient in.",
+        "This cloak has a pool of 15 charges when attuned to. Charges can be spent to do a number of things. At the end of a long rest, roll a {@dice d20}. On a 20, it regains all charges and has an additional 10 charges. On a 1, it regains 5 charges. On other rolls, it regains {@dice 1d12+3} charges upto 15.",
+        {
+          "type": "entries",
+          "name": "Knowledge of the eons",
+          "entries": [
+            "You get the {@feat keen mind} feat as long as you are attuned to this cloak. If you already have the keen mind feat, you may choose a different feat while you attune to it. You may choose a different feat everytime you attune to this cloak but you must meet the pre-requisites for the feat."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Offensive barrier",
+          "entries": [
+            "After a long rest, when you roll to regain charges, choose an element type and the cloak attunes to it. For the rest of the day, you are immune to this damage type, and when you cast a spell that rolls damage die of that element, the damage ignores resistance and immunity of the affected creature.",
+            "Additionally, When you roll for damage of the attuned type, you can spend 1 charge to reroll a number of the damage dice up to 4+Spell level. You must use the new rolls. If the damage type is different, you can reroll upto 4 damage dice.",
+            "As a bonus action/Reaction(when you take damage) you can spend 4 charges to gain resistance to another element and gain the benefits of casting spells of that type. Doing so will drop your immunity to the first damage type."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Arcane Sentinel",
+          "entries": [
+            "You always know the spell detect magic and can cast it using 1 charge. The radius is doubled and on spending another charge, your range becomes uninterrupted."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Vicinity breeds affinity, affinity breeds power, power yearns vicinity.",
+          "entries": [
+            "As long as one of the other 2 weapons of the arcane aftermath get within 1000ft of this weapon, the creature attuned to it always knows the direction to the weapon.",
+            "Once all three weapons of the arcane aftermath are within 30ft of eachother, they fuse with the creatures they are attuned to. All creatures attuned to these weapons recieve a +2 to any ability of thier choice. Make the following changes to Ápeiro.",
+            {
+              "type": "list",
+              "items": [
+                "Spell attack rolls bonus increases to a +4 and Spell Save DC increases to a +4.",
+                "Arcane Absorption. If you cast a spell that requires concentration while you already concentrating on a spell, the initial spell doesn't drop but instead becomes duration-based for half the concentration duration."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "(Ioun) Omniscience Cloak, the Infinite Wisdom",
+      "source": "AspysGuidetoInfinitum",
+      "rarity": "divine arm",
+      "reqAttune": "by a wizard, sorcerer, or any spellcaster devoted to Ioun",
+      "wondrous": true,
+      "entries": [
+        "Woven from the fabric of reality itself and the essence of the Weave, this cloak embodies the pinnacle of arcane mastery and the vast expanse of knowledge guarded by Ioun. It shimmers with a spectrum of colors, each shift revealing new patterns of arcane runes.",
+        "While wearing this cloak, you have a +5 bonus to spell attack rolls and your spell save DC. Additionally, you can bypass any form of magical resistance or immunity when casting spells.",
+        "Omniscience Cloak, the Infinite Wisdom holds 30 charges for its divine abilities, focused on revealing secrets, enhancing magical prowess, and manipulating the Weave. It regains 1d20+10 charges at dawn.",
+        {
+          "type": "entries",
+          "name": "Weave's Dominion",
+          "entries": [
+            "Expend 10 charges to gain unparalleled control over the Weave for 10 minutes. During this time, you can cast spells without verbal, somatic, or material components (if they cost less than 500 gp), and you can alter one aspect of any spell's effects (such as its color, shape, duration, or damage type)."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Arcane Reservoir",
+          "entries": [
+            "As an action, expend 15 charges to tap into a deep reservoir of arcane energy. For the next hour, you regain one expended spell slot up to 5th level at the start of each of your turns."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Insight of the Ages",
+          "entries": [
+            "You gain the ability to cast 'legend lore' and 'foresight' each once per long rest, without expending a spell slot or incurring any material costs."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Confluence of Thought",
+          "entries": [
+            "The cloak enhances your mental faculties to their utmost potential. You gain proficiency in all Intelligence-based skills. If you are already proficient in these skills, your proficiency bonus is doubled for any ability check you make that uses any of those skills."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Cosmic Synergy",
+          "entries": [
+            "In the presence of the other two divine arms of the arcane aftermath, the cloak's power is magnified. You can choose to activate a link with these items, allowing you to share spells and abilities cast from them as if you were the caster, extending their range and effects to encompass your shared battlefield."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "(Tiamat) Backbiter, The existential Crisis",
+      "source": "AspysGuidetoInfinitum",
+      "baseItem": "dagger|PHB",
+      "type": "M",
+      "rarity": "artifact",
+      "reqAttune": "by a creature neutral/evil alignment)",
+      "weight": 1,
+      "weaponCategory": "simple",
+      "property": [
+        "F",
+        "L",
+        "T"
+      ],
+      "range": "20/60",
+      "dmg1": "1d4",
+      "dmgType": "P",
+      "bonusWeapon": "+4",
+      "entries": [
+        "This dagger was forged in the divine realms and entrusted to a hero who was on a quest to quell the consequence of the Arcane Aftermath. This Dagger was one of four weapons that graced the world after the reality morphing event changed the face of Fer.",
+        "This dagger shines as if it's made of satin fabric and yet, looks like it has an edge that can cut through bone. This blade shifts in and out of visibility for everyone except the one holding and attuned to it. Anyone who cannot see the dagger directly forgets about it's existence and all memories associated with it are rationalised into different narratives.",
+        "You have a +3 bonus to attack and damage rolls made with this magic weapon.",
+        "When you hit with an attack using this weapon, the target takes an extra {@dice 1d8} Necrotic damage as the wound seeps with dark energies of the 9 hells",
+        "This dagger has a pool of 15 charges when attuned to. Charges can be spent to do a number of things. At the begining of a day, roll a {@dice d20}. On a 20, it regains all charges and has an additional 10 charges. On a 1, it regains 5 charges. On other rolls, it regains {@dice 1d12+3} charges upto 15.",
+        {
+          "type": "entries",
+          "name": "In Baator, Hide",
+          "entries": [
+            "In darkness, dim light or in Baator, the dagger draws in the shadows and clouds you from the untrained eye. While this is in effect, and if you have advantage on Dexterity checks, you can reroll one of the dice once."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Rend Memory",
+          "entries": [
+            "As an action, you can spend 2 charges to feint the target and make an attack against the target. When you expend charges this way, the target forgets about the existence of the dagger, assuming you are about to make an unarmed attack. The attack is considered a surprise attack. A creature already affected by this once in a 24h period is immune to the surprise and consequent uses just have advantage.",
+            "The dagger pulses inside the target for that attack and you can use your bonus action and spend 10 more charges to make the target forget one creature for 1h. Even if the target can see the creature, they see nothing."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Blink",
+          "entries": [
+            "You can expend 2 charges to cast misty step as a bonus action."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Arcane Sentinel",
+          "entries": [
+            "You always know the spell detect magic and can cast it using 1 charge. The radius is doubled and on spending another charge, your range becomes uninterrupted."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Vicinity breeds affinity, affinity breeds power, power yearns vicinity.",
+          "entries": [
+            "As long as one of the other 3 weapons of the arcane aftermath get within 1000ft of this weapon, the creature attuned to it always knows the direction to the weapon.",
+            "Once all four weapons of the arcane aftermath are within 30ft of eachother, they fuse with the creatures they are attuned to. All creatures attuned to these weapons recieve a +2 to any ability of thier choice. Make the following changes to Backbiter.",
+            {
+              "type": "list",
+              "items": [
+                "Attacks and Damage rolls get a +4 bonus.",
+                "You can chose to turn invisible while holding the dagger as an action. Anything you are wearing or carrying is invisible with you. You remain invisible until you sheath the dagger, until you attack or cast a spell, or until you use a bonus action to become visible again.",
+                "The extra damage increases to 1d12."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "(Tiamat) Draconis Devourer, The Essence Reaver",
+      "source": "AspysGuidetoInfinitum",
+      "type": "M",
+      "rarity": "divine arm",
+      "weight": 1,
+      "weaponCategory": "simple",
+      "property": [
+        "F",
+        "L",
+        "T"
+      ],
+      "range": "30/90",
+      "dmg1": "1d6",
+      "dmgType": "Piercing",
+      "bonusWeapon": "+5",
+      "reqAttune": "by a creature of neutral/evil alignment chosen by Tiamat",
+      "entries": [
+        "Forged in the heart of Tiamat's infernal lair and quenched in the blood of a celestial being, this dagger is a direct conduit of Tiamat's wrath. Its blade phases between the material and ethereal, echoing the five chromatic dragons' breath as it strikes.",
+        "You have a +5 bonus to attack and damage rolls made with this magic weapon. On a hit, the target suffers an additional {@dice 2d6} damage of a type chosen from acid, cold, fire, lightning, or poison, as the dagger channels the power of the chromatic dragons.",
+        "Draconis Devourer, The Essence Reaver holds 30 charges for its abilities related to draconic essence, shadow manipulation, and soul reaving. It regains 1d20+10 charges at dawn.",
+        {
+          "type": "entries",
+          "name": "Chromatic Assault",
+          "entries": [
+            "Expend 5 charges to unleash an attack that simultaneously inflicts all five chromatic dragon breath types. The target must make a Dexterity saving throw, taking {@dice 5d8} damage (1d8 for each damage type) on a failed save, or half as much on a successful one."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Soul Devourer",
+          "entries": [
+            "As an action, expend 10 charges to attempt to sever the soul of a creature you have successfully hit with the dagger within the last minute. The target must make a Constitution saving throw or be instantly slain if they are at or below 100 hit points. If the target dies by this effect, you gain temporary hit points equal to the damage dealt."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Veil of Tiamat",
+          "entries": [
+            "You can expend 2 charges to cast 'shadow step' as a bonus action, allowing you to teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Dragon's Dominion",
+          "entries": [
+            "In the presence of the other divine arms of the arcane aftermath, Draconis Devourer’s power is magnified. It allows the wielder to summon a chromatic dragon wyrmling of their choice once per long rest, which serves the wielder for up to 1 hour."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "(Melora) Sanjeevani, The nourishing recurve",
+      "source": "AspysGuidetoInfinitum",
+      "type": "R",
+      "rarity": "artifact",
+      "weight": 2,
+      "weaponCategory": "simple",
+      "property": [
+        "A",
+        "2H"
+      ],
+      "range": "80/320",
+      "dmg1": "1d6",
+      "dmgType": "P",
+      "bow": true,
+      "weapon": true,
+      "ammoType": "arrow|phb",
+      "bonusWeapon": "+4",
+      "entries": [
+        "This Bow was forged in the divine realms and entrusted to a hero who was on a quest to quell the consequence of the Arcane Aftermath. This Bow was one of three weapons that graced the world after the reality morphing event changed the face of Fer. ",
+        "This bow, seemingly made of polished and engraved wood is not what it looks like. To the touch, it feels like holding warmth. This warmth finds its way deep inside the mind of the creature it's attuned to. This resting warmth allows the user to be proficient and choose either dexterity or thier spellcasting ability modifier to make attack and damage rolls.",
+        "Area around this crossbow gradually sprouts shrubbery and grass. If left resting for a longer period of time, the nourishing energy becomes potent enough to sustain a little forest.",
+        "When a creature within the inner range of this bow you can see rolls dice to regain hitpoints, you can use your reaction to reroll any number of that dice.",
+        "You have a +3 bonus to attack and damage rolls made with this magic weapon.",
+        "When you hit with an attack using this weapon, the target takes an extra {@dice 1d8} force damage as vines begin to originate and wrap around the target.",
+        "This bow has a pool of 15 charges when attuned to. Charges can be spent to do a number of things. At the begining of a day, roll a {@dice d20}. On a 20, it regains all charges and has an additional 10 charges. On a 1, it regains 5 charges. On other rolls, it regains {@dice 1d12+3} charges upto 15.",
+        {
+          "type": "entries",
+          "name": "Cleansing flame",
+          "entries": [
+            "When you take the attack action on your turn, you can use one or more of the attacks to target an ally instead. Spend 2 charges per attack. Do not roll for attack. Half way through its trajectory, the arrow shot disintegrates in flame that extinguishes by the time it reaches its target, the final few embers of flame washing over the target. The target gains the benefit of a casting of {@spell cure wounds} at lvl1."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Nature magic",
+          "entries": [
+            "After a long rest and before charges have been regained, Choose 7 levels of spells from the {@filter druid spell list upto level 5|spells|level=1|level=2|level=3|level=4|level=5|class=Druid}. You can cast these spells through this bow by spending level*2 number of charges without the need for any material components."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Arcane Sentinel",
+          "entries": [
+            "You always know the spell detect magic and can cast it using 1 charge. The radius is doubled and on spending another charge, your range becomes uninterrupted."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Vicinity breeds affinity, affinity breeds power, power yearns vicinity.",
+          "entries": [
+            "As long as one of the other 3 weapons of the arcane aftermath get within 1000ft of this weapon, the creature attuned to it always knows the direction to the weapon.",
+            "Once all four weapons of the arcane aftermath are within 30ft of eachother, they fuse with the creatures they are attuned to. All creatures attuned to these weapons recieve a +2 to any ability of thier choice. Make the following changes to Sanjeevani.",
+            {
+              "type": "list",
+              "items": [
+                "Attacks and Damage rolls get a +4 bonus.",
+                "Cleansing flame applies Cure wounds at level 2",
+                "The extra damage increases to 1d12."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "(Melora) Verdant Whisper, The Lifebinder's Bow",
+      "source": "AspysGuidetoInfinitum",
+      "type": "R",
+      "rarity": "divine arm",
+      "weight": 2,
+      "weaponCategory": "simple",
+      "property": [
+        "A",
+        "2H"
+      ],
+      "range": "100/400",
+      "dmg1": "1d8",
+      "dmgType": "Radiant",
+      "bow": true,
+      "weapon": true,
+      "ammoType": "arrow|phb",
+      "bonusWeapon": "+5",
+      "reqAttune": "by a protector of the natural world, chosen by Melora",
+      "entries": [
+        "Crafted from the heartwood of the first tree and imbued with the essence of Melora’s most sacred groves, Verdant Whisper is a testament to the life-giving aspects of nature. It blooms with living foliage and its string hums with the voice of the wind.",
+        "This bow allows the wielder to use either Dexterity or their spellcasting ability modifier for attack and damage rolls, symbolizing the unity of natural force and magical prowess.",
+        "Area around this bow blossoms rapidly, accelerating the growth of plants and healing the land. Extended contact with barren soil transforms it into fertile ground.",
+        "When you heal a creature using a spell or ability, you can use your reaction to grant them additional hit points equal to your spellcasting ability modifier.",
+        "You have a +5 bonus to attack and damage rolls made with this magic weapon. On a hit, the target is enveloped in radiant energy, promoting rapid regrowth and healing nearby allies for {@dice 1d8} hit points.",
+        "Verdant Whisper holds 30 charges for its divine abilities related to growth, rejuvenation, and natural harmony. It regains 1d20+10 charges at dawn.",
+        {
+          "type": "entries",
+          "name": "Bloom of Renewal",
+          "entries": [
+            "Expend 10 charges to unleash a wave of life energy. Allies within 50 feet immediately gain {@dice 4d8 + your spellcasting ability modifier} hit points, and any dead vegetation in the area is restored to life."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Guardian of the Wilds",
+          "entries": [
+            "As an action, expend 15 charges to call forth a guardian spirit of nature. This mighty guardian takes the form of a great beast or elemental, serving as a protector of the natural world and obeying your commands for up to 1 hour."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Symbiosis of the Arcane",
+          "entries": [
+            "In the presence of the other divine arms of the arcane aftermath, Verdant Whisper’s power is magnified, allowing the wielder to cast 'regenerate' on themselves or an ally once per long rest without expending a spell slot. This symbiotic power heals and binds the wielder and allies, reflecting the interconnectedness of all life."
           ]
         }
       ]
