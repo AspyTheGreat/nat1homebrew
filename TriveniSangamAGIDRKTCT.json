@@ -68,32 +68,7 @@
           "isFallback": true
         }
       ]
-      },
-     {
-	"EpaluxStandard": [
-	{
-	"coin": "cp",
-	"mult": 1
-	},
-	{
-	"coin": "sp",
-	"mult": 0.01
-	},
-	{
-	"coin": "gp",
-	"mult": 0.001
-	},
-	{
-	"coin": "pp",
-	"mult": 0.00001
-	},
-	{
-	"coin": "ep",
-	"mult": 0.00000001,
-	"isFallback": true
-	}
-       ]
-	},
+      }
     "optionalFeatureTypes": {
       "GS": "Gunblade Stance",
       "CW": "Chronomancer Wells"
