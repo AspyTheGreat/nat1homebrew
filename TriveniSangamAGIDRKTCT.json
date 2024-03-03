@@ -38028,6 +38028,80 @@
       ]
     },
 {
+			"name": "The Raven Queen",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 1,
+			"entries": [
+				"Your patron is the Raven Queen, a mysterious being who rules the Shadowfell from a palace of ice deep within that dread realm. The Raven Queen watches over the world, anticipating each creature's death and ensuring that it meets its end at the proscribed time and place. Warlocks sworn to the Raven Queen receive visions and whispers from her in their dreams, sending them on quests and warning them of impending dangers.",
+				{
+					"type": "entries",
+					"name": "Expanded Spell List",
+					"entries": [
+						"The Raven Queen lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+						{
+							"type": "table",
+							"caption": "Raven Queen Expanded Spells",
+							"colLabels": [
+								"Spell Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1st",
+									"{@spell inflict wounds}, {@spell heroism}"
+								],
+								[
+									"2nd",
+									"{@spell rime's binding ice}, {@spell gentle repose}"
+								],
+								[
+									"3rd",
+									"{@spell life transference}, {@spell spirit guardians}"
+								],
+								[
+									"4th",
+									"{@spell phantasmal killer}, {@spell fire shield}"
+								],
+								[
+									"5th",
+									"{@spell cone of cold}, {@spell commune}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sentinel's Vigilance|Warlock|DRK|Raven Queen|HEC|1"
+				}
+			]
+		},
+		{
+			"name": "Sentinel's Vigilance",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"{@i 1st-level Raven Queen feature}",
+				"Starting at 1st level, the Raven Queen grants you a Raven spirit that watches over you. A spectral raven only you or a creature with truesight can see, appears perched on your shoulders. It cannot be targeted by any spell or attack and cannot take any damage. It grants you advantage on death saving throws and bonus to perception checks equal to your charisma modifier.",
+				"You can send your raven spirit to protect those on the border of life and death. As a bonus action on your turn or as a reaction when a creature rolls a death saving throw while within 30 ft of you, you stabilize the dying creature and grant it the effects of the Sanctuary spell. You can use this feature proficiency bonus number of times per long rest."
+			]
+		},
+               {
 			"name": "Boon of the Raven Spirit",
 			"source": "HEC",
 			"page": 69,
