@@ -45,30 +45,30 @@
      }
     ],
     "currencyConversions": {
-      "GalateumStandard": [
-        {
-          "coin": "cp",
-          "mult": 1
+            "GalateumStandard": [
+                {
+                    "coin": "cp",
+                    "mult": 1
+                },
+                {
+                    "coin": "sp",
+                    "mult": 0.1
+                },
+                {
+                    "coin": "gp",
+                    "mult": 0.01
+                },
+                {
+                    "coin": "pp",
+                    "mult": 0.001
+                },
+                {
+                    "coin": "lp",
+                    "mult": 0.0001,
+                    "isFallback": true
+                }
+            ]
         },
-        {
-          "coin": "sp",
-          "mult": 0.1
-        },
-        {
-          "coin": "gp",
-          "mult": 0.01
-        },
-        {
-          "coin": "pp",
-          "mult": 0.001
-        },
-        {
-          "coin": "lp",
-          "mult": 0.0001,
-          "isFallback": true
-        }
-      ]
-      },
     "optionalFeatureTypes": {
       "GS": "Gunblade Stance",
       "CW": "Chronomancer Wells"
