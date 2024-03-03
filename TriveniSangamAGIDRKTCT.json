@@ -68,7 +68,7 @@
           "isFallback": true
         }
       ]
-      }
+      },
     "optionalFeatureTypes": {
       "GS": "Gunblade Stance",
       "CW": "Chronomancer Wells"
