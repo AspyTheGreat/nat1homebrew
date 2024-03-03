@@ -32,7 +32,17 @@
           "Senna Illirotor"
         ],
         "version": "1.1.3"
-      }
+      },
+      {
+	"json": "hec",
+	"abbreviation": "HEC",
+	"color": "560585",
+	"full": "Hunter's Epalux Catalogues",
+	"authors": [
+		"The Watchtower"
+	],
+	"version": "1.0.0"
+     }
     ],
     "currencyConversions": {
       "GalateumStandard": [
@@ -58,7 +68,32 @@
           "isFallback": true
         }
       ]
-    },
+      },
+     {
+	"EpaluxStandard": [
+	{
+	"coin": "cp",
+	"mult": 1
+	},
+	{
+	"coin": "sp",
+	"mult": 0.01
+	},
+	{
+	"coin": "gp",
+	"mult": 0.001
+	},
+	{
+	"coin": "pp",
+	"mult": 0.00001
+	},
+	{
+	"coin": "ep",
+	"mult": 0.00000001,
+	"isFallback": true
+	}
+       ]
+	},
     "optionalFeatureTypes": {
       "GS": "Gunblade Stance",
       "CW": "Chronomancer Wells"
@@ -27790,7 +27825,7 @@
             ],
             [
               "6",
-              "{@b Nimbleness}. If the drinker is subject to a saving throw that allows you to make a Dexterity or Constitution saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail (You gain this benefit for any saving throw)."
+              "{@b Vigilant}. The drinker cannot be surprised while they are conscious,  and gainst a +5 bonus to their peception checks and initiative rolls."
             ]
           ]
         }
@@ -29155,6 +29190,91 @@
         "Once you use this feature, you can't use it again until you finish a Long Rest. If you've run out of uses of this feature, you can expend three uses of your Rage, choosing to activate this feature instead of Rage."
       ]
     },
+{
+			"name": "Path of the Supreme Mind",
+			"source": "HEC",
+			"page": 49,
+			"srd": true,
+			"className": "Barbarian",
+			"classSource": "DRK",
+			"subclassShortName": "Psionics",
+			"subclassSource": "HEC",
+			"level": 3,
+			"entries": [
+				"You realise that you have a guest residing inside you. Whether your will is your own or the creature's is unclear because it seems that they have merged together completely. As you ascertain yourself as a being of one mind and two bodies in a symbiosis, your abilities seem to reflect your change. As you gain levels in this class, your control over your mutation increases and you will be able to pioneer a path that has never been explored before.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Awakening|Barbarian|DRK|Psionics|HEC|3"
+				}
+			]
+		},
+		{
+			"name": "Awakening",
+			"source": "HEC",
+			"page": 69,
+			"srd": true,
+			"className": "Barbarian",
+			"classSource": "DRK",
+			"subclassShortName": "Psionics",
+			"subclassSource": "HEC",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You can now communicate telepathically with one creature within 60 ft of you at a time and they can respond back to you telepathically. The creature must not be hostile to you and must understand atleast one language. You also understand and can communicate in Deep Speech.",
+				"As part of the bonus action when you enter rage and as a bonus action while raging you can attempt to grapple a creature. If a creature is moved forcibly while being grappled by you, you also move to keep grappling the creature. The amount of movement used up in such a way cannot exceed your total movement speed and is reduced from the distance you can move on your next turn."
+			]
+		},
+		{
+			"name": "Transmogrification",
+			"source": "HEC",
+			"page": 69,
+			"srd": true,
+			"className": "Barbarian",
+			"classSource": "DRK",
+			"subclassShortName": "Psionics",
+			"subclassSource": "HEC",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"When attempting to grapple, you can do so telekinetically as translucent tentacles visible only to you and the target creature, wraps around the target creature. The maximum range for the telekinetic grapple extends to within 10 ft of you or upto the reach of your melee weapon, if it is higher. You also get to choose the focus of your path from the two options listed below. You can choose a different option each time you get to choose a new focus.",
+				"Mind Path - You are immune to magic that allows other creatures to read your thoughts or determine whether you are lying. Creatures can communicate telepathically with you only if you allow it. You gain resistance to psychic dmg.",
+				"Body Path - When a creature is grappled and as a bonus action while it is grappled, it must succeed on a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Strength modifier) or take psychic dmg equal to one roll of your wrath die + strength modifier."
+			]
+		},
+		{
+			"name": "Metamorphosis",
+			"source": "HEC",
+			"page": 69,
+			"srd": true,
+			"className": "Barbarian",
+			"classSource": "DRK",
+			"subclassShortName": "Psionics",
+			"subclassSource": "HEC",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"You have immunity to the {@condition charmed} and {@condition frightened} conditions while your Rage is active and you have advantage against such effects while not raging. When a grappled creature deals damage to you or breaks free from your grapple, you can immediately use your reaction and a wrath charge to attack the target creature and on a hit, you add the number rolled on the wrath die to the damage dealt. You also get to choose the focus of your path from the two options listed below. You can now change any of your selected focuses to another one during a long rest.",
+				"Mind Path - Whenever you take more than 10 damage while raging, you can deal psychic dmg to the grappled creature equal to two rolls of your wrath die.",
+				"Body Path - When you are grappling a creature and you use the reckless attack feature, the grappled creature must roll a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Strength modifier) and on a failure, it is stunned until the start of your next turn. This effect is dispelled from the grappled creature if your rage ends or if it is not grappled by you anymore."
+			]
+		},
+		{
+			"name": "Transcendent Causatum",
+			"source": "HEC",
+			"page": 69,
+			"srd": true,
+			"className": "Barbarian",
+			"classSource": "DRK",
+			"subclassShortName": "Psionics",
+			"subclassSource": "HEC",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"When attempting to grapple a creature telekinetically, a translucent illithid form of you appears instead of tentacles, and is visible only to you and the target creature. Your illithid form is one size larger than you and grows or shrinks to maintain the size difference if your size changes. When you successfully grapple a creature or start your turn while grappling a creature, you gain one charge of wrath. You also get to choose the focus of your path from the two options listed below. You can now change any of your selected focuses to another one during a short rest.",
+				"Mind Path - A grappled creature benefitting from magical effects or any feature that help it end the grappled condition on itself, must succeed on a Wisdom ability check against your Strength ability check to be able to use those features. You have advantage on this Strength ability check if you are raging. You can spend one minute concentrating on a restrained or incapacitated creature and it is charmed by you at the end of that duration. The charmed condition lasts for 24 hrs and you can telepathically communicate with it during this time, if it is on the same plane of existence as you. You can only have one creature charmed at a time from this feature and if the charmed condition ends on the creature, you become aware of it.",
+				"Body Path - When you take damage while grappling a creature, you can expend your reaction and all your wrath charges to halve the damage you take and redirect the other half to the grappled creature as psychic damage. You also deal additional psychic damage equal to the wrath die expended when using this feature. You can only use this feature once every short rest."
+			]
+		},
     {
       "name": "Champion",
       "source": "DRK",
@@ -37932,6 +38052,214 @@
         "You acquire the training necessary to effectively arm yourself for battle. You gain proficiency with medium armor, shields, and martial weapons."
       ]
     },
+{
+			"name": "Boon of the Raven Spirit",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Raven Queen feature}",
+				"Starting at 6th level, the raven spirit empowers your mind and modicum of power granted to you by your patron. You gain immunity to the frightened condition. In addition, your chosen pact boon is improved as shown below.",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Pact of the Chain|Warlock|DRK|Raven Queen|HEC|6"				
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Pact of the Blade|Warlock|DRK|Raven Queen|HEC|6"				
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Pact of the Talisman|Warlock|DRK|Raven Queen|HEC|6"				
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Pact of the Tome|Warlock|DRK|Raven Queen|HEC|6"				
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Pact of the Chain",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 6,
+			"header": 1,
+			"entries": [
+				"Your familiar gains a bonus to it's hit point maximum equal to twice your warlock level and it's proficiency bonus scales with your proficiency bonus. While your familiar is alive, you and your familiar get advantage on ability checks using skills for which you both have proficiency. Your familiar can now share the same initiative as you and take it's turn during your turn."
+			]
+		},
+		{
+			"name": "Pact of the Blade",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 6,
+			"header": 1,
+			"entries": [
+				"Your pact weapon deals an extra 1d6 damage when it hits. You can change the damage type of your pact weapon to necrotic or cold when you deal damage to a creature with it. Additionally when you hit a creature, it must succeed on a constitution saving throw against your spell save dc or be restrained until the end of your next turn. You can do so for a number of times equal to your proficiency bonus per long rest."
+			]
+		},
+		{
+			"name": "Pact of the Talisman",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 6,
+			"header": 1,
+			"entries": [
+				"When you perform the ritual to receive an amulet, you receive a number of amulets equal to half your proficiency bonus(rounded up). The number of uses on the features provided by these talismans to their wearers are shared by all the talismans, but they recharge on a short rest instead of a long rest. When a talisman wearer uses one of it's features, they get temporary hitpoints equal to your warlock level."
+			]
+		},
+		{
+			"name": "Pact of the Tome",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 6,
+			"header": 1,
+			"entries": [
+				"When you deal necrotic or cold damage through spells, you can add your proficiency bonus to the damage dealt. During a long rest, you can prepare a number of spells equal to your proficiency bonus from the spell list of any class, for which you have spell slots for, and these spells are considered as warlock spells for you. The spells prepared in such a way do not count towards the number of spells known by you."
+			]
+		},
+		{
+			"name": "Aegis of the Ravens",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Raven Queen feature}",
+				"The Raven spirit granted to you has influenced your physique, over the course of it's companionship. You gain resistance to cold and necrotic damage.",
+				"As a bonus action, you can manifest spectral raven wings that give you magical flight with flying speed equal to your movement speed for one minute. You can use this feature a number of times equal to your proficiency bonus per long rest.",
+				"As an action, you can assume the appearance and statistics of a raven, once per long rest. You gain a bonus to stealth checks equal to your charisma modifier, a flying speed equal to 100 ft and you can stay in this form for a number of hours equal to your charisma modifier. You can't cast any spells, but you can concentrate on spells while in this form.",
+				"While in this form, you are vulnerable to all damage and the damage you take cannot be reduced in any way, including resistances. Any damage taken in this form is carried over and reduced from your hitpoints. If you were flying while you take damage, then you lose the form immediately and start falling, unless you have a way to prevent it. However, you only take half the fall damage in this situation."
+			]
+		},
+		{
+			"name": "Queen's Eminent",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Raven Queen feature}",
+				"You get blessed by the Raven Queen herself for your service that has been matched by few. As a bonus action you can now channel your Raven spirit to supercharge your pact boon, as described below. The effect remains until you end it as an action, the duration ends, you fall unconcious or you become incapacitated. You can use this feature once per short rest.",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Pact of the Chain|Warlock|DRK|Raven Queen|HEC|14"				
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Pact of the Blade|Warlock|DRK|Raven Queen|HEC|14"				
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Pact of the Talisman|Warlock|DRK|Raven Queen|HEC|14"				
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Pact of the Tome|Warlock|DRK|Raven Queen|HEC|14"				
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Pact of the Chain",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 14,
+			"header": 1,
+			"entries": [
+				"For one minute, your familiar becomes immune to all damage. It's movement speed is doubled and once per turn, while delivering a touch range spell using it's reaction, it can deal extra necrotic damage or heal the target creature for an amount equal to your charisma modifier. It loses the ability to take the attack action and gains two new actions - 'Imperil' and 'Shelter'.",
+				"When the familiar takes the 'Imperil' action, it gives advantage to the first attack roll every turn until the start of it's next turn, against one hostile creature that is within 15 feet of it and on a hit by an attack roll with the advantage, the familiar adds 1d8 cold damage to the damage dealt by the attack.",
+				"When the familiar takes the 'Shelter' action, it gives disadvantage to the first attack roll every turn until the start of it's next turn, against one allied creature that is within 15 feet of it and allied creatures within 15 feet of it regain the maximum number of hit points possible from any healing."
+			]
+		},
+		{
+			"name": "Pact of the Blade",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 14,
+			"header": 1,
+			"entries": [
+				"For one minute, you enter a state of frenzy and you become unable to cast spells for the same duration. Your pact weapon deals a critical when you roll 19 or 20 on the d20 for the attack roll and once per turn, you take the maximum possible result on any damage die when you land a critical hit with your pact weapon.",
+				"While in the state of frenzy, when you take damage that reduces you to 0 hit points and doesn't kill you outright, you do not fall unconcious until the end of your next turn. Taking damage in this state causes death saving throw failures as normal and three failures can still kill you.",
+				"On the subsequent turn after you activate this feature, you can only take the attack action to make attacks with your pact weapon and at the end of your turn, you heal for half the highest damage dealt by you in a single attack. This feature can be used only once per long rest."
+			]
+		},
+		{
+			"name": "Pact of the Talisman",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 14,
+			"header": 1,
+			"entries": [
+				"For one minute, all the talisman wearers can choose to be resistant to one type of damage at the start of their turn(no action required). When any of the wearers regain hitpoints from any spell or feature, all of the wearers regain hitpoints equal to your charisma modifier.",
+				"For the same duration, all talisman wearers take the maximum possible result on dice rolls when using any of the features granted by the talisman. The creature that gains temporary health from using a feature of the talisman, adds your charisma modifier when calculating the total temporary health it receives."
+			]
+		},
+		{
+			"name": "Pact of the Tome",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 14,
+			"header": 1,
+			"entries": [
+				"For one minute, your spells ignore resistance to cold and necrotic damage. Once per turn for the same duration, you can reroll the damage dice for your cold and necrotic damage spells upto a number of dice equal to your charisma modifier. Once during this one minute duration, you can push the limits of your sepllcasting.",
+				"When you deal necrotic or cold damage using a spell, you take the maximum possible result on all damage dice. If you reduce any creature to zero hitpoints while using this feature, you regain the use of this feature. You can only do so once per short rest."
+			]
+		},
     {
       "name": "College of Dance",
       "source": "DRK",
@@ -40147,6 +40475,46 @@
       ]
     },
 {
+			"name": "The Raven Queen",
+			"shortName": "Raven Queen",
+			"source": "HEC",
+			"className": "Warlock",
+			"classSource": "DRK",
+			"page": 69,
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"Inflict Wounds",
+							"Heroism"
+						],
+						"s2": [
+							"Rime's Binding Ice",
+							"Gentle Repose"
+						],
+						"s3": [
+							"Life Transference",
+							"Spirit Guardians"
+						],
+						"s4": [
+							"Phantasmal Killer",
+							"Fire Shield"
+						],
+						"s5": [
+							"Cone of Cold",
+							"Commune"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"The Raven Queen|Warlock|DRK|Raven Queen|HEC|1",
+				"Boon of the Raven Spirit|Warlock|DRK|Raven Queen|HEC|6",
+				"Aegis of the Ravens|Warlock|DRK|Raven Queen|HEC|10",
+				"Queen's Eminent|Warlock|DRK|Raven Queen|HEC|14"
+			]
+		},
+{
 			"name": "Armorer",
 			"shortName": "Armorer",
 			"source": "DRK",
@@ -40561,6 +40929,21 @@
         "Chronicle of Convulsion|Barbarian|DRK|Four Horsemen|DRK|10",
         "Relics of Cataclysm|Barbarian|DRK|Four Horsemen|DRK|14"
       ]
+    },
+    {
+	"name": "Path of the Supreme Mind",
+	"shortName": "Psionics",
+	"source": "HEC",
+	"className": "Barbarian",
+	"classSource": "DRK",
+	"page": 69,
+	"srd": true,
+	"subclassFeatures": [
+	"Path of the Supreme Mind|Barbarian|DRK|Psionics|HEC|3",
+	"Transmogrification|Barbarian|DRK|Psionics|HEC|6",
+	"Metamorphosis|Barbarian|DRK|Psionics|HEC|10",
+	"Transcendent Causatum|Barbarian|DRK|Psionics|HEC|14"
+	]
     },
     {
       "name": "Path of World Tree",
