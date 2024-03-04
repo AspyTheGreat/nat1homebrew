@@ -23019,7 +23019,7 @@
         "Ability Score Improvement|Rogue|DRK|16",
         "Spell Mastery|Wizard||18",
         "Ability Score Improvement|Rogue|DRK|19",
-        "Signature Spells|Wizard||20"
+        "Arcane Pioneer|Wizard|DRK|20"
       ],
       "subclassTitle": "Arcane Tradition",
       "fluff": [
@@ -24776,6 +24776,19 @@
         }
       ]
     },
+ {
+      "name": "Arcane Pioneer",
+      "source": "DRK",
+      "page": 46,
+      "srd": true,
+      "className": "Wizard",
+      "classSource": "DRK",
+      "level": 20,
+      "entries": [
+        "At 20th level, you begin to break down the barriers of your magic, gaining the ability to learn spells from outside your class.",
+        "You can add 6 spells from the {@filter from the sorcerer or warlock spell list|spells|class=sorcerer;warlock|level=1;2;3;4;5;6;7;8;9}. You can further add spells from the two spell lists through spell scrolls, similar to how you would wizard spells."
+      ]
+    },
     {
       "name": "Pact Boon",
       "source": "DRK",
@@ -25951,7 +25964,7 @@
       "classSource": "DRK",
       "level": 14,
       "entries": [
-        "At 14th level, any attack roll you make against a target marked by favored foe is a critical hit on a roll of 19 or 20 on the d20. Landing a critical hit this way, triggers the following effect determined by your subclass. This effect ends when favored foe on the creature ends. You also cannot be tracked by non-magical means and non-magical difficult terrain does not cost any extra movement to traverse."
+        "At 14th level, any attack roll you make against a creature under the effects of the {@spell hunter's mark} is a critical hit on a roll of 19 or 20 on the d20. Landing a critical hit this way triggers the following effect determined by your subclass. This effect ends when the {@spell hunter's mark} on the creature ends. You also cannot be tracked by non-magical means and non-magical difficult terrain does not cost any extra movement to traverse."
       ]
     },
     {
@@ -28780,7 +28793,7 @@
       "entries": [
         "{@i 5th-level Alchemist feature}",
         "Whenever you cast a spell using your {@item alchemist's supplies|PHB} as the spellcasting focus, you gain a bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, fire, necrotic, or poison damage, and the bonus equals your Intelligence modifier (minimum of +1).",
-        "Additionally, you gain the following options added to your Experimental Potion feature. If a creature attempts to drink multiple refined potions which have a duration, it will only gain the benefit of the latest one. You can now also administer your potion to any creature within 30 feet of you.",
+        "Additionally, you gain the ability to brew more potent but less endurable potions. If a creature attempts to drink multiple refined potions which have a duration, it will only gain the benefit of the latest one. You can now also administer your potion to any creature within 30 feet of you.",
         "You can create two Refined Potions of your choice at the end of a long rest",
         {
           "type": "table",
@@ -28961,7 +28974,7 @@
             ],
             [
               "6",
-              "{@b Agile}. If the drinker is subject to a saving throw that would deal half damage if they succeed on it, they can gain the benefits of the Evasion feature for that saving throw. This property can be used 3 times until the magic fizzles out (You can use this property 5 times before fizzling out)."
+              "{@b Vigilant}. The drinker can't be {@quickref Surprise|PHB|3|0|surprised} while they are conscious, and they gain advantage on Wisdom ({@skill Perception}) checks. Once before the elixir ends, you can give yourself a +10 bonus to an Initiative roll (you can give yourself the initiative bonus twice)."
             ]
           ]
         }
