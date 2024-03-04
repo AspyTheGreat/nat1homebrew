@@ -19414,6 +19414,7 @@
         "Martial Versatility|Ranger|DRK|4",
         "Extra Attack|Ranger|DRK|5",
         "Deft Explorer Improvement|Ranger|DRK|6",
+        "Favored Foe Improvement|Ranger|DRK|6",
         {
           "classFeature": "Ranger Archetype feature|Ranger|DRK|7",
           "gainSubclassFeature": true
@@ -19439,7 +19440,7 @@
         "Ability Score Improvement|Ranger|DRK|16",
         "Feral Senses|Ranger|DRK|18",
         "Ability Score Improvement|Ranger|DRK|19",
-        "Nature's Wisdom|Ranger|DRK|20"
+        "Foe Slayer|Ranger|DRK|20"
       ],
       "subclassTitle": "Ranger Archetype",
       "fluff": [
@@ -24436,17 +24437,15 @@
     },
     {
       "name": "Favored Foe",
-      "source": "DRK",
-      "page": 1,
-      "className": "Ranger",
-      "classSource": "DRK",
-      "level": 1,
-      "entries": [
-        "Starting at 1st level, When you hit a creature with an attack roll, you can call on your mystical bond with nature to mark the target as your favored enemy for 1 minute.",
-        "The first time on each of your turns that you hit the favored enemy and deal damage to it, including when you mark it, you can increase that damage by {@dice 1d4}.",
-        "You can use this feature to mark a favored enemy a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. While a creature is marked by this feature, applying it to another will dismiss the effect on the former target.",
-        "This feature's extra damage increases when you reach certain levels in this class: to {@dice 1d6} at 6th level and to {@dice 1d8} at 14th level."
-      ]
+	"source": "DRK",
+	"page": 1,
+	"className": "Ranger",
+	"classSource": "DRK",
+	"level": 1,
+	"entries": [
+	"Beginning at 1st level, you are adept at focusing your ire on a single foe.",
+	"You always have the {@spell hunter's mark} spell prepared, and it doesn't count against the number of spells you can prepare. Moreover, you can cast the spell twice without expending a spell slot. You regain any expended uses of this feature on a long rest."
+       ]
     },
     {
       "name": "Tireless",
@@ -24724,6 +24723,17 @@
       ]
     },
     {
+	"name": "Favored Foe Improvement",
+	"source": "DRK",
+	"page": 56,
+	"className": "Ranger",
+	"classSource": "DRK",
+	"level": 6,
+	"entries": [
+	   "Starting at 6th level, {@spell hunter's mark} no longer requires concentration."
+	]
+    },
+    {
       "name": "Nature's Veil",
       "source": "DRK",
       "page": 1,
@@ -24847,16 +24857,16 @@
       ]
     },
     {
-      "name": "Nature's Wisdom",
-      "source": "DRK",
-      "page": 1,
-      "srd": true,
-      "className": "Ranger",
-      "classSource": "DRK",
-      "level": 20,
-      "entries": [
-        "At level 20, All Wisdom checks and Wisdom saves are made with advantage and once per long rest, before a Wisdom check or save is rolled you may choose to replace the roll entirely with a 20."
-      ]
+	"name": "Foe Slayer",
+	"source": "DRK",
+	"page": 1,
+        "srd": true,
+	"className": "Ranger",
+	"classSource": "DRK",
+	"level": 20,
+	"entries": [
+		"At level 20, The damage of your {@spell hunter's mark} spell increases to {@dice 2d6}. Additionally, you always know the location of a creature affected by hunter's mark, and cannot suffer from disadvantage on attacks against them."
+	]
     },
     {
       "name": "Expertise",
@@ -27517,59 +27527,59 @@
       ]
     },
     {
-      "name": "Experimental Potion",
-      "source": "DRK",
-      "page": 14,
-      "className": "Artificer",
-      "classSource": "DRK",
-      "subclassShortName": "Alchemist",
-      "subclassSource": "DRK",
-      "level": 3,
-      "header": 1,
-      "entries": [
-        "{@i 3rd-level Alchemist feature}",
-        "Whenever you finish a long rest, you can magically produce a number of  Potions equal to your proficiency bonus in an empty flask you touch. At higher levels, you gain additional options and features that also use this resource. Roll on the corresponding potion table for each of the potion's effect, which is triggered when someone drinks/uses the potion. As a bonus action, a creature can drink the elixir or administer it to a willing creature within 5 feet of it.",
-        "Creating a potion requires you to have {@item alchemist's supplies|PHB} on your person, and any potion you create with this feature lasts until it is drunk or until the end of your next long rest.",
-        "You can create additional Potions by expending a spell slot of the appropriate level or higher for each one. When you do so, you use your action to create the elixir in an empty flask you touch, and you choose the elixir's effect from the corresponding potion table.",
-        "If you drink a potion or elixir that you created, its potency is increased as, shown in brackets.",
-        {
-          "type": "table",
-          "caption": "Experimental Potions (1st level spell slot)",
-          "colLabels": [
-            "d6",
-            "Effect"
-          ],
-          "colStyles": [
-            "col-2 text-center",
-            "col-10"
-          ],
-          "rows": [
-            [
-              "1",
-              "{@b Healing}. The drinker regains a number of hit points equal to {@dice 2d4} + your Intelligence modifier (add your artificer level to the healing)."
-            ],
-            [
-              "2",
-              "{@b Swiftness}. The drinker's walking speed increases by 10 feet for 1 hour (your speed is increased by 30 feet)."
-            ],
-            [
-              "3",
-              "{@b Resilience}. The drinker gains a +1 bonus to AC for 10 minutes (the bonus is increased to +2)."
-            ],
-            [
-              "4",
-              "{@b Boldness}. The drinker can roll a {@dice d4} and add the number rolled to every attack roll and saving throw they make for the next minute (The bonus is increased to  {@dice 2d4})."
-            ],
-            [
-              "5",
-              "{@b Flight}. The drinker gains a flying speed of 10 feet for 10 minutes (The speed is increased to 30 feet)."
-            ],
-            [
-              "6",
-              "{@b Transformation}. The drinker's body is transformed as if by the {@spell alter self} spell. The drinker determines the transformation caused by the spell, the effects of which last for 10 minutes (You can choose to gain any number of the benefits of the alter self spell)."
-            ]
-          ]
-        }
+	"name": "Experimental Potion",
+	"source": "DRK",
+	"page": 14,
+	"className": "Artificer",
+	"classSource": "DRK",
+	"subclassShortName": "Alchemist",
+	"subclassSource": "DRK",
+	"level": 3,
+	"header": 1,
+	"entries": [
+		"{@i 3rd-level Alchemist feature}",
+		"Creating a potion requires you to have {@item alchemist's supplies|PHB} on your person, and any potion you create with this feature lasts until it is drunk or until the end of your next long rest. As a bonus action, a creature can drink the elixir or administer it to a willing creature within 5 feet of it.",
+		"You can create additional Potions by expending a spell slot. When you do so, you use your action to create the elixir in an empty flask you touch, and you choose the potion's effect from the corresponding potion table.",
+		"If you drink a potion or elixir that you created, its effectiveness is improved, as shown in the brackets.",
+		"You can create two Experimental potions of your choice at the end of a long rest.",
+		{
+		"type": "table",
+		"caption": "Experimental Potions",
+		"colLabels": [
+		"d6",
+		"Effect"
+		],
+		"colStyles": [
+		"col-2 text-center",
+		"col-10"
+	        ],
+	"rows": [
+	        [
+		"1",
+		"{@b Healing}. The drinker regains a number of hit points equal to {@dice 2d4} + your Intelligence modifier (add your artificer level to the healing)."
+		],
+		[
+		"2",
+		"{@b Swiftness}. The drinker's walking speed increases by 10 feet for 1 hour (your speed is increased by 20 feet)."
+		],
+		[
+		"3",
+		"{@b Robust}. The drinker gains a +1 bonus to Ability checks, AC and saving throws for 10 minutes (the bonus is increased to +2)."
+		],
+		[
+		"4",
+		"{@b Boldness}. The drinker can roll a {@dice d4} and add the number rolled to every attack roll and saving throw they make for the next minute (The bonus is increased to  {@dice d8})."
+		],
+		[
+		"5",
+		"{@b Flight}. The drinker gains a flying speed of 20 feet for 10 minutes (You gain a flying speed of 40 ft.)."
+		],
+		[
+		"6",
+		"{@b Transformation}. The drinker's body is transformed as if by the {@spell alter self} spell. The drinker determines the transformation caused by the spell, the effects of which last for 10 minutes (You can choose to gain any number of the benefits of the alter self spell)."
+		]
+	  ]
+	}
       ]
     },
     {
@@ -27610,111 +27620,113 @@
       ]
     },
     {
-      "name": "Refined Formulae",
-      "source": "DRK",
-      "page": 14,
-      "className": "Artificer",
-      "classSource": "DRK",
-      "subclassShortName": "Alchemist",
-      "subclassSource": "DRK",
-      "level": 5,
-      "header": 1,
-      "entries": [
-        "{@i 5th-level Alchemist feature}",
-        "Whenever you cast a spell using your {@item alchemist's supplies|PHB} as the spellcasting focus, you gain a bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, fire, necrotic, or poison damage, and the bonus equals your Intelligence modifier (minimum of +1).",
-        "Additionally, you gain the following options added to your Experimental Potion feature. If a creature attempts to drink multiple refined potions which have a duration, it will only gain the benefit of the latest one. You can now also administer your potion to any creature within 30 feet of you.",
-        {
-          "type": "table",
-          "caption": "Refined Potions (2nd level spell slot)",
-          "colLabels": [
-            "d6",
-            "Effect"
-          ],
-          "colStyles": [
-            "col-2 text-center",
-            "col-10"
-          ],
-          "rows": [
-            [
-              "1",
-              "{@b Heroism}. The drinker regains a number of temporary hit points equal to your Intelligence modifier at the start of each of their turns. Additionally, it gains immunity to the {@condition charmed} and {@condition frightened} conditions. This benefit lasts for 1 minute (Any wasted temporary hitpoints are turned into healing)."
-            ],
-            [
-              "2",
-              "{@b Speed}. The drinker's movement speed is doubled, and it gains an additional action. This action can only be used to take the {@action Attack} (one weapon attack only), {@action Dash}, {@action Disengage}, {@action Hide} or {@action Use an Object} actions only. This benefit lasts for 1 minute, and gives you the {@condition incapacitated} condition for 1 turn after it ends (You can use the additional action to cast a cantrip or a spell of 1st level). This bonus does not stack with the {@spell haste} spell."
-            ],
-            [
-              "3",
-              "{@b Sturdiness}. The drinker gains a +2 bonus to AC and advantage against Dexterity and Constitution saving throws for 10 minutes (You also gain advantage against all saving throws made against spells)."
-            ],
-            [
-              "4",
-              "{@b Resistance}. When you create this potion, choose a damage type. The drinker gains resistance to the chosen damage type for 1 hour (You can choose two damage types when you create the potion)."
-            ],
-            [
-              "5",
-              "{@b Cleansing}. The drinker can reduce their exhaustion level by 1 or end any disease or condition affecting them. The condition must be one of {@condition blinded}, {@condition deafened}, {@condition poisoned} or {@condition paralyzed} (you can also end the {@condition stunned} or the {@condition incapacitated} condition if you are affected by them)."
-            ],
-            [
-              "6",
-              "{@b Power}. The drinker's Strength score is increased to 21 for 1 hour (Your strength score is increased to 23)."
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Armament Coatings",
-      "source": "DRK",
-      "page": 14,
-      "className": "Artificer",
-      "classSource": "DRK",
-      "subclassShortName": "Alchemist",
-      "subclassSource": "DRK",
-      "level": 5,
-      "header": 1,
-      "entries": [
-        "You can create coatings that magically enhance the effectiveness of weapons.",
-        "A weapon can only gain the benefit of one coating at a time. The coatings last for 1 minute, and takes a bonus action to apply to a weapon.",
-        {
-          "type": "table",
-          "caption": "Coatings (2nd level spell slot)",
-          "colLabels": [
-            "d6",
-            "Effect"
-          ],
-          "colStyles": [
-            "col-2 text-center",
-            "col-10"
-          ],
-          "rows": [
-            [
-              "1",
-              "{@b Sharpness}. The weapon gains a +1 bonus to its attack and damage rolls. (The attack and damage bonuses are increased to +2)"
-            ],
-            [
-              "2",
-              "{@b Accuracy}. The weapon gains a +2 bonus to its attack rolls. (the attack bonus is increased to your intelligence modifier, minimum of +2)."
-            ],
-            [
-              "3",
-              "{@b Slaying}. Choose a creature type when you create this coating. The weapon gains an additional {@dice 1d6} damage against the creature. Additionally, any damage dealt by the coated weapons attack ignores damage resistances against the chosen creature type (the damage bonus is increased to {@dice 2d6})."
-            ],
-            [
-              "4",
-              "{@b Gleaming}. The weapon emits an aura of bright light for 10 feet, and dim light for an additional 10 feet. As a reaction after being hit by an attack, the wielder can use their reaction to blind the attacker unless they make a constitution save against your spell save dc (any creature that comes within 5 feet of you for the first time on a turn must make the constitution save or be blinded until the end of their turn)."
-            ],
-            [
-              "5",
-              "{@b Bane}. The weapon inflicts a {@dice 1d4} penalty to the ability checks, attack rolls and saving throws of any creature it hits unless they succeed on a Charisma saving throw against your spell save dc (The penalty is increased to a 1d6)."
-            ],
-            [
-              "6",
-              "{@b Viciousness}. The roll required to land a critical hit while wielding this weapon is reduced by one (the roll is reduced by two)."
-            ]
-          ]
-        }
-      ]
+				"name": "Refined Formulae",
+				"source": "DRK",
+				"page": 14,
+				"className": "Artificer",
+				"classSource": "DRK",
+				"subclassShortName": "Alchemist",
+				"subclassSource": "DRK",
+				"level": 5,
+				"header": 1,
+				"entries": [
+					"{@i 5th-level Alchemist feature}",
+					"Whenever you cast a spell using your {@item alchemist's supplies|PHB} as the spellcasting focus, you gain a bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, fire, necrotic, or poison damage, and the bonus equals your Intelligence modifier (minimum of +1).",
+					"Additionally, you gain the following options added to your Experimental Potion feature. If a creature attempts to drink multiple refined potions which have a duration, it will only gain the benefit of the latest one. You can now also administer your potion to any creature within 30 feet of you.",
+					"You can create two Refined Potions of your choice at the end of a long rest",
+					{
+						"type": "table",
+						"caption": "Refined Potions",
+						"colLabels": [
+							"d6",
+							"Effect"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"{@b Heroism}. The drinker regains a number of temporary hit points equal to your Intelligence modifier at the start of each of their turns. Additionally, it gains immunity to the {@condition charmed} and {@condition frightened} conditions. This benefit lasts for 1 minute (Any wasted temporary hitpoints are turned into healing)."
+							],
+							[
+								"2",
+								"{@b Speed}. While the potion is active, the drinker can make an additional weapon attack whenever they take the {@action Attack} action (You gain an additional action similar to the {@spell haste} spell)."
+							],
+							[
+								"3",
+								"{@b Mobile}. The drinker's movement speed is doubled for 1 minute. During that time, opportunity attacks made against the drinker are made at disadvantage (Your movement does not proc opportunity attacks)."
+							],
+							[
+								"4",
+								"{@b Resistance}. when the potion is used, The drinker gains resistance to a damage type of their choosing for 1 hour (You can choose two damage types when you drink the potion)."
+							],
+							[
+								"5",
+								"{@b Colossus}. The drinker's size increases by 1 level. Additionally, its weapons deal an additional {@dice 1d8} damage against creatures whose size is equal to or smaller than the drinker. (Your size increases by two levels, and the damage bonus is increased to {@dice 1d12})."
+							],
+							[
+								"6",
+								"{@b Hill Giant}. The drinker's Strength score is increased to 21 for 1 hour (Your strength score is increased to 23)."
+							]
+						]
+					}
+				]
+			},
+			{
+				"name": "Armament Coatings",
+				"source": "DRK",
+				"page": 14,
+				"className": "Artificer",
+				"classSource": "DRK",
+				"subclassShortName": "Alchemist",
+				"subclassSource": "DRK",
+				"level": 5,
+				"header": 1,
+				"entries": [
+                    "You can create coatings that magically enhance the effectiveness of mundane weapons.",
+					"The coatings can only be applied to non-magical weapons or weapons turned magical by artificer infusions or spells such as {@spell magic weapon} or {@spell elemental weapon}.",
+					"A weapon can only gain the benefit of one coating at a time. The coatings last for 1 minute, and takes a bonus action to apply to a weapon.",
+					{
+						"type": "table",
+						"caption": "Coatings (2nd level spell slot)",
+						"colLabels": [
+							"d6",
+							"Effect"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"{@b Sharpness}. The weapon gains a +1 bonus to its attack and damage rolls."
+							],
+							[
+								"2",
+								"{@b Accuracy}. The weapon gains a +2 bonus to its attack rolls."
+							],
+							[
+								"3",
+								"{@b Slaying}. Choose a creature type when you create this coating. The weapon gains an additional {@dice 2d6} damage against the creature. Additionally, any damage dealt by the coated weapons attack ignores damage resistances against the chosen creature type."
+							],
+							[
+								"4",
+								"{@b Gleaming}. The weapon gains a +1 bonus to its damage rolls. Additionally, it emits an aura of bright light for 10 feet, and dim light for an additional 10 feet. As a reaction after being hit by an attack, the wielder can use their reaction to blind the attacker unless they make a constitution save against your spell save dc."
+							],
+							[
+								"5",
+								"{@b Bane}. If the weapon lands an attack on a creature, the creature has a {@dice 1d4} penalty on its next attack roll or saving throw."
+							],
+							[
+								"6",
+								"{@b Viciousness}. The roll required to land a critical hit while wielding this weapon is reduced by one."
+		]
+	    ]
+	  }
+	]
     },
     {
       "name": "Restorative Reagents",
@@ -27753,81 +27765,81 @@
         "You can cast {@spell lesser restoration} without expending a spell slot and without preparing the spell, provided you use {@item alchemist's supplies|PHB} as the spellcasting focus. You can do so a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest."
       ]
     },
-    {
-      "name": "Experimental Elixir",
-      "source": "DRK",
-      "page": 14,
-      "className": "Artificer",
-      "classSource": "DRK",
-      "subclassShortName": "Alchemist",
-      "subclassSource": "DRK",
-      "level": 9,
-      "header": 2,
-      "entries": [
-        "You have learnt to produce more durable and effective kinds of potions, which last until the end of a long rest.",
-        "Once a creature consumes an elixir, they cannot benefit from another elixir until they finish a long rest.",
-        {
-          "type": "table",
-          "caption": "Experimental Elixirs (level 3 spell slot)",
-          "colLabels": [
-            "d6",
-            "Effect"
-          ],
-          "colStyles": [
-            "col-2 text-center",
-            "col-10"
-          ],
-          "rows": [
-            [
-              "1",
-              "{@b Bloodlust}. The drinker gains a number of temporary hitpoints equal to your intelligence modifier. Whenever the drinker drops a creature to 0 hitpoints, it gains additional temporary hitpoints equal to your intelligence modifier, as well as an action on that turn (you gain the temporary hitpoints and additional actions when you land a critical hit or drop a creature to 0 hitpoints). You can only gain one additional action per turn."
-            ],
-            [
-              "2",
-              "{@b Arcane Cultivation}. The drinker gains an additional 5th spell slot (You gain a 6th level spell slot)."
-            ],
-            [
-              "3",
-              "{@b Focus}. The drinker cannot lose concentration on a spell as a result of taking damage. (You cannot lose concentration, unless you are dropped to 0 hitpoints)"
-            ],
-            [
-              "4",
-              "{@b Colossus}. The drinker's size increases by 1 level. Additionally, its weapons deal an additional {@dice 1d6} damage, and it gains advantage on strength checks and saves (Your size increases by two levels, and the damage bonus is increased to {@dice 2d6})."
-            ],
-            [
-              "5",
-              "{@b Drake}. After drinking the potion, the creature can use its bonus action on any subsequent turn to exhale a 30-foot cone or a 60 foot line of damaging breath. Choose acid, cold, fire, lightning, thunder or poison damage (your choice). Each creature in its area must make a dexterity saving throw against your spell save DC, taking {@dice 4d8} damage on a failed save, or half as much on a succesful one (The damage increases to {@dice 6d8} for you). Once the breath is used, you cannot use it again unless it is recharged. The breath recharges when you Roll a 6 on a {@dice d6} at the start of your turn."
-            ],
-            [
-              "6",
-              "{@b Vigilant}. The drinker cannot be surprised while they are conscious,  and gainst a +5 bonus to their peception checks and initiative rolls."
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Chemical Mastery",
-      "source": "DRK",
-      "page": 14,
-      "className": "Artificer",
-      "classSource": "DRK",
-      "subclassShortName": "Alchemist",
-      "subclassSource": "DRK",
-      "level": 15,
-      "header": 1,
-      "entries": [
-        "{@i 15th-level Alchemist feature}",
-        "You have been exposed to so many chemicals that they pose little risk to you, and you can use them to quickly end certain ailments:",
-        {
-          "type": "list",
-          "items": [
-            "You gain resistance to acid damage and poison damage, and you are immune to the {@condition poisoned} condition.",
-            "You can cast {@spell greater restoration} and {@spell heal} without expending a spell slot, without preparing the spell, and without material components, provided you use {@item alchemist's supplies|PHB} as the spellcasting focus. Once you cast either spell with this feature, you can't cast that spell with it again until you finish a long rest.",
-            "You have mastered the craft of potion-making. Creatures other than you can now benefit from the potent version of your potions."
-          ]
-        }
-      ]
+   {
+				"name": "Experimental Elixir",
+				"source": "DRK",
+				"page": 14,
+				"className": "Artificer",
+				"classSource": "DRK",
+				"subclassShortName": "Alchemist",
+				"subclassSource": "DRK",
+				"level": 9,
+				"header": 2,
+				"entries": [
+					"You have learnt to produce more durable and effective kinds of potions, which last until the end of a long rest.",
+					"Once a creature consumes an elixir, they cannot benefit from another elixir until they finish a long rest.",
+					"You can create two Experimental elixirs of your choice at the end of a long rest.",
+					{
+						"type": "table",
+						"caption": "Experimental Elixirs",
+						"colLabels": [
+							"d6",
+							"Effect"
+						],
+						"colStyles": [
+							"col-2 text-center",
+							"col-10"
+						],
+						"rows": [
+							[
+								"1",
+								"{@b Bloodlust}. At any point after the elixir is used, the drinker can activate its magic, gaining an additional action during that turn. Once its property has been used, it cannot be used again until the drinker takes a Short Rest (You regain the use of this feature whenever you roll initiative)."
+							],
+							[
+								"2",
+								"{@b Arcane Cultivation}. The drinker gains an additional 5th spell slot (You gain a 6th level spell slot)."
+							],
+							[
+								"3",
+								"{@b Focus}. If the drinker fails a constitution saving throw in order to maintain concentration on a spell, they can choose to succeed instead. They can choose to do so a number of times equal to the alchemist's Intelligence modifier (minimum of 1)."
+							],
+							[
+								"4",
+								"{@b Cleansing}. The drinker gains the ability to shrug off the gravest of wounds. If you are affected by any of the conditions affected by the {@spell lesser restoration} and {@spell greater restoration}, as well as the {@condition stunned} or {@condition incapacitated} conditions, you can choose to end one of those conditions on you at the start of your turn. Once you cleanse any of those conditions, you cannot do so again until 10 minutes pass."
+							],
+							[
+								"5",
+								"{@b Drake}. After drinking the potion, the creature can use its bonus action on any subsequent turn to exhale a 30-foot cone or a 60 foot line of damaging breath. Choose acid, cold, fire, lightning, thunder or poison damage (your choice). Each creature in its area must make a dexterity saving throw against your spell save DC, taking {@dice 4d8} damage on a failed save, or half as much on a succesful one. Once the breath is used, you cannot use it again unless it is recharged. The breath recharges when you Roll a 6 on a {@dice d6} at the start of your turn (The damage increases to {@dice 6d8} for you)."
+							],
+							[
+								"6",
+								"{@b Agile}. If the drinker is subject to a saving throw that would deal half damage if they succeed on it, they can gain the benefits of the Evasion feature for that saving throw. This property can be used 3 times until the magic fizzles out (You can use this property 5 times before fizzling out)."
+							]
+						]
+					}
+				]
+			},
+			{
+				"name": "Chemical Mastery",
+				"source": "DRK",
+				"page": 14,
+				"className": "Artificer",
+				"classSource": "DRK",
+				"subclassShortName": "Alchemist",
+				"subclassSource": "DRK",
+				"level": 15,
+				"header": 1,
+				"entries": [
+					"{@i 15th-level Alchemist feature}",
+					"You have been exposed to so many chemicals that they pose little risk to you, and you can use them to quickly end certain ailments:",
+				{
+				     "type": "list",
+			             "items": [
+				"You gain resistance to acid damage and poison damage, and you are immune to the {@condition poisoned} condition.",
+				"You can cast {@spell greater restoration} and {@spell heal} without expending a spell slot, without preparing the spell, and without material components, provided you use {@item alchemist's supplies|PHB} as the spellcasting focus. Once you cast either spell with this feature, you can't cast that spell with it again until you finish a long rest. If you cast the spells on a creature other than yourself, you can gain the benefits of that spell as well."
+			]
+		}
+	]
     },
     {
       "name": "Path of the Berserker",
@@ -37507,6 +37519,158 @@
       ]
     },
     {
+			"name": "Peace Domain",
+			"source": "DRK",
+			"page": 32,
+			"className": "Cleric",
+			"classSource": "DRK",
+			"subclassShortName": "Peace",
+			"subclassSource": "DRK",
+			"level": 1,
+			"entries": [
+				"The balm of peace thrives at the heart of healthy communities, between friendly nations, and in the souls of the kindhearted. The gods of peace inspire people of all sorts to resolve conflict and to stand up against those forces that try to prevent peace from flourishing. See the Peace Deities table for a list of some of the gods associated with this domain.",
+				"Clerics of the Peace Domain preside over the signing of treaties, and they are often asked to arbitrate in disputes. These clerics' blessings draw people together and help them shoulder one another's burdens, and the clerics' magic aids those who are driven to fight for the way of peace.",
+				{
+					"type": "table",
+					"caption": "Peace Deities",
+					"colLabels": [
+						"Example Deity",
+						"Pantheon"
+					],
+					"colStyles": [
+						"col-6 text-center",
+						"col-6 text-center"
+					],
+					"rows": [
+						[
+							"{@deity Angharradh|Elven|SCAG}",
+							"Elven"
+						],
+						[
+							"{@deity Berronar Truesilver|Dwarven|SCAG}",
+							"Dwarven"
+						],
+						[
+							"{@deity Boldrei|Eberron}",
+							"Eberron"
+						],
+						[
+							"{@deity Cyrrollalee|Halfling|SCAG}",
+							"Halfling"
+						],
+						[
+							"{@deity Eldath}",
+							"Forgotten Realms"
+						],
+						[
+							"{@deity Gaerdal Ironhand|Gnomish|SCAG}",
+							"Gnomish"
+						],
+						[
+							"{@deity Paladine|Dragonlance}",
+							"Dragonlance"
+						],
+						[
+							"{@deity Rao|Greyhawk}",
+							"Greyhawk"
+						]
+					]
+				},
+				{
+					"name": "Domain Spells",
+					"type": "entries",
+					"entries": [
+						"{@i 1st-level Peace Domain feature}",
+						"You gain domain spells at the cleric levels listed in the Peace Domain Spells table. See the Divine Domain class feature for how domain spells work.",
+						{
+							"type": "table",
+							"caption": "Peace Domain Spells",
+							"colLabels": [
+								"Cleric Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1st",
+									"{@spell heroism}, {@spell sanctuary}"
+								],
+								[
+									"3rd",
+									"{@spell aid}, {@spell warding bond}"
+								],
+								[
+									"5th",
+									"{@spell beacon of hope}, {@spell sending}"
+								],
+								[
+									"7th",
+									"{@spell aura of purity}, {@spell Otiluke's resilient sphere}"
+								],
+								[
+									"9th",
+									"{@spell greater restoration}, {@spell Rary's telepathic bond}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Implement of Peace|Cleric||Peace|TCE|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Emboldening Bond|Cleric|DRK|Peace|DRK|1"
+				}
+			]
+		},
+		{
+			"name": "Emboldening Bond",
+			"source": "DRK",
+			"page": 32,
+			"className": "Cleric",
+			"classSource": "DRK",
+			"subclassShortName": "Peace",
+			"subclassSource": "DRK",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"{@i 1st-level Peace Domain feature}",
+				"You can forge an empowering bond among people who are at peace with one another. As an action, you choose a number of willing creatures within 30 feet of you (this can include yourself) equal to your proficiency bonus. You create a magical bond among them for 1 minute or until you use this feature again. While any bonded creature is within 30 feet of another, the creature can roll a {@dice d4} and add the number rolled to an attack roll, an ability check, or a saving throw it makes. Each creature can add the {@dice d4} no more than once per turn.",
+				"You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			]
+		},
+{
+			"name": "Channel Divinity: Twilight Sanctuary",
+			"source": "DRK",
+			"page": 34,
+			"className": "Cleric",
+			"classSource": "DRK",
+			"subclassShortName": "Twilight",
+			"subclassSource": "DRK",
+			"level": 2,
+			"header": 2,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"{@i 2nd-level Twilight Domain feature}",
+				"You can use your Channel Divinity to refresh your allies with soothing twilight.",
+				"As an action, you present your holy symbol, and a sphere of twilight emanates from you. The sphere is centered on you, has a 30-foot radius, and is filled with dim light. The sphere moves with you, and it lasts for 1 minute or until you are {@condition incapacitated} or die. Whenever a creature (including you) ends its turn in the sphere, you can grant that creature one of these benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You grant it temporary hit points equal to {@dice 2d4}. This amount changes when you reach certain levels in this class, increasing to {@dice 3d4} at level 5, {@dice 4d4} at level 9, {@dice 5d4} at level 13 and {@dice 6d4} at level 17.",
+						"You use your reaction to end one effect on it causing it to be {@condition charmed} or {@condition frightened}."
+					]
+				}
+			]
+		},
+    {
       "name": "The Archfey",
       "source": "DRK",
       "page": 108,
@@ -39515,7 +39679,7 @@
 				}
 			],
 			"subclassFeatures": [
-				"Peace Domain|Cleric||Peace|TCE|1",
+				"Peace Domain|Cleric|DRK|Peace|DRK|1",
 				"Channel Divinity: Balm of Peace|Cleric||Peace|TCE|2",
 				"Protective Bond|Cleric||Peace|TCE|6",
 				"Potent Spellcasting|Cleric||Peace|TCE|8",
@@ -39558,7 +39722,7 @@
 			],
 			"subclassFeatures": [
 				"Twilight Domain|Cleric||Twilight|TCE|1",
-				"Channel Divinity: Twilight Sanctuary|Cleric||Twilight|TCE|2",
+				"Channel Divinity: Twilight Sanctuary|Cleric|DRK|Twilight|DRK|2",
 				"Steps of Night|Cleric||Twilight|TCE|6",
 				"Divine Strike|Cleric||Twilight|TCE|8",
 				"Blessed Strikes|Cleric||Twilight|TCE|8|TCE",
