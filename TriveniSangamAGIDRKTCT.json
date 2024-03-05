@@ -12223,10 +12223,9 @@
       "type": "A",
       "weight": 0.05,
       "rarity": "very rare",
-      "source": "BazaarArchersBest",
-      "page": 3,
+      "source": "AspysGuidetoInfinitum",
       "entries": [
-        "This magical arrow has a +2 attack bonus but causes no damage if the target is struck. wherever struck, it creates an antimagic area 20ft in radius and 20ft in height."
+        "This magical arrow has a +2 attack bonus but causes no damage if the target is struck. wherever struck, it creates an antimagic area 20ft in radius and 20ft in height for 10 minutes."
       ]
     }
   ],
