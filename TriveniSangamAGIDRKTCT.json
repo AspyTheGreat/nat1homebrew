@@ -12136,6 +12136,98 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Arrow of Clairvoyance",
+      "type": "A",
+      "weight": 0.05,
+      "rarity": "uncommon",
+      "source": "AspysGuidetoInfinitum",
+      "entries": [
+        "This arrow gives its user the ability to see or hear an area from the location of the arrow. This field of view is equal to the archer's normal field, and is activated by sounding the command word (\"Vision!\", or \"Listen!\") and firing the arrow. The archer is then able to either see or hear the area in front of the arrowhead by closing his eyes and concentrating. Normal restrictions for distance of vision apply with this magical arrow. The duration is concentration, up to 10 minutes."
+      ]
+    },
+    {
+      "name": "Arrow of Faerie Fire",
+      "type": "A",
+      "weight": 0.05,
+      "rarity": "common",
+      "source": "AspysGuidetoInfinitum",
+      "entries": [
+        "This arrow covers a creature it hits in {@spell faerie fire}."
+      ]
+    },
+    {
+      "name": "Arrow of Explosions",
+      "type": "A",
+      "weight": 0.05,
+      "rarity": "uncommon",
+      "source": "AspysGuidetoInfinitum",
+      "entries": [
+        "When nocked into a bow, this cursed arrow blossoms with a low roar into an explosion of flame. Each creature in a 20ft radius sphere centered on the where the arrow strikes must make a DC 15 Dexterity saving throw. A creature in the area of the explosion takes {@dice 8d6} fire damage on a failed save, or half as much damage on a successful one.",
+        "The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried."
+      ]
+    },
+    {
+      "name": "Arrow of Roping",
+      "type": "A",
+      "weight": 0.05,
+      "rarity": "uncommon",
+      "source": "AspysGuidetoInfinitum",
+      "entries": [
+        "When fired, this magical arrow leaves a smoky brown trail through its entire arc of flight. The trail solidifies into a solid brown rope when the arrow strikes its target, bonding to the bow that fired it. Once bonded, the arrow will never pull free, unless excessive weight is applied. The rope can support up to 500 lbs. of weight at once before it breaks or the arrow pulls free."
+      ]
+    },
+    {
+      "name": "Arrow of Screaming",
+      "type": "A",
+      "weight": 0.05,
+      "rarity": "rare",
+      "source": "AspysGuidetoInfinitum",
+      "entries": [
+        "When this missile is fired, it emits an ear shattering scream that all beings within 30 feet of its flight path must make a DC 15 Constitution saving throw. Those failing take {@dice 2d6} points of thunder damage and suffer the  {@condition deafened}  condition. In addition, those affected drop everything and cover their ears. Those successful take half damage and are not deafened. At the end a deafened creature's turn, it can make another Constitution saving throw. On a success, the condition ends."
+      ]
+    },
+    {
+      "name": "Arrow of Static Discharge",
+      "type": "A",
+      "weight": 0.05,
+      "rarity": "rare",
+      "source": "AspysGuidetoInfinitum",
+      "entries": [
+        "This +2 arrow causes an additional {@dice 6d8} points of lightning damage. When the arrow hits, it discharges all its electricty into the target, causing ripples of static electricty to shock its nervous system. At the start of its next turn, it must roll a {@dice 1d6}. On a 1-3 it is momentarily paralyzed and loses its turn. The arrow is consumed in the lightning charge. If the arrow misses its intended target, it discharges all of its electrical energy upon hitting the ground, or any other solid object."
+      ]
+    },
+    {
+      "name": "Arrow of Returning",
+      "type": "A",
+      "weight": 0.05,
+      "rarity": "uncommon",
+      "source": "AspysGuidetoInfinitum",
+      "entries": [
+        "Once shot, this +1 arrow will return to the archer's quiver if it misses its target."
+      ]
+    },
+    {
+      "name": "Arrow of Imprisonment",
+      "type": "A",
+      "weight": 0.05,
+      "rarity": "very rare",
+      "source": "AspysGuidetoInfinitum",
+      "entries": [
+        "This arrow causes the creature struck to be the target of a {@spell forcecage} spell, centered on them."
+      ]
+    },
+    {
+      "name": "Arrow of Antimagic",
+      "type": "A",
+      "weight": 0.05,
+      "rarity": "very rare",
+      "source": "BazaarArchersBest",
+      "page": 3,
+      "entries": [
+        "This magical arrow has a +2 attack bonus but causes no damage if the target is struck. wherever struck, it creates an antimagic area 20ft in radius and 20ft in height."
+      ]
     }
   ],
   "feat": [
