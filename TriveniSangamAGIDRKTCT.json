@@ -8604,6 +8604,10 @@
           {
             "name": "Sorcerer",
             "source": "DRK"
+          },
+{
+            "name": "Sorcerer",
+            "source": "PHB"
           }
         ]
       },
@@ -8676,6 +8680,14 @@
           {
             "name": "Bard",
             "source": "PHB"
+          },
+{
+            "name": "Bard",
+            "source": "DRK"
+          },
+{
+            "name": "Druid",
+            "source": "DRK"
           },
           {
             "name": "Druid",
@@ -8756,6 +8768,10 @@
             "name": "Wizard",
             "source": "PHB"
           },
+ {
+            "name": "Druid",
+            "source": "DRK"
+          },
           {
             "name": "Druid",
             "source": "PHB"
@@ -8829,6 +8845,10 @@
             "name": "Ranger",
             "source": "DRK"
           },
+{
+            "name": "Druid",
+            "source": "DRK"
+          },
           {
             "name": "Druid",
             "source": "PHB"
@@ -8895,6 +8915,10 @@
       },
       "classes": {
         "fromClassList": [
+{
+            "name": "Cleric",
+            "source": "DRK"
+          },
           {
             "name": "Cleric",
             "source": "PHB"
@@ -8977,6 +9001,10 @@
             "name": "Wizard",
             "source": "DRK"
           },
+{
+            "name": "Druid",
+            "source": "DRK"
+          },
           {
             "name": "Druid",
             "source": "PHB"
@@ -9047,6 +9075,10 @@
         "fromClassList": [
           {
             "name": "Wizard",
+            "source": "DRK"
+          },
+{
+            "name": "Druid",
             "source": "DRK"
           },
           {
@@ -9120,6 +9152,10 @@
       },
       "classes": {
         "fromClassList": [
+{
+            "name": "Druid",
+            "source": "DRK"
+          },
           {
             "name": "Druid",
             "source": "PHB"
@@ -9190,6 +9226,14 @@
             "name": "Bard",
             "source": "PHB"
           },
+{
+            "name": "Bard",
+            "source": "DRK"
+          },
+{
+            "name": "Cleric",
+            "source": "DRK"
+          },
           {
             "name": "Cleric",
             "source": "PHB"
@@ -9246,6 +9290,10 @@
           {
             "name": "Druid",
             "source": "PHB"
+          },
+{
+            "name": "Druid",
+            "source": "DRK"
           },
           {
             "name": "Ranger",
@@ -9322,6 +9370,14 @@
             "name": "Druid",
             "source": "PHB"
           },
+{
+            "name": "Druid",
+            "source": "DRK"
+          },
+{
+            "name": "Bard",
+            "source": "DRK"
+          },
           {
             "name": "Bard",
             "source": "PHB"
@@ -9381,6 +9437,10 @@
           {
             "name": "Sorcerer",
             "source": "DRK"
+          },
+{
+            "name": "Sorcerer",
+            "source": "PHB"
           }
         ]
       },
