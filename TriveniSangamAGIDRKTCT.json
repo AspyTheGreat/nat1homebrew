@@ -8605,7 +8605,7 @@
             "name": "Sorcerer",
             "source": "DRK"
           },
-{
+          {
             "name": "Sorcerer",
             "source": "PHB"
           }
@@ -8681,11 +8681,11 @@
             "name": "Bard",
             "source": "PHB"
           },
-{
+          {
             "name": "Bard",
             "source": "DRK"
           },
-{
+          {
             "name": "Druid",
             "source": "DRK"
           },
@@ -8768,7 +8768,7 @@
             "name": "Wizard",
             "source": "PHB"
           },
- {
+          {
             "name": "Druid",
             "source": "DRK"
           },
@@ -8845,7 +8845,7 @@
             "name": "Ranger",
             "source": "DRK"
           },
-{
+          {
             "name": "Druid",
             "source": "DRK"
           },
@@ -8915,7 +8915,7 @@
       },
       "classes": {
         "fromClassList": [
-{
+          {
             "name": "Cleric",
             "source": "DRK"
           },
@@ -9001,7 +9001,7 @@
             "name": "Wizard",
             "source": "DRK"
           },
-{
+          {
             "name": "Druid",
             "source": "DRK"
           },
@@ -9077,7 +9077,7 @@
             "name": "Wizard",
             "source": "DRK"
           },
-{
+          {
             "name": "Druid",
             "source": "DRK"
           },
@@ -9152,7 +9152,7 @@
       },
       "classes": {
         "fromClassList": [
-{
+          {
             "name": "Druid",
             "source": "DRK"
           },
@@ -9226,11 +9226,11 @@
             "name": "Bard",
             "source": "PHB"
           },
-{
+          {
             "name": "Bard",
             "source": "DRK"
           },
-{
+          {
             "name": "Cleric",
             "source": "DRK"
           },
@@ -9291,7 +9291,7 @@
             "name": "Druid",
             "source": "PHB"
           },
-{
+          {
             "name": "Druid",
             "source": "DRK"
           },
@@ -9370,11 +9370,11 @@
             "name": "Druid",
             "source": "PHB"
           },
-{
+          {
             "name": "Druid",
             "source": "DRK"
           },
-{
+          {
             "name": "Bard",
             "source": "DRK"
           },
@@ -9438,7 +9438,7 @@
             "name": "Sorcerer",
             "source": "DRK"
           },
-{
+          {
             "name": "Sorcerer",
             "source": "PHB"
           }
@@ -11937,7 +11937,7 @@
           "type": "entries",
           "name": "Echoes of Battle",
           "entries": [
-            "At the start of your turn, expend 2 charges to replicate the effect of any smite spell without expending a spell slot, embedding the chosen smite into the weapon. This can be done multiple times at once, stacking different smite effects on a single hit."
+            "At the start of your turn, expend charges to replicate the effect of any smite spell without expending a spell slot, instead costing as many charges(Minimum of 2 charges) as the spell's level, embedding the chosen smite into the weapon. This can be done multiple times at once, stacking different smite effects on a single hit."
           ]
         },
         {
@@ -12077,7 +12077,7 @@
               "items": [
                 "Fortified Bastion: Erects a sturdy tower of reinforced stone upto 30ft in height, if shot at the base of a creature, the tower erects with the creature still on it. Only one creature can be on top of one tower.",
                 "Xbow Turret: Where the bolt stikes, crossbow turret forms out of it. It has a range of 200ft and fires 1 shot at the end of your turn. It uses your attack roll and deals this weapon's damage dice.",
-                "Weave deconstructor: Creates a glowing crystal obelisk that unravels the weave and pulls arcane energy from it, sending it outwards creatures of your choice within 20ft of it. At the end of your turns",
+                "Weave deconstructor: Creates a glowing crystal obelisk that unravels the weave and pulls arcane energy from it, sending it outwards creatures of your choice within 20ft of it. At the end of your turns, restore {@dice 1d3} levels of spell slots to a creature within 60ft. The crystal stores the spell slots every round if unused. {@dice 2d3}, {@dice 3d3} for subsequent rounds. Spell slots last on allies for the duration of the crystal.",
                 "Compact Ladder: At the point of impact, a ladder 100ft long springs up. The ladder stays still at an incline of your choice, has 1 hp and 10AC. You can have any number of ladders active at any given time. "
               ]
             }
@@ -24836,7 +24836,7 @@
         }
       ]
     },
- {
+    {
       "name": "Arcane Pioneer",
       "source": "DRK",
       "page": 46,
