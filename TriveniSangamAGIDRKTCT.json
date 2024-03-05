@@ -24846,7 +24846,7 @@
       "level": 20,
       "entries": [
         "At 20th level, you begin to break down the barriers of your magic, gaining the ability to learn spells from outside your class.",
-        "You can add 6 spells from the {@filter from the sorcerer or warlock spell list|spells|class=sorcerer;warlock|level=1;2;3;4;5;6;7;8;9}. You can further add spells from the two spell lists through spell scrolls, similar to how you would wizard spells."
+        "You can add 6 spells from the {@filter from the sorcerer or warlock spell list|spells|class=sorcerer;warlock|level=1;2;3;4;5;6;7;8;9} to your spellbook, and can have 6 additional spells prepared. You can further add spells from the two spell lists through spell scrolls, similar to how you would wizard spells."
       ]
     },
     {
