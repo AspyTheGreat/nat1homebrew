@@ -9896,7 +9896,6 @@
       "page": 103,
       "tier": "major",
       "rarity": "uncommon",
-      ],
       "wondrous": true,
       "entries": [
         "Whenever you cast {@spell magic missile}, you shoot an additional dart."
@@ -10427,7 +10426,6 @@
       "page": 103,
       "tier": "major",
       "rarity": "uncommon",
-      ],
       "wondrous": true,
       "entries": [
         "While wearing this robe, any spell you can add {@dice 1d4} Poison damage to one damage roll of a spell you cast that deals Poison damage."
