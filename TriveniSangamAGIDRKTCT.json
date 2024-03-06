@@ -8731,6 +8731,76 @@
         "ST"
       ]
     },
+		{
+			"name": "Barkskin",
+			"source": "DRK",
+			"page": 256,
+			"srd": true,
+			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "DRK",
+					"page": 56
+				}
+			],
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+"classes": {
+        "fromClassList": [
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Ranger",
+            "source": "DRK"
+          },
+          {
+            "name": "Druid",
+            "source": "DRK"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      },
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of cured wood"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"You touch a willing creature who isn't wearing armor, and a protective magical vines surrounds it until the spell ends. The target's base AC becomes 13 + its Constitution modifier. The spell ends if the target dons armor or if you dismiss the spell as an action."
+			],
+			"miscTags": [
+				"MAC"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
     {
       "name": "Icicle Storm",
       "source": "DRK",
