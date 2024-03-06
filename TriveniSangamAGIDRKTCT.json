@@ -11946,7 +11946,8 @@
           "entries": [
             "Without expending charges, once per day, as you slam the weapon into the ground, you can let out a thunderous war cry that echoes might. This war cry creates a shockwave that extends for 60 feet, imbuing allies with the ferocity of the storm god and diminishing the resolve of your foes.",
             "Allies within the radius gain temporary hit points equal to 20 + twice your level Additionally, these allies gain a +2 bonus to all attack rolls for as long as they have the temporary hitpoints.",
-            "Concurrently, enemies within the shockwave's reach are pushed back 15 feet and must succeed on a Strength saving throw or be knocked prone."
+            "Concurrently, enemies within the shockwave's reach are pushed back 15 feet and must succeed on a Strength saving throw or be knocked prone.",
+            "For the next minute, you ignore the heavy and two-handed properties of weapons made by the metamorph."
           ]
         }
       ]
