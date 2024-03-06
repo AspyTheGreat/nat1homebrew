@@ -9682,7 +9682,6 @@
       "type": "RG",
       "tier": "major",
       "rarity": "uncommon",
-      "reqAttune": true,
       "entries": [
         "You restore an additional {@dice 1d4} hitpoints whenever you heal another creature."
       ]
@@ -9816,11 +9815,6 @@
       "page": 103,
       "tier": "major",
       "rarity": "uncommon",
-      "reqAttune": "by a spellcaster",
-      "reqAttuneTags": [
-        {
-          "spellcasting": true
-        }
       ],
       "wondrous": true,
       "entries": [
@@ -9833,14 +9827,6 @@
       "page": 103,
       "tier": "major",
       "rarity": "uncommon",
-      "reqAttune": "by a wizard or sorcerer",
-      "reqAttuneTags": [
-        {
-          "class": "sorcerer"
-        },
-        {
-          "class": "wizard"
-        }
       ],
       "wondrous": true,
       "entries": [
@@ -9927,7 +9913,6 @@
       "tier": "major",
       "rarity": "uncommon",
       "wondrous": true,
-      "reqAttune": true,
       "entries": [
         "You gain proficiency with the {@item shortsword|tct|Shortsword}, {@item longsword|tct|Longsword} and {@item greatsword|tct|Greatsword}, and have a +1 bonus to attack rolls while wielding these weapons."
       ]
@@ -10201,7 +10186,7 @@
           "items": [
             "You gain a +2 bonus to Armor Class.",
             "You gain a +2 bonus to initiative rolls.",
-            "When you hit a creature with a an attack roll one the first round of combat, you deal an additional 2 points of damage of the weapons damage type."
+            "When you hit a creature with a an attack roll on the first round of combat, you deal an additional 2 points of damage of the weapons damage type."
           ]
         }
       ]
@@ -10373,11 +10358,6 @@
       "page": 103,
       "tier": "major",
       "rarity": "uncommon",
-      "reqAttune": "by a spellcaster",
-      "reqAttuneTags": [
-        {
-          "spellcasting": true
-        }
       ],
       "wondrous": true,
       "entries": [
