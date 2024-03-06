@@ -9675,6 +9675,748 @@
   ],
   "item": [
     {
+      "name": "Ring of Salving",
+      "source": "DRK",
+      "page": 192,
+      "srd": true,
+      "type": "RG",
+      "tier": "major",
+      "rarity": "uncommon",
+      "reqAttune": true,
+      "entries": [
+        "You restore an additional {@dice 1d4} hitpoints whenever you heal another creature."
+      ]
+    },
+    {
+      "name": "Smuggler's Ring",
+      "source": "DRK",
+      "page": 192,
+      "srd": true,
+      "type": "RG",
+      "tier": "major",
+      "rarity": "uncommon",
+      "entries": [
+        "You gain a +2 bonus to {@skill Sleight of hand} and {@skill stealth} checks."
+      ]
+    },
+    {
+      "name": "Ring of Geniality",
+      "source": "DRK",
+      "page": 192,
+      "srd": true,
+      "type": "RG",
+      "tier": "major",
+      "rarity": "uncommon",
+      "entries": [
+        "You gain a +1 bonus to {@skill Persuasion} and {@skill Deception} checks."
+      ]
+    },
+    {
+      "name": "Explorer's ring",
+      "source": "DRK",
+      "page": 192,
+      "srd": true,
+      "type": "RG",
+      "tier": "major",
+      "rarity": "uncommon",
+      "entries": [
+        "You gain a +1 bonus to {@skill Nature} and {@skill Survival} checks."
+      ]
+    },
+    {
+      "name": "Ring of the mage",
+      "source": "DRK",
+      "page": 192,
+      "srd": true,
+      "type": "RG",
+      "tier": "major",
+      "rarity": "uncommon",
+      "entries": [
+        "You gain a +1 bonus to {@skill Arcana} and {@skill History} checks."
+      ]
+    },
+    {
+      "name": "Ring of truthfulness",
+      "source": "DRK",
+      "page": 192,
+      "srd": true,
+      "type": "RG",
+      "tier": "major",
+      "rarity": "uncommon",
+      "entries": [
+        "You gain advantage on {@skill Insight} checks."
+      ]
+    },
+    {
+      "name": "Crusher's Ring",
+      "source": "DRK",
+      "page": 103,
+      "type": "RG",
+      "tier": "major",
+      "rarity": "uncommon",
+      "reqAttune": true,
+      "wondrous": true,
+      "entries": [
+        "Your movement speed is increased by 10ft."
+      ]
+    },
+    {
+      "name": "Ring of Risk",
+      "source": "DRK",
+      "page": 103,
+      "type": "RG",
+      "tier": "major",
+      "rarity": "rare",
+      "reqAttune": true,
+      "wondrous": true,
+      "entries": [
+        "You gain advantage on all attack rolls, but recieve disadvantage on all saving throws."
+      ]
+    },
+    {
+      "name": "Executioner's Ring",
+      "source": "DRK",
+      "page": 103,
+      "type": "RG",
+      "tier": "major",
+      "rarity": "very rare",
+      "reqAttune": true,
+      "wondrous": true,
+      "entries": [
+        "When you miss a creature with an attack roll, you can treat that roll as a 20. Once you do so, you cannot use this feature until the next dawn."
+      ]
+    },
+    {
+      "name": "Broodmother's Amulet",
+      "source": "DRK",
+      "page": 103,
+      "tier": "major",
+      "rarity": "rare",
+      "reqAttune": true,
+      "wondrous": true,
+      "entries": [
+        "If you are healed while wearing this amulet, your attacks deal an additional {@dice 1d6} poison damage until the end of your next turn."
+      ]
+    },
+    {
+      "name": "Moondrop Pendant",
+      "source": "DRK",
+      "page": 103,
+      "tier": "major",
+      "rarity": "rare",
+      "reqAttune": true,
+      "wondrous": true,
+      "entries": [
+        "You do not provoke opportunity attacks if you are under half your maximum hitpoints."
+      ]
+    },
+    {
+      "name": "Necklace of Elemental Augmentation",
+      "source": "DRK",
+      "page": 103,
+      "tier": "major",
+      "rarity": "uncommon",
+      "reqAttune": "by a spellcaster",
+      "reqAttuneTags": [
+        {
+          "spellcasting": true
+        }
+      ],
+      "wondrous": true,
+      "entries": [
+        "When one of your cantrips deal Acid, Cold, Fire, Lightning or Thunder damage, you can add your Spellcasting ability modifier to the damage dealt."
+      ]
+    },
+    {
+      "name": "Necklace of Psychic Sparks",
+      "source": "DRK",
+      "page": 103,
+      "tier": "major",
+      "rarity": "uncommon",
+      "reqAttune": "by a wizard or sorcerer",
+      "reqAttuneTags": [
+        {
+          "class": "sorcerer"
+        },
+        {
+          "class": "wizard"
+        }
+      ],
+      "wondrous": true,
+      "entries": [
+        "Whenever you cast {@spell magic missile}, you shoot an additional dart."
+      ]
+    },
+    {
+      "name": "Fey semblence Amulet",
+      "source": "DRK",
+      "page": 103,
+      "tier": "major",
+      "rarity": "very rare",
+      "reqAttune": true,
+      "wondrous": true,
+      "entries": [
+        "You have advantage on Intelligence, Wisdom, and Charisma saving throws."
+      ]
+    },
+    {
+      "name": "Protector's Amulet",
+      "source": "DRK",
+      "page": 103,
+      "tier": "major",
+      "rarity": "rare",
+      "reqAttune": true,
+      "wondrous": true,
+      "entries": [
+        "When a nearby ally is targeted by an attack, you can use your reaction to make that attack miss. This feature can only be used once per long rest."
+      ]
+    },
+    {
+      "name": "Boots of Aid and Comfort",
+      "source": "DRK",
+      "page": 103,
+      "tier": "major",
+      "rarity": "uncommon",
+      "reqAttune": true,
+      "wondrous": true,
+      "entries": [
+        "You regain 3 hitpoints whenever you heal another creature."
+      ]
+    },
+    {
+      "name": "Bonespike Boots",
+      "source": "DRK",
+      "page": 103,
+      "tier": "major",
+      "rarity": "rare",
+      "reqAttune": true,
+      "wondrous": true,
+      "bonusAc": "+1",
+      "bonusSavingThrow": "+1",
+      "entries": [
+        "You gain a +1 bonus to AC and Saving throws while you are not wearing armor or wielding a shield. Additionally, you have advantage on saving throws against being {@condition prone}."
+      ]
+    },
+    {
+      "name": "Acrobats Boots",
+      "source": "DRK",
+      "page": 103,
+      "tier": "major",
+      "rarity": "rare",
+      "reqAttune": true,
+      "wondrous": true,
+      "entries": [
+        "You gain a +1 bonus to Acrobatics checks, and Advantage on Dexterity saving throws."
+      ]
+    },
+    {
+      "name": "Gloves of the Balanced Warrior",
+      "source": "DRK",
+      "page": 103,
+      "tier": "major",
+      "rarity": "uncommon",
+      "wondrous": true,
+      "entries": [
+        "When you make an offhand attack, you can add your Ability score modifier to the damage roll of that attack."
+      ]
+    },
+    {
+      "name": "Swordmaster's Gloves",
+      "source": "DRK",
+      "page": 103,
+      "tier": "major",
+      "rarity": "uncommon",
+      "wondrous": true,
+      "reqAttune": true,
+      "entries": [
+        "You gain proficiency with the {@item shortsword|tct|Shortsword}, {@item longsword|tct|Longsword} and {@item greatsword|tct|Greatsword}, and have a +1 bonus to attack rolls while wielding these weapons."
+      ]
+    },
+    {
+      "name": "Stalker Gloves",
+      "source": "DRK",
+      "page": 103,
+      "tier": "major",
+      "rarity": "uncommon",
+      "wondrous": true,
+      "reqAttune": "by a rogue",
+      "reqAttuneTags": [
+        {
+          "class": "rogue"
+        }
+      ],
+      "entries": [
+        "While wearing these gloves, your Sneak attack deals an additional {@dice 1d6} damage. Additionally, you gain a +1 bonus to Ability checks that use Dexterity."
+      ]
+    },
+    {
+      "name": "Bonespike Gloves",
+      "source": "DRK",
+      "page": 103,
+      "tier": "major",
+      "rarity": "rare",
+      "wondrous": true,
+      "entries": [
+        "While wearing these gloves, your attacks ignore resistance to Bludgeoning, Slashing, and Piercing damage."
+      ]
+    },
+    {
+      "name": "Mantle of the Holy Warrior",
+      "source": "DRK",
+      "page": 103,
+      "tier": "major",
+      "rarity": "rare",
+      "wondrous": true,
+      "entries": [
+        "While wearing this robe, you can cast {@spell crusader's mantle}. Once you use this feature, you cannot do so again until the next dawn."
+      ]
+    },
+    {
+      "name": "Shade-slayer Cloak",
+      "source": "DRK",
+      "page": 103,
+      "tier": "major",
+      "rarity": "uncommon",
+      "wondrous": true,
+      "reqAttune": true,
+      "entries": [
+        "If you make an attack roll against a creature unaware of your location, the number you need to roll to land a critical hit is reduced by 1."
+      ]
+    },
+    {
+      "name": "Cap of Curing",
+      "source": "DRK",
+      "page": 192,
+      "srd": true,
+      "tier": "major",
+      "rarity": "uncommon",
+      "wondrous": true,
+      "entries": [
+        "When you hand out Bardic Inspiration to an ally, they regain {@dice 1d4} hitpoints."
+      ]
+    },
+    {
+      "name": "Jannath's Hat",
+      "source": "DRK",
+      "page": 192,
+      "srd": true,
+      "tier": "major",
+      "rarity": "uncommon",
+      "wondrous": true,
+      "entries": [
+        "While wearing this hate, you have advantage on Charisma {@skill Deception} and Charisma {@skill Persuasion} checks."
+      ]
+    },
+    {
+      "name": "Marksmanship Hat",
+      "source": "DRK",
+      "page": 192,
+      "srd": true,
+      "tier": "major",
+      "rarity": "uncommon",
+      "wondrous": true,
+      "entries": [
+        "you gain a +1 bonus to ranged and thrown attack rolls while wearing this hat."
+      ]
+    },
+    {
+      "name": "Hat of the Sharp Caster",
+      "source": "DRK",
+      "page": 192,
+      "srd": true,
+      "tier": "major",
+      "rarity": "uncommon",
+      "wondrous": true,
+      "entries": [
+        "When you roll a 1 or 2 on the damage die for a spell attack, you can reroll that damage die. You can only do so once per die."
+      ]
+    },
+    {
+      "name": "+1 Shapeshifter Hat",
+      "source": "DRK",
+      "page": 192,
+      "srd": true,
+      "tier": "major",
+      "rarity": "uncommon",
+      "reqAttune": "by a druid",
+      "reqAttuneTags": [
+        {
+          "class": "druid"
+        }
+      ],
+      "wondrous": true,
+      "bonusSpellAttack": "+1",
+      "bonusSpellSaveDc": "+1",
+      "focus": [
+        "Druid"
+      ],
+      "entries": [
+        "You gain a +1 bonus to spell attack rolls and saving throw DCs of your Druid spells.",
+        "While you wear this hat, you can use your Wild Shape feature without expending on of the feature's uses. Once this property is used, it can't be used again until the next dawn."
+      ]
+    },
+    {
+      "name": "+2 Shapeshifter Hat",
+      "source": "DRK",
+      "page": 192,
+      "srd": true,
+      "tier": "major",
+      "rarity": "rare",
+      "reqAttune": "by a druid",
+      "reqAttuneTags": [
+        {
+          "class": "druid"
+        }
+      ],
+      "wondrous": true,
+      "bonusSpellAttack": "+2",
+      "bonusSpellSaveDc": "+2",
+      "focus": [
+        "Druid"
+      ],
+      "entries": [
+        "You gain a +2 bonus to spell attack rolls and saving throw DCs of your Druid spells.",
+        "While you wear this hat, you can use your Wild Shape feature without expending on of the feature's uses. Once this property is used, it can't be used again until the next dawn."
+      ]
+    },
+    {
+      "name": "+3 Shapeshifter Hat",
+      "source": "DRK",
+      "page": 192,
+      "srd": true,
+      "tier": "major",
+      "rarity": "very rare",
+      "reqAttune": "by a druid",
+      "reqAttuneTags": [
+        {
+          "class": "druid"
+        }
+      ],
+      "wondrous": true,
+      "bonusSpellAttack": "+3",
+      "bonusSpellSaveDc": "+3",
+      "focus": [
+        "Druid"
+      ],
+      "entries": [
+        "You gain a +3 bonus to spell attack rolls and saving throw DCs of your Druid spells.",
+        "While you wear this hat, you can use your Wild Shape feature without expending on of the feature's uses. Once this property is used, it can't be used again until the next dawn."
+      ]
+    },
+    {
+      "name": "Horns of the Berserker",
+      "source": "DRK",
+      "page": 192,
+      "srd": true,
+      "tier": "major",
+      "rarity": "very rare",
+      "reqAttune": true,
+      "wondrous": true,
+      "entries": [
+        "You gain a +{@dice 1d4} bonus to Attack and damage rolls against creatures that are missing any of their hitpoints.",
+        "During combat, you take {@dice 1d4} necrotic damage if you don't deal damage during your turn."
+      ]
+    },
+    {
+      "name": "Mask of Soul Perception",
+      "source": "DRK",
+      "page": 192,
+      "srd": true,
+      "tier": "major",
+      "rarity": "very rare",
+      "reqAttune": true,
+      "wondrous": true,
+      "entries": [
+        "You gain a +2 bonus to Attack rolls, Initiative rolls and {@skill perception} checks.",
+        "You can cast {@spell detect thoughts} once per day without expending a spell slot."
+      ]
+    },
+    {
+      "name": "Helmet of Grit",
+      "source": "DRK",
+      "page": 192,
+      "srd": true,
+      "tier": "major",
+      "rarity": "rare",
+      "reqAttune": true,
+      "wondrous": true,
+      "entries": [
+        "You gain a +1 bonus to Dexterity saving throws.",
+        "When you drop below half your hit points while wearing this helm, you gain an additional bonus action on your next turn. Once this feature is used, it cannnot be used again until you finish a long rest."
+      ]
+    },
+    {
+      "name": "Helm of Balduran",
+      "source": "DRK",
+      "page": 192,
+      "srd": true,
+      "tier": "major",
+      "rarity": "legendary",
+      "reqAttune": true,
+      "wondrous": true,
+      "bonusAc": "+1",
+      "bonusSavingThrow": "+1",
+      "entries": [
+        "You gain the following bonuses while attuned to this helmet:",
+        {
+          "type": "list",
+          "items": [
+            "You gain {@dice 1d4} hitpoints at the start of every turn.",
+            "You have a +1 bonus to AC and Saving throws.",
+            "You gain immunity to the {@condition stunned} condition.",
+            "Any critical hit against you becomes a normal hit."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Drow Leather Armor",
+      "source": "DRK",
+      "page": 39,
+      "baseItem": "studded leather armor|PHB",
+      "type": "LA",
+      "rarity": "common",
+      "weight": 13,
+      "ac": 12,
+      "entries": [
+        "You gain a +1 bonus to your {@skill Stealth} rolls while wearing this armor."
+      ]
+    },
+    {
+      "name": "Ambusher's Armor",
+      "source": "DRK",
+      "page": 39,
+      "baseItem": "studded leather armor|PHB",
+      "type": "LA",
+      "rarity": "very rare",
+      "reqAttune": true,
+      "wondrous": true,
+      "bonusAc": "+2",
+      "weight": 13,
+      "ac": 12,
+      "entries": [
+        "While wearing this armor, you gain the following benefits:.",
+        {
+          "type": "list",
+          "items": [
+            "You gain a +2 bonus to Armor Class.",
+            "You gain a +2 bonus to initiative rolls.",
+            "When you hit a creature with a an attack roll one the first round of combat, you deal an additional 2 points of damage of the weapons damage type."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Psionic Ward Armor",
+      "source": "DRK",
+      "page": 39,
+      "baseItem": "half plate armor|PHB",
+      "type": "MA",
+      "rarity": "rare",
+      "reqAttune": true,
+      "wondrous": true,
+      "bonusAc": "+1",
+      "weight": 13,
+      "ac": 12,
+      "entries": [
+        "While wearing this armor, you gain the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "You gain a +1 bonus to Armor Class.",
+            "You gain resistance to Psychic damage.",
+            "Whenever you succeed on a saving throw from a spell or magical effect, you regain {@dice 1d4} hit points."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Armor of Persistence",
+      "source": "DRK",
+      "page": 152,
+      "srd": true,
+      "type": "HA",
+      "tier": "major",
+      "rarity": "legendary",
+      "reqAttune": true,
+      "wondrous": true,
+      "bonusAc": "+2",
+      "recharge": "dawn",
+      "rechargeAmount": "{@dice 1d4 + 1}",
+      "charges": 5,
+      "weight": 65,
+      "ac": 18,
+      "strength": "15",
+      "stealth": true,
+      "entries": [
+        "While wearing this armor, you gain a +2 bonus to AC.",
+        "Additionally, the Armor has 5 charges. Whenever you are hit by an attack, you can use your reaction to expend one charge, gaining resistance to Bludgeoning, Piercing, and Slashing damage until the start of their next turn.",
+        "The armor regains {@dice 1d4+1} expended charges daily at dawn."
+      ]
+    },
+    {
+      "name": "Shield of Retaliation",
+      "source": "DRK",
+      "page": 199,
+      "type": "S",
+      "tier": "major",
+      "rarity": "uncommon",
+      "wondrous": true,
+      "weight": 6,
+      "ac": 2,
+      "entries": [
+        "If you are hit by a melee attack while wielding this shield, you can use your Reaction to knock them {@condition prone}, unless they succeed on a Dexterity saving throw (DC = 8 + your proficiency bonus + your Strength/Dexterity modifier)."
+      ]
+    },
+    {
+      "name": "Viconia's Walking Fortress",
+      "source": "DRK",
+      "page": 199,
+      "type": "S",
+      "tier": "major",
+      "rarity": "legendary",
+      "reqAttune": true,
+      "wondrous": true,
+      "bonusAc": "+2",
+      "weight": 6,
+      "ac": 2,
+      "entries": [
+        "While wielding this shield, you gain the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "You gain a +2 bonus to Armor Class.",
+            "If you are hit by a melee attack while wielding this shield, you can use your Reaction to deal {@dice 2d12} force damage and knock them {@condition prone}, unless they succeed on a Dexterity saving throw, taking only half damage (DC = 8 + your proficiency bonus + your Strength/Dexterity modifier).",
+            "You have advantage on saving throws made against spells, and spell attack rolls made against you are made at a disadvantage.",
+            "You can cast {@spell warding bond} oncer per long rest."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Shield of Devotion",
+      "source": "DRK",
+      "page": 199,
+      "type": "S",
+      "tier": "major",
+      "rarity": "rare",
+      "reqAttune": true,
+      "wondrous": true,
+      "bonusAc": "+1",
+      "weight": 6,
+      "ac": 2,
+      "entries": [
+        "You gain a +1 bonus to your AC while wielding this shield. Additionally, you can cast the {@spell mass healing word} spell once per long rest without expending a spell slot."
+      ]
+    },
+    {
+      "name": "Bonespike Garb",
+      "source": "DRK",
+      "page": 103,
+      "tier": "major",
+      "rarity": "rare",
+      "reqAttune": "by a barbarian",
+      "reqAttuneTags": [
+        {
+          "class": "barbarian"
+        }
+      ],
+      "wondrous": true,
+      "entries": [
+        "Whenever you enter Rage while attuned to this item, you gain a number of Temporary hitpoints equal to your Barbarian level. Additionally, Bludgeoning, Piercing, and Slashing damage you take from attacks is reduced by 2."
+      ]
+    },
+    {
+      "name": "Infernal Robe",
+      "source": "DRK",
+      "page": 103,
+      "tier": "major",
+      "resist": [
+        "fire"
+      ],
+      "rarity": "rare",
+      "reqAttune": true,
+      "wondrous": true,
+      "bonusAc": "+1",
+      "entries": [
+        "While wearing this robe, you gain resistance to Fire damage, and a +1 bonus to your armour class. Additionally, you can cast {@spell fire shield} (warm only) once per long rest."
+      ]
+    },
+    {
+      "name": "Cloak of Authority",
+      "source": "DRK",
+      "page": 103,
+      "tier": "major",
+      "rarity": "uncommon",
+      "wondrous": true,
+      "entries": [
+        "While wearing this robe, you gain advantage on saving throws against being {@condition charmed} or {@condition frightened}. Additionally, you have advantage on {@skill Intimidation} and {@skill Insight} checks."
+      ]
+    },
+    {
+      "name": "Robe of Summer",
+      "source": "DRK",
+      "page": 103,
+      "tier": "major",
+      "resist": [
+        "cold"
+      ],
+      "rarity": "uncommon",
+      "wondrous": true,
+      "entries": [
+        "While wearing this robe, you gain resistance to Cold damage."
+      ]
+    },
+    {
+      "name": "Poisoner's Robe",
+      "source": "DRK",
+      "page": 103,
+      "tier": "major",
+      "rarity": "uncommon",
+      "reqAttune": "by a spellcaster",
+      "reqAttuneTags": [
+        {
+          "spellcasting": true
+        }
+      ],
+      "wondrous": true,
+      "entries": [
+        "While wearing this robe, any spell you can add {@dice 1d4} Poison damage to one damage roll of a spell you cast that deals Poison damage."
+      ]
+    },
+    {
+      "name": "Icebite Robe",
+      "source": "DRK",
+      "page": 103,
+      "tier": "major",
+      "resist": [
+        "cold"
+      ],
+      "rarity": "rare",
+      "reqAttune": true,
+      "wondrous": true,
+      "entries": [
+        "While wearing this robe, you gain resistance to Cold damage. Additionally, you can cast {@spell armor of agathys} as a 4th level spell. Once you use this feature, you cannot do so again until you finish a long rest."
+      ]
+    },
+    {
+      "name": "Wavemother's Robe",
+      "source": "DRK",
+      "page": 103,
+      "tier": "major",
+      "resist": [
+        "cold",
+        "fire"
+      ],
+      "rarity": "rare",
+      "reqAttune": true,
+      "wondrous": true,
+      "bonusAc": "+1",
+      "entries": [
+        "You gain a +1 bonus to AC and Resistance to Fire and Cold damage while attuned to this Robe. Additionally, you can cast {@spell create or destroy water} without expending a spell slot. Once you do so, you cannot cast it again until the next dawn."
+      ]
+    },
+    {
       "name": "Lancet",
       "source": "tct",
       "value": 80,
