@@ -35055,7 +35055,7 @@
         "{@i 14th-level Arcane Soul feature}",
         "You gain a higher understanding of the weave, channeling its power in a more raw and potent manner.",
         "As an action, you can enter a flow state for 1 minute, letting you seamlessly integrate sorcery points with your spellcasting. While in this form, you turn all of your remaining Spell Slots into Sorcery Points, subsequently removing the limit for holding sorcery points. In order to cast a spell, you expend a number of sorcery points equal to level you wish to cast the spell at.",
-        "The form stops if the minute passes, or if you choose to end it as a Bonus Action. When you do, you may choose to create spell slots using Sorcery Points, spending a number of them equal to the level of the spell slot you wish to create.",
+        "The form stops if the minute passes, or if you choose to end it as a Bonus Action. When you do, you may choose to create spell slots using Sorcery Points, spending a number of them equal to the level of the spell slot you wish to create. If you cast a spell of 6th level or higher, you cannot regain the spell slot that you would have otherwise expended for that spell.",
         "Once you use this feature, you cannot do so again unless you take a Long Rest, or spend 5 sorcery points to enter it again."
       ]
     },
