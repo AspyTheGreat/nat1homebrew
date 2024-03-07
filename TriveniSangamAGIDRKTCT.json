@@ -33651,7 +33651,7 @@
         "{@i 18th-level Arcane Soul feature}",
         "As an action, you can choose to sever your connection with the weave, expending all of your power in a burst of concentrated magic.",
         "If you choose to do so, turn all of your spell slots into sorcery points. Each creature in a 120ft cone originating from you must make a Constitution saving throw against your Spell save DC. The creature takes an amount of force damage equal to (Total number of sorcery points*d8) on a failure, or half as much on a success.",
-        "The whiplash from this ability is severe, giving you {@dice 1d4}+1 stacks of {@condition exhaustion}. Additionally, you cannot cast spells, or regain spell slots/sorcery points as long as you have any of the stacks of {@condition exhaustion} from this feature."
+        "The whiplash from this ability is severe, giving you {@dice 1d4}+1 stacks of {@condition exhaustion}. Additionally, you cannot cast spells, or regain spell slots/sorcery points as long as you have any of the stacks of {@condition exhaustion} from this feature. The exhaustion stacks gained from this feature cannot be removed by the {@spell greater restoration} spell."
       ]
     },
     {
