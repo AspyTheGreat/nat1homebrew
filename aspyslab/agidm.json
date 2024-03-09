@@ -1,0 +1,297 @@
+{
+  "siteVersion": "1.200.0",
+  "_meta": {
+    "sources": [
+      {
+        "abbreviation": "AGIDM",
+        "authors": [
+          "Aspy"
+        ],
+        "color": "1D8913",
+        "convertedBy": [],
+        "full": "Aspy's Guide to Infinitum_DM_CUT",
+        "json": "agidm"
+      }
+    ],
+    "dateAdded": 1709988358,
+    "dateLastModified": 1709988358
+  },
+  "monster": [
+    {
+      "name": "Radioactive Tarrasque",
+      "source": "agidm",
+      "size": [
+        "G"
+      ],
+      "type": {
+        "type": "monstrosity",
+        "tags": [
+          {
+            "tag": "titan",
+            "prefix": "Radioactive"
+          }
+        ]
+      },
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        {
+          "ac": 32,
+          "from": [
+            "Lead Shell"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "40d20 + 400",
+        "average": 820
+      },
+      "speed": {
+        "walk": 40,
+        "fly": {
+          "number": 120,
+          "condition": "Nuclear soles"
+        }
+      },
+      "str": 30,
+      "dex": 40,
+      "con": 30,
+      "int": 3,
+      "wis": 11,
+      "cha": 11,
+      "save": {
+        "dex": "+24",
+        "int": "+5",
+        "wis": "+9",
+        "cha": "+9"
+      },
+      "skill": {
+        "acrobatics": "+33",
+        "athletics": "+19",
+        "intimidation": "+9"
+      },
+      "senses": [
+        "blindsight 120 ft."
+      ],
+      "passive": 10,
+      "immune": [
+        "fire",
+        "poison",
+        {
+          "immune": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks",
+          "cond": true
+        }
+      ],
+      "conditionImmune": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "grappled",
+        "incapacitated",
+        "invisible",
+        "paralyzed",
+        "poisoned"
+      ],
+      "cr": "30",
+      "trait": [
+        {
+          "name": "Legendary Resistance (3/Day)",
+          "entries": [
+            "If the tarrasque fails a saving throw, it can choose to succeed instead."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The tarrasque has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Reflective Carapace",
+          "entries": [
+            "Any time the tarrasque is targeted by a {@spell magic missile} spell, a line spell, or a spell that requires a ranged attack roll, roll a {@dice d6}. On a 1 to 5, the tarrasque is unaffected. On a 6, the tarrasque is unaffected, and the effect is reflected back at the caster as though it originated from the tarrasque, turning the caster into the target."
+          ]
+        },
+        {
+          "name": "Siege Monster",
+          "entries": [
+            "The tarrasque deals double damage to objects and structures."
+          ]
+        },
+        {
+          "name": "Radioactive Soles",
+          "entries": [
+            "The Radioactive Tarrasque gains 120 feet flying speed at its turn's start. When flying, its takeoff ignites a 30ft radius in radioactive flames, causing {@damage 15d4} fire damage and {@damage 10d4} poison damage to creatures failing a {@dc 20} Dexterity save. Its landing mimics a meteor slam within a 30ft radius, dealing {@damage 15d6} bludgeoning damage to creatures failing the same save, as it impacts the ground with force."
+          ]
+        },
+        {
+          "name": "Aura of Radioactivity",
+          "entries": [
+            "300 ft. from the Tarrasque.",
+            "{@b Radiant Burst}: At the Tarrasque's turn start, creatures within the aura must make a {@dc 20} Constitution save. On a fail, they take {@damage 10d6} radiant damage, or half on success.",
+            "{@b Necrotic Decay}: At the start of a creature's turn within the aura, they must make a {@dc 20} Constitution save. On a fail, they take {@damage 10d6} necrotic damage, or half on success.",
+            "{@b Radiation Sickness}: Failing any save by 5 or more causes one level of {@condition exhaustion}.",
+            "{@b Cumulative Exposure}: Each consecutive round within the aura increases save DCs by 1, resetting after 24 hours outside"
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The tarrasque can use its Frightful Presence. It then makes five attacks: one with its bite, two with its claws, one with its horns, and one with its radioactive Spear Generator. It can use its Swallow instead of its bite."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 19} to hit, reach 10 ft., one target. {@h}36 ({@damage 4d12 + 10}) piercing damage. If the target is a creature, it is {@condition grappled} (escape {@dc 20}). Until this grapple ends, the target is {@condition restrained}, and the tarrasque can't bite another target."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 19} to hit, reach 15 ft., one target. {@h}28 ({@damage 4d8 + 10}) slashing damage."
+          ]
+        },
+        {
+          "name": "Horns",
+          "entries": [
+            "{@atk mw} {@hit 19} to hit, reach 10 ft., one target. {@h}32 ({@damage 4d10 + 10}) piercing damage."
+          ]
+        },
+        {
+          "name": "Frightful Presence",
+          "entries": [
+            "Each creature of the tarrasque's choice within 120 feet of it and aware of it must succeed on a {@dc 17} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, with disadvantage if the tarrasque is within line of sight, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the tarrasque's Frightful Presence for the next 24 hours."
+          ]
+        },
+        {
+          "name": "Swallow",
+          "entries": [
+            "The tarrasque makes one bite attack against a Large or smaller creature it is grappling. If the attack hits, the target takes the bite's damage, the target is swallowed, and the grapple ends. While swallowed, the creature is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the tarrasque, and it takes 56 ({@damage 16d6}) acid damage and  56 ({@damage 16d6}) necrotic damage at the start of each of the tarrasque's turns.",
+            "If the tarrasque takes 80 damage or more on a single turn from a creature inside it, the tarrasque must succeed on a {@dc 20} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of the tarrasque. If the tarrasque dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 30 feet of movement, exiting {@condition prone}."
+          ]
+        },
+        {
+          "name": "Radioactive Spear Generator",
+          "entries": [
+            "{@atk rw} {@hit 19} to hit, reach 200 ft., one target. {@h}42 ({@damage 4d10 + 10}) piercing damage plus 14 ({@damage 4d6}) radiant damage and 14 ({@damage 4d6}) necrotic damage. If the attack roll exceeds the target's AC by 5 or more, the target suffers Radiation Poisoning, gaining disadvantage on attack rolls, ability checks, and saving throws for 1 minute. A creature can make a {@dc 20} Constitution saving throw at the end of each of its turns, ending the Radiation Poisoning on a successful save. The spear forms from where the tail would have been, but it's been mechanically modified to produce large spears of radioactive crystal."
+          ]
+        }
+      ],
+      "legendary": [
+        {
+          "name": "Attack",
+          "entries": [
+            "The tarrasque makes one claw attack or Radioactive spear attack"
+          ]
+        },
+        {
+          "name": "Move",
+          "entries": [
+            "The tarrasque moves up to half its speed."
+          ]
+        },
+        {
+          "name": "Chomp (Costs 2 Actions)",
+          "entries": [
+            "The tarrasque makes one bite attack or uses its Swallow."
+          ]
+        }
+      ],
+      "environment": [
+        "urban"
+      ],
+      "token": {
+        "name": "Tarrasque",
+        "source": "MM"
+      },
+      "soundClip": {
+        "type": "external",
+        "url": "https://5e.tools/audio/bestiary/tarrasque.mp3"
+      },
+      "traitTags": [
+        "Legendary Resistances",
+        "Magic Resistance",
+        "Siege Monster"
+      ],
+      "senseTags": [
+        "B"
+      ],
+      "actionTags": [
+        "Frightful Presence",
+        "Multiattack",
+        "Swallow"
+      ],
+      "damageTags": [
+        "A",
+        "N",
+        "P",
+        "R",
+        "S"
+      ],
+      "miscTags": [
+        "MLW",
+        "MW",
+        "RCH",
+        "RW",
+        "THW"
+      ],
+      "conditionInflict": [
+        "blinded",
+        "frightened",
+        "grappled",
+        "restrained"
+      ],
+      "savingThrowForced": [
+        "constitution",
+        "wisdom"
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "fluff": {
+        "name": "Tarrasque",
+        "source": "MM",
+        "entries": [
+          {
+            "type": "entries",
+            "entries": [
+              {
+                "type": "entries",
+                "entries": [
+                  "The legendary tarrasque is possibly the most dreaded monster of the Material Plane. It is widely believed that only one of these creatures exists, though no one can predict where and when it will strike.",
+                  "A scaly biped, the tarrasque is fifty feet tall and seventy feet long, weighing hundreds of tons. It carries itself like a bird of prey, leaning forward and using its powerful lashing tail for balance. Its cavernous maw yawns wide enough to swallow all but the largest creatures, and so great is its hunger that it can devour the populations of whole towns.",
+                  {
+                    "name": "Legendary Destruction",
+                    "type": "entries",
+                    "entries": [
+                      "The destructive potential of the tarrasque is so vast that some cultures incorporate the monster into religious doctrine, weaving its sporadic appearance into stories of divine judgment and wrath.",
+                      "Legends tell how the tarrasque slumbers in its secret lair beneath the earth, remaining in a dormant state for decades or centuries. When it awakens in answer to some inscrutable cosmic call, it rises from the depths to obliterate everything in its path."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "internal",
+              "path": "bestiary/MM/Tarrasque.webp"
+            },
+            "credit": "Cory Trego-Erdner"
+          }
+        ]
+      }
+    }
+  ]
+}
