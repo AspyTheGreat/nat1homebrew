@@ -597,12 +597,12 @@
                   "8 Workweeks"
                 ],
                 [
-                  "Poisoner’s Kit",
+                  "{@variantrule The Poisoner|agidm|Poisoner’s Kit}",
                   "200gp + 50gp Per Week",
                   "10 Workweeks"
                 ],
                 [
-                  "Alchemist’s Supplies",
+                  "{@variantrule The Alchemist|agidm|Alchemist’s Supplies}",
                   "200gp + 50gp Per Week",
                   "10 Workweeks"
                 ],
@@ -755,6 +755,211 @@
             "A true master of the craft can make even the most effective healing remedies. If you have the gold, you can make any healing potion at the end of a long rest. This healing potion will be created with the maximum herbal remedies applications. Once you create a healing potion this way, you cannot do so again for 1 week. Additionally, when you roll for healing on a healing potion created by you, you always roll the maximum value."
           ]
         }
+      ]
+    },
+    {
+      "name": "The Poisoner",
+      "source": "agidm",
+      "entries": [
+        "As a poisoner, you have learned the uses of certain flora and fauna to make deadly poisons. With proficiency in this tool, you can use downtime to craft any of the poisons from the poisoner's table below provided you have access to the materials, time, and gold needed for the ones that do.",
+        "You will need to spend 1 hour for every 50gp you spend making the poison.",
+        {
+          "type": "entries",
+          "name": "Using a poison",
+          "entries": [
+            "Every Vial of contact and injury poison can hold upto 3 doses of a certain poison. Each time you harvest poison from a deador incapacitated creature, you need to succeed on a Poisoner's kit (Intelligence) check of DC 20. On a success, you get one dose of the poison.",
+            "As an action, you can coat a melee weapon with the poison or dip upto 3 pieces of ammunition. The Poison loses potency after 3 successful melee attacks. Ammmunition that misses can be collected and used again. In any case, an application will have potency for 1 minute from the application time."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Malicious Addition",
+          "entries": [
+            "As an expert poisoner, you have mastered the finer aspects of the profession. You know the methods to better even the mildest of poisons. You can only better the poisons you make yourself since the composition of poisons not made by you is hard to figure out. However, if the poison is a venom, you can attempt to increase its potency anyway.",
+            "You can spend gold equal to 160% of the crafting cost to modify your poison. Make a poisoners kit check (Intelligence) with the DC equal to the Saving throw DC of the poison. On a Success, the DC of the poison goes up by 1 and you add one more damage die to it by spending 1 hour for every 50gp you spend(Rounded up).On a Failure, the poison is lost and unusable. You can do this to a single dose as many times as your proficiency bonus."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Optimization",
+          "entries": [
+            "As a Master, the Saving throw DC for any poison you make/harvest cannot be less than 15. Additionally, you can use Malicious Addition on a single vial as many times as twice your proficiency bonus."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Poisoner Ascendancy",
+          "entries": [
+            "A true master of the craft can make even the most potent of poisons. As part of the Guild of True Craftsmen, you have access to every poison component that costs less than 1000gp and you can buy them instantly through the bag of holding you receive as a True Master.",
+            "Additionally, the Saving throw DC of any poison you make/harvest cannot be less than 19."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "The Alchemist",
+      "source": "agidm",
+      "entries": [
+        "As an alchemist, you have learned the way of transmuter. You can make reagents and chemicals with devastating effects or restorative properties depending on your mood. With proficiency in this tool, you gain a permanent 20% cost reduction on all costs incurred in the {@variantrule The Herbalist|agidm|Herbalist} and {@variantrule The Poisoner|agidm|Poisoner} professions including the learning costs.",
+        "Magic is unnecessary to create alchemical items, but arcane ingredients are required. These items are rare and expensive, so alchemists commonly have adventuring backgrounds.",
+        "To make Alchemical Reagents/items, you need to acquire the formula for the reagent. Check the {@table Alchemical formulae|agidm|Alchemical formulae} table for all alchemist formulae available for purchase and the ability needed to make each item",
+        "When you get proficency in this tool, you learn two {@table Alchemical formulae|agidm|Alchemical formulae} of your choice from the table. Everytime you gain a level after proficiency, you learn one additional formulae.",
+        {
+          "type": "entries",
+          "name": "Using a poison",
+          "entries": [
+            "Every Vial of contact and injury poison can hold upto 3 doses of a certain poison. Each time you harvest poison from a deador incapacitated creature, you need to succeed on a Poisoner's kit (Intelligence) check of DC 20. On a success, you get one dose of the poison.",
+            "As an action, you can coat a melee weapon with the poison or dip upto 3 pieces of ammunition. The Poison loses potency after 3 successful melee attacks. Ammmunition that misses can be collected and used again. In any case, an application will have potency for 1 minute from the application time."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Malicious Addition",
+          "entries": [
+            "As an expert poisoner, you have mastered the finer aspects of the profession. You know the methods to better even the mildest of poisons. You can only better the poisons you make yourself since the composition of poisons not made by you is hard to figure out. However, if the poison is a venom, you can attempt to increase its potency anyway.",
+            "You can spend gold equal to 160% of the crafting cost to modify your poison. Make a poisoners kit check (Intelligence) with the DC equal to the Saving throw DC of the poison. On a Success, the DC of the poison goes up by 1 and you add one more damage die to it by spending 1 hour for every 50gp you spend(Rounded up).On a Failure, the poison is lost and unusable. You can do this to a single dose as many times as your proficiency bonus."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Optimization",
+          "entries": [
+            "As a Master, the Saving throw DC for any poison you make/harvest cannot be less than 15. Additionally, you can use Malicious Addition on a single vial as many times as twice your proficiency bonus."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Poisoner Ascendancy",
+          "entries": [
+            "A true master of the craft can make even the most potent of poisons. As part of the Guild of True Craftsmen, you have access to every poison component that costs less than 1000gp and you can buy them instantly through the bag of holding you receive as a True Master.",
+            "Additionally, the Saving throw DC of any poison you make/harvest cannot be less than 19."
+          ]
+        }
+      ]
+    }
+  ],
+  "table": [
+    {
+      "name": "Alchemical formulae",
+      "source": "agidm",
+      "type": "table",
+      "caption": "Alchemical formulae",
+      "colLabels": [
+        "Name",
+        "Market Price",
+        "Skill Needed"
+      ],
+      "colStyles": [
+        "col-4 text-center",
+        "col-4 text-center",
+        "col-4 text-center"
+      ],
+      "rows": [
+        [
+          "Alchemical silver",
+          200,
+          "Intelligence, Wisdom or Dexterity"
+        ],
+        [
+          "Alchemist’s acid",
+          70,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "Alchemist’s fire",
+          70,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "Alchemist’s frost",
+          70,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "Antivenom",
+          70,
+          "Wisdom, Intelligence"
+        ],
+        [
+          "Beastbane",
+          160,
+          "Wisdom, Intelligence"
+        ],
+        [
+          "Blastpatch",
+          120,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "Blinding bomb",
+          120,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "Bloodstinger poison",
+          120,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "Clearsense powder",
+          80,
+          "Wisdom, Intelligence"
+        ],
+        [
+          "Clearwater solution",
+          100,
+          "Intelligence, Religion"
+        ],
+        [
+          "Dragonfire tar",
+          120,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "Ghoststrike oil",
+          500,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "Goodnight tincture",
+          150,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "Herbal poultice",
+          90,
+          "Intelligence"
+        ],
+        [
+          "Jolt flask",
+          800,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "Lockbust chalk",
+          160,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "Salve of slipperiness",
+          375,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "Slow-step oil",
+          120,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "Smokestick",
+          450,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "Tracking dust",
+          160,
+          "Intelligence, Dexterity"
+        ]
       ]
     }
   ]
