@@ -209,6 +209,10 @@
       "environment": [
         "urban"
       ],
+      "token": {
+        "name": "Tarrasque",
+        "source": "MM"
+      },
       "soundClip": {
         "type": "external",
         "url": "https://5e.tools/audio/bestiary/tarrasque.mp3"
@@ -250,8 +254,44 @@
         "constitution",
         "wisdom"
       ],
-      "hasToken": true,
-      "tokenUrl": "https://i.imgur.com/UnoiAMg.png"
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "fluff": {
+        "name": "Tarrasque",
+        "source": "MM",
+        "entries": [
+          {
+            "type": "entries",
+            "entries": [
+              {
+                "type": "entries",
+                "entries": [
+                  "The legendary tarrasque is possibly the most dreaded monster of the Material Plane. It is widely believed that only one of these creatures exists, though no one can predict where and when it will strike.",
+                  "A scaly biped, the tarrasque is fifty feet tall and seventy feet long, weighing hundreds of tons. It carries itself like a bird of prey, leaning forward and using its powerful lashing tail for balance. Its cavernous maw yawns wide enough to swallow all but the largest creatures, and so great is its hunger that it can devour the populations of whole towns.",
+                  {
+                    "name": "Legendary Destruction",
+                    "type": "entries",
+                    "entries": [
+                      "The destructive potential of the tarrasque is so vast that some cultures incorporate the monster into religious doctrine, weaving its sporadic appearance into stories of divine judgment and wrath.",
+                      "Legends tell how the tarrasque slumbers in its secret lair beneath the earth, remaining in a dormant state for decades or centuries. When it awakens in answer to some inscrutable cosmic call, it rises from the depths to obliterate everything in its path."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "internal",
+              "path": "bestiary/MM/Tarrasque.webp"
+            },
+            "credit": "Cory Trego-Erdner"
+          }
+        ]
+      }
     },
     {
       "name": "Astral Tarrasque",
@@ -460,6 +500,12 @@
         "prone",
         "restrained"
       ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "token": {
+        "name": "Tarrasque",
+        "source": "MM"
+      },
       "fluff": {
         "name": "Tarrasque",
         "source": "MM",
@@ -510,9 +556,69 @@
       "savingThrowForced": [
         "strength",
         "wisdom"
+      ]
+    }
+  ],
+  "variantrule": [
+    {
+      "name": "Alcohol and other things that will kill you.... Or save you",
+      "New item": "",
+      "entries": [
+        "The multiverse of Infinitum is multifaceted to say the least. However, one thing that does not lose its meaning between the endless worlds of Infinitum is the insatiable curiosity. Naturally, this curiosity becomes the origin for many professions that build on trial and error. Anyhopeless mucker can take up, with practice of course, the tools of a chef,a brewer, a poisoner, a herbalist or an alchemist. These people look for meaning in the endless unsense of components. There is always another combination, a way to better an existing combination, a way to transcend the binding functions of these components into something that carries more meaning and create things that are worth more than the sum of their parts.",
+        {
+          "type": "entries",
+          "name": "These professions in Infinitum",
+          "entries": [
+            "In your travels around the multiverse, you will find individuals at various skill levels in these professions. The ones that are {@b Proficient}, the ones that are {@d Experts}, the ones that are {@b Masters} and finally, the ones that are {@ True masters}. Everyone starts their journey at the most base of this lengthy adventure in search of the true concoction.",
+            "As a player, you can start your journey in any of these four professions at the {@b Proficient} or the {@b Expert} level, provided your class or background gives you proficiency or expertise in these professions.",
+            "Alternatively, you can spend your downtime training under a {@b Master} or a {@b True Master} to gain proficiency in these tools. The table below lists the profession, time needed and the cost of training under a master.",
+            {
+              "type": "table",
+              "caption": "Profession Training Cost",
+              "colLabels": [
+                "Tool",
+                "Cost",
+                "Period"
+              ],
+              "colStyles": [
+                "col-4 text-center",
+                "col-4 text-center",
+                "col-4 text-left"
+              ],
+              "rows": [
+                [
+                  "Cook’s Utensils",
+                  "40gp + 40gp Per Week",
+                  "10 Workweeks"
+                ],
+                [
+                  "Herbalism Kit",
+                  "20gp + 50gp Per Week",
+                  "8 Workweeks"
+                ],
+                [
+                  "Poisoner’s Kit",
+                  "200gp + 50gp Per Week",
+                  "10 Workweeks"
+                ],
+                [
+                  "Alchemist’s Supplies",
+                  "200gp + 50gp Per Week",
+                  "10 Workweeks"
+                ],
+                [
+                  "Brewer’s Supplies",
+                  "80gp + 60gp Per Week",
+                  "8 Workweeks"
+                ]
+              ]
+            },
+            "Once you are proficient, you can train for expertise. The time needed to train for expertise in a profession is double the initial period.",
+            ""
+          ]
+        }
       ],
-      "hasToken": true,
-      "tokenUrl": "https://i.imgur.com/ycVJkFK.png"
+      "source": "agidm"
     }
   ]
 }
