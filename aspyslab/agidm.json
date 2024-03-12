@@ -564,12 +564,12 @@
       "name": "Alcohol and other things that will kill you.... Or save you",
       "source": "agidm",
       "entries": [
-        "The multiverse of Infinitum is multifaceted to say the least. However, one thing that does not lose its meaning between the endless worlds of Infinitum is the insatiable curiosity. Naturally, this curiosity becomes the origin for many professions that build on trial and error. Anyhopeless mucker can take up, with practice of course, the tools of a chef,a brewer, a poisoner, a herbalist or an alchemist. These people look for meaning in the endless unsense of components. There is always another combination, a way to better an existing combination, a way to transcend the binding functions of these components into something that carries more meaning and create things that are worth more than the sum of their parts.",
+        "The multiverse of Infinitum is multifaceted to say the least. However, one thing that does not lose its meaning between the endless worlds of Infinitum is the insatiable curiosity. Naturally, this curiosity becomes the origin for many professions that build on trial and error. Any hopeless mucker can take up, with practice of course, the tools of a chef, a brewer, a poisoner, a herbalist or an alchemist. These people look for meaning in the endless unsense of components. There is always another combination, a way to better an existing combination, a way to transcend the binding functions of these components into something that carries more meaning and create things that are worth more than the sum of their parts.",
         {
           "type": "entries",
           "name": "These professions in Infinitum",
           "entries": [
-            "In your travels around the multiverse, you will find individuals at various skill levels in these professions. The ones that are {@b Proficient}, the ones that are {@d Experts}, the ones that are {@b Masters} and finally, the ones that are {@ True masters}. Everyone starts their journey at the most base of this lengthy adventure in search of the true concoction.",
+            "In your travels around the multiverse, you will find individuals at various skill levels in these professions. The ones that are {@b Proficient}, the ones that are {@b Experts}, the ones that are {@b Masters} and finally, the ones that are {@b True masters}. Everyone starts their journey at the most base of this lengthy adventure in search of the true concoction.",
             "As a player, you can start your journey in any of these four professions at the {@b Proficient} or the {@b Expert} level, provided your class or background gives you proficiency or expertise in these professions.",
             "Alternatively, you can spend your downtime training under a {@b Master} or a {@b True Master} to gain proficiency in these tools. The table below lists the profession, time needed and the cost of training under a master.",
             {
@@ -592,7 +592,7 @@
                   "10 Workweeks"
                 ],
                 [
-                  "Herbalism Kit",
+                  "{@variantrule The Herbalist|agidm|Herbalism Kit}",
                   "20gp + 50gp Per Week",
                   "8 Workweeks"
                 ],
@@ -617,6 +617,142 @@
             "As an Expert, You can add twice your proficiency bonus to checks made with the tool of your profession. Additionally, you can look for a true master to train further and become a master yourself. The time needed to train for master status in a profession is three times the initial period.",
             "As a master, You can add four times your proficiency bonus to checks you make with the tools of your profession. Additionally, you begin your initial true master training under a true master for four times the initial period. After that, you have to spend double the initial period working out your original style for the profession of your choice. You do not spend gold for these two weeks but you must stay in downtime.",
             "As a True Master, you have reached the pinnacle of your art. You are respected across continents as a True Master of the art. You receive an invite to the Guild of True Craftsmen and you can use your influence to always gain a 50% reduction to\nprices on sales under your profession. You also add four times your proficiency bonus to checks you make with the tools of your profession and you treat any d20 roll of 14 or lower on the checks as a 15."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Skill checks related to your profession",
+          "entries": [
+            "As a skilled individual in your profession, you get certain bonuses to non-modification checks you make with your tools.",
+            {
+              "type": "table",
+              "caption": "Profession Training Cost",
+              "colLabels": [
+                "Skill Level",
+                "Check Bonus"
+              ],
+              "colStyles": [
+                "col-4 text-center",
+                "col-4 text-center"
+              ],
+              "rows": [
+                [
+                  "Cook’s Utensils",
+                  "40gp + 40gp Per Week"
+                ],
+                [
+                  "Proficient",
+                  "No bonus"
+                ],
+                [
+                  "Expert",
+                  "No Bonus"
+                ],
+                [
+                  "Master",
+                  "Advantage on all checks"
+                ],
+                [
+                  "True Master",
+                  "Auto success"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "The Herbalist",
+      "source": "agidm",
+      "entries": [
+        "As an herbalist, you have learned the uses of certain flora and fauna to make treatments against deadly effects. With proficiency in this tool, you can use downtime to craft any of the healing potions from the table below provided you have the time and gold.",
+        {
+          "type": "table",
+          "caption": "Healing Potion Crafting Cost",
+          "colLabels": [
+            "Type",
+            "Time",
+            "Cost"
+          ],
+          "colStyles": [
+            "col-4 text-center",
+            "col-4 text-center",
+            "col-4 text-center"
+          ],
+          "rows": [
+            [
+              "Healing",
+              "1 day",
+              "25gp"
+            ],
+            [
+              "Greater Healing",
+              "1 Workweek",
+              "100gp"
+            ],
+            [
+              "Superior Healing",
+              "3 Workweeks",
+              "1000gp"
+            ],
+            [
+              "Supreme Healing",
+              "4 Workweeks",
+              "10000gp"
+            ]
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Herbal Remedies",
+          "entries": [
+            "As an expert herbalist, you have mastered the finer aspects of the profession. You know the methods to better even the mildest of healing potions. However, you can only better the potions you make yourself since the composition of potions differ between craftsmen.",
+            "You can spend gold equal to 160% of the crafting cost to modify your potion. Make an herbalism kit check (Intelligence) with the DC equal to the DC given on the table below. On a Success, you can roll one additional healing dice when you use this healing potion. You so so it by spending 1 hour for every 50gp you spend(Rounded up). The DC for subsequent use of Herbal remedies also goes up by 1 for this dose. On a Failurethe potion is lost and unusable. You can do this to a single dose as many times as your proficiency bonus.",
+            {
+              "type": "table",
+              "caption": "Herbal Remidies DC",
+              "colLabels": [
+                "Type",
+                "DC"
+              ],
+              "colStyles": [
+                "col-4 text-center",
+                "col-4 text-center"
+              ],
+              "rows": [
+                [
+                  "Healing",
+                  15
+                ],
+                [
+                  "Greater Healing",
+                  17
+                ],
+                [
+                  "Superior Healing",
+                  19
+                ],
+                [
+                  "Supreme Healing",
+                  22
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Optimization",
+          "entries": [
+            "As a Master, whenever a healing potion crafted by you is used, you can roll the hitpoints that the potion restores twice and choose one of the two totals. Additionally, you can use Herbal Remedies on a single dose as many times as twice your proficiency bonus."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Herbalist Ascendancy",
+          "entries": [
+            "A true master of the craft can make even the most effective healing remedies. If you have the gold, you can make any healing potion at the end of a long rest. This healing potion will be created with the maximum herbal remedies applications. Once you create a healing potion this way, you cannot do so again for 1 week. Additionally, when you roll for healing on a healing potion created by you, you always roll the maximum value."
           ]
         }
       ]
