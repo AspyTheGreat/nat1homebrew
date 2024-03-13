@@ -1025,7 +1025,7 @@
       "poison": true,
       "entries": [
         "A creature subjected to this poison must succeed on a Constitution saving throw or be {@condition poisoned} for 24 hours. Until this poison ends, the target is {@conditon unconscious}. Another creature can use an action to shake the target awake. This effect ignores immunity to the poisoned condition.",
-        "{@b Unique Component:} A willing couatl. (Not craftable)",
+        "{@b Unique Component:} A willing couatl.",
         "{@b Save DC:} 13"
       ],
       "poisonTypes": [
@@ -1041,8 +1041,8 @@
       "rarity": "none",
       "poison": true,
       "entries": [
-        "A creature subjected to this poison must make a Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one.",
-        "{@b Unique Component:} A dead or incapacitated purple worm. (Not craftable)",
+        "A creature subjected to this poison must make a Constitution saving throw, taking 42 ({@dice 12d6}) poison damage on a failed save, or half as much damage on a successful one.",
+        "{@b Unique Component:} A dead or incapacitated purple worm.",
         "{@b Save DC:} 19"
       ],
       "poisonTypes": [
@@ -1057,8 +1057,8 @@
       "rarity": "none",
       "poison": true,
       "entries": [
-        "A creature subjected to this poison must make a Constitution saving throw, taking 4 (1d8) poison damage on a failed save, or half as much damage on a successful one. If the poison has been harvested from a giant scorpion, the damage increases to 22 (4d10) and the saving throw DC increases by 3.",
-        "{@b Unique Component:} A dead or incapacitated scorpion. (Not craftable)",
+        "A creature subjected to this poison must make a Constitution saving throw, taking 4 ({@dice 1d8}) poison damage on a failed save, or half as much damage on a successful one. If the poison has been harvested from a giant scorpion, the damage increases to 22 ({@dice 4d10}) and the saving throw DC increases by 3.",
+        "{@b Unique Component:} A dead or incapacitated scorpion.",
         "{@b Save DC:} 9-12"
       ],
       "poisonTypes": [
@@ -1073,7 +1073,7 @@
       "rarity": "none",
       "poison": true,
       "entries": [
-        "A creature subjected to this poison must succeed on a Constitution saving throw, taking 5 (2d4) poison damage on a failed save, or half as much damage on a successful one. If the poison has been harvested from a giant poisonous snake, the damage increases to 10 (3d6) and the saving throw DC increases by 1.",
+        "A creature subjected to this poison must succeed on a Constitution saving throw, taking 5 ({@dice 2d4}) poison damage on a failed save, or half as much damage on a successful one. If the poison has been harvested from a giant poisonous snake, the damage increases to 10 ({@dice 3d6}) and the saving throw DC increases by 1.",
         "{@b Unique Component:} A dead or incapacitated poisonous snake. (Not craftable)",
         "{@b Save DC:} 10-11"
       ],
@@ -1089,8 +1089,8 @@
       "rarity": "none",
       "poison": true,
       "entries": [
-        "A creature subjected to this poison must succeed on a Constitution saving throw or take 2 (1d4) poison damage. If the poison has been harvested from a giant wolf spider, the damage increases to 7 (2d6) and the saving throw DC increases to 11. Additionally, the creature takes half damage on a failed save, and if the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way. If the poison has been harvested from a giant spider, this damage increases to 9 (2d8).",
-        "{@b Unique Component:} A dead or incapacitated spider. (Not craftable)",
+        "A creature subjected to this poison must succeed on a Constitution saving throw or take 2 (@dice 1d4}) poison damage. If the poison has been harvested from a giant wolf spider, the damage increases to 7 ({@dice 2d6}) and the saving throw DC increases to 11. Additionally, the creature takes half damage on a failed save, and if the poison damage reduces the target to 0 hit points, the target is stable but {@condition poisoned} for 1 hour, even after regaining hit points, and is {@condition paralyzed} while poisoned in this way. If the poison has been harvested from a giant spider, this damage increases to 9 ({@dice 2d8}).",
+        "{@b Unique Component:} A dead or incapacitated spider.",
         "{@b Save DC:} 10-11"
       ],
       "poisonTypes": [
@@ -1106,7 +1106,7 @@
       "rarity": "none",
       "poison": true,
       "entries": [
-        "A creature subjected to this poison must succeed on a Constitution saving throw or be poisoned for 1 minute. If the saving throw fails by 5 or more, the creature is also unconscious while poisoned in this way. The creature wakes up if it takes damage or if another creature takes an action to shake it awake.",
+        "A creature subjected to this poison must succeed on a Constitution saving throw or be {@condition poisoned} for 1 minute. If the saving throw fails by 5 or more, the creature is also unconscious while poisoned in this way. The creature wakes up if it takes damage or if another creature takes an action to shake it awake.",
         "{@b Unique Component:} Sprite Recipe. (Can be learned or purchased)",
         "{@b Save DC:} 10"
       ],
