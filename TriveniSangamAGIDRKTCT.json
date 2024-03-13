@@ -46,7 +46,8 @@
     ],
     "optionalFeatureTypes": {
       "GS": "Gunblade Stance",
-      "CW": "Chronomancer Wells"
+      "CW": "Chronomancer Wells",
+      "ALCITEM": "Alchemist Item"
     },
     "currencyConversions": {
       "GalateumStandard": [
@@ -13171,10 +13172,10 @@
         "Attacks made with this staff, or spells cast using it as a focus, deal an additional {@dice 1d8} cold damage to their targets.",
         {
           "type": "entries",
-          "name": "Crystal Clone",
+          "name": "Flash Freeze",
           "entries": [
-            "As a reaction before you are about to take damage, expend 5 charges to summon a crystal clone at your place which takes the damage instead and move upto your movement in a straight line. The path you moved is covered in a trail of frost for 1 minute. Any creature walking across must make a Dexterity saving throw or fall prone. ",
-            "The clone has a fifth of you max health. If the damage is enough to shatter it, creatures 30ft around it must make a dexterity saving throw or take {@dice 8d6} cold damage. The clone melts away at the start of your turn."
+            "As a reaction when you take damage, you can instantly encase yourself in a protective layer of ice by expending 4 charges. This icy shell grants you temporary hit points equal to 10 times your level, absorbing as much of the triggering damage as possible. Once encased, you gain vulnerability to fire damage, your speed is reduced to 0, and you are incapacitated due to the intense cold and immobilization by the ice. These effects, including any unspent temporary hit points, last until the ice melts at the end of your next turn.",
+            "Should the protective ice shatter from incoming damage, it erupts in a chilling explosion. Creatures within 30 feet of you must make a Dexterity saving throw or suffer {@dice 8d6} cold damage as shards of ice pelt the area."
           ]
         },
         {
@@ -13217,6 +13218,14 @@
           "name": "Frostborne Wings",
           "entries": [
             "Expend 4 charges to manifest ethereal wings of ice and snow, granting you a flying speed of 60 feet for 1 hour. While these wings are manifested, your presence chills the air, causing enemies within 30 feet to take {@dice 1d6} cold damage at the start of your turn."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Crystal Clone",
+          "entries": [
+            "As a reaction before you are about to take damage, expend 5 charges to summon a crystal clone at your place which takes the damage instead and move upto your movement in a straight line. The path you moved is covered in a trail of frost for 1 minute. Any creature walking across must make a Dexterity saving throw or fall prone. ",
+            "The clone has a fifth of you max health. If the damage is enough to shatter it, creatures 30ft around it must make a dexterity saving throw or take {@dice 8d6} cold damage. The clone melts away at the start of your turn."
           ]
         },
         {
@@ -13604,7 +13613,7 @@
           "type": "entries",
           "name": "Mark of Bhaal",
           "entries": [
-            "As an action, expend 10 charges to mark a creature within sight. For the next hour, any attack you make against the marked target has a increased crit range of 1. On Expending 5 more charges, the crit range increases to 2. This reduction in crit range stacks with other features that reduce crit range."
+            "As an action, expend 6 charges to mark a creature within sight. For the next hour, any attack you make against the marked target has a increased crit range of 1. On Expending 5 more charges, the crit range increases to 2. This reduction in crit range stacks with other features that reduce crit range."
           ]
         },
         {
@@ -13656,8 +13665,8 @@
             {
               "type": "list",
               "items": [
-                "Spend 5 Charges to give allies a +20 bonus to thier stealth checks",
-                "Spend 4 Charges to make this area movable, centered on you and extending out to 40ft instead."
+                "Spend 2 Charges to give allies a +20 bonus to thier stealth checks",
+                "Spend 3 Charges to make this area movable, centered on you and extending out to 40ft instead."
               ]
             }
           ]
@@ -13827,7 +13836,7 @@
         "This cloak was forged in the divine realms and entrusted to a hero who was on a quest to quell the consequence of the Arcane Aftermath. This Cloak was one of three boons that graced the world after the reality morphing event changed the face Fer.",
         "The cloak in apprance resembles an old, grey mantle with a cape of velvet cloth. Plain grey with a belt of a darker grey. It's jagged at the edges and it looks like it was torn at the base. The wearer feels eons of knowledge coursing through the cloak. Arcane scribblings come to you instantly as if the cloak made of parchment. You can use the cloak to channel any {@filter Wizard spell of lvl5 and below|spells|level=1|level=2|level=3|level=4|level=5|class=Wizard} once a day and cast it without material components. As long as you are wearing this cloak and have enough materials, you can copy the channeled spell into your spellbook.",
         "While you are wearing this cloak, you gain a +3 bonus to spell attack rolls and spell save DC. You also ignore half and three quarters cover when making a spell attack.",
-        "Additionally, you gain expertise in any one of the intelligence skills you are proficient in.",
+        "Additionally, you gain expertise in any one of the intelligence skills you are proficient in and the activation of arcane sentinel requires no charges",
         {
           "type": "entries",
           "name": "Knowledge of the eons",
@@ -13859,6 +13868,7 @@
       "entries": [
         "The Diadem of Infinite Insight is a masterwork of divine craftsmanship, blessed by Ioun herself. Forged from celestial crystals and infused with the essence of the multiverse's wisdom, it shines with an inner light that mirrors the vastness of Ioun's knowledge.",
         "Wearing this tiara grants a +5 bonus to Intelligence (Investigation) checks, spell attack rolls and spell save DCs for spells. The wearer gains the ability to understand any spoken language, as if under the constant effect of the {@spell comprehend languages} spell.",
+        "The activation of arcane sentinel requires no charges",
         {
           "type": "entries",
           "name": "Omniscient Insight",
@@ -14282,7 +14292,7 @@
         "AGI:AS",
         "AGI:A",
         "H",
-        "L"
+        "2H"
       ],
       "range": "100/400",
       "weight": 18,
@@ -14461,6 +14471,22 @@
       "entries": [
         "This magical arrow has a +2 attack bonus but causes no damage if the target is struck. wherever struck, it creates an antimagic area 20ft in radius and 20ft in height for 10 minutes."
       ]
+    },
+    {
+      "name": "Ring of Superior Spell Storing",
+      "source": "AspysGuidetoInfinitum",
+      "type": "RG",
+      "rarity": "legendary",
+      "reqAttune": true,
+      "entries": [
+        "This ring stores spells cast into it, holding them until the attuned wearer uses them. The ring can store up to 7 levels worth of spells at a time. When found, it contains {@dice 1d8 - 1} levels of stored spells chosen by the DM.",
+        "Any creature can cast a spell of 1st through 7th level into the ring by touching the ring as the spell is cast. The spell has no effect, other than to be stored in the ring. If the ring can't hold the spell, the spell is expended without effect. The level of the slot used to cast the spell determines how much space it uses.",
+        "While wearing this ring, you can cast any spell stored in it. The spell uses the slot level, spell save DC, spell attack bonus, and spellcasting ability of the original caster, but is otherwise treated as if you cast the spell. The spell cast from the ring is no longer stored in it, freeing up space."
+      ],
+      "lootTables": [
+        "Magic Item Table G"
+      ],
+      "hasFluffImages": true
     }
   ],
   "feat": [
@@ -50344,6 +50370,2013 @@
         "3-4: Entangle enemies hit, reducing their speed to 0 until they succeed on a Strength saving throw.",
         "5: Vines grapple the target, {@condition restraining} them for 1 turn. Requires a Strength saving throw.",
         "6: A massive vine burst restrains all enemies within 20 feet, dealing {@dice 3d6} poison damage. Requires a Strength saving throw."
+      ]
+    },
+    {
+      "name": "Alchemical Silver",
+      "source": "AspysGuidetoInfinitum",
+      "prerequisite": [
+        {
+          "item": [
+            "Alchemist's Supplies"
+          ],
+          "other": "The Alchemist Profession"
+        }
+      ],
+      "featureType": [
+        "ALCITEM"
+      ],
+      "entries": [
+        {
+          "type": "table",
+          "caption": "Alchemical Silver",
+          "colLabels": [
+            "Item Level",
+            "Crafting Cost",
+            "Crafting DC",
+            "Save DC",
+            "Effect"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-20 text-center"
+          ],
+          "rows": [
+            [
+              "Lvl 1 (Proficient)",
+              "150gp",
+              "Intelligence, Wisdom or Dexterity - DC 11",
+              "-",
+              "On application of this coating, Your weapon or one group of ammunition (30 arrows, 10 crossbow bolts, 20 sling bullets, or 5 shuriken) attacks as a silvered weapon for the next 1 minute."
+            ],
+            [
+              "Lvl 2 (Expert)",
+              "500gp",
+              "DC 20",
+              "-",
+              "The weapon or ammunition deals an extra {@dice 1d6} damage against creatures that are vulnerable to silvered weapons."
+            ],
+            [
+              "Lvl 3 (Master)",
+              "1200gp",
+              "DC 30",
+              "-",
+              "The weapon deals an extra {@dice 2d6} damage against creatures that are vulnerable to silvered weapons."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Alchemist’s Acid",
+      "source": "AspysGuidetoInfinitum",
+      "prerequisite": [
+        {
+          "item": [
+            "Alchemist's Supplies"
+          ],
+          "other": "The Alchemist Profession"
+        }
+      ],
+      "featureType": [
+        "ALCITEM"
+      ],
+      "entries": [
+        {
+          "type": "table",
+          "caption": "Alchemist’s Acid",
+          "colLabels": [
+            "Item Level",
+            "Crafting Cost",
+            "Crafting DC",
+            "Save DC",
+            "Effect"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-20 text-center"
+          ],
+          "rows": [
+            [
+              "Lvl 1 (Proficient)",
+              "150gp",
+              "Intelligence or Dexterity - DC 11",
+              "-",
+              "As an action, you can throw this flask at a creature. Make a ranged attack (20/60) or a melee attack with your strength. On a hit, the creature takes {@dice 1d10} Acid damage and takes an additional {@dice 2d6} Acid damage at the end of their turns unless they take an action to remove the acid. The acid washes off after 1 minute."
+            ],
+            [
+              "Lvl 2 (Proficient)",
+              "500gp",
+              "DC 15",
+              "-",
+              "{@dice 2d10} Acid Damage and {@dice 3d6} Acid damage per round."
+            ],
+            [
+              "Lvl 3 (Expert)",
+              "1200gp",
+              "DC 20",
+              "-",
+              "{@dice 3d10} Acid Damage and {@dice 4d6} Acid damage per round."
+            ],
+            [
+              "Lvl 4 (Expert)",
+              "2,800gp",
+              "DC 25",
+              "-",
+              "{@dice 4d10} Acid Damage and {@dice 5d6} Acid damage per round."
+            ],
+            [
+              "Lvl 5 (Master)",
+              "5,500gp",
+              "DC 30",
+              "-",
+              "{@dice 5d10} Acid Damage and {@dice 6d6} Acid damage per round."
+            ],
+            [
+              "Lvl 6 (True Master)",
+              "10,500gp",
+              "DC 35",
+              "-",
+              "{@dice 6d10} Acid Damage and {@dice 7d6} Acid damage per round."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Alchemist’s Fire",
+      "source": "AspysGuidetoInfinitum",
+      "prerequisite": [
+        {
+          "item": [
+            "Alchemist's Supplies"
+          ],
+          "other": "The Alchemist Profession"
+        }
+      ],
+      "featureType": [
+        "ALCITEM"
+      ],
+      "entries": [
+        {
+          "type": "table",
+          "caption": "Alchemist’s Fire",
+          "colLabels": [
+            "Item Level",
+            "Crafting Cost",
+            "Crafting DC",
+            "Save DC",
+            "Effect"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-20 text-center"
+          ],
+          "rows": [
+            [
+              "Lvl 1 (Proficient)",
+              "150gp",
+              "Intelligence or Dexterity - DC 11",
+              "10",
+              "As an action, you can throw this flask at a point on the ground within 60ft that you can see. All Creatures within 20ft of the point must make a Dexterity Saving Throw or take {@dice 1d6} fire damage and are set on fire. A creature can use an action to pat off the flames or take {@dice 1d4} fire damage at the end of their turns. The fire goes out in 1 minute. On a success, creatures take half damage and are not on fire."
+            ],
+            [
+              "Lvl 2 (Proficient)",
+              "500gp",
+              "DC 15",
+              "12",
+              "{@dice 2d6} Fire damage and {@dice 2d4} fire damage per round."
+            ],
+            [
+              "Lvl 3 (Expert)",
+              "1,200gp",
+              "DC 20",
+              "14",
+              "{@dice 3d6} Fire damage and {@dice 3d4} fire damage per round."
+            ],
+            [
+              "Lvl 4 (Expert)",
+              "2,800gp",
+              "DC 25",
+              "16",
+              "{@dice 4d6} Fire damage and {@dice 4d4} fire damage per round."
+            ],
+            [
+              "Lvl 5 (Master)",
+              "5,500gp",
+              "DC 30",
+              "18",
+              "{@dice 5d6} Fire damage and {@dice 5d4} fire damage per round."
+            ],
+            [
+              "Lvl 6 (True Master)",
+              "10,500gp",
+              "DC 35",
+              "20",
+              "{@dice 6d6} Fire damage and {@dice 6d4} fire damage per round."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Alchemist’s Frost",
+      "source": "AspysGuidetoInfinitum",
+      "prerequisite": [
+        {
+          "item": [
+            "Alchemist's Supplies"
+          ],
+          "other": "The Alchemist Profession"
+        }
+      ],
+      "featureType": [
+        "ALCITEM"
+      ],
+      "entries": [
+        {
+          "type": "table",
+          "caption": "Alchemist’s Frost",
+          "colLabels": [
+            "Item Level",
+            "Crafting Cost",
+            "Crafting DC",
+            "Save DC",
+            "Effect"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-20 text-center"
+          ],
+          "rows": [
+            [
+              "Lvl 1 (Proficient)",
+              "150gp",
+              "Intelligence or Dexterity - DC 11",
+              "10",
+              "As an action, you can throw this flask at a creature. Make a ranged attack (20/60) or a melee attack with your strength. On a hit, the creature takes {@dice 1d10} Cold damage and must make a dexterity saving throw or be restrained in ice. The Ice has 20 Hitpoints and an AC of 10. Any damage targeting the creature will also damage the ice. A creature can take an action to make a strength check to break of the restraint. The ice thaws after 1 minute."
+            ],
+            [
+              "Lvl 2 (Proficient)",
+              "500gp",
+              "DC 15",
+              "12",
+              "{@dice 2d10} Cold damage and the Ice has 30 Hitpoints."
+            ],
+            [
+              "Lvl 3 (Expert)",
+              "1,200gp",
+              "DC 20",
+              "14",
+              "{@dice 3d10} Cold damage and the Ice has 40 Hitpoints."
+            ],
+            [
+              "Lvl 4 (Expert)",
+              "2,800gp",
+              "DC 25",
+              "16",
+              "{@dice 4d10} Cold damage and the Ice has 50 Hitpoints."
+            ],
+            [
+              "Lvl 5 (Master)",
+              "5,500gp",
+              "DC 30",
+              "18",
+              "{@dice 5d10} Cold damage and the Ice has 60 Hitpoints."
+            ],
+            [
+              "Lvl 6 (True Master)",
+              "10,500gp",
+              "DC 35",
+              "20",
+              "{@dice 6d10} Cold damage and the Ice has 70 Hitpoints."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Antivenom",
+      "source": "AspysGuidetoInfinitum",
+      "prerequisite": [
+        {
+          "item": [
+            "Alchemist's Supplies"
+          ],
+          "other": "The Alchemist Profession"
+        }
+      ],
+      "featureType": [
+        "ALCITEM"
+      ],
+      "entries": [
+        {
+          "type": "table",
+          "caption": "Antivenom",
+          "colLabels": [
+            "Item Level",
+            "Crafting Cost",
+            "Crafting DC",
+            "Save DC",
+            "Effect"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-20 text-center"
+          ],
+          "rows": [
+            [
+              "Lvl 1 (Proficient)",
+              "150gp",
+              "Wisdom or Intelligence - DC 11",
+              "-",
+              "Applying this on a poisoned creature will render poisons affecting it of DC 15 or lower inert."
+            ],
+            [
+              "Lvl 2 (Expert)",
+              "1200gp",
+              "DC 20",
+              "-",
+              "Applying this on a poisoned creature will render poisons affecting it of DC 25 or lower inert."
+            ],
+            [
+              "Lvl 3 (Master)",
+              "5500gp",
+              "DC 30",
+              "-",
+              "Applying this on a poisoned creature will render poisons affecting it of DC 35 or lower inert."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Beastbane",
+      "source": "AspysGuidetoInfinitum",
+      "prerequisite": [
+        {
+          "item": [
+            "Alchemist's Supplies"
+          ],
+          "other": "The Alchemist Profession"
+        }
+      ],
+      "featureType": [
+        "ALCITEM"
+      ],
+      "entries": [
+        {
+          "type": "table",
+          "caption": "Beastbane",
+          "colLabels": [
+            "Item Level",
+            "Crafting Cost",
+            "Crafting DC",
+            "Save DC",
+            "Effect"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-20 text-center"
+          ],
+          "rows": [
+            [
+              "Lvl 1 (Proficient)",
+              "200gp",
+              "Wisdom or Intelligence - DC 11",
+              "10",
+              "As an action, you can light this incense and throw it at a point on the ground within 60ft that you can see. Any beasts within 100ft of the area must make a constitution saving throw or use all its movement and Action(If needed) to exit the area. A moderate breeze will dispel the effect till it flows. The Incense burns away after 1 hour."
+            ],
+            [
+              "Lvl 2 (Proficient)",
+              "600gp",
+              "DC 15",
+              "12",
+              "-"
+            ],
+            [
+              "Lvl 3 (Expert)",
+              "1600gp",
+              "DC 20",
+              "14",
+              "-"
+            ],
+            [
+              "Lvl 4 (Expert)",
+              "3600gp",
+              "DC 25",
+              "16",
+              "-"
+            ],
+            [
+              "Lvl 5 (Master)",
+              "7200gp",
+              "DC 30",
+              "18",
+              "-"
+            ],
+            [
+              "Lvl 6 (True Master)",
+              "13600gp",
+              "DC 35",
+              "20",
+              "-"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Blastpatch",
+      "source": "AspysGuidetoInfinitum",
+      "prerequisite": [
+        {
+          "item": [
+            "Alchemist's Supplies"
+          ],
+          "other": "The Alchemist Profession"
+        }
+      ],
+      "featureType": [
+        "ALCITEM"
+      ],
+      "entries": [
+        {
+          "type": "table",
+          "caption": "Blastpatch",
+          "colLabels": [
+            "Item Level",
+            "Crafting Cost",
+            "Crafting DC",
+            "Save DC",
+            "Effect"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-20 text-center"
+          ],
+          "rows": [
+            [
+              "Lvl 1 (Proficient)",
+              "200gp",
+              "Intelligence or Dexterity - DC 11",
+              "10",
+              "As an action, you can apply a blast patch to a square within 5ft of you. When a creature walks into the space, it must make a Dexterity saving throw or be subjected to the effects of the blast patch. \n\n{@b Firepatch} - {@dice 1d8} Fire damage and the target cannot use reactions till the start of its next turn. \n\n{@b Cold Patch} - {@dice 1d8} Cold damage and the target's speed is 0 till the end of its next turn. \n\n{@b Shock patch} - {@dice 1d8} Force damage and the target is pushed 10ft back. \n\nA blast Patch can be detected with passive perception equal to or higher than the DC of the patch."
+            ],
+            [
+              "Lvl 2 (Proficient)",
+              "600gp",
+              "DC 15",
+              "12",
+              "{@dice 2d8} damage."
+            ],
+            [
+              "Lvl 3 (Expert)",
+              "1400gp",
+              "DC 20",
+              "14",
+              "{@dice 3d8} damage."
+            ],
+            [
+              "Lvl 4 (Expert)",
+              "3400gp",
+              "DC 25",
+              "16",
+              "{@dice 4d8} damage."
+            ],
+            [
+              "Lvl 5 (Master)",
+              "6600gp",
+              "DC 30",
+              "18",
+              "{@dice 5d8} damage."
+            ],
+            [
+              "Lvl 6 (True Master)",
+              "12600gp",
+              "DC 35",
+              "20",
+              "{@dice 6d8} damage."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Blinding Bomb",
+      "source": "AspysGuidetoInfinitum",
+      "prerequisite": [
+        {
+          "item": [
+            "Alchemist's Supplies"
+          ],
+          "other": "The Alchemist Profession"
+        }
+      ],
+      "featureType": [
+        "ALCITEM"
+      ],
+      "entries": [
+        {
+          "type": "table",
+          "caption": "Blinding Bomb",
+          "colLabels": [
+            "Item Level",
+            "Crafting Cost",
+            "Crafting DC",
+            "Save DC",
+            "Effect"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-20 text-center"
+          ],
+          "rows": [
+            [
+              "Lvl 1 (Proficient)",
+              "200gp",
+              "Intelligence or Dexterity - DC 11",
+              "10",
+              "As an action, you can throw this bomb at a creature. Make a ranged attack (20/60) or a melee attack with your strength. On a hit, the creature and every creature within 5ft of it must make a constitution saving throw or be {@condition blinded} for 1 minute. A creature can repeat this saving throw at the end of its turns. On a success, the creature is no longer blinded."
+            ],
+            [
+              "Lvl 2 (Proficient)",
+              "600gp",
+              "DC 15",
+              "12",
+              "-"
+            ],
+            [
+              "Lvl 3 (Expert)",
+              "1300gp",
+              "DC 20",
+              "14",
+              "-"
+            ],
+            [
+              "Lvl 4 (Expert)",
+              "3100gp",
+              "DC 25",
+              "16",
+              "-"
+            ],
+            [
+              "Lvl 5 (Master)",
+              "6100gp",
+              "DC 30",
+              "18",
+              "-"
+            ],
+            [
+              "Lvl 6 (True Master)",
+              "11600gp",
+              "DC 35",
+              "20",
+              "-"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bloodstinger Poison",
+      "source": "AspysGuidetoInfinitum",
+      "prerequisite": [
+        {
+          "item": [
+            "Alchemist's Supplies"
+          ],
+          "other": "The Alchemist Profession"
+        }
+      ],
+      "featureType": [
+        "ALCITEM"
+      ],
+      "entries": [
+        {
+          "type": "table",
+          "caption": "Bloodstinger Poison",
+          "colLabels": [
+            "Item Level",
+            "Crafting Cost",
+            "Crafting DC",
+            "Save DC",
+            "Effect"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-20 text-center"
+          ],
+          "rows": [
+            [
+              "Lvl 1 (Proficient)",
+              "200gp",
+              "Intelligence or Dexterity - DC 11",
+              "10",
+              "As part of the attack action, you can apply this poison to your melee weapon and make an attack against a creature. On a hit, the creature must make a constitution saving throw or be subject to another attack as its movements slow down. If this attack hits, it takes an additional {@dice 2d4} poison damage. If you can already make 2 or more attacks on a turn, you deal the poison damage on your second attack and do not get an extra attack from this poison."
+            ],
+            [
+              "Lvl 2 (Proficient)",
+              "600gp",
+              "DC 15",
+              "12",
+              "{@dice 3d4} poison damage."
+            ],
+            [
+              "Lvl 3 (Expert)",
+              "1300gp",
+              "DC 20",
+              "14",
+              "{@dice 4d4} poison damage."
+            ],
+            [
+              "Lvl 4 (Expert)",
+              "3100gp",
+              "DC 25",
+              "16",
+              "{@dice 5d4} poison damage."
+            ],
+            [
+              "Lvl 5 (Master)",
+              "6100gp",
+              "DC 30",
+              "18",
+              "{@dice 6d4} poison damage."
+            ],
+            [
+              "Lvl 6 (True Master)",
+              "11600gp",
+              "DC 35",
+              "20",
+              "{@dice 7d4} poison damage."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Clearsense Powder",
+      "source": "AspysGuidetoInfinitum",
+      "prerequisite": [
+        {
+          "item": [
+            "Alchemist's Supplies"
+          ],
+          "other": "The Alchemist Profession"
+        }
+      ],
+      "featureType": [
+        "ALCITEM"
+      ],
+      "entries": [
+        {
+          "type": "table",
+          "caption": "Clearsense Powder",
+          "colLabels": [
+            "Item Level",
+            "Crafting Cost",
+            "Crafting DC",
+            "Save DC",
+            "Effect"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-20 text-center"
+          ],
+          "rows": [
+            [
+              "Lvl 1 (Proficient)",
+              "150gp",
+              "Wisdom or Intelligence - DC 11",
+              "-",
+              "When a Blinded or deafened creature inhales this powder, It is cured of those conditions and gain {@dice 1d4} temporary hitpoints."
+            ],
+            [
+              "Lvl 2 (Proficient)",
+              "500gp",
+              "DC 15",
+              "-",
+              "{@dice 2d4} temporary hitpoints."
+            ],
+            [
+              "Lvl 3 (Expert)",
+              "1200gp",
+              "DC 20",
+              "-",
+              "{@dice 3d4} temporary hitpoints."
+            ],
+            [
+              "Lvl 4 (Expert)",
+              "2800gp",
+              "DC 25",
+              "-",
+              "{@dice 4d4} temporary hitpoints."
+            ],
+            [
+              "Lvl 5 (Master)",
+              "5500gp",
+              "DC 30",
+              "-",
+              "{@dice 5d4} temporary hitpoints."
+            ],
+            [
+              "Lvl 6 (True Master)",
+              "10500gp",
+              "DC 35",
+              "-",
+              "{@dice 6d4} temporary hitpoints."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dragonfire Tar",
+      "source": "AspysGuidetoInfinitum",
+      "prerequisite": [
+        {
+          "item": [
+            "Alchemist's Supplies"
+          ],
+          "other": "The Alchemist Profession"
+        }
+      ],
+      "featureType": [
+        "ALCITEM"
+      ],
+      "entries": [
+        {
+          "type": "table",
+          "caption": "Dragonfire Tar",
+          "colLabels": [
+            "Item Level",
+            "Crafting Cost",
+            "Crafting DC",
+            "Save DC",
+            "Effect"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-20 text-center"
+          ],
+          "rows": [
+            [
+              "Lvl 1 (Proficient)",
+              "200gp",
+              "Intelligence or Dexterity - DC 11",
+              "10",
+              "As an action, you can throw this bomb at a creature. Make a ranged attack (20/60) or a melee attack with your strength. On a hit, the creature is covered in tar that burns hot with alchemical flame. At the start of its turns, the creature takes {@dice 3d4} fire damage. As an action, it can remove the tar from its body with a successful sleight of hand check against the DC."
+            ],
+            [
+              "Lvl 2 (Proficient)",
+              "600gp",
+              "DC 15",
+              "12",
+              "{@dice 4d4} fire damage."
+            ],
+            [
+              "Lvl 3 (Expert)",
+              "1300gp",
+              "DC 20",
+              "14",
+              "{@dice 5d4} fire damage."
+            ],
+            [
+              "Lvl 4 (Expert)",
+              "3100gp",
+              "DC 25",
+              "16",
+              "{@dice 6d4} fire damage."
+            ],
+            [
+              "Lvl 5 (Master)",
+              "6100gp",
+              "DC 30",
+              "18",
+              "{@dice 7d4} fire damage."
+            ],
+            [
+              "Lvl 6 (True Master)",
+              "11600gp",
+              "DC 35",
+              "20",
+              "{@dice 8d4} fire damage."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ghoststrike Oil",
+      "source": "AspysGuidetoInfinitum",
+      "prerequisite": [
+        {
+          "item": [
+            "Alchemist's Supplies"
+          ],
+          "other": "The Alchemist Profession"
+        }
+      ],
+      "featureType": [
+        "ALCITEM"
+      ],
+      "entries": [
+        {
+          "type": "table",
+          "caption": "Ghoststrike Oil",
+          "colLabels": [
+            "Item Level",
+            "Crafting Cost",
+            "Crafting DC",
+            "Save DC",
+            "Effect"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-20 text-center"
+          ],
+          "rows": [
+            [
+              "Lvl 1 (Proficient)",
+              "200gp",
+              "Intelligence or Dexterity - DC 11",
+              "10",
+              "As part of the attack action, you can apply this poison to your melee weapon and make an attack against an undead creature. On a hit, the creature must make a constitution saving throw or be subject to another attack as its movements slow down. If this attack hits, it loses all its resistances and immunities and has vulnerability to Psychic damage for a minute. The creature can repeat the save at the end of their turns, ending the effect on a success. If you can already make 2 or more attacks on a turn, the effect applies on your second attack and do not get an extra attack from this oil."
+            ],
+            [
+              "Lvl 2 (Proficient)",
+              "600gp",
+              "DC 15",
+              "12",
+              "-"
+            ],
+            [
+              "Lvl 3 (Expert)",
+              "1300gp",
+              "DC 20",
+              "14",
+              "-"
+            ],
+            [
+              "Lvl 4 (Expert)",
+              "3100gp",
+              "DC 25",
+              "16",
+              "-"
+            ],
+            [
+              "Lvl 5 (Master)",
+              "6100gp",
+              "DC 30",
+              "18",
+              "-"
+            ],
+            [
+              "Lvl 6 (True Master)",
+              "11600gp",
+              "DC 35",
+              "20",
+              "-"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Goodnight Tincture",
+      "source": "AspysGuidetoInfinitum",
+      "prerequisite": [
+        {
+          "item": [
+            "Alchemist's Supplies"
+          ],
+          "other": "The Alchemist Profession"
+        }
+      ],
+      "featureType": [
+        "ALCITEM"
+      ],
+      "entries": [
+        {
+          "type": "table",
+          "caption": "Goodnight Tincture",
+          "colLabels": [
+            "Item Level",
+            "Crafting Cost",
+            "Crafting DC",
+            "Save DC",
+            "Effect"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-20 text-center"
+          ],
+          "rows": [
+            [
+              "Lvl 1 (Proficient)",
+              "200gp",
+              "Intelligence or Dexterity - DC 11",
+              "10",
+              "You apply this tincture to a food or drink item within 5ft of you. A creature that consumes that food or drink must succeed on a constitution saving throw after 1 minute or become {@condition unconscious} for one hour or till it is shook awake, takes damage, or is subject to a harmful effect."
+            ],
+            [
+              "Lvl 2 (Proficient)",
+              "600gp",
+              "DC 15",
+              "12",
+              "-"
+            ],
+            [
+              "Lvl 3 (Expert)",
+              "1300gp",
+              "DC 20",
+              "14",
+              "-"
+            ],
+            [
+              "Lvl 4 (Expert)",
+              "3100gp",
+              "DC 25",
+              "16",
+              "-"
+            ],
+            [
+              "Lvl 5 (Master)",
+              "6100gp",
+              "DC 30",
+              "18",
+              "-"
+            ],
+            [
+              "Lvl 6 (True Master)",
+              "11600gp",
+              "DC 35",
+              "20",
+              "-"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Herbal Incense",
+      "source": "AspysGuidetoInfinitum",
+      "prerequisite": [
+        {
+          "item": [
+            "Alchemist's Supplies"
+          ],
+          "other": "The Alchemist Profession"
+        }
+      ],
+      "featureType": [
+        "ALCITEM"
+      ],
+      "entries": [
+        {
+          "type": "table",
+          "caption": "Herbal Incense",
+          "colLabels": [
+            "Item Level",
+            "Crafting Cost",
+            "Crafting DC",
+            "Save DC",
+            "Effect"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-20 text-center"
+          ],
+          "rows": [
+            [
+              "Lvl 1 (Proficient)",
+              "200gp",
+              "Intelligence - DC 11",
+              "-",
+              "As a part of a short rest, you can burn this incense. Any creature that is within 20ft of this incense for the entire duration of the short rest regains an additional 10 hitpoints."
+            ],
+            [
+              "Lvl 2 (Proficient)",
+              "600gp",
+              "DC 15",
+              "-",
+              "additional 15 hitpoints."
+            ],
+            [
+              "Lvl 3 (Expert)",
+              "1300gp",
+              "DC 20",
+              "-",
+              "additional 20 hitpoints."
+            ],
+            [
+              "Lvl 4 (Expert)",
+              "3100gp",
+              "DC 25",
+              "-",
+              "additional 25 hitpoints."
+            ],
+            [
+              "Lvl 5 (Master)",
+              "6100gp",
+              "DC 30",
+              "-",
+              "additional 30 hitpoints."
+            ],
+            [
+              "Lvl 6 (True Master)",
+              "11600gp",
+              "DC 35",
+              "-",
+              "additional 35 hitpoints."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Jolt Flask",
+      "source": "AspysGuidetoInfinitum",
+      "prerequisite": [
+        {
+          "item": [
+            "Alchemist's Supplies"
+          ],
+          "other": "The Alchemist Profession"
+        }
+      ],
+      "featureType": [
+        "ALCITEM"
+      ],
+      "entries": [
+        {
+          "type": "table",
+          "caption": "Jolt Flask",
+          "colLabels": [
+            "Item Level",
+            "Crafting Cost",
+            "Crafting DC",
+            "Save DC",
+            "Effect"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-20 text-center"
+          ],
+          "rows": [
+            [
+              "Lvl 1 (Proficient)",
+              "200gp",
+              "Intelligence or Dexterity - DC 11",
+              "10",
+              "As an action, you can throw this flask at a creature. Make a ranged attack (20/60) or a melee attack with your strength. On a hit, the creature and creatures within 5ft of it must make a constitution saving throw or be unable to take any actions till the end of its next turn."
+            ],
+            [
+              "Lvl 2 (Proficient)",
+              "600gp",
+              "DC 15",
+              "12",
+              "-"
+            ],
+            [
+              "Lvl 3 (Expert)",
+              "1400gp",
+              "DC 20",
+              "14",
+              "-"
+            ],
+            [
+              "Lvl 4 (Expert)",
+              "3200gp",
+              "DC 25",
+              "16",
+              "-"
+            ],
+            [
+              "Lvl 5 (Master)",
+              "6300gp",
+              "DC 30",
+              "18",
+              "-"
+            ],
+            [
+              "Lvl 6 (True Master)",
+              "12100gp",
+              "DC 35",
+              "20",
+              "-"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lockbust Chalk",
+      "source": "AspysGuidetoInfinitum",
+      "prerequisite": [
+        {
+          "item": [
+            "Alchemist's Supplies"
+          ],
+          "other": "The Alchemist Profession"
+        }
+      ],
+      "featureType": [
+        "ALCITEM"
+      ],
+      "entries": [
+        {
+          "type": "table",
+          "caption": "Lockbust Chalk",
+          "colLabels": [
+            "Item Level",
+            "Crafting Cost",
+            "Crafting DC",
+            "Save DC",
+            "Effect"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-20 text-center"
+          ],
+          "rows": [
+            [
+              "Lvl 1 (Proficient)",
+              "200gp",
+              "Intelligence or Dexterity - DC 11",
+              "-",
+              "This chalk expands inside a lock once the end is broken off. If you use a lockbust chalk while lockpicking, you can add +2 to the check."
+            ],
+            [
+              "Lvl 2 (Proficient)",
+              "600gp",
+              "DC 15",
+              "-",
+              "+3 to the check"
+            ],
+            [
+              "Lvl 3 (Expert)",
+              "1400gp",
+              "DC 20",
+              "-",
+              "+4 to the check"
+            ],
+            [
+              "Lvl 4 (Expert)",
+              "3400gp",
+              "DC 25",
+              "-",
+              "+5 to the check"
+            ],
+            [
+              "Lvl 5 (Master)",
+              "6600gp",
+              "DC 30",
+              "-",
+              "+6 to the check"
+            ],
+            [
+              "Lvl 6 (True Master)",
+              "12600gp",
+              "DC 35",
+              "-",
+              "+7 to the check"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Slow-Step Oil",
+      "source": "AspysGuidetoInfinitum",
+      "prerequisite": [
+        {
+          "item": [
+            "Alchemist's Supplies"
+          ],
+          "other": "The Alchemist Profession"
+        }
+      ],
+      "featureType": [
+        "ALCITEM"
+      ],
+      "entries": [
+        {
+          "type": "table",
+          "caption": "Slow-Step Oil",
+          "colLabels": [
+            "Item Level",
+            "Crafting Cost",
+            "Crafting DC",
+            "Save DC",
+            "Effect"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-20 text-center"
+          ],
+          "rows": [
+            [
+              "Lvl 1 (Proficient)",
+              "200gp",
+              "Intelligence or Dexterity- DC 11",
+              "10",
+              "As an action, you can apply this poison to your melee weapon and make an attack against a creature. On a hit, the creature must make a constitution saving throw or be subject to another attack as its movements slow down. If this attack hits, its movement speed is halved till the end of its next turn. If you can already make 2 or more attacks on a turn, the effect applies on your second attack and do not get an extra attack from this oil."
+            ],
+            [
+              "Lvl 2 (Proficient)",
+              "600gp",
+              "DC 15",
+              "12",
+              "-"
+            ],
+            [
+              "Lvl 3 (Expert)",
+              "1300gp",
+              "DC 20",
+              "14",
+              "-"
+            ],
+            [
+              "Lvl 4 (Expert)",
+              "3100gp",
+              "DC 25",
+              "16",
+              "-"
+            ],
+            [
+              "Lvl 5 (Master)",
+              "6100gp",
+              "DC 30",
+              "18",
+              "-"
+            ],
+            [
+              "Lvl 6 (True Master)",
+              "11600gp",
+              "DC 35",
+              "20",
+              "-"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tracking Dust",
+      "source": "AspysGuidetoInfinitum",
+      "prerequisite": [
+        {
+          "item": [
+            "Alchemist's Supplies"
+          ],
+          "other": "The Alchemist Profession"
+        }
+      ],
+      "featureType": [
+        "ALCITEM"
+      ],
+      "entries": [
+        {
+          "type": "table",
+          "caption": "Tracking Dust",
+          "colLabels": [
+            "Item Level",
+            "Crafting Cost",
+            "Crafting DC",
+            "Save DC",
+            "Effect"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-20 text-center"
+          ],
+          "rows": [
+            [
+              "Lvl 1 (Proficient)",
+              "200gp",
+              "Intelligence or Dexterity - DC 11",
+              "-",
+              "The tracking dust creates an area 20ft diameter filled with shimmering dust. In areas where the dust is spread, Perception checks to track can be made with a +2 to the check."
+            ],
+            [
+              "Lvl 2 (Proficient)",
+              "600gp",
+              "DC 15",
+              "-",
+              "+3 to the check"
+            ],
+            [
+              "Lvl 3 (Expert)",
+              "1400gp",
+              "DC 20",
+              "-",
+              "+4 to the check"
+            ],
+            [
+              "Lvl 4 (Expert)",
+              "3400gp",
+              "DC 25",
+              "-",
+              "+5 to the check"
+            ],
+            [
+              "Lvl 5 (Master)",
+              "6600gp",
+              "DC 30",
+              "-",
+              "+6 to the check"
+            ],
+            [
+              "Lvl 6 (True Master)",
+              "12600gp",
+              "DC 35",
+              "-",
+              "+7 to the check"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Clearwater Solution",
+      "source": "AspysGuidetoInfinitum",
+      "prerequisite": [
+        {
+          "item": [
+            "Alchemist's Supplies"
+          ],
+          "other": "The Alchemist Profession"
+        }
+      ],
+      "featureType": [
+        "ALCITEM"
+      ],
+      "entries": [
+        {
+          "type": "table",
+          "caption": "Clearwater Solution",
+          "colLabels": [
+            "Item Level",
+            "Crafting Cost",
+            "Crafting DC",
+            "Save DC",
+            "Effect"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-20 text-center"
+          ],
+          "rows": [
+            [
+              "Lvl 1 (Proficient)",
+              "20gp",
+              "Intelligence - DC 11",
+              10,
+              "On adding clearwater solution to a volume of liquid filling a cube 1 square on side (5 feet by 5 feet by 5 feet; approximately 935 gallons), the solution removes any poison or disease present in the liquid after 1 minute."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Salve of Slipperiness",
+      "source": "AspysGuidetoInfinitum",
+      "prerequisite": [
+        {
+          "item": [
+            "Alchemist's Supplies"
+          ],
+          "other": "The Alchemist Profession"
+        }
+      ],
+      "featureType": [
+        "ALCITEM"
+      ],
+      "entries": [
+        {
+          "type": "table",
+          "caption": "Salve of Slipperiness",
+          "colLabels": [
+            "Item Level",
+            "Crafting Cost",
+            "Crafting DC",
+            "Save DC",
+            "Effect"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-20 text-center"
+          ],
+          "rows": [
+            [
+              "Lvl 1 (Proficient)",
+              "300gp",
+              "Intelligence or Dexterity - DC 11",
+              "-",
+              "You take 1 minute to apply this slimy salve to your body. For 10 minutes after this application, you make Acrobatics or Athletics checks against grapples at advantage."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Smokestick",
+      "source": "AspysGuidetoInfinitum",
+      "prerequisite": [
+        {
+          "item": [
+            "Alchemist's Supplies"
+          ],
+          "other": "The Alchemist Profession"
+        }
+      ],
+      "featureType": [
+        "ALCITEM"
+      ],
+      "entries": [
+        {
+          "type": "table",
+          "caption": "Smokestick",
+          "colLabels": [
+            "Item Level",
+            "Crafting Cost",
+            "Crafting DC",
+            "Save DC",
+            "Effect"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-20 text-center"
+          ],
+          "rows": [
+            [
+              "Lvl 1 (Proficient)",
+              "150gp",
+              "Intelligence or Dexterity - DC 11",
+              10,
+              "As an action, you throw this to a point you can see within 60 feet. The area within 20 ft of that point is lightly obscured. The smoke lasts until the end of your next turn."
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "variantrule": [
+    {
+      "name": "Alcohol and other things that will kill you.... Or save you",
+      "source": "AspysGuidetoInfinitum",
+      "entries": [
+        "The multiverse of Infinitum is multifaceted to say the least. However, one thing that does not lose its meaning between the endless worlds of Infinitum is the insatiable curiosity. Naturally, this curiosity becomes the origin for many professions that build on trial and error. Any hopeless mucker can take up, with practice of course, the tools of a chef, a brewer, a poisoner, a herbalist or an alchemist. These people look for meaning in the endless unsense of components. There is always another combination, a way to better an existing combination, a way to transcend the binding functions of these components into something that carries more meaning and create things that are worth more than the sum of their parts.",
+        {
+          "type": "entries",
+          "name": "These professions in Infinitum",
+          "entries": [
+            "In your travels around the multiverse, you will find individuals at various skill levels in these professions. The ones that are {@b Proficient}, the ones that are {@b Experts}, the ones that are {@b Masters} and finally, the ones that are {@b True masters}. Everyone starts their journey at the most base of this lengthy adventure in search of the true concoction.",
+            "As a player, you can start your journey in any of these four professions at the {@b Proficient} or the {@b Expert} level, provided your class or background gives you proficiency or expertise in these professions.",
+            "Alternatively, you can spend your downtime training under a {@b Master} or a {@b True Master} to gain proficiency in these tools. The table below lists the profession, time needed and the cost of training under a master.",
+            {
+              "type": "table",
+              "caption": "Profession Training Cost",
+              "colLabels": [
+                "Tool",
+                "Cost",
+                "Period"
+              ],
+              "colStyles": [
+                "col-4 text-center",
+                "col-4 text-center",
+                "col-4 text-left"
+              ],
+              "rows": [
+                [
+                  "Cook’s Utensils",
+                  "40gp + 40gp Per Week",
+                  "10 Workweeks"
+                ],
+                [
+                  "{@variantrule The Herbalist|AspysGuidetoInfinitum|Herbalism Kit}",
+                  "20gp + 50gp Per Week",
+                  "8 Workweeks"
+                ],
+                [
+                  "{@variantrule The Poisoner|AspysGuidetoInfinitum|Poisoner’s Kit}",
+                  "200gp + 50gp Per Week",
+                  "10 Workweeks"
+                ],
+                [
+                  "{@variantrule The Alchemist|AspysGuidetoInfinitum|Alchemist’s Supplies}",
+                  "200gp + 50gp Per Week",
+                  "10 Workweeks"
+                ],
+                [
+                  "Brewer’s Supplies",
+                  "80gp + 60gp Per Week",
+                  "8 Workweeks"
+                ]
+              ]
+            },
+            "Once you are proficient, you can train for expertise. The time needed to train for expertise in a profession is double the initial period.",
+            "As an Expert, You can add twice your proficiency bonus to checks made with the tool of your profession. Additionally, you can look for a true master to train further and become a master yourself. The time needed to train for master status in a profession is three times the initial period.",
+            "As a master, You can add four times your proficiency bonus to checks you make with the tools of your profession. Additionally, you begin your initial true master training under a true master for four times the initial period. After that, you have to spend double the initial period working out your original style for the profession of your choice. You do not spend gold for these two weeks but you must stay in downtime.",
+            "As a True Master, you have reached the pinnacle of your art. You are respected across continents as a True Master of the art. You receive an invite to the Guild of True Craftsmen and you can use your influence to always gain a 50% reduction to\nprices on sales under your profession. You also add four times your proficiency bonus to checks you make with the tools of your profession and you treat any d20 roll of 14 or lower on the checks as a 15."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Skill checks related to your profession",
+          "entries": [
+            "As a skilled individual in your profession, you get certain bonuses to non-modification checks you make with your tools.",
+            {
+              "type": "table",
+              "caption": "Profession Training Cost",
+              "colLabels": [
+                "Skill Level",
+                "Check Bonus"
+              ],
+              "colStyles": [
+                "col-4 text-center",
+                "col-4 text-center"
+              ],
+              "rows": [
+                [
+                  "Cook’s Utensils",
+                  "40gp + 40gp Per Week"
+                ],
+                [
+                  "Proficient",
+                  "No bonus"
+                ],
+                [
+                  "Expert",
+                  "No Bonus"
+                ],
+                [
+                  "Master",
+                  "Advantage on all checks"
+                ],
+                [
+                  "True Master",
+                  "Auto success"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "The Herbalist",
+      "source": "AspysGuidetoInfinitum",
+      "entries": [
+        "As an herbalist, you have learned the uses of certain flora and fauna to make treatments against deadly effects. With proficiency in this tool, you can use downtime to craft any of the healing potions from the table below provided you have the time and gold.",
+        {
+          "type": "table",
+          "caption": "Healing Potion Crafting Cost",
+          "colLabels": [
+            "Type",
+            "Time",
+            "Cost"
+          ],
+          "colStyles": [
+            "col-4 text-center",
+            "col-4 text-center",
+            "col-4 text-center"
+          ],
+          "rows": [
+            [
+              "Healing",
+              "1 day",
+              "25gp"
+            ],
+            [
+              "Greater Healing",
+              "1 Workweek",
+              "100gp"
+            ],
+            [
+              "Superior Healing",
+              "3 Workweeks",
+              "1000gp"
+            ],
+            [
+              "Supreme Healing",
+              "4 Workweeks",
+              "10000gp"
+            ]
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Herbal Remedies",
+          "entries": [
+            "As an expert herbalist, you have mastered the finer aspects of the profession. You know the methods to better even the mildest of healing potions. However, you can only better the potions you make yourself since the composition of potions differ between craftsmen.",
+            "You can spend gold equal to 160% of the crafting cost to modify your potion. Make an herbalism kit check (Intelligence) with the DC equal to the DC given on the table below. On a Success, you can roll one additional healing dice when you use this healing potion. You so so it by spending 1 hour for every 50gp you spend(Rounded up). The DC for subsequent use of Herbal remedies also goes up by 1 for this dose. On a Failurethe potion is lost and unusable. You can do this to a single dose as many times as listed in the table below.",
+            {
+              "type": "table",
+              "caption": "Herbal Remidies table",
+              "colLabels": [
+                "Type",
+                "Proficient",
+                "Expert",
+                "Master",
+                "True Master",
+                "DC"
+              ],
+              "colStyles": [
+                "col-4 text-center",
+                "col-1 text-left",
+                "col-1 text-left",
+                "col-1 text-left",
+                "col-1 text-left",
+                "col-1 text-left"
+              ],
+              "rows": [
+                [
+                  "Healing",
+                  1,
+                  2,
+                  3,
+                  4,
+                  15
+                ],
+                [
+                  "Greater Healing",
+                  2,
+                  4,
+                  6,
+                  8,
+                  17
+                ],
+                [
+                  "Superior Healing",
+                  3,
+                  6,
+                  9,
+                  12,
+                  19
+                ],
+                [
+                  "Supreme Healing",
+                  4,
+                  8,
+                  12,
+                  16,
+                  22
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Optimization",
+          "entries": [
+            "As a Master, whenever a healing potion crafted by you is used, you can roll the hitpoints that the potion restores twice and choose one of the two totals. Additionally, you can use Herbal Remedies on a single dose as many times as twice your proficiency bonus."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Herbalist Ascendancy",
+          "entries": [
+            "A true master of the craft can make even the most effective healing remedies. If you have the gold, you can make any healing potion at the end of a long rest. This healing potion will be created with the maximum herbal remedies applications. Once you create a healing potion this way, you cannot do so again for 1 week. Additionally, when you roll for healing on a healing potion created by you, you always roll the maximum value."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "The Poisoner",
+      "source": "AspysGuidetoInfinitum",
+      "entries": [
+        "As a poisoner, you have learned the uses of certain flora and fauna to make deadly poisons. With proficiency in this tool, you can use downtime to craft any of the poisons from the poisoner's table below provided you have access to the materials, time, and gold needed for the ones that do.",
+        "You will need to spend 1 hour for every 50gp you spend making the poison.",
+        {
+          "type": "entries",
+          "name": "Using a poison",
+          "entries": [
+            "Every Vial of contact and injury poison can hold upto 3 doses of a certain poison. Each time you harvest poison from a deador incapacitated creature, you need to succeed on a Poisoner's kit (Intelligence) check of DC 20. On a success, you get one dose of the poison.",
+            "As an action, you can coat a melee weapon with the poison or dip upto 3 pieces of ammunition. The Poison loses potency after 3 successful melee attacks. Ammmunition that misses can be collected and used again. In any case, an application will have potency for 1 minute from the application time."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Malicious Addition",
+          "entries": [
+            "As an expert poisoner, you have mastered the finer aspects of the profession. You know the methods to better even the mildest of poisons. You can only better the poisons you make yourself since the composition of poisons not made by you is hard to figure out. However, if the poison is a venom, you can attempt to increase its potency anyway.",
+            "You can spend gold equal to 160% of the crafting cost to modify your poison. Make a poisoners kit check (Intelligence) with the DC equal to the Saving throw DC of the poison. On a Success, the DC of the poison goes up by 1 and you add one more damage die to it by spending 1 hour for every 50gp you spend(Rounded up).On a Failure, the poison is lost and unusable. You can do this to a single dose as many times as your proficiency bonus."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Optimization",
+          "entries": [
+            "As a Master, the Saving throw DC for any poison you make/harvest cannot be less than 15. Additionally, you can use Malicious Addition on a single vial as many times as twice your proficiency bonus."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Poisoner Ascendancy",
+          "entries": [
+            "A true master of the craft can make even the most potent of poisons. As part of the Guild of True Craftsmen, you have access to every poison component that costs less than 1000gp and you can buy them instantly through the bag of holding you receive as a True Master.",
+            "Additionally, the Saving throw DC of any poison you make/harvest cannot be less than 19."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "The Alchemist",
+      "source": "AspysGuidetoInfinitum",
+      "entries": [
+        "As an alchemist, you have learned the way of transmuter. You can make reagents and chemicals with devastating effects or restorative properties depending on your mood. With proficiency in this tool, you gain a permanent 20% cost reduction on all costs incurred in the {@variantrule The Herbalist|AspysGuidetoInfinitum|Herbalist} and {@variantrule The Poisoner|AspysGuidetoInfinitum|Poisoner} professions including the learning costs.",
+        "Magic is unnecessary to create alchemical items, but arcane ingredients are required. These items are rare and expensive, so alchemists commonly have adventuring backgrounds.",
+        "To make Alchemical Reagents/items, you need to acquire the formula for the reagent. Check the {@table Alchemical formulae|AspysGuidetoInfinitum|Alchemical formulae} table for all alchemist formulae available for purchase and the ability needed to make each item",
+        "When you get proficency in this tool, you learn two {@table Alchemical formulae|AspysGuidetoInfinitumGuidetoInfinitum|Alchemical formulae} of your choice from the table. Everytime you gain a level after proficiency, you learn one additional formulae.",
+        {
+          "type": "entries",
+          "name": "Making an alchemical reagent",
+          "entries": [
+            "You can use Alchemist's supplies to create the reagents/items you own the formulae to. ",
+            "When you make an alchemical item, make a check with your Alchemists Supplies with the listed ability. On a success, the item is created successfully. On a failure, the item and the materials are lost. On a Critical success, the item deals double the dice as damage if it has a damage value. You can still roll the skill check as a true master and a failure can be treated as a success. Each Alchemical creation can have upto 6 levels of refinement. Your skill at this profession dictates the maximum level of the item you can create."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Expert Transmuter",
+          "entries": [
+            "As an expert in alchemist's supplies, you gain a +10% permanent cost reduction to costs incurred in the Herbalist and Poisoner professions.",
+            "Additionally, you can alter permanently properties of objects to gather energy. You perform a special alchemical procedure on one object composed entirely of Stone (but not a gemstone), Wood, iron, copper, silver, or gold. Transforming it into a material of a lower tier. The energy released from this conversion can be transfered into a spellcaster as a level 1 spell slot. You cannot add more spell slots to a spell caster than they can hold. Refer to the table below for the amount of\nmaterial needed and the conversion results.",
+            {
+              "type": "table",
+              "caption": "Alchemical conversion",
+              "colLabels": [
+                "Material",
+                "Minimum weight",
+                "Conversion Results (any one)"
+              ],
+              "colStyles": [
+                "col-4 text-left",
+                "col-4 text-left",
+                "col-4 text-right"
+              ],
+              "rows": [
+                [
+                  "Gold",
+                  "10lbs",
+                  "50lbs. Silver"
+                ],
+                [
+                  "",
+                  "",
+                  "500lbs. Copper"
+                ],
+                [
+                  "",
+                  "",
+                  "2,500lbs. Iron"
+                ],
+                [
+                  "",
+                  "",
+                  "75,000lbs Wood or Stone"
+                ],
+                [
+                  "Silver",
+                  "50lbs",
+                  "250lbs Copper"
+                ],
+                [
+                  "",
+                  "",
+                  "1,250lbs Iron"
+                ],
+                [
+                  "",
+                  "",
+                  "37,500lbs Wood or Stone"
+                ],
+                [
+                  "Copper",
+                  "250lbs",
+                  "625lbs Iron"
+                ],
+                [
+                  "",
+                  "",
+                  "18,750 lbs Stone or Wood"
+                ],
+                [
+                  "Iron",
+                  "625lbs",
+                  "9,375 lbs of Stone or Wood"
+                ]
+              ]
+            },
+            "Every conversion takes 15 minutes of work which can also be part of a short rest. You can do as many conversions as your proficiency bonus and you get all uses back after a long rest."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Optimization",
+          "entries": [
+            "As a Master, You gain a further +10% cost reduction on on all costs incurred in the Herbalist and Poisoner professions. Additionally, you can transmute materials to gain spell slots twice as many times as your proficiency bonus."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Alchemist Ascendancy",
+          "entries": [
+            "A true master of alchemy can draw the residual energies that are lost in the form of heat and light from their material conversions. The spell slots gained from conversations can be level 3 or lower.",
+            "Additionally, Every dawn, you can draw upto 2000gp worth of raw materials at half price from your bag of holding of true craftsmen. These materials are enchanted to be only used for transmutation and you must send the residual materials back after drawing their energies before you take a long rest. The bag of holding will refund the amount for the materials you return."
+          ]
+        }
+      ]
+    }
+  ],
+  "table": [
+    {
+      "name": "Alchemical formulae",
+      "source": "AspysGuidetoInfinitum",
+      "type": "table",
+      "caption": "Alchemical formulae",
+      "colLabels": [
+        "Name",
+        "Market Price",
+        "Skill Needed"
+      ],
+      "colStyles": [
+        "col-4 text-center",
+        "col-4 text-center",
+        "col-4 text-center"
+      ],
+      "rows": [
+        [
+          "{@optfeature Alchemical Silver|AspysGuidetoInfinitum|Alchemical Silver}",
+          200,
+          "Intelligence, Wisdom or Dexterity"
+        ],
+        [
+          "{@optfeature Alchemist’s acid|AspysGuidetoInfinitum|Alchemist's Acid}",
+          70,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "{@optfeature Alchemist’s fire|AspysGuidetoInfinitum}",
+          70,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "{@optfeature Alchemist’s frost|AspysGuidetoInfinitum}",
+          70,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "{@optfeature Antivenom|AspysGuidetoInfinitum}",
+          70,
+          "Wisdom, Intelligence"
+        ],
+        [
+          "{@optfeature Beastbane|AspysGuidetoInfinitum}",
+          160,
+          "Wisdom, Intelligence"
+        ],
+        [
+          "{@optfeature Blastpatch|AspysGuidetoInfinitum}",
+          120,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "{@optfeature Blinding bomb|AspysGuidetoInfinitum}",
+          120,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "{@optfeature Bloodstinger poison|AspysGuidetoInfinitum}",
+          120,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "{@optfeature Clearsense powder|AspysGuidetoInfinitum}",
+          80,
+          "Wisdom, Intelligence"
+        ],
+        [
+          "{@optfeature Clearwater solution|AspysGuidetoInfinitum}",
+          100,
+          "Intelligence, Religion"
+        ],
+        [
+          "{@optfeature Dragonfire tar|AspysGuidetoInfinitum}",
+          120,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "{@optfeature Ghoststrike oil|AspysGuidetoInfinitum}",
+          500,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "{@optfeature Goodnight tincture|AspysGuidetoInfinitum}",
+          150,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "{@optfeature Herbal poultice|AspysGuidetoInfinitum}",
+          90,
+          "Intelligence"
+        ],
+        [
+          "{@optfeature Jolt flask|AspysGuidetoInfinitum}",
+          800,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "{@optfeature Lockbust chalk|AspysGuidetoInfinitum}",
+          160,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "{@optfeature Salve of slipperiness|AspysGuidetoInfinitum}",
+          375,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "{@optfeature Slow-step oil|AspysGuidetoInfinitum}",
+          120,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "{@optfeature Smokestick|AspysGuidetoInfinitum}",
+          450,
+          "Intelligence, Dexterity"
+        ],
+        [
+          "{@optfeature Tracking dust|AspysGuidetoInfinitum}",
+          160,
+          "Intelligence, Dexterity"
+        ]
       ]
     }
   ]
