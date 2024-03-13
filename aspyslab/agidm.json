@@ -558,5 +558,761 @@
         "wisdom"
       ]
     }
+  ],
+  "item": [
+    {
+      "name": "Aboleth Oil",
+      "source": "agidm",
+      "type": "G",
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this oil must make a Constitution saving throw or become diseased. The disease has no effect for 1 minute and can be removed by any magic that cures disease, but the creature is unaware that they have been affected. After 1 minute, the diseased creature's skin becomes translucent and slimy, the creature can't regain hit points unless it is underwater, and the disease can be removed only by heal or another disease-curing spell of 6th level or higher. When the creature is outside a body of water, it takes 6({@dice 1d12}) acid damage every 10 minutes unless moisture is applied to the skin before 10 minutes have passed.",
+        "{@b Unique Component:} An Aboleth",
+        "{@b Save DC:} 14"
+      ],
+      "poisonTypes": [
+        "contact",
+        "venom",
+        "aquatoxin"
+      ]
+    },
+    {
+      "name": "Black Ivy Paste (Proficient)",
+      "source": "agidm",
+      "type": "G",
+      "value": 20000,
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must make a Constitution saving throw or take 3 ({@dice 1d6}) poison damage. The paste retains its potency until a total of at least 10 damage has been dealt.",
+        "{@b Unique Component:} Black Ivy Leaves",
+        "{@b Save DC:} 16"
+      ],
+      "poisonTypes": [
+        "contact"
+      ]
+    },
+    {
+      "name": "Black Lotus Extract (Master)",
+      "source": "agidm",
+      "type": "G",
+      "value": 652000,
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must make a Constitution saving throw or take 3 ({@dice 1d6}) poison damage. The paste retains its potency until a total of at least 10 damage has been dealt.",
+        "{@b Unique Component:} Black Ivy Leaves",
+        "{@b Save DC:} 16"
+      ],
+      "poisonTypes": [
+        "contact"
+      ]
+    },
+    {
+      "name": "Boneshard Paste (Proficient)",
+      "source": "agidm",
+      "type": "G",
+      "value": 75000,
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "An undead creature subjected to this poison must succeed on a Constitution saving throw or be poisoned for 1 minute, also taking 18 ({@dice 4d8}) radiant damage on a failed save, or half as much damage on a successful one. The creature's speed is reduced to 0 until the end of their next turn. The poisoned creature is {@condition paralyzed}. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+        "{@b Unique Component:} Bones of a holy person. (Can only be purchased at a temple)",
+        "{@b Save DC:} 16"
+      ],
+      "poisonTypes": [
+        "contact",
+        "positoxin"
+      ]
+    },
+    {
+      "name": "Brawler's Bourbon (Master)",
+      "source": "agidm",
+      "type": "G",
+      "value": 18000,
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must succeed on a Constitution saving throw or be poisoned for 1 minute. If the saving throw fails by 5 or more, the creature is also unconscious while poisoned in this way. The creature wakes up if it takes damage or if another creature takes an action to shake it awake.",
+        "{@b Unique Component:} Bourbon Whiskey.",
+        "{@b Save DC:} 12"
+      ],
+      "poisonTypes": [
+        "contact",
+        "aquatoxin"
+      ]
+    },
+    {
+      "name": "Chuul Paralytic",
+      "source": "agidm",
+      "type": "G",
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must succeed on a Constitution saving throw or be poisoned for 1 minute. The poisoned creature is paralyzed. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+        "{@b Unique Component:} A Chuul. (Not craftable)",
+        "{@b Save DC:} 13"
+      ],
+      "poisonTypes": [
+        "contact",
+        "venom"
+      ]
+    },
+    {
+      "name": "Crawler Mucus",
+      "source": "agidm",
+      "type": "G",
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must succeed on a Constitution saving throw or be poisoned for 1 minute. The poisoned creature is paralyzed. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+        "{@b Unique Component:} A Carrion Crawler. (Not craftable)",
+        "{@b Save DC:} 13"
+      ],
+      "poisonTypes": [
+        "contact",
+        "venom"
+      ]
+    },
+    {
+      "name": "Goodbye Kiss (Master)",
+      "source": "agidm",
+      "type": "G",
+      "value": 160000,
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison suffers no effect until the stroke of midnight. If the poison has not been neutralized before then, the creature must succeed on a Constitution saving throw, taking 31 ({@dice 9d6}) poison damage on a failed save, or half as much damage on a successful one.",
+        "{@b Unique Component:} Midnight Tears flower.",
+        "{@b Save DC:} 17"
+      ],
+      "poisonTypes": [
+        "contact"
+      ]
+    },
+    {
+      "name": "Golden Ice (Master)",
+      "source": "agidm",
+      "type": "G",
+      "value": 120000,
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "An evil creature that comes into contact with golden ice must make a Constitution saving throw or take 30 (12d4) cold damage. This damage bypasses all resistances and immunities.",
+        "{@b Unique Component:} True Ice.",
+        "{@b Save DC:} 17"
+      ],
+      "poisonTypes": [
+        "contact"
+      ]
+    },
+    {
+      "name": "Oil of Taggit (Proficient)",
+      "source": "agidm",
+      "type": "G",
+      "value": 40000,
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must succeed on a Constitution saving throw or become poisoned for 24 hours. The poisoned creature is unconscious. The creature wakes up if it takes damage.",
+        "{@b Unique Component:} None",
+        "{@b Save DC:} 13"
+      ],
+      "poisonTypes": [
+        "contact"
+      ]
+    },
+    {
+      "name": "Sunlight Oil (Proficient)",
+      "source": "agidm",
+      "type": "G",
+      "value": 130000,
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "An undead creature subjected to this poison must succeed on a Constitution saving throw or take 27 ({@dice 6d8}) radiant damage and be {@condition blinded} until the end of the beginning of your next turn (6 seconds if out of combat). On a successful save, they take half damage and are not blinded. Creatures with sunlight sensitivity have disadvantage on their saving throw.",
+        "{@b Unique Component:} Holy Oil. (Can only be purchased at a temple)",
+        "{@b Save DC:} 18"
+      ],
+      "poisonTypes": [
+        "contact",
+        "positoxin"
+      ]
+    },
+    {
+      "name": "Bearded Devil Venom",
+      "source": "agidm",
+      "type": "G",
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must succeed on a Constitution saving throw or be poisoned for 1 minute. While poisoned in this way, the target can't regain hit points. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+        "{@b Unique Component:} A dead or incapacitated bearded devil.",
+        "{@b Save DC:} 12"
+      ],
+      "poisonTypes": [
+        "injury",
+        "venom"
+      ]
+    },
+    {
+      "name": "Bloodfire Paste (Expert)",
+      "source": "agidm",
+      "type": "G",
+      "value": 65000,
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must make a Constitution saving throw, taking 11 ({@dice 2d10}) fire damage on a failed save, and must repeat the saving throw at the start of each of its turns. On each successive failed save, the creature takes 3 ({@dice 1d6}) fire damage. After three successful saves, the poison ends. This effect ignores a creature's immunity to poison, but cannot affect a creature without blood.",
+        "{@b Unique Component:} None",
+        "{@b Save DC:} 13"
+      ],
+      "poisonTypes": [
+        "injury"
+      ]
+    },
+    {
+      "name": "Bone Devil's Sting",
+      "source": "agidm",
+      "type": "G",
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must succeed on a Constitution saving throw or take 17 ({@dice 5d6}) poison damage and become poisoned for 1 minute. On a successful save, the target takes half damage and is not poisoned. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+        "{@b Unique Component:} A dead or incapacitated bone devil.",
+        "{@b Save DC:} 14"
+      ],
+      "poisonTypes": [
+        "injury",
+        "venom"
+      ]
+    },
+    {
+      "name": "Celestial Essence (Proficient)",
+      "source": "agidm",
+      "type": "G",
+      "value": 40000,
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "An undead creature subjected to this poison must succeed on a Constitution saving throw or take 5 ({@dice 2d4}) radiant damage. Once applied, the poison retains potency for 1 minute before drying.",
+        "{@b Unique Component:} The Blood of a Living Celestial.",
+        "{@b Save DC:} 14"
+      ],
+      "poisonTypes": [
+        "injury",
+        "positoxin"
+      ]
+    },
+    {
+      "name": "Centipede Venom",
+      "source": "agidm",
+      "type": "G",
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must succeed on a Constitution saving throw, taking 10 ({@dice 3d6}) poison damage on a failed save. If the poison damage reduces the target to 0 hit points, the target is stable but {@condition poisoned} for 1 hour, even after regaining hit points, and is {@condition paralyzed} while poisoned in this way.",
+        "{@b Unique Component:} A dead or incapacitated giant centipede.",
+        "{@b Save DC:} 11"
+      ],
+      "poisonTypes": [
+        "injury",
+        "venom"
+      ]
+    },
+    {
+      "name": "Cockatrice Saliva",
+      "source": "agidm",
+      "type": "G",
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this venom must succeed on a Constitution saving throw against being magically {@condition petrified}. On a failed save, the creature begins to turn to stone and is {@condition restrained}. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is {@condition petrified} for 24 hours.",
+        "{@b Unique Component:} A dead or incapacitated cockatrice.",
+        "{@b Save DC:} 11"
+      ],
+      "poisonTypes": [
+        "injury",
+        "venom"
+      ]
+    },
+    {
+      "name": "Drow Poison (Proficient)",
+      "source": "agidm",
+      "type": "G",
+      "value": 20000,
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must succeed on a Constitution saving throw or be {@condition poisoned} for 1 hour. If the saving throw fails by 5 or more, the creature is also {@condition unconscious} while poisoned in this way. The creature wakes up if it takes damage or if another creature takes an action to shake it awake.",
+        "{@b Unique Component:} Drow Recipe.",
+        "{@b Save DC:} 13"
+      ],
+      "poisonTypes": [
+        "injury"
+      ]
+    },
+    {
+      "name": "Elemental Contra (Master)",
+      "source": "agidm",
+      "type": "G",
+      "value": 310000,
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must succeed on a Constitution saving throw. On a failed save, the creature loses all immunities or resistances to the poison's elemental damage type (Cold, Fire, Lightning), and gains vulnerability to that damage type. This effect lasts for 1 minute or until cured.",
+        "{@b Unique Component:} Blood of the target and Crystals from the elemental chaos.",
+        "{@b Save DC:} 25"
+      ],
+      "poisonTypes": [
+        "injury",
+        "banetoxin"
+      ]
+    },
+    {
+      "name": "Ettercap Venom",
+      "source": "agidm",
+      "type": "G",
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must succeed on a Constitution saving throw, taking 4 (1d8) poison damage and becoming poisoned for 1 minute on a failed save. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+        "{@b Unique Component:} A dead or incapacitated giant centipede. (Not craftable)",
+        "{@b Save DC:} 11"
+      ],
+      "poisonTypes": [
+        "injury",
+        "venom"
+      ]
+    },
+    {
+      "name": "Grell Venom",
+      "source": "agidm",
+      "type": "G",
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must succeed on a Constitution saving throw or become {@condition poisoned} for 1 minute. The {@condition poisoned} creature is {@condition paralyzed}. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+        "{@b Unique Component:} A dead or incapacitated grell.",
+        "{@b Save DC:} 11"
+      ],
+      "poisonTypes": [
+        "injury",
+        "venom"
+      ]
+    },
+    {
+      "name": "Imp Venom",
+      "source": "agidm",
+      "type": "G",
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must succeed on a Constitution saving throw, taking 10 ({@dice 3d6}) poison damage on a failed save, or half as much damage on a successful one.",
+        "{@b Unique Component:} A dead or incapacitated imp.",
+        "{@b Save DC:} 11"
+      ],
+      "poisonTypes": [
+        "injury",
+        "venom"
+      ]
+    },
+    {
+      "name": "Lichbane Poison (Expert)",
+      "source": "agidm",
+      "type": "G",
+      "value": 65000,
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "An undead creature subjected to this poison must make a Constitution saving throw. On a failed save, their Intellect, Wisdom, and Charisma scores are reduced by 2 for 1 minute. At the beginning of their next turn, they must repeat the saving throw. On a failure, the effect becomes permanent and can only be cured by a greater restoration spell or similar magic.",
+        "{@b Unique Component:} Residuum.",
+        "{@b Save DC:} 17"
+      ],
+      "poisonTypes": [
+        "injury",
+        "positoxin"
+      ]
+    },
+    {
+      "name": "Liquid Mortality (Master)",
+      "source": "agidm",
+      "type": "G",
+      "value": 125000,
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "An undead creature subjected to this poison must make a Constitution saving throw. On a failed save, their Strength score is permanently reduced by 2. If this effect reduces an undead creature's Strength to 0, they are utterly destroyed, and cannot be resurrected or reanimated by any means other than a wish spell. The creature's Strength score can be restored by a greater restoration spell or similar magic.",
+        "{@b Unique Component:} Holy oil blessed by the god of death.",
+        "{@b Save DC:} 22"
+      ],
+      "poisonTypes": [
+        "injury",
+        "positoxin"
+      ]
+    },
+    {
+      "name": "Metabolite (Expert)",
+      "source": "agidm",
+      "type": "G",
+      "value": 120000,
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must make a Constitution saving throw. On a failed save, an affected target's speed is halved, it takes a -2 penalty to AC and Dexterity saving throws, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn. If the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted. A creature affected by this poison makes another Constitution saving throw at the end of each of its turns. On a successful save, the effect ends for it. On a failed save, the poison's saving throw DC decreases by 5.",
+        "{@b Unique Component:} Blood of the target creature.",
+        "{@b Save DC:} 25"
+      ],
+      "poisonTypes": [
+        "injury",
+        "banetoxin"
+      ]
+    },
+    {
+      "name": "Naga Venom",
+      "source": "agidm",
+      "type": "G",
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to the venom of a spirit naga must succeed on a Constitution saving throw, taking 31 ({@dice 7d8}) poison damage on a failed save, or half as much damage on a successful one. If the poison has been harvested from a guardian naga, this damage increases to 45 ({@dice 10d8}) and the saving throw DC increases by 2.",
+        "{@b Unique Component:} A dead or incapacitated naga.",
+        "{@b Save DC:} 13-15"
+      ],
+      "poisonTypes": [
+        "injury",
+        "venom"
+      ]
+    },
+    {
+      "name": "Pit Fiend Venom",
+      "source": "agidm",
+      "type": "G",
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must succeed on a Constitution saving throw or become {@conditon poisoned}. While poisoned in this way, the target can't regain hit points, and it takes 21 ({@dice 6d6}) poison damage at the start of each of its turns. The {@condition poisoned} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+        "{@b Unique Component:} A dead or incapacitated pit fiend.",
+        "{@b Save DC:} 21"
+      ],
+      "poisonTypes": [
+        "injury",
+        "venom"
+      ]
+    },
+    {
+      "name": "Pseudodragon Venom",
+      "source": "agidm",
+      "type": "G",
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must succeed on a Constitution saving throw or be {@condition poisoned} for 1 hour. If the saving throw fails by 5 or more, the creature is also {@condition unconscious} while {@condition poisoned} in this way. The creature wakes up if it takes damage or if another creature takes an action to shake it awake.",
+        "{@b Unique Component:} A dead or incapacitated pseudodragon.",
+        "{@b Save DC:} 11"
+      ],
+      "poisonTypes": [
+        "injury",
+        "venom"
+      ]
+    },
+    {
+      "name": "Purified Couatl Venom",
+      "source": "agidm",
+      "type": "G",
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must succeed on a Constitution saving throw or be {@condition poisoned} for 24 hours. Until this poison ends, the target is {@conditon unconscious}. Another creature can use an action to shake the target awake. This effect ignores immunity to the poisoned condition.",
+        "{@b Unique Component:} A willing couatl. (Not craftable)",
+        "{@b Save DC:} 13"
+      ],
+      "poisonTypes": [
+        "injury",
+        "venom",
+        "positoxin"
+      ]
+    },
+    {
+      "name": "Purple Worm Poison",
+      "source": "agidm",
+      "type": "G",
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must make a Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one.",
+        "{@b Unique Component:} A dead or incapacitated purple worm. (Not craftable)",
+        "{@b Save DC:} 19"
+      ],
+      "poisonTypes": [
+        "injury",
+        "venom"
+      ]
+    },
+    {
+      "name": "Scorpion Venom",
+      "source": "agidm",
+      "type": "G",
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must make a Constitution saving throw, taking 4 (1d8) poison damage on a failed save, or half as much damage on a successful one. If the poison has been harvested from a giant scorpion, the damage increases to 22 (4d10) and the saving throw DC increases by 3.",
+        "{@b Unique Component:} A dead or incapacitated scorpion. (Not craftable)",
+        "{@b Save DC:} 9-12"
+      ],
+      "poisonTypes": [
+        "injury",
+        "venom"
+      ]
+    },
+    {
+      "name": "Serpent Venom",
+      "source": "agidm",
+      "type": "G",
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must succeed on a Constitution saving throw, taking 5 (2d4) poison damage on a failed save, or half as much damage on a successful one. If the poison has been harvested from a giant poisonous snake, the damage increases to 10 (3d6) and the saving throw DC increases by 1.",
+        "{@b Unique Component:} A dead or incapacitated poisonous snake. (Not craftable)",
+        "{@b Save DC:} 10-11"
+      ],
+      "poisonTypes": [
+        "injury",
+        "venom"
+      ]
+    },
+    {
+      "name": "Spider Venom",
+      "source": "agidm",
+      "type": "G",
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must succeed on a Constitution saving throw or take 2 (1d4) poison damage. If the poison has been harvested from a giant wolf spider, the damage increases to 7 (2d6) and the saving throw DC increases to 11. Additionally, the creature takes half damage on a failed save, and if the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way. If the poison has been harvested from a giant spider, this damage increases to 9 (2d8).",
+        "{@b Unique Component:} A dead or incapacitated spider. (Not craftable)",
+        "{@b Save DC:} 10-11"
+      ],
+      "poisonTypes": [
+        "injury",
+        "venom"
+      ]
+    },
+    {
+      "name": "Sprite Poison",
+      "source": "agidm",
+      "type": "G",
+      "value": 9000,
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must succeed on a Constitution saving throw or be poisoned for 1 minute. If the saving throw fails by 5 or more, the creature is also unconscious while poisoned in this way. The creature wakes up if it takes damage or if another creature takes an action to shake it awake.",
+        "{@b Unique Component:} Sprite Recipe. (Can be learned or purchased)",
+        "{@b Save DC:} 10"
+      ],
+      "poisonTypes": [
+        "injury"
+      ]
+    },
+    {
+      "name": "Svirfneblin Poison",
+      "source": "agidm",
+      "type": "G",
+      "value": 8500,
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must succeed on a Constitution saving throw or be poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+        "{@b Unique Component:} Svirfneblin Recipe. (Can be learned or purchased)",
+        "{@b Save DC:} 12"
+      ],
+      "poisonTypes": [
+        "injury"
+      ]
+    },
+    {
+      "name": "Thri-kreen Venom",
+      "source": "agidm",
+      "type": "G",
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must succeed on a Constitution saving throw or be poisoned for 1 minute. If the saving throw fails by 5 or more, the creature is also paralyzed while poisoned in this way. The poisoned target can repeat the saving throw on each of its turns, ending the effect on itself on a success.",
+        "{@b Unique Component:} A dead or incapacitated thri-kreen. (Not craftable)",
+        "{@b Save DC:} 11"
+      ],
+      "poisonTypes": [
+        "injury",
+        "venom"
+      ]
+    },
+    {
+      "name": "Wasp's Sting",
+      "source": "agidm",
+      "type": "G",
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must succeed on a Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
+        "{@b Unique Component:} A dead or incapacitated giant wasp. (Not craftable)",
+        "{@b Save DC:} 11"
+      ],
+      "poisonTypes": [
+        "injury",
+        "venom"
+      ]
+    },
+    {
+      "name": "Witchbane Poison (Expert)",
+      "source": "agidm",
+      "type": "G",
+      "value": 35000,
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must make a Constitution saving throw. On a failed save, they lose 1d4 spell slots, starting at level 1 slots and increasing until that many spell slots have been lost. This effect ignores all magical effects that grant immunity to poison.",
+        "{@b Unique Component:} Residuum. (Can be purchased or acquired under specific conditions)",
+        "{@b Save DC:} 17"
+      ],
+      "poisonTypes": [
+        "injury"
+      ]
+    },
+    {
+      "name": "Wyvern Poison",
+      "source": "agidm",
+      "type": "G",
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must make a Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.",
+        "{@b Unique Component:} A dead or incapacitated wyvern. (Not craftable)",
+        "{@b Save DC:} 15"
+      ],
+      "poisonTypes": [
+        "injury",
+        "venom"
+      ]
+    },
+    {
+      "name": "Yuan-ti Venom",
+      "source": "agidm",
+      "type": "G",
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to the poison from a yuan-ti malison must succeed on a Constitution saving throw, taking 7 (2d6) poison damage on a failed save, or half as much damage on a successful one. If the poison has been harvested from a yuan-ti abomination, the damage increases to 10 (3d6) and the saving throw DC increases to 13.",
+        "{@b Unique Component:} A dead or incapacitated yuan-ti malison or abomination. (Not craftable)",
+        "{@b Save DC:} 11-13"
+      ],
+      "poisonTypes": [
+        "injury",
+        "venom"
+      ]
+    },
+    {
+      "name": "Zealot's Blade (Master)",
+      "source": "agidm",
+      "type": "G",
+      "value": 200000,
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must make a Constitution saving throw, taking 78 (12d12) poison damage on a failed save, or half as much damage on a successful one. This damage ignores resistances and immunities.",
+        "{@b Unique Component:} Blood of the creature's type. (Can be acquired under specific conditions)",
+        "{@b Save DC:} 25"
+      ],
+      "poisonTypes": [
+        "injury",
+        "banetoxin"
+      ]
+    },
+    {
+      "name": "Ropikai Poison",
+      "source": "agidm",
+      "type": "G",
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must make a Constitution saving throw, taking 7 (2d6) poison damage and be poisoned for 1 minute. On a success, the creature takes half the damage and isn't poisoned. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. While poisoned in this way, the creature takes 3 (1d6) poison damage at the start of each of its turns.",
+        "{@b Unique Component:} A dead or incapacitated ropikai. (Not craftable)",
+        "{@b Save DC:} 14"
+      ],
+      "poisonTypes": [
+        "injury",
+        "venom"
+      ]
+    },
+    {
+      "name": "Basic Aquatoxin (Proficient)",
+      "source": "agidm",
+      "type": "G",
+      "value": 6000,
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must succeed on a Constitution saving throw or take 2 (1d4) poison damage. If the affected creature has the natural ability to breath underwater, this damage increases to 5 (2d4) poison damage and the saving throw DC increases to 12. Once applied, the poison retains potency for 1 minute before drying.",
+        "{@b Unique Component:} Not applicable.",
+        "{@b Save DC:} 10-12"
+      ],
+      "poisonTypes": [
+        "ingested",
+        "injury",
+        "aquatoxin"
+      ]
+    },
+    {
+      "name": "Basic Banetoxin (Proficient)",
+      "source": "agidm",
+      "type": "G",
+      "value": 75000,
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must succeed on a Constitution saving throw or take 21 (6d6) poison damage. Once applied, the poison retains potency for 1 minute before drying. This effect ignores all resistances and immunities.",
+        "{@b Unique Component:} Not applicable.",
+        "{@b Save DC:} 25"
+      ],
+      "poisonTypes": [
+        "ingested",
+        "injury",
+        "banetoxin"
+      ]
+    },
+    {
+      "name": "Basic Poison (Proficient)",
+      "source": "agidm",
+      "type": "G",
+      "value": 5000,
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "A creature subjected to this poison must succeed on a Constitution saving throw or take 2 (1d4) poison damage. Once applied, the poison retains potency for 1 minute before drying.",
+        "{@b Unique Component:} Not applicable.",
+        "{@b Save DC:} 10"
+      ],
+      "poisonTypes": [
+        "ingested",
+        "injury"
+      ]
+    },
+    {
+      "name": "Basic Positoxin (Proficient)",
+      "source": "agidm",
+      "type": "G",
+      "value": 12500,
+      "rarity": "none",
+      "poison": true,
+      "entries": [
+        "An undead creature subjected to this poison must succeed on a Constitution saving throw or take 7 (2d6) radiant damage. Once applied, the poison retains potency for 1 minute before drying.",
+        "{@b Unique Component:} Not applicable.",
+        "{@b Save DC:} 10"
+      ],
+      "poisonTypes": [
+        "ingested",
+        "injury",
+        "positoxin"
+      ]
+    }
   ]
 }
