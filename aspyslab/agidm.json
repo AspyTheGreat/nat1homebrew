@@ -1102,7 +1102,7 @@
       "name": "Sprite Poison",
       "source": "agidm",
       "type": "G",
-      "value": 9000,
+      "value": 18000,
       "rarity": "none",
       "poison": true,
       "entries": [
@@ -1115,15 +1115,15 @@
       ]
     },
     {
-      "name": "Svirfneblin Poison",
+      "name": "Svirfneblin Poison (Proficient)",
       "source": "agidm",
       "type": "G",
-      "value": 8500,
+      "value": 17000,
       "rarity": "none",
       "poison": true,
       "entries": [
-        "A creature subjected to this poison must succeed on a Constitution saving throw or be poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
-        "{@b Unique Component:} Svirfneblin Recipe. (Can be learned or purchased)",
+        "A creature subjected to this poison must succeed on a Constitution saving throw or be {@condition poisoned} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+        "{@b Unique Component:} Svirfneblin Recipe.",
         "{@b Save DC:} 12"
       ],
       "poisonTypes": [
@@ -1137,8 +1137,8 @@
       "rarity": "none",
       "poison": true,
       "entries": [
-        "A creature subjected to this poison must succeed on a Constitution saving throw or be poisoned for 1 minute. If the saving throw fails by 5 or more, the creature is also paralyzed while poisoned in this way. The poisoned target can repeat the saving throw on each of its turns, ending the effect on itself on a success.",
-        "{@b Unique Component:} A dead or incapacitated thri-kreen. (Not craftable)",
+        "A creature subjected to this poison must succeed on a Constitution saving throw or be {@condition poisoned} for 1 minute. If the saving throw fails by 5 or more, the creature is also paralyzed while poisoned in this way. The {@condition poisoned} target can repeat the saving throw on each of its turns, ending the effect on itself on a success.",
+        "{@b Unique Component:} A dead or incapacitated thri-kreen.",
         "{@b Save DC:} 11"
       ],
       "poisonTypes": [
@@ -1153,8 +1153,8 @@
       "rarity": "none",
       "poison": true,
       "entries": [
-        "A creature subjected to this poison must succeed on a Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
-        "{@b Unique Component:} A dead or incapacitated giant wasp. (Not craftable)",
+        "A creature subjected to this poison must succeed on a Constitution saving throw, taking 10 ({@dice 3d6}) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but {@condition poisoned} for 1 hour, even after regaining hit points, and is {@condition paralyzed} while {@condition poisoned} in this way.",
+        "{@b Unique Component:} A dead or incapacitated giant wasp.",
         "{@b Save DC:} 11"
       ],
       "poisonTypes": [
@@ -1166,12 +1166,12 @@
       "name": "Witchbane Poison (Expert)",
       "source": "agidm",
       "type": "G",
-      "value": 35000,
+      "value": 70000,
       "rarity": "none",
       "poison": true,
       "entries": [
-        "A creature subjected to this poison must make a Constitution saving throw. On a failed save, they lose 1d4 spell slots, starting at level 1 slots and increasing until that many spell slots have been lost. This effect ignores all magical effects that grant immunity to poison.",
-        "{@b Unique Component:} Residuum. (Can be purchased or acquired under specific conditions)",
+        "A creature subjected to this poison must make a Constitution saving throw. On a failed save, they lose {@dice 1d4} spell slots, starting at level 1 slots and increasing until that many spell slots have been lost. This effect ignores all magical effects that grant immunity to poison.",
+        "{@b Unique Component:} Residuum.",
         "{@b Save DC:} 17"
       ],
       "poisonTypes": [
@@ -1185,8 +1185,8 @@
       "rarity": "none",
       "poison": true,
       "entries": [
-        "A creature subjected to this poison must make a Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.",
-        "{@b Unique Component:} A dead or incapacitated wyvern. (Not craftable)",
+        "A creature subjected to this poison must make a Constitution saving throw, taking 24 ({@dice 7d6}) poison damage on a failed save, or half as much damage on a successful one.",
+        "{@b Unique Component:} A dead or incapacitated wyvern.",
         "{@b Save DC:} 15"
       ],
       "poisonTypes": [
@@ -1201,8 +1201,8 @@
       "rarity": "none",
       "poison": true,
       "entries": [
-        "A creature subjected to the poison from a yuan-ti malison must succeed on a Constitution saving throw, taking 7 (2d6) poison damage on a failed save, or half as much damage on a successful one. If the poison has been harvested from a yuan-ti abomination, the damage increases to 10 (3d6) and the saving throw DC increases to 13.",
-        "{@b Unique Component:} A dead or incapacitated yuan-ti malison or abomination. (Not craftable)",
+        "A creature subjected to the poison from a yuan-ti malison must succeed on a Constitution saving throw, taking 7 ({@dice 2d6}) poison damage on a failed save, or half as much damage on a successful one. If the poison has been harvested from a yuan-ti abomination, the damage increases to 10 ({@dice 3d6}) and the saving throw DC increases to 13.",
+        "{@b Unique Component:} A dead or incapacitated yuan-ti malison or abomination.",
         "{@b Save DC:} 11-13"
       ],
       "poisonTypes": [
@@ -1214,12 +1214,12 @@
       "name": "Zealot's Blade (Master)",
       "source": "agidm",
       "type": "G",
-      "value": 200000,
+      "value": 400000,
       "rarity": "none",
       "poison": true,
       "entries": [
-        "A creature subjected to this poison must make a Constitution saving throw, taking 78 (12d12) poison damage on a failed save, or half as much damage on a successful one. This damage ignores resistances and immunities.",
-        "{@b Unique Component:} Blood of the creature's type. (Can be acquired under specific conditions)",
+        "A creature subjected to this poison must make a Constitution saving throw, taking 78 ({@dice 12d12}) poison damage on a failed save, or half as much damage on a successful one. This damage ignores resistances and immunities.",
+        "{@b Unique Component:} Blood of the creature's type.",
         "{@b Save DC:} 25"
       ],
       "poisonTypes": [
@@ -1234,8 +1234,8 @@
       "rarity": "none",
       "poison": true,
       "entries": [
-        "A creature subjected to this poison must make a Constitution saving throw, taking 7 (2d6) poison damage and be poisoned for 1 minute. On a success, the creature takes half the damage and isn't poisoned. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. While poisoned in this way, the creature takes 3 (1d6) poison damage at the start of each of its turns.",
-        "{@b Unique Component:} A dead or incapacitated ropikai. (Not craftable)",
+        "A creature subjected to this poison must make a Constitution saving throw, taking 7 ({@dice 2d6}) poison damage and be poisoned for 1 minute. On a success, the creature takes half the damage and isn't {@condition poisoned}. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. While {@condition poisoned} in this way, the creature takes 3 ({@dice 1d6}) poison damage at the start of each of its turns.",
+        "{@b Unique Component:} A dead or incapacitated ropikai.",
         "{@b Save DC:} 14"
       ],
       "poisonTypes": [
@@ -1247,11 +1247,11 @@
       "name": "Basic Aquatoxin (Proficient)",
       "source": "agidm",
       "type": "G",
-      "value": 6000,
+      "value": 12000,
       "rarity": "none",
       "poison": true,
       "entries": [
-        "A creature subjected to this poison must succeed on a Constitution saving throw or take 2 (1d4) poison damage. If the affected creature has the natural ability to breath underwater, this damage increases to 5 (2d4) poison damage and the saving throw DC increases to 12. Once applied, the poison retains potency for 1 minute before drying.",
+        "A creature subjected to this poison must succeed on a Constitution saving throw or take 2 ({@dice 1d4}) poison damage. If the affected creature has the natural ability to breath underwater, this damage increases to 5 ({@dice 2d4}) poison damage and the saving throw DC increases to 12. Once applied, the poison retains potency for 1 minute before drying.",
         "{@b Unique Component:} Not applicable.",
         "{@b Save DC:} 10-12"
       ],
@@ -1265,11 +1265,11 @@
       "name": "Basic Banetoxin (Proficient)",
       "source": "agidm",
       "type": "G",
-      "value": 75000,
+      "value": 150000,
       "rarity": "none",
       "poison": true,
       "entries": [
-        "A creature subjected to this poison must succeed on a Constitution saving throw or take 21 (6d6) poison damage. Once applied, the poison retains potency for 1 minute before drying. This effect ignores all resistances and immunities.",
+        "A creature subjected to this poison must succeed on a Constitution saving throw or take 21 ({@dice 6d6}) poison damage. Once applied, the poison retains potency for 1 minute before drying. This effect ignores all resistances and immunities.",
         "{@b Unique Component:} Not applicable.",
         "{@b Save DC:} 25"
       ],
@@ -1283,11 +1283,11 @@
       "name": "Basic Poison (Proficient)",
       "source": "agidm",
       "type": "G",
-      "value": 5000,
+      "value": 10000,
       "rarity": "none",
       "poison": true,
       "entries": [
-        "A creature subjected to this poison must succeed on a Constitution saving throw or take 2 (1d4) poison damage. Once applied, the poison retains potency for 1 minute before drying.",
+        "A creature subjected to this poison must succeed on a Constitution saving throw or take 2 ({@dice 1d4}) poison damage. Once applied, the poison retains potency for 1 minute before drying.",
         "{@b Unique Component:} Not applicable.",
         "{@b Save DC:} 10"
       ],
@@ -1300,11 +1300,11 @@
       "name": "Basic Positoxin (Proficient)",
       "source": "agidm",
       "type": "G",
-      "value": 12500,
+      "value": 25000,
       "rarity": "none",
       "poison": true,
       "entries": [
-        "An undead creature subjected to this poison must succeed on a Constitution saving throw or take 7 (2d6) radiant damage. Once applied, the poison retains potency for 1 minute before drying.",
+        "An undead creature subjected to this poison must succeed on a Constitution saving throw or take 7 ({@ dice 2d6}) radiant damage. Once applied, the poison retains potency for 1 minute before drying.",
         "{@b Unique Component:} Not applicable.",
         "{@b Save DC:} 10"
       ],
