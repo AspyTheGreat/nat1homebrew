@@ -5556,7 +5556,7 @@
 									"exact": 3
 								}
 							},
-							"{@item whip|phb|Whip}"
+							"{@item whip|tct|Whip}"
 						],
 						[
 							{
@@ -5565,7 +5565,7 @@
 									"exact": 4
 								}
 							},
-							"A {@item sickle|phb|Sickle}, {@item club|phb|Club} or {@item dagger|phb|Dagger}"
+							"A {@item sickle|tct|Sickle}, {@item club|tct|Club} or {@item dagger|tct|Dagger}"
 						],
 						[
 							{
@@ -5574,7 +5574,7 @@
 									"exact": 5
 								}
 							},
-							"A {@item scimitar|phb|Scimitar},{@item shortsword|phb|Shortsword}, {@item mace|phb|Mace} or {@item handaxe|phb|Handaxe}"
+							"A {@item scimitar|tct|Scimitar},{@item shortsword|tct|Shortsword}, {@item mace|tct|Mace} or {@item handaxe|tct|Handaxe}"
 						],
 						[
 							{
@@ -5583,7 +5583,7 @@
 									"exact": 6
 								}
 							},
-							"A {@item spear|phb|Spear}, {@item bill|tct|Bill} or {@item quarterstaff|phb|Quarterstaff}"
+							"A {@item spear|tct|Spear}, {@item bill|tct|Bill} or {@item quarterstaff|tct|Quarterstaff}"
 						],
 						[
 							{
@@ -7111,15 +7111,62 @@
       ],
       "entries": [
         "You draw forth a beam of elemental light and fire it at a creature you can see within range. Make a ranged spell attack to hit. You may attempt a DC 13 Intelligence (Arcana) check to choose the beam's color; otherwise, it is randomly determined. You may not attempt to create a multihued beam. The beam does {@damage 3d10} damage of a type determined by its color; the target may make a Dexterity saving throw for half damage. Roll a {@dice d8} to determine the color.",
-        "{@dice d8}\tBeam's Color",
-        "1\tRed (force damage)",
-        "2\tOrange (fire damage)",
-        "3\tYellow (acid damage)",
-        "4\tGreen (poison damage)",
-        "5\tBlue (lightning damage)",
-        "6\tIndigo (cold damage)",
-        "7\tViolet (radiant damage)",
-        "8\tMultihued; roll twice and ignore further rolls of 8.",
+        {
+					"type": "table",
+					"caption": "Echantment",
+					"colLabels": [
+						"{@dice d8}",
+						"Beam's Color",
+            "Damage Type"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-2 text-center",
+            "col-2 text-center"
+					],
+					"rows": [
+						[
+							"1",
+							"Red",
+              "Force"
+						],
+            [
+							"2",
+							"Orange",
+              "Fire"
+						],
+            [
+							"3",
+							"Yellow",
+              "Acid"
+						],
+            [
+							"4",
+							"Green",
+              "Poison"
+						],
+            [
+							"5",
+							"Blue",
+              "Lightning"
+						],
+            [
+							"6",
+							"Indigo",
+              "Cold"
+						],
+            [
+							"7",
+							"Violet",
+              "Radiant"
+						],
+            [
+							"8",
+							"Multihued",
+              "Roll twice and ignoring further rolls of 8"
+						]
+          ]
+        },
         "The beam stops once it hits a solid object, even if that object is transparent."
       ],
       "entriesHigherLevel": [
@@ -9007,7 +9054,7 @@
       ],
       "entries": [
         "You gain control of one non-instantaneous, area effect spell within range whose area is not centered on an object or a creature, such as stinking cloud or flaming sphere. When you cast spell legs, and at the beginning of each of your turns, you can move the targeted area of effect up to 20 feet in any direction.",
-        "If the original spell was not cast by a willing creature and has a duration of \"concentration\" , you must make an opposed ability check at the beginning of each of your turns, pitting your spellcasting ability against the original caster's. You can move the spell if you win the contest; otherwise, the spell behaves normally."
+        "If the original spell was not cast by a willing creature and has a duration of 'concentration' , you must make an opposed ability check at the beginning of each of your turns, pitting your spellcasting ability against the original caster's. You can move the spell if you win the contest; otherwise, the spell behaves normally."
       ],
       "level": 5,
       "name": "Spell Legs",
@@ -9109,7 +9156,8 @@
             "amount": 10,
             "type": "minute"
           },
-          "type": "timed"
+          "type": "timed",
+          "concentration":true
         }
       ],
       "entries": [
@@ -14309,7 +14357,7 @@
       "entries": [
         "This fabric rests as a pile of leaves when it is not worn. As an action, an attuned creature can will the leaves to form as armor or an item of clothing such as a scarf, a jacket, a cape or a hat if the leaves are within 30ft or doff it back to a pile of leaves to a location within 30ft.",
         "While wearing this as armor, you have a +3 bonus to Armor Class. Additionally, when in areas of thick vegetation or near a tree, you have advantage on Dexterity(stealth) check",
-        "When you take a short or long rest and when you attune to this fabric, you must choose a season to attune the fabric to. You can choose between Winter, Spring, Summer and autumn.\n\nYou get resistance of damage of a certain type associated with the fabric. Summer (Fire), Spring (Radiant), Winter (Cold), Autumn (Necrotic)",
+        "When you take a short or long rest and when you attune to this fabric, you must choose a season to attune the fabric to. You can choose between Winter, Spring, Summer and Autumn.\n\nYou get resistance of damage of a certain type associated with the fabric. Summer (Fire), Spring (Radiant), Winter (Cold), Autumn (Necrotic)",
         {
           "type": "entries",
           "name": "Plant phase",
@@ -16144,7 +16192,7 @@
 				}
 			],
 			"entries": [
-				"You have practiced extensively with a variety of weapons, gaining the following benefits:",
+				"You feel encumbered no more when donning heavy armour. It has become a second skin to you, granting you the following benefits:",
 				{
 					"type": "list",
 					"items": [
@@ -16219,8 +16267,8 @@
         ],
         "weapons": [
           "simple",
-          "{@item rapier|phb|rapiers}",
-          "{@item shortsword|phb|shortswords}"
+          "{@item rapier|tct|rapiers}",
+          "{@item shortsword|tct|shortswords}"
         ],
         "skills": [
           {
@@ -16241,19 +16289,19 @@
       "startingEquipment": {
         "additionalFromBackground": true,
         "default": [
-          "(a) a {@item rapier|phb} or (b) a {@item shortsword|phb}",
-          "(a) an {@item arcane focus|phb} or (b) a {@item component pouch|phb}",
-          "(a) an {@item entertainer's pack|phb} or (b) a {@item scholar's pack|phb}",
-          "Two {@item dagger|phb|daggers}"
+          "(a) a {@item rapier|tct} or (b) a {@item shortsword|tct}",
+          "(a) an {@item arcane focus|tct} or (b) a {@item component pouch|tct}",
+          "(a) an {@item entertainer's pack|tct} or (b) a {@item scholar's pack|tct}",
+          "Two {@item dagger|tct|daggers}"
         ],
         "goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
         "defaultData": [
           {
             "a": [
-              "rapier|phb"
+              "rapier|tct"
             ],
             "b": [
-              "shortsword|phb"
+              "shortsword|tct"
             ]
           },
           {
@@ -16870,10 +16918,10 @@
 				],
 				"weapons": [
 					"simple",
-					"{@item hand crossbow|phb}",
-					"{@item shortsword|phb}",
-					"{@item rapier|phb}",
-					"{@item whip|phb}"
+					"{@item hand crossbow|tct}",
+					"{@item shortsword|tct}",
+					"{@item rapier|tct}",
+					"{@item whip|tct}"
 				],
 				"tools": [
 					"One set of Artisan's Tools of your choice"
@@ -17417,8 +17465,8 @@
 				],
 				"weapons": [
 					"simple weapons",
-					"{@item shortsword|phb|shortswords}",
-					"{@item scimitar|phb|scimitars}"
+					"{@item shortsword|tct|shortswords}",
+					"{@item scimitar|tct|scimitars}"
 				],
 				"skills": [
 					{
@@ -17443,15 +17491,15 @@
 			"startingEquipment": {
 				"additionalFromBackground": true,
 				"default": [
-					"(a) A {@item scimitar|phb|scimitars} , {@item shortsword|phb|shortsword} or (b) a simple weapon",
+					"(a) A {@item scimitar|tct|scimitars} , {@item shortsword|tct|shortsword} or (b) {@filter a simple weapon|items|source=tct|category=basic|type=simple weapon}",
 					"(a) A dungeoneer's pack or (b) an entertainer's pack",
-					"(a) 20 {@item dart|phb|darts} or (b) 2 {@item dagger|phb|daggers}",
+					"(a) {@item dart|tct|20 darts} or (b) {@item dagger|tct|2 daggers}",
 					"One of {@item disguise kit|phb}, {@item calligrapher's supplies|phb}, {@item painter's supplies|phb}, {@item weaver's tools|phb}, {@item woodcarver's tools|phb}, {@item jeweler's tools|phb} or {@item musical instrument|phb|a musical instrument}."
 				],
 				"defaultData": [
 					{
 						"a": [
-							"a shortsword|phb or scimitar|phb"
+							"a shortsword|tct or scimitar|tct"
 						],
 						"b": [
 							{
@@ -17533,11 +17581,11 @@
 					],
 					"weapons": [
 						"simple",
-						"shortswords",
-						"scimitars"
+						"{@item shortsword|tct|shortswords}",
+						"{@item scimitar|tct|scimitars}"
 					],
 					"tools": [
-						"One of:- {@item disguise kit|phb}, {@item calligrapher's supplies|phb}, {@item painter's supplies|phb}, {@item weaver's tools}, {@item woodcarver's tools}, {@item jeweler's tools} or a {@item musical instrument|PHB|musical instrument}"
+						"One of:- {@item disguise kit|phb}, {@item calligrapher's supplies|phb}, {@item painter's supplies|phb}, {@item weaver's tools|phb}, {@item woodcarver's tools|phb}, {@item jeweler's tools|phb} or a {@item musical instrument|PHB|musical instrument}"
 					]
 				}
 			},
@@ -17653,7 +17701,7 @@
         "default": [
           "(a) a {@item mace|phb} or (b) a {@item warhammer|phb} (if proficient)",
           "(a) {@item scale mail|phb}, (b) {@item leather armor|phb}, or (c) {@item chain mail|phb} (if proficient)",
-          "(a) a {@item light crossbow|phb} and {@item Crossbow Bolts (20)|phb|20 bolts} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+          "(a) a {@item light crossbow|phb} and {@item Crossbow Bolts (20)|phb|20 bolts} or (b) any {@filter simple weapon|items|source=tct|category=basic|type=simple weapon}",
           "(a) a {@item priest's pack|phb} or (b) an {@item explorer's pack|phb}",
           "A {@item shield|phb} and a {@item holy symbol|phb}"
         ],
@@ -18462,8 +18510,8 @@
       "startingEquipment": {
         "additionalFromBackground": true,
         "default": [
-          "(a) a wooden {@item shield|phb} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
-          "(a) a {@item scimitar|phb} or (b) any {@filter simple melee weapon|items|source=phb|category=basic|type=simple weapon;melee weapon=u~u~sand}",
+          "(a) a wooden {@item shield|phb} or (b) any {@filter simple weapon|items|source=tct|category=basic|type=simple weapon}",
+          "(a) a {@item scimitar|phb} or (b) any {@filter simple melee weapon|items|source=tct|category=basic|type=simple weapon;melee weapon=u~u~sand}",
           "{@item Leather armor|phb}, an {@item explorer's pack|phb}, and a {@item druidic focus|phb}"
         ],
         "goldAlternative": "{@dice 2d4 × 10|2d4 × 10|Starting Gold}",
@@ -20367,7 +20415,7 @@
       "startingEquipment": {
         "additionalFromBackground": true,
         "default": [
-          "any two {@filter simple weapons|items|source=phb|category=basic|type=simple weapon} of your choice",
+          "any two {@filter simple weapons|items|source=tct|category=basic|type=simple weapon} of your choice",
           "a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts}",
           "(a) {@item studded leather armor|phb} or (b) {@item scale mail|phb}",
           "{@item thieves' tools|phb} and a {@item dungeoneer's pack|phb}"
@@ -20923,8 +20971,8 @@
       "startingEquipment": {
         "additionalFromBackground": true,
         "default": [
-          "(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} and a {@item shield|phb} or (b) two {@filter martial weapons|items|source=phb|category=basic|type=martial weapon}",
-          "(a) five {@item javelin|phb|javelins} or (b) any {@filter simple melee weapon|items|source=phb|category=basic|type=simple weapon;melee weapon=u~u~sand}",
+          "(a) a {@filter martial weapon|items|source=tct|category=basic|type=martial weapon} and a {@item shield|phb} or (b) two {@filter martial weapons|items|source=tct|category=basic|type=martial weapon}",
+          "(a) five {@item javelin|tct|javelins} or (b) any {@filter simple melee weapon|items|source=tct|category=basic|type=simple weapon;melee weapon=u~u~sand}",
           "(a) a {@item priest's pack|phb} or (b) an {@item explorer's pack|phb}",
           "{@item Chain mail|phb} and a {@item holy symbol|phb}"
         ],
@@ -21647,10 +21695,10 @@
         ],
         "weapons": [
           "simple",
-          "{@item hand crossbow|phb|hand crossbows}",
-          "{@item longsword|phb|longswords}",
-          "{@item rapier|phb|rapiers}",
-          "{@item shortsword|phb|shortswords}"
+          "{@item hand crossbow|tct|hand crossbows}",
+          "{@item longsword|tct|longswords}",
+          "{@item rapier|tct|rapiers}",
+          "{@item shortsword|tct|shortswords}"
         ],
         "tools": [
           "three {@item musical instrument|PHB|musical instruments} of your choice"
@@ -21669,7 +21717,7 @@
       "startingEquipment": {
         "additionalFromBackground": true,
         "default": [
-          "(a) a {@item rapier|phb}, (b) a {@item longsword|phb}, or (c) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+          "(a) a {@item rapier|phb}, (b) a {@item longsword|phb}, or (c) any {@filter simple weapon|items|source=tct|category=basic|type=simple weapon}",
           "(a) a {@item diplomat's pack|phb} or (b) an {@item entertainer's pack|phb}",
           "(a) a {@item lute|phb} or (b) any other {@filter musical instrument|items|miscellaneous=mundane|type=instrument}",
           "{@item Leather armor|phb}, and a {@item dagger|phb}"
@@ -22496,8 +22544,8 @@
       "startingEquipment": {
         "additionalFromBackground": true,
         "default": [
-          "(a) a {@item greataxe|phb} or (b) any {@filter martial melee weapon|items|source=phb|category=basic|type=martial weapon;melee weapon=u~u~sand}",
-          "(a) two {@item handaxe|phb|handaxes} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+          "(a) a {@item greataxe|tct} or (b) any {@filter martial melee weapon|items|source=tct|category=basic|type=martial weapon;melee weapon=u~u~sand}",
+          "(a) two {@item handaxe|tct|handaxes} or (b) any {@filter simple weapon|items|source=tct|category=basic|type=simple weapon}",
           "An {@item explorer's pack|phb}, and four {@item javelin|phb|javelins}"
         ],
         "goldAlternative": "{@dice 2d4 × 10|2d4 × 10|Starting Gold}",
@@ -23705,7 +23753,7 @@
       "startingProficiencies": {
         "weapons": [
           "simple",
-          "{@item shortsword|phb|shortswords}"
+          "{@item shortsword|tct|shortswords}"
         ],
         "tools": [
           "any one type of {@item artisan's tools|DRK} or any one {@item musical instrument|DRK} of your choice"
@@ -23737,15 +23785,15 @@
       "startingEquipment": {
         "additionalFromBackground": true,
         "default": [
-          "(a) a {@item shortsword|phb} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+          "(a) a {@item shortsword|tct} or (b) any {@filter simple weapon|items|source=tct|type=simple weapon}",
           "(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
-          "10 {@item dart|phb|darts}"
+          "10 {@item dart|tct|darts}"
         ],
         "goldAlternative": "{@dice 5d4|5d4|Starting Gold}",
         "defaultData": [
           {
             "a": [
-              "shortsword|phb"
+              "shortsword|tct"
             ],
             "b": [
               {
@@ -23779,7 +23827,7 @@
         "proficienciesGained": {
           "weapons": [
             "simple",
-            "{@item shortsword|phb|shortswords}"
+            "{@item shortsword|tct|shortswords}"
           ]
         }
       },
@@ -24554,9 +24602,9 @@
         "additionalFromBackground": true,
         "default": [
           "(a) {@item scale mail|phb} or (b) {@item leather armor|phb}",
-          "(a) two {@item shortsword|phb|shortswords} or (b) two {@filter simple melee weapons|items|source=phb|category=basic|type=simple weapon;melee weapon=u~u~sand}",
+          "(a) two {@item shortsword|tct|shortswords} or (b) two {@filter simple melee weapons|items|source=tct|type=simple weapon;melee weapon=u~u~sand}",
           "(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
-          "A {@item longbow|phb} and a {@item quiver|phb} of {@item arrows (20)|phb|20 arrows}"
+          "A {@item longbow|tct} and a {@item quiver|phb} of {@item arrows (20)|phb|20 arrows}"
         ],
         "goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
         "defaultData": [
@@ -24571,7 +24619,7 @@
           {
             "a": [
               {
-                "item": "shortsword|phb",
+                "item": "shortsword|tct",
                 "quantity": 2
               }
             ],
@@ -25209,10 +25257,10 @@
         ],
         "weapons": [
           "simple",
-          "{@item hand crossbow|phb|hand crossbows}",
-          "{@item longsword|phb|longswords}",
-          "{@item rapier|phb|rapiers}",
-          "{@item shortsword|phb|shortswords}"
+          "{@item hand crossbow|tct|hand crossbows}",
+          "{@item longsword|tct|longswords}",
+          "{@item rapier|tct|rapiers}",
+          "{@item shortsword|tct|shortswords}"
         ],
         "tools": [
           "{@item thieves' tools|PHB}"
@@ -25246,28 +25294,28 @@
       "startingEquipment": {
         "additionalFromBackground": true,
         "default": [
-          "(a) a {@item rapier|phb} or (b) a {@item shortsword|phb}",
-          "(a) a {@item shortbow|phb} and {@item quiver|phb} of {@item arrows (20)|phb|20 arrows} or (b) a {@item shortsword|phb}",
+          "(a) a {@item rapier|tct} or (b) a {@item shortsword|tct}",
+          "(a) a {@item shortbow|tct} and {@item quiver|phb} of {@item arrows (20)|phb|20 arrows} or (b) a {@item shortsword|tct}",
           "(a) a {@item burglar's pack|phb}, (b) a {@item dungeoneer's pack|phb}, or (c) an {@item explorer's pack|phb}",
-          "{@item Leather armor|phb}, two {@item dagger|phb|daggers}, and {@item thieves' tools|phb}"
+          "{@item Leather armor|phb}, two {@item dagger|tct|daggers}, and {@item thieves' tools|phb}"
         ],
         "goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
         "defaultData": [
           {
             "a": [
-              "rapier|phb"
+              "rapier|tct"
             ],
             "b": [
-              "shortsword|phb"
+              "shortsword|tct"
             ]
           },
           {
             "a": [
-              "shortbow|phb",
+              "shortbow|tct",
               "arrows (20)|phb"
             ],
             "b": [
-              "shortsword|phb"
+              "shortsword|tct"
             ]
           },
           {
@@ -26015,16 +26063,16 @@
       "startingEquipment": {
         "additionalFromBackground": true,
         "default": [
-          "(a) a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+          "(a) a {@item light crossbow|tct} and {@item crossbow bolts (20)|phb|20 bolts} or (b) any {@filter simple weapon|items|source=tct|category=basic|type=simple weapon}",
           "(a) a {@item component pouch|phb} or (b) an {@item arcane focus|phb}",
           "(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
-          "Two {@item dagger|phb|daggers}"
+          "Two {@item dagger|tct|daggers}"
         ],
         "goldAlternative": "{@dice 3d4 × 10|3d4 × 10|Starting Gold}",
         "defaultData": [
           {
             "a": [
-              "light crossbow|phb",
+              "light crossbow|tct",
               "crossbow bolts (20)|phb"
             ],
             "b": [
@@ -26052,7 +26100,7 @@
           {
             "_": [
               {
-                "item": "dagger|phb",
+                "item": "dagger|tct",
                 "quantity": 2
               }
             ]
@@ -27756,16 +27804,16 @@
       "startingEquipment": {
         "additionalFromBackground": true,
         "default": [
-          "(a) a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+          "(a) a {@item light crossbow|tct} and {@item crossbow bolts (20)|phb|20 bolts} or (b) any {@filter simple weapon|items|source=tct|category=basic|type=simple weapon}",
           "(a) a {@item component pouch|phb} or (b) an {@item arcane focus|phb}",
           "(a) a {@item scholar's pack|phb} or (b) a {@item dungeoneer's pack|phb}",
-          "{@item Leather armor|phb}, any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}, and two {@item dagger|phb|daggers}"
+          "{@item Leather armor|phb}, any {@filter simple weapon|items|source=tct|category=basic|type=simple weapon}, and two {@item dagger|tct|daggers}"
         ],
         "goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
         "defaultData": [
           {
             "a": [
-              "light crossbow|phb",
+              "light crossbow|tct",
               "crossbow bolts (20)|phb"
             ],
             "b": [
@@ -27797,7 +27845,7 @@
                 "equipmentType": "weaponSimple"
               },
               {
-                "item": "dagger|phb",
+                "item": "dagger|tct",
                 "quantity": 2
               }
             ]
@@ -28927,6 +28975,18 @@
 				"Upon reaching 20th level, you reach the true potential of your mind. Your Intelligence and Wisdom scores increase by 4. Your maximum for those scores is now 24."
 			]
 		},
+    {
+      "name": "Pact of the Cloak",
+      "source": "tct",
+      "isClassFeatureVariant": true,
+      "featureType": [
+        "PB"
+      ],
+      "entries": [
+        "Your grants you a cover to protect you from harm. It can take take form of a cloak, a robe or a cape. The cloak acts as mystical storage that appears non-magical to divination magic. With your hand within the cloak you may draw or stow an item no heavier than 10 lbs. and as large as can be obscured by the cloak. The cloak this way can store items upto 50 lbs. in weight. When inspected by anyone besides the pact keeper the cloak appears to be a plain piece of cloth with no trace of the items stored.",
+        "If you lose or destroy the cloak, you can perform a 1-hour ceremony to receive another from your patron. This ceremony can be performed during a rest, destroying the previous one in the process. The cloak becomes extremely brittle when you die and it's contents manifesting nearby."
+      ]
+    },
 		{
 			"name": "Spellcasting",
 			"source": "tct",
@@ -29428,7 +29488,11 @@
           "entries": [
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Pact of the chain|DRK"
+              "optionalfeature": "Pact of the Chain|DRK"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "Pact of the Cloak|tct"
             },
             {
               "type": "refOptionalfeature",
@@ -29440,11 +29504,11 @@
             },
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Pact of the tome|DRK"
+              "optionalfeature": "Pact of the Tome|DRK"
             },
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Pact of the talisman|DRK"
+              "optionalfeature": "Pact of the Talisman|DRK"
             }
           ]
         }
@@ -31167,7 +31231,7 @@
       "classSource": "DRK",
       "level": 1,
       "entries": [
-        "Your practice of martial arts gives you mastery of combat styles that use unarmed strikes and monk weapons, which are {@item shortsword|phb|shortswords} and any {@filter simple melee weapons that don't have the two-handed or heavy property|items|source=phb|category=basic|type=simple weapon;melee weapon=u~u~sand|property=!heavy;!two-handed}.",
+        "Your practice of martial arts gives you mastery of combat styles that use unarmed strikes and monk weapons, which are {@item shortsword|tct|shortswords} and any {@filter simple melee weapons that don't have the two-handed or heavy property|items|source=tct|category=basic|type=simple weapon;melee weapon=u~u~sand|property=!heavy;!two-handed}.",
         "You gain the following benefits while you are unarmed or wielding only monk weapons and you aren't wearing armor or wielding a {@item shield|phb}.",
         {
           "type": "list",
@@ -31206,7 +31270,7 @@
         {
           "type": "list",
           "items": [
-            "The weapon must be a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon|property=!heavy;!special}.",
+            "The weapon must be a {@filter simple or martial weapon|items|source=tct|category=basic|type=martial weapon;simple weapon|property=!heavy;!special}.",
             "You must be proficient with it.",
             "It must lack the heavy and special properties."
           ]
@@ -34523,7 +34587,7 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell absorb elements|xge}, {@spell armor of agathys}"
+							"{@spell absorb elements|xge}, {@spell chaos bolt|xge}"
 						],
 						[
 							"5th",
@@ -35733,7 +35797,7 @@
 			"level": 2,
 			"header": 1,
 			"entries": [
-				"You've achieved the ill-advised. You've translMagic now flows just as easy through your fists.",
+				"You've achieved the ill-advised. You've translated the magic of choreurgy to flow just as easily through your fists.",
 				{
 					"type": "list",
 					"items": [
@@ -35780,7 +35844,8 @@
 			"level": 14,
 			"header": 1,
 			"entries": [
-				"At the 14th level, When a creature within your reach misses an attack against you, you may retaliate with a cantrip loaded into an unarmed attack."
+				"At the 14th level, When a creature within your reach misses an attack against you, you may retaliate with a cantrip loaded into an unarmed attack.",
+        "You can make this attack once per turn."
 			]
 		},
 		{
@@ -35991,7 +36056,7 @@
 						"{@b Conduits}: You are immune to any effect that negates your reaction. Opportunity attacks against you are made with disadvantage and opportunity attacks you make gain advantage."
 					]
 				},
-				"Your Manipulator has now been upgraded to allow for greater precision. When making an ability check with Dexterity you may roll a {@dice 1d4} and add it to the result."
+				"Your Manipulator has now been upgraded to allow for greater precision. When making an skill check with Dexterity you may roll a {@dice 1d4} and add it to the result."
 			]
 		},
 		{
@@ -37087,7 +37152,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"You exude an aura of comradery for your companions. While within 30 feet of you they may spend a bonus action to steel themselves, granting them temporary hitpoints equal to your level as a druid. They also reeive a {@dice 1d6|d6} that they may spend to add to a skill check or saving throw that they make. The die and the temporary hit points disappear after a minute. Once gained, they must take a short rest to recieve this benefit again.",
+				"You exude an aura of comradery for your companions. While within 30 feet of you they may spend a bonus action to steel themselves, granting them temporary hitpoints equal to your level as a druid. They also receive a {@dice 1d6|d6} that they may spend to add to a skill check or saving throw that they make. The die and the temporary hit points disappear after a minute. Once gained, they must take a short rest to recieve this benefit again.",
 				"You Swarm can now incorporate avian creatures, granting it the ability to fly. A Swarm can now be summoned at a point in the air and can be moved in any direction."
 			]
 		},
@@ -43837,7 +43902,7 @@
           "type": "entries",
           "name": "Kensei Weapons",
           "entries": [
-            "Choose two types of weapons to be your kensei weapons: one melee weapon and one ranged weapon. Each of these weapons can be any {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon} that lacks the heavy and special properties. The longbow is also a valid choice. You gain proficiency with these weapons if you don't already have it. Weapons of the chosen types are monk weapons for you. Many of this tradition's features work only with your kensei weapons. When you reach 6th, 11th, and 17th level in this class, you can choose another type of weapon—either melee or ranged—to be a kensei weapon for you, following the criteria above."
+            "Choose two types of weapons to be your kensei weapons: one melee weapon and one ranged weapon. Each of these weapons can be any {@filter simple or martial weapon|items|source=tct|category=basic|type=martial weapon;simple weapon} that lacks the heavy and special properties. The longbow is also a valid choice. You gain proficiency with these weapons if you don't already have it. Weapons of the chosen types are monk weapons for you. Many of this tradition's features work only with your kensei weapons. When you reach 6th, 11th, and 17th level in this class, you can choose another type of weapon—either melee or ranged—to be a kensei weapon for you, following the criteria above."
           ]
         },
         {
@@ -48941,254 +49006,6 @@
           "The result of a failed enchantment. These weapons' blade edge throb with a volatile keenness"
         ]
       }
-    }
-  ],
-  "race": [
-    {
-      "name": "Leberi(Gelas'Bat)",
-      "source": "tct",
-      "size": [
-        "M"
-      ],
-      "speed": {
-        "walk": 35,
-        "climb": 15
-      },
-      "resist": [
-        "poison"
-      ],
-      "ability": [
-        {
-          "cha": 1,
-          "con": 2
-        }
-      ],
-      "darkvision": 60,
-      "entries": [
-        {
-          "name": "Age",
-          "type": "entries",
-          "entries": [
-            "A Leberi grows to be a teen at around the same age as humans though they age slower afterwards, living to be around 130 years old though some live upto 150 years."
-          ]
-        },
-        {
-          "name": "Alignment",
-          "type": "entries",
-          "entries": [
-            "A Leberi’s concerns tend to start and end with themselves and those of close relation when in Leberi Society, Staying neutral most of the time. When taken out of their element though, they may align extremely in any direction."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Size",
-          "entries": [
-            "Leberi Tend to be a little taller than humans on average and weigh a little less. Your size is Medium"
-          ]
-        },
-        {
-          "name": "Darkvision",
-          "entries": [
-            "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
-          ],
-          "type": "entries"
-        },
-        {
-          "name": "Pungent Blood",
-          "entries": [
-            "Your blood has the strange property of being thicker. You are resistant to Poison Damage and Immune to Diseases."
-          ],
-          "type": "entries"
-        },
-        {
-          "name": "Natural Escaladers",
-          "entries": [
-            "Your long, warped and rubbery fingers allow for a firmer grip granting you a climbing speed of 15 ft."
-          ],
-          "type": "entries"
-        },
-        {
-          "name": "Sensory Sacrifice",
-          "entries": [
-            "Depending on the circumstance of your birth you may have lost one or more senses to gain a boon granted as an eldritch invocation. This invocation must not have any prerequisites. You may lose Smell and Taste, Sight or Hearing."
-          ],
-          "type": "entries"
-        },
-        {
-          "name": "Language",
-          "entries": [
-            "You speak Liberian and 1 language of your choice."
-          ],
-          "type": "entries"
-        }
-      ]
-    },
-    {
-      "name": "Leberi(Mayra'Bat)",
-      "source": "tct",
-      "size": [
-        "M"
-      ],
-      "speed": {
-        "walk": 35,
-        "climb": 15
-      },
-      "resist": [
-        "poison"
-      ],
-      "ability": [
-        {
-          "wis": 1,
-          "con": 2
-        }
-      ],
-      "darkvision": 60,
-      "entries": [
-        {
-          "name": "Age",
-          "type": "entries",
-          "entries": [
-            "A Leberi grows to be a teen at around the same age as humans though they age slower afterwards, living to be around 130 years old though some live upto 150 years."
-          ]
-        },
-        {
-          "name": "Alignment",
-          "type": "entries",
-          "entries": [
-            "A Leberi’s concerns tend to start and end with themselves and those of close relation when in Leberi Society, Staying neutral most of the time. When taken out of their element though, they may align extremely in any direction."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Size",
-          "entries": [
-            "Leberi Tend to be a little taller than humans on average and weigh a little less. Your size is Medium"
-          ]
-        },
-        {
-          "name": "Darkvision",
-          "entries": [
-            "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
-          ],
-          "type": "entries"
-        },
-        {
-          "name": "Pungent Blood",
-          "entries": [
-            "Your blood has the strange property of being thicker. You are resistant to Poison Damage and Immune to Diseases."
-          ],
-          "type": "entries"
-        },
-        {
-          "name": "Natural Escaladers",
-          "entries": [
-            "Your long, warped and rubbery fingers allow for a firmer grip granting you a climbing speed of 15 ft."
-          ],
-          "type": "entries"
-        },
-        {
-          "name": "Sensory Sacrifice",
-          "entries": [
-            "Depending on the circumstance of your birth you may have lost one or more senses to gain a boon granted as an eldritch invocation. This invocation must not have any prerequisites. You may lose Smell and Taste, Sight or Hearing."
-          ],
-          "type": "entries"
-        },
-        {
-          "name": "Language",
-          "entries": [
-            "You speak Liberian and 1 language of your choice."
-          ],
-          "type": "entries"
-        }
-      ]
-    },
-    {
-      "name": "Half Leberi",
-      "source": "tct",
-      "size": [
-        "M"
-      ],
-      "speed": {
-        "walk": 30,
-        "swim": 15
-      },
-      "ability": [
-        {
-          "wis": 1,
-          "cha": 2
-        }
-      ],
-      "darkvision": 60,
-      "languageProficiencies": [
-        {
-          "common": true
-        }
-      ],
-      "entries": [
-        {
-          "name": "Age",
-          "type": "entries",
-          "entries": [
-            "Half-Leberi grow into their teens the same time humans do and possess some facet of their Leberi Longevity living to be around 110 years."
-          ]
-        },
-        {
-          "name": "Alignment",
-          "type": "entries",
-          "entries": [
-            "Fiercely argumentative, the Leberi tend to sit anywhere in terms of alignment except on the fence."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Size",
-          "entries": [
-            "Half Leberi are aren't too dissimilar from humans in body proportion, though they tend to be more lean. Your size is Medium."
-          ]
-        },
-        {
-          "name": "Darkvision",
-          "entries": [
-            "You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
-          ],
-          "type": "entries"
-        },
-        {
-          "name": "Sour Blood",
-          "entries": [
-            "You have advantage against saving throws involving poison damage and Disease."
-          ],
-          "type": "entries"
-        },
-        {
-          "name": "Seabound",
-          "entries": [
-            "Swimming comes naturally to you. You gain a swim speed of 15 ft."
-          ],
-          "type": "entries"
-        },
-        {
-          "name": "Skilled Artisan",
-          "entries": [
-            "You become proficient in any one skill and either one set of tools or one weapon."
-          ],
-          "type": "entries"
-        },
-        {
-          "name": "Otherworldly Trace",
-          "entries": [
-            "You can attune to 1 additional item as long as one of the items you’re attuned to is a tattoo."
-          ],
-          "type": "entries"
-        },
-        {
-          "name": "Language",
-          "entries": [
-            "Common, Leberi and one other language."
-          ],
-          "type": "entries"
-        }
-      ]
     }
   ],
   "subclass": [
@@ -55525,7 +55342,7 @@
 				{
 					"name": "Level 3: Proficiencies",
 					"entries": [
-						"It's proficient in any 5 skills of your choice of which upto 2 may be with tools and 1 has expertise. It is proficient with simple weapons and light armour."
+						"It's proficient in any 5 skills of your choice of which upto 2 may be with tools and 1 has expertise. It is proficient with {@filter simple weapons|items|source=tct|category=basic|type=simple weapon} and light armour."
 					]
 				},
 				{
@@ -55855,7 +55672,7 @@
 				{
 					"name": "Level 3: Proficiencies",
 					"entries": [
-						"It's proficient in any 2 skills of your choice amongst {@skill Investigation}, {@skill Arcana}, {@skill Insight} or {@skill Medicine}. It is proficient with simple weapons and light armour."
+						"It's proficient in any 2 skills of your choice amongst {@skill Investigation}, {@skill Arcana}, {@skill Insight} or {@skill Medicine}. It is proficient with {@filter simple weapons|items|source=tct|category=basic|type=simple weapon} and light armour."
 					]
 				},
 				{
@@ -58824,7 +58641,7 @@
 			"source": "tct",
 			"prerequisite": [
 				{
-					"pact": "blade"
+					"pact": "Blade"
 				}
 			],
 			"entries": [
@@ -58835,13 +58652,108 @@
 				"EI"
 			]
 		},
-		{
-			"name": "Imbibed Mastery",
+    {
+			"name": "Protection of the Cloak",
 			"source": "tct",
 			"prerequisite": [
 				{
-					"pact": "blade",
-					"patron": "The Archivist"
+					"pact": "Cloak"
+				}
+			],
+			"entries": [
+				"You may flip the cloak as a reaction to an attack and gain the benefit of the {@spell shield} spell. You may use this reaction a number of times equal to your proficiency bonus."
+			],
+			"featureType": [
+				"EI"
+			]
+		},
+    {
+			"name": "Shroud's Embrace",
+			"source": "tct",
+			"prerequisite": [
+				{
+					"pact": "Cloak",
+          "level":5
+				}
+			],
+			"entries": [
+				"The cloak wraps tighter and produces warmth or chill as necessary. The wearer of the cloak has resistance to cold damage. In addition, you and everything you wear and carry are unharmed by temperatures as low as -50 degrees Fahrenheit and as high as 150 fahrenheit."
+			],
+			"featureType": [
+				"EI"
+			]
+		},
+    {
+			"name": "Breakfall Veil",
+			"source": "tct",
+			"prerequisite": [
+				{
+					"pact": "Cloak",
+          "level":
+				}
+			],
+			"entries": [
+				"The wearer of the cloak descends at 60 feet per round and may move 2 feet horizontally for every foot they descend. The wearer experiences no damage from falling this way."
+			],
+			"featureType": [
+				"EI"
+			]
+		},
+    {
+			"name": "Cowl of Oblivion",
+			"source": "tct",
+			"prerequisite": [
+				{
+					"pact": "Cloak",
+          "level":10
+				}
+			],
+			"entries": [
+				"You know the spell {@spell Greater Invisibility}. For you, it is a warlock spell and it doesn't count against the limit on the number of spells you know and can cast it once without expending a warlock spell slot."
+			],
+			"featureType": [
+				"EI"
+			]
+		},
+    {
+			"name": "Mantle of Mercy",
+			"source": "tct",
+			"prerequisite": [
+				{
+					"pact": "Cloak",
+          "level":7
+				}
+			],
+			"entries": [
+				"Once per short rest, you can use a reaction to receive only half damage from an instance."
+			],
+			"featureType": [
+				"EI"
+			]
+		},
+    {
+			"name": "Cerement of Safety",
+			"source": "tct",
+			"prerequisite": [
+				{
+					"pact": "Cloak",
+          "level":7
+				}
+			],
+			"entries": [
+				"When you drop to 0 hitpoint you can with your remaining consciousness designate a place you can see within 10 feet of you. You turn {@condition invisible}, teleport there and you fall {@condition unconscious}. When you are {@condition unconscious} even when you are sleeping, you remain invisible to all besides people you have designated as allies."
+			],
+			"featureType": [
+				"EI"
+			]
+		},
+		{
+			"name": "Know Thy Blade",
+			"source": "tct",
+			"prerequisite": [
+				{
+					"pact": "Blade",
+					"level": 9
 				}
 			],
 			"entries": [
@@ -58852,7 +58764,7 @@
 			]
 		},
 		{
-			"name": "Imbibed Mastery",
+			"name": "Otherworldy Creation",
 			"source": "tct",
 			"prerequisite": [
 				{
@@ -58888,7 +58800,7 @@
 			"source": "tct",
 			"prerequisite": [
 				{
-					"pact": "talisman",
+					"pact": "Talisman",
 					"patron": "The Archivist",
 					"level": 11
 				}
@@ -58905,7 +58817,7 @@
 			"source": "tct",
 			"prerequisite": [
 				{
-					"pact": "chain",
+					"pact": "Chain",
 					"patron": "The Archivist"
 				}
 			],
@@ -58915,7 +58827,7 @@
 					"type": "list",
 					"items": [
 						"Familiars your summon now possess an Intelligence score of 17 and are sapient creatures.",
-						"You can summon {@monster inkling mascot|scc} or {@monster oblex spawn|mpmm} when you cast {@spell find familiar}.",
+						"You can summon {@creature inkling mascot|scc} or {@creature oblex spawn|mpmm} when you cast {@spell find familiar}.",
 						"When rolling for initiative you can choose have your familiar have the same initiative as you.",
 						"You can command your familiar to attack without an action."
 					]
@@ -59812,7 +59724,7 @@
     
     
     {
-      "name": "Pact of the chain",
+      "name": "Pact of the Chain",
       "source": "DRK",
       "page": 107,
       "srd": true,
@@ -59869,7 +59781,7 @@
       ]
     },
     {
-      "name": "Pact of the talisman",
+      "name": "Pact of the Talisman",
       "source": "DRK",
       "page": 71,
       "isClassFeatureVariant": true,
@@ -59882,7 +59794,7 @@
       ]
     },
     {
-      "name": "Pact of the tome",
+      "name": "Pact of the Tome",
       "source": "DRK",
       "page": 108,
       "srd": true,
