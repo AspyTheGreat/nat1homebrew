@@ -36287,7 +36287,7 @@
 			"level": 3,
 			"entries": [
 				"The creation of a Mech is a long and arduous process that takes {@dice 1d4} days to finish. Costing 50 + Artificer level times 20 gp worth of materials to create using the tools made proficient in the Tool Proficiency feature.",
-				"At the end of a long rest, you may modify a single component and fully repair the Mech, restoring all of its hit points. A short rest spent repairing the mech will restore hit points equal to half it's hit point maximum."
+				"At the end of a long rest, you may modify a single component to any applicable modification from the following lists and fully repair the Mech, restoring all of its hit points. A short rest spent repairing the mech will restore hit points equal to half it's hit point maximum."
 			]
 		},
 		{
@@ -36485,7 +36485,7 @@
 			"subclassSource": "tct",
 			"level": 3,
 			"entries": [
-				"The mech posseses two slots for weapons, Upon creation or modification you may grant it upto two different weapons designs available to you or you may fit a slot with a weapon you possess. Ammunition must be present in its storage if a weapon requires it but it ignores any 'Loading' property. When 'Empowered', you may use the Mech's action to make an attack with one of them Using your Intelligence Modifier, instead of Strength or Dexterity modifier, for the attack and damage rolls. ",
+				"The mech posseses two slots for weapons, Upon creation or modification you may fit upto two of the following weapons or you may fit a slot with a weapon you possess. Ammunition must be present in its storage if a weapon requires it but it ignores any 'Loading' property. When 'Empowered', you may use the Mech's action to make an attack with one of them Using your Intelligence Modifier, instead of Strength or Dexterity modifier, for the attack and damage rolls.",
 				"Weapon designs installed on the Mech can be infused with infusions with the Weapon requirement. The following is a list of the weapon designs available to a Mechanut.:-",
 				{
 					"type": "table",
@@ -58725,7 +58725,6 @@
 				}
 			],
 			"entries": [
-				"{@i Requires Infusion}",
 				"An upgrade of the {@optfeature Sabre|tct}. It now deals an additional {@damage 1d8} fire or lightning damage (decided on hit)."
 			],
 			"featureType": [
@@ -58743,7 +58742,6 @@
 				}
 			],
 			"entries": [
-				"{@i Requires Infusion}",
 				"An upgrade of the {@optfeature Scutum|tct}. It now deals {@damage 1d8} bludgeoning damage to a creature and grants the next attack made against it advantage before the start of the creatures turn.",
 				"As a reaction to an ally within 5 of you getting attacked, you can add the barriers AC bonus to the creature's AC."
 			],
@@ -58762,7 +58760,6 @@
 				}
 			],
 			"entries": [
-				"{@i Requires Infusion}",
 				"An upgrade of the {@optfeature Pincers|tct}. It's reach increases by a further 5 feet. It's damage increases to {@damage 1d10} and a grappled creature takes lightning damage equal to your Intelligence modifier at the start of it's turn."
 			],
 			"featureType": [
@@ -58780,7 +58777,6 @@
 				}
 			],
 			"entries": [
-				"{@i Requires Infusion}",
 				"An upgrade of the {@optfeature Bolts|tct}. It now deals {@damage 1d10} damage on a hit. Once per turn when you hit a creature with this weapon you can force it to make a Strength Saving Throw, being either pushed away by 15 feet or falling {@condition prone} pm a failure."
 			],
 			"featureType": [
@@ -58798,7 +58794,7 @@
 				}
 			],
 			"entries": [
-				"{@i Requires Infusion}",
+				"{@i Requires two weapon slots}",
 				"An upgrade of the {@optfeature DK Beam|tct}. The weapon now deals an additional {@damage 1d6} damage and can change its damage type to radiant on any attack."
 			],
 			"featureType": [
@@ -58816,7 +58812,7 @@
 				}
 			],
 			"entries": [
-				"{@i Requires Infusion}",
+				"{@i Requires two weapon slots}",
 				"An upgrade of the {@optfeature Rolling Guns|tct}. It no longer has its's bonus action attack. Instead, Once on your turn when you make an attack with this weapon, you can make an additional attack with it as part of the attack."
 			],
 			"featureType": [
