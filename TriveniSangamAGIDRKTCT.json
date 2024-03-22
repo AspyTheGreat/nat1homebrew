@@ -28975,18 +28975,6 @@
 				"Upon reaching 20th level, you reach the true potential of your mind. Your Intelligence and Wisdom scores increase by 4. Your maximum for those scores is now 24."
 			]
 		},
-    {
-      "name": "Pact of the Cloak",
-      "source": "tct",
-      "isClassFeatureVariant": true,
-      "featureType": [
-        "PB"
-      ],
-      "entries": [
-        "Your grants you a cover to protect you from harm. It can take take form of a cloak, a robe or a cape. The cloak acts as mystical storage that appears non-magical to divination magic. With your hand within the cloak you may draw or stow an item no heavier than 10 lbs. and as large as can be obscured by the cloak. The cloak this way can store items upto 50 lbs. in weight. When inspected by anyone besides the pact keeper the cloak appears to be a plain piece of cloth with no trace of the items stored.",
-        "If you lose or destroy the cloak, you can perform a 1-hour ceremony to receive another from your patron. This ceremony can be performed during a rest, destroying the previous one in the process. The cloak becomes extremely brittle when you die and it's contents manifesting nearby."
-      ]
-    },
 		{
 			"name": "Spellcasting",
 			"source": "tct",
@@ -58636,6 +58624,18 @@
 				"MMod"
 			]
 		},
+    {
+      "name": "Pact of the Cloak",
+      "source": "tct",
+      "isClassFeatureVariant": true,
+      "featureType": [
+        "PB"
+      ],
+      "entries": [
+        "Your grants you a cover to protect you from harm. It can take take form of a cloak, a robe or a cape. The cloak acts as mystical storage that appears non-magical to divination magic. With your hand within the cloak you may draw or stow an item no heavier than 10 lbs. and as large as can be obscured by the cloak. The cloak this way can store items upto 50 lbs. in weight. When inspected by anyone besides the pact keeper the cloak appears to be a plain piece of cloth with no trace of the items stored.",
+        "If you lose or destroy the cloak, you can perform a 1-hour ceremony to receive another from your patron. This ceremony can be performed during a rest, destroying the previous one in the process. The cloak becomes extremely brittle when you die and it's contents manifesting nearby."
+      ]
+    },
 		{
 			"name": "Twice Armed",
 			"source": "tct",
