@@ -58672,8 +58672,7 @@
 			"source": "tct",
 			"prerequisite": [
 				{
-					"pact": "Cloak",
-          "level":5
+					"pact": "Cloak"
 				}
 			],
 			"entries": [
@@ -58689,7 +58688,7 @@
 			"prerequisite": [
 				{
 					"pact": "Cloak",
-          "level":
+          "level":5
 				}
 			],
 			"entries": [
@@ -64250,7 +64249,7 @@
 			"type": "GV",
 			"rarity": "varies",
 			"entries": [
-				"BBBB"
+				""
 			],
 			"items": [
 				"Gloves of Embers|tct",
