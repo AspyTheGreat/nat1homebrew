@@ -557,6 +557,512 @@
         "strength",
         "wisdom"
       ]
+    },
+    {
+      "name": "The Void Walker",
+      "source": "agidm",
+      "size": [
+        "M"
+      ],
+      "type": {
+        "type": "undead",
+        "tags": []
+      },
+      "alignment": [
+        "Chaotic Evil"
+      ],
+      "ac": [
+        {
+          "ac": 19,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "30d8 + 90",
+        "average": 225
+      },
+      "speed": {
+        "walk": 30,
+        "climb": 30
+      },
+      "str": 18,
+      "dex": 17,
+      "con": 16,
+      "int": 12,
+      "wis": 15,
+      "cha": 20,
+      "save": {
+        "dex": "+8",
+        "con": "+8",
+        "wis": "+7",
+        "cha": "+10"
+      },
+      "skill": {
+        "stealth": "+14",
+        "perception": "+12"
+      },
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "passive": 22,
+      "immune": [
+        "necrotic",
+        "poison",
+        {
+          "immune": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks",
+          "cond": true
+        }
+      ],
+      "conditionImmune": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "paralyzed",
+        "poisoned"
+      ],
+      "cr": "16",
+      "trait": [
+        {
+          "name": "Corrosive Touch",
+          "entries": [
+            "Any creature that touches The Void Walker or hits it with a melee attack while within 5 feet takes 10 (3d6) acid damage."
+          ]
+        },
+        {
+          "name": "Phase Through",
+          "entries": [
+            "As a bonus action, The Void Walker can phase through solid objects and move up to its speed without provoking opportunity attacks. It can remain within objects at the end of this move without harm."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The Void Walker makes two attacks with its Corrosive Grasp."
+          ]
+        },
+        {
+          "name": "Corrosive Grasp",
+          "entries": [
+            "{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}22 ({@dice 4d8 + 4}) acid damage. If the target is a creature, it must succeed on a DC 18 Constitution saving throw or take 14 ({@dice 4d6}) acid damage at the start of each of its turns due to a corrosive wound. Any creature can take an action to wipe off the acid, ending this effect."
+          ]
+        },
+        {
+          "name": "Pocket Dimension",
+          "entries": [
+            "Recharge 5-6. The Void Walker targets one creature it can see within 30 feet. The target must succeed on a DC 18 Wisdom saving throw or be moved through a wall."
+          ]
+        }
+      ],
+      "legendary": [
+        {
+          "name": "Attack",
+          "entries": [
+            "The Void Walker makes one Corrosive Grasp attack."
+          ]
+        },
+        {
+          "name": "Move",
+          "entries": [
+            "The Void Walker moves up to half its speed."
+          ]
+        },
+        {
+          "name": "Phase Through (Costs 2 Actions)",
+          "entries": [
+            "The Void Walker uses its Phase Through ability."
+          ]
+        }
+      ],
+      "environment": [
+        "any"
+      ],
+      "traitTags": [],
+      "senseTags": [
+        "D"
+      ],
+      "actionTags": [],
+      "damageTags": [
+        "A"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "conditionInflict": [
+        "paralyzed"
+      ],
+      "savingThrowForced": [
+        "constitution",
+        "wisdom"
+      ]
+    },
+    {
+      "name": "The Infinite Serpent",
+      "source": "agidm",
+      "size": [
+        "G"
+      ],
+      "type": {
+        "type": "monstrosity",
+        "tags": [
+          {
+            "tag": "titanic",
+            "prefix": "Primordial"
+          }
+        ]
+      },
+      "alignment": [
+        "NE"
+      ],
+      "ac": [
+        {
+          "ac": 22,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "20d20 + 140",
+        "average": 350
+      },
+      "speed": {
+        "walk": 20,
+        "swim": 80
+      },
+      "str": 30,
+      "dex": 14,
+      "con": 25,
+      "int": 18,
+      "wis": 23,
+      "cha": 20,
+      "save": {
+        "dex": "+9",
+        "con": "+14",
+        "wis": "+13",
+        "cha": "+12"
+      },
+      "skill": {
+        "perception": "+20",
+        "stealth": "+9"
+      },
+      "senses": [
+        "truesight 120 ft."
+      ],
+      "passive": 30,
+      "immune": [
+        "cold",
+        "psychic",
+        {
+          "immune": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks",
+          "cond": true
+        }
+      ],
+      "conditionImmune": [
+        "charmed",
+        "frightened",
+        "paralyzed"
+      ],
+      "cr": "20",
+      "trait": [
+        {
+          "name": "Bathed in the Styx",
+          "entries": [
+            "Any creature that starts its turn within 60 feet of The Infinite Serpent must make a DC 20 Wisdom saving throw or lose thier concentration as droplets from the styx cause it to forget."
+          ]
+        },
+        {
+          "name": "The Infinite Serpent",
+          "entries": [
+            "Every instance of damage dealt to the infinite serpent will increase its size by 5ft and its Hitpoints increase by 20."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The Infinite Serpent makes three attacks: one with its bite and two with its tail."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 17} to hit, reach 15 ft., one target. {@h}36 ({@dice 4d12 + 10}) piercing damage plus 18 ({@dice 4d8}) psychic damage."
+          ]
+        },
+        {
+          "name": "Tail",
+          "entries": [
+            "{@atk mw} {@hit 17} to hit, reach 20 ft., one target. {@h}28 ({@dice 3d12 + 10}) bludgeoning damage, and the target must succeed on a DC 22 Strength saving throw or be knocked prone."
+          ]
+        },
+        {
+          "name": "Forget {@recharge 5}",
+          "entries": [
+            "The Infinite Serpent targets one creature it can see within 60 feet. The target must succeed on a DC 22 Wisdom saving throw or take 55 (10d10) psychic damage and become stunned for 1 minute as their memories are drained. The last class feature it used is removed from its memory for the next 1 hour. Target can make a Wis save at the end of thier turns to try and remember. "
+          ]
+        }
+      ],
+      "legendary": [
+        {
+          "name": "Detect",
+          "entries": [
+            "The Infinite Serpent makes a Wisdom (Perception) check."
+          ]
+        },
+        {
+          "name": "Tail Attack",
+          "entries": [
+            "The Infinite Serpent makes a tail attack."
+          ]
+        },
+        {
+          "name": "Muddled Thoughts (Costs 2 Actions)",
+          "entries": [
+            "The Infinite Serpent targets one creature it can see within 60 feet, filling its mind with fleeting, confusing thoughts. The target must succeed on a DC 22 Wisdom saving throw or have their thoughts muddled. On a failed save, the target takes a -{@dice 2d6} penalty to their next {@dice d20} roll (attack roll, ability check, or saving throw) as the confusing thoughts momentarily cloud their judgement and focus."
+          ]
+        }
+      ],
+      "environment": [
+        "any"
+      ],
+      "traitTags": [],
+      "senseTags": [
+        "TS"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B",
+        "P",
+        "Y"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ],
+      "conditionInflict": [
+        "prone",
+        "stunned"
+      ],
+      "savingThrowForced": [
+        "str",
+        "wis"
+      ]
+    },
+    {
+      "name": "Nebularith, The Void Dragon",
+      "source": "agidm",
+      "page": 138,
+      "size": [
+        "G"
+      ],
+      "type": "dragon",
+      "alignment": [
+        "C",
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 35,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "5640d10",
+        "average": 31020
+      },
+      "speed": {
+        "fly": {
+          "number": 28200000000000000,
+          "condition": "(hover)"
+        },
+        "canHover": true,
+        "walk": 28200000000000000
+      },
+      "str": 50,
+      "dex": 40,
+      "con": 50,
+      "int": 50,
+      "wis": 32,
+      "cha": 35,
+      "senses": [
+        "blindsight 60 ft.",
+        "darkvision 120 ft.",
+        "truesight 28200000000000000 ft."
+      ],
+      "passive": 49,
+      "immune": [
+        "cold",
+        "fire"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "frightened"
+      ],
+      "languages": [
+        "Celestial",
+        "Common",
+        "Draconic",
+        "Infernal",
+        "Primordial",
+        "Void Speech"
+      ],
+      "trait": [
+        {
+          "name": "Chill of the Void",
+          "entries": [
+            "Cold damage dealt by the void dragon ignores resistance and immunity to cold damage."
+          ]
+        },
+        {
+          "name": "Heat Death",
+          "entries": [
+            "When the void dragon is killed it explodes in a swath of celestial destruction. Each creature and object within 1 lightyear of the dragon take 1100 ({@damage 200d10}) bludgeoning damage, 1100 ({@damage 200d10}) cold damage, and 1100 ({@damage 200d10}) psychic damage. Each damage type can be reduced by half with a successful {@dc 42} saving throw: Dexterity vs. bludgeoning, Constitution vs. cold, and Wisdom vs. psychic. Additionally, a creature that fails two or three of the saving throws is affected by a plane shift spell and sent to a random plane. If it is sent to the plane it currently occupies, it appears {@dice 5d100} miles away in a random direction."
+          ]
+        },
+        {
+          "name": "Legendary Resistance (15/Day)",
+          "entries": [
+            "If the dragon fails a saving throw, it can choose to succeed instead."
+          ]
+        },
+        {
+          "name": "Galaxy of Stars",
+          "entries": [
+            "A void dragon is a collection of an entire galaxy of Stars. Its size is incomprehensible and any part of it can be attacked. A meteorite, an asteroid, everything within the space of the void dragon will affect it.  "
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The dragon can use its Aura of Madness. It then makes 8 attacks: 4 toss meteors, 2 toss asteroids, 1 toss moon, 1 toss planet."
+          ]
+        },
+        {
+          "name": "Aura of Madness",
+          "entries": [
+            "Each creature of the dragon's choice that is within its space must succeed on a {@dc 42} Wisdom saving throw or become afflicted with a long term {@variantrule madness} for 1 minute. A creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. "
+          ]
+        },
+        {
+          "name": "Toss Meteor",
+          "entries": [
+            "{@atk rw} {@hit 29} to hit, unlimited range, one target. {@h}70 ({@damage 20d6 + 15}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Stellar Flare {@recharge 5}",
+          "entries": [
+            "As an action, the Void Dragon opens a transient portal directly to a star's core, visible within a 150-foot radius centered on a point the dragon can see within 500 feet. Brilliant solar energy and magnetic storms pour through the portal, engulfing the area in a devastating solar flare. Each creature in that area must make a {@dc 42} Dexterity saving throw.",
+            "On a failed save, a creature takes 150 ({@damage 30d10}) fire damage and 150 ({@damage 30d10}) radiant damage, and is {@condition blinded} for 1 minute. On a successful save, a creature takes half damage and isn’t {@condition blinded}. The intense flare also ignites flammable objects in the area that aren’t being worn or carried, and the ground becomes scorched earth, making it difficult terrain."
+          ]
+        },
+        {
+          "name": "Toss Asteroid",
+          "entries": [
+            "{@atk rw} {@hit 29} to hit, unlimited range, one target. {@h}125 ({@damage 20d10 + 15}) bludgeoning damage, plus 35 ({@damage 10d6}) fire damage."
+          ]
+        },
+        {
+          "name": "Toss Moon",
+          "entries": [
+            "{@atk rw} {@hit 29} to hit, unlimited range, one target. {@h}210 ({@damage 30d12 + 15}) bludgeoning damage, plus 82 ({@damage 15d10}) fire damage."
+          ]
+        },
+        {
+          "name": "Toss Planet",
+          "entries": [
+            "{@atk rw} {@hit 29} to hit, unlimited range, one target. {@h}435 ({@damage 40d20 + 15}) bludgeoning damage, plus 195 ({@damage 30d12}) fire damage."
+          ]
+        }
+      ],
+      "environment": [
+        "badlands",
+        "mountain"
+      ],
+      "dragonAge": "ancient",
+      "traitTags": [
+        "Legendary Resistances"
+      ],
+      "senseTags": [
+        "B",
+        "SD",
+        "U"
+      ],
+      "actionTags": [
+        "Breath Weapon",
+        "Multiattack",
+        "Teleport"
+      ],
+      "languageTags": [
+        "CE",
+        "C",
+        "DR",
+        "I",
+        "P"
+      ],
+      "miscTags": [
+        "RW",
+        "AOE"
+      ],
+      "conditionInflict": [
+        "blinded"
+      ],
+      "cr": {
+        "cr": "50",
+        "xp": 0
+      },
+      "save": {
+        "int": "+34",
+        "cha": "+26",
+        "wis": "+25"
+      },
+      "skill": {
+        "athletics": "+34",
+        "insight": "+25",
+        "perception": "+39",
+        "nature": "+34",
+        "stealth": "+43"
+      },
+      "damageTagsLegendary": [
+        "C",
+        "O"
+      ],
+      "savingThrowForcedLegendary": [
+        "constitution",
+        "strength"
+      ],
+      "damageTags": [
+        "B",
+        "C",
+        "F",
+        "R",
+        "Y"
+      ],
+      "savingThrowForced": [
+        "dexterity",
+        "wisdom"
+      ]
     }
   ],
   "item": [
@@ -1313,6 +1819,162 @@
         "injury",
         "positoxin"
       ]
+    }
+  ],
+  "spell": [
+    {
+      "name": "Deep Ethereal Tunnel",
+      "source": "agidm",
+      "level": 10,
+      "school": "E",
+      "time": [
+        {
+          "number": 8,
+          "unit": "hour"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a gemstone formed from the heart of a dying world, worth at least 50,000 gp, which the spell consumes"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "You channel destructive energy to tear the very fabric of space on a surface you touch, creating a permanent rift 10ft in radius to another plane of existence. While casting this spell, roll an ability check with your spellcasting ability. On a 20 or higher, you can choose the connecting plane. Otherwise, the plane is chosen the randomly or decided by the DM."
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Delete Fate",
+      "source": "agidm",
+      "level": 10,
+      "school": "N",
+      "time": [
+        {
+          "number": 1,
+          "unit": "minute"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "an object tied to the target's soul, worth at least 100,000 gp"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "You touch a creature and erase it from existence. The target is removed from the fabric of reality, forgotten by all."
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Plane",
+      "source": "agidm",
+      "level": 10,
+      "school": "C",
+      "time": [
+        {
+          "number": 1,
+          "unit": "week"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "miles",
+          "amount": 1
+        }
+      },
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a piece of creation or internal void energy, and a sacrifice of the caster's own life force worth 5 times thier hitpoint maximum, over the course of the period of casting."
+      },
+      "duration": [
+        {
+          "type": "permanent"
+        }
+      ],
+      "entries": [
+        "The spell creates a new, self-sustaining pocket dimension according to the caster's desires, ranging from a paradise to a fortress. This dimension is accessible only through a portal at a fixed location chosen at the time of casting. The caster can define the laws of physics, creatures, and geography within this dimension. Upon completion, the caster's life force is tied to the existence of this dimension, granting them god-like control within its bounds but also linking their life to its continuity."
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          }
+        ]
+      }
     }
   ]
 }
