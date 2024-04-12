@@ -1063,6 +1063,303 @@
         "dexterity",
         "wisdom"
       ]
+    },
+    {
+      "name": "Angel of Judgment",
+      "group": [
+        "Angels"
+      ],
+      "source": "agidm",
+      "page": 16,
+      "size": [
+        "H"
+      ],
+      "type": "celestial",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 27,
+          "from": [
+            "Divine Cloak"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "20d100 + 175",
+        "average": 1185
+      },
+      "speed": {
+        "fly": 120,
+        "walk": 40
+      },
+      "str": 23,
+      "dex": 18,
+      "con": 25,
+      "int": 22,
+      "wis": 24,
+      "cha": 20,
+      "save": {
+        "wis": "+14",
+        "con": "+14",
+        "int": "+13",
+        "cha": "+12"
+      },
+      "skill": {
+        "history": "+12",
+        "investigation": "+12",
+        "perception": "+13",
+        "religion": "+12",
+        "athletics": "+13"
+      },
+      "senses": [
+        "truesight 120 ft."
+      ],
+      "passive": 23,
+      "resist": [
+        "necrotic",
+        "poison",
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks.",
+          "cond": true
+        }
+      ],
+      "conditionImmune": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "grappled",
+        "unconscious"
+      ],
+      "languages": [
+        "all",
+        "telepathy 120 ft."
+      ],
+      "cr": "22",
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "type": "spellcasting",
+          "headerEntries": [
+            "The angel of judgment's spellcasting ability is Charisma (spell save {@dc 19}). The angel can cast the following spells, requiring no material components:"
+          ],
+          "will": [
+            "{@spell detect evil and good}",
+            "{@spell detect magic}",
+            "{@spell detect thoughts}",
+            "{@spell invisibility} (self only)"
+          ],
+          "daily": {
+            "3e": [
+              "{@spell calm emotions}",
+              "{@spell dispel evil and good}",
+              "{@spell speak with dead}"
+            ],
+            "1e": [
+              "{@spell divine word}",
+              "{@spell holy aura}",
+              "{@spell raise dead}"
+            ]
+          },
+          "ability": "cha"
+        }
+      ],
+      "trait": [
+        {
+          "name": "Change Face",
+          "entries": [
+            "As a bonus action, the angel of judgment can change its face and demeanor to exhibit aspects of chaos or law, as needed by its assignment. It can have only one face active at a time and can end the effect on its turn as a bonus action.",
+            {
+              "type": "list",
+              "items": [
+                {
+                  "type": "item",
+                  "name": "Face of Chaos.",
+                  "entry": "The angel of judgment becomes a harbinger of chaos. It is treated as a fiend by spells and other magical effects that affect fiends and has advantage on attack rolls against celestials and devils."
+                },
+                {
+                  "type": "item",
+                  "name": "Face of Law.",
+                  "entry": "The angel becomes a harbinger of law and has advantage on attack rolls against demons, fey, and undead."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Divine Awareness",
+          "entries": [
+            "The angel of judgment knows if it hears a lie."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The angel of judgement has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Penance Gaze",
+          "entries": [
+            "When a creature that can see the angel of judgment's eyes starts its turn within 30 feet of the angel, the angel can force it to make a {@dc 22} Wisdom saving throw if the angel isn't {@skill incapacitated} and can see the creature. On a failure, the creature is {@condition stunned} until the start of its next turn. On a success, the creature is {@condition restrained}.",
+            "Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the angel until the start of its next turn, when it can avert its eyes again. If the creature looks at the angel in the meantime, it must immediately make the save."
+          ]
+        },
+        {
+          "name": "Weapons of Balance",
+          "entries": [
+            "The angel of judgment's weapon attacks are magical. When the angel of judgment hits with any weapon, the weapon deals an extra {@damage 6d8} force damage (included in the attack)."
+          ]
+        },
+        {
+          "name": "Limited Magic Immunity",
+          "entries": [
+            "The angel of judgment can't be affected or detected by spells of 6th level or lower unless it wishes to be. It has advantage on saving throws against all other spells and magical effects."
+          ]
+        },
+        {
+          "name": "Divine Retribution",
+          "entries": [
+            "Whenever a creature hits you with an attack, it takes radiant damage equal to half the damage you take from the attack."
+          ]
+        },
+        {
+          "name": "Legendary Resistance (3/Day)",
+          "entries": [
+            "If the angel of judgment fails a saving throw, it can choose to succeed instead."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The angel of judgment makes three attacks."
+          ]
+        },
+        {
+          "name": "Greataxe",
+          "entries": [
+            "{@atk mw} {@hit +15} to hit, reach 10 ft., one target. {@h}25 ({@damage 4d12 + 6}) slashing damage plus 27 ({@damage 6d8}) force damage."
+          ]
+        }
+      ],
+      "environment": [
+        "planar"
+      ],
+      "tokenHref": {
+        "type": "external",
+        "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2/creature/token/Angel%20of%20Judgment%20%28Token%29.png"
+      },
+      "attachedItems": [
+        "greataxe|phb"
+      ],
+      "traitTags": [
+        "Legendary Resistances",
+        "Magic Resistance"
+      ],
+      "senseTags": [
+        "U"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "languageTags": [
+        "XX",
+        "TP"
+      ],
+      "spellcastingTags": [
+        "I"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "MLW"
+      ],
+      "conditionInflict": [
+        "restrained",
+        "stunned"
+      ],
+      "conditionInflictSpell": [
+        "blinded",
+        "deafened",
+        "invisible",
+        "stunned"
+      ],
+      "fluff": {
+        "entries": [
+          {
+            "type": "entries",
+            "entries": [
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "quote",
+                    "entries": [
+                      "With faces of light and stern appraisal, these angels see both sides and render a verdict."
+                    ]
+                  },
+                  "Angels of judgment are cosmic agents of balance. Unlike most angels, they exist to enforce equality between law and chaos. They prefer to solve disputes verbally but use force when prudent.",
+                  {
+                    "type": "entries",
+                    "name": "Two-Faced",
+                    "entries": [
+                      "Each angel of judgment bears two aspects: a dispassionate angel and a fiendish judge. When called to violence by the heavenly host or infernal legions, its dispassionate face changes to that of an avenging angel."
+                    ]
+                  },
+                  {
+                    "type": "entries",
+                    "name": "Witnesses to History",
+                    "entries": [
+                      "In times of turmoil and upheaval, angels of judgment watch over events. While observing, the angel is a stoic spectator, intervening only if it sees a threat to universal harmony. Even then, they prefer to send {@creature sammael|CCodex|sammael angels} ({@loader Creature Codex|collection/Kobold Press; Creature Codex.json}) to carry out their judgments, taking direct action only against the direst of threats."
+                    ]
+                  },
+                  {
+                    "type": "entries",
+                    "name": "Cosmic Arbiters",
+                    "entries": [
+                      "Angels of judgment arbitrate claims between the lords of righteousness and the masters of madness. If either party violates the terms, the angel destroys the offender and patiently waits for a new representative to take their place. Immortal Nature. An angel of judgment doesn't require food, drink, or sleep."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2/creature/Angel%20of%20Judgment.webp"
+            },
+            "width": 688,
+            "height": 1026
+          }
+        ]
+      },
+      "immune": [
+        "radiant"
+      ],
+      "damageTags": [
+        "O",
+        "S"
+      ],
+      "savingThrowForced": [
+        "wisdom"
+      ],
+      "savingThrowForcedSpell": [
+        "charisma",
+        "constitution",
+        "wisdom"
+      ]
     }
   ],
   "item": [
