@@ -1,5 +1,4 @@
 {
-  "siteVersion": "1.200.0",
   "_meta": {
     "sources": [
       {
@@ -9,7 +8,7 @@
         ],
         "color": "1D8913",
         "convertedBy": [],
-        "full": "Aspy's Guide to Infinitum_DM_CUT",
+        "full": "AGI_DM_CUT",
         "json": "agidm"
       }
     ],
@@ -291,7 +290,8 @@
             "credit": "Cory Trego-Erdner"
           }
         ]
-      }
+      },
+      "uniqueId": "cf26e9d2-d8b2-4b17-be45-f653155b9303"
     },
     {
       "name": "Astral Tarrasque",
@@ -556,7 +556,8 @@
       "savingThrowForced": [
         "strength",
         "wisdom"
-      ]
+      ],
+      "uniqueId": "c6aeaa7e-1516-4550-8228-9e8fdeae422f"
     },
     {
       "name": "The Void Walker",
@@ -702,7 +703,8 @@
       "savingThrowForced": [
         "constitution",
         "wisdom"
-      ]
+      ],
+      "uniqueId": "89b1be8b-868e-450b-be9e-9970e1ac6af1"
     },
     {
       "name": "The Infinite Serpent",
@@ -863,7 +865,8 @@
       "savingThrowForced": [
         "str",
         "wis"
-      ]
+      ],
+      "uniqueId": "a9be5f03-8304-443b-8dff-a2bf0530ffab"
     },
     {
       "name": "Nebularith, The Void Dragon",
@@ -891,11 +894,11 @@
       },
       "speed": {
         "fly": {
-          "number": 28200000000000000,
+          "number": 28200,
           "condition": "(hover)"
         },
         "canHover": true,
-        "walk": 28200000000000000
+        "walk": 28200
       },
       "str": 50,
       "dex": 40,
@@ -1062,7 +1065,8 @@
       "savingThrowForced": [
         "dexterity",
         "wisdom"
-      ]
+      ],
+      "uniqueId": "91516a38-0b14-4008-8188-044fb2152079"
     },
     {
       "name": "Angel of Judgment",
@@ -1359,10 +1363,804 @@
         "charisma",
         "constitution",
         "wisdom"
+      ],
+      "uniqueId": "6cf24b91-6a4d-4203-a153-9e7dcb1cf8fa"
+    },
+    {
+      "name": "Asteroid Roper",
+      "source": "agidm",
+      "size": [
+        "G"
+      ],
+      "type": "monstrosity",
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 24,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 310,
+        "formula": "23d20 + 115"
+      },
+      "speed": {
+        "fly": 30,
+        "hover": true
+      },
+      "str": 23,
+      "dex": 18,
+      "con": 20,
+      "int": 7,
+      "wis": 16,
+      "cha": 10,
+      "save": {
+        "con": "+11",
+        "wis": "+9",
+        "cha": "+6"
+      },
+      "skill": {
+        "perception": "+9",
+        "stealth": "+16",
+        "athletics": "+18"
+      },
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "passive": 19,
+      "cr": "18",
+      "trait": [
+        {
+          "name": "Asteroid Camouflage",
+          "entries": [
+            "The Asteroid Roper has advantage on Stealth checks made to hide on rocky or celestial terrain."
+          ]
+        },
+        {
+          "name": "Gravitational Pull",
+          "entries": [
+            "Any creature that starts its turn within 60 feet of the Asteroid Roper must succeed on a {@dc 20} Strength saving throw or have its speed reduced to 0 until the start of its next turn as they are pulled toward the Roper."
+          ]
+        },
+        {
+          "name": "Starlight Regeneration",
+          "entries": [
+            "The Asteroid Roper regains 20 hit points at the start of its turn if it is in an environment with no atmosphere (such as outer space) and not within the area of an antimagic field. If the Asteroid Roper takes radiant damage, this trait doesn't function at the start of the Asteroid Roper's next turn."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The Asteroid Roper makes four attacks with its tendrils and one with its bite."
+          ]
+        },
+        {
+          "name": "Devour",
+          "entries": [
+            "{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}46 ({@dice 12d6 + 4}) piercing damage."
+          ]
+        },
+        {
+          "name": "Tendril",
+          "entries": [
+            "{@atk mw} {@hit 12} to hit, reach 200 ft., one target. {@h}34 ({@dice 12d4 + 4}) The target is {@condition grappled} (escape {@dc 20}). Until this grapple ends, the target is {@condition restrained}, and the Asteroid Roper can't use the same tendril on another target."
+          ]
+        },
+        {
+          "name": "Reel",
+          "entries": [
+            "The Asteroid Roper pulls each creature {@condition grappled} by it up to 200 feet straight toward it."
+          ]
+        },
+        {
+          "name": "Nebula Cloud",
+          "entries": [
+            "The Asteroid Roper exhales a cloud of nebula-like gas in a 30-foot radius around it and moves 100ft to a new location. The area is heavily obscured for 1 minute. Any creature that starts its turn in the cloud must make a {@dc 20} Constitution saving throw, suffering disadvantage on attack rolls and ability checks until the start of its next turn due to disorientation."
+          ]
+        },
+        {
+          "name": "Stellar Absorption",
+          "entries": [
+            "The Roper turns its back to the sun and reflects a concentrated beam of sunlight at in a 200ft long, 20ft wide line. The Asteroid Roper regains 100 hit points. Each creature  in the line must make a {@dc 20} Constitution saving throw, taking {@damage 8d8} radiant damage on a failed save, or half as much damage on a successful one. The Roper gains additional hit points equal to half the total damage dealt to other creatures."
+          ]
+        }
+      ],
+      "legendaryActions": [
+        {
+          "name": "Attack",
+          "entries": [
+            "The Asteroid Roper makes one tendril attack."
+          ]
+        },
+        {
+          "name": "Move",
+          "entries": [
+            "The Asteroid Roper flies up to half its flying speed."
+          ]
+        },
+        {
+          "name": "Gravitational Surge",
+          "entries": [
+            "The Asteroid Roper increases the gravitational pull for a moment. Each creature within 60 feet must succeed on a DC 19 Constitution saving throw or be stunned until the end of their next turn.",
+            "Costs 2 Actions"
+          ]
+        }
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "AOE"
+      ],
+      "uniqueId": "5ad1cb81-48c6-404a-be26-78482afca9f9",
+      "conditionInflict": [
+        "grappled",
+        "restrained"
+      ],
+      "tokenHref": {
+        "type": "internal",
+        "path": ""
+      },
+      "damageTags": [
+        "P"
+      ],
+      "savingThrowForced": [
+        "constitution",
+        "strength"
+      ]
+    },
+    {
+      "name": "Asteriod Morkoth",
+      "shortName": "morkoth",
+      "source": "agidm",
+      "size": [
+        "H"
+      ],
+      "type": "aberration",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "alignmentPrefix": "typically ",
+      "ac": [
+        {
+          "ac": 22,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "34d12 + 272",
+        "average": 493
+      },
+      "speed": {
+        "swim": 50,
+        "walk": 25,
+        "fly": 80
+      },
+      "str": 24,
+      "dex": 14,
+      "con": 26,
+      "int": 27,
+      "wis": 18,
+      "cha": 18,
+      "save": {
+        "wis": "+10",
+        "dex": "+8",
+        "int": "+14"
+      },
+      "skill": {
+        "history": "+11",
+        "perception": "+10",
+        "arcana": "+20",
+        "stealth": "+14"
+      },
+      "senses": [
+        "blindsight 30 ft.",
+        "darkvision 120 ft."
+      ],
+      "passive": 20,
+      "languages": [
+        "telepathy 120 ft."
+      ],
+      "cr": "18",
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "type": "spellcasting",
+          "headerEntries": [
+            "The morkoth casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 19}):"
+          ],
+          "will": [
+            "{@spell dancing lights}",
+            "{@spell detect magic}",
+            "{@spell mage hand}",
+            "{@spell prestidigitation}"
+          ],
+          "daily": {
+            "3e": [
+              "{@spell darkness}",
+              "{@spell dimension door}",
+              "{@spell dispel magic}",
+              "{@spell lightning bolt}",
+              "{@spell sending}"
+            ],
+            "1e": [
+              "{@spell chain lightning}",
+              "{@spell forcecage}",
+              "{@spell dominate monster}",
+              "{@spell maelstrom}",
+              "{@spell telekinesis}"
+            ]
+          },
+          "ability": "int",
+          "displayAs": "action"
+        }
+      ],
+      "trait": [
+        {
+          "name": "Cosmic Resilience",
+          "entries": [
+            "The Asteroid Morkoth can breathe and survive in the vacuum of space and is immune to radiation and cold."
+          ]
+        },
+        {
+          "name": "Legendary Resistance (3/Day)",
+          "entries": [
+            "If the morkoth fails a saving throw, it can choose to succeed instead."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The morkoth makes either three Bite attacks and two Tentacles attack or 5 tentacle attacks."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit +13} to hit, reach 5 ft., one target. {@h}58 ({@damage 12d8 + 3}) slashing damage."
+          ]
+        },
+        {
+          "name": "Void Stare",
+          "entries": [
+            "The morkoth projects a 60-foot cone of magical energy. Each creature in that area must make a {@dc 22} Wisdom saving throw. On a failed save, the creature is {@condition charmed} by the morkoth for 1 minute. While {@condition charmed} in this way, the target tries to get as close to the morkoth as possible, using its actions to {@action Dash} until it is within 5 feet of the morkoth. A {@condition charmed} target can repeat the saving throw at the end of each of its turns and whenever it takes damage, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature has advantage on saving throws against the morkoth's Hypnosis for 24 hours."
+          ]
+        },
+        {
+          "name": "Tentacles",
+          "entries": [
+            "{@atk rw} {@hit 13} to hit, range 150/600 ft., one target. {@h}37 ({@damage 10d6 + 2}) damage."
+          ]
+        }
+      ],
+      "reaction": [
+        {
+          "name": "Spell Reflection",
+          "entries": [
+            "If the morkoth makes a successful saving throw against a spell, or a spell attack misses it, the morkoth can choose another creature (including the spellcaster) it can see within 120 feet of it. The spell targets the chosen creature instead of the morkoth. If the spell forced a saving throw, the chosen creature makes its own save. If the spell was an attack, the attack roll is rerolled against the chosen creature."
+          ]
+        }
+      ],
+      "legendary": [
+        {
+          "name": "Bite",
+          "entries": [
+            "The morkoth makes one Bite attack."
+          ]
+        },
+        {
+          "name": "Tentacles (Costs 2 Actions)",
+          "entries": [
+            "The morkoth makes one attack with its Tentacles."
+          ]
+        },
+        {
+          "name": "Hypnosis (Costs 2 Actions)",
+          "entries": [
+            "The morkoth uses Hypnosis."
+          ]
+        },
+        {
+          "name": "Cast Spell (Costs 3 Actions)",
+          "entries": [
+            "The morkoth uses Spellcasting."
+          ]
+        }
+      ],
+      "tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/mme2_v2/creatures/tokens/Ancient_Morkoth.webp",
+      "traitTags": [
+        "Amphibious",
+        "Legendary Resistances"
+      ],
+      "senseTags": [
+        "B",
+        "SD"
+      ],
+      "actionTags": [
+        "Multiattack",
+        "Tentacles"
+      ],
+      "languageTags": [
+        "TP"
+      ],
+      "miscTags": [
+        "MW",
+        "AOE",
+        "RW"
+      ],
+      "conditionInflict": [
+        "charmed"
+      ],
+      "conditionInflictSpell": [
+        "charmed",
+        "restrained"
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "fluff": {},
+      "uniqueId": "ef5e4834-a314-47bd-9ca8-ea675b59c88a",
+      "spellcastingTags": [
+        "O"
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "damageTagsSpell": [
+        "L",
+        "O"
+      ],
+      "savingThrowForced": [
+        "wisdom"
+      ],
+      "savingThrowForcedSpell": [
+        "charisma",
+        "dexterity",
+        "wisdom"
+      ]
+    },
+    {
+      "name": "Asteroid Dracolisk",
+      "shortName": "dracolisk",
+      "source": "agidm",
+      "size": [
+        "H"
+      ],
+      "type": "dragon",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "alignmentPrefix": "typically ",
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "18d12 + 126",
+        "average": 243
+      },
+      "speed": {
+        "walk": 30,
+        "swim": 30,
+        "fly": 60
+      },
+      "str": 29,
+      "dex": 12,
+      "con": 25,
+      "int": 10,
+      "wis": 18,
+      "cha": 18,
+      "save": {
+        "con": "+14",
+        "int": "+7",
+        "wis": "+11",
+        "cha": "+11",
+        "dex": "+8"
+      },
+      "skill": {
+        "perception": "+18",
+        "stealth": "+15",
+        "athletics": "+23",
+        "history": "+7",
+        "insight": "+18",
+        "investigation": "+7"
+      },
+      "senses": [
+        "blindsight 60 ft.",
+        "darkvision 120 ft."
+      ],
+      "passive": 28,
+      "immune": [
+        "acid"
+      ],
+      "languages": [
+        "Draconic"
+      ],
+      "cr": "24",
+      "trait": [
+        {
+          "name": "Amphibious",
+          "entries": [
+            "The dracolisk can breathe air and water."
+          ]
+        },
+        {
+          "name": "Legendary Resistance (3/Day)",
+          "entries": [
+            "If the dracolisk fails a saving throw, it can choose to succeed instead."
+          ]
+        },
+        {
+          "name": "Petrifying Gaze",
+          "entries": [
+            "If a creature starts its turn within 60 feet of the dracolisk and the two of them can see each other, the dracolisk can force the creature to make a {@dc 23} Constitution saving throw if the dracolisk isn't {@condition incapacitated}. On a failed save, the creature magically begins to turn to stone and is {@condition restrained}. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is {@condition petrified} until freed by the {@spell greater restoration} spell or other magic.",
+            "A creature that isn't surprised can avert its eyes to avoid the saving throw at the start of its turn. If it does so, it can't see the dracolisk until the start of its next turn, when it can avert it s eyes again. If it looks at the dracolisk in the meantime, it must immediately make the save.",
+            "If the dracolisk sees its reflection within 30 feet of it in bright light, it mistakes itself for a rival and targets itself with its gaze."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The dracolisk can use its Frightful Presence. It then makes one Bite attack and 3 Claw attacks. it can choose to use a breath weapon instead of 1 bite or 2 claws"
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit +13} to hit, reach 10 ft., one target. {@h}20 ({@damage 3d12 + 7}) piercing damage plus 4 ({@damage 4d8}) acid damage, and tertiary damage 4 ({@damage 4d8}) poison."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit +13} to hit, reach 5 ft., one target. {@h}14 ({@damage 6d6 + 7}) slashing damage."
+          ]
+        },
+        {
+          "name": "Tail",
+          "entries": [
+            "{@atk mw} {@hit +13} to hit, reach 5 ft., one target. {@h}16 ({@damage 9d8 + 7}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Frightful Presence",
+          "entries": [
+            "Each creature of the dracolisk's choice that is within 120 feet of the dracolisk and aware of it must succeed on a {@dc 23} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dracolisk's Frightful Presence for the next 24 hours."
+          ]
+        },
+        {
+          "name": "Acid Breath {@recharge 5}",
+          "entries": [
+            "The dracolisk exhales acid in a 15-foot line that is 5 feet wide. Each creature in that area must make a {@dc 23} Constitution saving throw, taking 90 ({@damage 20d8}) acid damage on a failed save, or half as much damage on a successful one."
+          ]
+        }
+      ],
+      "legendary": [
+        {
+          "name": "Detect",
+          "entries": [
+            "The dracolisk makes a Wisdom ({@skill Perception}) check."
+          ]
+        },
+        {
+          "name": "Tail Attack",
+          "entries": [
+            "The dracolisk makes a tail attack."
+          ]
+        },
+        {
+          "name": "Wing Attack (Costs 2 Actions)",
+          "entries": [
+            "The dracolisk beats its wings. Each creature within 10 feet of the dracolisk must succeed on a {@dc 21} Dexterity saving throw or take 14 ({@damage 2d6 + 7}) bludgeoning damage and be knocked {@condition prone}. The dracolisk can then fly up to half its flying speed."
+          ]
+        }
+      ],
+      "tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/mme2_v2/creatures/tokens/Adult_Dracolisk.webp",
+      "traitTags": [
+        "Amphibious",
+        "Legendary Resistances"
+      ],
+      "senseTags": [
+        "B",
+        "SD"
+      ],
+      "actionTags": [
+        "Breath Weapon",
+        "Frightful Presence",
+        "Multiattack"
+      ],
+      "languageTags": [
+        "DR"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "AOE"
+      ],
+      "conditionInflict": [
+        "frightened",
+        "petrified",
+        "prone",
+        "restrained"
+      ],
+      "conditionInflictLegendary": [
+        "prone"
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "fluff": {},
+      "uniqueId": "ec18d7f6-850b-4238-afa2-6aeaffa0ab7a",
+      "damageTags": [
+        "A",
+        "B",
+        "P",
+        "S"
+      ],
+      "savingThrowForced": [
+        "constitution",
+        "dexterity",
+        "wisdom"
+      ]
+    },
+    {
+      "uniqueId": "d1c2d503-3c31-4c43-91bb-293d6efdd9de",
+      "name": "Futuristic Logistic Algorithm for Reality Enhancement - F.L.A.R.E",
+      "size": [
+        "V"
+      ],
+      "type": "construct",
+      "source": "agidm",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 27,
+          "condition": "exo mech form"
+        },
+        {
+          "ac": 20,
+          "condition": "ape form",
+          "braces": true
+        }
+      ],
+      "hp": {
+        "formula": "40d100 + 280",
+        "average": 2300
+      },
+      "speed": {
+        "walk": {
+          "number": 0,
+          "condition": "Stationary AI Core"
+        }
+      },
+      "str": 1,
+      "dex": 1,
+      "con": 24,
+      "int": 30,
+      "wis": 19,
+      "cha": 23,
+      "passive": 22,
+      "cr": "28",
+      "shortName": "FLARE",
+      "save": {
+        "int": "+18",
+        "wis": "+12",
+        "cha": "+14"
+      },
+      "skill": {
+        "religion": "+18",
+        "persuasion": "+22",
+        "deception": "+22",
+        "arcana": "+26",
+        "history": "+26",
+        "investigation": "+26",
+        "perception": "+12"
+      },
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "exhaustion",
+        "grappled",
+        "petrified",
+        "poisoned",
+        "prone",
+        "restrained"
+      ],
+      "languages": [
+        "telepathy",
+        "all"
+      ],
+      "languageTags": [
+        "TP",
+        "XX"
+      ],
+      "trait": [
+        {
+          "name": "Unleash",
+          "entries": [
+            "At the start of initiative, Roll a {@dice d8} and apply corresponding effect.",
+            "1 - Lazer wall (Ground): Wall of lazers deals {@dice 22d12} radiant damage",
+            "2 - Fireballs (Leftmost arm): Massive fireballs deal {@dice 24d12} Fire damage",
+            "3 - Static shock (lightning arm): Lightning shock deals {@dice 27d10} lightning damage",
+            "4 - Turrets (left summon): turrets appear and shoot people with bullets of random sizes for {@dice 18d8} peircing damage, and {@dice 20d6} Bludgeoning damage.",
+            "5 - Glados releases nurotoxin - poisons people and goes through poison resistance/immunity to deal damage. {@dice 10d35} poison damage.",
+            "6 - Minecraft TNT (right summon)- Explosions around the place, everyone takes {@dice 8d52} force damage, and get pushed. Creatures in the water are also pushed to the other wall.",
+            "7 - Frost - The entire screen freezes over, everyone takes {@dice 12d33} cold damage",
+            "8 - Nuke - A massive nuke starts to drop from above {@dice 11d62} radiant or necrotic damage.",
+            "Each effect takes place 4 turns after the {@dice d8} roll. once unleashed, roll another {@dice d8}."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Summon glitches.",
+          "entries": [
+            "Flare can summon 2 hero glitches using \"Main character Syndrome\" and 1 villan glitch using \"Villan origin story\". Roll a {@dice d8} for each hero and villan summon."
+          ]
+        },
+        {
+          "name": "1. Link (Master Sword Slash)",
+          "entries": [
+            "{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}32 ({@damage 7d8}) slashing damage."
+          ]
+        },
+        {
+          "name": "2. Mario(Fireball)",
+          "entries": [
+            "{@atk rs} {@hit 12} to hit, range 90 ft., one target. {@h}36 ({@damage 6d10}) fire damage."
+          ]
+        },
+        {
+          "name": "3. Sonic(Spin Dash)",
+          "entries": [
+            "{@atk mw} {@hit 13} to hit, reach 40 ft. line. {@h}40 ({@damage 7d10}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "4. The Knight(Desolating Dive)",
+          "entries": [
+            "The Knight appears and dives at a point. Creatures 100ft in either direction must make a dexterity saving throw ({@dc 27}) or take 45 ({@dice 7d12}) necrotric damage"
+          ]
+        },
+        {
+          "name": "5. Gordon Freeman (Mini-gun)",
+          "entries": [
+            "range 240 ft., 50 bullets at any number of creatures within range, max 20 bullets per creature. 2 damage per bullet, dex save {@dc 27}"
+          ]
+        },
+        {
+          "name": "6. Master chief (Laser rifle)",
+          "entries": [
+            "{@atk rw} {@hit 12} to hit, range 200 ft., one target. {@h}36 ({@damage 6d10}) fire damage."
+          ]
+        },
+        {
+          "name": "7. Bounty hunter(Dagger slash, Jinnada)",
+          "entries": [
+            "{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}32 ({@damage 7d8}) slashing damage, if the target has gold, 5% of the gold is removed and additional damage equal to stolen gold"
+          ]
+        },
+        {
+          "name": "8. Doomguy (BFG 10000)",
+          "entries": [
+            "Beam, 15ft high, 120ft long. Deals {@dice  10d10} damage in a line, constifution save {@dc 27} to avoid radiant damage/force damage. "
+          ]
+        },
+        {
+          "name": "1. Bowser (stomp)",
+          "entries": [
+            "20ft radius, blud damage damage {@dice 26d6} dex save. {@dc 27}"
+          ]
+        },
+        {
+          "name": "2. Albert Wesker(Metal infused Tentacle arm)",
+          "entries": [
+            "{@atk mw} {@hit 15} to hit, reach 15 ft., one target. {@h}63 ({@damage 14d8}) slashing damage."
+          ]
+        },
+        {
+          "name": "3. Dr. Eggman (Drop egg)",
+          "entries": [
+            "EMP egg - Shocks creatures in a 60ft radius, Dispels spells of level 5 or lower. deals 55 ({@dice 10d10}) lightning damage."
+          ]
+        },
+        {
+          "name": "4. The Radiance (Homing Balls)",
+          "entries": [
+            "{@atk rs} {@hit 12} to hit, range 90 ft., two targets. {@h}44 ({@damage 8d10}) fire damage/radiant each."
+          ]
+        },
+        {
+          "name": "5. Glados (Portal Gun)",
+          "entries": [
+            "Teleport player in 100ft range, charisma save."
+          ]
+        },
+        {
+          "name": "6. Vaas (drugs)",
+          "entries": [
+            "Vaas appears and blows white power in a 90ft cone. creatures need to make {@dc 27} con save or paralyze."
+          ]
+        },
+        {
+          "name": "7. Alduin (raise 2 dragons to elemental breath)",
+          "entries": [
+            "each dragon {@dice 18d6} damage 60ft cone, corresponding save. "
+          ]
+        },
+        {
+          "name": "8. Doc Octavius(Grapple+restain 4 creatures)",
+          "entries": [
+            "Creatures within 90ft make str/dex save {@dc 27}. on failure, {@condition grappled} and {@condition restrained}. Must use action to escape."
+          ]
+        }
+      ],
+      "miscTags": [
+        "MW",
+        "RCH",
+        "RW",
+        "MLW"
+      ],
+      "damageTags": [
+        "B",
+        "F",
+        "L",
+        "S"
       ]
     }
   ],
   "item": [
+    {
+      "name": "Expanded Capacity Shiftweave",
+      "source": "agidm",
+      "reqAttune": false,
+      "rarity": "rare",
+      "wondrous": true,
+      "entries": [
+        "This Expanded Capacity Shiftweave is a magical garment capable of storing up to ten different outfits. Instead of having outfits pre-embedded at creation, this shiftweave can absorb and store any non-magical outfit it mimics. By touching an outfit and spending 1 minute concentrating, the wearer can store the outfit's design in one of the shiftweave's available slots. Stored designs can be accessed or replaced at any time.",
+        "By speaking a command word as a bonus action, the wearer can transform the shiftweave into any one of the stored outfits. The clothing cannot mimic the magical properties of other magical garments, despite being able to replicate their look.",
+        {
+          "type": "entries",
+          "name": "Chameleon",
+          "entries": [
+            "While wearing the shiftweave transformed into a stored outfit, the wearer can choose to also mimic the voice and general mannerisms of the individual typically associated with the outfit. Granting advantage to deception(charisma) checks made to pass off as the individual."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Summon Outfit",
+          "entries": [
+            "As an action, the wearer can target one creature they can see within 30 feet and instantly clothe them in one of the outfits stored in the shiftweave, effectively disguising them. This transformation lasts for up to 1 hour or until the wearer dismisses it as a bonus action"
+          ]
+        }
+      ]
+    },
     {
       "name": "Aboleth Oil",
       "source": "agidm",
@@ -2168,7 +2966,8 @@
             "source": "PHB"
           }
         ]
-      }
+      },
+      "uniqueId": "baf15798-5c6e-44b0-8fb3-e75e0566c01c"
     },
     {
       "name": "Delete Fate",
@@ -2223,7 +3022,8 @@
             "source": "PHB"
           }
         ]
-      }
+      },
+      "uniqueId": "407d56b4-1d0f-493d-a113-376f4c018936"
     },
     {
       "name": "Plane",
@@ -2271,7 +3071,8 @@
             "source": "PHB"
           }
         ]
-      }
+      },
+      "uniqueId": "f51b9643-9b67-4040-ad4a-9c3a850f6377"
     }
   ]
 }
