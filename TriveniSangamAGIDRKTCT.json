@@ -10878,6 +10878,76 @@
   ],
   "itemProperty": [
     {
+      "abbreviation": "RldAGI",
+      "source": "AspysGuidetoInfinitum",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Reload",
+          "entries": [
+            "The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm."
+          ]
+        }
+      ],
+      "template": "{{prop_name}} {{item.reload}}"
+    },
+    {
+      "abbreviation": "MsfAGI",
+      "source": "AspysGuidetoInfinitum",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Misfire",
+          "entries": [
+            "Whenever you make an attack roll with a firearm, and the dice roll is equal to or lower than the weapon's Misfire score, the weapon misfires. The attack misses, and the weapon cannot be used again until you spend an action to try and repair it. To repair your firearm, you must make a successful {@item Tinker's Tools|PHB} check (DC equal to 8 + misfire score). If your check fails, the weapon is broken and must be mended out of combat at a quarter of the cost of the firearm. Creatures who use a firearm without being proficient increase the weapon's misfire score by 1."
+          ]
+        }
+      ],
+      "template": "{{prop_name}} {{item.customProperties.misfire}}"
+    },
+    {
+      "abbreviation": "AmmAGI",
+      "source": "AspysGuidetoInfinitum",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Ammunition",
+          "entries": [
+            "All firearms require ammunition to make an attack, and due to their rare nature, ammunition may be near impossible to find or purchase. However, if materials are gathered, you can craft ammunition yourself using your {@item Tinker's Tools|PHB} at half the cost. Each firearm uses its own unique ammunition and is generally sold or crafted in batches listed next to the price."
+          ]
+        }
+      ],
+      "template": "Gunslinger Ammunition"
+    },
+    {
+      "abbreviation": "MinorUpgrade",
+      "source": "AspysGuidetoInfinitum",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Minor Upgrade",
+          "entries": [
+            "This firearm can hold {@table Minor Upgrades|AspysGuidetoInfinitum|minor upgrades}"
+          ]
+        }
+      ],
+      "template": "{{prop_name}} {{item.customProperties.minorupgrade}}"
+    },
+    {
+      "abbreviation": "MajorUpgrade",
+      "source": "AspysGuidetoInfinitum",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Major Upgrade",
+          "entries": [
+            "This firearm can hold {@table Major Upgrades|AspysGuidetoInfinitum|Major Upgrades}"
+          ]
+        }
+      ],
+      "template": "{{prop_name}} {{item.customProperties.majorupgrade}}"
+    },
+    {
       "abbreviation": "WM:C",
       "source": "tct",
       "entries": [
@@ -11187,6 +11257,217 @@
     }
   ],
   "item": [
+    {
+      "name": "Expanded Capacity Shiftweave",
+      "source": "AspysGuidetoInfinitum",
+      "reqAttune": false,
+      "rarity": "rare",
+      "wondrous": true,
+      "entries": [
+        "This Expanded Capacity Shiftweave is a magical garment capable of storing up to ten different outfits. Instead of having outfits pre-embedded at creation, this shiftweave can absorb and store any non-magical outfit it mimics. By touching an outfit and spending 1 minute concentrating, the wearer can store the outfit's design in one of the shiftweave's available slots. Stored designs can be accessed or replaced at any time.",
+        "By speaking a command word as a bonus action, the wearer can transform the shiftweave into any one of the stored outfits. The clothing cannot mimic the magical properties of other magical garments, despite being able to replicate their look.",
+        {
+          "type": "entries",
+          "name": "Chameleon",
+          "entries": [
+            "While wearing the shiftweave transformed into a stored outfit, the wearer can choose to also mimic the voice and general mannerisms of the individual typically associated with the outfit. Granting advantage to deception(charisma) checks made to pass off as the individual."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Summon Outfit",
+          "entries": [
+            "As an action, the wearer can target one creature they can see within 30 feet and instantly clothe them in one of the outfits stored in the shiftweave, effectively disguising them. This transformation lasts for up to 1 hour or until the wearer dismisses it as a bonus action"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "The Stack Overflow",
+      "source": "AspysGuidetoInfinitum",
+      "type": "M",
+      "rarity": "legendary",
+      "weight": 6,
+      "weaponCategory": "martial",
+      "property": [
+        "H",
+        "2H"
+      ],
+      "dmg1": "2d6",
+      "dmgType": "S",
+      "reqAttune": true,
+      "sword": true,
+      "weapon": true,
+      "entries": [
+        "Created in the hidden digital forges of the Technomancers, The Stack Overflow is a sword of sleek, metallic design, with runes of ancient modron etched along its shimmering, spiral blade. When unsheathed, the air crackles with raw data streams, and the faint hum of binary whispers can be heard.",
+        "Attacks made with this greatsword gain an additional +3 to attack and damage rolls. Additionally, this blade does {@dice 2d10} damage instead of the weapon's normal damage dice if the target relies on magic or uses enchanted equipment.",
+        {
+          "type": "entries",
+          "name": "PixelWorld Failsafe",
+          "entries": [
+            "Within PixelWorld, this blade deals an additional {@dice 2d10} failsafe damage to creations of the system."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Codebreaker",
+          "entries": [
+            "Once per day, you can cast {@spell Counterspell} as a 5th-level spell without expending a spell slot. Intelligence is your spellcasting ability for this spell."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Garbage Collection",
+          "entries": [
+            "When the sword strikes an undead or construct, it can instantly disintegrate targets with 64 hit points or less, clearing away the garbage with efficiency."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Reboot ",
+          "entries": [
+            "Once per long rest, if you fall to 0 hit points, you can choose to 'reboot', instantly regaining 1 hit point and standing up as a burst of energy clears any non-magical restraints or conditions."
+          ]
+        }
+      ],
+      "bonusWeapon": "+2"
+    },
+    {
+      "name": "Pistol",
+      "source": "AspysGuidetoInfinitum",
+      "type": "R",
+      "rarity": "unknown",
+      "value": 25000,
+      "weaponCategory": "martial",
+      "age": "renaissance",
+      "property": [
+        "AF",
+        "RldAGI",
+        "MsfAGI",
+        "MinorUpgrade"
+      ],
+      "range": "60/240",
+      "reload": 4,
+      "dmg1": "1d10",
+      "dmgType": "P",
+      "firearm": true,
+      "ammoType": "Pistol Bullet|AspysGuidetoInfinitum",
+      "customProperties": {
+        "misfire": 0,
+        "minorupgrade": 1
+      }
+    },
+    {
+      "name": "Blunderbuss",
+      "source": "AspysGuidetoInfinitum",
+      "type": "R",
+      "rarity": "unknown",
+      "weight": 10,
+      "value": 40000,
+      "weaponCategory": "martial",
+      "age": "renaissance",
+      "property": [
+        "AF",
+        "RldAGI",
+        "MsfAGI",
+        "MinorUpgrade"
+      ],
+      "range": "15/60",
+      "reload": 1,
+      "dmg1": "2d8",
+      "dmgType": "P",
+      "firearm": true,
+      "ammoType": "Blunderbuss Slug|AspysGuidetoInfinitum",
+      "customProperties": {
+        "misfire": 2,
+        "minorupgrade": 2
+      }
+    },
+    {
+      "name": "Hand Mortar",
+      "source": "AspysGuidetoInfinitum",
+      "type": "R",
+      "rarity": "unknown",
+      "weight": 10,
+      "weaponCategory": "martial",
+      "age": "renaissance",
+      "property": [
+        "AF",
+        "RldAGI",
+        "MsfAGI",
+        "MinorUpgrade",
+        "MajorUpgrade"
+      ],
+      "range": "30/60",
+      "reload": 1,
+      "dmg1": "2d8",
+      "dmgType": "F",
+      "firearm": true,
+      "ammoType": "Hand Mortar Shot|AspysGuidetoInfinitum",
+      "customProperties": {
+        "misfire": 2,
+        "minorupgrade": 1,
+        "majorupgrade": 1
+      }
+    },
+    {
+      "name": "Musket",
+      "source": "AspysGuidetoInfinitum",
+      "type": "R",
+      "rarity": "unknown",
+      "weight": 10,
+      "value": 50000,
+      "weaponCategory": "martial",
+      "age": "renaissance",
+      "property": [
+        "AF",
+        "2H",
+        "RldAGI",
+        "MsfAGI",
+        "MinorUpgrade",
+        "MajorUpgrade"
+      ],
+      "range": "120/480",
+      "reload": 1,
+      "dmg1": "1d12",
+      "dmgType": "P",
+      "firearm": true,
+      "ammoType": "Shot|AspysGuidetoInfinitum",
+      "customProperties": {
+        "misfire": 1,
+        "minorupgrade": 1,
+        "majorupgrade": 1
+      }
+    },
+    {
+      "name": "Pepperbox",
+      "source": "AspysGuidetoInfinitum",
+      "page": 3,
+      "type": "R",
+      "rarity": "unknown",
+      "weight": 5,
+      "value": 40000,
+      "weaponCategory": "martial",
+      "age": "renaissance",
+      "property": [
+        "AF",
+        "RldAGI",
+        "MsfAGI",
+        "MinorUpgrade",
+        "MajorUpgrade"
+      ],
+      "range": "80/320",
+      "reload": 6,
+      "dmg1": "1d10",
+      "dmgType": "P",
+      "firearm": true,
+      "ammoType": "Pepperbox Bullet|AspysGuidetoInfinitum",
+      "customProperties": {
+        "misfire": 1,
+        "minorupgrade": 1,
+        "majorupgrade": 1
+      }
+    },
     {
       "name": "Ring of Salving",
       "source": "DRK",
@@ -62145,6 +62426,106 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Firearms",
+      "source": "AspysGuidetoInfinitum",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "The Invention of Gunpowder",
+          "entries": [
+            "By 1390AC, The term 'Blackpowder' had already seen its conception. A fine powder made of burnt wood and brimstone that\nburned rather explosively. Naturally, it was mass produced and packed in small kegs for extremely satisfactory results in\nwarfare. But it was not until a couple decades ago that people discovered another use for this powder. If packed tightly into\na metal cylinder, it could propel projectiles to great distances. The new king of Larcous, Oko armed his troops with miniature\nversions of these 'Cannons' that could be hand-held. The Siege of Gin put this technology in the hands of the talented\nengineers of Eardon and soon, Variations of Oko's design found its way into some in the Royal Army. Though it cannot be\nsaid for sure how many, a considerable number of guilds chase after this technology and some even produce these outside\nthe bounds of Damutis and Sasitor."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Proficiency in Firearms",
+          "entries": [
+            "Learning how to use these handheld cannons require rigorous training in posture and aim. The shots from a firearm fire faster and further than an average crossbow bolt. Mastering the different postures to manage the recoil from shooting a firearm is a part of the training one undergoes to master the firearm.",
+            "You can gain proficiency in firearms through one of the following ways:",
+            {
+              "type": "list",
+              "items": [
+                "By taking the {@feat Gunner|tce} feat instead of an Ability Score Improvement if you meet the requirements.",
+                "By having atleast one level in either the Fighter or the Artificer class.",
+                "By any racial or background feature as determined by the DM"
+              ]
+            },
+            "As an {@class Artificer|drk}, you have learned how these devices work and with some research and effort, you can easily avoid therecoil from a firearm with a posture suited to your form.",
+            "As a {@class Fighter|drk}, you have spent years in training to master holding your posture after firing."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Acquiring or Crafting a firearm",
+          "entries": [
+            "Keeping the principal idea of the firearm, the central metallic cylinder that packs the blackpowder and shot intact, you can craft these devices with multiple variations. The table below lists the available designs for purchase and the time required for an artificer to craft them.",
+            {
+              "type": "statblock",
+              "tag": "table",
+              "source": "AspysGuidetoInfinitum",
+              "name": "Firearms"
+            },
+            {
+              "type": "entries",
+              "name": "Crafting a firearm",
+              "entries": [
+                "You can craft/upgrade any of the firearms if you meet the following requirements.",
+                {
+                  "type": "list",
+                  "items": [
+                    "Proficiency in Firearms and Tinker's tools.",
+                    "Own a set of smiths tools, a set of woodcarver's tools and a set of tinkers tools.",
+                    "Have the raw materials needed to make the firearm. You need to spend half the cost of the firearm to start crafting it."
+                  ]
+                },
+                "The firearm is crafted over a course of days or hours. Taking 10 hours of work per 50gp spent upgrading. The minimum amount of time spent crafting cannot be less than 2 hours per long rest."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Upgrading a firearm",
+          "entries": [
+            "A firearm can be upgraded to have abilities listed below by the one that crafted it. If you attempt to upgrade a firearm that was not crafted by you, then you will have to spend an additional 40 hours of downtime with the firearm and succeed on an Intelligence (tinker's tools) check to understand the workings of the firearm. On a faliure, you can reattempt the check after a long rest. The DC for which will be equal to:",
+            "{@b Familiarization DC} = 12 + Number of upgrades it can hold + 1 for each minor upgrade on it + 2 for every Major upgrade on\nit - Number of failed attempts",
+            "Each firearm can hold a number of minor and major upgrades as listed in the firearm table.",
+            {
+              "type": "list",
+              "items": [
+                "A minor upgrade takes 150gp and 2 days/18h of strenuous activity to craft.",
+                {
+                  "type": "statblock",
+                  "tag": "table",
+                  "source": "AspysGuidetoInfinitum",
+                  "name": "Minor Upgrades"
+                },
+                "A Major upgrade takes 350gp and 4 days/36h of strenuous activity to craft.",
+                {
+                  "type": "statblock",
+                  "tag": "table",
+                  "source": "AspysGuidetoInfinitum",
+                  "name": "Major Upgrades"
+                }
+              ]
+            },
+            "If you replace an upgrade on a firearm, you will have to first disassemble the upgrade by spending 1/4th its gold cost and 1/8th time. The cost and time marks dismantling and reforging the parts of the firearm to its initial state.",
+            "Wherever a feature is limited by an Intelligence modifier, consider the Intelligence modifier of the creature that crafted it.",
+            "{@b Firearm Upgrades save DC} = 8 + your proficiency bonus + your Intelligence modifier"
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Misfiring",
+          "entries": [
+            "A firearm is a powerful weapon of war. The impact of its shots stagger both the shooter and the one struck by it. The use of a firearm requires outmost precision and concentration given the speed at which its system functions and mishandling a firearm often causes damage to the firearm and the shooter.",
+            "When using a firearm, if you roll below the misfire chance of the firearm before any modifiers on an attack, the firearm misfires and will remain unusable until it is repaired. To repair a misfired firearm, you can use a bonus action to make a\nDexterity or Intelligence (Tinker's tools) check. The DC for which will be Equal to 10 + Misfire score of the firearm. On a failure, the firearm is broken and you will have to spend 2 hours and half the firearm's cost to fix it.",
+            "The misfire chance of a firearm is listed on the firearms table. Upgrading a firearm increases this misfire chance. +1 for every minor upgrade and +2 for every major upgrade."
+          ]
+        }
+      ]
     }
   ],
   "table": [
@@ -63091,6 +63472,156 @@
           "{@optfeature Tracking dust|AspysGuidetoInfinitum}",
           160,
           "Intelligence, Dexterity"
+        ]
+      ]
+    },
+    {
+      "name": "Firearms",
+      "source": "AspysGuidetoInfinitum",
+      "colLabels": [
+        "Name",
+        "Cost",
+        "Ammo",
+        "Damage",
+        "Upgrade Capacity",
+        "Range",
+        "Properties"
+      ],
+      "colStyles": [
+        "col-2",
+        "col-1",
+        "col-2",
+        "col-2",
+        "col-1 text-right",
+        "col-1",
+        "col-4"
+      ],
+      "rows": [
+        [
+          "{@item Pistol|AspysGuidetoInfinitum}",
+          "250g",
+          "{@item shot (20)|AspysGuidetoInfinitum|2g (20)}",
+          "1d10 piercing",
+          "1m",
+          "60/240",
+          "Reload 4, misfire 0"
+        ],
+        [
+          "{@item Musket|AspysGuidetoInfinitum}",
+          "500g",
+          "{@item shot (20)|AspysGuidetoInfinitum|2g (20)}",
+          "1d12 piercing",
+          "1M, 1m",
+          "120/480",
+          "Two-handed, reload 1, misfire 1"
+        ],
+        [
+          "{@item Pepperbox|AspysGuidetoInfinitum}",
+          "400g",
+          "{@item shot (20)|AspysGuidetoInfinitum|2g (20)}",
+          "1d10 piercing",
+          "2m or 1M, 1m",
+          "80/320",
+          "Reload 6, misfire 1"
+        ],
+        [
+          "{@item Blunderbuss|AspysGuidetoInfinitum}",
+          "300g",
+          "{@item Blunderbuss Slugs (5)|AspysGuidetoInfinitum|5g (5)}",
+          "2d8 piercing",
+          "2m",
+          "15/60",
+          "Reload 1, misfire 2"
+        ],
+        [
+          "{@item The Bad News|AspysGuidetoInfinitum}",
+          "Crafted",
+          "{@item .50 Warcrimes (5)|AspysGuidetoInfinitum|10g (5)}",
+          "2d12 piercing",
+          "25 lbs",
+          "200/800",
+          "Two-handed, reload 1, misfire 1"
+        ],
+        [
+          "{@item Hand Mortar|AspysGuidetoInfinitum}",
+          "Crafted",
+          "{@item Hand Mortar Shot|AspysGuidetoInfinitum|10g (1)}",
+          "2d8 fire",
+          "10 lbs",
+          "30/60",
+          "Reload 1, misfire 2"
+        ]
+      ]
+    },
+    {
+      "name": "Minor Upgrades",
+      "source": "AspysGuidetoInfinitum",
+      "colLabels": [
+        "Upgrade Name",
+        "Description"
+      ],
+      "colStyles": [
+        "col-2",
+        "col-10 text-center"
+      ],
+      "rows": [
+        [
+          "Smoke Screen",
+          "As an action, you alter the firing mechanism of your gun to release a burst of ash and smoke. This cloud forms a 10-foot cube centered on a point of your choice within the firearm's range, spreading around corners, and the area covered by this cube is considered heavily obscured. This smoke lasts for 10 minutes and cannot be dispersed. Once you use this feature, you cannot use it again until you finish a short or long rest."
+        ],
+        [
+          "Crosshairs (5th Level or higher).",
+          "You equip your firearm with a targeting mechanism. If you haven't moved this turn, you\ncan aim down your sights as a bonus action, reducing your speed to 0 and granting you advantage on all attacks you make using your firearm until the end of your turn."
+        ],
+        [
+          "Collateral Damage (Bad News only)",
+          "You alter your ammunition to have explosive capabilities. When you hit a target with a successful attack from your firearm, all creatures within 5 feet of the target must succeed on a Dexterity saving throw or take {@dice 1d6} piercing damage."
+        ],
+        [
+          "Caliber Net",
+          "You equip your gun with an arcane net meant to trap opponents. As an action, choose a creature within range of your firearm. The creature must succeed on a Strength saving throw or be {@condition restrained}. At the end of each of its turns, the target can repeat this saving throw, ending the effect on a success. Once you use this feature, you cannot use it again until you finish a short or long rest."
+        ],
+        [
+          "Silenced Barrel",
+          "You modify the barrel of your firearm and the model of your ammunition to suppress the sound of a\nfirearm shot by reducing its exit velocity. This will reduce the distance a firearm can be heard from 400ft to 60ft."
+        ],
+        [
+          "Blade and Black Powder (Except hand mortar)",
+          "You create a matching blade to accompany your firearm, rendering you a deadly opponent in both melee and ranged combat. Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls.\nAdditionally, when you use your action to shoot using your firearm, you can use your bonus action to strike at a creature within melee range. Make a melee attack roll. The attack roll uses your Dexterity modifier, and you are proficient with the attack. On a hit, the attack deals slashing damage equal to 1d6 + your Dexterity modifier."
+        ]
+      ]
+    },
+    {
+      "name": "Major Upgrades",
+      "source": "AspysGuidetoInfinitum",
+      "colLabels": [
+        "Upgrade Name",
+        "Description"
+      ],
+      "colStyles": [
+        "col-2",
+        "col-10 text-center"
+      ],
+      "rows": [
+        [
+          "Trial by Fire",
+          "As a bonus action, you can charge your weapons with blazing force. Until the start of your next turn, whenever you make a successful attack, you deal extra fire damage equal to your 2+proficiency bonus. You can charge your weapons this way a number of times equal to your Intelligence modifier (minimum of once), and regain all uses after a short or long rest."
+        ],
+        [
+          "Lightning round",
+          "You equip your firearm with a volatile piece of Uldgar, allowing you to release a piercing bolt of electricity as an action on your turn. The lightning fires from you in a straight line that is 1 foot wide and 30 feet long. Each creature in the line must make a Dexterity saving throw, taking {@dice 3d8} lightning damage on a failure and half as much on a success. You can use this feature as many times as your Intelligence modifier (minimum of once), and regain all uses after a short or long rest."
+        ],
+        [
+          "Double Up",
+          "When you hit a creature with a successful ranged weapon attack with a firearm, you can immediately cause the bullet to hit another creature within 15 feet of the original target. The second target takes piercing damage equal to your Dexterity modifier (minimum of one). You can redirect a bullet in this way a number of times equal to your Intelligence modifier, and regain all expended uses after a short or long rest."
+        ],
+        [
+          "Barrage",
+          "As an action, you can fire a barrage of bullets. Each creature in a 15-foot cone originating from yourself must make a Dexterity saving throw, taking piercing damage equal to 3d10 + your Dexterity modifier on a failure and half as much on a success. Once you use this feature, you cannot use it again until you finish a short or long rest."
+        ],
+        [
+          "Grenade launcher (Except Hand Mortar)",
+          "You equip your firearm with a secondary barrel that can fire incendiary grenades. When you take the attack action, you can replace one of your usual attacks with a grenade shot. The range for\nwhich is half the range of the firearm, and deals 3d10 fire damage on a failed dexterity save or half as much on a successful one in a 20ft radius spherical area. Once you use the grenade shot, you must spend 1 minute reloading the launcher before using it again."
         ]
       ]
     }
@@ -64421,6 +64952,105 @@
         "Gloves of Bitter Study|tct",
         "Gloves of Auric Diffusion|tct",
         "Gloves of the Universal Solvent|tct"
+      ]
+    }
+  ],
+  "baseitem": [
+    {
+      "name": ".50 Warcrime",
+      "source": "AspysGuidetoInfinitum",
+      "type": "AF",
+      "rarity": "unknown",
+      "value": 200,
+      "age": "renaissance",
+      "property": [
+        "AmmF"
+      ]
+    },
+    {
+      "name": ".50 Warcrimes (5)",
+      "source": "AspysGuidetoInfinitum",
+      "type": "AF",
+      "rarity": "unknown",
+      "value": 1000,
+      "age": "renaissance",
+      "property": [
+        "AmmF"
+      ],
+      "packContents": [
+        {
+          "item": ".50 Warcrime|AspysGuidetoInfinitum",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "name": "Blunderbuss Slugs",
+      "source": "AspysGuidetoInfinitum",
+      "type": "AF",
+      "rarity": "unknown",
+      "value": 100,
+      "age": "renaissance",
+      "property": [
+        "AmmF"
+      ]
+    },
+    {
+      "name": "Blunderbuss Slugs (5)",
+      "source": "AspysGuidetoInfinitum",
+      "type": "AF",
+      "rarity": "unknown",
+      "value": 500,
+      "age": "renaissance",
+      "property": [
+        "AmmF"
+      ],
+      "packContents": [
+        {
+          "item": "Blunderbuss Bullet|AspysGuidetoInfinitum",
+          "quantity": 5
+        }
+      ]
+    },
+    {
+      "name": "Hand Mortar Shot",
+      "source": "AspysGuidetoInfinitum",
+      "type": "AF",
+      "rarity": "unknown",
+      "value": 1000,
+      "age": "renaissance",
+      "property": [
+        "AmmF"
+      ]
+    },
+    {
+      "name": "Shot",
+      "source": "AspysGuidetoInfinitum",
+      "page": 3,
+      "type": "AF",
+      "rarity": "unknown",
+      "value": 10,
+      "age": "renaissance",
+      "property": [
+        "AmmF"
+      ]
+    },
+    {
+      "name": "Shot (20)",
+      "source": "AspysGuidetoInfinitum",
+      "page": 3,
+      "type": "AF",
+      "rarity": "unknown",
+      "value": 200,
+      "age": "renaissance",
+      "property": [
+        "AmmF"
+      ],
+      "packContents": [
+        {
+          "item": "Shot|AspysGuidetoInfinitum",
+          "quantity": 20
+        }
       ]
     }
   ]
