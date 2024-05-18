@@ -2133,6 +2133,131 @@
         "L",
         "S"
       ]
+    },
+    {
+      "name": "Heart of Styx",
+      "source": "agidm",
+      "size": [
+        "H"
+      ],
+      "type": "monstrosity",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 21,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 350,
+        "formula": "20d12 + 200"
+      },
+      "speed": {
+        "walk": 30,
+        "swim": 60
+      },
+      "str": 28,
+      "dex": 14,
+      "con": 30,
+      "int": 18,
+      "wis": 20,
+      "cha": 22,
+      "save": {
+        "str": "+16",
+        "con": "+17",
+        "wis": "+12",
+        "cha": "+13"
+      },
+      "skill": {
+        "perception": "+12",
+        "insight": "+12"
+      },
+      "senses": [
+        "truesight 120 ft."
+      ],
+      "passive": 22,
+      "resist": [
+        "cold",
+        "bludgeoning, piercing, and slashing from nonmagical attacks"
+      ],
+      "immune": [
+        "necrotic",
+        "poison",
+        {
+          "immune": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "paralyzed",
+            "poisoned"
+          ],
+          "note": "condition immunities",
+          "cond": true
+        }
+      ],
+      "languages": [
+        "Abyssal, Infernal, telepathy 120 ft."
+      ],
+      "cr": "25",
+      "trait": [
+        {
+          "name": "Innate Spellcasting",
+          "entries": [
+            "The Heart of Styx's innate spellcasting ability is Charisma. It can innately cast the following spells, requiring no material components: At will: darkness, fear, water walk; 3/day each: circle of death, confusion, phantasmal killer; 1/day: weird."
+          ]
+        },
+        {
+          "name": "Legendary Resistance",
+          "entries": [
+            "If the Heart of Styx fails a saving throw, it can choose to succeed instead."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The Heart of Styx has advantage on saving throws against spells and other magical effects."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Amnesia Strike",
+          "entries": [
+            "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 45 (6d10 + 9) psychic damage. The target must succeed on a DC 20 Wisdom saving throw or lose proficiency in one skill or tool of the Heart of Styx's choice for 24 hours."
+          ]
+        },
+        {
+          "name": "Memory Drain",
+          "entries": [
+            "The Heart of Styx emits a pulse of Stygian energy in a 60-foot radius. Each creature in that area must make a DC 20 Intelligence saving throw, taking 55 (10d10) psychic damage on a failed save, or half as much damage on a successful one. On a failed save, the creature also forgets all spells and abilities they have used in the last hour. They cannot use those spells and abilities again until they finish a long rest."
+          ]
+        }
+      ],
+      "legendary": [
+        {
+          "name": "Detect",
+          "entries": [
+            "The Heart of Styx makes a Wisdom (Perception) check."
+          ]
+        },
+        {
+          "name": "Psychic Slam",
+          "entries": [
+            "Costs 2 Actions: The Heart of Styx targets one creature it can see within 60 feet. The target must succeed on a DC 20 Constitution saving throw or take 22 (4d10) psychic damage and be stunned until the end of their next turn."
+          ]
+        },
+        {
+          "name": "Restore Memory",
+          "entries": [
+            "Costs 3 Actions: The Heart of Styx regains spent magical energy, allowing it to immediately recharge its Memory Drain ability."
+          ]
+        }
+      ]
     }
   ],
   "item": [
@@ -2914,6 +3039,56 @@
         "injury",
         "positoxin"
       ]
+    },
+    {
+      "name": "The Stack Overflow",
+      "source": "agidm",
+      "type": "M",
+      "rarity": "legendary",
+      "weight": 6,
+      "weaponCategory": "martial",
+      "property": [
+        "H",
+        "2H"
+      ],
+      "dmg1": "2d6",
+      "dmgType": "S",
+      "reqAttune": true,
+      "sword": true,
+      "weapon": true,
+      "entries": [
+        "Created in the hidden digital forges of the Technomancers, The Stack Overflow is a sword of sleek, metallic design, with runes of ancient modron etched along its shimmering, spiral blade. When unsheathed, the air crackles with raw data streams, and the faint hum of binary whispers can be heard.",
+        "Attacks made with this greatsword gain an additional +3 to attack and damage rolls. Additionally, this blade does {@dice 2d10} damage instead of the weapon's normal damage dice if the target relies on magic or uses enchanted equipment.",
+        {
+          "type": "entries",
+          "name": "PixelWorld Failsafe",
+          "entries": [
+            "Within PixelWorld, this blade deals an additional {@dice 2d10} failsafe damage to creations of the system."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Codebreaker",
+          "entries": [
+            "Once per day, you can cast {@spell Counterspell} as a 5th-level spell without expending a spell slot. Intelligence is your spellcasting ability for this spell."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Garbage Collection",
+          "entries": [
+            "When the sword strikes an undead or construct, it can instantly disintegrate targets with 64 hit points or less, clearing away the garbage with efficiency."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Reboot ",
+          "entries": [
+            "Once per long rest, if you fall to 0 hit points, you can choose to 'reboot', instantly regaining 1 hit point and standing up as a burst of energy clears any non-magical restraints or conditions."
+          ]
+        }
+      ],
+      "bonusWeapon": "+2"
     }
   ],
   "spell": [
