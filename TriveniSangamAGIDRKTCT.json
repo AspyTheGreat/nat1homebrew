@@ -16665,6 +16665,1646 @@
           "dex": 1
         }
       ]
+    },
+    {
+      "name": "Athlete",
+      "source": "DRK",
+      "page": 165,
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "str",
+              "dex"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "You have undergone extensive physical training to gain the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "You gain proficiency in the {@skill Athletics} skill. If you already have proficiency, you gain expertise instead.",
+            "When you are {@condition prone}, you can stand up without using any additional movement.",
+            "Your movement speed cannot be reduced by non-magical means, including non-magical difficult terrain",
+            "You gain a climbing and a swimming speed equal to your walking speed.",
+            "You can make a running long jump or a running high jump after moving only 5 feet on foot, rather than 10 feet."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bountiful Luck",
+      "source": "DRK",
+      "page": 73,
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "str",
+              "dex",
+              "con",
+              "int",
+              "wis",
+              "cha"
+            ],
+            "amount": 1,
+            "entry": "Increase the chosen ability score by 1, to a maximum of 20."
+          }
+        }
+      ],
+      "prerequisite": [
+        {
+          "race": [
+            {
+              "name": "halfling"
+            }
+          ]
+        }
+      ],
+      "entries": [
+        "Your people have extraordinary luck, which you have learned to mystically lend to your companions when you see them falter. You're not sure how you do it; you just wish it, and it happens. Surely a sign of fortune's favor!",
+        "When an ally you can see within 60 feet of you rolls a 1 on the {@dice d20} for an attack roll, an ability check, or a saving throw, you can use your reaction to let the ally reroll the die. The ally must use the new roll.",
+        "When you use this ability, you can't use your Lucky racial trait before the start of your next turn."
+      ]
+    },
+    {
+      "name": "Dragon Hide",
+      "source": "DRK",
+      "page": 74,
+      "prerequisite": [
+        {
+          "race": [
+            {
+              "name": "dragonborn"
+            }
+          ]
+        }
+      ],
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "str",
+              "con",
+              "cha"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "You manifest scales and claws reminiscent of your draconic ancestors. You gain the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "Your scales harden. While you aren't wearing armor, you can calculate your AC as 13 + your Dexterity or Constitution (your choice) modifier. You can use a shield and still gain this benefit.",
+            "You grow retractable claws from the tips of your fingers. Extending or retracting the claws requires no action. The claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to {@dice 1d6} + your Strength modifier, instead of the normal bludgeoning damage for an unarmed strike.",
+            "You can make a single claw attack as a bonus action if you have taken the attack action on your turn. Additionally, you gain a bonus to the claws damage equal to your proficiency bonus when attacking a creature who has been affected by a breath weapon within the last round."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gift of the Chromatic Dragon",
+      "source": "DRK",
+      "page": 17,
+      "entries": [
+        "You've manifested some of the power of chromatic dragons, granting you the following benefits:",
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Chromatic Infusion",
+              "entries": [
+                "As a bonus action, you can touch a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon} and infuse it with one of the following damage types: acid, cold, fire, lightning, or poison. For the next minute, the weapon deals an extra {@damage 1d6} damage of the chosen type when it hits. After you use this bonus action, you can't do so again until you finish a short or long rest."
+              ]
+            },
+            {
+              "type": "item",
+              "name": "Reactive Resistance",
+              "entries": [
+                "When you take acid, cold, fire, lightning, or poison damage, you can use your reaction to give yourself resistance to that instance of damage. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gift of the Gem Dragon",
+      "source": "DRK",
+      "page": 17,
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "You've manifested some of the power of gem dragons, granting you the following benefits:",
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Telekinetic Reprisal",
+              "entries": [
+                "When you take damage from a creature that is within 10 feet of you, you can use your reaction to emanate telekinetic energy. The creature that dealt damage to you must make a Strength saving throw (DC equals 8 + your proficiency bonus + the ability modifier of the score increased by this feat). On a failed save, the creature takes {@damage 2d8} force damage and is pushed up to 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed. Additionally, you gain temporary hitpoints equal to the damage dealt. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gift of the Metallic Dragon",
+      "source": "DRK",
+      "page": 17,
+      "additionalSpells": [
+        {
+          "ability": {
+            "choose": [
+              "int",
+              "wis",
+              "cha"
+            ]
+          },
+          "innate": {
+            "_": {
+              "daily": {
+                "1": [
+                  "cure wounds"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "entries": [
+        "You've manifested some of the power of metallic dragons, granting you the following benefits:",
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Draconic Healing",
+              "entries": [
+                "You learn the {@spell cure wounds} spell. You can cast this spell without expending a spell slot. Once you cast this spell in this way, you can't do so again until you finish a long rest. You can also cast this spell using spell slots you have. The spell's spellcasting ability is Intelligence, Wisdom, or Charisma when you cast it with this feat (choose when you gain the feat)."
+              ]
+            },
+            {
+              "type": "item",
+              "name": "Protective Wings",
+              "entries": [
+                "You can manifest protective wings that can shield you or others. When you or another creature you can see within 5 feet of you is hit by an attack roll, you can use your reaction to manifest spectral wings from your back for a moment. You grant a bonus to the target's AC equal to your proficiency bonus against that attack roll. If it causes the attack to miss, you may make a single weapon attack as part of the same reaction. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Drow High Magic",
+      "source": "DRK",
+      "page": 74,
+      "prerequisite": [
+        {
+          "race": [
+            {
+              "name": "elf",
+              "subrace": "drow"
+            }
+          ]
+        }
+      ],
+      "additionalSpells": [
+        {
+          "ability": "cha",
+          "innate": {
+            "_": {
+              "will": [
+                "detect magic"
+              ],
+              "daily": {
+                "1e": [
+                  "levitate",
+                  "dispel magic"
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "entries": [
+        "You learn more of the magic typical of dark elves. You learn the {@spell detect magic} spell and can cast it at will, without expending a spell slot. You also learn {@spell levitate} and {@spell dispel magic}, each of which you can cast once without expending a spell slot. You regain the ability to cast those two spells in this way when you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spell's spellcasting ability is Charisma."
+      ]
+    },
+    {
+      "name": "Durable",
+      "source": "DRK",
+      "page": 166,
+      "ability": [
+        {
+          "con": 1
+        }
+      ],
+      "entries": [
+        "Hardy and resilient, you gain the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "When you roll a Hit Die to regain hit points, the minimum number of hit points you regain from the roll equals twice your Constitution modifier (minimum of 2).",
+            "You regain all expended Hit Die whenever you finish a long rest.",
+            "When you drop to 0 hitpoints, you can expend a hit die, healing yourself for that amount. Once you use this feature, you cannot do so until you finish a long rest."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dwarven Fortitude",
+      "source": "DRK",
+      "page": 74,
+      "prerequisite": [
+        {
+          "race": [
+            {
+              "name": "dwarf"
+            }
+          ]
+        }
+      ],
+      "ability": [
+        {
+          "con": 1
+        }
+      ],
+      "entries": [
+        "You have the blood of dwarf heroes flowing through your veins. You gain the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "Whenever you take the {@action Dodge} action in combat, you can spend one Hit Die to heal yourself. Roll the die, add your Constitution modifier, and regain a number of hit points equal to the total (minimum of 1). Additionally, you can make a single weapon attack as a bonus action whenever you take the {@action Dodge} action."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fade Away",
+      "source": "DRK",
+      "page": 74,
+      "prerequisite": [
+        {
+          "race": [
+            {
+              "name": "gnome"
+            }
+          ]
+        }
+      ],
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "dex",
+              "int"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "Your people are clever, with a knack for illusion magic. You have learned a magical trick for fading away when you suffer harm. You gain the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "Immediately after you take damage, you can use a reaction to magically become {@condition invisible} until the end of your next turn or until you attack, deal damage, or force someone to make a saving throw. You can use this ability a number of times equal to your proficiency bonus, regaining all expended uses on a long rest."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fey Teleportation",
+      "source": "DRK",
+      "page": 74,
+      "prerequisite": [
+        {
+          "race": [
+            {
+              "name": "elf",
+              "subrace": "high"
+            }
+          ]
+        }
+      ],
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "int",
+              "cha"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+      "languageProficiencies": [
+        {
+          "sylvan": true
+        }
+      ],
+      "additionalSpells": [
+        {
+          "ability": "int",
+          "innate": {
+            "_": {
+              "daily": {
+                "1": [
+                  "misty step",
+                  {
+                    "choose": "level=1|class=wizard"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "entries": [
+        "Your study of high elven lore has unlocked fey power that few other elves possess, except your eladrin cousins. Drawing on your fey ancestry, you can momentarily stride through the Feywild to shorten your path from one place to another. You gain the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "You learn to speak, read, and write {@language Sylvan}.",
+            "You learn the {@spell misty step} spell and one other {@filter 1st-level spell|spells|level=1|class=wizard} of your choice. the {@filter 1st-level spell|spells|level=1|class=wizard} must be from the Wizard spell list. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. Intelligence is the spellcasting ability when you cast these spells."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Flames of Phlegethos",
+      "source": "DRK",
+      "page": 74,
+      "prerequisite": [
+        {
+          "race": [
+            {
+              "name": "tiefling"
+            }
+          ]
+        }
+      ],
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "int",
+              "cha"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "You learn to call on hellfire to serve your commands. You gain the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "When you roll fire damage for a spell you cast, you can reroll any roll of 1 on the fire damage dice, but you must use the new roll, even if it is another 1.",
+            "Whenever you cast a spell that deals fire damage, you can cause flames to wreathe you until the end of your next turn. The flames don't harm you or your possessions, and they shed bright light out to 30 feet and dim light for an additional 30 feet. While the flames are present, any creature that moves within 5 feet of you or hits you with a melee attack takes {@damage 1d8} fire damage."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Grappler",
+      "source": "DRK",
+      "page": 167,
+      "srd": true,
+      "prerequisite": [
+        {
+          "ability": [
+            {
+              "str": 13
+            }
+          ]
+        }
+      ],
+      "entries": [
+        "You've developed the skills necessary to hold your own in close-quarters grappling. You gain the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "You have advantage on attack rolls against a creature you are grappling.",
+            "When you make a grapple check, you can treat a {@dice 1d20} roll of 9 or lower as a 10.",
+            "You do not suffer a penalty to your movement speed when dragging a creature whose size is equal to or smaller than yours.",
+            "If the grappled creature is pushed away from your grapple through forced movement (such as through a {@spell thunderwave} spell, you can use your reaction to hold on to the creature. To do so, make another grapple check. You maintain your hold on the creature on a successful check.",
+            "You can attempt to grapple a creature whose size is two levels larger than you. When you do so, you make your grapple check with disadvantage. If you successfully grapple the creature, it's speed is reduced by 15 feet, and you are dragged with the creature when it moves."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dual Wielder",
+      "source": "DRK",
+      "page": 165,
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "dex",
+              "str"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "You master fighting with two weapons, gaining the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "You gain a +1 bonus to AC while you are wielding a separate melee weapon in each hand.",
+            "You can use two-weapon fighting even when the one-handed melee weapons you are wielding aren't light, treating them as if they had the light property.",
+            "You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Heavily Armored",
+      "source": "DRK",
+      "page": 167,
+      "prerequisite": [
+        {
+          "proficiency": [
+            {
+              "armor": "medium"
+            }
+          ]
+        }
+      ],
+      "ability": [
+        {
+          "str": 1
+        }
+      ],
+      "armorProficiencies": [
+        {
+          "heavy": true,
+          "shield|phb": true
+        }
+      ],
+      "entries": [
+        "You have trained to master the use of heavy armor, gaining the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "You gain proficiency with heavy armor and shields.",
+            "You can treat your strength score as if it were higher by 5 (up to a maximum of 25) for the purposes of heavy armor requirements, as well as when calculating your carry capacity.",
+            "You can don and doff heavy armor as an action."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Inspiring Leader",
+      "source": "DRK",
+      "page": 167,
+      "prerequisite": [
+        {
+          "ability": [
+            {
+              "cha": 13
+            }
+          ]
+        }
+      ],
+      "entries": [
+        "You can spend 10 minutes inspiring your companions, shoring up their resolve to fight. When you do so, choose up to six friendly creatures (which can include yourself) within 30 feet of you who can see or hear you and who can understand you. Each creature can gain temporary hit points equal to your level + your Charisma modifier, and is inspired. Until they take a short or long rest, they can choose to gain advantage on one attack roll, ability check, or saving throw. A creature can't gain temporary hit points or be inspired from this feat again until it has finished a short or long rest."
+      ],
+      "hasFluffImages": true
+    },
+    {
+      "name": "Pyromancer",
+      "source": "DRK",
+      "page": 166,
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+      "prerequisite": [
+        {
+          "spellcasting": true,
+          "level": 4,
+          "feat": [
+            "Elemental Adept|DRK|Elemental Adept (Fire)"
+          ]
+        }
+      ],
+      "entries": [
+        "You've gained the  ability to channel the purest form of the element. You gain the following beneits:",
+        {
+          "type": "list",
+          "items": [
+            "When you gain this feat, you gain resistance to fire damage.",
+            "When you deal fire damage to a creature, they are ignited until the start of your next turn. An ignited creature takes {@dice 1d8} fire damage when it starts its turn, and cannot benefit from the {@condition invisible} condition.",
+            "When you deal fire damage with a spell to a creature is immune to the chosen damage type, you can choose to temporarily suppress the immunity, treating it as resistance until the start of your next turn. You can do so a number of times equal to your proficiency bonus, regaining all expended uses on a long rest."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cryomancer",
+      "source": "DRK",
+      "page": 166,
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+      "prerequisite": [
+        {
+          "spellcasting": true,
+          "level": 4,
+          "feat": [
+            "Elemental Adept|DRK|Elemental Adept (Cold)"
+          ]
+        }
+      ],
+      "entries": [
+        "You've gained the  ability to channel the purest form of the element. You gain the following beneits:",
+        {
+          "type": "list",
+          "items": [
+            "When you gain this feat, you gain resistance to cold damage.",
+            "When you deal cold damage to a creature, they are frozen until the start of your next turn. A frozen creature has its movement speed reduced by 10 feet, and has disadvantage on concentration checks.",
+            "When you deal cold damage with a spell to a creature is immune to the chosen damage type, you can choose to temporarily suppress the immunity, treating it as resistance until the start of your next turn. You can do so a number of times equal to your proficiency bonus, regaining all expended uses on a long rest."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Acetomancer",
+      "source": "DRK",
+      "page": 166,
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+      "prerequisite": [
+        {
+          "spellcasting": true,
+          "level": 4,
+          "feat": [
+            "Elemental Adept|DRK|Elemental Adept (Acid)"
+          ]
+        }
+      ],
+      "entries": [
+        "You've gained the  ability to channel the purest form of the element. You gain the following beneits:",
+        {
+          "type": "list",
+          "items": [
+            "When you gain this feat, you gain resistance to acid damage.",
+            "When you deal acid damage to a creature, they gain a stack of corrosion. A creature cannot gain more than 1 stack of corrosion on a round. A corroded creature has its Armor Class reduced by 1 for each stack of corrosion it has. The stacks last for 1 minute, or until the creature uses an action to scrape the acid off of itself.",
+            "When you deal acid damage with a spell to a creature is immune to the chosen damage type, you can choose to temporarily suppress the immunity, treating it as resistance until the start of your next turn. You can do so a number of times equal to your proficiency bonus, regaining all expended uses on a long rest."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Thunemancer",
+      "source": "DRK",
+      "page": 166,
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+      "prerequisite": [
+        {
+          "spellcasting": true,
+          "level": 4,
+          "feat": [
+            "Elemental Adept|DRK|Elemental Adept (Thunder)"
+          ]
+        }
+      ],
+      "entries": [
+        "You've gained the  ability to channel the purest form of the element. You gain the following beneits:",
+        {
+          "type": "list",
+          "items": [
+            "When you gain this feat, you gain resistance to Thunder damage.",
+            "When you deal thunder damage to a creature, they are Startled until the start of your next turn. A startled creature has disadvantage on checks that require hearing, and cannot take reactions.",
+            "When you deal thunder damage with a spell to a creature is immune to the chosen damage type, you can choose to temporarily suppress the immunity, treating it as resistance until the start of your next turn. You can do so a number of times equal to your proficiency bonus, regaining all expended uses on a long rest."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fulmimancer",
+      "source": "DRK",
+      "page": 166,
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+      "prerequisite": [
+        {
+          "spellcasting": true,
+          "level": 4,
+          "feat": [
+            "Elemental Adept|DRK|Elemental Adept (Lightning)"
+          ]
+        }
+      ],
+      "entries": [
+        "You've gained the  ability to channel the purest form of the element. You gain the following beneits:",
+        {
+          "type": "list",
+          "items": [
+            "When you gain this feat, you gain resistance to Lightning damage.",
+            "When you deal lightning damage to a creature, they gain a stack of Static. Whenever the creature makes an attack roll or saving throw, you can use your reaction to expend the static charges, giving the creature a penalty to the roll equal to the amount of static charges it had.",
+            "When you deal lightning damage with a spell to a creature is immune to the chosen damage type, you can choose to temporarily suppress the immunity, treating it as resistance until the start of your next turn. You can do so a number of times equal to your proficiency bonus, regaining all expended uses on a long rest."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mystic Empowerment",
+      "source": "DRK",
+      "page": 166,
+      "prerequisite": [
+        {
+          "spellcasting": true,
+          "level": 4
+        }
+      ],
+      "entries": [
+        "You have trained to more efficiently channel magical energy into your spell. You gain the following benefits.",
+        {
+          "type": "list",
+          "items": [
+            "You can cast ritual spells by spending one extra minute, rather than ten, when casting them without a spell slot.",
+            "You gain a number of focus charges equal to your proficiency bonus. You can spend focus charges in the following ways:",
+            {
+              "type": "list",
+              "style": "list-hang-notitle",
+              "items": [
+                {
+                  "type": "item",
+                  "name": "Destructive Focus",
+                  "entries": [
+                    "When you cast a spell that deals damage, you can spend a focus charge to increase its damage die type in the following way: (d4->d6, d6->d8, d8->d10, d10->d12, d12->3d4)."
+                  ]
+                },
+                {
+                  "type": "item",
+                  "name": "Rejuvenating Focus",
+                  "entries": [
+                    "When you cast a spell that recovers hit-points, you can expend a focus charge to roll the maximum amount on the healing die for no more than two of the creatures healed."
+                  ]
+                },
+                {
+                  "type": "item",
+                  "name": "Exact Focus",
+                  "entries": [
+                    "When you miss an attack roll with a spell, you can expend a focus charge to add a bonus to the attack roll equal to your proficiency bonus."
+                  ]
+                },
+                {
+                  "type": "item",
+                  "name": "Stalwart Focus",
+                  "entries": [
+                    "When you cast a spell that requires concentration, you can spend a focus charge to give yourself a bonus equal to your proficiency bonus on concentration checks for that spell."
+                  ]
+                },
+                {
+                  "type": "item",
+                  "name": "Potent Focus",
+                  "entries": [
+                    "When you cast a leveled spell, you can spend a focus charge to cast the spell as if the spell slot expended was of one higher level."
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Festering Condition",
+      "source": "DRK",
+      "page": 166,
+      "entries": [
+        "Conditions you inflict grow more and more potent the longer a creature is affected by them. The condition festers at the start of the creature's turn, applying a more debilitating condition for the duration of the original condition, and is lost whenever the original condition ends. The condition festers as shown in the table below:",
+        {
+          "type": "table",
+          "caption": "Festering Conditions",
+          "colLabels": [
+            "Original Condition",
+            "Festered Condition"
+          ],
+          "colStyles": [
+            "col-5",
+            "col-5"
+          ],
+          "rows": [
+            [
+              "{@condition silenced}",
+              "{@condition deafened}."
+            ],
+            [
+              "{@condition deafened}",
+              "{@condition blinded}"
+            ],
+            [
+              "{@condition frightened}",
+              "{@condition restrained}"
+            ],
+            [
+              "{@condition dazed}",
+              "{@condition incapacitated}"
+            ],
+            [
+              "{@condition incapacitated}",
+              "{@condition stunned}"
+            ],
+            [
+              "{@condition stunned}",
+              "{@condition paralyzed}"
+            ],
+            [
+              "{@condition paralyzed}",
+              "{@condition unconscious}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lightly Armored",
+      "source": "DRK",
+      "page": 167,
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "str",
+              "dex"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+      "armorProficiencies": [
+        {
+          "light": true
+        }
+      ],
+      "entries": [
+        "You have trained to master the use of light armor, gaining the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "You gain proficiency with light armor.",
+            "your speed increases by 10 feet when wearing light armor.",
+            "Opportunity against you are made at disadvantage."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Linguist",
+      "source": "DRK",
+      "page": 167,
+      "ability": [
+        {
+          "int": 1
+        }
+      ],
+      "languageProficiencies": [
+        {
+          "any": 3
+        }
+      ],
+      "entries": [
+        "You have studied languages and codes, gaining the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "You learn four languages of your choice.",
+            "You can ably create written ciphers. Others can't decipher a code you create unless you teach them, they succeed on an Intelligence check (DC equal to your Intelligence score + your proficiency bonus), or they use magic to decipher it.",
+            "You have a +5 bonus to checks when trying to decipher codes. Additionally, you can make out the general meaning of messages when reading languages you don't understand, as long as you know a language that uses the same script."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mage Slayer",
+      "source": "DRK",
+      "page": 168,
+      "entries": [
+        "You have practiced techniques useful in melee combat against spellcasters, gaining the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "When a creature within 5 feet of you casts a spell, you can use your reaction to make a melee weapon attack against that creature. If you hit, the creature must make a constitution saving throw as if it were concentrating on the spell. If it fails, the spell is lost and the creature's action is wasted.",
+            "When you damage a creature that is {@status concentration||concentrating} on a spell, that creature has disadvantage on saving throws it makes to maintain its {@status concentration} until the end of your next turn.",
+            "You have advantage on saving throws against spells cast by creatures whom you have dealt damage to within your last turn."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Magic Initiate",
+      "source": "DRK",
+      "page": 168,
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+      "additionalSpells": [
+        {
+          "name": "Bard Spells",
+          "ability": "cha",
+          "innate": {
+            "_": {
+              "daily": {
+                "1": [
+                  {
+                    "choose": "level=1|class=Bard"
+                  }
+                ]
+              }
+            }
+          },
+          "known": {
+            "_": [
+              {
+                "choose": "level=0|class=Bard",
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "name": "Cleric Spells",
+          "ability": "wis",
+          "innate": {
+            "_": {
+              "daily": {
+                "1": [
+                  {
+                    "choose": "level=1|class=Cleric"
+                  }
+                ]
+              }
+            }
+          },
+          "known": {
+            "_": [
+              {
+                "choose": "level=0|class=Cleric",
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "name": "Druid Spells",
+          "ability": "wis",
+          "innate": {
+            "_": {
+              "daily": {
+                "1": [
+                  {
+                    "choose": "level=1|class=Druid"
+                  }
+                ]
+              }
+            }
+          },
+          "known": {
+            "_": [
+              {
+                "choose": "level=0|class=Druid",
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "name": "Sorcerer Spells",
+          "ability": "cha",
+          "innate": {
+            "_": {
+              "daily": {
+                "1": [
+                  {
+                    "choose": "level=1|class=Sorcerer"
+                  }
+                ]
+              }
+            }
+          },
+          "known": {
+            "_": [
+              {
+                "choose": "level=0|class=Sorcerer",
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "name": "Warlock Spells",
+          "ability": "cha",
+          "innate": {
+            "_": {
+              "daily": {
+                "1": [
+                  {
+                    "choose": "level=1|class=Warlock"
+                  }
+                ]
+              }
+            }
+          },
+          "known": {
+            "_": [
+              {
+                "choose": "level=0|class=Warlock",
+                "count": 2
+              }
+            ]
+          }
+        },
+        {
+          "name": "Wizard Spells",
+          "ability": "int",
+          "innate": {
+            "_": {
+              "daily": {
+                "1": [
+                  {
+                    "choose": "level=1|class=Wizard"
+                  }
+                ]
+              }
+            }
+          },
+          "known": {
+            "_": [
+              {
+                "choose": "level=0|class=Wizard",
+                "count": 2
+              }
+            ]
+          }
+        }
+      ],
+      "entries": [
+        "Choose a class: {@filter bard|spells|level=0;1|class=bard}, {@filter cleric|spells|level=0;1|class=cleric}, {@filter druid|spells|level=0;1|class=druid}, {@filter sorcerer|spells|level=0;1|class=sorcerer}, {@filter warlock|spells|level=0;1|class=warlock}, or {@filter wizard|spells|level=0;1|class=wizard}. You learn two cantrips of your choice from that class's spell list.",
+        "In addition, choose one 1st-level spell to learn from that same list. Using this feat, you can cast the spell once at its lowest level, and you must finish a long rest before you can cast it in this way again.  You can also cast the spell using spell slots you have of the appropriate level.",
+        "Your spellcasting ability for these spells depends on the class you chose: Charisma for {@filter bard|spells|level=0;1|class=bard}, {@filter sorcerer|spells|level=0;1|class=sorcerer}, or {@filter warlock|spells|level=0;1|class=warlock}; Wisdom for {@filter cleric|spells|level=0;1|class=cleric} or {@filter druid|spells|level=0;1|class=druid}; or Intelligence for {@filter wizard|spells|level=0;1|class=wizard}."
+      ]
+    },
+    {
+      "name": "Martial Adept",
+      "source": "DRK",
+      "page": 168,
+      "optionalfeatureProgression": [
+        {
+          "name": "Maneuvers",
+          "featureType": [
+            "MV:B"
+          ],
+          "progression": {
+            "*": 2
+          }
+        }
+      ],
+      "entries": [
+        "You have martial training that allows you to perform special combat maneuvers. You gain the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "You learn two {@filter maneuvers|optionalfeatures|feature type=MV:B} of your choice from among those available to the {@class fighter|phb|Battle Master|Battle Master|phb|2-0} archetype in the fighter class. If a maneuver you use requires your target to make a saving throw to resist the maneuver's effects, the saving throw DC equals 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).",
+            "You gain two superiority dice, which are a {@dice d6} (this die is added to any superiority dice you have from another source). This die is used to fuel your maneuvers. A superiority die is expended when you use it. You regain your expended superiority dice when you finish a short or long rest."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Medium Armor Master",
+      "source": "DRK",
+      "page": 168,
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "str",
+              "dex"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+      "prerequisite": [
+        {
+          "proficiency": [
+            {
+              "armor": "medium"
+            }
+          ]
+        }
+      ],
+      "entries": [
+        "You have practiced moving in medium armor to gain the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "Wearing medium armor doesn't impose disadvantage on your Dexterity ({@skill Stealth}) checks.",
+            "When you wear medium armor, you can add 3, rather than 2, to your AC if you have a Dexterity of 16 or higher."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Observant",
+      "source": "DRK",
+      "page": 168,
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "int",
+              "wis"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "Quick to notice details of your environment, you gain the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "If you can see a creature's mouth while it is speaking a language you understand, you can interpret what it's saying by reading its lips.",
+            "You have a +5 bonus to Wisdom ({@skill Perception}) and passive Intelligence ({@skill Investigation}) scores.",
+            "you have advantage on checks you make to identify traps, hidden doors, and other hidden compartments."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Orcish Fury",
+      "source": "DRK",
+      "page": 75,
+      "prerequisite": [
+        {
+          "race": [
+            {
+              "name": "orc"
+            },
+            {
+              "name": "half-orc"
+            }
+          ]
+        }
+      ],
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "str",
+              "con"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "Your fury burns tirelessly. You gain the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "When you hit with an attack using a {@filter simple or martial weapon|items|source=phb|category=basic|type=martial weapon;simple weapon}, you can roll one of the weapon's damage dice an additional time and add it as extra damage of the weapon's damage type. You can use this ability a number of times equal to your proficiency bonus, regaining all expended uses on a short or long rest.",
+            "Immediately after you use your Relentless Endurance trait can now be used once per short rest."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Prodigy",
+      "source": "DRK",
+      "page": 75,
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "str",
+              "dex",
+              "con",
+              "int",
+              "wis",
+              "cha"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+      "prerequisite": [
+        {
+          "race": [
+            {
+              "name": "half-elf"
+            },
+            {
+              "name": "half-orc"
+            },
+            {
+              "name": "human"
+            }
+          ]
+        }
+      ],
+      "skillProficiencies": [
+        {
+          "choose": {
+            "from": [
+              "athletics",
+              "acrobatics",
+              "sleight of hand",
+              "stealth",
+              "arcana",
+              "history",
+              "investigation",
+              "nature",
+              "religion",
+              "animal handling",
+              "insight",
+              "medicine",
+              "perception",
+              "survival",
+              "deception",
+              "intimidation",
+              "performance",
+              "persuasion"
+            ]
+          }
+        }
+      ],
+      "languageProficiencies": [
+        {
+          "any": 1
+        }
+      ],
+      "toolProficiencies": [
+        {
+          "any": 1
+        }
+      ],
+      "entries": [
+        "You have a knack for learning new things. You gain the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "You gain one {@table skills|phb|skill proficiency} of your choice, one {@filter tool proficiency|items|type=tool;artisan's tools} of your choice, and fluency in one language of your choice.",
+            "Choose one skill in which you have proficiency. You gain expertise with that skill, which means your proficiency bonus is doubled for any ability check you make with it. The skill you choose must be one that isn't already benefiting from a feature, such as Expertise, that doubles your proficiency bonus."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Savage Attacker",
+      "source": "DRK",
+      "page": 169,
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "str",
+              "dex"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "when you miss an attack roll with a melee weapon attack, you gain advantage on the next melee weapon attack."
+      ]
+    },
+    {
+      "name": "Second Chance",
+      "source": "DRK",
+      "page": 75,
+      "prerequisite": [
+        {
+          "race": [
+            {
+              "name": "halfling"
+            }
+          ]
+        }
+      ],
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "dex",
+              "con",
+              "cha"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "Fortune favors you when someone tries to strike you. You gain the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "When a creature you can see hits you with an attack roll, you can use your reaction to force that creature to attack another creature or waste the attack. Once you use this ability, you can use this ability twice, regaining its use when you roll initiative at the start of combat or finish a short or long rest."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Shield Master",
+      "source": "DRK",
+      "page": 170,
+      "entries": [
+        "You use shields not just for protection but also for offense. You gain the following benefits while you are wielding a {@item shield|phb}:",
+        {
+          "type": "list",
+          "items": [
+            "If you take the {@action Attack} action on your turn, you can use a bonus action to try to {@action shove} a creature within 5 feet of you with your shield.",
+            "If you aren't {@condition incapacitated}, you can add your shield's AC bonus to any Dexterity saving throw you make against a spell or other harmful effect that targets only you.",
+            "If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, interposing your shield between yourself and the source of the effect."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Martial Artist",
+      "source": "DRK",
+      "page": 170,
+      "entries": [
+        "You have trained yourself in martial arts. You gain the following benefits",
+        {
+          "type": "list",
+          "items": [
+            "You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes, and they deal {@dice 1d6} + your Strength or Dexterity modifier damage on a hit (Your choice). If you aren't wielding any weapons or a {@item shield|phb} when you make the attack roll, the {@dice 1d6} becomes a {@dice 1d8}.",
+            "You gain 2 Ki points, which replenish whenever you finish a short or long rest.",
+            "You gain the following abilites which are fueled by your Ki points:",
+            {
+              "type": "list",
+              "style": "list-hang-notitle",
+              "items": [
+                {
+                  "type": "item",
+                  "name": "Flurry of Blows:",
+                  "entries": [
+                    "You can spend 1 ki point to make two unarmed strikes as a bonus action."
+                  ]
+                },
+                {
+                  "type": "item",
+                  "name": "Patient Defense:",
+                  "entries": [
+                    "You can spend 1 ki point to take the {@action Dodge} action as a bonus action on your turn."
+                  ]
+                },
+                {
+                  "type": "item",
+                  "name": "Step of the Wind",
+                  "entries": [
+                    "You can spend one ki point to take both the Dash and Disengage action as a bonus action, and your jump distance is doubled for the turn."
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Skill Expert",
+      "source": "DRK",
+      "page": 80,
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "str",
+              "dex",
+              "con",
+              "int",
+              "wis",
+              "cha"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+      "skillProficiencies": [
+        {
+          "choose": {
+            "from": [
+              "athletics",
+              "acrobatics",
+              "sleight of hand",
+              "stealth",
+              "arcana",
+              "history",
+              "investigation",
+              "nature",
+              "religion",
+              "animal handling",
+              "insight",
+              "medicine",
+              "perception",
+              "survival",
+              "deception",
+              "intimidation",
+              "performance",
+              "persuasion"
+            ]
+          }
+        }
+      ],
+      "toolProficiencies": [
+        {
+          "any": 1
+        }
+      ],
+      "expertise": [
+        {
+          "anyProficientSkill": 1
+        }
+      ],
+      "entries": [
+        "You have honed your proficiency with particular skills, granting you the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "You gain proficiency in two {@table skills|phb|skills} or {@filter tool proficiency|items|type=tool;artisan's tools} of your choice.",
+            "Choose one skill in which you have proficiency. You gain expertise with that skill, which means your proficiency bonus is doubled for any ability check you make with it. The skill you choose must be one that isn't already benefiting from a feature, such as Expertise, that doubles your proficiency bonus."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Skilled",
+      "source": "DRK",
+      "page": 170,
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "str",
+              "dex",
+              "con",
+              "int",
+              "wis",
+              "cha"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+      "skillToolLanguageProficiencies": [
+        {
+          "choose": [
+            {
+              "from": [
+                "anySkill",
+                "anyTool"
+              ],
+              "count": 3
+            }
+          ]
+        }
+      ],
+      "entries": [
+        "You gain proficiency in any combination of four {@table skills|phb} or {@filter tools|items|type=tools;artisan's tools;instrument;gaming set;vehicle (land);vehicle (water)} of your choice."
+      ]
+    },
+    {
+      "name": "Skulker",
+      "source": "DRK",
+      "page": 170,
+      "prerequisite": [
+        {
+          "ability": [
+            {
+              "dex": 13
+            }
+          ]
+        }
+      ],
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "dex"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "You are expert at slinking through shadows. You gain the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "You can try to hide when you are lightly obscured from the creature from which you are hiding.",
+            "When you are hidden from a creature and miss it with a ranged weapon attack, making the attack doesn't reveal your position.",
+            "you gain {@sense darkvision} up to a range of 120 feet. If you already have darkvision from another source, its range is increased by 60 feet.",
+            "Dim light doesn't impose disadvantage on your Wisdom ({@skill Perception}) checks relying on sight."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Squat Nimbleness",
+      "source": "DRK",
+      "page": 75,
+      "prerequisite": [
+        {
+          "race": [
+            {
+              "name": "dwarf"
+            },
+            {
+              "name": "small race",
+              "displayEntry": "a Small race"
+            }
+          ]
+        }
+      ],
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "str",
+              "dex"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+      "skillProficiencies": [
+        {
+          "choose": {
+            "from": [
+              "acrobatics",
+              "athletics"
+            ]
+          }
+        }
+      ],
+      "entries": [
+        "You are uncommonly nimble for your race. You gain the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "Increase your walking speed by 5 feet.",
+            "You have  advantage on saving throws against being {@condition prone}, and can get up from being prone by expending only 5 feet of movement.",
+            "You gain proficiency in the {@skill Acrobatics} or {@skill Athletics} skill (your choice).",
+            "You have advantage on any Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check you make to escape from being {@condition grappled}."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wood Elf Magic",
+      "source": "DRK",
+      "page": 75,
+      "prerequisite": [
+        {
+          "race": [
+            {
+              "name": "elf",
+              "subrace": "wood"
+            }
+          ]
+        }
+      ],
+      "additionalSpells": [
+        {
+          "ability": "wis",
+          "innate": {
+            "_": {
+              "daily": {
+                "1e": [
+                  "longstrider",
+                  "pass without trace"
+                ]
+              }
+            }
+          },
+          "known": {
+            "_": [
+              {
+                "choose": "level=0|class=Druid"
+              }
+            ]
+          }
+        }
+      ],
+      "entries": [
+        "You learn the magic of the primeval woods, which are revered and protected by your people. You learn one druid cantrip of your choice. You also learn the {@spell longstrider} and {@spell pass without trace} spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. Wisdom is your spellcasting ability for all three spells."
+      ]
+    },
+    {
+      "name": "Elemental Adept",
+      "source": "DRK",
+      "page": 166,
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+      "prerequisite": [
+        {
+          "spellcasting": true
+        }
+      ],
+      "entries": [
+        "When you gain this feat, choose one of the following damage types: acid, cold, fire, lightning, or thunder.",
+        "Spells you cast ignore resistance to damage of the chosen type. In addition, when you roll a 1 or a 2 on a damage die for a spell you cast that deals damage of that type, you can reroll the damage dice and must use the new roll.",
+        "You can select this feat multiple times. Each time you do so, you must choose a different damage type."
+      ]
     }
   ],
   "class": [
@@ -63634,6 +65274,38 @@
       "entries": [
         "Certain features grant you an additional action that you may use on your turn known as a Hasted Action. This action can be used only to take the {@action Attack} (one weapon attack each only), {@action Dash}, {@action Disengage}, {@action Hide}, or {@action Use an Object} action."
       ]
+    }
+  ],
+  "condition": [
+    {
+      "name": "Dazed",
+      "source": "DRK",
+      "srd": true,
+      "basicRules": true,
+      "entries": [
+        {
+          "type": "list",
+          "items": [
+            "A dazed creature can move or take one action on your turn, not both. You also can't take a Bonus action or a Reaction."
+          ]
+        }
+      ],
+      "hasFluffImages": true
+    },
+    {
+      "name": "Silenced",
+      "source": "DRK",
+      "srd": true,
+      "basicRules": true,
+      "entries": [
+        {
+          "type": "list",
+          "items": [
+            "A silenced creature cannot speak, including performing the verbal component of a spell."
+          ]
+        }
+      ],
+      "hasFluffImages": true
     }
   ],
   "object": [
