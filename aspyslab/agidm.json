@@ -12,6 +12,9 @@
         "json": "agidm"
       }
     ],
+    "optionalFeatureTypes": {
+      "CW": "Chronomancer Wells"
+    },
     "dateAdded": 1709988358,
     "dateLastModified": 1709988358
   },
@@ -2258,34 +2261,483 @@
           ]
         }
       ]
-    }
-  ],
-  "item": [
+    },
     {
-      "name": "Expanded Capacity Shiftweave",
+      "name": "Celestial Beholder",
+      "group": [
+        "Beholders"
+      ],
       "source": "agidm",
-      "reqAttune": false,
-      "rarity": "rare",
-      "wondrous": true,
-      "entries": [
-        "This Expanded Capacity Shiftweave is a magical garment capable of storing up to ten different outfits. Instead of having outfits pre-embedded at creation, this shiftweave can absorb and store any non-magical outfit it mimics. By touching an outfit and spending 1 minute concentrating, the wearer can store the outfit's design in one of the shiftweave's available slots. Stored designs can be accessed or replaced at any time.",
-        "By speaking a command word as a bonus action, the wearer can transform the shiftweave into any one of the stored outfits. The clothing cannot mimic the magical properties of other magical garments, despite being able to replicate their look.",
+      "page": 28,
+      "size": [
+        "L"
+      ],
+      "type": "celestial",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
         {
-          "type": "entries",
-          "name": "Chameleon",
+          "ac": 18,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 180,
+        "formula": "19d10 + 76"
+      },
+      "speed": {
+        "walk": 0,
+        "fly": {
+          "number": 120,
+          "condition": "(hover)"
+        },
+        "canHover": true
+      },
+      "str": 26,
+      "dex": 18,
+      "con": 18,
+      "int": 17,
+      "wis": 24,
+      "cha": 17,
+      "save": {
+        "dex": "+11",
+        "int": "+10",
+        "wis": "+14",
+        "cha": "+10"
+      },
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "passive": 31,
+      "conditionImmune": [
+        "blinded",
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "poisoned",
+        "prone"
+      ],
+      "languages": [
+        "Deep Speech",
+        "Undercommon",
+        "Celestial"
+      ],
+      "cr": {
+        "cr": "24",
+        "lair": "14"
+      },
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "type": "spellcasting",
+          "headerEntries": [
+            "The planetar's spellcasting ability is Charisma (spell save {@dc 20}). The planetar can innately cast the following spells, requiring no material components:"
+          ],
+          "will": [
+            "{@spell detect evil and good}",
+            "{@spell invisibility} (self only)"
+          ],
+          "daily": {
+            "3e": [
+              "{@spell blade barrier}",
+              "{@spell dispel evil and good}",
+              "{@spell flame strike}",
+              "{@spell raise dead}"
+            ],
+            "1e": [
+              "{@spell commune}",
+              "{@spell control weather}",
+              "{@spell insect plague}"
+            ]
+          },
+          "ability": "cha"
+        }
+      ],
+      "trait": [
+        {
+          "name": "Divine Awareness",
           "entries": [
-            "While wearing the shiftweave transformed into a stored outfit, the wearer can choose to also mimic the voice and general mannerisms of the individual typically associated with the outfit. Granting advantage to deception(charisma) checks made to pass off as the individual."
+            "The planetar knows if it hears a lie."
           ]
         },
         {
-          "type": "entries",
-          "name": "Summon Outfit",
+          "name": "Antimagic Cone",
           "entries": [
-            "As an action, the wearer can target one creature they can see within 30 feet and instantly clothe them in one of the outfits stored in the shiftweave, effectively disguising them. This transformation lasts for up to 1 hour or until the wearer dismisses it as a bonus action"
+            "The beholder's central eye creates an area of antimagic, as in the {@spell antimagic field} spell, in a 150-foot cone. At the start of each of its turns, the beholder decides which way the cone faces and whether the cone is active. The area works against the beholder's own eye rays."
           ]
         }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The planetar makes two melee attacks."
+          ]
+        },
+        {
+          "name": "Greatsword",
+          "entries": [
+            "{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}21 ({@damage 4d6 + 7}) slashing damage plus 22 ({@damage 5d8}) radiant damage."
+          ]
+        },
+        {
+          "name": "Healing Touch (4/Day)",
+          "entries": [
+            "The planetar touches another creature. The target magically regains 30 ({@dice 6d8 + 3}) hit points and is freed from any curse, disease, poison, blindness, or deafness."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d6}) piercing damage."
+          ]
+        },
+        {
+          "name": "Eye Rays",
+          "entries": [
+            "The beholder shoots three of the following magical eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 feet of it:",
+            {
+              "type": "list",
+              "style": "list-hang-notitle",
+              "items": [
+                {
+                  "type": "item",
+                  "name": "1. Charm Ray",
+                  "style": "italic",
+                  "entry": "The targeted creature must succeed on a {@dc 16} Wisdom saving throw or be {@condition charmed} by the beholder for 1 hour, or until the beholder harms the creature."
+                },
+                {
+                  "type": "item",
+                  "name": "2. Paralyzing Ray",
+                  "style": "italic",
+                  "entry": "The targeted creature must succeed on a {@dc 16} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+                },
+                {
+                  "type": "item",
+                  "name": "3. Fear Ray",
+                  "style": "italic",
+                  "entry": "The targeted creature must succeed on a {@dc 16} Wisdom saving throw or be {@condition frightened} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+                },
+                {
+                  "type": "item",
+                  "name": "4. Slowing Ray",
+                  "style": "italic",
+                  "entry": "The targeted creature must succeed on a {@dc 16} Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+                },
+                {
+                  "type": "item",
+                  "name": "5. Enervation Ray",
+                  "style": "italic",
+                  "entry": "The targeted creature must make a {@dc 16} Constitution saving throw, taking 36 ({@damage 8d8}) necrotic damage on a failed save, or half as much damage on a successful one."
+                },
+                {
+                  "type": "item",
+                  "name": "6. Telekinetic Ray",
+                  "style": "italic",
+                  "entries": [
+                    "If the target is a creature, it must succeed on a {@dc 16} Strength saving throw or the beholder moves it up to 30 feet in any direction. It is {@condition restrained} by the ray's telekinetic grip until the start of the beholder's next turn or until the beholder is {@condition incapacitated}.",
+                    "If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The beholder can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container."
+                  ]
+                },
+                {
+                  "type": "item",
+                  "name": "7. Sleep Ray",
+                  "style": "italic",
+                  "entry": "The targeted creature must succeed on a {@dc 16} Wisdom saving throw or fall asleep and remain {@condition unconscious} for 1 minute. The target awakens if it takes damage or another creature takes an action to wake it. This ray has no effect on constructs and undead."
+                },
+                {
+                  "type": "item",
+                  "name": "8. Petrification Ray",
+                  "style": "italic",
+                  "entry": "The targeted creature must make a {@dc 16} Dexterity saving throw. On a failed save, the creature begins to turn to stone and is {@condition restrained}. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is {@condition petrified} until freed by the  {@spell greater restoration} spell or other magic."
+                },
+                {
+                  "type": "item",
+                  "name": "9. Disintegration Ray",
+                  "style": "italic",
+                  "entries": [
+                    "If the target is a creature, it must succeed on a {@dc 16} Dexterity saving throw or take 45 ({@damage 10d8}) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust.",
+                    "If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it."
+                  ]
+                },
+                {
+                  "type": "item",
+                  "name": "10. Death Ray",
+                  "style": "italic",
+                  "entry": "The targeted creature must succeed on a {@dc 16} Dexterity saving throw or take 55 ({@damage 10d10}) necrotic damage. The target dies if the ray reduces it to 0 hit points."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "legendaryHeader": [
+        "The beholder can take 3 legendary actions, using the Eye Ray option below. It can take only one legendary action at a time and only at the end of another creature's turn. The beholder regains spent legendary actions at the start of its turn."
+      ],
+      "legendary": [
+        {
+          "name": "Eye Ray",
+          "entries": [
+            "The beholder uses one random eye ray."
+          ]
+        }
+      ],
+      "legendaryGroup": {
+        "name": "Beholder",
+        "source": "MM"
+      },
+      "variant": [
+        {
+          "type": "inset",
+          "name": "Variant Abilities",
+          "entries": [
+            "When a beholder's dream-imagination runs wild, the result can be an offspring that has an unusual or unique set of abilities. Rather than the standard powers of a beholder's central eye and eyestalks, the creature has one or more variant abilities—guaranteed to surprise any enemies who thought they knew what they were getting themselves into.",
+            "This section provides several alternative spell effects for a beholder's eye. Each of these effects is designed to be of the same power level as the one it replaces, enabling you to create a custom beholder without altering the monster's challenge rating. As another option, you can switch any of the damaging eye rays in the {@book Monster Manual|MM} to an effect with a different damage type, such as replacing the enervation ray with a combustion ray that deals fire damage instead of necrotic damage.",
+            "Unless otherwise indicated, an alternative ability has the same range as the eye ray it is replacing, and it affects only one creature per use (even if the ability is based on a spell that normally affects an area or multiple targets). The saving throw for an alternative ability uses the same DC and the same ability score as the spell the eye ray is based on.",
+            {
+              "type": "list",
+              "style": "list-hang-notitle",
+              "items": [
+                {
+                  "type": "item",
+                  "name": "Antimagic Cone:",
+                  "entry": "{@spell mirage arcane}, {@spell power word stun} (affecting the weakest non-{@condition stunned} target in the cone each round)"
+                },
+                {
+                  "type": "item",
+                  "name": "Charm Ray:",
+                  "entry": "{@spell banishment} (1 minute), {@spell confusion} (1 minute)"
+                },
+                {
+                  "type": "item",
+                  "name": "Death Ray:",
+                  "entry": "{@spell circle of death} (10-foot-radius sphere; 4d6 necrotic damage to all creatures in the area), {@spell feeblemind}"
+                },
+                {
+                  "type": "item",
+                  "name": "Disintegration Ray:",
+                  "entry": "{@spell chain lightning} (primary target takes 6d8 lightning damage; two secondary targets within 30 feet of the primary target take 3d8 lightning damage each), {@spell eyebite} (sickened effect; 1 minute)"
+                },
+                {
+                  "type": "item",
+                  "name": "Enervation Ray:",
+                  "entry": "{@spell create undead} (usable regardless of the time of day), {@spell polymorph} (1 minute)"
+                },
+                {
+                  "type": "item",
+                  "name": "Fear Ray:",
+                  "entry": "{@spell gaseous form} (self or willing creature only), {@spell moonbeam}"
+                },
+                {
+                  "type": "item",
+                  "name": "Paralyzing Ray:",
+                  "entry": "{@spell modify memory}, {@spell silence} (1 minute)"
+                },
+                {
+                  "type": "item",
+                  "name": "Petrification Ray:",
+                  "entry": "{@spell Otto's irresistible dance} (1 minute), {@spell wall of ice} (1 minute; one 10-foot-square panel)"
+                },
+                {
+                  "type": "item",
+                  "name": "Sleep Ray:",
+                  "entry": "{@spell blindness/deafness}, {@spell misty step} (self or willing creature only)"
+                },
+                {
+                  "type": "item",
+                  "name": "Slowing Ray:",
+                  "entry": "{@spell bestow curse} (1 minute), {@spell sleet storm} (one 10-foot-cube)"
+                },
+                {
+                  "type": "item",
+                  "name": "Telekinesis Ray:",
+                  "entry": "{@spell geas} (1 hour), {@spell wall of force} (1 minute; one 10-foot-square panel)"
+                }
+              ]
+            }
+          ],
+          "source": "VGM",
+          "page": 12
+        }
+      ],
+      "environment": [
+        "underdark"
+      ],
+      "soundClip": {
+        "type": "external",
+        "url": "https://5e.tools/audio/bestiary/beholder.mp3"
+      },
+      "senseTags": [
+        "SD"
+      ],
+      "languageTags": [
+        "DS",
+        "U",
+        "CE"
+      ],
+      "miscTags": [
+        "MW",
+        "AOE"
+      ],
+      "conditionInflict": [
+        "charmed",
+        "frightened",
+        "paralyzed",
+        "petrified",
+        "restrained",
+        "unconscious"
+      ],
+      "conditionInflictLegendary": [
+        "grappled"
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "token": {
+        "name": "Beholder",
+        "source": "MM"
+      },
+      "fluff": {
+        "name": "Beholder",
+        "source": "MM",
+        "entries": [
+          {
+            "type": "entries",
+            "entries": [
+              {
+                "type": "entries",
+                "entries": [
+                  "One glance at a beholder is enough to assess its foul and otherworldly nature. Aggressive, hateful, and greedy, these aberrations dismiss all other creatures as lesser beings, toying with them or destroying them as they choose.",
+                  "A beholder's spheroid body levitates at all times, and its great bulging eye sits above a wide, toothy maw, while the smaller eyestalks that crown its body twist and turn to keep its foes in sight. When a beholder sleeps, it closes its central eye but leaves its smaller eyes open and alert.",
+                  {
+                    "name": "Xenophobic Isolationists",
+                    "type": "entries",
+                    "entries": [
+                      "Enemies abound, or so every beholder believes. Beholders are convinced that other creatures resent them for their brilliance and magical power, even as they dismiss those lesser creatures as crude and disgusting. Beholders always suspect others of plotting against them, even when no other creatures are around.",
+                      "The disdain a beholder has for other creatures extends to other beholders. Each beholder believes its form to be an ideal, and that any deviation from that form is a flaw in the racial purity of its kind. Beholders vary greatly in their physical forms, making conflict between them inevitable. Some beholders are protected by overlapping chitinous plates. Some have smooth hides. Some have eyestalks that writhe like tentacles, while others' stalks bear crustacean-like joints. Even slight differences of coloration in hide can turn two beholders into lifelong enemies."
+                    ]
+                  },
+                  {
+                    "name": "Eye Tyrant",
+                    "type": "entries",
+                    "entries": [
+                      "Some beholders manage to channel their xenophobic tendencies into a terrible despotism. Rather than live in isolation, the aptly named eye tyrants enslave those other creatures, founding and controlling vast empires. An eye tyrant sometimes carves out a domain within or under a major city, commanding networks of agents that operate on their master's behalf."
+                    ]
+                  },
+                  {
+                    "name": "Alien Lairs",
+                    "type": "entries",
+                    "entries": [
+                      "Because they refuse to share territory with others, most beholders withdraw to frigid hills, abandoned ruins, and deep caverns to scheme. A beholder's lair is carved out by its disintegration eye ray, emphasizing vertical passages connecting chambers stacked on top of each other. Such an environment allows a beholder to move freely, even as it prevents intruders from easily creeping about. When intruders do break in, the height of its open ceilings allows a beholder to float up and harry foes on the floor.",
+                      "As alien as their creator, the rooms in a beholder's lair reflect the creature's arrogance. It festoons its chambers with trophies from the battles it has won, including {@condition petrified} adventurers standing frozen in their horrified final moments, pieces of other beholders, and magic items wrested from powerful foes. A beholder judges its own worth by its acquisitions, and it never willingly parts with its treasures."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "insetReadaloud",
+            "entries": [
+              {
+                "type": "quote",
+                "entries": [
+                  "Every beholder thinks it is the epitome of beholderkind, and the only thing it fears is that it might be wrong."
+                ],
+                "by": "Valkara Ironfeel, dwarf sage"
+              }
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "A Beholder's Lair",
+            "entries": [
+              "A beholder's central lair is typically a large, spacious cavern with high ceilings, where it can attack without fear of closing to melee range. A beholder encountered in its lair has a challenge rating of 14 (11,500 XP)."
+            ]
+          },
+          {
+            "type": "entries",
+            "entries": [
+              {
+                "type": "entries",
+                "name": "Lair Actions",
+                "entries": [
+                  "When fighting inside its lair, a beholder can invoke the ambient magic to take lair actions. On initiative count 20 (losing initiative ties), the beholder can take one lair action to cause one of the following effects:",
+                  {
+                    "type": "list",
+                    "items": [
+                      "A 50-foot-square area of ground within 120 feet of the beholder becomes slimy; that area is {@quickref difficult terrain||3} until initiative count 20 on the next round.",
+                      "Walls within 120 feet of the beholder sprout grasping appendages until initiative count 20 on the round after next. Each creature of the beholder's choice that starts its turn within 10 feet of such a wall must succeed on a {@dc 15} Dexterity saving throw or be {@condition grappled}. Escaping requires a successful {@dc 15} Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check.",
+                      "An eye opens on a solid surface within 60 feet of the beholder. One random eye ray of the beholder shoots from that eye at a target of the beholder's choice that it can see. The eye then closes and disappears."
+                    ]
+                  },
+                  "The beholder can't repeat an effect until they have all been used, and it can't use the same effect two rounds in a row."
+                ]
+              }
+            ]
+          },
+          {
+            "type": "entries",
+            "entries": [
+              {
+                "type": "entries",
+                "name": "Regional Effects",
+                "entries": [
+                  "A region containing a beholder's lair is warped by the creature's unnatural presence, which creates one or more of the following effects:",
+                  {
+                    "type": "list",
+                    "items": [
+                      "Creatures within 1 mile of the beholder's lair sometimes feel as if they're being watched when they aren't.",
+                      "When the beholder sleeps, minor warps in reality occur within 1 mile of its lair and then vanish 24 hours later. Marks on cave walls might change subtly, an eerie trinket might appear where none existed before, harmless slime might coat a statue, and so on. These effects apply only to natural surfaces and to nonmagical objects that aren't on anyone's person."
+                    ]
+                  },
+                  "If the beholder dies, these effects fade over the course of {@dice 1d10} days."
+                ]
+              }
+            ]
+          }
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "internal",
+              "path": "bestiary/MM/Beholder.webp"
+            }
+          }
+        ]
+      },
+      "skill": {
+        "perception": "+21"
+      },
+      "resist": [
+        "radiant"
+      ],
+      "immune": [
+        "acid",
+        "poison"
+      ],
+      "damageTags": [
+        "L",
+        "N",
+        "O",
+        "P"
+      ],
+      "savingThrowForced": [
+        "constitution",
+        "dexterity",
+        "strength",
+        "wisdom"
+      ],
+      "savingThrowForcedLegendary": [
+        "dexterity"
       ]
-    },
+    }
+  ],
+  "item": [
     {
       "name": "Aboleth Oil",
       "source": "agidm",
@@ -3039,56 +3491,6 @@
         "injury",
         "positoxin"
       ]
-    },
-    {
-      "name": "The Stack Overflow",
-      "source": "agidm",
-      "type": "M",
-      "rarity": "legendary",
-      "weight": 6,
-      "weaponCategory": "martial",
-      "property": [
-        "H",
-        "2H"
-      ],
-      "dmg1": "2d6",
-      "dmgType": "S",
-      "reqAttune": true,
-      "sword": true,
-      "weapon": true,
-      "entries": [
-        "Created in the hidden digital forges of the Technomancers, The Stack Overflow is a sword of sleek, metallic design, with runes of ancient modron etched along its shimmering, spiral blade. When unsheathed, the air crackles with raw data streams, and the faint hum of binary whispers can be heard.",
-        "Attacks made with this greatsword gain an additional +3 to attack and damage rolls. Additionally, this blade does {@dice 2d10} damage instead of the weapon's normal damage dice if the target relies on magic or uses enchanted equipment.",
-        {
-          "type": "entries",
-          "name": "PixelWorld Failsafe",
-          "entries": [
-            "Within PixelWorld, this blade deals an additional {@dice 2d10} failsafe damage to creations of the system."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Codebreaker",
-          "entries": [
-            "Once per day, you can cast {@spell Counterspell} as a 5th-level spell without expending a spell slot. Intelligence is your spellcasting ability for this spell."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Garbage Collection",
-          "entries": [
-            "When the sword strikes an undead or construct, it can instantly disintegrate targets with 64 hit points or less, clearing away the garbage with efficiency."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Reboot ",
-          "entries": [
-            "Once per long rest, if you fall to 0 hit points, you can choose to 'reboot', instantly regaining 1 hit point and standing up as a burst of energy clears any non-magical restraints or conditions."
-          ]
-        }
-      ],
-      "bonusWeapon": "+2"
     }
   ],
   "spell": [
@@ -3248,6 +3650,1148 @@
         ]
       },
       "uniqueId": "f51b9643-9b67-4040-ad4a-9c3a850f6377"
+    }
+  ],
+  "class": [
+    {
+      "name": "Mesmer",
+      "source": "agidm",
+      "hd": {
+        "number": 2,
+        "faces": 4
+      },
+      "proficiency": [
+        "dex",
+        "cha"
+      ],
+      "startingProficiencies": {
+        "armor": [
+          "light"
+        ],
+        "weapons": [
+          "simple",
+          "{@item rapier|tct|rapiers}",
+          "{@item shortsword|tct|shortswords}"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "arcana",
+                "deception",
+                "insight",
+                "perception",
+                "persuasion",
+                "stealth"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "default": [
+          "(a) a {@item rapier|tct} or (b) a {@item shortsword|tct}",
+          "(a) an {@item arcane focus|tct} or (b) a {@item component pouch|tct}",
+          "(a) an {@item entertainer's pack|tct} or (b) a {@item scholar's pack|tct}",
+          "Two {@item dagger|tct|daggers}"
+        ],
+        "goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
+        "defaultData": [
+          {
+            "a": [
+              "rapier|tct"
+            ],
+            "b": [
+              "shortsword|tct"
+            ]
+          },
+          {
+            "a": [
+              "arcane focus|phb"
+            ],
+            "b": [
+              "component pouch|phb"
+            ]
+          },
+          {
+            "a": [
+              "entertainer's pack|phb"
+            ],
+            "b": [
+              "scholar's pack|phb"
+            ]
+          },
+          {
+            "_": [
+              {
+                "item": "dagger|phb",
+                "quantity": 2
+              }
+            ]
+          }
+        ]
+      },
+      "multiclassing": {
+        "requirements": {
+          "int": 13
+        }
+      },
+      "preparedSpells": "<$level$> + <$int_mod$>",
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "Cantrips Known"
+          ],
+          "rows": [
+            [
+              3
+            ],
+            [
+              3
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              6
+            ]
+          ]
+        },
+        {
+          "title": "Spell Slots per Spell Level",
+          "colLabels": [
+            "{@filter 1st|spells|level=1|class=mesmer (AGIDM)}",
+            "{@filter 2nd|spells|level=2|class=mesmer (AGIDM)}",
+            "{@filter 3rd|spells|level=3|class=mesmer (AGIDM)}",
+            "{@filter 4th|spells|level=4|class=mesmer (AGIDM)}",
+            "{@filter 5th|spells|level=5|class=mesmer (AGIDM)}",
+            "{@filter 6th|spells|level=6|class=mesmer (AGIDM)}",
+            "{@filter 7th|spells|level=7|class=mesmer (AGIDM)}",
+            "{@filter 8th|spells|level=8|class=mesmer (AGIDM)}",
+            "{@filter 9th|spells|level=9|class=mesmer (AGIDM)}",
+            "{@filter 10th|spells|level=10|class=mesmer (AGIDM)}"
+          ],
+          "rows": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              2,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              2,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              2,
+              2,
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "Spellcasting|Mesmer|agidm|1",
+        "Replicate|Mesmer|agidm|1",
+        "Shatter|Mesmer|agidm|2",
+        {
+          "classFeature": "Mesmer Elite Specialization|Mesmer|agidm|3",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Mesmer|agidm|4",
+        "Illusory Onslaught|Mesmer|agidm|6",
+        {
+          "classFeature": "Elite Specialization|Mesmer|agidm|6",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Mesmer|agidm|8",
+        {
+          "classFeature": "Elite Specialization|Mesmer|agidm|10",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Mesmer|agidm|12",
+        {
+          "classFeature": "Elite Specialization|Mesmer|agidm|14",
+          "gainSubclassFeature": true
+        },
+        "Ability Score Improvement|Mesmer|agidm|16",
+        "Master of Mirrors|Mesmer|agidm|18",
+        "Ability score Improvement|Mesmer|agidm|19",
+        "Quantum Illusionist|Mesmer|agidm|20",
+        "Echoes of Infinity|Mesmer|agidm|21",
+        "Paradoxical Existence|Mesmer|agidm|22"
+      ],
+      "subclassTitle": "Mesmer Elite Specialization",
+      "classSpells": [
+        "encode thoughts|ggr",
+        "mind sliver|tce",
+        "friends|phb",
+        "minor illusion|phb",
+        "vicious mockery|phb",
+        "animal friendship|phb",
+        "bane|phb",
+        "bless|phb",
+        "charm person|phb",
+        "color spray|phb",
+        "command|phb",
+        "compelled duel|phb",
+        "disguise self|phb",
+        "dissonant whispers|phb",
+        "distort value|ai",
+        "frost fingers|agidm",
+        "heroism|phb",
+        "hex|phb",
+        "illusory script|phb",
+        "silent image|phb",
+        "silvery barbs|scc",
+        "sleep|phb",
+        "tasha's hideous laughter|phb",
+        "animal messenger|phb",
+        "becloud|tct",
+        "blur|phb",
+        "calm emotions|phb",
+        "crown of madness|phb",
+        "enthrall|phb",
+        "fool's speech|agidm",
+        "gift of gab|ai",
+        "hibernation|agidm",
+        "hold person|phb",
+        "invisibility|phb",
+        "jim's glowing coin|ai",
+        "magic mouth|phb",
+        "mirror image|phb",
+        "nathair's mischief|ftd",
+        "nystul's magic aura|phb",
+        "phantasmal force|phb",
+        "shadow blade|xge",
+        "silence|phb",
+        "suggestion|phb",
+        "tasha's mind whip|tce",
+        "zone of truth|phb",
+        "antagonize|bmt",
+        "awaken sin|tct",
+        "awaken sin|agidm",
+        "catnap|xge",
+        "enemies abound|xge",
+        "fast friends|ai",
+        "fear|phb",
+        "hypnotic pattern|phb",
+        "incite greed|ai",
+        "major image|phb",
+        "motivational speech|ai",
+        "one-man band|tct",
+        "phantom steed|phb",
+        "accursed matrimony|tct",
+        "charm monster|xge",
+        "compulsion|phb",
+        "confusion|phb",
+        "dominate beast|phb",
+        "fool me once|tct",
+        "greater invisibility|phb",
+        "hallucinatory terrain|phb",
+        "mystic bolt|tct",
+        "mystic bolt|agidm",
+        "phantasmal killer|phb",
+        "raulothim's psychic lance|ftd",
+        "scapegoat|agidm",
+        "unluck|agidm",
+        "waning valor|tct",
+        "creation|phb",
+        "dominate person|phb",
+        "dream|phb",
+        "geas|phb",
+        "godrage|tct",
+        "godrage|agidm",
+        "hold monster|phb",
+        "mantle of dread|agidm",
+        "mind mold|tct",
+        "mislead|phb",
+        "modify memory|phb",
+        "phoenix facade|tct",
+        "seeming|phb",
+        "synaptic static|xge",
+        "mass suggestion|phb",
+        "mental prison|xge",
+        "otto's irresistible dance|phb",
+        "programmed illusion|phb",
+        "mirage arcane|phb",
+        "power word fortify|drk",
+        "power word pain|xge",
+        "project image|phb",
+        "simulacrum|phb",
+        "antipathy/sympathy|phb",
+        "dominate monster|phb",
+        "feeblemind|phb",
+        "illusory dragon|xge",
+        "power word stun|phb",
+        "xenophobic rage|agidm",
+        "night sky|agidm",
+        "power word kill|phb",
+        "psychic scream|xge",
+        "weird|phb",
+        "blade ward|phb",
+        "booming blade|tce",
+        "control flames|xge",
+        "create bonfire|xge",
+        "dancing lights|phb",
+        "green-flame blade|tce",
+        "gust|xge",
+        "light|phb",
+        "mage hand|phb",
+        "mending|phb",
+        "prestidigitation|phb",
+        "snowball|tct",
+        "resistance|phb",
+        "produce flame|phb",
+        "sorcerous burst|drk",
+        "starry wisp|drk",
+        "thaumaturgy|phb",
+        "true strike|phb",
+        "absorb elements|xge"
+      ],
+      "casterProgression": "full",
+      "spellcastingAbility": "int",
+      "fluff": [
+        {
+          "type": "section",
+          "name": "The Mesmer",
+          "source": "agidm",
+          "entries": [
+            "In the heart of a bustling city, a cloaked figure dances through the shadows, their footsteps silent against the cobblestone. With a flick of their wrist, illusions spring to life, weaving a tapestry of deception that leaves onlookers in awe and adversaries in confusion.",
+            "Amidst the chaos of battle, a serene warrior stands untouched, their enemies bewildered as their strikes meet only mirages. With a gentle whisper, the Mesmer bends the perception of friend and foe alike, shaping the battlefield with an artist’s precision and a tactician’s cunning.",
+            "Mesmers are masters of illusion, manipulation, and mental magic, blurring the lines between reality and fantasy. While some spellcasters rely on brute force or elemental power, a Mesmer’s strength lies in subtlety and finesse, influencing the world around them with delicate, yet potent, manipulations of the mind.",
+            {
+              "type": "entries",
+              "name": "The Art of Illusion",
+              "entries": [
+                "To a Mesmer, reality is but a canvas for their artistry. They craft illusions with such detail and depth that even the most discerning eye can be fooled. These illusions can protect allies, ensnare enemies, or simply beguile the senses. The most skilled Mesmers can make their illusions so convincing they can inflict physical harm, blurring the lines between the mental and the material."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Mental Dominion",
+              "entries": [
+                "Mesmers wield control over minds with unparalleled grace, manipulating memories, emotions, and perceptions. They can soothe the weary, inspire the despondent, or sow chaos among their enemies. This mental dominion extends to themselves, allowing Mesmers to maintain clarity in the face of confusion and resist attempts to ensnare their own minds."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Creating a Mesmer",
+              "entries": [
+                "When creating a Mesmer, consider how they discovered their unique talents. Were they born with an innate ability to perceive the fabric of reality differently, or did they learn their skills from a mentor, honing their craft through study and practice? Think about how your character uses their abilities - do they perform in grand theaters, deceive their way through political intrigue, or employ their skills in service of a greater cause?",
+                "Consider also your character’s attitude towards their powers. Do they view their illusions as an art form, a weapon, or a tool for change? How do they feel about the ethical implications of manipulating perception and memory?"
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Quick Build",
+              "entries": [
+                "You can quickly build a Mesmer by following these suggestions. First, Intelligence should be your highest ability score, followed by Charisma or Dexterity. Second, choose the {@spell minor illusion}, {@spell charm person}, and {@spell disguise self} cantrips to start embodying the Mesmer's capabilities in manipulating both mind and senses."
+              ]
+            }
+          ]
+        }
+      ],
+      "cantripProgression": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        6,
+        6
+      ]
+    }
+  ],
+  "classFeature": [
+    {
+      "name": "Spellcasting",
+      "source": "agidm",
+      "className": "Mesmer",
+      "classSource": "agidm",
+      "page": 3,
+      "level": 1,
+      "entries": [
+        "As a master of illusion and mental manipulation, you can cast mesmer spells. Your magic weaves complex illusions and manipulates the minds of those around you, bending perceptions to your will and controlling the flow of battle through cunning and subtlety.",
+        {
+          "type": "entries",
+          "name": "Cantrips",
+          "page": 3,
+          "entries": [
+            "At 1st level, you know three cantrips of your choice from the {@filter mesmer spell list|spells|class=mesmer (AGI)}. You gain additional mesmer cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Mesmer table."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Preparing and Casting Spells",
+          "page": 3,
+          "entries": [
+            "The Mesmer table shows how many spell slots you have to cast your mesmer spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+            "You prepare the list of mesmer spells that are available for you to cast, choosing from the {@filter mesmer spell list|spells|class=mesmer (AGI)}. When you do so, choose a number of mesmer spells equal to your Intelligence modifier + your mesmer level (minimum of one spell). The spells must be of a level for which you have spell slots.",
+            "For example, if you are a 3rd-level mesmer, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell {@spell illusionary force}, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
+            "You can change your list of prepared spells when you finish a long rest. Preparing a new list of mesmer spells requires time spent in meditation and mental exercises: at least 1 minute per spell level for each spell on your list."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Spellcasting Ability",
+          "page": 3,
+          "entries": [
+            "Intelligence is your spellcasting ability for your mesmer spells, as your magic hinges on your ability to deceive, manipulate, and outsmart. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a mesmer spell you cast and when making an attack roll with one.",
+            {
+              "type": "abilityDc",
+              "name": "Spell",
+              "attributes": [
+                "int"
+              ]
+            },
+            {
+              "type": "abilityAttackMod",
+              "name": "Spell",
+              "attributes": [
+                "int"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Ritual Casting",
+          "page": 3,
+          "entries": [
+            "You can cast any mesmer spell you know as a ritual if that spell has the ritual tag and you have the spell prepared."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Spellcasting Focus",
+          "page": 3,
+          "entries": [
+            "You can use an {@item arcane focus|phb} as a spellcasting focus for your mesmer spells. Mesmers often use objects that reflect their personal flair and the theatrical nature of their magic, such as mirrors, masks, or crystal orbs, as their arcane focuses. To use such an item, you must spend an hour in concentration, imbuing it with your magical essence."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Replicate",
+      "source": "agidm",
+      "className": "Mesmer",
+      "classSource": "agidm",
+      "level": 1,
+      "entries": [
+        "Harnessing your mastery over illusion, you have the unique ability to create and manipulate clones of yourself to confuse, distract, and damage your enemies. These replicas are fundamental to your tactics, providing both offensive and defensive capabilities. ",
+        {
+          "type": "entries",
+          "name": "Clone Creation",
+          "page": 4,
+          "entries": [
+            "At 1st level, you gain the Replicate ability, allowing you to create clones. A clone mimics your actions and serves as a distraction, it has the same AC as you had at the moment it was created, having 1 hit point and causing attacks against it to be made with disadvantage. It uses your modifiers to make saving throws.",
+            "Creatures that do not have truesight, blindsight or tremorsense and can see these clones are unable to discern them from you. When they pick you as a target for an effect or an attack and there are one or more clones within range, the target is picked at random. If more than one target can be selected, multiple clones can be subject to the effect. A creature that uses an action to make a successful perception check against your Spell Save DC will be able to discern the clones that exist from you.",
+            "At any point, you can have as many clones active as your proficiency bonus. ",
+            {
+              "type": "entries",
+              "name": "Mirror Image",
+              "entries": [
+                "Whenever you cast a spell of 1st level or higher, you can create a clone of yourself in an unoccupied space within 30 feet. The clone lasts for 1 minute or until destroyed."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Decoy",
+              "entries": [
+                "As a bonus action on your turn, create a clone in your space that lasts for 1 minute or until destroyed. You can then move up to your speed without provoking opportunity attacks."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "I'm The Real One!!!",
+          "page": 4,
+          "entries": [
+            "At the end of your turn, you can command one of your clones to make a single attack against a target within its range. Make a melee spell attack against a target within 5ft of a clone. On a hit, it deals psychic damage equal to {@dice 1d4} + your Intelligence modifier."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Shatter",
+      "source": "agidm",
+      "className": "Mesmer",
+      "classSource": "agidm",
+      "level": 2,
+      "entries": [
+        "At 2nd level, your mastery over illusions deepens, granting you the power to shatter your clones for devastating effects. Each shatter ability triggers a unique effect that scales with the number of clones you shatter.",
+        {
+          "type": "entries",
+          "name": "Shatter Style",
+          "entries": [
+            "Using a bonus action, you can shatter any number of your active clones within 60 feet. The effects of shattering are enhanced by the number of clones shattered, as defined in each shatter style below.",
+            {
+              "type": "entries",
+              "name": "Mind Wrack",
+              "entries": [
+                "Deal psychic damage to all enemies adjacent to each shattered clone. Damage each clone deals increases with the number of clones shattered: {@dice 1d6} for one clone, {@dice 2d6} for two clones, {dice 4d6} for three clones, doubling the dice for each additional clone shattered.",
+                "A creature adjacent to multiple clones will take a seperate instance of damage from each shattered clone."
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Cry of Frustration",
+              "entries": [
+                "Shatter your clones to inflict confusion on enemies near the clones. Each creature that is adjacent to a clone must make a wisdom saving throw or be {@i confused} till the end of its next turn. Creatures next to multiple clones need to make multiple saving throws.",
+                "A {@i confused} creature on its turn is muddled with defening thoughts as the clone's cries ring out. It may use its action to focus and end the confusion. If it uses its action, bonus action, movement or reaction to do anything else while confused, it takes {@dice 1d8} psychic damage and the confusion ends. The damage taken increases with the number of clones shattered. {@dice 1d8} for one clone, {@dice 2d8} for two clones, {@dice 3d8} for three clones and so on. "
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Diversion",
+              "entries": [
+                "Shatter your clones to daze and disrupts your enemies. Each creature that is adjacent to a clone must make a dexterity saving throw or immediately lose thier reactions. Creatures next to multiple clones need to make multiple saving throws. If a creature was concentrating, it also needs to make a contitution saving throw to maintain concentration. The DC for which is enhanced by the number of clones you shatter. DC 10 + Shattered clones. "
+              ]
+            },
+            {
+              "type": "entries",
+              "name": "Distortion",
+              "entries": [
+                "Shatter your clones to and grant yourself a moment of invulnerability. You gain a pool of {@dice d6}'s that you can use to reduce damage dealt to you. The pool is as large as the number of clones shattered.",
+                "When you take damage, you can roll dice from this pool and reduce the damage by that amount after any reductions from resistance."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "agidm",
+      "className": "Mesmer",
+      "classSource": "agidm",
+      "level": 4,
+      "entries": [
+        "When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "agidm",
+      "className": "Mesmer",
+      "classSource": "agidm",
+      "level": 8,
+      "entries": [
+        "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "agidm",
+      "className": "Mesmer",
+      "classSource": "agidm",
+      "level": 12,
+      "entries": [
+        "When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "agidm",
+      "className": "Mesmer",
+      "classSource": "agidm",
+      "level": 16,
+      "entries": [
+        "When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
+    {
+      "name": "Ability Score Improvement",
+      "source": "agidm",
+      "className": "Mesmer",
+      "classSource": "agidm",
+      "level": 19,
+      "entries": [
+        "When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+      ]
+    },
+    {
+      "name": "Illusory Onslaught",
+      "source": "agidm",
+      "className": "Mesmer",
+      "classSource": "agidm",
+      "level": 6,
+      "entries": [
+        "At 6th level, your mastery over illusions allows you to weave them into more complex and damaging forms. Your illusions are now capable of executing a simultaneous attack, overwhelming your foes with a barrage of strikes from multiple angles.",
+        {
+          "type": "entries",
+          "name": "Enhanced Clone Attack",
+          "page": 8,
+          "entries": [
+            "Whenever you use your 'I'm The Real One!!!' ability to command one of your clones to attack, you can now make a second attack with another clone against the same target or a different one within range. Each attack uses your spell attack modifier and deals psychic damage equal to 1d4 + your Intelligence modifier. This ability represents your clones' enhanced capacity to harm, further blurring the line between illusion and reality."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Tactical Reposition",
+          "page": 8,
+          "entries": [
+            "In addition, whenever you create a clone using any of your abilities, you can choose to swap places with any one of your existing clones on the battlefield. This swap can be triggered once per turn, allowing you to reposition strategically without provoking opportunity attacks, enhancing your battlefield mobility and deceit."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Master of Mirrors",
+      "source": "agidm",
+      "className": "Mesmer",
+      "classSource": "agidm",
+      "level": 18,
+      "entries": [
+        "At 18th level, your command over illusions allows you to manipulate the fabric of reality itself. You become a Master of Mirrors, able to create perfect reflections of reality that can harm, protect, or deceive.",
+        {
+          "type": "entries",
+          "name": "Reality's Reflection",
+          "entries": [
+            "As an action, you can create a mirrored area on the battlefield up to 30 feet in diameter within 120 feet of you. This area becomes a reflection of reality for 1 minute. Enemies within the area are subjected to disorienting visions, granting advantage on attacks against them. Allies within the area receive a reflection of themselves that can take a single hit in their stead, disappearing afterward."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Mirror Walk",
+          "entries": [
+            "Once per long rest, you can step into one mirror and emerge from another within 1 mile that you have seen before. This teleportation can be used to traverse great distances instantly, escape danger, or enter secured locations."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Ultimate Shatter",
+          "entries": [
+            "You gain the ability to perform an Ultimate Shatter, instantly ending all of your active illusions and causing a massive explosion of psychic energy. Each enemy within 30 feet of a shattered illusion takes 10d6 psychic damage, and must make an Intelligence saving throw or be stunned until the end of their next turn. This ability can be used once per long rest."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Quantum Illusionist",
+      "source": "agidm",
+      "className": "Mesmer",
+      "classSource": "agidm",
+      "level": 20,
+      "entries": [
+        "At 20th level, you achieve the pinnacle of illusion mastery, becoming a Quantum Illusionist. Your understanding of reality, illusion, and the space between allows you to manipulate the fabric of existence itself, altering outcomes to your advantage.",
+        {
+          "type": "entries",
+          "name": "Quantum Flux",
+          "page": 14,
+          "entries": [
+            "Once per long rest, as an action, you can activate Quantum Flux. For the next minute, you gain the following benefits:",
+            "- You can reroll any attack roll, saving throw, or ability check made by you or against you, choosing the preferred outcome.",
+            "- When you or any of your allies within 60 feet of you take damage, you can use your reaction to halve that damage.",
+            "- You can teleport up to 30 feet as a bonus action on each of your turns."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Reality Warp",
+          "page": 14,
+          "entries": [
+            "In addition, you gain the ability to cast the spell 'wish' once, without needing material components. After you use this ability, you must finish a long rest before you can use it again."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mesmer Elite Specialization",
+      "source": "agidm",
+      "className": "Mesmer",
+      "classSource": "agidm",
+      "page": 6,
+      "level": 3,
+      "entries": [
+        "At 3rd level, Mesmers choose a specialization that provides unique abilities and enhancements:",
+        {
+          "type": "list",
+          "items": [
+            "Chronomancer: Masters of time, Chronomancers can manipulate the flow of battle, offering abilities like speeding up ally actions or creating temporal fields that slow enemies.",
+            "Mirage: Specializing in deception, Mirages gain abilities to evade attacks, create more convincing illusions, and even make their clones perform semi-independent actions.",
+            "Illusionist: Focusing on the potency of their illusions, Illusionists enhance the durability and effects of their clones, and gain abilities that make their shattering effects more devastating."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Choosing Your Path",
+          "page": 6,
+          "entries": [
+            "When you choose your specialization at 3rd level, you gain specific abilities related to that path. These abilities are designed to complement and enhance your existing Mesmer skills, providing new tactical options and strategies."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Elite Specialization",
+      "source": "agidm",
+      "className": "Mesmer",
+      "classSource": "agidm",
+      "level": 6,
+      "entries": [
+        "At 6th level, you gain a feature granted by your Elite Specialization."
+      ]
+    },
+    {
+      "name": "Elite Specialization",
+      "source": "agidm",
+      "className": "Mesmer",
+      "classSource": "agidm",
+      "level": 10,
+      "entries": [
+        "At 10th level, you gain a feature granted by your Elite Specialization."
+      ]
+    },
+    {
+      "name": "Elite Specialization",
+      "source": "agidm",
+      "className": "Mesmer",
+      "classSource": "agidm",
+      "level": 14,
+      "entries": [
+        "At 14th level, you gain a feature granted by your Elite Specialization."
+      ]
+    },
+    {
+      "name": "Echoes of Infinity",
+      "source": "agidm",
+      "className": "Mesmer",
+      "classSource": "agidm",
+      "page": 16,
+      "level": 21,
+      "entries": [
+        "Achieving level 21, you unlock the ability to call upon your alternate selves from different realities for assistance, manifesting the true power of a Quantum Illusionist.",
+        {
+          "type": "entries",
+          "name": "Multiversal Assistance",
+          "page": 16,
+          "entries": [
+            "Once per long rest, as an action, you can summon an echo of yourself from an alternate reality. This echo appears within 30 feet of you and possesses all the abilities and spells you have but cannot use 'Echoes of Infinity'. It acts on your initiative and follows your commands mentally. The echo lasts for 1 minute or until it drops to 0 hit points."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Paradoxical Existence",
+      "source": "agidm",
+      "className": "Mesmer",
+      "classSource": "agidm",
+      "page": 17,
+      "level": 22,
+      "entries": [
+        "At 22nd level, your grasp on the fabric of reality allows you to blur the lines between presence and absence, existing in multiple realities simultaneously.",
+        {
+          "type": "entries",
+          "name": "Ubiquitous Presence",
+          "page": 17,
+          "entries": [
+            "You can spend 10 minutes to create a duplicate of yourself that lasts for 24 hours. This duplicate can perform any action you can, including spellcasting, but it cannot create another duplicate with 'Paradoxical Existence'. You can have up to two duplicates at any time, and you share a mental link, allowing you to see through their eyes and communicate.",
+            "If a duplicate is killed, you must make a DC 15 Constitution saving throw or suffer one level of exhaustion. Duplicates disappear if they are killed or when the duration ends."
+          ]
+        }
+      ]
+    }
+  ],
+  "subclass": [
+    {
+      "name": "Chronomancer",
+      "shortName": "Chronomancer",
+      "source": "agidm",
+      "className": "Mesmer",
+      "classSource": "agidm",
+      "optionalfeatureProgression": [
+        {
+          "name": "Chronomancer Wells",
+          "featureType": [
+            "CW"
+          ],
+          "progression": {
+            "3": 2,
+            "6": 3,
+            "10": 4,
+            "14": 5
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "The Chronomancer|Mesmer|agidm|Chronomancer|agidm|3"
+      ]
+    },
+    {
+      "name": "Mirage",
+      "shortName": "Mirage",
+      "source": "agidm",
+      "className": "Mesmer",
+      "classSource": "agidm",
+      "subclassFeatures": []
+    },
+    {
+      "name": "Illusionist",
+      "shortName": "Illusionist",
+      "source": "agidm",
+      "className": "Mesmer",
+      "classSource": "agidm",
+      "subclassFeatures": []
+    }
+  ],
+  "subclassFeature": [
+    {
+      "name": "The Chronomancer",
+      "source": "agidm",
+      "className": "Mesmer",
+      "classSource": "agidm",
+      "subclassShortName": "Chronomancer",
+      "subclassSource": "agidm",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "Your mastery of deception and control over illusion magic has unveiled the true nature of the archfey, the powerful beings who govern vast regions of the Feywild, including the laws of physics and temporality within their domains. By tapping into the magic of the Feywild, you enhance your clones and gain the ability to create wells that channel this mystical energy.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Feywild Wells|Mesmer|agidm|Chronomancer|agidm|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Phantasm|Mesmer|agidm|Chronomancer|agidm|3"
+        }
+      ]
+    },
+    {
+      "name": "Feywild Wells",
+      "source": "agidm",
+      "className": "Mesmer",
+      "classSource": "agidm",
+      "subclassShortName": "Chronomancer",
+      "subclassSource": "agidm",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "{@i 3rd-level Chronomancer feature}",
+        "Your connection to the Feywild allows you to channel its magical energy into wells of the Feywild. When you create a clone, you can choose to instead to create a well where the clone was about to appear. At 3rd level you gain access to the following two wells with more as you gain levels in this subclass.",
+        "Fey Well of Protection: As an action, you can create a 10-foot-radius well at a point you can see within 30 feet. This well lasts for 1 minute. Allies within the well have advantage on saving throws against spells and other magical effects and gain temporary hit points equal to your Mesmer level at the start of each of their turns. You can use this feature once per short or long rest.",
+        "Fey Well of Illusions: As an action, you can create a 10-foot-radius well at a point you can see within 30 feet. This well lasts for 1 minute. Enemies within the well have disadvantage on saving throws against your spells and illusions. Additionally, illusions you create within the well are semi-tangible, allowing them to interact with the environment and creatures. These illusions can support up to 10 pounds of weight and have disadvantage on checks to see through them. You can use this feature once per short or long rest."
+      ]
+    },
+    {
+      "name": "Phantasm",
+      "source": "agidm",
+      "className": "Mesmer",
+      "classSource": "agidm",
+      "subclassShortName": "Chronomancer",
+      "subclassSource": "agidm",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "{@i 3rd-level Chronomancer feature}",
+        "wololo"
+      ]
     }
   ]
 }
