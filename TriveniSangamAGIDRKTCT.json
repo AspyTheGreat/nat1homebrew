@@ -17449,7 +17449,7 @@
       "source": "DRK",
       "page": 166,
       "entries": [
-        "Conditions you inflict grow more and more potent the longer a creature is affected by them. The condition festers at the start of the creature's turn, applying a more debilitating condition for the duration of the original condition, and is lost whenever the original condition ends. The condition festers as shown in the table below:",
+        "Conditions you inflict grow more and more potent the longer a creature is affected by them. The condition festers at the start of the creature's next turn, applying a more debilitating condition for the duration of the original condition, and is lost whenever the original condition ends. The condition festers as shown in the table below:",
         {
           "type": "table",
           "caption": "Festering Conditions",
@@ -65280,6 +65280,7 @@
     {
       "name": "Dazed",
       "source": "DRK",
+      "page": 290,
       "srd": true,
       "basicRules": true,
       "entries": [
@@ -65295,6 +65296,7 @@
     {
       "name": "Silenced",
       "source": "DRK",
+      "page": 290,
       "srd": true,
       "basicRules": true,
       "entries": [
