@@ -10889,7 +10889,7 @@
           ]
         }
       ],
-      "template": "{{prop_name}} {{item.reload}}"
+      "template": "{{prop_name}} {{item.reload}}"
     },
     {
       "abbreviation": "MsfAGI",
@@ -10903,7 +10903,7 @@
           ]
         }
       ],
-      "template": "{{prop_name}} {{item.customProperties.misfire}}"
+      "template": "{{prop_name}} {{item.customProperties.misfire}}"
     },
     {
       "abbreviation": "AmmAGI",
@@ -10931,7 +10931,7 @@
           ]
         }
       ],
-      "template": "{{prop_name}} {{item.customProperties.minorupgrade}}"
+      "template": "{{prop_name}} {{item.customProperties.minorupgrade}}"
     },
     {
       "abbreviation": "MajorUpgrade",
@@ -10945,7 +10945,7 @@
           ]
         }
       ],
-      "template": "{{prop_name}} {{item.customProperties.majorupgrade}}"
+      "template": "{{prop_name}} {{item.customProperties.majorupgrade}}"
     },
     {
       "abbreviation": "WM:C",
@@ -30444,13 +30444,14 @@
       "classSource": "AspysGuidetoInfinitum",
       "level": 1,
       "entries": [
-        "Harnessing your mastery over illusion, you have the unique ability to create and manipulate clones of yourself to confuse, distract, and damage your enemies. These replicas are fundamental to your tactics, providing both offensive and defensive capabilities.",
+        "Harnessing your mastery over illusion, you have the unique ability to create and manipulate clones of yourself to confuse, distract, and damage your enemies. These replicas are fundamental to your tactics, providing both offensive and defensive capabilities. ",
         {
           "type": "entries",
           "name": "Clone Creation",
           "page": 4,
           "entries": [
             "At 1st level, you gain the Replicate ability, allowing you to create clones. A clone mimics your actions and serves as a distraction, it has the same AC as you had at the moment it was created, having 1 hit point and causing attacks against it to be made with disadvantage. It uses your modifiers to make saving throws.",
+            "Creatures that do not have truesight, blindsight or tremorsense and can see these clones are unable to discern them from you. When they pick you as a target for an effect or an attack and there are one or more clones within range, the target is picked at random. If more than one target can be selected, multiple clones can be subject to the effect. A creature that uses an action to make a successful perception check against your Spell Save DC will be able to discern the clones that exist from you.",
             "At any point, you can have as many clones active as your proficiency bonus. ",
             {
               "type": "entries",
@@ -30490,12 +30491,13 @@
           "type": "entries",
           "name": "Shatter Style",
           "entries": [
-            "Using a bonus action, you can shatter any number of your active clones within 60 feet. The effects of shattering are enhanced by the number of clones shattered, making your illusions more than mere distractions.",
+            "Using a bonus action, you can shatter any number of your active clones within 60 feet. The effects of shattering are enhanced by the number of clones shattered, as defined in each shatter style below.",
             {
               "type": "entries",
               "name": "Mind Wrack",
               "entries": [
-                "Shatter your clones to deal psychic damage to all enemies adjacent to each clone. Damage each clone deals increases with the number of clones: {@dice 1d6} for one clone, {@dice 2d6} for two clones, doubling the dice for each additional clone shattered."
+                "Deal psychic damage to all enemies adjacent to each shattered clone. Damage each clone deals increases with the number of clones shattered: {@dice 1d6} for one clone, {@dice 2d6} for two clones, {@dice 4d6} for three clones, doubling the dice for each additional clone shattered.",
+                "A creature adjacent to multiple clones will take a seperate instance of damage from each shattered clone."
               ]
             },
             {
@@ -30503,7 +30505,7 @@
               "name": "Cry of Frustration",
               "entries": [
                 "Shatter your clones to inflict confusion on enemies near the clones. Each creature that is adjacent to a clone must make a wisdom saving throw or be {@i confused} till the end of its next turn. Creatures next to multiple clones need to make multiple saving throws.",
-                "A {@i confused} creature on its turn is muddled with defening thoughts as the clones cries ring out. It may use its action to focus and end the confusion. If it uses its action, bonus action, movement or reaction to do anything else while confused, it takes {@dice 1d8} psychic damage and the confusion ends. The damage increases with the number of clones shattered. {@dice 1d8} for 1 clone, {@dice 2d8} for 2 clones and so on. "
+                "A {@i confused} creature on its turn is muddled with defening thoughts as the clone's cries ring out. It may use its action to focus and end the confusion. If it uses its action, bonus action, movement or reaction to do anything else while confused, it takes {@dice 1d8} psychic damage and the confusion ends. The damage taken increases with the number of clones shattered. {@dice 1d8} for one clone, {@dice 2d8} for two clones, {@dice 3d8} for three clones and so on. "
               ]
             },
             {
@@ -33774,6 +33776,57 @@
     }
   ],
   "subclassFeature": [
+    {
+      "name": "The Chronomancer",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "subclassShortName": "Chronomancer",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "Your mastery of deception and control over illusion magic has unveiled the true nature of the archfey, the powerful beings who govern vast regions of the Feywild, including the laws of physics and temporality within their domains. By tapping into the magic of the Feywild, you enhance your clones and gain the ability to create wells that channel this mystical energy.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Feywild Wells|Mesmer|AspysGuidetoInfinitum|Chronomancer|AspysGuidetoInfinitum|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Phantasm|Mesmer|AspysGuidetoInfinitum|Chronomancer|AspysGuidetoInfinitum|3"
+        }
+      ]
+    },
+    {
+      "name": "Feywild Wells",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "subclassShortName": "Chronomancer",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "{@i 3rd-level Chronomancer feature}",
+        "Your connection to the Feywild allows you to channel its magical energy into wells of the Feywild. When you create a clone, you can choose to instead to create a well where the clone was about to appear. At 3rd level you gain access to the following two wells with more as you gain levels in this subclass.",
+        "Fey Well of Protection: As an action, you can create a 10-foot-radius well at a point you can see within 30 feet. This well lasts for 1 minute. Allies within the well have advantage on saving throws against spells and other magical effects and gain temporary hit points equal to your Mesmer level at the start of each of their turns. You can use this feature once per short or long rest.",
+        "Fey Well of Illusions: As an action, you can create a 10-foot-radius well at a point you can see within 30 feet. This well lasts for 1 minute. Enemies within the well have disadvantage on saving throws against your spells and illusions. Additionally, illusions you create within the well are semi-tangible, allowing them to interact with the environment and creatures. These illusions can support up to 10 pounds of weight and have disadvantage on checks to see through them. You can use this feature once per short or long rest."
+      ]
+    },
+    {
+      "name": "Phantasm",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "subclassShortName": "Chronomancer",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "{@i 3rd-level Chronomancer feature}",
+        "wololo"
+      ]
+    },
     {
       "name": "The Mysticshift Duelist",
       "source": "AspysGuidetoInfinitum",
@@ -51038,6 +51091,46 @@
   ],
   "subclass": [
     {
+      "name": "Chronomancer",
+      "shortName": "Chronomancer",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "optionalfeatureProgression": [
+        {
+          "name": "Chronomancer Wells",
+          "featureType": [
+            "CW"
+          ],
+          "progression": {
+            "3": 2,
+            "6": 3,
+            "10": 4,
+            "14": 5
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "The Chronomancer|Mesmer|AspysGuidetoInfinitum|Chronomancer|AspysGuidetoInfinitum|3"
+      ]
+    },
+    {
+      "name": "Mirage",
+      "shortName": "Mirage",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "subclassFeatures": []
+    },
+    {
+      "name": "Illusionist",
+      "shortName": "Illusionist",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "subclassFeatures": []
+    },
+    {
       "name": "Mysticshift Duelist",
       "shortName": "Mysticshift Duelist",
       "source": "AspysGuidetoInfinitum",
@@ -51065,44 +51158,6 @@
         "Elemental Gunblade Ascendance|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|15",
         "Elemental Resonance|Fighter|DRK|Mysticshift Duelist|AspysGuidetoInfinitum|18"
       ]
-    },
-    {
-      "name": "Chronomancer",
-      "shortName": "Chronomancer",
-      "source": "AspysGuidetoInfinitum",
-      "className": "Mesmer",
-      "classSource": "AspysGuidetoInfinitum",
-      "optionalfeatureProgression": [
-        {
-          "name": "Chronomancer Wells",
-          "featureType": [
-            "CW"
-          ],
-          "progression": {
-            "3": 2,
-            "6": 3,
-            "10": 4,
-            "14": 5
-          }
-        }
-      ],
-      "subclassFeatures": []
-    },
-    {
-      "name": "Mirage",
-      "shortName": "Mirage",
-      "source": "AspysGuidetoInfinitum",
-      "className": "Mesmer",
-      "classSource": "AspysGuidetoInfinitum",
-      "subclassFeatures": []
-    },
-    {
-      "name": "Illusionist",
-      "shortName": "Illusionist",
-      "source": "AspysGuidetoInfinitum",
-      "className": "Mesmer",
-      "classSource": "AspysGuidetoInfinitum",
-      "subclassFeatures": []
     },
     {
       "name": "Way of Awakend Mind",
