@@ -83,6 +83,55 @@
   },
   "spell": [
     {
+      "name": "Illusionary Force",
+      "source": "AspysGuidetoInfinitum",
+      "level": 1,
+      "school": "I",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "feet",
+          "amount": 100
+        }
+      },
+      "components": {
+        "s": true
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 10
+          },
+          "concentration": true
+        }
+      ],
+      "entries": [
+        "You create the image of a forceful entity or object that is no larger than a 15-foot cube. The image appears at a spot within range and lasts for the duration. The image is purely visual; it isn't accompanied by sound, smell, or other sensory effects.",
+        "When you create the image, choose one creature within 5 feet of it. That creature must make an Intelligence saving throw. On a failed save, the creature takes {@dice 2d6} psychic damage as it believes the illusion to be real and harmful. On a successful save, the creature realizes the illusion is not real and takes no damage.",
+        "On each of your turns, you can use your action to cause the image to move to any spot within range and cause another creature within 5ft to repeat the saving throw. As the image changes location, you can alter its appearance so that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be attacking.",
+        "Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence ({@skill Investigation}) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image but can still be subject to its effects on a failure of the saving throw."
+      ],
+      "damageInflict": [
+        "psychic"
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Mesmer",
+            "source": "AspysGuidetoInfinitum"
+          }
+        ]
+      }
+    },
+    {
       "name": "Dark Star",
       "source": "DRK",
       "page": 186,
@@ -11257,6 +11306,66 @@
     }
   ],
   "item": [
+    {
+      "name": "+1 Illusionists Cape",
+      "source": "AspysGuidetoInfinitum",
+      "rarity": "uncommon",
+      "reqAttune": "by a mesmer",
+      "reqAttuneTags": [
+        {
+          "class": "mesmer"
+        }
+      ],
+      "wondrous": true,
+      "weight": 1,
+      "bonusSpellAttack": "+1",
+      "bonusSpellSaveDc": "+1",
+      "entries": [
+        "These elegant capes shimmer with an ever-changing pattern of colors and shapes, making them mesmerizing to behold. While you wear and are attuned to the Illusionist's Cape, you gain advantage on Charisma (Deception) and Charisma (Performance) checks.",
+        "As a bonus action, you can activate the cape to cast {@spell invisibility} on yourself. The invisibility lasts for up to 1 hour or until you attack, cast a spell, or dismiss it as a bonus action. This property can be used once per long rest.",
+        "The cape grants you a +1 bonus to your Mesmer spell DC and Spell attacks. "
+      ]
+    },
+    {
+      "name": "+2 Illusionists Cape",
+      "source": "AspysGuidetoInfinitum",
+      "rarity": "rare",
+      "reqAttune": "by a mesmer",
+      "reqAttuneTags": [
+        {
+          "class": "mesmer"
+        }
+      ],
+      "wondrous": true,
+      "weight": 1,
+      "bonusSpellAttack": "+2",
+      "bonusSpellSaveDc": "+2",
+      "entries": [
+        "These elegant capes shimmer with an ever-changing pattern of colors and shapes, making them mesmerizing to behold. While you wear and are attuned to the Illusionist's Cape, you gain advantage on Charisma (Deception) and Charisma (Performance) checks.",
+        "As a bonus action, you can activate the cape to cast {@spell invisibility} on yourself. The invisibility lasts for up to 1 hour or until you attack, cast a spell, or dismiss it as a bonus action. This property can be used once per long rest.",
+        "The cape grants you a +2 bonus to your Mesmer spell DC and Spell attacks. "
+      ]
+    },
+    {
+      "name": "+3 Illusionists Cape",
+      "source": "AspysGuidetoInfinitum",
+      "rarity": "very rare",
+      "reqAttune": "by a mesmer",
+      "reqAttuneTags": [
+        {
+          "class": "mesmer"
+        }
+      ],
+      "wondrous": true,
+      "weight": 1,
+      "bonusSpellAttack": "+3",
+      "bonusSpellSaveDc": "+3",
+      "entries": [
+        "These elegant capes shimmer with an ever-changing pattern of colors and shapes, making them mesmerizing to behold. While you wear and are attuned to the Illusionist's Cape, you gain advantage on Charisma (Deception) and Charisma (Performance) checks.",
+        "As a bonus action, you can activate the cape to cast {@spell invisibility} on yourself. The invisibility lasts for up to 1 hour or until you attack, cast a spell, or dismiss it as a bonus action. This property can be used once per long rest.",
+        "The cape grants you a +3 bonus to your Mesmer spell DC and Spell attacks. "
+      ]
+    },
     {
       "name": "Expanded Capacity Shiftweave",
       "source": "AspysGuidetoInfinitum",
@@ -30420,7 +30529,7 @@
           "entries": [
             "The Mesmer table shows how many spell slots you have to cast your mesmer spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
             "You prepare the list of mesmer spells that are available for you to cast, choosing from the {@filter mesmer spell list|spells|class=mesmer (AGI)}. When you do so, choose a number of mesmer spells equal to your Intelligence modifier + your mesmer level (minimum of one spell). The spells must be of a level for which you have spell slots.",
-            "For example, if you are a 3rd-level mesmer, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell {@spell illusionary force}, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
+            "For example, if you are a 3rd-level mesmer, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell {@spell illusionary force|AspysGuidetoInfinitum}, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
             "You can change your list of prepared spells when you finish a long rest. Preparing a new list of mesmer spells requires time spent in meditation and mental exercises: at least 1 minute per spell level for each spell on your list."
           ]
         },
