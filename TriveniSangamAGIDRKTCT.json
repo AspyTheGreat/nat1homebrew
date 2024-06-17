@@ -18764,27 +18764,27 @@
           "classFeature": "Mesmer Elite Specialization|Mesmer|AspysGuidetoInfinitum|3",
           "gainSubclassFeature": true
         },
-        "Ability Score Improvement|Mesmer|AspysGuidetoInfinitum|4",
+        "Ability Score Improvement|Rogue|DRK|4",
         "Illusory Onslaught|Mesmer|AspysGuidetoInfinitum|6",
         {
           "classFeature": "Elite Specialization|Mesmer|AspysGuidetoInfinitum|6",
           "gainSubclassFeature": true
         },
-        "Ability Score Improvement|Mesmer|AspysGuidetoInfinitum|8",
+        "Ability Score Improvement|Rogue|DRK|8",
         {
           "classFeature": "Elite Specialization|Mesmer|AspysGuidetoInfinitum|10",
           "gainSubclassFeature": true
         },
-        "Ability Score Improvement|Mesmer|AspysGuidetoInfinitum|12",
+        "Ability Score Improvement|Rogue|DRK|12",
         {
           "classFeature": "Elite Specialization|Mesmer|AspysGuidetoInfinitum|14",
           "gainSubclassFeature": true
         },
-        "Ability Score Improvement|Mesmer|AspysGuidetoInfinitum|16",
-        "Master of Mirrors|Mesmer|AspysGuidetoInfinitum|18",
-        "Ability score Improvement|Mesmer|AspysGuidetoInfinitum|19",
-        "Quantum Illusionist|Mesmer|AspysGuidetoInfinitum|20",
-        "Echoes of Infinity|Mesmer|AspysGuidetoInfinitum|21",
+        "Ability Score Improvement|Rogue|DRK|16",
+        "Master of Reality|Mesmer|AspysGuidetoInfinitum|18",
+        "Ability Score Improvement|Rogue|DRK|19",
+        "Master of the Multiverse|Mesmer|AspysGuidetoInfinitum|20",
+        "Ability Score Improvement|Mesmer|AspysGuidetoInfinitum|21",
         "Paradoxical Existence|Mesmer|AspysGuidetoInfinitum|22"
       ],
       "subclassTitle": "Mesmer Elite Specialization",
@@ -18804,7 +18804,7 @@
         "disguise self|phb",
         "dissonant whispers|phb",
         "distort value|ai",
-        "frost fingers|aspysguidetoinfinitum",
+        "frost fingers|AspysGuidetoInfinitum",
         "heroism|phb",
         "hex|phb",
         "illusory script|phb",
@@ -18818,9 +18818,9 @@
         "calm emotions|phb",
         "crown of madness|phb",
         "enthrall|phb",
-        "fool's speech|aspysguidetoinfinitum",
+        "fool's speech|AspysGuidetoInfinitum",
         "gift of gab|ai",
-        "hibernation|aspysguidetoinfinitum",
+        "hibernation|AspysGuidetoInfinitum",
         "hold person|phb",
         "invisibility|phb",
         "jim's glowing coin|ai",
@@ -18836,7 +18836,7 @@
         "zone of truth|phb",
         "antagonize|bmt",
         "awaken sin|tct",
-        "awaken sin|aspysguidetoinfinitum",
+        "awaken sin|AspysGuidetoInfinitum",
         "catnap|xge",
         "enemies abound|xge",
         "fast friends|ai",
@@ -18856,20 +18856,20 @@
         "greater invisibility|phb",
         "hallucinatory terrain|phb",
         "mystic bolt|tct",
-        "mystic bolt|aspysguidetoinfinitum",
+        "mystic bolt|AspysGuidetoInfinitum",
         "phantasmal killer|phb",
         "raulothim's psychic lance|ftd",
-        "scapegoat|aspysguidetoinfinitum",
-        "unluck|aspysguidetoinfinitum",
+        "scapegoat|AspysGuidetoInfinitum",
+        "unluck|AspysGuidetoInfinitum",
         "waning valor|tct",
         "creation|phb",
         "dominate person|phb",
         "dream|phb",
         "geas|phb",
         "godrage|tct",
-        "godrage|aspysguidetoinfinitum",
+        "godrage|AspysGuidetoInfinitum",
         "hold monster|phb",
-        "mantle of dread|aspysguidetoinfinitum",
+        "mantle of dread|AspysGuidetoInfinitum",
         "mind mold|tct",
         "mislead|phb",
         "modify memory|phb",
@@ -18890,8 +18890,8 @@
         "feeblemind|phb",
         "illusory dragon|xge",
         "power word stun|phb",
-        "xenophobic rage|aspysguidetoinfinitum",
-        "night sky|aspysguidetoinfinitum",
+        "xenophobic rage|AspysGuidetoInfinitum",
+        "night sky|AspysGuidetoInfinitum",
         "power word kill|phb",
         "psychic scream|xge",
         "weird|phb",
@@ -30477,21 +30477,22 @@
           "name": "Clone Creation",
           "page": 4,
           "entries": [
-            "At 1st level, you gain the Replicate ability, allowing you to create clones. A clone mimics your actions and serves as a distraction, it has the same AC as you had at the moment it was created, having 1 hit point and causing attacks against it to be made with disadvantage. It uses your modifiers to make saving throws.",
+            "At 1st level, you gain the Replicate ability, allowing you to create clones. A clone mimics your actions (including movement) and serves as a distraction, it has the same AC as you had at the moment it was created, having 1 hit point and causing direct attacks against it to be made with disadvantage. It uses your modifiers and ability scores to make saving throws.",
             "Creatures that do not have truesight, blindsight or tremorsense and can see these clones are unable to discern them from you. When they pick you as a target for an effect or an attack and there are one or more clones within range, the target is picked at random. If more than one target can be selected, multiple clones can be subject to the effect. A creature that uses an action to make a successful perception check against your Spell Save DC will be able to discern the clones that exist from you.",
             "At any point, you can have as many clones active as your proficiency bonus. ",
             {
               "type": "entries",
               "name": "Mirror Image",
               "entries": [
-                "Whenever you cast a spell of 1st level or higher, you can create a clone of yourself in an unoccupied space within 30 feet. The clone lasts for 1 minute or until destroyed."
+                "Whenever you cast a mesmer spell of 1st level or higher, you can create a clone of yourself in an unoccupied space within 30 feet. The clone lasts for 1 minute or until destroyed."
               ]
             },
             {
               "type": "entries",
               "name": "Decoy",
               "entries": [
-                "As a bonus action on your turn, create a clone in your space that lasts for 1 minute or until destroyed. You can then move up to your speed without provoking opportunity attacks."
+                "As a bonus action on your turn, create a clone in your space that lasts for 1 minute or until destroyed. You can then move up to your speed without provoking opportunity attacks. ",
+                "When a decoy clone is created, you may choose to have it stay where it was made while you move. At the end of your turn, this clone will also start to mimic your movements."
               ]
             }
           ]
@@ -30523,7 +30524,7 @@
               "type": "entries",
               "name": "Mind Wrack",
               "entries": [
-                "Deal psychic damage to all enemies adjacent to each shattered clone. Damage each clone deals increases with the number of clones shattered: {@dice 1d6} for one clone, {@dice 2d6} for two clones, {@dice 4d6} for three clones, doubling the dice for each additional clone shattered.",
+                "Deal psychic damage to all creatures of your choice within 5ft of each shattered clone. Damage each clone deals increases with the number of clones shattered: {@dice 1d6} for one clone, {@dice 2d6} for two clones, {dice 4d6} for three clones, doubling the dice for each additional clone shattered. Creatures must succed on an Intelligence saving throw against your Spell Save DC to take half damage.",
                 "A creature adjacent to multiple clones will take a seperate instance of damage from each shattered clone."
               ]
             },
@@ -30531,15 +30532,15 @@
               "type": "entries",
               "name": "Cry of Frustration",
               "entries": [
-                "Shatter your clones to inflict confusion on enemies near the clones. Each creature that is adjacent to a clone must make a wisdom saving throw or be {@i confused} till the end of its next turn. Creatures next to multiple clones need to make multiple saving throws.",
-                "A {@i confused} creature on its turn is muddled with defening thoughts as the clone's cries ring out. It may use its action to focus and end the confusion. If it uses its action, bonus action, movement or reaction to do anything else while confused, it takes {@dice 1d8} psychic damage and the confusion ends. The damage taken increases with the number of clones shattered. {@dice 1d8} for one clone, {@dice 2d8} for two clones, {@dice 3d8} for three clones and so on. "
+                "Shatter your clones to inflict confusion on creatures of your choice near the clones. Each creature that is within 5ft of a shattered clone must make a wisdom saving throw against your Spell Save DC or be {@i confused} till the end of its next turn. Creatures next to multiple clones need to make multiple saving throws but will only be affected by one source of {@i confused}",
+                "A {@i confused} creature is muddled with defening thoughts as the clone's cries ring out. It may use its action to focus and end the confusion. If it uses its action, bonus action, movement or reaction to do anything else while confused, it takes {@dice 1d8} psychic damage. The damage taken increases with the number of clones shattered. {@dice 1d8} for one clone, {@dice 2d8} for two clones, {@dice 3d8} for three clones and so on. "
               ]
             },
             {
               "type": "entries",
               "name": "Diversion",
               "entries": [
-                "Shatter your clones to daze and disrupts your enemies. Each creature that is adjacent to a clone must make a dexterity saving throw or immediately lose thier reactions. Creatures next to multiple clones need to make multiple saving throws. If a creature was concentrating, it also needs to make a contitution saving throw to maintain concentration. The DC for which is enhanced by the number of clones you shatter. DC 10 + Shattered clones. "
+                "Shatter your clones to daze and disrupts your enemies. Each creature that is adjacent to a clone must make a dexterity saving throw against your spell save DC or immediately lose thier reactions. Creatures next to multiple clones need to make multiple saving throws. If a creature was concentrating, it also needs to make a contitution saving throw to maintain concentration. The DC for which is enhanced by the number of clones you shatter. DC 10 + Shattered clones. "
               ]
             },
             {
@@ -30555,74 +30556,18 @@
       ]
     },
     {
-      "name": "Ability Score Improvement",
-      "source": "AspysGuidetoInfinitum",
-      "className": "Mesmer",
-      "classSource": "AspysGuidetoInfinitum",
-      "level": 4,
-      "entries": [
-        "When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-      ]
-    },
-    {
-      "name": "Ability Score Improvement",
-      "source": "AspysGuidetoInfinitum",
-      "className": "Mesmer",
-      "classSource": "AspysGuidetoInfinitum",
-      "level": 8,
-      "entries": [
-        "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-      ]
-    },
-    {
-      "name": "Ability Score Improvement",
-      "source": "AspysGuidetoInfinitum",
-      "className": "Mesmer",
-      "classSource": "AspysGuidetoInfinitum",
-      "level": 12,
-      "entries": [
-        "When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-      ]
-    },
-    {
-      "name": "Ability Score Improvement",
-      "source": "AspysGuidetoInfinitum",
-      "className": "Mesmer",
-      "classSource": "AspysGuidetoInfinitum",
-      "level": 16,
-      "entries": [
-        "When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-      ]
-    },
-    {
-      "name": "Ability Score Improvement",
-      "source": "AspysGuidetoInfinitum",
-      "className": "Mesmer",
-      "classSource": "AspysGuidetoInfinitum",
-      "level": 19,
-      "entries": [
-        "When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-      ]
-    },
-    {
       "name": "Illusory Onslaught",
       "source": "AspysGuidetoInfinitum",
       "className": "Mesmer",
       "classSource": "AspysGuidetoInfinitum",
       "level": 6,
       "entries": [
-        "At 6th level, your mastery over illusions allows you to weave them into more complex and damaging forms. Your illusions are now capable of executing a simultaneous attack, overwhelming your foes with a barrage of strikes from multiple angles.",
+        "At 6th level, your mastery over illusions allows you to weave them into more complex and damaging forms. Your illusions are now capable of executing a simultaneous double attack, overwhelming your foes with a barrage of strikes from multiple angles.",
         {
           "type": "entries",
           "name": "Enhanced Clone Attack",
-          "page": 8,
           "entries": [
-            "Whenever you use your 'I'm The Real One!!!' ability to command one of your clones to attack, you can now make a second attack with another clone against the same target or a different one within range. Each attack uses your spell attack modifier and deals psychic damage equal to 1d4 + your Intelligence modifier. This ability represents your clones' enhanced capacity to harm, further blurring the line between illusion and reality."
+            "Whenever you use your 'I'm The Real One!!!' ability to command one of your clones to attack, you can now make a second attack with another clone against the same target or a different one within range. Each attack uses your spell attack modifier and deals psychic damage equal to {@dice 1d4} + your Intelligence modifier."
           ]
         },
         {
@@ -30630,13 +30575,13 @@
           "name": "Tactical Reposition",
           "page": 8,
           "entries": [
-            "In addition, whenever you create a clone using any of your abilities, you can choose to swap places with any one of your existing clones on the battlefield. This swap can be triggered once per turn, allowing you to reposition strategically without provoking opportunity attacks, enhancing your battlefield mobility and deceit."
+            "Whenever you create a clone using any of your abilities, you can choose to swap places with any one of your existing clones within 60ft. This swap can be triggered once per turn, allowing you to reposition strategically without provoking opportunity attacks."
           ]
         }
       ]
     },
     {
-      "name": "Master of Mirrors",
+      "name": "Master of Reality",
       "source": "AspysGuidetoInfinitum",
       "className": "Mesmer",
       "classSource": "AspysGuidetoInfinitum",
@@ -30647,50 +30592,48 @@
           "type": "entries",
           "name": "Reality's Reflection",
           "entries": [
-            "As an action, you can create a mirrored area on the battlefield up to 30 feet in diameter within 120 feet of you. This area becomes a reflection of reality for 1 minute. Enemies within the area are subjected to disorienting visions, granting advantage on attacks against them. Allies within the area receive a reflection of themselves that can take a single hit in their stead, disappearing afterward."
+            "As an action, you can create a mirrored area on the battlefield up to 30 feet in radius within 120 feet of you. This area becomes a reflection of reality for 1 minute. Creatures of your choice within the area are subjected to disorienting visions, granting advantage on attacks against them. Creatures of your choice within the area receive a reflection of themselves that can take a single hit in their stead. The reflection absorbs the effect of the next instance of damage or a harmful effect, dissapearing afterward. ",
+            "This feature recharges on a short rest."
           ]
         },
         {
           "type": "entries",
           "name": "Mirror Walk",
           "entries": [
-            "Once per long rest, you can step into one mirror and emerge from another within 1 mile that you have seen before. This teleportation can be used to traverse great distances instantly, escape danger, or enter secured locations."
+            "You can step into one mirror the same size or larger and emerge from another within 1 mile the same size or larger that you have seen before. Most perfectly reflective surfaces would be eligible for this teleportation at the discretion of the DM.",
+            "For example, a one way glass or a still pond at night might be a perfectly reflective surface, but if when performing the mirror walk the pond has ripples or the one way glass is lit on both sides, the casting is lost and you reappear in an unoccupied space 5ft of where you were. You can step into a mirror this way once per short rest."
           ]
         },
         {
           "type": "entries",
           "name": "Ultimate Shatter",
           "entries": [
-            "You gain the ability to perform an Ultimate Shatter, instantly ending all of your active illusions and causing a massive explosion of psychic energy. Each enemy within 30 feet of a shattered illusion takes 10d6 psychic damage, and must make an Intelligence saving throw or be stunned until the end of their next turn. This ability can be used once per long rest."
+            "You gain the ability to perform an Ultimate Shatter, instantly ending all of your active illusions and causing a massive explosion of psychic energy. Each enemy within 30 feet of a shattered illusion takes {@dice 10d6} psychic damage, and must make an Intelligence saving throw or be {@condition stunned} until the end of their next turn. This ability can be used once per long rest."
           ]
         }
       ]
     },
     {
-      "name": "Quantum Illusionist",
+      "name": "Master of the Multiverse",
       "source": "AspysGuidetoInfinitum",
       "className": "Mesmer",
       "classSource": "AspysGuidetoInfinitum",
       "level": 20,
       "entries": [
-        "At 20th level, you achieve the pinnacle of illusion mastery, becoming a Quantum Illusionist. Your understanding of reality, illusion, and the space between allows you to manipulate the fabric of existence itself, altering outcomes to your advantage.",
+        "At 20th level, your mastery over illusions and the fabric of reality reaches its zenith, allowing you to tap into alternate realities and material worlds within the multiverse. You see the universe as it is. A constant motion of particles that arrange themselves into illusions for the living eye. A profound dance of deception.",
         {
           "type": "entries",
-          "name": "Quantum Flux",
-          "page": 14,
+          "name": "Multiversal Echo",
           "entries": [
-            "Once per long rest, as an action, you can activate Quantum Flux. For the next minute, you gain the following benefits:",
-            "- You can reroll any attack roll, saving throw, or ability check made by you or against you, choosing the preferred outcome.",
-            "- When you or any of your allies within 60 feet of you take damage, you can use your reaction to halve that damage.",
-            "- You can teleport up to 30 feet as a bonus action on each of your turns."
+            "The boundaries seperating the worlds are mere curtains to you",
+            "Once per long rest, as an action, you can summon one echo of yourself from an alternate reality. This echo has all your abilities, spells, hitpoints, ratial features but cannot use Multiversal Echo and regain any resources. It acts on your initiative but goes immediately after your turn and follows your mental commands. The echo lasts for 1 minute or until reduced to 0 hit points. This echo does not count against your maximum for active clones, but it can be shattered."
           ]
         },
         {
           "type": "entries",
-          "name": "Reality Warp",
-          "page": 14,
+          "name": "Reality Rewrite",
           "entries": [
-            "In addition, you gain the ability to cast the spell 'wish' once, without needing material components. After you use this ability, you must finish a long rest before you can use it again."
+            "You can rewrite reality to your will. Once per long rest, you can cast {@spell wish} without needing material components. When you use this ability, you must finish a long rest before you can use it again."
           ]
         }
       ]
@@ -30700,7 +30643,6 @@
       "source": "AspysGuidetoInfinitum",
       "className": "Mesmer",
       "classSource": "AspysGuidetoInfinitum",
-      "page": 6,
       "level": 3,
       "entries": [
         "At 3rd level, Mesmers choose a specialization that provides unique abilities and enhancements:",
@@ -30710,14 +30652,6 @@
             "Chronomancer: Masters of time, Chronomancers can manipulate the flow of battle, offering abilities like speeding up ally actions or creating temporal fields that slow enemies.",
             "Mirage: Specializing in deception, Mirages gain abilities to evade attacks, create more convincing illusions, and even make their clones perform semi-independent actions.",
             "Illusionist: Focusing on the potency of their illusions, Illusionists enhance the durability and effects of their clones, and gain abilities that make their shattering effects more devastating."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Choosing Your Path",
-          "page": 6,
-          "entries": [
-            "When you choose your specialization at 3rd level, you gain specific abilities related to that path. These abilities are designed to complement and enhance your existing Mesmer skills, providing new tactical options and strategies."
           ]
         }
       ]
@@ -30753,22 +30687,15 @@
       ]
     },
     {
-      "name": "Echoes of Infinity",
+      "name": "Ability Score Improvement",
       "source": "AspysGuidetoInfinitum",
+      "srd": true,
       "className": "Mesmer",
       "classSource": "AspysGuidetoInfinitum",
-      "page": 16,
       "level": 21,
       "entries": [
-        "Achieving level 21, you unlock the ability to call upon your alternate selves from different realities for assistance, manifesting the true power of a Quantum Illusionist.",
-        {
-          "type": "entries",
-          "name": "Multiversal Assistance",
-          "page": 16,
-          "entries": [
-            "Once per long rest, as an action, you can summon an echo of yourself from an alternate reality. This echo appears within 30 feet of you and possesses all the abilities and spells you have but cannot use 'Echoes of Infinity'. It acts on your initiative and follows your commands mentally. The echo lasts for 1 minute or until it drops to 0 hit points."
-          ]
-        }
+        "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature. However, if you are atleast 19th level, that maximum increases to 22.",
+        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
       ]
     },
     {
@@ -33836,8 +33763,8 @@
       "entries": [
         "{@i 3rd-level Chronomancer feature}",
         "Your connection to the Feywild allows you to channel its magical energy into wells of the Feywild. When you create a clone, you can choose to instead to create a well where the clone was about to appear. At 3rd level you gain access to the following two wells with more as you gain levels in this subclass.",
-        "Fey Well of Protection: As an action, you can create a 10-foot-radius well at a point you can see within 30 feet. This well lasts for 1 minute. Allies within the well have advantage on saving throws against spells and other magical effects and gain temporary hit points equal to your Mesmer level at the start of each of their turns. You can use this feature once per short or long rest.",
-        "Fey Well of Illusions: As an action, you can create a 10-foot-radius well at a point you can see within 30 feet. This well lasts for 1 minute. Enemies within the well have disadvantage on saving throws against your spells and illusions. Additionally, illusions you create within the well are semi-tangible, allowing them to interact with the environment and creatures. These illusions can support up to 10 pounds of weight and have disadvantage on checks to see through them. You can use this feature once per short or long rest."
+        "Fey Well of Protection: As an action, you can create a 10-foot-radius well at a point you can see within 30 feet. This well lasts for 1 minute. Allies within the well have advantage on saving throws against spells and other magical effects and gain temporary hit points equal to your Mesmer level at the start of each of their turns. You can use this feature as many times as your proficiency bonus per long rest.",
+        "Fey Well of Illusions: As an action, you can create a 10-foot-radius well at a point you can see within 30 feet. This well lasts for 1 minute. Enemies within the well have disadvantage on saving throws against your spells and mesmer effects. Additionally, illusions you create within the well are semi-tangible, allowing them to interact with the environment and creatures. These illusions can support up to 10 pounds of weight and have disadvantage on checks to see through them. You can use this feature once per short or long rest."
       ]
     },
     {
@@ -33851,7 +33778,79 @@
       "header": 2,
       "entries": [
         "{@i 3rd-level Chronomancer feature}",
-        "wololo"
+        "Instead of creating clones out of illusion magic, you pull past phantasms of yourself out of time. These phantasms behave like your clones but have hitpoints equal to a fifth of your max and cannot be discerned by tremorsense."
+      ]
+    },
+    {
+      "name": "Gravitational Flux",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "subclassShortName": "Chronomancer",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "{@i 6th-level Chronomancer feature}",
+        "Once per long rest, as an action, you can activate a flux state in an area around you, causing a barrage of rapid gravity disturbances. For the next minute, you control gravity in an area 30ft around you and can produce the following effects as an Action/Bonus action or both:",
+        "- Choose two creatures/objects weighing less than 400lbs within the flux and force them to make a strength saving throw. Each creature on a failure is pulled 15ft towards the other.",
+        "- Choose one creature within the flux and force it to make a constitution saving throw. On a failure, its weight increases by 500%. A creature's speed is set to 0 if its weight becomes higher than 1000lbs. Otherwise, its speed is halved till the end of its next turn.",
+        "- Increase your local gravity to induce gravitational wells. Each creature within the area must make a dexterity saving throw or be moved in a 90 degree arc (you choose between clockwise and anti-clockwise) with respect to you. To resolve circular movement, draw a 90 degree cone with you as the center and the affected creature as one of the sides of the cone. Move the creature to the corresponding space on the other side of the cone.",
+        "- Choose up to three creatures within the flux. Each target must make a strength saving throw or be pushed 20 feet away from you.",
+        "- Choose up to three creatures. Each target gains 60ft flying speed in the flux as you manipulate gravity around them till the end of your next turn.",
+        "- Choose an object weighing up to 1000 lbs times your level. You can move it up to 30 feet in any direction."
+      ]
+    },
+    {
+      "name": "Maximum Presence",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "subclassShortName": "Chronomancer",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "{@i 10th-level Chronomancer feature}",
+        "Through subtle manipulation of gravity and your echoes throughout the multiverse, you've learned to strengthen your presence. Your hit dice increases by {@dice 2d4}, for a total of {@dice 4d4}."
+      ]
+    },
+    {
+      "name": "Neutron Star",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "subclassShortName": "Chronomancer",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "{@i 14th-level Chronomancer feature}",
+        "As an action, choose a point within 100ft. Gravity in that point intensifies to an incredible degree, pulling creatures towards it.",
+        {
+          "type": "list",
+          "items": [
+            "{@b Gravitational Pull}: Each creature of your choice within 100 feet of the neutron star must make a Strength saving throw. On a failure, they are pulled toward the nearest unoccupied space adjacent to the neutron star.",
+            "{@b Temporal Dilation}: The intense gravitational forces of the neutron star dilate time. Each creature affected by the gravitational pull gains an additional action that they can use immediately."
+          ]
+        },
+        "You regain the use of this feature after a long rest."
+      ]
+    },
+    {
+      "name": "Gravitational Resonance",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "subclassShortName": "Chronomancer",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "{@i 14th-level Chronomancer feature}",
+        "You learn the {@spell longstrider} spell and can cast it once without using a spell slot per long rest.",
+        "When you cast a spell that affects the movement speed of creatures or moves creatures physically, you can choose one affected creature to have its speed reduced to 0 instead. ",
+        "Spells such as {@spell Dissonant Whispers}, {@spell longstrider}, {@spell slow} would be eligible."
       ]
     },
     {
@@ -51138,7 +51137,11 @@
         }
       ],
       "subclassFeatures": [
-        "The Chronomancer|Mesmer|AspysGuidetoInfinitum|Chronomancer|AspysGuidetoInfinitum|3"
+        "The Chronomancer|Mesmer|AspysGuidetoInfinitum|Chronomancer|AspysGuidetoInfinitum|3",
+        "Gravitational Flux|Mesmer|AspysGuidetoInfinitum|Chronomancer|AspysGuidetoInfinitum|6",
+        "Maximum Presence|Mesmer|AspysGuidetoInfinitum|Chronomancer|AspysGuidetoInfinitum|10",
+        "Neutron Star|Mesmer|AspysGuidetoInfinitum|Chronomancer|AspysGuidetoInfinitum|14",
+        "Gravitational Resonance|Mesmer|AspysGuidetoInfinitum|Chronomancer|AspysGuidetoInfinitum|14"
       ]
     },
     {
