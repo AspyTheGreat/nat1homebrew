@@ -41513,7 +41513,7 @@
         "You gain proficiency in the {@skill history} skill, and can double your proficiency bonus on history checks to recall details about historical disasters, wars and pandemics. If you already have proficiency in the history skill, you instead gain proficiency in a skill that you are not proficient in of your choice from the barbarian skill list.",
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Horseman of Death|Barbarian|DRK|Four Horsemen|DRK|3"
+          "subclassFeature": "Horseman of Conquest|Barbarian|DRK|Four Horsemen|DRK|3"
         },
         {
           "type": "refSubclassFeature",
@@ -41525,7 +41525,7 @@
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Horseman of Conquest|Barbarian|DRK|Four Horsemen|DRK|3"
+          "subclassFeature": "Horseman of Death|Barbarian|DRK|Four Horsemen|DRK|3"
         }
       ]
     },
@@ -41542,7 +41542,7 @@
         {
           "type": "quote",
           "entries": [
-            "{@color Then I saw when the Lamb broke one of the seven seals, and I heard one of the four living creatures saying as with a voice of thunder, 'Come!' I looked, and behold, a white horse, and he who sat on it had a bow; and a crown was given to him, and he went out conquering and to conquer.|#f7f5f5}"
+            "{@color When the Lamb broke the fourth seal, I heard the voice of the fourth living creature saying, 'Come'. I looked, and behold, an ashen horse; and he who sat on it had the name Death; and Hades was following with him. Authority was given to them over a fourth of the Earth, to kill with sword and with famine and with pestilence and by the wild beasts of the Earth.|#216e05}"
           ]
         },
         "When a creature you can see within 60 feet of you dies, you can use your reaction to absorb its essence, gaining a number of hitpoints equal to your barbarian level+constitution modifier, as well as maxing out your wrath charges.",
@@ -41602,7 +41602,7 @@
         {
           "type": "quote",
           "entries": [
-            "{@color When the Lamb broke the fourth seal, I heard the voice of the fourth living creature saying, 'Come'. I looked, and behold, an ashen horse; and he who sat on it had the name Death; and Hades was following with him. Authority was given to them over a fourth of the Earth, to kill with sword and with famine and with pestilence and by the wild beasts of the Earth.|#216e05}"
+            "{@color Then I saw when the Lamb broke one of the seven seals, and I heard one of the four living creatures saying as with a voice of thunder, 'Come!' I looked, and behold, a white horse, and he who sat on it had a bow; and a crown was given to him, and he went out conquering and to conquer.|#f7f5f5}"
           ]
         },
         "When you hit a creature with a weapon attack, you can expend a Wrath charge to release a burst of energy, pushing the creature. The creature must make a Strength saving throw (DC equals 8 + your proficiency bonus + your Strength modifier) or be pushed 10 feet away from you.",
@@ -65989,6 +65989,17 @@
             "4"
           ]
         },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
+            "Warforged (juggernaut)",
+            "Combat patterns",
+            "One martial weapon of your choice",
+            "Homebrew, ask DM",
+            "1"
+          ]
+        },
         [
           "",
           "",
@@ -66032,6 +66043,28 @@
             "1"
           ]
         },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
+            "Vermkin (Dykentail)",
+            "Housecarving",
+            "{@item woodcarver's tools|phb}, or {@item carpenter's tools|phb}.",
+            "Homebrew, ask DM",
+            "1"
+          ]
+        },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
+            "Warforged (artifex)",
+            "Super specialisation",
+            "proficiency and expertise in one tool of your choice",
+            "Homebrew, ask DM",
+            "3"
+          ]
+        },
         [
           "",
           "",
@@ -66060,6 +66093,17 @@
             "Githyanki",
             "Astral Knowledge",
             "one skill, and one weapon/tool selected from the {@book Player's Handbook|PHB} which can be switched after a long rest.",
+            "",
+            "7"
+          ]
+        },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
+            "Half-leberi",
+            "Skilled artisan",
+            "One skill, and one weapon/tool of your choice.",
             "",
             "7"
           ]
@@ -66668,6 +66712,18 @@
             "Yes",
             "Int; wis; cha",
             "22"
+          ]
+        },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
+            "Warforged (incantator)",
+            "Spell databank",
+            "one {@filter cantrip of your choice from the wizard spell list|spells|level=0|class=Wizard}, one additional spell known whenever you reach a level in a class which grants you the spellcasting feature (one time only).",
+            "",
+            "Int; wis; cha",
+            "21"
           ]
         },
         {
@@ -67670,6 +67726,28 @@
             "8"
           ]
         },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
+            "Vermkin (longsnout)",
+            "Sneaky scurry",
+            "You gain proficiency in {@skill Stealth} checks. You can walk on two feet or four without impediment and can move through non-magical difficult terrain or any creature's space without penalty to your movement.",
+            "",
+            "12"
+          ]
+        },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
+            "Vermkin (softfur)",
+            "Bright-eyed and bushy-tailed",
+            "You gain proficiency in the {@skill persuasion} skill and  can roll the check with advantage once per short or long rest.",
+            "",
+            "6"
+          ]
+        },
         [
           "",
           "",
@@ -67892,6 +67970,17 @@
           "type": "row",
           "style": "row-indent-first",
           "row": [
+            "Half-leberi",
+            "Sour blood",
+            "You have advantage on saving throws involving poison damage and disease.",
+            "Homebrew, ask DM",
+            "9"
+          ]
+        },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
             "Halfling; kobold",
             "Brave/Defiance",
             "You have advantage on saving throws against being {@condition frightened}.",
@@ -67925,11 +68014,66 @@
           "type": "row",
           "style": "row-indent-first",
           "row": [
+            "Leberi",
+            "Pungent blood",
+            "Your blood has the strange property of being thicker. You are resistant to Poison Damage and Immune to Diseases.",
+            "Homebrew, ask DM.",
+            "17"
+          ]
+        },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
             "Loxodon",
             "Loxodon serenity",
             "You have advantage on saving throws against being {@condition charmed} or {@condition frightened}.",
             "",
             "19"
+          ]
+        },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
+            "Vermkin (longsnout)",
+            "Iron gut",
+            "You have advantage on saving throws against poison and disease, and you have resistance against poison damage. You can also eat rotten food without any ill effects.",
+            "Homebrew, ask DM",
+            "11"
+          ]
+        },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
+            "Vermkin (riverborn)",
+            "Riverborn",
+            "You have a swimming speed equal to your walking speed and you have resistance to cold damage.",
+            "Homebrew, ask DM",
+            "23"
+          ]
+        },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
+            "Warforged",
+            "Steadfast",
+            "You have advantage on checks and saving throws against being moved or knocked {@condition prone}.",
+            "Homebrew, ask DM",
+            "9"
+          ]
+        },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
+            "Warforged (juggernaut)",
+            "Transformative subroutine",
+            "As an action, you may change your size from medium to large or vice versa. Additionally, you have advantage against any spells or effects that would alter your form against your will.",
+            "Homebrew, ask DM",
+            "7"
           ]
         },
         [
@@ -68751,6 +68895,61 @@
           "type": "row",
           "style": "row-indent-first",
           "row": [
+            "Vermkin",
+            "Scurry",
+            "You can walk on two feet or four without impediment and can move through any creature's space without penalty to your movement.",
+            "Homebrew, ask DM",
+            "3"
+          ]
+        },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
+            "Vermkin (dreyfolk)",
+            "Free gliders",
+            "While you aren't {@ condition incapacitated}, you do not take damage from falling and can move upto 2 feet for every 1 foot that you descend.",
+            "Homebrew, ask DM",
+            "6"
+          ]
+        },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
+            "Vermkin (prickleback)",
+            "Vengeful prick",
+            "As a reaction to melee attack against you within 5 feet, you may impale the attacker on the needles on your back. The attacker takes damage equal to your Constitution modifier + half your level (rounded down).",
+            "Homebrew, ask DM",
+            "16"
+          ]
+        },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
+            "Vermkin (softfur)",
+            "Button eyed",
+            "When a creature attacks you, you can use a reaction to force the creature to make a Wisdom save (DC = 8 + Proficiency Bonus + Charisma Modifier). If the being is sentient, it may redirect the attack or make it against you with disadvanatage. You regain use of this feature after a short rest.",
+            "Homebrew, ask DM",
+            "6"
+          ]
+        },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
+            "Warforged",
+            "Battle platform",
+            "You have a platform built into your chassis. While large, a small creature can ride on the platform without squeezing. To make a melee attack against a target within 5 feet of you, they must use spears, a similar polearm or weapons with reach.",
+            "{@race autognome|AAG} or {@race warforged|ERLW} primary race",
+            "14"
+          ]
+        },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
             "Warforged",
             "Integrated protection",
             {
@@ -69078,6 +69277,17 @@
           "type": "row",
           "style": "row-indent-first",
           "row": [
+            "Half-leberi",
+            "Otherwordly trace",
+            "You can attune to 1 additional item as long as one of the items you’re attuned to is a tattoo.",
+            "Leberi or Half-leberi primary race; Homebrew, ask DM",
+            "35"
+          ]
+        },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
             "Harengon",
             "Hare trigger",
             "You can add your proficiency bonus to your initiative rolls.",
@@ -69127,6 +69337,17 @@
             "As a bonus action, you let out a cry at your enemies within 10 feet of you. Until the start of your next turn, you and your allies have advantage on attack rolls against any of those enemies who could hear you. You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
             "Bestial primary race",
             "52"
+          ]
+        },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
+            "Leberi",
+            "Sensory sacrifice",
+            "Depending on the circumstance of your birth you may have lost one or more senses to gain a boon granted as an eldritch invocation. This invocation must not have any prerequisites. You may lose Smell and Taste, Sight or Hearing.",
+            "Leberi or Half-leberi primary race; Homebrew, ask DM",
+            "40"
           ]
         },
         {
@@ -69252,6 +69473,28 @@
             "Your mind's connection to the world around you strengthens your will. You have advantage on all wisdom and charisma saving throws.",
             "",
             "70"
+          ]
+        },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
+            "Vermkin (dykentail)",
+            "Masters of the axe",
+            "You gain proficiency with Greataxes and Battleaxes and the 'heavy' property of a greataxe doesn't give you disadvantage on attack rolls. In addition, you gain the benefit of the {@feat Slasher} feat.",
+            "Homebrew, ask DM",
+            "65"
+          ]
+        },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
+            "Vermkin (prickleback)",
+            "Rat tactics",
+            "You have advantage on attack rolls against another creature if at least one of your allies isn't {@condition incapacitated} and is within 5 feet of it.",
+            "Homebrew, ask DM",
+            "45"
           ]
         }
       ]
@@ -70044,7 +70287,7 @@
           "name": "Racial Proficiencies",
           "entries": [
             "Select your {@table Racial Proficiencies|DRK}. You cannot gain more than two skill and two tool proficiencies through this feature. Consult the table for prerequisites.",
-            "<div class=\"dropdown\">\n    <button class=\"my-button\" onclick=\"toggleDropdown('creature-racialprof-dropdown')\">Racial Proficiencies</button>\n    <div id=\"creature-racialprof-dropdown\" class=\"dropdown-content\">\n        <label><input type=\"checkbox\" value=\"3\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Centaur: Natural affinity</label>\n        <label><input type=\"checkbox\" value=\"9\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Changeling: Changeling instincts</label>\n        <label><input type=\"checkbox\" value=\"5\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Elf: Keen senses</label>\n        <label><input type=\"checkbox\" value=\"12\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Half-elf: Skill versatility</label>\n        <label><input type=\"checkbox\" value=\"3\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Half-orc: Menacing</label>\n        <label><input type=\"checkbox\" value=\"6\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Human (variant): Skills</label>\n        <label><input type=\"checkbox\" value=\"5\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Leonin: Hunter's instincts</label>\n        <label><input type=\"checkbox\" value=\"11\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Lizardfolk: Nature's intuition</label>\n        <label><input type=\"checkbox\" value=\"10\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Tabaxi: Cat's talent</label>\n        <label><input type=\"checkbox\" value=\"5\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Tortle: Nature's intuition</label>\n        <label><input type=\"checkbox\" value=\"4\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Dwarf: Dwarven Combat Training</label>\n        <label><input type=\"checkbox\" value=\"3\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Elf (drow): Drow weapon Training</label>\n        <label><input type=\"checkbox\" value=\"4\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Elf: Elf weapon Training</label>\n        <label><input type=\"checkbox\" value=\"4\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Elf (sea): Sea elf Training</label>\n        <label><input type=\"checkbox\" value=\"3\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Autognome: Specialised design</label>\n        <label><input type=\"checkbox\" value=\"1\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Dwarf: Tool proficiency</label>\n        <label><input type=\"checkbox\" value=\"7\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Githyanki: Astral Knowledge</label>\n        <label><input type=\"checkbox\" value=\"8\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Satyr: Reveler</label>\n        <label><input type=\"checkbox\" value=\"3\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Shadar-Kai; Astral Elf: Trance proficiency</label>\n        <label><input type=\"checkbox\" value=\"8\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Warforged: Specialised design</label>\n    </div>\n</div>\n\n<input type=\"text\" id=\"creature-racialprof-cost\" readonly value=\"0\" style=\"position: relative; left: 6px;\">"
+            "<div class=\"dropdown\">\n    <button class=\"my-button\" onclick=\"toggleDropdown('creature-racialprof-dropdown')\">Racial Proficiencies</button>\n    <div id=\"creature-racialprof-dropdown\" class=\"dropdown-content\">\n        <label><input type=\"checkbox\" value=\"3\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Centaur: Natural affinity</label>\n        <label><input type=\"checkbox\" value=\"9\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Changeling: Changeling instincts</label>\n        <label><input type=\"checkbox\" value=\"5\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Elf: Keen senses</label>\n        <label><input type=\"checkbox\" value=\"12\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Half-elf: Skill versatility</label>\n        <label><input type=\"checkbox\" value=\"3\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Half-orc: Menacing</label>\n        <label><input type=\"checkbox\" value=\"6\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Human (variant): Skills</label>\n        <label><input type=\"checkbox\" value=\"5\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Leonin: Hunter's instincts</label>\n        <label><input type=\"checkbox\" value=\"11\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Lizardfolk: Nature's intuition</label>\n        <label><input type=\"checkbox\" value=\"10\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Tabaxi: Cat's talent</label>\n        <label><input type=\"checkbox\" value=\"5\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Tortle: Nature's intuition</label>\n        <label><input type=\"checkbox\" value=\"4\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Dwarf: Dwarven Combat Training</label>\n        <label><input type=\"checkbox\" value=\"3\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Elf (drow): Drow weapon Training</label>\n        <label><input type=\"checkbox\" value=\"4\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Elf: Elf weapon Training</label>\n        <label><input type=\"checkbox\" value=\"4\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Elf (sea): Sea elf Training</label>\n        <label><input type=\"checkbox\" value=\"1\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Warforged (juggernaut): combat patterns</label>\n        <label><input type=\"checkbox\" value=\"3\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Autognome: Specialised design</label>\n        <label><input type=\"checkbox\" value=\"1\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Dwarf: Tool proficiency</label>\n        <label><input type=\"checkbox\" value=\"1\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Vermkin (Dykentail): housecarving </label>\n        <label><input type=\"checkbox\" value=\"7\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Half-leberi: Skilled artisan</label>\n        <label><input type=\"checkbox\" value=\"3\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Warforged (Artifex): Super specialisation</label>\n        <label><input type=\"checkbox\" value=\"7\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Githyanki: Astral Knowledge</label>\n        <label><input type=\"checkbox\" value=\"8\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Satyr: Reveler</label>\n        <label><input type=\"checkbox\" value=\"3\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Shadar-Kai; Astral Elf: Trance proficiency</label>\n        <label><input type=\"checkbox\" value=\"8\" onchange=\"updateCheckboxValue('creature-racialprof-cost', this)\"> Warforged: Specialised design</label>\n    </div>\n</div>\n\n<input type=\"text\" id=\"creature-racialprof-cost\" readonly value=\"0\" style=\"position: relative; left: 6px;\">"
           ]
         },
         {
@@ -70052,7 +70295,7 @@
           "name": "Racial spellcasting",
           "entries": [
             "Choose whether or not your race has {@table Racial spellcasting|DRK}. Consult the table for prerequisites.",
-            "<select name=\"creature-racialspell\" id=\"creature-racialspell\" onchange=\"updateValue()\" style=\"width: 150px;\">\n  <option value=\"RacialSpell\" data-value=\"0\">Racial Spell</option>\n  <option value=\"Aarakocra\" data-value=\"4\">Aarakocra - Wind Caller</option>\n  <option value=\"Aasimar\" data-value=\"3\">Aasimar - Light Bearer</option>\n  <option value=\"Elf (astral)\" data-value=\"5\">Elf (astral) - Astral Fire</option>\n  <option value=\"Gnome (deep)\" data-value=\"13\">Gnome (deep) - Gift of the Svirfneblin</option>\n  <option value=\"Duergar\" data-value=\"8\">Duergar - Duergar Magic</option>\n  <option value=\"Dwarf (mark of warding)\" data-value=\"11\">Dwarf (mark of warding) - Wards and Seals</option>\n  <option value=\"Elf (drow)\" data-value=\"25\">Elf (drow) - Drow Magic</option>\n  <option value=\"Elf (high)\" data-value=\"11\">Elf (high) - Cantrip</option>\n  <option value=\"Elf (mark of shadow)\" data-value=\"18\">Elf (mark of shadow) - Shape Shadows</option>\n  <option value=\"Elf (pallid)\" data-value=\"15\">Elf (pallid) - Blessing of the Moon Weaver</option>\n  <option value=\"Fairy\" data-value=\"25\">Fairy - Fairy Magic</option>\n  <option value=\"Firbolg\" data-value=\"13\">Firbolg - Firbolg Magic</option>\n  <option value=\"Genasi (air)\" data-value=\"25\">Genasi (air) - Mingle with the Wind</option>\n  <option value=\"Genasi (earth)\" data-value=\"45\">Genasi (earth) - Merge with Stone</option>\n  <option value=\"Genasi (water)\" data-value=\"11\">Genasi (water) - Mingle with the Wind</option>\n  <option value=\"Githyanki\" data-value=\"29\">Githyanki - Githyanki Psionics</option>\n  <option value=\"Githzerai\" data-value=\"34\">Githzerai - Githzerai Psionics</option>\n  <option value=\"Gnome (forest)\" data-value=\"7\">Gnome (forest) - Natural Illusionist</option>\n  <option value=\"Gnome (mark of scribing)\" data-value=\"11\">Gnome (mark of scribing) - Scribe's Insight</option>\n  <option value=\"Half-elf (mark of detection)\" data-value=\"8\">Half-elf (mark of detection) - Magical Detection</option>\n  <option value=\"Half-elf (mark of the storm)\" data-value=\"9\">Half-elf (mark of the storm) - Storm's Boon</option>\n  <option value=\"Half-orc/human (mark of finding)\" data-value=\"18\">Half-orc/human (mark of finding) - Finder's Magic</option>\n  <option value=\"Halfling (lotusden)\" data-value=\"37\">Halfling (lotusden) - Child of the Wood</option>\n  <option value=\"Halfling (mark of healing)\" data-value=\"25\">Halfling (mark of healing) - Healing Touch</option>\n  <option value=\"Halfling (mark of hospitality)\" data-value=\"18\">Halfling (mark of hospitality) - Innkeeper's Magic</option>\n  <option value=\"Hexblood\" data-value=\"23\">Hexblood - Hex Magic</option>\n  <option value=\"Human (mark of handling)\" data-value=\"8\">Human (mark of handling) - The Bigger They Are</option>\n  <option value=\"Human (mark of making)\" data-value=\"30\">Human (mark of making) - Spellsmith</option>\n  <option value=\"Human (mark of passage)\" data-value=\"15\">Human (mark of passage) - Magical Passage</option>\n  <option value=\"Human (mark of sentinel)\" data-value=\"9\">Human (mark of sentinel) - Guardian's Shield</option>\n  <option value=\"Kobold\" data-value=\"10\">Kobold - Kobold Legacy: Draconic Sorcery</option>\n  <option value=\"Tiefling (asmodeus)\" data-value=\"42\">Tiefling (asmodeus) - Infernal Legacy</option>\n  <option value=\"Tiefling (baalzebul)\" data-value=\"35\">Tiefling (baalzebul) - Legacy of Maladomini</option>\n  <option value=\"Tiefling (Dispater)\" data-value=\"19\">Tiefling (Dispater) - Legacy of Dis</option>\n  <option value=\"Tiefling (Fierna)\" data-value=\"21\">Tiefling (Fierna) - Legacy of Phlegethos</option>\n  <option value=\"Tiefling (glasya)\" data-value=\"21\">Tiefling (glasya) - Legacy of Malbolge</option>\n  <option value=\"Tiefling (levistus)\" data-value=\"30\">Tiefling (levistus) - Legacy of Styia</option>\n  <option value=\"Tiefling (mammon)\" data-value=\"25\">Tiefling (mammon) - Legacy of Minauros</option>\n  <option value=\"Tiefling (mephistopheles)\" data-value=\"14\">Tiefling (mephistopheles) - Legacy of Cania</option>\n  <option value=\"Tiefling (devil's tongue)\" data-value=\"16\">Tiefling (devil's tongue) - Devil's Tongue</option>\n  <option value=\"Tiefling (hellfire)\" data-value=\"24\">Tiefling (hellfire) - Hellfire</option>\n  <option value=\"Tiefling (zariel)\" data-value=\"30\">Tiefling (zariel) - Legacy of Avernus</option>\n  <option value=\"Triton\" data-value=\"22\">Triton - Control Air and Water</option>\n  <option value=\"Yuan-ti\" data-value=\"19\">Yuan-ti - Serpentine Spellcasting</option>\n</select>\n<input type=\"text\" id=\"creature-racialspell-cost\" readonly value=\"0\">\n\n",
+            "<select name=\"creature-racialspell\" id=\"creature-racialspell\" onchange=\"updateValue()\" style=\"width: 150px;\">\n  <option value=\"RacialSpell\" data-value=\"0\">Racial Spell</option>\n  <option value=\"Aarakocra\" data-value=\"4\">Aarakocra - Wind Caller</option>\n  <option value=\"Aasimar\" data-value=\"3\">Aasimar - Light Bearer</option>\n  <option value=\"Elf (astral)\" data-value=\"5\">Elf (astral) - Astral Fire</option>\n  <option value=\"Gnome (deep)\" data-value=\"13\">Gnome (deep) - Gift of the Svirfneblin</option>\n  <option value=\"Duergar\" data-value=\"8\">Duergar - Duergar Magic</option>\n  <option value=\"Dwarf (mark of warding)\" data-value=\"11\">Dwarf (mark of warding) - Wards and Seals</option>\n  <option value=\"Elf (drow)\" data-value=\"25\">Elf (drow) - Drow Magic</option>\n  <option value=\"Elf (high)\" data-value=\"11\">Elf (high) - Cantrip</option>\n  <option value=\"Elf (mark of shadow)\" data-value=\"18\">Elf (mark of shadow) - Shape Shadows</option>\n  <option value=\"Elf (pallid)\" data-value=\"15\">Elf (pallid) - Blessing of the Moon Weaver</option>\n  <option value=\"Fairy\" data-value=\"25\">Fairy - Fairy Magic</option>\n  <option value=\"Firbolg\" data-value=\"13\">Firbolg - Firbolg Magic</option>\n  <option value=\"Genasi (air)\" data-value=\"25\">Genasi (air) - Mingle with the Wind</option>\n  <option value=\"Genasi (earth)\" data-value=\"45\">Genasi (earth) - Merge with Stone</option>\n  <option value=\"Genasi (water)\" data-value=\"11\">Genasi (water) - Mingle with the Wind</option>\n  <option value=\"Githyanki\" data-value=\"29\">Githyanki - Githyanki Psionics</option>\n  <option value=\"Githzerai\" data-value=\"34\">Githzerai - Githzerai Psionics</option>\n  <option value=\"Gnome (forest)\" data-value=\"7\">Gnome (forest) - Natural Illusionist</option>\n  <option value=\"Gnome (mark of scribing)\" data-value=\"11\">Gnome (mark of scribing) - Scribe's Insight</option>\n  <option value=\"Half-elf (mark of detection)\" data-value=\"8\">Half-elf (mark of detection) - Magical Detection</option>\n  <option value=\"Half-elf (mark of the storm)\" data-value=\"9\">Half-elf (mark of the storm) - Storm's Boon</option>\n  <option value=\"Half-orc/human (mark of finding)\" data-value=\"18\">Half-orc/human (mark of finding) - Finder's Magic</option>\n  <option value=\"Halfling (lotusden)\" data-value=\"37\">Halfling (lotusden) - Child of the Wood</option>\n  <option value=\"Halfling (mark of healing)\" data-value=\"25\">Halfling (mark of healing) - Healing Touch</option>\n  <option value=\"Halfling (mark of hospitality)\" data-value=\"18\">Halfling (mark of hospitality) - Innkeeper's Magic</option>\n  <option value=\"Hexblood\" data-value=\"23\">Hexblood - Hex Magic</option>\n  <option value=\"Human (mark of handling)\" data-value=\"8\">Human (mark of handling) - The Bigger They Are</option>\n  <option value=\"Human (mark of making)\" data-value=\"30\">Human (mark of making) - Spellsmith</option>\n  <option value=\"Human (mark of passage)\" data-value=\"15\">Human (mark of passage) - Magical Passage</option>\n  <option value=\"Human (mark of sentinel)\" data-value=\"9\">Human (mark of sentinel) - Guardian's Shield</option>\n  <option value=\"Kobold\" data-value=\"10\">Kobold - Kobold Legacy: Draconic Sorcery</option>\n  <option value=\"Tiefling (asmodeus)\" data-value=\"42\">Tiefling (asmodeus) - Infernal Legacy</option>\n  <option value=\"Tiefling (baalzebul)\" data-value=\"35\">Tiefling (baalzebul) - Legacy of Maladomini</option>\n  <option value=\"Tiefling (Dispater)\" data-value=\"19\">Tiefling (Dispater) - Legacy of Dis</option>\n  <option value=\"Tiefling (Fierna)\" data-value=\"21\">Tiefling (Fierna) - Legacy of Phlegethos</option>\n  <option value=\"Tiefling (glasya)\" data-value=\"21\">Tiefling (glasya) - Legacy of Malbolge</option>\n  <option value=\"Tiefling (levistus)\" data-value=\"30\">Tiefling (levistus) - Legacy of Styia</option>\n  <option value=\"Tiefling (mammon)\" data-value=\"25\">Tiefling (mammon) - Legacy of Minauros</option>\n  <option value=\"Tiefling (mephistopheles)\" data-value=\"14\">Tiefling (mephistopheles) - Legacy of Cania</option>\n  <option value=\"Tiefling (devil's tongue)\" data-value=\"16\">Tiefling (devil's tongue) - Devil's Tongue</option>\n  <option value=\"Tiefling (hellfire)\" data-value=\"24\">Tiefling (hellfire) - Hellfire</option>\n  <option value=\"Tiefling (zariel)\" data-value=\"30\">Tiefling (zariel) - Legacy of Avernus</option>\n  <option value=\"Triton\" data-value=\"22\">Triton - Control Air and Water</option>\n  <option value=\"Warforged\" data-value=\"21\">Warfored (incantator): Spell databank</option>\n  <option value=\"Yuan-ti\" data-value=\"19\">Yuan-ti - Serpentine Spellcasting</option>\n</select>\n<input type=\"text\" id=\"creature-racialspell-cost\" readonly value=\"0\">\n\n",
             "<select name=\"creature-markspells\" id=\"creature-markspells\" onchange=\"updateValue()\" style=\"width: 150px;\">\n  <option value=\"MarkSpells\" data-value=\"0\">Mark Spells</option>\n  <option value=\"Dwarf (mark of warding) - Mark of warding spells\" data-value=\"42\">Dwarf (mark of warding) - Mark of warding spells</option>\n  <option value=\"Elf (mark of shadow) - Mark of shadow spells\" data-value=\"71\">Elf (mark of shadow) - Mark of shadow spells</option>\n  <option value=\"Gnome (mark of scribing) - Mark of scribing spells\" data-value=\"52\">Gnome (mark of scribing) - Mark of scribing spells</option>\n  <option value=\"Half-elf (mark of detection) - Mark of detection spells\" data-value=\"60\">Half-elf (mark of detection) - Mark of detection spells</option>\n  <option value=\"Half-elf (mark of the storm) - Mark of the storm spells\" data-value=\"67\">Half-elf (mark of the storm) - Mark of the storm spells</option>\n  <option value=\"Half-orc/human (mark of finding) - Mark of finding spells\" data-value=\"52\">Half-orc/human (mark of finding) - Mark of finding spells</option>\n  <option value=\"Halfling (mark of healing) - Mark of healing spells\" data-value=\"69\">Halfling (mark of healing) - Mark of healing spells</option>\n  <option value=\"Halfling (mark of hospitality) - Mark of hospitality spells\" data-value=\"64\">Halfling (mark of hospitality) - Mark of hospitality spells</option>\n  <option value=\"Human (mark of handling) - Mark of handling spells\" data-value=\"63\">Human (mark of handling) - Mark of handling spells</option>\n  <option value=\"Human (mark of making) - Mark of making spells\" data-value=\"48\">Human (mark of making) - Mark of making spells</option>\n  <option value=\"Human (mark of passage) - Mark of passage spells\" data-value=\"71\">Human (mark of passage) - Mark of passage spells</option>\n  <option value=\"Human (mark of sentinel) - Mark of sentinel spells\" data-value=\"76\">Human (mark of sentinel) - Mark of sentinel spells</option>\n</select>\n<input type=\"text\" id=\"creature-markspells-cost\" readonly value=0>"
           ]
         },
@@ -70062,10 +70305,10 @@
           "entries": [
             "Choose your race's {@table Minor traits|DRK}. Consult the table for prerequisites.",
             "<select name=\"creature-minor-natural-weapons\" id=\"creature-minor-natural-weapons\" onchange=\"updateValue()\" style=\"width: 150px;\">\n  <option value=\"Natural Weapons\" data-value=\"0\">Natural Weapons</option>\n  <option value=\"Aarakocra - Talons\" data-value=\"7\">Aarakocra - Talons</option>\n  <option value=\"Centaur - Hooves\" data-value=\"10\">Centaur - Hooves</option>\n  <option value=\"Leonin - Claws\" data-value=\"3\">Leonin - Claws</option>\n  <option value=\"Lizardfolk - Bite\" data-value=\"10\">Lizardfolk - Bite</option>\n  <option value=\"Minotaur - Horns\" data-value=\"10\">Minotaur - Horns</option>\n  <option value=\"Satyr - Ram\" data-value=\"10\">Satyr - Ram</option>\n  <option value=\"Tabaxi; Tortle - Cat's claws; Claws\" data-value=\"5\">Tabaxi; Tortle - Cat's claws; Claws</option>\n</select>\n<input type=\"text\" id=\"creature-minor-natural-weapons-cost\" readonly value=0>",
-            "<select name=\"creature-skill-enhancing-trait\" id=\"creature-skill-enhancing-trait\" onchange=\"updateValue()\" style=\"width: 150px;\">\n  <option value=\"SkillEnhancingTrait\" data-value=\"0\">Skill Enhancing Trait</option>\n  <option value=\"Bugbear - Sneaky\" data-value=\"7\">Bugbear - Sneaky</option>\n  <option value=\"Dhampir; Hexblood; Reborn - Ancestral Legacy\" data-value=\"12\">Dhampir; Hexblood; Reborn - Ancestral Legacy</option>\n  <option value=\"Deep Gnome - Svirfneblin camoflage\" data-value=\"5\">Deep Gnome - Svirfneblin camoflage</option>\n  <option value=\"Dragonborn (draconblood) - Chromatic warding\" data-value=\"5\">Dragonborn (draconblood) - Chromatic warding</option>\n  <option value=\"Dwarf - Stonecutting\" data-value=\"2\">Dwarf - Stonecutting</option>\n  <option value=\"Dwarf (mark of warding) - Warder's intuition\" data-value=\"5\">Dwarf (mark of warding) - Warder's intuition</option>\n  <option value=\"Elf (mark of shadow) - cunning intuition\" data-value=\"4\">Elf (mark of shadow) - cunning intuition</option>\n  <option value=\"Elf (pallid) - Incisive sense\" data-value=\"6\">Elf (pallid) - Incisive sense</option>\n  <option value=\"Giff - Hippo build\" data-value=\"14\">Giff - Hippo build</option>\n  <option value=\"Gnome (mark of scribing) - Gifted scribe\" data-value=\"2\">Gnome (mark of scribing) - Gifted scribe</option>\n  <option value=\"Gnome (rock) - Artificer's lore\" data-value=\"1\">Gnome (rock) - Artificer's lore</option>\n  <option value=\"Goliath - Little giant\" data-value=\"5\">Goliath - Little giant</option>\n  <option value=\"Half-elf (mark of detection) - Deductive intuition\" data-value=\"7\">Half-elf (mark of detection) - Deductive intuition</option>\n  <option value=\"Half-elf (mark of the storm) - Windwright's intuition\" data-value=\"3\">Half-elf (mark of the storm) - Windwright's intuition</option>\n  <option value=\"Half-orc/human (mark of finding) - Hunter's intuition\" data-value=\"5\">Half-orc/human (mark of finding) - Hunter's intuition</option>\n  <option value=\"Halfling (mark of healing) - Medical intuition\" data-value=\"3\">Halfling (mark of healing) - Medical intuition</option>\n  <option value=\"Halfling (mark of hospitality) - Ever hospitable\" data-value=\"4\">Halfling (mark of hospitality) - Ever hospitable</option>\n  <option value=\"Human (mark of handling) - Wild intuition\" data-value=\"3\">Human (mark of handling) - Wild intuition</option>\n  <option value=\"Human (mark of making) - Artisan's intuition\" data-value=\"7\">Human (mark of making) - Artisan's intuition</option>\n  <option value=\"Human (mark of passage) - Intuitive motion\" data-value=\"4\">Human (mark of passage) - Intuitive motion</option>\n  <option value=\"Human (mark of sentinel) - Intuitive motion\" data-value=\"8\">Human (mark of sentinel) - Intuitive motion</option>\n  <option value=\"Kenku - Kenku recall\" data-value=\"23\">Kenku - Kenku recall</option>\n  <option value=\"Loxodon - Keen smell\" data-value=\"6\">Loxodon - Keen smell</option>\n  <option value=\"Minotaur - Labyrinthine recall\" data-value=\"3\">Minotaur - Labyrinthine recall</option>\n  <option value=\"Reborn - Knowledge from a past life\" data-value=\"9\">Reborn - Knowledge from a past life</option>\n  <option value=\"Vedalken - Tireless precision\" data-value=\"8\">Vedalken - Tireless precision</option>\n</select>\n<input type=\"text\" id=\"creature-skill-enhancing-trait-cost\" readonly value=0>",
+            "<select name=\"creature-skill-enhancing-trait\" id=\"creature-skill-enhancing-trait\" onchange=\"updateValue()\" style=\"width: 150px;\">\n  <option value=\"SkillEnhancingTrait\" data-value=\"0\">Skill Enhancing Trait</option>\n  <option value=\"Bugbear - Sneaky\" data-value=\"7\">Bugbear - Sneaky</option>\n  <option value=\"Dhampir; Hexblood; Reborn - Ancestral Legacy\" data-value=\"12\">Dhampir; Hexblood; Reborn - Ancestral Legacy</option>\n  <option value=\"Deep Gnome - Svirfneblin camoflage\" data-value=\"5\">Deep Gnome - Svirfneblin camoflage</option>\n  <option value=\"Dragonborn (draconblood) - Chromatic warding\" data-value=\"5\">Dragonborn (draconblood) - Chromatic warding</option>\n  <option value=\"Dwarf - Stonecutting\" data-value=\"2\">Dwarf - Stonecutting</option>\n  <option value=\"Dwarf (mark of warding) - Warder's intuition\" data-value=\"5\">Dwarf (mark of warding) - Warder's intuition</option>\n  <option value=\"Elf (mark of shadow) - cunning intuition\" data-value=\"4\">Elf (mark of shadow) - cunning intuition</option>\n  <option value=\"Elf (pallid) - Incisive sense\" data-value=\"6\">Elf (pallid) - Incisive sense</option>\n  <option value=\"Giff - Hippo build\" data-value=\"14\">Giff - Hippo build</option>\n  <option value=\"Gnome (mark of scribing) - Gifted scribe\" data-value=\"2\">Gnome (mark of scribing) - Gifted scribe</option>\n  <option value=\"Gnome (rock) - Artificer's lore\" data-value=\"1\">Gnome (rock) - Artificer's lore</option>\n  <option value=\"Goliath - Little giant\" data-value=\"5\">Goliath - Little giant</option>\n  <option value=\"Half-elf (mark of detection) - Deductive intuition\" data-value=\"7\">Half-elf (mark of detection) - Deductive intuition</option>\n  <option value=\"Half-elf (mark of the storm) - Windwright's intuition\" data-value=\"3\">Half-elf (mark of the storm) - Windwright's intuition</option>\n  <option value=\"Half-orc/human (mark of finding) - Hunter's intuition\" data-value=\"5\">Half-orc/human (mark of finding) - Hunter's intuition</option>\n  <option value=\"Halfling (mark of healing) - Medical intuition\" data-value=\"3\">Halfling (mark of healing) - Medical intuition</option>\n  <option value=\"Halfling (mark of hospitality) - Ever hospitable\" data-value=\"4\">Halfling (mark of hospitality) - Ever hospitable</option>\n  <option value=\"Human (mark of handling) - Wild intuition\" data-value=\"3\">Human (mark of handling) - Wild intuition</option>\n  <option value=\"Human (mark of making) - Artisan's intuition\" data-value=\"7\">Human (mark of making) - Artisan's intuition</option>\n  <option value=\"Human (mark of passage) - Intuitive motion\" data-value=\"4\">Human (mark of passage) - Intuitive motion</option>\n  <option value=\"Human (mark of sentinel) - Intuitive motion\" data-value=\"8\">Human (mark of sentinel) - Intuitive motion</option>\n  <option value=\"Kenku - Kenku recall\" data-value=\"23\">Kenku - Kenku recall</option>\n  <option value=\"Loxodon - Keen smell\" data-value=\"6\">Loxodon - Keen smell</option>\n  <option value=\"Minotaur - Labyrinthine recall\" data-value=\"3\">Minotaur - Labyrinthine recall</option>\n  <option value=\"Reborn - Knowledge from a past life\" data-value=\"9\">Reborn - Knowledge from a past life</option>\n  <option value=\"Vedalken - Tireless precision\" data-value=\"8\">Vedalken - Tireless precision</option>\n  <option value=\"Vermkin (longsnout) - Sneaky scurry\" data-value=\"12\">Vermkin (longsnout) - Sneaky scurry</option>\n  <option value=\"Vermkin (softfur) - Bright-eyed and bushy-tailed\" data-value=\"6\">Vermkin (softfur) - Bright-eyed and bushy-tailed</option>\n  <option value=\"Vermkin (longsnout) - Nose for trouble\" data-value=\"3\">Vermkin (longsnout) - Nose for trouble</option>\n</select>\n<input type=\"text\" id=\"creature-skill-enhancing-trait-cost\" readonly value=0>",
             "<select name=\"creature-natural-armor-traits\" id=\"creature-natural-armor-traits\" onchange=\"updateValue()\" style=\"width: 150px;\">\n  <option value=\"NaturalArmorTraits\" data-value=\"0\">Natural Armor Traits</option>\n  <option value=\"Autognome - Armored casing\" data-value=\"15\">Autognome - Armored casing</option>\n  <option value=\"Lizardfolk - Natural armor\" data-value=\"8\">Lizardfolk - Natural armor</option>\n  <option value=\"Loxodon - Natural armor\" data-value=\"18\">Loxodon - Natural armor</option>\n  <option value=\"Tortle - Natural armor\" data-value=\"28\">Tortle - Natural armor</option>\n</select>\n<input type=\"text\" id=\"creature-natural-armor-traits-cost\" readonly value=0>",
-            "<select name=\"creature-damage-condition-resistance\" id=\"creature-damage-condition-resistance\" onchange=\"updateValue()\" style=\"width: 150px;\">\n  <option value=\"DamageConditionResistance\" data-value=\"0\">Damage Condition Resistance</option>\n  <option value=\"Aasimar - Celestial resistance\" data-value=\"31\">Aasimar - Celestial resistance</option>\n  <option value=\"Elf, Bugbear, Fairy, etc. - Fey ancestry\" data-value=\"8\">Elf, Bugbear, Fairy, etc. - Fey ancestry</option>\n  <option value=\"Autognome - Mechanical nature\" data-value=\"40\">Autognome - Mechanical nature</option>\n  <option value=\"Dragonborn - Draconic Resilience\" data-value=\"18\">Dragonborn - Draconic Resilience</option>\n  <option value=\"Dragonborn (chromatic) - Chromatic warding\" data-value=\"22\">Dragonborn (chromatic) - Chromatic warding</option>\n  <option value=\"Duergar - Psionic fortitude\" data-value=\"14\">Duergar - Psionic fortitude</option>\n  <option value=\"Dwarf; halfling (stout); yuan-ti - Darven/Stout/poison resilience\" data-value=\"26\">Dwarf; halfling (stout); yuan-ti - Darven/Stout/poison resilience</option>\n  <option value=\"Shadar-kai - Necrotic resistance\" data-value=\"18\">Shadar-kai - Necrotic resistance</option>\n  <option value=\"Genasi (fire); Tiefling - Fire/hellish resistance\" data-value=\"16\">Genasi (fire); Tiefling - Fire/hellish resistance</option>\n  <option value=\"Genasi (water) - Acid resistance\" data-value=\"12\">Genasi (water) - Acid resistance</option>\n  <option value=\"Genasi (air) - Lightning resistance\" data-value=\"13\">Genasi (air) - Lightning resistance</option>\n  <option value=\"Goliath - Mountain born\" data-value=\"15\">Goliath - Mountain born</option>\n  <option value=\"Halfling; kobold - Brave/Defiance\" data-value=\"11\">Halfling; kobold - Brave/Defiance</option>\n  <option value=\"Kalashtar - Mental discipline\" data-value=\"11\">Kalashtar - Mental discipline</option>\n  <option value=\"Kender - Fearless\" data-value=\"21\">Kender - Fearless</option>\n  <option value=\"Loxodon - Loxodon serenity\" data-value=\"19\">Loxodon - Loxodon serenity</option>\n</select>\n<input type=\"text\" id=\"creature-damage-condition-resistance-cost\" readonly value=0>",
-            "<select name=\"creature-other-minor-traits\" id=\"creature-other-minor-traits\" onchange=\"updateValue()\" style=\"width: 150px;\">\n  <option value=\"OtherMinorTraits\" data-value=\"0\">Other Minor Traits</option>\n  <option value=\"Aasimar - Healing Hands\" data-value=\"10\">Aasimar - Healing Hands</option>\n  <option value=\"Elf - Trance\" data-value=\"7\">Elf - Trance</option>\n  <option value=\"Autognome - Healing Machine\" data-value=\"15\">Autognome - Healing Machine</option>\n  <option value=\"Autognome, Warforged - Sentry's Rest\" data-value=\"4\">Autognome, Warforged - Sentry's Rest</option>\n  <option value=\"Bugbear - Long-Limbed\" data-value=\"20\">Bugbear - Long-Limbed</option>\n  <option value=\"Bugbear, Goliath, etc. - Powerful Build\" data-value=\"4\">Bugbear, Goliath, etc. - Powerful Build</option>\n  <option value=\"Centaur - Charge\" data-value=\"13\">Centaur - Charge</option>\n  <option value=\"Centaur - Equine Build\" data-value=\"0\">Centaur - Equine Build</option>\n  <option value=\"Dhampir - Deathless Nature\" data-value=\"10\">Dhampir - Deathless Nature</option>\n  <option value=\"Dhampir - Spider Climb\" data-value=\"25\">Dhampir - Spider Climb</option>\n  <option value=\"Dhampir - Vampire Bite\" data-value=\"18\">Dhampir - Vampire Bite</option>\n  <option value=\"Dragonborn - Draconic Ancestry\" data-value=\"0\">Dragonborn - Draconic Ancestry</option>\n  <option value=\"Dragonborn (Gem) - Psionic Mind\" data-value=\"10\">Dragonborn (Gem) - Psionic Mind</option>\n  <option value=\"Dragonborn (Ravenite) - Vengeful Assault\" data-value=\"5\">Dragonborn (Ravenite) - Vengeful Assault</option>\n  <option value=\"Duergar, Drow, etc. - Sunlight Sensitivity\" data-value=\"-25\">Duergar, Drow, etc. - Sunlight Sensitivity</option>\n  <option value=\"Dwarf (Hill) - Dwarven Toughness\" data-value=\"25\">Dwarf (Hill) - Dwarven Toughness</option>\n  <option value=\"Elf (Sea), Triton - Friend/Emissary of the Sea\" data-value=\"2\">Elf (Sea), Triton - Friend/Emissary of the Sea</option>\n  <option value=\"Elf (Wood) - Mask of the Wild\" data-value=\"3\">Elf (Wood) - Mask of the Wild</option>\n  <option value=\"Firbolg - Speech of Beast and Leaf\" data-value=\"4\">Firbolg - Speech of Beast and Leaf</option>\n  <option value=\"Genasi (Air) - Unending Breath\" data-value=\"12\">Genasi (Air) - Unending Breath</option>\n  <option value=\"Genasi (Earth) - Earth Walk\" data-value=\"6\">Genasi (Earth) - Earth Walk</option>\n  <option value=\"Genasi (Water), Triton, etc. - Amphibious\" data-value=\"8\">Genasi (Water), Triton, etc. - Amphibious</option>\n  <option value=\"Giff - Astral Spark\" data-value=\"18\">Giff - Astral Spark</option>\n  <option value=\"Gnome (Rock) - Tinker\" data-value=\"5\">Gnome (Rock) - Tinker</option>\n  <option value=\"Goblin - Fury of the Small\" data-value=\"23\">Goblin - Fury of the Small</option>\n  <option value=\"Goliath - Stone's Endurance\" data-value=\"26\">Goliath - Stone's Endurance</option>\n  <option value=\"Hadozee - Dexterous Feet\" data-value=\"3\">Hadozee - Dexterous Feet</option>\n  <option value=\"Hadozee - Glide\" data-value=\"7\">Hadozee - Glide</option>\n  <option value=\"Hadozee - Hadozee Dodge\" data-value=\"17\">Hadozee - Hadozee Dodge</option>\n  <option value=\"Half-Orc - Relentless Endurance\" data-value=\"30\">Half-Orc - Relentless Endurance</option>\n  <option value=\"Half-Orc - Savage Attacks\" data-value=\"12\">Half-Orc - Savage Attacks</option>\n  <option value=\"Halfling (Ghostwise) - Silent Speech\" data-value=\"8\">Halfling (Ghostwise) - Silent Speech</option>\n  <option value=\"Halfling (Lightfoot) - Naturally Stealthy\" data-value=\"5\">Halfling (Lightfoot) - Naturally Stealthy</option>\n  <option value=\"Halfling (Lotusden) - Timberwalk\" data-value=\"7\">Halfling (Lotusden) - Timberwalk</option>\n  <option value=\"Harengon - Lucky Footwork\" data-value=\"8\">Harengon - Lucky Footwork</option>\n  <option value=\"Hexblood - Eerie Token\" data-value=\"26\">Hexblood - Eerie Token</option>\n  <option value=\"Hobgoblin - Fey Gift\" data-value=\"19\">Hobgoblin - Fey Gift</option>\n  <option value=\"Kalashtar - Mind Link\" data-value=\"12\">Kalashtar - Mind Link</option>\n  <option value=\"Kalashtar - Severed from Dreams\" data-value=\"3\">Kalashtar - Severed from Dreams</option>\n  <option value=\"Kender - Taunt\" data-value=\"21\">Kender - Taunt</option>\n  <option value=\"Kenku - Expert Duplication\" data-value=\"7\">Kenku - Expert Duplication</option>\n  <option value=\"Kenku - Mimicry\" data-value=\"20\">Kenku - Mimicry</option>\n  <option value=\"Kobold - Kobold Legacy (Craftiness, Defiance)\" data-value=\"11\">Kobold - Kobold Legacy (Craftiness, Defiance)</option>\n  <option value=\"Leonin - Daunting Roar\" data-value=\"8\">Leonin - Daunting Roar</option>\n  <option value=\"Lizardfolk - Hold Breath\" data-value=\"10\">Lizardfolk - Hold Breath</option>\n  <option value=\"Lizardfolk - Hungry Jaws\" data-value=\"14\">Lizardfolk - Hungry Jaws</option>\n  <option value=\"Loxodon - Trunk\" data-value=\"25\">Loxodon - Trunk</option>\n  <option value=\"Minotaur - Goring Rush\" data-value=\"14\">Minotaur - Goring Rush</option>\n  <option value=\"Orc - Adrenaline Rush\" data-value=\"28\">Orc - Adrenaline Rush</option>\n  <option value=\"Satyr - Mirthful Leaps\" data-value=\"2\">Satyr - Mirthful Leaps</option>\n  <option value=\"Tabaxi - Feline Agility\" data-value=\"15\">Tabaxi - Feline Agility</option>\n  <option value=\"Tortle - Shell Defense\" data-value=\"10\">Tortle - Shell Defense</option>\n  <option value=\"Vedalken - Partially Amphibious\" data-value=\"6\">Vedalken - Partially Amphibious</option>\n  <option value=\"Verdan - Black Blood Healing\" data-value=\"4\">Verdan - Black Blood Healing</option>\n  <option value=\"Verdan - Limited Telepathy\" data-value=\"6\">Verdan - Limited Telepathy</option>\n  <option value=\"Warforged - Integrated Protection\" data-value=\"22\">Warforged - Integrated Protection</option>\n</select>\n<input type=\"text\" id=\"creature-other-minor-traits-cost\" readonly value=\"0\">"
+            "<select name=\"creature-damage-condition-resistance\" id=\"creature-damage-condition-resistance\" onchange=\"updateValue()\" style=\"width: 150px;\">\n  <option value=\"DamageConditionResistance\" data-value=\"0\">Damage and Condition Resistances</option>\n  <option value=\"Aasimar - Celestial resistance\" data-value=\"31\">Aasimar - Celestial resistance</option>\n  <option value=\"Elf, Bugbear, Fairy, etc. - Fey ancestry\" data-value=\"8\">Elf, Bugbear, Fairy, etc. - Fey ancestry</option>\n  <option value=\"Autognome - Mechanical nature\" data-value=\"40\">Autognome - Mechanical nature</option>\n  <option value=\"Dragonborn - Draconic Resilience\" data-value=\"18\">Dragonborn - Draconic Resilience</option>\n  <option value=\"Dragonborn (chromatic) - Chromatic warding\" data-value=\"22\">Dragonborn (chromatic) - Chromatic warding</option>\n  <option value=\"Duergar - Psionic fortitude\" data-value=\"14\">Duergar - Psionic fortitude</option>\n  <option value=\"Dwarf; halfling (stout); yuan-ti - Darven/Stout/poison resilience\" data-value=\"26\">Dwarf; halfling (stout); yuan-ti - Darven/Stout/poison resilience</option>\n  <option value=\"Shadar-kai - Necrotic resistance\" data-value=\"18\">Shadar-kai - Necrotic resistance</option>\n  <option value=\"Genasi (fire); Tiefling - Fire/hellish resistance\" data-value=\"16\">Genasi (fire); Tiefling - Fire/hellish resistance</option>\n  <option value=\"Genasi (water) - Acid resistance\" data-value=\"12\">Genasi (water) - Acid resistance</option>\n  <option value=\"Genasi (air) - Lightning resistance\" data-value=\"13\">Genasi (air) - Lightning resistance</option>\n  <option value=\"Goliath - Mountain born\" data-value=\"15\">Goliath - Mountain born</option>\n  <option value=\"Half-leberi - sour blood\" data-value=\"9\">Half-leberi - sour blood</option>\n  <option value=\"Halfling; kobold - Brave/Defiance\" data-value=\"11\">Halfling; kobold - Brave/Defiance</option>\n  <option value=\"Kalashtar - Mental discipline\" data-value=\"11\">Kalashtar - Mental discipline</option>\n  <option value=\"Vermkin (longsnout) - iron gut\" data-value=\"11\">Vermkin (longsnout) - iron gut</option>\n  <option value=\"Kender - Fearless\" data-value=\"21\">Kender - Fearless</option>\n  <option value=\"Leberi - pungent blood\" data-value=\"17\">Leberi - pungent blood</option>\n  <option value=\"Loxodon - Loxodon serenity\" data-value=\"19\">Loxodon - Loxodon serenity</option>\n  <option value=\"Vermkin (Dykentail) - riverborn\" data-value=\"23\">Vermkin (Dykentail) - river born</option>\n  <option value=\"Vermkin (longsnout) - iron gut\" data-value=\"11\">Vermkin (longsnout) - irongut</option>\n  <option value=\"Warforged - steadfast\" data-value=\"9\">Warforged - steadfast</option>\n  <option value=\"Warforged - Transformative subroutine\" data-value=\"7\">Warforged - Transformative subroutine</option>\n</select>\n<input type=\"text\" id=\"creature-damage-condition-resistance-cost\" readonly value=0>",
+            "<select name=\"creature-other-minor-traits\" id=\"creature-other-minor-traits\" onchange=\"updateValue()\" style=\"width: 150px;\">\n  <option value=\"OtherMinorTraits\" data-value=\"0\">Other Minor Traits</option>\n  <option value=\"Aasimar - Healing Hands\" data-value=\"10\">Aasimar - Healing Hands</option>\n  <option value=\"Elf - Trance\" data-value=\"7\">Elf - Trance</option>\n  <option value=\"Autognome - Healing Machine\" data-value=\"15\">Autognome - Healing Machine</option>\n  <option value=\"Autognome, Warforged - Sentry's Rest\" data-value=\"4\">Autognome, Warforged - Sentry's Rest</option>\n  <option value=\"Bugbear - Long-Limbed\" data-value=\"20\">Bugbear - Long-Limbed</option>\n  <option value=\"Bugbear, Goliath, etc. - Powerful Build\" data-value=\"4\">Bugbear, Goliath, etc. - Powerful Build</option>\n  <option value=\"Centaur - Charge\" data-value=\"13\">Centaur - Charge</option>\n  <option value=\"Centaur - Equine Build\" data-value=\"0\">Centaur - Equine Build</option>\n  <option value=\"Dhampir - Deathless Nature\" data-value=\"10\">Dhampir - Deathless Nature</option>\n  <option value=\"Dhampir - Spider Climb\" data-value=\"25\">Dhampir - Spider Climb</option>\n  <option value=\"Dhampir - Vampire Bite\" data-value=\"18\">Dhampir - Vampire Bite</option>\n  <option value=\"Dragonborn - Draconic Ancestry\" data-value=\"0\">Dragonborn - Draconic Ancestry</option>\n  <option value=\"Dragonborn (Gem) - Psionic Mind\" data-value=\"10\">Dragonborn (Gem) - Psionic Mind</option>\n  <option value=\"Dragonborn (Ravenite) - Vengeful Assault\" data-value=\"5\">Dragonborn (Ravenite) - Vengeful Assault</option>\n  <option value=\"Duergar, Drow, etc. - Sunlight Sensitivity\" data-value=\"-25\">Duergar, Drow, etc. - Sunlight Sensitivity</option>\n  <option value=\"Dwarf (Hill) - Dwarven Toughness\" data-value=\"25\">Dwarf (Hill) - Dwarven Toughness</option>\n  <option value=\"Elf (Sea), Triton - Friend/Emissary of the Sea\" data-value=\"2\">Elf (Sea), Triton - Friend/Emissary of the Sea</option>\n  <option value=\"Elf (Wood) - Mask of the Wild\" data-value=\"3\">Elf (Wood) - Mask of the Wild</option>\n  <option value=\"Firbolg - Speech of Beast and Leaf\" data-value=\"4\">Firbolg - Speech of Beast and Leaf</option>\n  <option value=\"Genasi (Air) - Unending Breath\" data-value=\"12\">Genasi (Air) - Unending Breath</option>\n  <option value=\"Genasi (Earth) - Earth Walk\" data-value=\"6\">Genasi (Earth) - Earth Walk</option>\n  <option value=\"Genasi (Water), Triton, etc. - Amphibious\" data-value=\"8\">Genasi (Water), Triton, etc. - Amphibious</option>\n  <option value=\"Giff - Astral Spark\" data-value=\"18\">Giff - Astral Spark</option>\n  <option value=\"Gnome (Rock) - Tinker\" data-value=\"5\">Gnome (Rock) - Tinker</option>\n  <option value=\"Goblin - Fury of the Small\" data-value=\"23\">Goblin - Fury of the Small</option>\n  <option value=\"Goliath - Stone's Endurance\" data-value=\"26\">Goliath - Stone's Endurance</option>\n  <option value=\"Hadozee - Dexterous Feet\" data-value=\"3\">Hadozee - Dexterous Feet</option>\n  <option value=\"Hadozee - Glide\" data-value=\"7\">Hadozee - Glide</option>\n  <option value=\"Hadozee - Hadozee Dodge\" data-value=\"17\">Hadozee - Hadozee Dodge</option>\n  <option value=\"Half-Orc - Relentless Endurance\" data-value=\"30\">Half-Orc - Relentless Endurance</option>\n  <option value=\"Half-Orc - Savage Attacks\" data-value=\"12\">Half-Orc - Savage Attacks</option>\n  <option value=\"Halfling (Ghostwise) - Silent Speech\" data-value=\"8\">Halfling (Ghostwise) - Silent Speech</option>\n  <option value=\"Halfling (Lightfoot) - Naturally Stealthy\" data-value=\"5\">Halfling (Lightfoot) - Naturally Stealthy</option>\n  <option value=\"Halfling (Lotusden) - Timberwalk\" data-value=\"7\">Halfling (Lotusden) - Timberwalk</option>\n  <option value=\"Harengon - Lucky Footwork\" data-value=\"8\">Harengon - Lucky Footwork</option>\n  <option value=\"Hexblood - Eerie Token\" data-value=\"26\">Hexblood - Eerie Token</option>\n  <option value=\"Hobgoblin - Fey Gift\" data-value=\"19\">Hobgoblin - Fey Gift</option>\n  <option value=\"Kalashtar - Mind Link\" data-value=\"12\">Kalashtar - Mind Link</option>\n  <option value=\"Kalashtar - Severed from Dreams\" data-value=\"3\">Kalashtar - Severed from Dreams</option>\n  <option value=\"Kender - Taunt\" data-value=\"21\">Kender - Taunt</option>\n  <option value=\"Kenku - Expert Duplication\" data-value=\"7\">Kenku - Expert Duplication</option>\n  <option value=\"Kenku - Mimicry\" data-value=\"20\">Kenku - Mimicry</option>\n  <option value=\"Kobold - Kobold Legacy (Craftiness, Defiance)\" data-value=\"11\">Kobold - Kobold Legacy (Craftiness, Defiance)</option>\n  <option value=\"Leonin - Daunting Roar\" data-value=\"8\">Leonin - Daunting Roar</option>\n  <option value=\"Lizardfolk - Hold Breath\" data-value=\"10\">Lizardfolk - Hold Breath</option>\n  <option value=\"Lizardfolk - Hungry Jaws\" data-value=\"14\">Lizardfolk - Hungry Jaws</option>\n  <option value=\"Loxodon - Trunk\" data-value=\"25\">Loxodon - Trunk</option>\n  <option value=\"Minotaur - Goring Rush\" data-value=\"14\">Minotaur - Goring Rush</option>\n  <option value=\"Orc - Adrenaline Rush\" data-value=\"28\">Orc - Adrenaline Rush</option>\n  <option value=\"Satyr - Mirthful Leaps\" data-value=\"2\">Satyr - Mirthful Leaps</option>\n  <option value=\"Tabaxi - Feline Agility\" data-value=\"15\">Tabaxi - Feline Agility</option>\n  <option value=\"Tortle - Shell Defense\" data-value=\"10\">Tortle - Shell Defense</option>\n  <option value=\"Vedalken - Partially Amphibious\" data-value=\"6\">Vedalken - Partially Amphibious</option>\n  <option value=\"Verdan - Black Blood Healing\" data-value=\"4\">Verdan - Black Blood Healing</option>\n  <option value=\"Verdan - Limited Telepathy\" data-value=\"6\">Verdan - Limited Telepathy</option>\n    <option value=\"Vermkin - Scurry\" data-value=\"3\">Vermkin - Scurry</option>\n    <option value=\"Vermkin - free gliders\" data-value=\"6\">Vermkin - free gliders</option>\n    <option value=\"Vermkin (prickleback) - vengeful prick\" data-value=\"16\">Vermkin (prickleback) - vengeful prick</option>\n    <option value=\"Vermkin (softfur) - Button-eyed\" data-value=\"6\">Vermkin (softfur) - Button-eyed</option>\n    <option value=\"Warforged - Integrated Protection\" data-value=\"22\">Warforged - Integrated Protection</option>\n</select>\n<input type=\"text\" id=\"creature-other-minor-traits-cost\" readonly value=\"0\">"
           ]
         },
         {
@@ -70073,7 +70316,7 @@
           "name": "Major Traits",
           "entries": [
             "Choose your race's {@table Major traits|DRK}. Consult the table for prerequisites.",
-            "<div class=\"dropdown\">\n    <button class=\"my-button\" onclick=\"toggleDropdown('major-traits-dropdown')\">Major Traits</button>\n    <div id=\"major-traits-dropdown\" class=\"dropdown-content\">\n        <label><input type=\"checkbox\" value=\"26\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Aasimar - Celestial revelation: Necrotic shroud</label>\n        <label><input type=\"checkbox\" value=\"28\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Aasimar - Celestial revelation: radiant consumption</label>\n        <label><input type=\"checkbox\" value=\"36\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Aasimar - Celestial revelation: radiant soul</label>\n        <label><input type=\"checkbox\" value=\"55\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Elf (astral) - Starlight step</label>\n        <label><input type=\"checkbox\" value=\"24\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Autognome - Built for success</label>\n        <label><input type=\"checkbox\" value=\"35\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Bugbear - Surprise attack</label>\n        <label><input type=\"checkbox\" value=\"60\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Changeling - Shapechanger</label>\n        <label><input type=\"checkbox\" value=\"120\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Custom lineage; variant:human - Feat</label>\n        <label><input type=\"checkbox\" value=\"25\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Gnome - Gnomish magic resistance</label>\n        <label><input type=\"checkbox\" value=\"25\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Dragonborn - Breath weapon</label>\n        <label><input type=\"checkbox\" value=\"20\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Dragonborn (gem) - Gem flight</label>\n        <label><input type=\"checkbox\" value=\"20\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Dragonborn (mettalic) - Mettalic breath weapon</label>\n        <label><input type=\"checkbox\" value=\"70\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Eladrin - Fey step</label>\n        <label><input type=\"checkbox\" value=\"35\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Firbolg - Hidden step</label>\n        <label><input type=\"checkbox\" value=\"40\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Giff - Firearms mastery</label>\n        <label><input type=\"checkbox\" value=\"35\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Gnome (forest, rock) - Gnome cunning</label>\n        <label><input type=\"checkbox\" value=\"38\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Goblin - Nimble escape</label>\n        <label><input type=\"checkbox\" value=\"50\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Halfling - Lucky</label>\n        <label><input type=\"checkbox\" value=\"28\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Harengon - Hare trigger</label>\n        <label><input type=\"checkbox\" value=\"40\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Harengon - Rabbit hop</label>\n        <label><input type=\"checkbox\" value=\"33\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Hobgoblin - Fortune from the many</label>\n        <label><input type=\"checkbox\" value=\"45\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Kalashtar - Dual mind</label>\n        <label><input type=\"checkbox\" value=\"52\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Kobold - Draconic cry</label>\n        <label><input type=\"checkbox\" value=\"25\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Orc - Adrenaline rush</label>\n        <label><input type=\"checkbox\" value=\"58\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Reborn - Deathless nature</label>\n        <label><input type=\"checkbox\" value=\"35\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Satyr; Yuan-ti - Magic resistance</label>\n        <label><input type=\"checkbox\" value=\"80\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Shadar-kai - Blessing of the raven queen</label>\n        <label><input type=\"checkbox\" value=\"37\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Shifter (beasthide) - Shifting (beasthide)</label>\n        <label><input type=\"checkbox\" value=\"22\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Shifter (longtooth) - Shifting (longtooth)</label>\n        <label><input type=\"checkbox\" value=\"40\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Shifter (swiftstride) - Shifting (swiftstride)</label>\n        <label><input type=\"checkbox\" value=\"31\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Shifter (wildhunt) - Shifting (wildhunt)</label>\n        <label><input type=\"checkbox\" value=\"85\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Vedalken - Vedalken dispassion</label>\n        <label><input type=\"checkbox\" value=\"70\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Verdan - Telepathic insight</label>\n    </div>\n</div>\n\n<input type=\"text\" id=\"creature-major-traits-cost\" readonly value=0 style=\"position: relative; left: 6px;\">"
+            "<div class=\"dropdown\">\n    <button class=\"my-button\" onclick=\"toggleDropdown('major-traits-dropdown')\">Major Traits</button>\n    <div id=\"major-traits-dropdown\" class=\"dropdown-content\">\n        <label><input type=\"checkbox\" value=\"26\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Aasimar - Celestial revelation: Necrotic shroud</label>\n        <label><input type=\"checkbox\" value=\"28\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Aasimar - Celestial revelation: radiant consumption</label>\n        <label><input type=\"checkbox\" value=\"36\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Aasimar - Celestial revelation: radiant soul</label>\n        <label><input type=\"checkbox\" value=\"55\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Elf (astral) - Starlight step</label>\n        <label><input type=\"checkbox\" value=\"24\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Autognome - Built for success</label>\n        <label><input type=\"checkbox\" value=\"35\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Bugbear - Surprise attack</label>\n        <label><input type=\"checkbox\" value=\"60\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Changeling - Shapechanger</label>\n        <label><input type=\"checkbox\" value=\"120\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Custom lineage; variant:human - Feat</label>\n        <label><input type=\"checkbox\" value=\"25\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Gnome - Gnomish magic resistance</label>\n        <label><input type=\"checkbox\" value=\"25\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Dragonborn - Breath weapon</label>\n        <label><input type=\"checkbox\" value=\"20\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Dragonborn (gem) - Gem flight</label>\n        <label><input type=\"checkbox\" value=\"20\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Dragonborn (mettalic) - Mettalic breath weapon</label>\n        <label><input type=\"checkbox\" value=\"70\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Eladrin - Fey step</label>\n        <label><input type=\"checkbox\" value=\"35\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Firbolg - Hidden step</label>\n        <label><input type=\"checkbox\" value=\"40\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Giff - Firearms mastery</label>\n        <label><input type=\"checkbox\" value=\"35\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Gnome (forest, rock) - Gnome cunning</label>\n        <label><input type=\"checkbox\" value=\"38\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Goblin - Nimble escape</label>\n        <label><input type=\"checkbox\" value=\"50\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Halfling - Lucky</label>\n        <label><input type=\"checkbox\" value=\"35\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Half leberi - otherworldly trace</label>\n        <label><input type=\"checkbox\" value=\"28\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Harengon - Hare trigger</label>\n        <label><input type=\"checkbox\" value=\"40\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Harengon - Rabbit hop</label>\n        <label><input type=\"checkbox\" value=\"33\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Hobgoblin - Fortune from the many</label>\n        <label><input type=\"checkbox\" value=\"45\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Kalashtar - Dual mind</label>\n        <label><input type=\"checkbox\" value=\"52\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Kobold - Draconic cry</label>\n        <label><input type=\"checkbox\" value=\"40\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Leberi - sensory sacrifice</label>\n        <label><input type=\"checkbox\" value=\"25\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Orc - Adrenaline rush</label>\n        <label><input type=\"checkbox\" value=\"58\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Reborn - Deathless nature</label>\n        <label><input type=\"checkbox\" value=\"35\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Satyr; Yuan-ti - Magic resistance</label>\n        <label><input type=\"checkbox\" value=\"80\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Shadar-kai - Blessing of the raven queen</label>\n        <label><input type=\"checkbox\" value=\"37\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Shifter (beasthide) - Shifting (beasthide)</label>\n        <label><input type=\"checkbox\" value=\"22\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Shifter (longtooth) - Shifting (longtooth)</label>\n        <label><input type=\"checkbox\" value=\"40\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Shifter (swiftstride) - Shifting (swiftstride)</label>\n        <label><input type=\"checkbox\" value=\"31\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Shifter (wildhunt) - Shifting (wildhunt)</label>\n        <label><input type=\"checkbox\" value=\"85\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Vedalken - Vedalken dispassion</label>\n        <label><input type=\"checkbox\" value=\"70\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Verdan - Telepathic insight</label>\n        <label><input type=\"checkbox\" value=\"65\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Vermkin (Dykentail) - masters of the axe</label>\n        <label><input type=\"checkbox\" value=\"45\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Vermkin (Prickleback) - rat tactics</label>\n    </div>\n</div>\n\n<input type=\"text\" id=\"creature-major-traits-cost\" readonly value=0 style=\"position: relative; left: 6px;\">"
           ]
         },
         {
@@ -70085,7 +70328,7 @@
         },
         {
           "type": "entries",
-          "name": "Remaining Points Cost",
+          "name": "Remaining Trait Points",
           "entries": [
             "<input type=\"text\" id=\"creature-points\" readonly value=120>"
           ]
