@@ -68908,7 +68908,7 @@
           "row": [
             "Vermkin (dreyfolk)",
             "Free gliders",
-            "While you aren't {@ condition incapacitated}, you do not take damage from falling and can move upto 2 feet for every 1 foot that you descend.",
+            "While you aren't {@condition incapacitated}, you do not take damage from falling and can move upto 2 feet for every 1 foot that you descend.",
             "Homebrew, ask DM",
             "6"
           ]
