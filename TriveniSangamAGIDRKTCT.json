@@ -33840,6 +33840,219 @@
   ],
   "subclassFeature": [
     {
+      "name": "The Mirage",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "subclassShortName": "Mirage",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "A man walks the desert, beaten and tattered, hunger gnawing at his insides, thirst clawing at his throat. His mind can barely hold onto his deepest desire, consumed by the aching void within. As he trudges forward, eyes half-blind from exhaustion, he sees something—an oasis shimmering in the distance, a disruption in the endless dunes. Water, life, salvation! His heart surges with a final spark of hope, propelling him toward the mirage. Without hesitation, he dives into what he believes is cool, refreshing water, only to be swallowed by the scorching sand beneath.\n\nA figure coalesces from the heat, standing over the man’s crumpled form, its face unreadable beneath a veil of shimmering illusions. The oasis dissolves into the blazing sun as the last vestiges of the man's life slip away. The contract is complete, the deception flawless, the death inevitable.",
+        "Mesmers who learn the art of the Mirage tap into the deepest fears and desires of their targets, weaving illusions that play upon the mind’s most desperate longings. They are not just masters of deception—they manipulate false truths so convincingly that even reality bends to their will. A The Mirage is an artist of the mind, crafting deadly illusions that blur the line between what is real and what is imagined, until it no longer matters. To face one is to question your own senses, to doubt every step, until the illusion becomes your reality—and your downfall.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Spectral Convergence|Mesmer|AspysGuidetoInfinitum|Mirage|AspysGuidetoInfinitum|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Reality Flicker|Mesmer|AspysGuidetoInfinitum|Mirage|AspysGuidetoInfinitum|3"
+        }
+      ]
+    },
+    {
+      "name": "Spectral Convergence",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "subclassShortName": "Mirage",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "{@i 3rd-level Mirage feature}",
+        "The greatest strength of a Mirage is the element of surprise. A Mirage appears as quickly as it disappears. At 3rd level, you have learned to control your illusions to aid you more actively in combat. Once per turn, when you or one of your clones makes a melee attack, you may invoke all other active clones to join in the attack.",
+        {
+          "type": "list",
+          "items": [
+            "If you are making the attack, each clone within 100 feet of you is immediately teleported into your space, joining you in the attack.",
+            "If one of your clones within 100ft of you is making the attack, you can choose to immediately teleport to its space, along with all other clones within 100 feet of you, and make the attack yourself instead. The clone that triggered the attack is destroyed. The resulting attack uses your modifiers and your currently equipped melee or natural weapon."
+          ]
+        },
+        "The resulting attack deals an additional {@dice 1d6} psychic damage per clone in your space. After the attack, active clones in your space are moved to empty spaces adjacent to you, within melee range of the creature. If no such space is available, the clones move behind you."
+      ]
+    },
+    {
+      "name": "Reality Flicker",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "subclassShortName": "Mirage",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "{@i 3rd-level Mirage feature}",
+        "As a reaction, when you are targeted by an attack, you can momentarily shift between alternate realities. The attack roll against you is made with disadvantage. When you flicker between realities, your clones momentarily become unstable. Roll a d100 and the corresponding effect from the table below applies. ",
+        {
+          "name": "Reality is a dangerous game",
+          "type": "entries",
+          "entries": [
+            {
+              "type": "table",
+              "colLabels": [
+                "d100",
+                "Effect"
+              ],
+              "colStyles": [
+                "col-1 text-center",
+                "col-11"
+              ],
+              "rows": [
+                [
+                  "1-15",
+                  "You are stuck in an alternate reality and cannot return until the end of your next turn. The triggering attack roll misses. In your absence in the primary reality, All of your active clones shatter immediately without any effect."
+                ],
+                [
+                  "16-40",
+                  "Your momentary flicker, disconnects you from your clones. All of your active clones shatter immediately without any effect."
+                ],
+                [
+                  "41-70",
+                  "No effect."
+                ],
+                [
+                  "71-80",
+                  "After the triggering attack, You gain a charge of additional movement worth 20ft. You may use this charge by adding it to your movement speed, or use it immediately. This charge lasts till the end of your next turn."
+                ],
+                [
+                  "81-95",
+                  "You momentarily merge with all alternate versions of you. For the 10 minutes, you gain proficiency in all skills and tools. "
+                ],
+                [
+                  "96-100",
+                  "Your flicker returns with an additional turn, which you can take immediately as the next turn in the initiative. "
+                ]
+              ]
+            }
+          ]
+        },
+        "You may use this reaction 4 times. Charges restore by {@dice 1d4} per short rest. "
+      ]
+    },
+    {
+      "name": "Mirage Cloak",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "subclassShortName": "Mirage",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "{@i 6th-level Mirage feature}",
+        "Your mastery over illusions allows you to shroud yourself in a cloak of illusion and sand, providing both defense and offensive opportunities. You can activate mirage cloak as an action. When Mirage Cloak is activated. Pick 3 benefits from the below list. These benefits last on you for 1 minute or until you are {@condition incapacitated}.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "name": "Increased AC",
+              "type": "entries",
+              "entries": [
+                "Your Armor Class increases by 2 as the Mirage Cloak makes your form difficult to track and target."
+              ]
+            },
+            {
+              "name": "Shatter Crystal",
+              "type": "entries",
+              "entries": [
+                "As a bonus action, you can convert any number of your active clones into crystalline formations. These remain in their current positions, and if an enemy enters within 10 feet of a crystal, it explodes. The enemy must make a Dexterity saving throw or take {@dice 2d6} force damage and be pushed 5 feet away. Multiple clones can be merged into the same crystal, if they are within 5ft of each other. For each additional clone, the damage increases by {@dice 2d6}."
+              ]
+            },
+            {
+              "name": "Evasive Shift",
+              "type": "entries",
+              "entries": [
+                "When you are targetted by an attack and use {@b reality flicker}, you may roll the d100 three seperate times and choose among the results."
+              ]
+            },
+            {
+              "name": "Blurred Movement",
+              "type": "entries",
+              "entries": [
+                "Your movement speed increases by 10 feet, and opportunity attacks against you are made with disadvantage."
+              ]
+            },
+            {
+              "name": "Mirror Riposte",
+              "type": "entries",
+              "entries": [
+                "When a creature makes a melee attack against you and misses, you can use your reaction to make a melee or ranged attack against that creature, dealing an additional {@dice 1d6 psychic damage}."
+              ]
+            },
+            {
+              "name": "Hardened Layers",
+              "type": "entries",
+              "entries": [
+                "Once per turn, when you are hit by an attack, you can delay the damage until the start of your next turn."
+              ]
+            },
+            {
+              "name": "Illusionary Sands",
+              "type": "entries",
+              "entries": [
+                "As a bonus action, you create an area of illusory quicksand in a 20-foot radius around you. Enemies that start their turn within the area must make a Dexterity saving throw or have their movement speed reduced by half until the start of their next turn."
+              ]
+            }
+          ]
+        },
+        "You can use Mirage Cloak a number of times equal to your proficiency bonus per long rest. As a bonus Action, you can choose to end mirage cloak. The sand coallesses into a sandball that you can lob upto 60ft. On impact, the ball explodes in a 20ft radius zone, dealing {@dice 8d6} bludgeoning damage to creatures that fail a dexterity saving throw."
+      ]
+    },
+    {
+      "name": "Healing Sands",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "subclassShortName": "Mirage",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "{@i 10th-level Mirage feature}",
+        "Your connection to the sands passively heal you. You recover 5 hitpoints every hour. Additionally, when you fall to 0 hitpoints, you instead fall to half your hitpoint maximum once per long rest."
+      ]
+    },
+    {
+      "name": "Infinite Horizons",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "subclassShortName": "Mirage",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "{@i 14th-level Chronomancer feature}",
+        "The clones you summon last until they are destroyed or shattered."
+      ]
+    },
+    {
+      "name": "Sand Siphon",
+      "source": "AspysGuidetoInfinitum",
+      "className": "Mesmer",
+      "classSource": "AspysGuidetoInfinitum",
+      "subclassShortName": "Mirage",
+      "subclassSource": "AspysGuidetoInfinitum",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "{@i 14th-level Mirage feature}",
+        "When you break a creature's concentration on a spell, you can choose to regain one spell slot upto the level of the spell being concentated on or summon a clone next to the creature."
+      ]
+    },
+    {
       "name": "The Chronomancer",
       "source": "AspysGuidetoInfinitum",
       "className": "Mesmer",
@@ -51285,7 +51498,13 @@
       "source": "AspysGuidetoInfinitum",
       "className": "Mesmer",
       "classSource": "AspysGuidetoInfinitum",
-      "subclassFeatures": []
+      "subclassFeatures": [
+        "The Mirage|Mesmer|AspysGuidetoInfinitum|Mirage|AspysGuidetoInfinitum|3",
+        "Mirage Cloak|Mesmer|AspysGuidetoInfinitum|Mirage|AspysGuidetoInfinitum|6",
+        "Healing Sands|Mesmer|AspysGuidetoInfinitum|Mirage|AspysGuidetoInfinitum|10",
+        "Infinite Horizons|Mesmer|AspysGuidetoInfinitum|Mirage|AspysGuidetoInfinitum|14",
+        "Sand Siphon|Mesmer|AspysGuidetoInfinitum|Mirage|AspysGuidetoInfinitum|14"
+      ]
     },
     {
       "name": "Illusionist",
