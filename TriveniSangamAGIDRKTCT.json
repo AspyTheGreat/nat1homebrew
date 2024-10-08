@@ -34007,7 +34007,7 @@
             }
           ]
         },
-        "You can use Mirage Cloak a number of times equal to your proficiency bonus per long rest. As a bonus Action, you can choose to end mirage cloak. The sand coallesses into a sandball that you can lob upto 60ft. On impact, the ball explodes in a 20ft radius zone, dealing {@dice 8d6} bludgeoning damage to creatures that fail a dexterity saving throw."
+        "You can use Mirage Cloak once per short rest. As a bonus Action, you can choose to end mirage cloak. The sand coallesses into a sandball that you can lob upto 60ft. On impact, the ball explodes in a 20ft radius zone, dealing {@dice 8d6} bludgeoning damage to creatures that fail a dexterity saving throw."
       ]
     },
     {
