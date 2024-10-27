@@ -1576,6 +1576,74 @@
       ]
     },
     {
+			"name": "Mass Healing Word",
+			"source": "DRK",
+			"page": 296,
+			"freeRules2024": true,
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "DRK"
+          },
+          {
+            "name": "Bard",
+            "source": "XPHB"
+          },
+          {
+            "name": "Cleric",
+            "source": "DRK"
+          },
+          {
+            "name": "Cleric",
+            "source": "XPHB"
+          }
+        ]
+      },
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Up to six creatures of your choice that you can see within range regain {@variantrule Hit Points|XPHB} equal to {@dice 3d4} plus your spellcasting ability modifier."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"The healing increases by {@scaledice 3d4|3-9|1d4} for each spell slot level above 3."
+					]
+				}
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
+			],
+			"areaTags": [
+				"MT"
+			]
+		},
+    {
       "name": "Sorcerous Burst",
       "source": "DRK",
       "page": 211,
@@ -18609,7 +18677,7 @@
 			"hasFluffImages": true
 		},
     {
-			"name": "Elven Accuracy",
+			"name": "Aberrant Precision",
 			"source": "DRK",
 			"page": 74,
 			"ability": [
@@ -18626,7 +18694,7 @@
 				}
 			],
 			"entries": [
-				"The accuracy of elves is legendary, especially that of elf archers and spellcasters. You have uncanny aim with attacks that rely on precision rather than brute force. You gain the following benefits:",
+				"Your unique training method gives you accuracy only matched by the greatest of elves. You have uncanny aim with attacks that rely on precision rather than brute force. You gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
