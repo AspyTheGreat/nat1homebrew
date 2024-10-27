@@ -16543,6 +16543,7 @@
     {
       "name": "Charger",
       "source": "tct",
+      "category": "O",
       "entries": [
         "When you use an action to Dash, you can make one melee weapon attack or shove a creature as part of the same action.",
         "If you move at least 10 feet in a straight line immediately before making this attack, you either gain a +5 bonus to the attack's damage roll (if you chose to make a melee attack and hit) or push the target up to 10 feet away from you (if you chose to shove and you succeed)."
@@ -16595,6 +16596,7 @@
     {
       "name": "Parlor Trickster",
       "source": "tct",
+      "category": "O",
       "ability": [
         {
           "choose": {
@@ -16664,6 +16666,7 @@
     {
       "name": "Weapon Enthusiast",
       "source": "tct",
+      "category": "O",
       "ability": [
         {
           "choose": {
@@ -16731,6 +16734,7 @@
     {
       "name": "Thrown Weapon Expert",
       "source": "tct",
+      "category": "O",
       "ability": [
         {
           "choose": {
@@ -16758,6 +16762,7 @@
     {
       "name": "Skirmisher",
       "source": "tct",
+      "category": "O",
       "entries": [
         "You've gotten pretty good at surviving in sticky situations and wedging yourself out of them.",
         {
@@ -16779,6 +16784,7 @@
       "name": "Athlete",
       "source": "DRK",
       "page": 165,
+      "category": "O",
       "ability": [
         {
           "choose": {
@@ -17025,6 +17031,7 @@
       "name": "Durable",
       "source": "DRK",
       "page": 166,
+      "category": "O",
       "ability": [
         {
           "con": 1
@@ -17292,6 +17299,7 @@
       "name": "Inspiring Leader",
       "source": "DRK",
       "page": 167,
+      "category": "O",
       "prerequisite": [
         {
           "ability": [
@@ -17337,7 +17345,7 @@
           "type": "list",
           "items": [
             "When you gain this feat, you gain resistance to fire damage.",
-            "When you deal fire damage to a creature, they are ignited until the start of your next turn. An ignited creature takes {@dice 1d8} fire damage when it starts its turn, and cannot benefit from the {@condition invisible} condition.",
+            "Any fire damage you deal ignites creatures, giving them the {@hazard burning|XPHB} condition until the end of your next turn. Additionally, the burning condition deals {@dice 2d4} damage, and has disadvantage on saving throws against any of your spells that deal fire damage.",
             "When you deal fire damage with a spell to a creature is immune to the chosen damage type, you can choose to temporarily suppress the immunity, treating it as resistance until the start of your next turn. You can do so a number of times equal to your proficiency bonus, regaining all expended uses on a long rest."
           ]
         }
@@ -17374,7 +17382,7 @@
           "type": "list",
           "items": [
             "When you gain this feat, you gain resistance to cold damage.",
-            "When you deal cold damage to a creature, they are frozen until the start of your next turn. A frozen creature has its movement speed reduced by 10 feet, and has disadvantage on concentration checks.",
+            "When you deal cold damage to a creature, they are frozen until the start of your next turn. A frozen creature has its movement speed reduced by 10 feet, and takes an additional {@dice 1d6} cold damage whenever it takes bludgeoning, slashing or piercing damage. If you land a critical hit with the spell, or the creature fails the saving throw by 5 or more, their movement speed is reduced to 0 instead. The creature loses the frozen condition if they take fire damage.",
             "When you deal cold damage with a spell to a creature is immune to the chosen damage type, you can choose to temporarily suppress the immunity, treating it as resistance until the start of your next turn. You can do so a number of times equal to your proficiency bonus, regaining all expended uses on a long rest."
           ]
         }
@@ -17448,7 +17456,7 @@
           "type": "list",
           "items": [
             "When you gain this feat, you gain resistance to Thunder damage.",
-            "When you deal thunder damage to a creature, they are Startled until the start of your next turn. A startled creature has disadvantage on checks that require hearing, and cannot take reactions.",
+            "When you deal thunder damage to a creature, they are Unsettled until the start of your next turn. An Unsettled creature has disadvantage on checks that require hearing, and cannot benefit on advantage on its attack rolls and ability checks.",
             "When you deal thunder damage with a spell to a creature is immune to the chosen damage type, you can choose to temporarily suppress the immunity, treating it as resistance until the start of your next turn. You can do so a number of times equal to your proficiency bonus, regaining all expended uses on a long rest."
           ]
         }
@@ -17485,7 +17493,7 @@
           "type": "list",
           "items": [
             "When you gain this feat, you gain resistance to Lightning damage.",
-            "When you deal lightning damage to a creature, they gain a stack of Static. Whenever the creature makes an attack roll or saving throw, you can use your reaction to expend the static charges, giving the creature a penalty to the roll equal to the amount of static charges it had.",
+            "When you deal lightning damage to a creature, they are Jolted. A Jolted creature cannot take reactions, and only gains half the benefit from abilities that increase the creature's movement speed (such as the {@action dash} action).",
             "When you deal lightning damage with a spell to a creature is immune to the chosen damage type, you can choose to temporarily suppress the immunity, treating it as resistance until the start of your next turn. You can do so a number of times equal to your proficiency bonus, regaining all expended uses on a long rest."
           ]
         }
@@ -17639,6 +17647,7 @@
       "name": "Linguist",
       "source": "DRK",
       "page": 167,
+      "category": "O",
       "ability": [
         {
           "int": 1
@@ -17665,6 +17674,7 @@
       "name": "Mage Slayer",
       "source": "DRK",
       "page": 168,
+      "category": "O",
       "entries": [
         "You have practiced techniques useful in melee combat against spellcasters, gaining the following benefits:",
         {
@@ -17681,6 +17691,7 @@
       "name": "Magic Initiate",
       "source": "DRK",
       "page": 168,
+      "category": "O",
       "ability": [
         {
           "choose": {
@@ -17843,6 +17854,7 @@
       "name": "Martial Adept",
       "source": "DRK",
       "page": 168,
+      "category": "O",
       "optionalfeatureProgression": [
         {
           "name": "Maneuvers",
@@ -17904,6 +17916,7 @@
       "name": "Observant",
       "source": "DRK",
       "page": 168,
+      "category": "O",
       "ability": [
         {
           "choose": {
@@ -17969,6 +17982,7 @@
       "name": "Prodigy",
       "source": "DRK",
       "page": 75,
+      "category": "O",
       "ability": [
         {
           "choose": {
@@ -18050,6 +18064,7 @@
       "name": "Savage Attacker",
       "source": "DRK",
       "page": 169,
+      "category": "O",
       "ability": [
         {
           "choose": {
@@ -18069,6 +18084,7 @@
       "name": "Ambusher",
       "source": "DRK",
       "page": 167,
+      "category": "O",
       "ability": [
         {
           "choose": {
@@ -18147,6 +18163,7 @@
       "name": "Martial Artist",
       "source": "DRK",
       "page": 170,
+      "category": "O",
       "entries": [
         "You have trained yourself in martial arts. You gain the following benefits",
         {
@@ -18190,6 +18207,7 @@
       "name": "Skill Expert",
       "source": "DRK",
       "page": 80,
+      "category": "O",
       "ability": [
         {
           "choose": {
@@ -18256,6 +18274,7 @@
       "name": "Skilled",
       "source": "DRK",
       "page": 170,
+      "category": "O",
       "ability": [
         {
           "choose": {
@@ -18292,6 +18311,7 @@
       "name": "Skulker",
       "source": "DRK",
       "page": 170,
+      "category": "O",
       "prerequisite": [
         {
           "ability": [
@@ -18414,6 +18434,247 @@
       "entries": [
         "You learn the magic of the primeval woods, which are revered and protected by your people. You learn one druid cantrip of your choice. You also learn the {@spell longstrider} and {@spell pass without trace} spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. Wisdom is your spellcasting ability for all three spells."
       ]
+    },
+    {
+			"name": "Alert",
+			"source": "DRK",
+			"page": 165,
+      "category": "O",
+			"reprintedAs": [
+				"Alert|XPHB"
+			],
+			"entries": [
+				"Always on the lookout for danger, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You gain a +5 bonus to initiative.",
+						"You can't be {@status surprised} while you are conscious.",
+						"Other creatures don't gain advantage on attack rolls against you as a result of being unseen by you."
+					]
+				}
+			]
+		},
+    {
+			"name": "Actor",
+			"source": "DRK",
+			"page": 202,
+			"category": "O",
+			"prerequisite": [
+				{
+					"level": 4,
+					"ability": [
+						{
+							"cha": 13
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"cha": 1
+				}
+			],
+			"entries": [
+				"You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Impersonation",
+					"entries": [
+						"While you're disguised as a real or fictional person, you have Advantage on Charisma ({@skill Deception|XPHB} or {@skill Performance|XPHB}) checks to convince others that you are that person."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Mimicry",
+					"entries": [
+						"You can mimic the sounds of other creatures, including speech. A creature that hears the mimicry must succeed on a Wisdom ({@skill Insight|XPHB}) check to determine the effect is faked (DC 8 plus your Charisma modifier and Proficiency Bonus)."
+					]
+				}
+			]
+		},
+    {
+			"name": "Chef",
+			"source": "DRK",
+			"page": 79,
+	    "category": "O",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"con",
+							"wis"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"toolProficiencies": [
+				{
+					"cook's utensils": true
+				}
+			],
+			"entries": [
+				"Time spent mastering the culinary arts has paid off, granting you the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You gain proficiency with {@item cook's utensils|phb} if you don't already have it.",
+						"As part of a short rest, you can cook special food, provided you have ingredients and {@item cook's utensils|phb} on hand. You can prepare enough of this food for a number of creatures equal to 4 + your proficiency bonus. At the end of the short rest, any creature who eats the food and spends one or more Hit Dice to regain hit points regains an extra {@dice 1d8} hit points.",
+						"With one hour of work or when you finish a long rest, you can cook a number of treats equal to your proficiency bonus. These special treats last 8 hours after being made. A creature can use a bonus action to eat one of those treats to gain temporary hit points equal to your proficiency bonus."
+					]
+				}
+			]
+		},
+    {
+			"name": "Lucky",
+			"source": "DRK",
+			"page": 167,
+      "category": "O",
+			"entries": [
+				"You have inexplicable luck that seems to kick in at just the right moment.",
+				"You have 3 luck points. Whenever you make an attack roll, an ability check, or a saving throw, you can spend one luck point to roll an additional {@dice d20}. You can choose to spend one of your luck points after you roll the die, but before the outcome is determined. You choose which of the {@dice d20}s is used for the attack roll, ability check, or saving throw.",
+				"You can also spend one luck point when an attack roll is made against you. Roll a {@dice d20}, and then choose whether the attack uses the attacker's roll or yours. If more than one creature spends a luck point to influence the outcome of a roll, the points cancel each other out; no additional dice are rolled.",
+				"You regain your expended luck points when you finish a long rest."
+			]
+		},
+    {
+			"name": "Revenant Blade",
+			"source": "DRK",
+			"page": 22,
+      "category": "O",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You are descended from a master of the {@item double-bladed scimitar|ERLW}, and some of that mastery has passed on to you. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"While you are holding a double-bladed scimitar with two hands, you gain a +1 bonus to Armor Class.",
+						"A double-bladed scimitar has the finesse property when you wield it."
+					]
+				}
+			]
+		},
+    {
+			"name": "Telepathic",
+			"source": "DRK",
+			"page": 81,
+			"category": "O",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "inherit",
+					"innate": {
+						"_": {
+							"daily": {
+								"1": [
+									"detect thoughts"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"You awaken the ability to mentally connect with others, granting you the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You can speak telepathically to any creature you can see within 60 feet of you. Your telepathic utterances are in a language you know, and the creature understands you only if it knows that language.",
+						"You can cast the {@spell detect thoughts} spell, requiring no spell slot or components, and you must finish a long rest before you can cast it this way again. Your spellcasting ability for the spell is the ability increased by this feat. If you have spell slots of 2nd level or higher, you can cast this spell with them."
+					]
+				}
+			],
+			"hasFluffImages": true
+		},
+    {
+			"name": "Elven Accuracy",
+			"source": "DRK",
+			"page": 74,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"dex",
+							"int",
+							"wis",
+							"cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"The accuracy of elves is legendary, especially that of elf archers and spellcasters. You have uncanny aim with attacks that rely on precision rather than brute force. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Whenever you have advantage on an attack roll using Dexterity, Intelligence, Wisdom, or Charisma, you can reroll one of the dice once."
+					]
+				}
+			]
+		},
+    {
+			"name": "Keen Mind",
+			"source": "DRK",
+			"page": 167,
+      "category": "O",
+			"ability": [
+				{
+					"int": 1
+				}
+			],
+			"entries": [
+				"You have a mind that can track time, direction, and detail with uncanny precision. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You always know which way is north.",
+						"You always know the number of hours left before the next sunrise or sunset.",
+						"You can accurately recall anything you have seen or heard within the past month.",
+            "Choose one of the following skills: {@skill Arcana|XPHB}, {@skill History|XPHB}, {@skill Investigation|XPHB}, {@skill Nature|XPHB}, or {@skill Religion|XPHB}. If you lack proficiency in the chosen skill, you gain proficiency in it, and if you already have proficiency in it, you gain Expertise in it."
+					]
+				}
+			]
+		},
+    {
+			"name": "Dungeon Delver",
+			"source": "DRK",
+			"page": 166,
+      "category": "O",
+			"entries": [
+				"Alert to the hidden traps and secret doors found in many dungeons, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You have advantage on Wisdom ({@skill Perception}) and Intelligence ({@skill Investigation}) checks made to detect the presence of secret doors.",
+						"You have advantage on saving throws made to avoid or resist traps.",
+						"You have resistance to the damage dealt by traps.",
+						"Traveling at a fast pace doesn't impose the normal -5 penalty on your passive Wisdom ({@skill Perception}) score."
+					]
+				}
+			]
     },
     {
       "name": "Elemental Adept",
