@@ -1644,6 +1644,302 @@
 			]
 		},
     {
+			"name": "Create Spell",
+			"source": "DRK",
+			"page": 296,
+			"freeRules2024": true,
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+          "condition": "Which you take in response to yourself casting {@spell Modify Spell|DRK}."
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "DRK"
+          },
+          {
+            "name": "Wizard",
+            "source": "XPHB"
+          }
+        ]
+      },
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "an arcane focus, which the spell consumes, worth atleast 1000gp per level of the spell modified by {@spell Modify Spell|DRK}.",
+					"cost": 100000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+          "duration": {
+          "type": "hour",
+          "amount": "1"  
+          },
+          "concentration": true
+				}
+			],
+      "meta": {
+				"ritual": true
+      },
+			"entries": [
+				"Synthesizing your arcane knowledge any power, you strive to create a new spell. To succeed, you must concentrate for 1 hour and meditate on the spell you just altered with {@spell Modify Spell|DRK}, otherwisee this spell fails. If your succeed, you must start casting {@spell Scribe Spell|DRK} within the next 10 minutes and add the altered spell to your spellbook. Once the spell is in your spellbook, it becomes one of your known spells.",
+        "Breaking the formulae of spells has its limits. You cannot create a spell with more than 2 modifications, and you can only scribe a number of modified spells equal to your proficiency bonus."
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
+			],
+			"areaTags": [
+				"MT"
+			]
+		},
+    {
+			"name": "Scribe Spell",
+			"source": "DRK",
+			"page": 296,
+			"freeRules2024": true,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 2,
+					"unit": "hour",
+          "condition": "per level of the spell."
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "DRK"
+          },
+          {
+            "name": "Wizard",
+            "source": "XPHB"
+          }
+        ]
+      },
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a quill, a book, and 50gp of fine inks per level of this scribed spell; this spell consumes the inks.",
+					"cost": 5000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+      "meta": {
+				"ritual": true
+      },
+			"entries": [
+				"Channeling magic through quill and ink, you scribe a wizard spell in your spellbook or a blank book worth at least 50 gp. The scribed spell must be of a level for which you have spell slots, and the book must lack the spell.",
+        "As you magically scribe the spell, you must copy it from another spellbook or a spell scroll, or you must have it prepared. If you copy it from a spell scroll, the scroll is destroyed. If you have the spell prepared, the casting time and component costs are halved.",
+        "When the scribing is complete, the spell becomes one of your known spells in the book, appearing on its own page if the book was out of pages. The spell apears in a cipher understandable only to you or someone casting the {@spell Identify} or {@spell Scribe Spell|DRK}, and if the book was blank before the scribing, the book is now your spellbook."
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
+			],
+			"areaTags": [
+				"MT"
+			]
+		},
+    {
+			"name": "Modify Spell",
+			"source": "DRK",
+			"page": 296,
+			"freeRules2024": true,
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "DRK"
+          },
+          {
+            "name": "Wizard",
+            "source": "XPHB"
+          }
+        ]
+      },
+			"components": {
+        "v": true,
+        "s": true,
+        "m": "your spellbook"
+      },
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+      "meta": {
+				"ritual": true
+      },
+			"entries": [
+				"Using arcane formulas in your spellbook, you magically alter one wizard spell you have prepared. You can change the spell's color, sound and smell, and you make one of the following modifications to the spell.",
+        {
+					"type": "entries",
+					"name": "Components",
+					"entries": [
+						"Remove one of the spells components: verbal, somatic or material. The spell must have atleast 1 of these components even after this modification. You can't remove the material component of a spell that consumes that component."
+					]
+				},
+        {
+					"type": "entries",
+					"name": "Concentration",
+					"entries": [
+						"If the spell requires concentration, you gain a bonus equal to your Intelligence modifier on concentration saving throws while concentrating on that spell."
+					]
+				},
+        {
+					"type": "entries",
+					"name": "Damage type",
+					"entries": [
+						"If the spell has a damage type, replace it with one of the following damage types: Acid, Cold, Fire, Lightning, Necrotic, Poison or Thunder. If the spell has multiple damage types, you can only change one of them."
+					]
+				},
+        {
+					"type": "entries",
+					"name": "Range",
+					"entries": [
+						"If the spell has a range of atleast 5 feet and doesn't have the range of self, increase its range by a number of feet equal to 10 times your wizard level."
+					]
+				},
+        {
+					"type": "entries",
+					"name": "Targets",
+					"entries": [
+						"If the target affects one or more creatures and doesn't have the range of self, it now only affects your allies or your enemies (choose when you cast this spell)."
+					]
+				},
+        {
+					"type": "entries",
+					"name": "Bookmark",
+					"entries": [
+						"The spell no longer counts against your spells known, and is always prepared."
+					]
+				}
+        ],
+			"miscTags": [
+				"HL",
+				"SGT"
+			],
+			"areaTags": [
+				"MT"
+			]
+		},
+    {
+			"name": "Hunter's Mark",
+			"source": "DRK",
+			"page": 287,
+			"freeRules2024": true,
+			"level": 1,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true
+			},
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Ranger",
+            "source": "DRK"
+          },
+          {
+            "name": "Ranger",
+            "source": "XPHB"
+          }
+        ]
+      },
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You magically mark one creature you can see within range as your quarry. Until the spell ends, you deal an extra {@damage 1d6} Force damage to the target whenever you hit it with an attack roll. Any creatures under your control that attack the marked creature can also deal the damage once per turn. You also have {@variantrule Advantage|XPHB} on any Wisdom ({@skill Perception} or {@skill Survival}) check you make to find it.",
+				"If the target drops to 0 {@variantrule Hit Points|XPHB} before this spell ends, you can take a {@variantrule Bonus Action|XPHB} to move the mark to a new creature you can see within range."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "Using a Higher-Level Spell Slot",
+					"entries": [
+						"Your {@status Concentration|XPHB} can last longer with a spell slot of level 3-4 (up to 8 hours) or 5+ (up to 24 hours)."
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"miscTags": [
+				"AAD",
+				"ADV",
+				"SGT",
+				"UBA"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+    {
       "name": "Sorcerous Burst",
       "source": "DRK",
       "page": 211,
@@ -33026,7 +33322,7 @@
       "classSource": "DRK",
       "level": 1,
       "entries": [
-       "You always have the {@spell Hunter's Mark|XPHB} spell prepared. You can cast it twice without expending a spell slot, and you regain all expended uses of this ability when you finish a {@variantrule Long Rest|XPHB}.",
+       "You always have the {@spell Hunter's Mark|DRK} spell prepared. You can cast it twice without expending a spell slot, and you regain all expended uses of this ability when you finish a {@variantrule Long Rest|XPHB}.",
 				"The number of times you can cast the spell without a spell slot increases when you reach certain Ranger levels, as shown in the Favored {@variantrule Enemy|XPHB} column of the Ranger Features table."
       ]
     },
@@ -33252,7 +33548,7 @@
       "classSource": "DRK",
       "level": 6,
       "entries": [
-        "Starting at 6th level, you can expend two uses of your favored foe feature to cast {@spell hunter's mark} without concentration."
+        "Starting at 6th level, you can expend two uses of your favored foe feature to cast {@spell Hunter's Mark|DRK} without concentration. You can only have one active mark at any given time."
       ]
     },
     {
@@ -33325,7 +33621,7 @@
       "classSource": "DRK",
       "level": 14,
       "entries": [
-        "At 14th level, any attack roll you make against a creature under the effects of the {@spell hunter's mark} is a critical hit on a roll of 19 or 20 on the d20. Landing a critical hit this way triggers the following effect determined by your subclass. This effect ends when the {@spell hunter's mark} on the creature ends. You also cannot be tracked by non-magical means and non-magical difficult terrain does not cost any extra movement to traverse."
+        "At 14th level, any attack roll you make against a creature under the effects of the {@spell Hunter's Mark|DRK} is a critical hit on a roll of 19 or 20 on the d20. Landing a critical hit this way triggers the following effect determined by your subclass. This effect ends when the {@spell Hunter's Mark|DRK} on the creature ends. You also cannot be tracked by non-magical means and non-magical difficult terrain does not cost any extra movement to traverse."
       ]
     },
     {
@@ -33387,7 +33683,8 @@
       "classSource": "DRK",
       "level": 20,
       "entries": [
-        "At level 20, The damage of your {@spell hunter's mark} spell increases to {@dice 2d6}. Additionally, you always know the location of a creature affected by hunter's mark, and cannot suffer from disadvantage on attacks against them."
+        "At level 20, The damage of your {@spell Hunter's Mark|DRK} spell increases to {@dice 2d6}, and you always know the location of a creature affected by hunter's mark, and cannot suffer from disadvantage on attacks against them.",
+        "Additionally, you can cast {@spell Hunter's Mark|DRK} whenever you make a succesful attack against a creature, rather than using a bonus action."
       ]
     },
     {
@@ -40904,7 +41201,7 @@
             ],
             [
               "9th",
-              "{@spell gaseous form}, {@spell mass healing word}"
+              "{@spell gaseous form}, {@spell mass healing word | DRK}"
             ],
             [
               "13th",
@@ -68091,7 +68388,7 @@
           "row": [
             "Half-orc/human (mark of finding)",
             "Finder's magic",
-            "{@spell hunter's mark}, {@spell locate object} (lvl 3).",
+            "{@spell Hunter's Mark|DRK}, {@spell locate object} (lvl 3).",
             "No",
             "Wis",
             "18"
