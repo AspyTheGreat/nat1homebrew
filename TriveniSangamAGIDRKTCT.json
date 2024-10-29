@@ -18464,9 +18464,9 @@
         {
           "type": "list",
           "items": [
-            "You gain advantage on Dexterity ({@skill Stealth}) and Initiative rolls.",
+            "You gain advantage on Dexterity ({@skill Stealth}) checks and Initiative rolls.",
             "You can use the {@action Hide} action as a bonus action.",
-            "You do not break stealth when you make an attack with a silent weapon, as long as you move before the end of your turn.",
+            "You do not break stealth when you make an attack with a silent weapon, as long as you move after you make the attack and before you end your turn.",
             "You deal an additional {@damage 1d8} damage when you land an attack on a creature who hasn't taken a turn in combat."
           ]
         }
@@ -49680,6 +49680,10 @@
         {
           "type": "refSubclassFeature",
           "subclassFeature": "Envenom Weapons|Rogue|DRK|Assassin|DRK|9"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Roving Aim|Rogue|DRK|Assassin|DRK|9"
         }
       ]
     },
@@ -49712,6 +49716,20 @@
       "entries": [
         "You can coat your weapon with toxins using a bonus action, rather than an action.",
         "When you use the Poison option of your Cunning Strike, the target also takes 2d6 Poison damage whenever it fails its throw. This damage ignores resistance to poison damage."
+      ]
+    },
+    {
+      "name": "Roving Aim",
+      "source": "DRK",
+      "page": 58,
+      "className": "Rogue",
+      "classSource": "DRK",
+      "subclassShortName": "Assassin",
+      "subclassSource": "DRK",
+      "level": 9,
+      "header": 1,
+      "entries": [
+        "Your speed isn't reduced to 0 by using steady aim."
       ]
     },
     {
@@ -50194,22 +50212,28 @@
       ]
     },
     {
-      "name": "Psychic Blades",
-      "source": "DRK",
-      "page": 63,
-      "className": "Rogue",
-      "classSource": "DRK",
-      "subclassShortName": "Soulknife",
-      "subclassSource": "DRK",
-      "level": 3,
-      "header": 1,
-      "entries": [
-        "{@i 3rd-level Soulknife feature}",
-        "You can manifest your psionic power as shimmering blades of psychic energy. Whenever you take the {@action Attack} action, you can manifest a psychic blade from your free hand and make the attack with that blade. This magic blade is a simple melee weapon with the finesse and thrown properties. It has a normal range of 60 feet and no long range, and on a hit, it deals psychic damage equal to {@dice 1d6} plus the ability modifier you used for the attack roll. The blade vanishes immediately after it hits or misses its target, and it leaves no mark on its target if it deals damage.",
-        "After you attack with the blade, you can make a melee or ranged weapon attack with a second psychic blade as a bonus action on the same turn, provided your other hand is free to create it. The damage die of this bonus attack is {@dice 1d4}, instead of {@dice 1d6}.",
-        "The damage of your psychic blade increases to {@dice 1d8} ({@dice 1d6} on a bonus action) at level 9, and {@dice 1d10} ({@dice 1d8} on a bonus action) at level 17."
-      ]
-    },
+			"name": "Psychic Blades",
+			"source": "DRK",
+			"page": 136,
+			"className": "Rogue",
+			"classSource": "DRK",
+			"subclassShortName": "Soulknife",
+			"subclassSource": "DRK",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You can manifest shimmering blades of psychic energy. Whenever you take the {@action Attack|XPHB} action or make an {@action Opportunity Attack|XPHB}, you can manifest a {@item Psychic Blade|XPHB} in your free hand and make the attack with that blade. The magic blade has the following traits:",
+				{
+					"type": "statblock",
+					"tag": "item",
+					"name": "Psychic Blade",
+					"source": "XPHB"
+				},
+				"The blade vanishes immediately after it hits or misses its target, and it leaves no mark if it deals damage.",
+        "Alternatively, you can channel your psionic power through a weapon to turn it into a psychic blade. The weapon must have the finesse and thrown properties, and you can change its damage type to psychic whenever you deal damage with it.",
+				"After you attack with the blade on your turn, you can make a melee or ranged attack with a second psychic blade as a {@variantrule Bonus Action|XPHB} on the same turn if your other hand is free to create it. The damage die of this bonus attack is {@dice 1d4} instead of {@dice 1d6}."
+			]
+		},
     {
       "name": "Soul Blades",
       "source": "DRK",
