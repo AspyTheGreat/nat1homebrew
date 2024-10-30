@@ -52226,7 +52226,7 @@
           "type": "entries",
           "name": "Expanded Spell List",
           "entries": [
-            "The Archfey lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+            "The Archfey lets you choose from an expanded list of spells when you learn a warlock spell. Each of these spells count as a warlock spell for you, but it doesn't count against the number of spells you know.",
             {
               "type": "table",
               "caption": "Archfey Expanded Spells",
@@ -52436,7 +52436,7 @@
           "type": "entries",
           "name": "Expanded Spell List",
           "entries": [
-            "The Fiend lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+            "The Fiend lets you choose from an expanded list of spells when you learn a warlock spell. Each of these spells count as a warlock spell for you, but it doesn't count against the number of spells you know.",
             {
               "type": "table",
               "caption": "Fiend Expanded Spells",
@@ -52544,7 +52544,7 @@
           "type": "entries",
           "name": "Expanded Spell List",
           "entries": [
-            "The Great Old One lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+            "The Great Old One lets you choose from an expanded list of spells when you learn a warlock spell. Each of these spells count as a warlock spell for you, but it doesn't count against the number of spells you know.",
             {
               "type": "table",
               "caption": "Great Old One Expanded Spells",
@@ -52666,7 +52666,7 @@
           "type": "entries",
           "name": "Expanded Spell List",
           "entries": [
-            "The Hexblade lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+            "The Hexblade lets you choose from an expanded list of spells when you learn a warlock spell. Each of these spells count as a warlock spell for you, but it doesn't count against the number of spells you know.",
             {
               "type": "table",
               "caption": "Hexblade Expanded Spells",
@@ -52747,7 +52747,7 @@
           "type": "entries",
           "name": "Expanded Spell List",
           "entries": [
-            "The Raven Queen lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+            "The Raven Queen lets you choose from an expanded list of spells when you learn a warlock spell. Each of these spells count as a warlock spell for you, but it doesn't count against the number of spells you know.",
             {
               "type": "table",
               "caption": "Raven Queen Expanded Spells",
