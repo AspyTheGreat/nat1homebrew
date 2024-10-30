@@ -44841,31 +44841,27 @@
               "You glow with bright light in a 30-foot radius for the next minute. Any creature that ends its turn within 5 feet of you is {@condition blinded} until the end of its next turn."
             ],
             [
-              "81-88",
+              "81-86",
               "You cast a random spell. If the spell normally requires {@status Concentration|XPHB}, it doesn't require {@status Concentration|XPHB} in this case; the spell lasts for its full duration. Roll {@dice 1d8} to determine the spell: on a 1, {@spell Confusion|XPHB}; on a 2, {@spell Scorching Ray|XPHB}; on a 3, {@spell Darkness|XPHB}; on a 4, {@spell Fly|XPHB} (cast on a random creature within 60 feet of you), on a 5, {@spell Web|XPHB}; on a 6, {@spell Mirror Image|XPHB}; on a 7, {@spell Polymorph|XPHB} (cast on yourself), and if you fail the saving throw, you turn into a Goat (see appendix B); on a 8, {@spell See Invisibility|XPHB}."
             ],
             [
-              "89-90",
+              "87-88",
               "If you die within the next hour, you immediately revive as if by the {@spell Reincarnate|XPHB} spell."
             ],
             [
-              "91-92",
+              "89-90",
               "You and all creatures within 30 feet of you have {@variantrule Vulnerability|XPHB} to Piercing damage for the next minute."
             ],
             [
-              "93-94",
+              "91-92",
               "Each creature within 30 feet of you takes {@damage 1d10} necrotic damage. You regain hit points equal to the sum of the necrotic damage dealt."
             ],
             [
-              "95-96",
+              "93-94",
               "The next time you cast a spell that deals damage within the next minute, don't roll the spells damage dice for the damage. Instead, treat every dice as having rolled a 1."
             ],
             [
-              "97-98",
-              "You know every metamagic option for the next minute."
-            ],
-            [
-              "99-100",
+              "95-100",
               "Roll {@dice 1d6} On a 1, you regain {@dice 2d10} {@variantrule Hit Points|XPHB}; on a 2, one ally of your choice within 300 feet of you regains {@dice 2d10} {@variantrule Hit Points|XPHB}; on a 3, you regain your lowest-level expended spell slot; on a 4, one ally of your choice within 300 feet of you regains their lowest-level expended spell slot; on a 5, you regain all your expended Sorcery Points; on a 6, all the effects of row 13\u201316 affect you simultaneously."
             ]
           ],
