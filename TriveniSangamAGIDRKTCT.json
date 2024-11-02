@@ -25103,7 +25103,7 @@
         }
       ],
       "classFeatures": [
-        "Bardic Inspiration|Bard||1",
+        "Bardic Inspiration|Bard|XPHB|1",
         "Spellcasting|Bard||1",
         "Jack of All Trades|Bard||2",
         "Song of Rest (d6)|Bard||2",
@@ -25116,7 +25116,7 @@
         "Ability Score Improvement|Rogue|DRK|4",
         "Bardic Versatility|Bard||4|TCE",
         "Bardic Inspiration (d8)|Bard||5",
-        "Font of Inspiration|Bard||5",
+        "Font of Inspiration|Bard|XPHB|5",
         "Countercharm|Bard||6",
         {
           "classFeature": "Bard College feature|Bard||6",
@@ -25868,7 +25868,7 @@
           "classFeature": "Path feature|Barbarian||14",
           "gainSubclassFeature": true
         },
-        "Persistent Rage|Barbarian|PHB|15",
+        "Persistent Rage|Barbarian|XPHB|15",
         "Ability Score Improvement|Rogue|DRK|16",
         "Indomitable Might|Barbarian|PHB|18",
         "Ability Score Improvement|Rogue|DRK|19",
@@ -32602,13 +32602,14 @@
           "items": [
             "You have advantage on Strength checks and Strength saving throws.",
             "You have resistance to bludgeoning, piercing, and slashing damage.",
+            "You can take a bonus action to extend your rage for one turn if you failed to attack or take damage to maintain it. This feature cannot extend the rage's duration over 10 minutes.",
             "When you deal damage with a weapon attack using Strength, or take damage for the first time on a turn. you gain a charge of {@b Wrath}. The amount of wrath you have at any time cannot exceed your constitution modifier. Each charge of wrath is represented by your wrath die, as shown in the class table. You can use wrath in two ways, and you lose all existing stacks of wrath when you lose rage.",
-            "You can expend one charge of wrath to use your bonus action extend your rage for one turn if you failed to attack or take damage to maintain it. This feature cannot extend the rage's duration over a minute.",
+            "You can expend a wrath die on your turn to gain 5 feet of movement until the end of your turn.",
             "When you hit a creature with a weapon attack using strength, you can choose to expend all of your wrath charges and deal damage equal to the number rolled."
           ]
         },
         "If you are able to cast spells, you can't cast them or concentrate on them while raging.",
-        "Your rage lasts for 1 minute. It ends early if you are knocked {@condition unconscious} or if your turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on your turn as a bonus action.",
+        "Your rage lasts for up to 10 minutes. It ends early if you are knocked {@condition unconscious} or if your turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on your turn as a bonus action.",
         "Once you have raged the maximum number of times for your barbarian level, you must finish a long rest before you can rage again. You may rage 2 times at 1st level, 3 at 3rd, 4 at 6th, 5 at 12th, and 6 at 17th."
       ]
     },
