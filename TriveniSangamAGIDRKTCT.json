@@ -17587,8 +17587,8 @@
         {
           "type": "list",
           "items": [
-            "You have advantage on attack rolls against a creature you are grappling.",
-            "When you make a grapple check, you can treat a {@dice 1d20} roll of 9 or lower as a 10.",
+            "You have advantage on attack rolls against a creature you are grappling. You also have advantage on grapple checks",
+            "When you hit a creature with an unarmed strike as part of the attack action on your turn, you can deal damage to it along with attempting a grapple. You can do so only once per turn.",
             "You do not suffer a penalty to your movement speed when dragging a creature whose size is equal to or smaller than yours.",
             "If the grappled creature is pushed away from your grapple through forced movement (such as through a {@spell thunderwave} spell, you can use your reaction to hold on to the creature. To do so, make another grapple check. You maintain your hold on the creature on a successful check.",
             "You can attempt to grapple a creature whose size is two levels larger than you. When you do so, you make your grapple check with disadvantage. If you successfully grapple the creature, it's speed is reduced by 15 feet, and you are dragged with the creature when it moves."
@@ -17668,13 +17668,14 @@
         {
           "ability": [
             {
-              "cha": 13
+              "cha": 13,
+              "wis": 13
             }
           ]
         }
       ],
       "entries": [
-        "You can spend 10 minutes inspiring your companions, shoring up their resolve to fight. When you do so, choose up to six friendly creatures (which can include yourself) within 30 feet of you who can see or hear you and who can understand you. Each creature can gain temporary hit points equal to your level + your Charisma modifier, and is inspired. Until they take a short or long rest, they can choose to gain advantage on one attack roll, ability check, or saving throw. A creature can't gain temporary hit points or be inspired from this feat again until it has finished a short or long rest."
+        "You can spend 10 minutes inspiring your companions, shoring up their resolve to fight. When you do so, choose up to six friendly creatures (which can include yourself) within 30 feet of you who can see or hear you and who can understand you. Each creature can gain temporary hit points equal to your level + your Wisdom/Charisma modifier, and is inspired. Until they take a short or long rest, they can choose to gain advantage on one attack roll, ability check, or saving throw. A creature can't gain temporary hit points or be inspired from this feat again until it has finished a short or long rest."
       ],
       "hasFluffImages": true
     },
@@ -47439,7 +47440,7 @@
       "level": 14,
       "header": 1,
       "entries": [
-        "You are hidden to the victim of Target Focus until the end of your next turn, unless it has truesight."
+        "You have advantage on all intelligence, wisdom and charisma saving throws against the creature until the end of your next turn."
       ]
     },
     {
@@ -47467,7 +47468,7 @@
       "level": 14,
       "header": 1,
       "entries": [
-        "When you trigger Target Focus, you gain an additional use of drake's breath without using a spell slot, and you can use it as a bonus action if used before the end of your turn."
+        "When you trigger Target Focus, you gain an additional use of drake's breath."
       ]
     },
     {
@@ -47481,21 +47482,7 @@
       "level": 14,
       "header": 1,
       "entries": [
-        "You choose to subject the victim of your Target Focus to a Wisdom saving throw against your Spell Save DC. On a failure, they are feared or charmed (your choice) by you until the start of your next turn."
-      ]
-    },
-    {
-      "name": "Favored Foe Improvement",
-      "source": "DRK",
-      "page": 1,
-      "className": "Ranger",
-      "classSource": "DRK",
-      "subclassShortName": "Horizon Walker",
-      "subclassSource": "DRK",
-      "level": 14,
-      "header": 1,
-      "entries": [
-        "You gain a free use of the Ethereal Step feature until the end of your turn. If you use it, it last's up to 1 minute, and you may dismiss it at any point. When you do, you gain advantage on all attacks until the end of your next turn."
+        "You can teleport to an unoccupied space within 60 feet of you that you can see. Additionally, you gain a bonus to all of your attack rolls, ability checks and saving throws equal to the number of creatures within 120 feet of you that are {@condition charmed} or {@condition frightened}."
       ]
     },
     {
@@ -47509,7 +47496,7 @@
       "level": 14,
       "header": 1,
       "entries": [
-        "You can give the creature you hit vulnerability to all of the damage dealt by the next attack that hits it within a minute. "
+        "You immediately learn the creature's damage and condition resistances, vulnerabilities and immunities. Additionally, you can turn one of its damage resistances into a vulnerability until it takes damage of the chosen type. "
       ]
     },
     {
@@ -47523,7 +47510,7 @@
       "level": 14,
       "header": 1,
       "entries": [
-        "When you trigger Target Focus, you may use the Gathered Swarm feature on every attack until the end of your next turn."
+        "When you trigger Target Focus, you can cause your swarm to coalesce around the creature, heavily obscuring up to 3 5 ft cubes occupied by the creature."
       ]
     },
     {
@@ -47537,7 +47524,7 @@
       "level": 14,
       "header": 1,
       "entries": [
-        "When you trigger Target Focus, you may make an additional attack against a creature you have not yet targeted on this turn."
+        "When you trigger Target Focus, you may make an additional attack against a creature you have not yet targeted on this turn. If there are no eligible targets, you can make your next weapon attack deal force damage rather than its standard damage type."
       ]
     },
     {
@@ -47679,7 +47666,7 @@
       "entries": [
         "{@i 3rd-level Drakewarden feature}",
         "As an action, you can magically summon the drake that is bound to you. It appears in an unoccupied space of your choice within 30 feet of you.",
-        "The drake is friendly to you and your companions, and it obeys your commands. See its game statistics in the accompanying {@creature Drake Companion|DRK} stat block, which uses your proficiency bonus (PB) in several places. Whenever you summon the drake, choose a damage type listed in its Draconic Essence trait. You can determine the cosmetic characteristics of the drake, such as its color, its scale texture, or any visible effect of its Draconic Essence; your choice has no effect on its game statistics.",
+        "The drake is friendly to you and your companions, and it obeys your commands. See its game statistics in the accompanying {@creature Drake Companion|FTD} stat block, which uses your proficiency bonus (PB) in several places. Whenever you summon the drake, choose a damage type listed in its Draconic Essence trait. You can determine the cosmetic characteristics of the drake, such as its color, its scale texture, or any visible effect of its Draconic Essence; your choice has no effect on its game statistics.",
         "In combat, the drake shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the {@action Dodge} action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are {@condition incapacitated}, the drake can take any action of its choice, not just {@action Dodge}.",
         "The drake remains until it is reduced to 0 hit points, until you use this feature to summon the drake again, or until you die. Anything the drake was wearing or carrying is left behind when the drake vanishes.",
         "Once you summon the drake, you can't do so again until you finish a long rest, unless you expend a spell slot of 1st level or higher to summon it."
@@ -47714,7 +47701,7 @@
               "type": "item",
               "name": "Magic Fang",
               "entries": [
-                "The drake's Bite attack deals an extra {@damage 1d6} damage of the type chosen for the drake's Draconic Essence."
+                "The drake's Bite attack deals an extra {@damage 1d6} damage of the type chosen for the drake's Draconic Essence, and its infused strikes reaction now deals {@dice 2d6} damage."
               ]
             },
             {
@@ -47767,7 +47754,14 @@
               "type": "item",
               "name": "Empowered Bite",
               "entries": [
-                "The drake's Bite attack deals an extra {@damage 1d6} damage of the type chosen for its Draconic Essence (for a total of {@damage 2d6} extra damage)."
+                "The drake's Bite attack deals an extra {@damage 1d6} damage of the type chosen for its Draconic Essence (for a total of {@damage 2d6} extra damage), and the infused strikes now deal a total of {@damage 3d6 damage}."
+              ]
+            },
+            {
+              "type": "item",
+              "name": "Draconic Zephyr",
+              "entries": [
+                "The drake can now use its action to use the drake's breath feature."
               ]
             },
             {
@@ -48131,7 +48125,7 @@
       "level": 15,
       "header": 2,
       "entries": [
-        "If you take more than 30 damage from a single instance of damage, you can use your reaction to redirect half of that (upto a maximum of 35) to any creature other than the source of the damage within 30 ft. of you that you can see. If the target of this feature is hostile, it must make a constitution saving throw against your spell save dc, taking half of the redirected damage on a success.",
+        "As a response to taking damage, you can use your reaction to attempt to redirect half of the damage to a creature within 30 feet of you that you can see. If the creature is unwilling, it must make a dexterity saving throw against your spell save dc, taking only half of the redirected damage on a success (you take the remainder of the damage).",
         "This feature can be used a number of times equal to half your wisdom modifier rounded down (minimum of 1). You regain all of its expended uses on a long rest."
       ]
     },
@@ -48539,13 +48533,13 @@
       "header": 2,
       "entries": [
         "{@i 11th-level Swarmkeeper feature}",
-        "Your Gathered Swarm grows mightier in the following ways:",
+        "Your swarm evolves into a hivemind. You can use two of the options of your gathered swarm feature whenever you use it. Additionally, those features improve in the following ways.",
         {
           "type": "list",
           "items": [
-            "The damage of Gathered Swarm increases to {@dice 1d8}.",
+            "The damage of Gathered Swarm increases to {@dice 2d6}.",
             "If a creature fails its saving throw against being moved by Gathered Swarm, you can also cause the swarm to knock the creature {@condition prone}.",
-            "When you are moved by Gathered Swarm, it gives you half cover until the start of your next turn."
+            "When you are moved by Gathered Swarm, it can move you up to 10 feet, as well as giving you half cover until the start of your next turn."
           ]
         }
       ]
@@ -48563,6 +48557,7 @@
       "entries": [
         "{@i 15th-level Swarmkeeper feature}",
         "You can discorporate into your swarm, avoiding danger. When you take damage, you can use your reaction to give yourself resistance to that damage. You vanish into your swarm and then teleport to an unoccupied space that you can see within 30 feet of you, where you reappear with the swarm.",
+        "Alternatively, you can use your reaction to retaliate, commanding your swarm to strike the creature that hurt you. The creature takes {@damage 2d6} piercing damage, and must immediately use its reaction to use all of its movement to move in a random direction unless it succeeds on a Dexterity saving throw against your spell save DC.",
         "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
       ]
     },
@@ -48869,7 +48864,8 @@
       "header": 2,
       "entries": [
         "{@i 15th-level Horizon Walker feature}",
-        "Your ability to move between planes enables you to slip through the planar boundaries to lessen the harm done to you during battle. Whenever you take damage, you can use your reaction to give yourself resistance to all damage types besides force and psychic until the start of your next turn."
+        "Your ability to move between planes enables you to slip through the planar boundaries to lessen the harm done to you during battle. You can use your ethereal step feature on a reaction as a response to taking damage.",
+        "Additionally, when you start your turn in the ethereal plane or enter it for the first time on a turn, you can choose to instead stay in the boundary between your current plane and the ethereal plane. When you do so you are {@condition invisible} and cannot be detected by senses other than truesight and gain resistance to all damage except force. The damage you deal is also halved, unless it is force damage."
       ]
     },
     {
@@ -48909,7 +48905,7 @@
       "header": 1,
       "entries": [
         "{@i 3rd-level Monster Slayer feature}",
-        "At 3rd level, you gain the ability to peer at a creature and magically discern how best to hurt it. As an action, choose one creature you can see within 60 feet of you. You immediately learn whether the creature has any damage immunities, resistances, or vulnerabilities and what they are. If the creature is hidden from divination magic, you sense that it has no damage immunities, resistances, or vulnerabilities.",
+        "At 3rd level, you gain the ability to peer at a creature and magically discern how best to hurt it. As a bonus action, choose one creature you can see within 60 feet of you. You immediately learn whether the creature has any damage immunities, resistances, or vulnerabilities and what they are. If the creature is hidden from divination magic, you sense that it has no damage immunities, resistances, or vulnerabilities.",
         "You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses of it when you finish a long rest."
       ]
     },
@@ -48974,7 +48970,7 @@
       "header": 1,
       "entries": [
         "{@i 3rd-level Monster Slayer feature}",
-        "Starting at 3rd level, you can focus your ire on one foe, increasing the harm you inflict on it. When you hit a creature with a weapon attack, you designate it as the target of this feature. For this attack and the first time each turn that you hit that target with a weapon attack, it takes an extra {@damage 1d6} damage from the weapon.",
+        "Starting at 3rd level, you can focus your ire on one foe, increasing the harm you inflict on it. When you hit a creature with a weapon attack, you designate it as the target of this feature. For this attack and the first time each turn that you hit that target with a weapon attack, it takes an extra {@damage 1d6} damage from the weapon. You can change this feature's damage type whenever you use it, and it can deal any damage type besides force, psychic, necrotic or radiant damage.",
         "This benefit lasts until you finish a short or long rest. It ends early if you designate a different creature.",
         "At 7th level, you may designate two targets and three at 15th. Then when choosing to designate creature beyond the limit, you must choose a creature to end the effect on."
       ]
@@ -49143,8 +49139,8 @@
       "header": 2,
       "entries": [
         "{@i 7th-level Dune Warrior feature}",
-        "Your time in heat has adapted you to harden your skin, shielding yourself. As a bonus action, you can magically conjure a spiky carapace around your skin for 1 minute. While in this form, your Armor Class increases by 2, and any creature that makes a melee attack against you while within 5 feet of you takes piercing damage equal to the amount dealt by your Striking Sands feature.",
-        "You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses after a long rest."
+        "Your time in heat has adapted you to harden your skin, shielding yourself. As a bonus action, you can magically conjure a spiky carapace around your skin for 1 minute. While in this form, you gain a number of temporariy hitpoints equal to your wisdom modifier + proficiency bonus. While you have these temporary hitpoints, your Armor Class increases by 2, and any creature that makes a melee attack against you while within 5 feet of you takes piercing damage equal to the amount dealt by your Striking Sands feature.",
+        "Once you use this feature, you must complete a short or long rest before using it again."
       ]
     },
     {
@@ -49215,7 +49211,7 @@
       "level": 15,
       "header": 2,
       "entries": [
-        "You can use your action to make a single weapon attack originating from each clone."
+        "Whenever you take the attack action, you can make an additional number of attacks equal to half of your remaining clones (rounded down, minimum of one)."
       ]
     },
     {
@@ -52039,7 +52035,7 @@
       "header": 1,
       "entries": [
         "{@i 1st-level Peace Domain feature}",
-        "You can forge an empowering bond among people who are at peace with one another. As an action, you choose a number of willing creatures within 30 feet of you (this can include yourself) equal to your proficiency bonus. You create a magical bond among them for 1 minute or until you use this feature again. While any bonded creature is within 30 feet of another, the creature can roll a {@dice d4} and add the number rolled to an attack roll, an ability check, or a saving throw it makes. Each creature can add the {@dice d4} no more than once per turn.",
+        "You can forge an empowering bond among people who are at peace with one another. As an action, you choose a number of willing creatures within 30 feet of you (this can include yourself) equal to your proficiency bonus. You create a magical bond among them for 10 minutes or until you use this feature again. While any bonded creature is within 30 feet of another, the creature can roll a {@dice d4} and add the number rolled to an attack roll, an ability check, or a saving throw it makes. Each creature can add the {@dice d4} no more than once per turn.",
         "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
       ]
     },
