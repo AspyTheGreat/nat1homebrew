@@ -17879,7 +17879,6 @@
         {
           "type": "list",
           "items": [
-            "You can cast ritual spells by spending one extra minute, rather than ten, when casting them without a spell slot.",
             "You gain a number of focus charges equal to your proficiency bonus. You can spend focus charges in the following ways:",
             {
               "type": "list",
