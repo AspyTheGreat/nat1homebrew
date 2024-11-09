@@ -19069,6 +19069,319 @@
       ]
     }
   ],
+  "reward":[
+    {
+			"name": "Boon of High Magic",
+			"source": "DRK",
+			"page": 232,
+			"type": "Boon",
+			"entries": [
+				"You gain an additional spell slot that recovers on a long rest. The level of the spell slot is equal to the highest level spell slot that you can use."
+			]
+		},
+    {
+			"name": "Boon of Combat Prowess",
+			"source": "DRK",
+			"page": 232,
+			"type": "Boon",
+			"entries": [
+				"You add your proficiency bonus twice, rather than once to attack rolls on weapons that you are proficient with.",
+        "You add a bonus equal to your proficiency bonus to any saving throw you force on a creature through a weapon attack (weapon masteries, battlemaster maneuvers, rogue cunning strike, paladin spell smites, etc.)."
+			]
+		},
+    {
+			"name": "Boon of Dimensional Travel",
+			"source": "DRK",
+			"page": 232,
+			"type": "Boon",
+			"entries": [
+				"You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Blink Steps",
+					"entries": [
+						"Immediately after you take the {@action Attack|XPHB} action or the {@action Magic|XPHB} action, you can teleport up to 30 feet to an unoccupied space you can see."
+					]
+				}
+			]
+		},
+    {
+			"name": "Boon of Energy resistance",
+			"source": "DRK",
+			"page": 232,
+			"type": "Boon",
+			"entries": [
+				"You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Energy Resistances",
+					"entries": [
+						"You gain Resistance to two of the following damage types of your choice: Acid, Cold, Fire, Lightning, Necrotic, Poison, Psychic, Radiant, or Thunder. Whenever you finish a Long Rest, you can change your choices."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Energy Redirection",
+					"entries": [
+						"When you take damage of one of the types chosen for the Energy Resistances benefit, you can take a Reaction to direct damage of the same type toward another creature you can see within 60 feet of yourself that isn't behind Total Cover. If you do so, that creature must succeed on a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus) or take damage equal to {@dice 2d12} plus your Constitution modifier."
+					]
+				}
+			]
+		},
+    {
+			"name": "Boon of Fate",
+			"source": "DRK",
+			"page": 232,
+			"type": "Boon",
+			"entries": [
+				"When another creature that you can see within 60 feet of you makes an ability check, an attack roll, or a saving throw, you can roll a {@dice 2d4} and apply the result as a bonus or penalty to the roll. Once you use this boon, you can't use it again until you roll initiative or finish a short rest or long rest."
+			]
+		},
+    {
+			"name": "Boon of the Fire Soul",
+			"source": "DRK",
+			"page": 232,
+			"type": "Boon",
+			"entries": [
+				"You have immunity to fire damage. You can also cast {@spell burning hands} as a level 2 spell (DC 18 or your spell save dc) and {@spell scorching ray} (+10 or your spell attack roll) at will, without using a spell slot or any components. "
+			]
+		},
+    {
+			"name": "Boon of Fortitude",
+			"source": "DRK",
+			"page": 232,
+			"type": "Boon",
+			"entries": [
+				"You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Fortified Health",
+					"entries": [
+						"Your Hit Point maximum increases by 40. In addition, whenever you regain Hit Points, you can regain additional Hit Points equal to your Constitution modifier. Once you've regained these additional Hit Points, you can't do so again until the start of your next turn."
+					]
+				}
+			]
+		},
+    {
+			"name": "Boon of Immortality",
+			"source": "DRK",
+			"page": 232,
+			"type": "Boon",
+			"entries": [
+				"You stop aging. You are immune to the {@condition poisoned} condition, to diseases, as well as any effect that would age you, and you can't die from old age.",
+        "You have advantage on death saving throws. Additionally, you are instantly stabilised when you drop to 0 hitpoints. You can choose to keep rolling death saves as normal, coming back to life with 1 hitpoint when you roll a natural 20."
+			]
+		},
+    {
+			"name": "Boon of Invincibility",
+			"source": "DMG",
+			"page": 232,
+			"type": "Boon",
+			"entries": [
+				"When you take damage from any source, you can reduce that damage to 0. Once you use this boon, you can't use it again until you finish a short rest."
+			]
+		},
+    {
+			"name": "Boon of Irresistible Offense",
+			"source": "DRK",
+			"page": 232,
+			"type": "Boon",
+			"entries": [
+				"You can bypass the damage resistances of any creature."
+			]
+		},
+    {
+			"name": "Boon of Magic Resistance",
+			"source": "DRK",
+			"page": 232,
+			"type": "Boon",
+			"entries": [
+				"You have advantage on saving throws against spells and other magical effects. Once per long rest, when you fail a saving throw against a spell or magical effect, you can choose to succeed instead."
+			]
+		},
+    {
+			"name": "Boon of Peerless Aim",
+			"source": "DRK",
+			"page": 232,
+			"type": "Boon",
+			"entries": [
+				"When you miss with a weapon attack, you can choose to hit instead. Once you use this boon, you can't use it again until the start of your next turn."
+			]
+		},
+    {
+			"name": "Boon of Perfect Health",
+			"source": "DRK",
+			"page": 232,
+			"type": "Boon",
+			"entries": [
+				"When you roll hit dice in order to regain hitpoints, you heal an amount equal to the roll + twice your constitution modifier, and you have advantage on Strength and Constitution saving throws."
+			]
+		},
+		{
+			"name": "Boon of Planar Travel",
+			"source": "DRK",
+			"page": 232,
+			"type": "Boon",
+			"entries": [
+				"When you gain this boon, choose a plane of existence other than the Material Plane. You can now use an action to cast the {@spell plane shift} spell (no spell slot or components required), targeting yourself only, and travel to the chosen plane, or from that plane back to the Material Plane. Once you use this boon, you can't use it again until you finish a short rest."
+			]
+		},
+		{
+			"name": "Boon of Quick Casting",
+			"source": "DRK",
+			"page": 232,
+			"type": "Boon",
+			"entries": [
+				"Choose one of your spells of 1st through 3rd level that has a casting time of 1 action. That spell's casting time is now 1 bonus action for you."
+			]
+		},
+    {
+			"name": "Boon of Recovery",
+			"source": "DRK",
+			"page": 232,
+			"type": "Boon",
+			"entries": [
+				"You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Last Stand",
+					"entries": [
+						"When you would be reduced to 0 Hit Points, you can drop to 1 Hit Point instead and regain a number of Hit Points equal to half your Hit Point maximum. Once you use this benefit, you can't use it again until you finish a Long Rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Recover Vitality",
+					"entries": [
+						"You have a pool of ten d10s. As a Bonus Action, you can expend dice from the pool, roll those dice, and regain a number of Hit Points equal to the roll's total. You regain all the expended dice when you finish a Long Rest."
+					]
+				}
+			]
+		},
+    {
+			"name": "Boon of Resilience",
+			"source": "DRK",
+			"page": 232,
+			"type": "Boon",
+			"entries": [
+				"You have resistance to bludgeoning, piercing, and slashing damage."
+			]
+		},
+    {
+			"name": "Boon of Skill",
+			"source": "DRK",
+			"page": 232,
+			"type": "Boon",
+			"entries": [
+				"You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "All-Around Adept",
+					"entries": [
+						"You gain proficiency in all skills."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Expertise",
+					"entries": [
+						"Choose one skill in which you lack Expertise. You gain Expertise in that skill."
+					]
+				}
+			]
+		},
+    {
+			"name": "Boon of Speed",
+			"source": "DRK",
+			"page": 232,
+			"type": "Boon",
+			"entries": [
+				"You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Escape Artist",
+					"entries": [
+						"As a Bonus Action, you can take the {@action Disengage|XPHB} action, which also ends the {@condition Grappled|XPHB} condition on you."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Quickness",
+					"entries": [
+						"Your Speed increases by 30 feet."
+					]
+				}
+			]
+		},
+    {
+			"name": "Boon of Spell Mastery",
+			"source": "DRK",
+			"page": 232,
+			"type": "Boon",
+			"entries": [
+				"Choose one 1st or 2nd-level sorcerer, warlock, or wizard spell that you can cast. You can now cast that spell at its lowest level without expending a spell slot."
+			]
+		},
+    {
+			"name": "Boon of Spell Recall",
+			"source": "DRK",
+			"page": 232,
+			"type": "Boon",
+			"entries": [
+				"You can cast any spell from your class spell list of level 6 or lower without expending a spell slot. Once you do so, you can't use this boon again until you finish a short or long rest."
+			]
+		},
+    {
+			"name": "Boon of the Stormborn",
+			"source": "DRK",
+			"page": 232,
+			"type": "Boon",
+			"entries": [
+				"You have immunity to lightning and thunder damage. You can also cast {@spell thunderwave} (DC 18 or your spell save DC) as a level 2 spell and {@spell chromatic orb} (lightning only, +10 or your spell attack modifier) as a level 2 spell at will, without using a spell slot or any components."
+			]
+		},
+    {
+			"name": "Boon of the Night Spirit",
+			"source": "DRK",
+			"page": 232,
+			"type": "Boon",
+			"entries": [
+				"You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Merge with Shadows",
+					"entries": [
+						"While within Dim Light or Darkness, you can give yourself the {@condition Invisible|XPHB} condition as a Bonus Action. The condition ends on you immediately after you take an action, a Bonus Action, or a Reaction."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Shadowy Form",
+					"entries": [
+						"While within Dim Light or Darkness, you have Resistance to all damage except Psychic and Radiant."
+					]
+				}
+			]
+		},
+    {
+			"name": "Boon of Truesight",
+			"source": "DRK",
+			"page": 232,
+			"type": "Boon",
+			"entries": [
+				"You have {@sense truesight} out to a range of 60 feet."
+			]
+		},
+    {
+			"name": "Boon of Undetectability",
+			"source": "DRK",
+			"page": 232,
+			"type": "Boon",
+			"entries": [
+				"You gain a +10 bonus to Dexterity ({@skill Stealth}) checks, and you can't be detected or targeted by {@filter divination|spells|school=D} magic, including scrying sensors."
+			]
+		}
+  ],
   "class": [
     {
       "name": "Mesmer",
