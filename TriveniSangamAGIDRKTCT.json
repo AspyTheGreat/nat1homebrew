@@ -15639,7 +15639,7 @@
           "type": "entries",
           "name": "Resolve of the Stoic",
           "entries": [
-            "You have the {@feat shield master|phb} feat for as long as you are attuned to this shield. "
+            "You have the {@feat shield master|xphb} feat for as long as you are attuned to this shield. "
           ]
         },
         {
@@ -17392,27 +17392,33 @@
       ]
     },
     {
-      "name": "Durable",
-      "source": "DRK",
-      "page": 166,
-      "category": "O",
-      "ability": [
-        {
-          "con": 1
-        }
-      ],
-      "entries": [
-        "Hardy and resilient, you gain the following benefits:",
-        {
-          "type": "list",
-          "items": [
-            "When you roll a Hit Die to regain hit points, the minimum number of hit points you regain from the roll equals twice your Constitution modifier (minimum of 2).",
-            "You regain all expended Hit Die whenever you finish a long rest.",
-            "When you drop to 0 hitpoints, you can expend a hit die, healing yourself for that amount. Once you use this feature, you cannot do so until you finish a long rest."
-          ]
-        }
-      ]
-    },
+			"name": "Durable",
+			"source": "DRK",
+			"page": 203,
+			"category": "O",
+			"ability": [
+				{
+					"con": 1
+				}
+			],
+			"entries": [
+				"You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Defy Death",
+					"entries": [
+						"You have Advantage on Death Saving Throws."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Speedy Recovery",
+					"entries": [
+						"As a Bonus Action, you can expend one of your Hit Point Dice, roll the die, and regain a number of Hit Points equal to the roll."
+					]
+				}
+			]
+		},
     {
       "name": "Dwarven Fortitude",
       "source": "DRK",
@@ -17592,33 +17598,6 @@
             "You do not suffer a penalty to your movement speed when dragging a creature whose size is equal to or smaller than yours.",
             "If the grappled creature is pushed away from your grapple through forced movement (such as through a {@spell thunderwave} spell, you can use your reaction to hold on to the creature. To do so, make another grapple check. You maintain your hold on the creature on a successful check.",
             "You can attempt to grapple a creature whose size is two levels larger than you. When you do so, you make your grapple check with disadvantage. If you successfully grapple the creature, it's speed is reduced by 15 feet, and you are dragged with the creature when it moves."
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Dual Wielder",
-      "source": "DRK",
-      "page": 165,
-      "ability": [
-        {
-          "choose": {
-            "from": [
-              "dex",
-              "str"
-            ],
-            "amount": 1
-          }
-        }
-      ],
-      "entries": [
-        "You master fighting with two weapons, gaining the following benefits:",
-        {
-          "type": "list",
-          "items": [
-            "You gain a +1 bonus to AC while you are wielding a separate melee weapon in each hand.",
-            "You can use two-weapon fighting even when the one-handed melee weapons you are wielding aren't light, treating them as if they had the light property.",
-            "You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one."
           ]
         }
       ]
@@ -17864,6 +17843,103 @@
         }
       ]
     },
+    {
+			"name": "Ritual Caster",
+			"source": "DRK",
+			"page": 206,
+			"category": "G",
+			"prerequisite": [
+				{
+					"level": 4,
+					"ability": [
+						{
+							"int": 13
+						}
+					]
+				},
+				{
+					"level": 4,
+					"ability": [
+						{
+							"wis": 13
+						}
+					]
+				},
+				{
+					"level": 4,
+					"ability": [
+						{
+							"cha": 13
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						]
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							{
+								"choose": "level=1|components & miscellaneous=ritual",
+								"count": 2
+							}
+						],
+						"5": [
+							{
+								"choose": "level=1|components & miscellaneous=ritual",
+								"count": 1
+							}
+						],
+						"9": [
+							{
+								"choose": "level=1|components & miscellaneous=ritual",
+								"count": 1
+							}
+						],
+						"13": [
+							{
+								"choose": "level=1|components & miscellaneous=ritual",
+								"count": 1
+							}
+						],
+						"17": [
+							{
+								"choose": "level=1|components & miscellaneous=ritual",
+								"count": 1
+							}
+						]
+					}
+				}
+			],
+			"entries": [
+				"You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Ritual Spells",
+					"entries": [
+						"Choose a number of level 1 spells equal to your Proficiency Bonus that have the {@filter Ritual tag|spells|level=1|components & miscellaneous=ritual}. You always have those spells prepared, and you can cast them with any spell slots you have. The spells' spellcasting ability is the ability increased by this feat. Whenever your Proficiency Bonus increases thereafter, you can add an additional level 1 spell with the Ritual tag to the spells always prepared with this feature."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Quick Ritual",
+					"entries": [
+						"With this benefit, you can cast a Ritual spell that you have prepared using its regular casting time rather than the extended time for a Ritual. Doing so doesn't require a spell slot. Once you cast the spell in this way, you can do so a number of times equal to the modifier of the attribute increased when you pick this feat."
+					]
+				}
+			],
+			"hasFluffImages": true
+		},
     {
       "name": "Mystic Empowerment",
       "source": "DRK",
@@ -18441,7 +18517,7 @@
         }
       ],
       "entries": [
-        "when you miss an attack roll with a melee weapon attack, you gain advantage on the next melee weapon attack."
+        "when you hit a target with an unarmed strike or a weapon attack, you can roll damage for it twice and use either total."
       ]
     },
     {
@@ -18503,22 +18579,6 @@
           "type": "list",
           "items": [
             "When a creature you can see hits you with an attack roll, you can use your reaction to force that creature to attack another creature or waste the attack. You can use this ability twice, regaining its use when you roll initiative at the start of combat or finish a short or long rest."
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Shield Master",
-      "source": "DRK",
-      "page": 170,
-      "entries": [
-        "You use shields not just for protection but also for offense. You gain the following benefits while you are wielding a {@item shield|phb}:",
-        {
-          "type": "list",
-          "items": [
-            "If you take the {@action Attack} action on your turn, you can use a bonus action to try to {@action shove} a creature within 5 feet of you with your shield.",
-            "If you aren't {@condition incapacitated}, you can add your shield's AC bonus to any Dexterity saving throw you make against a spell or other harmful effect that targets only you.",
-            "If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, interposing your shield between yourself and the source of the effect."
           ]
         }
       ]
@@ -18800,26 +18860,6 @@
       ]
     },
     {
-			"name": "Alert",
-			"source": "DRK",
-			"page": 165,
-      "category": "O",
-			"reprintedAs": [
-				"Alert|XPHB"
-			],
-			"entries": [
-				"Always on the lookout for danger, you gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"You gain a +5 bonus to initiative.",
-						"You can't be {@status surprised} while you are conscious.",
-						"Other creatures don't gain advantage on attack rolls against you as a result of being unseen by you."
-					]
-				}
-			]
-		},
-    {
 			"name": "Actor",
 			"source": "DRK",
 			"page": 202,
@@ -19084,7 +19124,7 @@
 			"page": 232,
 			"type": "Boon",
 			"entries": [
-				"You add your proficiency bonus twice, rather than once to attack rolls on weapons that you are proficient with.",
+				"You add your proficiency bonus to your damage rolls with unarmed strikes and weapons that you are proficient with.",
         "You add a bonus equal to your proficiency bonus to any saving throw you force on a creature through a weapon attack (weapon masteries, battlemaster maneuvers, rogue cunning strike, paladin spell smites, etc.)."
 			]
 		},
@@ -19204,7 +19244,7 @@
 			"page": 232,
 			"type": "Boon",
 			"entries": [
-				"When you miss with a weapon attack, you can choose to hit instead. Once you use this boon, you can't use it again until the start of your next turn."
+				"When you miss with an unarmed strike or a weapon attack, you can choose to hit instead. Once you use this boon, you can't use it again until the start of your next turn."
 			]
 		},
     {
