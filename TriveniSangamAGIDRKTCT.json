@@ -17955,7 +17955,7 @@
         {
           "type": "list",
           "items": [
-            "You gain a number of focus charges equal to your proficiency bonus. You can spend focus charges in the following ways:",
+            "You gain two focus charges when you take this feat, regaining one charge on a short rest and both charges on a long rest. You can spend focus charges in the following ways:",
             {
               "type": "list",
               "style": "list-hang-notitle",
