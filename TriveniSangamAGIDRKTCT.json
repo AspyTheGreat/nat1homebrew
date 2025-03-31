@@ -12298,7 +12298,7 @@
       ],
       "wondrous": true,
       "entries": [
-        "You gain a +1 bonus to weapon mastery save DC, your artificer spell save DC as well as any DC from a ranger class or subclass.",
+        "You gain a +1 bonus to weapon mastery save DC, your artificer spell save DC as well as any DC from a artificer class or subclass.",
         "You learn two additional options for your artificer infusions. The number of infused items you can create is also increased by 1."
       ]
     },
@@ -45893,7 +45893,7 @@
       ]
     },
     {
-      "name": "Controlled Chaos",
+      "name": "Tamed Surge",
       "source": "DRK",
       "page": 103,
       "className": "Sorcerer",
@@ -45908,7 +45908,7 @@
       ]
     },
     {
-      "name": "Tamed Surge",
+      "name": "Uncontrollable Chaos",
       "source": "DRK",
       "page": 103,
       "className": "Sorcerer",
@@ -45918,8 +45918,46 @@
       "level": 18,
       "header": 2,
       "entries": [
-        "Immediately after you cast a Sorcerer spell with a spell slot, you can roll a {@dice 1d4} instead of rolling on the {@table Wild Magic Surge|XPHB} table. On a 1, You must use tides of chaos on every roll you can for the next minute, and it provides disadvantage rather than advantage. On a 2 or 3, nothing happens. On a 4, you can create an effect of your choice from the {@table Wild Magic Surge|XPHB} table instead of rolling on that table. If the chosen effect involves a roll, you must make it.",
-        "Once you roll a 4 on the {@dice 1d4}, you can't use this feature again until you finish a {@variantrule Long Rest|XPHB} or expend {@dice 2d4} sorcery points to renew its use (no action required)."
+        "Your magic breaks even the most fundamental rules of wizardry. You gain the following benefits:",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Arcane Overload|Sorcerer|DRK|Wild|DRK|18"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Arcane Wager|Sorcerer|DRK|Wild|DRK|18"
+        }
+      ]
+    },
+    {
+      "name": "Arcane Overload",
+      "source": "DRK",
+      "page": 103,
+      "className": "Sorcerer",
+      "classSource": "DRK",
+      "subclassShortName": "Wild",
+      "subclassSource": "DRK",
+      "level": 18,
+      "header": 2,
+      "entries": [
+        "You can use your wild magic surge feature multiple times on a turn, even if you have tides of chaos available."
+      ]
+    },
+    {
+      "name": "Arcane Wager",
+      "source": "DRK",
+      "page": 103,
+      "className": "Sorcerer",
+      "classSource": "DRK",
+      "subclassShortName": "Wild",
+      "subclassSource": "DRK",
+      "level": 18,
+      "header": 2,
+      "entries": [
+        "You can attempt to cast a spell from any spell list that you do not have prepared. To do so, you must expend the spell slot of the appropriate level and roll a {@dice d100}. You can expend your tides of chaos feature to grant yourself advantage on this roll.",
+        "On a 1-33, the spell slot is lost and the action is wasted. (alternatively, the DM can pick a spell of the same level to be cast at a random target within range.)",
+        "On a 34-66, you cast a prepared spell of the appropriate instead.",
+        "On a 67-100, the roll succeeds and you can cast a spell of your choosing of the appropriate level."
       ]
     },
     {
@@ -59141,8 +59179,8 @@
       "subclassFeatures": [
         "Wild Magic|Sorcerer|DRK|Wild|DRK|1",
         "Bend Luck|Sorcerer|DRK|Wild|DRK|6",
-        "Controlled Chaos|Sorcerer|DRK|Wild|DRK|14",
-        "Tamed Surge|Sorcerer|DRK|Wild|DRK|18"
+        "Tamed Surge|Sorcerer|DRK|Wild|DRK|14",
+        "Uncontrollable Chaos|Sorcerer|DRK|Wild|DRK|18"
       ]
     },
     {
