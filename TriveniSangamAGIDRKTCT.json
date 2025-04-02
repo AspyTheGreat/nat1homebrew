@@ -12472,7 +12472,7 @@
       ],
       "wondrous": true,
       "entries": [
-        "You gain a +3 bonus to weapon mastery save DC, Cunning action DC and any DC from a rogue class or subclass.",
+        "You gain a +1 bonus to weapon mastery save DC, Cunning action DC and any DC from a rogue class or subclass.",
         "Your sneak attack die increase by an additional {@damage 2d6}."
       ]
     },
@@ -12757,7 +12757,7 @@
       "wondrous": true,
       "bonusAc": "+1",
       "weight": 13,
-      "ac": 12,
+      "ac": 15,
       "entries": [
         "While wearing this armor, you gain the following benefits:",
         {
@@ -45954,9 +45954,9 @@
       "level": 18,
       "header": 2,
       "entries": [
-        "You can attempt to cast a spell from any spell list that you do not have prepared. To do so, you must expend the spell slot of the appropriate level and roll a {@dice d100}. You can expend your tides of chaos feature to grant yourself advantage on this roll.",
+        "You can attempt to cast a spell with a casting time of one action from any spell list that you do not have prepared. To do so, you must expend the spell slot of the appropriate level and roll a {@dice d100}. You can expend your tides of chaos feature to grant yourself advantage on this roll.",
         "On a 1-33, the spell slot is lost and the action is wasted. (alternatively, the DM can pick a spell of the same level to be cast at a random target within range.)",
-        "On a 34-66, you cast a prepared spell of the appropriate instead.",
+        "On a 34-66, you cast a prepared spell of the appropriate level instead.",
         "On a 67-100, the roll succeeds and you can cast a spell of your choosing of the appropriate level."
       ]
     },
@@ -67378,7 +67378,8 @@
         "RI"
       ],
       "entries": [
-        "You gain proficiency with the {@skill Nature} skill, the {@item poisoner's kit|phb} and the {@item herbalism kit|phb}. When you make an intelligence {@skill Nature} check, you can instead make a wisdom {@skill Nature} check."
+        "You gain proficiency with the {@skill Nature} skill, the {@item poisoner's kit|phb} and the {@item herbalism kit|phb}. When you make an intelligence {@skill Nature} check, you can instead make a wisdom {@skill Nature} check.",
+        "you have advantage on checks made in order to identify plants, along with their medicinal or poisonous properties."
       ]
     },
     {
@@ -67700,8 +67701,8 @@
         }
       ],
       "entries": [
-        "You have resistance to acid damage.",
-        "You have advantage on {@skill Perception} and {@skill Survival} checks while underwater."
+        "You have resistance to poison damage.",
+        "You have advantage on checks made in order to assist in navigation through a forest or jungle."
       ]
     },
     {
