@@ -67622,7 +67622,8 @@
         }
       ],
       "entries": [
-        "You automatically succeed on {@skill Medicine} checks in order to stabilise a creature. Additionally, you can create two {@item healing potion} whenever you finish a long rest, provided you have a herbalism kit with you."
+        "You automatically succeed on {@skill Medicine} checks in order to stabilise a creature. Additionally, you can create two {@item healing potion} whenever you finish a long rest, provided you have a herbalism kit with you.",
+        "Healing potions created with this line with imbibement lose their potency when you finish your next long rest."
       ]
     },
     {
@@ -67649,7 +67650,8 @@
       ],
       "entries": [
         "You have advantage on checks made in order to identify toxins. Whenever you finish a long rest, you can create two vials of {@item basic poison}.",
-        "You can coat poison on your weapons and ammunition by using a bonus action, rather than an action."
+        "You can coat poison on your weapons and ammunition by using a bonus action, rather than an action.",
+        "Any poison created with this imbibement tree loses its potency when you finish a long rest."
       ]
     },
     {
@@ -68029,14 +68031,15 @@
             "{@item adamantine ammunition|XGE}.",
             "{@item Arrow of Faerie Fire|AspysGuidetoInfinitum}.",
             "{@item Unbreakable arrow|XGE}.",
-            "{@item walloping ammunition|DMG}",
+            "{@item walloping arrow|DMG}",
             "{@item Arrow of Roping|AspysGuidetoInfinitum}",
             "{@item winged ammunition|BMT}",
             "{@item +1 ammunition}.",
             "{@item Arrow of Returning|AspysGuidetoInfinitum}"
           ]
         },
-        "Once you create special ammunition, you cannot do so again until you finish a long rest."
+        "Once you create special ammunition, you cannot do so again until you finish a long rest.",
+        "Any special ammunition left unused after your next long rest loses its magic and turns mundane."
       ]
     },
     {
@@ -68661,7 +68664,7 @@
         }
       ],
       "entries": [
-        "You impose flanking on a creature if it is within your attack range.",
+        "You impose and benefit from flanking a creature if it is within your attack range.",
         "Your crit-range is reduced to 16-20 for opportunity attacks made with a reach weapon.",
         "If you land a critical hit on an opportunity attack with a reach weapon, you can use the highest possible result on the damage die, rather than rolling for damage."
       ]
@@ -68749,7 +68752,8 @@
           "type": "list",
           "items": [
             "{@b Blowthrough:} You can make an attack roll against a creature directly behind your attack's point of entry within your attack's range.",
-            "{@b Ricochet:} You can make an attack roll against a creature within 15 feet of the original target."
+            "{@b Ricochet:} You can make an attack roll against a creature within 15 feet of the original target.",
+            "These additional attacks only deal damage and do not inflict any conditions or additional effects."
           ]
         }
       ]
@@ -68800,15 +68804,14 @@
         }
       ],
       "entries": [
-        "The following options are added to the types of special ammunition that you can create. Additionally, you can now create a number of arrows equal to twice your proficiency bonus whenever you finish a long rest.",
+        "The following options are added to the types of special ammunition that you can create.",
         {
           "type": "list",
           "items": [
             "{@item Arrow of Screaming|AspysGuidetoInfinitum}",
             "{@item Bloodseeker Ammunition|BMT}",
-            "{@item Arrow of Explosions|AspysGuidetoInfinitum}",
             "{@item Arrow of Clairvoyance|AspysGuidetoInfinitum}",
-            "{@item Ammunition of Slaying}",
+            "{@item Arrow of Slaying|DMG}",
             "{@item +2 ammunition}"
           ]
         }
