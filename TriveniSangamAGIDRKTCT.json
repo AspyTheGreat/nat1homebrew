@@ -11673,6 +11673,74 @@
   ],
   "item": [
     {
+      "name": "Prototype Infernal Blasters",
+      "source": "AspysGuidetoInfinitum",
+      "type": "R",
+      "rarity": "legendary",
+      "weaponCategory": "martial",
+      "age": "renaissance",
+      "ammoType": "renaissance bullet",
+      "property": [
+        "AF",
+        "RLD"
+      ],
+      "dmg1": "1d10",
+      "dmgType": "Piercing",
+      "range": "60/240",
+      "reload": 6,
+      "weapon": true,
+      "firearm": true,
+      "reqAttune": true,
+      "weight": 3,
+      "bonusWeapon": "+3",
+      "entries": [
+        "Modelled after the divine pair of pistols wielded by Asmodeus, the Ebony and Ivory, these infernal blasters pack a devilish punch",
+        "Wielding these blasters grants a +3 bonus to attack and damage rolls, and each shot deals an additional {@dice 1d8} fire and cold damage depending on the pistol.",
+        "You must hold both the pistols in each hand, otherwise suffering a -10 penalty to attack rolls if used seperately. When you use an extra attack feature to an extra attack, you can use the other pistol to make an additional attack. ",
+        {
+          "type": "entries",
+          "name": "Infernal Leadfire",
+          "entries": [
+            "Twice per long rest, you may transform your weapon into a Tommy Gun or a Flamethrower for devastating effect. Upon transforming, roll {@dice 10d10} to determine the total bullet/fuel capacity for this form.\n\nWhile transformed, when you take the Attack action, you can replace one or more of your attacks with one of the following options based on the chosen form:",
+            "In Tommy Gun form, you can unleash a furious hail of bullets upon one or more targets within the weapon’s range. As part of your Attack action, you may expend up to 20 bullets to fire a barrage. Each bullet deals 2 points of piercing damage. Each target must make a Dexterity saving throw (DC 20). On a successful save, it takes half damage instead. Alternatively, you can choose to dump the entire magazine shooting all the bullets, transforming it back into the blasters immediately.",
+            "In Flamethrower form, you expel gouts of searing flame in a wide arc. As part of your Attack action, you may expend up to 20 units of fuel to create a 60-foot cone of fire originating from you. Each creature within the cone must make a Dexterity saving throw (DC 20). A creature takes {@dice 1d8} fire damage per unit of fuel expended on a failed save, or half as much damage on a successful one. For example, if you expend 10 units of fuel, each creature that fails the save suffers {@dice 10d4 fire damage}.",
+            "This transformation ends if all bullets/fuel is consumed or one minute has passed."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hefty Dread Rot Pot",
+      "source": "AspysGuidetoInfinitum",
+      "rarity": "very rare",
+      "wondrous": true,
+      "weight": 20,
+      "entries": [
+        "A massive, rune-carved pot packed with volatile, Dread rot essence. Designed for catastrophic use, these hefty pots are used only by the most fanatical followers of the Dread Prince. Double the standard size, these pots are stuffed with a 2% mixture of Dread rot.",
+        "As an action, you can throw the Hefty Rot Pot to a point within 5*Strength Score feet. The pot shatters violently upon impact, releasing a searing cloud of dread miasma in a 60-foot-radius sphere.",
+        "Each creature in the area must make a DC 20 Constitution saving throw or immediately become afflicted with Dread Rot.",
+        "A creature afflicted by Dread Rot must make a Constitution saving throw at the end of each of its turns. The initial save DC is 20 and increases by 5 for each failure. After three successful saves, the creature recovers and is cured.",
+        "Dread Rot Effects:",
+        "While afflicted, the creature suffers the following:\nA creature cannot regain hitpoints while affected by Dread rot. When the creature takes any hit point damage, it takes additional necrotic damage equal to its challenge rating. Additionally, when the save DC of the disease reaches 100, every further failure reduces the creature's hit dice by 1, and its max hitpoints reduce by 1 roll of the hit dice. If the creature reaches 0 hitpoints or loses all it's hit dice. They turn into a pile of flesh and bones. Only a {@spell true resurrection} or a {@spell wish} spell may revive the creature. ",
+        "Only a Greater Restoration spell or a Wish spell can end Dread Rot early."
+      ]
+    },
+    {
+      "name": "Dread Rot Grease",
+      "source": "AspysGuidetoInfinitum",
+      "rarity": "rare",
+      "wondrous": true,
+      "weight": 1,
+      "entries": [
+        "This viscous, crimson-black substance was created from the dread rot essence of the 999th layer of the Abyss, Aparhan's domain. Even a small amount is devastating if applied correctly. This grease consists of hardened wax mixed with a 0.5% concentration of this essence.",
+        "As a bonus action, you can coat one melee weapon with Dread Rot Grease. The grease lasts for 1 minute. A creature that is subjected to this grease as many times as its constitution modifier before it uses an action to clean it off will be inflicted with the Dread Rot Disease",
+        "A creature affected by Dread Rot must make a Constitution saving throw at the end of each of its turns. The initial save DC is 20 and increases by 5 for each failure. After three successful saves, the creature recovers and is cured.",
+        "Dread Rot Effects:",
+        "While afflicted, the creature suffers the following:\nA creature cannot regain hitpoints while affected by Dread rot. When the creature takes any hit point damage, it takes additional necrotic damage equal to its challenge rating. Additionally, when the save DC of the disease reaches 100, every further failure reduces the creature's hit dice by 1, and its max hitpoints reduce by 1 roll of the hit dice. If the creature reaches 0 hitpoints or loses all it's hit dice. They turn into a pile of flesh and bones. Only a {@spell true resurrection} or a {@spell wish} spell may revive the creature. ",
+        "Only a Greater Restoration spell or a Wish spell can end Dread Rot early."
+      ]
+    },
+    {
       "name": "+1 Illusionists Cape",
       "source": "AspysGuidetoInfinitum",
       "rarity": "uncommon",
