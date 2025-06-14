@@ -11673,6 +11673,183 @@
   ],
   "item": [
     {
+      "name": "The Veinblade",
+      "source": "AspysGuidetoInfinitum",
+      "type": "M",
+      "rarity": "legendary",
+      "reqAttune": true,
+      "weight": 3,
+      "weaponCategory": "martial",
+      "property": [],
+      "dmg1": "1d8",
+      "dmgType": "S",
+      "dmg2": "1d10",
+      "bonusWeapon": "+1",
+      "entries": [
+        "This weapon appears as a simple, well-made +1 weapon, but its metal has a thirsty, porous quality. Faint, dark channels run along its surface like blood vessels.",
+        {
+          "name": "Blood Fueled",
+          "type": "entries",
+          "entries": [
+            "On your turn, you may stab yourself with the blade with an attack and choose to sacrifice any number of your hit points (minimum 10). This damage cannot be reduced or prevented, These hitpoints are channeled into the weapon and are held there. Any healing you recieve that heals over the sacrificed hitpoints will reduce the charges added to this weapon. You choose which bonuses to lose when you lose charges. For 1 minute, the weapon awakens with the following benefits based on the total HP sacrificed."
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "For every 7 HP sacrificed, the weapon gains a cumulative +1 bonus to its attack and damage rolls.",
+            "For every 4 HP sacrificed, the weapon deals an additional {@damage 1d6} necrotic damage on each hit."
+          ]
+        },
+        {
+          "name": "Unlocked Abilities",
+          "type": "entries",
+          "entries": [
+            "The total HP sacrificed also unlocks special abilities for the duration:"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Tier 1 (17+ HP Sacrificed): <em>Blood-Seeker's Leap.</em></strong> As part of the attack used to activate this weapon, you can immediately teleport up to 60 feet to an unoccupied space you can see.",
+            "<strong>Tier 2 (35+ HP Sacrificed): <em>Sanguine Rupture.</em></strong> As a Bonus Action, you can slam your weapon into the ground, sending out a wave of bloody energy. Each creature in a 30-foot radius must make a Constitution saving throw. On a failure, they take necrotic damage equal to your weapon's bonus necrotic damage dice and are knocked prone.",
+            "<strong>Tier 3 (52+ HP Sacrificed): <em>Executioner's Strike.</em></strong> The first time you hit a creature after activating this ability, you can choose to turn the hit into a critical hit.",
+            "<strong>Tier 4 (70+ HP Sacrificed): <em>Slaughterhouse Aura.</em></strong> A shimmering, blood-red 20-foot radius aura connects all creatures within it in a psychic network of shared pain. Once a turn, When a creature inside the aura takes damage, creatures of your choice inside the aura take psychic damage equal to half the amount of damage taken by the original creature."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "The Bloodbound Bulwark",
+      "source": "AspysGuidetoInfinitum",
+      "type": "LA",
+      "rarity": "legendary",
+      "reqAttune": true,
+      "bonusAc": "+1",
+      "entries": [
+        "This suit of +1 armor is layered with plates that resemble hardened muscle tissue and is cool to the touch. Spikes and rivets on its surface seem designed to draw blood, not just deflect blows.",
+        {
+          "name": "Blood Fueled",
+          "type": "entries",
+          "entries": [
+            "As a bonus action on your turn, you can sacrifice any number of your hit points (minimum 10). This damage cannot be reduced or prevented, These hitpoints are channeled into the armor and are held there. Any healing you recieve that heals over the sacrificed hitpoints will reduce the charges added to this armor. You choose which bonuses to lose when you lose charges. For 1 minute, the armor awakens with the following benefits based on the total HP sacrificed."
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "For every 10 HP sacrificed, the armor gains a cumulative +1 bonus to your Armor Class.",
+            "For every 2 HP sacrificed, you store 1 hit point at the start of each of your turns including this turn. When you touch a creature, you may choose to tranfer all the stored hitpoints to the creature. This hitpoint store cannot be split."
+          ]
+        },
+        {
+          "name": "Unlocked Abilities",
+          "type": "entries",
+          "entries": [
+            "The total HP sacrificed also unlocks special abilities for the duration:"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Tier 1 (17+ HP Sacrificed): <em>Retributive Barbs.</em></strong> When a creature hits you with a melee attack while within 5 feet of you, bloody spikes erupt from your armor, dealing magical piercing damage to the attacker equal to stored hitpoints",
+            "<strong>Tier 2 (35+ HP Sacrificed): <em>Feast of Resilience.</em></strong> When you reduce a hostile creature with a CR of greater than 5 is reduced to 0 hit points, you can use your reaction to absorb its remaining life force. You can choose to roll as many hit dice as your Armor Class bonus from this item. these hit dice are special and are not expended from your hit die pool. If you have multiple types of hit dice, choose the die size.",
+            "<strong>Tier 3 (52+ HP Sacrificed): <em>Bulwark of Life</em></strong>  As a Bonus Action or a reaction to an ally taking damage, you can grant all creatures of your choice within 100 feet temporary hit points equal your hitpoint store.",
+            "<strong>Tier 4 (70+ HP Sacrificed): <em>Shared Suffering.</em></strong> You become resistant to a damage type of your choosing. Additionally, whenever you take that damage, the creature that dealt it takes the same amount of damage."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "The Sanguine Ciphers",
+      "source": "AspysGuidetoInfinitum",
+      "wondrous": true,
+      "rarity": "very rare",
+      "reqAttune": true,
+      "entries": [
+        "These appear as a set of five scrolls made of pristine, almost translucent vellum dripping in the blood of the Gore forge each held in a case carved from polished bone. The parchment is blank and cool to the touch, but it thirsts for arcane potential. These scrolls function as a +1 spell casting focus.",
+        {
+          "name": "Blood Fueled",
+          "type": "entries",
+          "entries": [
+            "When you cast a spell with the Sanguine Cipher as your spellcasting focus, unrolling it and anointing it with your life force. You choose to sacrifice any number of your hit points (minimum 10). This damage cannot be reduced or prevented. These hit points are channeled into the Cipher and are immediately expended to empower the single spell being cast. The following benefits are applied to the spell based on the total HP sacrificed:"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "For every 10 HP sacrificed, you can increase the spell's save DC or its attack roll by a cumulative +1.",
+            "For every 20 HP sacrificed, you gain +5 bonus to concentration checks made against this spell ",
+            "For every 20 HP sacrificed, you gain +2 bonus to ability checks made as a consequence of casting this spell. eg., Dispel Magic and Counter Spell "
+          ]
+        },
+        {
+          "name": "Unlocked Abilities",
+          "type": "entries",
+          "entries": [
+            "The total HP sacrificed also unlocks additional effects on the spell"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Tier 1 (17+ HP Sacrificed): <em>Entropic Spell.</em></strong> Choose a metamagic option available to the Sorcerer Class and apply it to this spell.",
+            "<strong>Tier 2 (35+ HP Sacrificed): <em>Blooming Spell.</em></strong> You overload the spell with raw energy, causing it to expand beyond its normal confines. You can double the spell's area of effect. For example, a 20-foot radius becomes a 40-foot radius, a 60-foot cone becomes a 120-foot cone",
+            "<strong>Tier 3 (52+ HP Sacrificed): <em>Maximized Spell.</em></strong> All damage dice for this spell deal their maximum possible value instead of being rolled.",
+            "<strong>Tier 4 (70+ HP Sacrificed): <em>Limit Break Spell.</em></strong> This spell is cast as if cast from a 10th level slot. No slots are consumed."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Heart of the Tarrasque",
+      "source": "AspysGuidetoInfinitum",
+      "wondrous": true,
+      "rarity": "Legendary",
+      "reqAttune": false,
+      "entries": [
+        "This item appears as a stone-like, dormant organ, roughly the size of a human head, covered in a tough, rocky hide with deep, pulsating crimson fissures. It is impossibly dense and emanates a profound sense of primordial resilience. When implanted, your hitpoint maximum increases by 70. Additionally, if you have not taken damage to your hitpoints since the end of your last turn, you regain as many hitpoints as sacrificed at the start of your current turn. This regeneration does not function if you have 0 hit points. ",
+        {
+          "name": "Primal Implantation",
+          "type": "entries",
+          "entries": [
+            "This item does not require attunement. To gain its benefits, you must perform a 1-hour ritual where you hold the Heart of the Tarrasque against your chest. At the ritual's conclusion, the Heart magically and painfully burrows into your torso, ejects your original heart, and takes its place, fusing with your circulatory system. The ritual can be performed to reverse the process, but the original heart must be kept preserved."
+          ]
+        },
+        {
+          "name": "Blood Fueled",
+          "type": "entries",
+          "entries": [
+            "As a bonus action, you can command the Heart to flood your body with raw life force. You choose to sacrifice any number of your hit points (minimum 10). This damage cannot be reduced or prevented. These hitpoints are channeled into the heart and are held there. Any healing you recieve that heals over the sacrificed hitpoints will reduce the charges added to this this heart. You choose which bonuses to lose when you lose charges. For 1 minute, the heart awakens with the following benefits based on the total HP sacrificed."
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "For every 5 HP sacrificed, you reduce all incoming damage by +1",
+            "For every 20 HP sacrificed, you gain an artificial soul. At the end of your turn, you may remove one condition or effect on you by applying it to the artificial soul, expending it.",
+            "For every 10 HP sacrificed, any magical healing you receive/provide restores +5 more hitpoints."
+          ]
+        },
+        {
+          "name": "Unlocked Abilities",
+          "type": "entries",
+          "entries": [
+            "The total HP sacrificed also unlocks special abilities for the duration:"
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Tier 1 (17+ HP Sacrificed): <em>Immovable Mass.</em></strong> You have advantage on saving throws against being knocked prone or moved against your will. Your size category increases by one, and your carrying capacity is quadrupled for the duration.",
+            "<strong>Tier 2 (35+ HP Sacrificed): <em>Unflinching Resilience.</em></strong> Your physical attribute scores increase by +2.",
+            "<strong>Tier 3 (52+ HP Sacrificed): <em>Adamantine Blood.</em></strong> Your constitution score is doubled for the duration.",
+            "<strong>Tier 4 (70+ HP Sacrificed): <em>Font of Endless Vitality.</em></strong> For the duration, your very nature defies the logic of magical sacrifice. Any hit points you regain from spells, abilities, or this item's own Regeneration feature can now heal the hit point damage you suffered from sacrificing HP to your other blood-fueled objects. When you heal this \"sacrificed\" health, the items do not lose their charges."
+          ]
+        }
+      ]
+    },
+    {
       "name": "Prototype Infernal Blasters",
       "source": "AspysGuidetoInfinitum",
       "type": "R",
