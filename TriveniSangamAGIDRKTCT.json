@@ -63490,7 +63490,6 @@
         "B"
       ],
       "dex": 21,
-      "group": "Tsochari",
       "hp": {
         "average": 336,
         "formula": "32d12 + 128"
@@ -63530,10 +63529,6 @@
           "name": "Dreadful bolster (Costs 2 actions)"
         }
       ],
-      "legendaryGroup": {
-        "name": "Tsochar",
-        "source": "AspysGuidetoInfinitum"
-      },
       "miscTags": [
         "MW",
         "RCH"
