@@ -2632,6 +2632,134 @@
         "C"
       ]
     },
+     {
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Artificer",
+            "source": "PHB"
+          }
+        ]
+      },
+      "components": {
+        "s": true,
+        "v": true,
+        "m": "a feather of a pigeon"
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "You conjure a spectral pigeon and store a spell within it, giving it a destination within the spells range. The pigeon delivers the spell to the target location at the start of your next turn.",
+        "The pigeon is immune to damage and cannot have its movement impeded, and it cannot go through walls."
+      ],
+      "entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the range of the spell increases by 60 feet for each slot level above 3rd."
+					]
+				}
+			],
+      "level": 3,
+      "name": "Arcane conveyance",
+      "range": {
+        "distance": {
+          "amount": 120,
+          "type": "feet"
+        },
+        "type": "point"
+      },
+      "school": "T",
+      "source": "DRK",
+      "time": [
+        {
+          "condition": "taken when you cast a spell with a casting time of 1 action and a duration of instantaneous.",
+          "number": 1,
+          "unit": "reaction"
+        }
+      ]
+    },
+    {
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Artificer",
+            "source": "PHB"
+          }
+        ]
+      },
+      "components": {
+        "s": true,
+        "v": true
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "entries": [
+        "You magically twist space around another creature you can see within range, attempting to put it out or in harms way. The target is teleported to an unoccupied space of your choice that you can see within range. The chosen space must be on a surface or in a liquid that can support the target without the target having to squeeze."
+      ],
+      "entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the range of the spell increases by 15 feet and you can target an additional target for each slot level above 4th."
+					]
+				}
+			],
+      "level": 4,
+      "name": "Veilstep",
+      "range": {
+        "distance": {
+          "amount": 90,
+          "type": "feet"
+        },
+        "type": "point"
+      },
+      "school": "C",
+      "source": "DRK",
+      "time": [
+        {
+          "condition": "taken when a willing creature within range is targeted by an attack or forced to make a saving throw.",
+          "number": 1,
+          "unit": "reaction"
+        }
+      ]
+    },
     {
       "name": "Power Word Fortify",
       "source": "DRK",
@@ -12889,6 +13017,213 @@
       ]
     },
     {
+			"name": "Mizzium Apparatus",
+			"source": "DRK",
+			"page": 179,
+			"rarity": "very rare",
+			"reqAttune": "by a sorcerer, warlock, or wizard",
+			"reqAttuneTags": [
+				{
+					"class": "sorcerer"
+				},
+				{
+					"class": "warlock"
+				},
+				{
+					"class": "wizard"
+				}
+			],
+			"wondrous": true,
+			"weight": 8,
+			"focus": [
+				"Sorcerer",
+				"Warlock",
+				"Wizard"
+			],
+			"entries": [
+				"Innovation is a dangerous pursuit, at least the way the mages of the Izzet League engage in it. As protection against the risk of an experiment going awry, they have developed a device to help channel and control their magic. This apparatus is a collection of leather straps, flexible tubing, glass cylinders, and plates, bracers, and fittings made from a magic-infused metal alloy called mizzium, all assembled into a harness. The item weighs 8 pounds.",
+				"While you are wearing the mizzium apparatus, you can use it as an arcane focus. Spells cast through it gain a +1 bonus to spell attack rolls and spell save DC. In addition, you can attempt to cast a spell that you do not know or have prepared. The spell you choose must be on your class's spell list and of level 5 or lower, and you must provide the spell's components.",
+				"You expend a spell slot to cast the spell as normal, but before resolving it you must make an Intelligence ({@skill Arcana}) check. The DC is 12 + the level of the spell slot you expend to cast the spell. If you succeed on this check, the DC for the arcana check is increased by an amount equal to the spell slot expended until the next dawn.",
+				"On a successful check, you cast the spell as normal, using your spell save DC and spellcasting ability modifier. On a failed check, you cast a different spell from the one you intended. Randomly determine the spell you cast by rolling on the table for the level of the spell slot you expended.",
+				"If you try to cast a cantrip you don't know, the DC for the Intelligence ({@skill Arcana}) check is 10, and on a failed check, there is no effect.",
+				{
+					"type": "table",
+					"caption": "1st-Level Spells",
+					"colLabels": [
+						"d6",
+						"spell"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"{@spell burning hands}"
+						],
+						[
+							"2",
+							"{@spell chaos bolt|XGE}"
+						],
+						[
+							"3",
+							"{@spell color spray}"
+						],
+						[
+							"4",
+							"{@spell faerie fire}"
+						],
+						[
+							"5",
+							"{@spell fog cloud}"
+						],
+						[
+							"6",
+							"{@spell thunderwave}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "2nd-Level Spells",
+					"colLabels": [
+						"d6",
+						"spell"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"{@spell blur}"
+						],
+						[
+							"2",
+							"{@spell gust of wind}"
+						],
+						[
+							"3",
+							"{@spell heat metal}"
+						],
+						[
+							"4",
+							"{@spell Melf's acid arrow}"
+						],
+						[
+							"5",
+							"{@spell scorching ray}"
+						],
+						[
+							"6",
+							"{@spell shatter}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "3rd-Level Spells",
+					"colLabels": [
+						"d6",
+						"spell"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"{@spell fear}"
+						],
+						[
+							"2",
+							"{@spell feign death}"
+						],
+						[
+							"3",
+							"{@spell fireball}"
+						],
+						[
+							"4",
+							"{@spell gaseous form}"
+						],
+						[
+							"5",
+							"{@spell sleet storm}"
+						],
+						[
+							"6",
+							"{@spell stinking cloud}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "4th-Level Spells",
+					"colLabels": [
+						"d4",
+						"spell"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"{@spell confusion}"
+						],
+						[
+							"2",
+							"{@spell conjure minor elementals}"
+						],
+						[
+							"3",
+							"{@spell Evard's black tentacles}"
+						],
+						[
+							"4",
+							"{@spell ice storm}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "5th-Level Spells",
+					"colLabels": [
+						"d4",
+						"spell"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"{@spell animate objects}"
+						],
+						[
+							"2",
+							"{@spell cloudkill}"
+						],
+						[
+							"3",
+							"{@spell cone of cold}"
+						],
+						[
+							"4",
+							"{@spell flame strike}"
+						]
+					]
+				}
+			],
+			"hasFluffImages": true
+		},
+    {
       "name": "Horns of the Berserker",
       "source": "DRK",
       "page": 192,
@@ -21470,109 +21805,88 @@
         {
           "colLabels": [
             "Channel Divinity",
-            "{@filter Cantrips|spells|level=0|class=Cleric}",
-            "{@filter Prepared Spells|spells|level=!0|class=Cleric}"
+            "{@filter Cantrips|spells|level=0|class=Cleric}"
           ],
           "rows": [
             [
               0,
-              3,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
               4
             ],
             [
               2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
               3,
               5
             ],
             [
-              2,
               3,
-              6
-            ],
-            [
-              2,
-              4,
-              7
-            ],
-            [
-              2,
-              4,
-              9
+              5
             ],
             [
               3,
-              4,
-              10
+              5
             ],
             [
               3,
-              4,
-              11
+              5
             ],
             [
               3,
-              4,
-              12
+              5
             ],
             [
               3,
-              4,
-              14
+              5
             ],
             [
               3,
-              5,
-              15
+              5
             ],
             [
               3,
-              5,
-              16
-            ],
-            [
-              3,
-              5,
-              16
-            ],
-            [
-              3,
-              5,
-              17
-            ],
-            [
-              3,
-              5,
-              17
-            ],
-            [
-              3,
-              5,
-              18
-            ],
-            [
-              3,
-              5,
-              18
-            ],
-            [
-              3,
-              5,
-              19
+              5
             ],
             [
               4,
-              5,
-              20
+              5
             ],
             [
               4,
-              5,
-              21
+              5
             ],
             [
               4,
-              5,
-              22
+              5
             ]
           ]
         },
@@ -22303,109 +22617,88 @@
         {
           "colLabels": [
             "Wild Shape",
-            "{@filter Cantrips|spells|level=0|class=Druid}",
-            "Prepared Spells"
+            "{@filter Cantrips|spells|level=0|class=Druid}"
           ],
           "rows": [
             [
               0,
+              2
+            ],
+            [
               2,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              3,
               4
             ],
             [
-              2,
-              2,
-              5
-            ],
-            [
-              2,
-              2,
-              6
-            ],
-            [
-              2,
               3,
-              7
-            ],
-            [
-              2,
-              3,
-              9
+              4
             ],
             [
               3,
-              3,
-              10
+              4
             ],
             [
               3,
-              3,
-              11
+              4
             ],
             [
               3,
-              3,
-              12
+              4
             ],
             [
               3,
-              3,
-              14
+              4
             ],
             [
               3,
-              4,
-              15
-            ],
-            [
-              3,
-              4,
-              16
-            ],
-            [
-              3,
-              4,
-              16
-            ],
-            [
-              3,
-              4,
-              17
-            ],
-            [
-              3,
-              4,
-              17
-            ],
-            [
-              3,
-              4,
-              18
-            ],
-            [
-              3,
-              4,
-              18
+              4
             ],
             [
               4,
-              4,
-              19
+              4
             ],
             [
               4,
-              4,
-              20
+              4
             ],
             [
               4,
-              4,
-              21
+              4
             ],
             [
               4,
-              4,
-              22
+              4
             ]
           ]
         },
@@ -24293,7 +24586,7 @@
             ],
             [
               6,
-              3,
+              4,
               2
             ],
             [
@@ -24303,67 +24596,67 @@
             ],
             [
               6,
-              3,
+              4,
               2
             ],
             [
               6,
-              3,
+              4,
               2
             ],
             [
               8,
-              4,
+              6,
               3
             ],
             [
               8,
-              4,
+              6,
               3
             ],
             [
               8,
-              4,
+              6,
               3
             ],
             [
               8,
-              4,
+              6,
               3
             ],
             [
               10,
-              5,
+              8,
               4
             ],
             [
               10,
-              5,
+              8,
               4
             ],
             [
               10,
-              5,
+              8,
               4
             ],
             [
               10,
-              5,
+              8,
               4
             ],
             [
               12,
-              6,
+              10,
               4
             ],
             [
               12,
-              6,
+              10,
               4
             ],
             [
               12,
-              6,
+              10,
               4
             ]
           ]
@@ -24525,7 +24818,7 @@
         "Optional Rule: Firearm Proficiency|Artificer|TCE|1",
         "Magical Tinkering|Artificer|TCE|1",
         "Spellcasting|Artificer|TCE|1",
-        "Infuse Item|Artificer|TCE|2",
+        "Infuse Item|Artificer|DRK|2",
         {
           "classFeature": "Artificer Specialist|Artificer|TCE|3",
           "gainSubclassFeature": true
@@ -28679,7 +28972,7 @@
               "5"
             ],
             [
-              "4",
+              "3",
               {
                 "type": "dice",
                 "toRoll": [
@@ -28693,7 +28986,7 @@
               "5"
             ],
             [
-              "4",
+              "3",
               {
                 "type": "dice",
                 "toRoll": [
@@ -28707,6 +29000,20 @@
               "6"
             ],
             [
+              "3",
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 1,
+                    "faces": 6
+                  }
+                ],
+                "rollable": true
+              },
+              "7"
+            ],
+            [
               "4",
               {
                 "type": "dice",
@@ -28721,7 +29028,7 @@
               "7"
             ],
             [
-              "5",
+              "4",
               {
                 "type": "dice",
                 "toRoll": [
@@ -28732,10 +29039,10 @@
                 ],
                 "rollable": true
               },
-              "7"
+              "8"
             ],
             [
-              "5",
+              "4",
               {
                 "type": "dice",
                 "toRoll": [
@@ -28750,34 +29057,6 @@
             ],
             [
               "5",
-              {
-                "type": "dice",
-                "toRoll": [
-                  {
-                    "number": 1,
-                    "faces": 6
-                  }
-                ],
-                "rollable": true
-              },
-              "8"
-            ],
-            [
-              "6",
-              {
-                "type": "dice",
-                "toRoll": [
-                  {
-                    "number": 2,
-                    "faces": 4
-                  }
-                ],
-                "rollable": true
-              },
-              "9"
-            ],
-            [
-              "6",
               {
                 "type": "dice",
                 "toRoll": [
@@ -28791,7 +29070,7 @@
               "10"
             ],
             [
-              "6",
+              "5",
               {
                 "type": "dice",
                 "toRoll": [
@@ -28803,6 +29082,34 @@
                 "rollable": true
               },
               "11"
+            ],
+            [
+              "5",
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 2,
+                    "faces": 4
+                  }
+                ],
+                "rollable": true
+              },
+              "11"
+            ],
+            [
+              "5",
+              {
+                "type": "dice",
+                "toRoll": [
+                  {
+                    "number": 2,
+                    "faces": 4
+                  }
+                ],
+                "rollable": true
+              },
+              "12"
             ],
             [
               "6",
@@ -28844,21 +29151,7 @@
                 ],
                 "rollable": true
               },
-              "14"
-            ],
-            [
-              "7",
-              {
-                "type": "dice",
-                "toRoll": [
-                  {
-                    "number": 2,
-                    "faces": 4
-                  }
-                ],
-                "rollable": true
-              },
-              "15"
+              "13"
             ],
             [
               "8",
@@ -28872,7 +29165,7 @@
                 ],
                 "rollable": true
               },
-              "17"
+              "14"
             ]
           ]
         },
@@ -29117,7 +29410,6 @@
           "gainSubclassFeature": true
         },
         "Ability Score Improvement|Ranger|DRK|8",
-        "Nature's Veil|Ranger|DRK|9",
         "Expertise|Ranger|DRK|9",
         "Tireless|Ranger|DRK|10",
         "Refined Mark|Ranger|DRK|10",
@@ -30709,7 +31001,6 @@
         "Innate Sorcery|Sorcerer|DRK|1",
         "Font of Magic|Sorcerer|DRK|2",
         "Metamagic|Sorcerer|DRK|3",
-        "Metamagic Options|Sorcerer|DRK|3|DRK",
         "Ability Score Improvement|Rogue|DRK|4",
         "Sorcerous Versatility|Sorcerer|DRK|4|DRK",
         "Sorcerous Restoration|Sorcerer|XPHB|5",
@@ -33569,6 +33860,49 @@
       ]
     },
     {
+			"name": "Infuse Item",
+			"source": "DRK",
+			"page": 9,
+			"otherSources": [
+				{
+					"source": "ERLW",
+					"page": 54
+				}
+			],
+			"className": "Artificer",
+			"classSource": "DRK",
+			"level": 2,
+			"entries": [
+				"{@i 2nd-level artificer feature}",
+				"You've gained the ability to imbue mundane items with certain magical infusions, turning those objects into magic items.",
+				{
+					"type": "refClassFeature",
+					"classFeature": "Infusions Known|Artificer|TCE|2"
+				},
+				{
+					"type": "inset",
+					"name": "Artificer Infusions",
+					"entries": [
+						"Artificers have invented numerous magical infusions, extraordinary processes that rapidly create magic items. To many, artificers seem like wonderworkers, accomplishing in hours what others need weeks to complete.",
+						"The description of each of the following infusions details the type of item that can receive it, along with whether the resulting magic item requires attunement.",
+						"Some infusions specify a minimum artificer level. You can't learn such an infusion until you are at least that level.",
+						"Unless an infusion's description says otherwise, you can't learn an infusion more than once."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Infusing an Item",
+					"entries": [
+						"Whenever you finish a long rest, you can touch a nonmagical object and imbue it with one of your artificer infusions, turning it into a magic item. An infusion works on only certain kinds of objects, as specified in the infusion's description. If the item requires attunement, you can attune yourself to it the instant you infuse the item. If you decide to attune to the item later, you must do so using the normal process for attunement (see \"{@book Attunement|DMG|7|Attunement}\" in chapter 7 of the {@book Dungeon Master's Guide|DMG}).",
+						"Your infusion remains in an item indefinitely, but when you die, the infusion vanishes after a number of days have passed equal to your Intelligence modifier (minimum of 1 day). The infusion also vanishes if you give up your knowledge of the infusion for another one.",
+            "You can remove the attunement requirement of infused items you create. You can do so for a number of items equal to half of the infused items.",
+						"You can infuse more than one nonmagical object at the end of a long rest; the maximum number of objects appears in the Infused Items column of the Artificer table. You must touch each of the objects, and each of your infusions can be in only one object at a time. Moreover, no object can bear more than one of your infusions at a time. If you try to exceed your maximum number of infusions, the oldest infusion immediately ends, and then the new infusion applies.",
+						"If an infusion ends on an item that contains other things, like a {@item bag of holding}, its contents harmlessly appear in and around its space."
+					]
+				}
+			]
+		},
+    {
       "name": "Arcane Pioneer",
       "source": "DRK",
       "page": 46,
@@ -34173,7 +34507,7 @@
           "type": "entries",
           "name": "Converting a Spell Slot to Sorcery Points",
           "entries": [
-            "As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level."
+            "You can expend one spell slot and gain a number of sorcery points equal to the slot's level (no action required)."
           ]
         }
       ]
@@ -34261,25 +34595,7 @@
             {
               "type": "refOptionalfeature",
               "optionalfeature": "Twinned Spell|DRK"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Metamagic Options",
-      "source": "DRK",
-      "page": 65,
-      "className": "Sorcerer",
-      "classSource": "DRK",
-      "level": 3,
-      "isClassFeatureVariant": true,
-      "entries": [
-        "{@i 3rd-level sorcerer {@variantrule optional class features|tce|optional feature}}",
-        "When you choose Metamagic options, you have access to the following additional options.",
-        {
-          "type": "options",
-          "entries": [
+            },
             {
               "type": "refOptionalfeature",
               "optionalfeature": "Seeking Spell|DRK"
@@ -34529,9 +34845,8 @@
           "entries": [
             "When you hit a creature with an attack, you can use your bonus action to mark them as your quarry for the next hour. When you do so, you have {@variantrule Advantage|XPHB} on any Wisdom ({@skill Perception|XPHB} or {@skill Survival|XPHB}) checks to track or find the creature. Your attacks also deal additional force damage equal to your Quarry die, which improves as shown in the ranger table.",
             "You concentrate on this mark as if you were concentrating on a spell.",
-            "If a creature dies while marked by you, you can immediately use your reaction or use your bonus action to move the mark on to another creature within your attack range (minimum of 60 feet).",
-            "You can use this feature twice, regaining one use on a Short Rest and all uses on a Long rest. You gain more uses of this feature as shown in the ranger table.",
-            "When you reach level 3 in this class, you no longer need to concentrate on the mark."
+            "If a creature dies while marked by you, you can immediately use your reaction or use your bonus action on your next turn to move the mark on to another creature within your attack range (minimum of 60 feet).",
+            "You can use this feature twice, regaining half of the uses on a Short Rest and all uses on a Long rest. You gain more uses of this feature as shown in the ranger table."
           ]
         },
         {
@@ -34547,31 +34862,31 @@
           "entries": [
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Illuminating Mark|DRK"
+              "optionalfeature": "Illuminating Mark (1)|DRK"
             },
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Elusive Mark|DRK"
+              "optionalfeature": "Elusive Mark (1)|DRK"
             },
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Blinding Mark|DRK"
+              "optionalfeature": "Blinding Mark (1)|DRK"
             },
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Pursuing Mark|DRK"
+              "optionalfeature": "Pursuing Mark (1)|DRK"
             },
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Strafing Mark|DRK"
+              "optionalfeature": "Strafing Mark (1)|DRK"
             },
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Leashing Mark|DRK"
+              "optionalfeature": "Leashing Mark (1)|DRK"
             },
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Cardinal Mark|DRK"
+              "optionalfeature": "Cardinal Mark (1)|DRK"
             }
           ]
         }
@@ -34585,41 +34900,41 @@
       "classSource": "DRK",
       "level": 6,
       "entries": [
-        "The following options are added to your possible hunter's mark enhancements.",
+        "The following options are added to your possible hunter's mark enhancements. Additionally, you no longer need to concentrate in order to maintain the mark.",
         {
           "type": "options",
           "entries": [
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Blurring Mark|DRK"
+              "optionalfeature": "Blurring Mark (1)|DRK"
             },
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Seismic Mark|DRK"
+              "optionalfeature": "Seismic Mark (1)|DRK"
             },
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Crippling Mark|DRK"
+              "optionalfeature": "Crippling Mark (1)|DRK"
             },
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Rejuvenating Mark|DRK"
+              "optionalfeature": "Rejuvenating Mark (1)|DRK"
             },
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Unveiling Mark|DRK"
+              "optionalfeature": "Unveiling Mark (1)|DRK"
             },
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Insightful Mark|DRK"
+              "optionalfeature": "Insightful Mark (1)|DRK"
             },
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Vengeful Mark|DRK"
+              "optionalfeature": "Vengeful Mark (1)|DRK"
             },
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Focused Mark|DRK"
+              "optionalfeature": "Focused Mark (1)|DRK"
             }
           ]
         }
@@ -34650,7 +34965,8 @@
           "type": "list",
           "items": [
             "Hunter's mark no longer requires a bonus action to apply or reapply.",
-            "You can apply two enhancements on a single mark, paying the cost for both enhancements."
+            "You can apply two enhancements on a single mark, paying the cost for both enhancements.",
+            "You can replace or add mark enhancements on an active hunter's mark."
           ]
         }
       ]
@@ -34712,7 +35028,7 @@
       "entries": [
         "Rangers are masters of adaptation, surviving through harsh climates and dangerous foes alike. They do so by assimilating the skills into their core instinct.",
         "You learn two imbibements of your choice at level 2. A list of available options can be found on the {@filter Optional Features|optionalfeatures|Feature Type=RI} page. When you gain ranger levels, you gain additional imbibements of your choice, as shown in the imbibements column of the ranger table.",
-        "Additionally, when you gain a level in this class, you can choose one of the imbibements you know and replace it with another imbibement that you could learn at that level.",
+        "Additionally, when you gain an ability score improvement or a feat, you can choose one of the imbibements you know and replace it with another imbibement that you could learn at that level.",
         "If a ranger imbibement has prerequisites, you must meet them to learn it. You can learn the imbibement at the same time that you meet its prerequisites. A level prerequisite refers to your level in this class."
       ]
     },
@@ -34836,18 +35152,6 @@
       ]
     },
     {
-      "name": "Nature's Veil",
-      "source": "DRK",
-      "page": 1,
-      "className": "Ranger",
-      "classSource": "DRK",
-      "level": 9,
-      "entries": [
-        "At 9th level, You draw on the powers of nature to hide yourself from view briefly. As a bonus action, you can magically become {@condition invisible}, along with any equipment you are wearing or carrying, until the start of your next turn.",
-        "You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
-      ]
-    },
-    {
       "name": "Expertise",
       "source": "DRK",
       "page": 94,
@@ -34899,31 +35203,31 @@
           "entries": [
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Convergent Mark|DRK"
+              "optionalfeature": "Convergent Mark (2)|DRK"
             },
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Ruthless Mark|DRK"
+              "optionalfeature": "Ruthless Mark (2)|DRK"
             },
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Repressing Mark|DRK"
+              "optionalfeature": "Repressing Mark (2)|DRK"
             },
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Enfeebling Mark|DRK"
+              "optionalfeature": "Enfeebling Mark (2)|DRK"
             },
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Apex Mark|DRK"
+              "optionalfeature": "Apex Mark (2)|DRK"
             },
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Frenzied Mark|DRK"
+              "optionalfeature": "Frenzied Mark (2)|DRK"
             },
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Divine Mark|DRK"
+              "optionalfeature": "Divine Mark (2)|DRK"
             }
           ]
         }
@@ -35030,6 +35334,7 @@
       "entries": [
         "Beginning at 1st level, you know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra {@damage 1d6} damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.",
         "You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't {@condition incapacitated}, and you don't have disadvantage on the attack roll.",
+        "If you do not qualify for a sneak attack, you can still deal half of the sneak dice (rounded up) as part of the attack.",
         "The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table."
       ]
     },
@@ -46590,6 +46895,170 @@
         "The whiplash from this ability is severe, giving you {@dice 1d4}+1 stacks of {@condition exhaustion}. Additionally, you cannot cast spells, or regain spell slots/sorcery points as long as you have any of the stacks of {@condition exhaustion} from this feature. The exhaustion stacks gained from this feature cannot be removed by the {@spell greater restoration} spell."
       ]
     },
+     {
+      "name": "Arcane Arms",
+      "source": "DRK",
+      "page": 66,
+      "className": "Sorcerer",
+      "classSource": "DRK",
+      "subclassShortName": "Arcane Arms",
+      "subclassSource": "DRK",
+      "level": 1,
+      "entries": [
+        "Some sorcerers are born not only with arcane power surging in their veins, but with an instinctive drive toward martial mastery. Whether due to a bloodline touched by ancient warrior spirits, an ancestral weapon infused with sentient magic, or a soul forged in the crucible of battle, these sorcerers wield arcane energy like a weapon, swift, sharp, and lethal.",
+        "Sorcerers of the arcane arms use their magic to replicate martial warfare, charging to the front lines and conjuring weapons and armor out of magic.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Arcane Arms Spells|Sorcerer|DRK|Arcane Arms|DRK|1"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Sorcerous Combatant|Sorcerer|DRK|Arcane Arms|DRK|1"
+        }
+      ]
+    },
+    {
+      "name": "Arcane Arms Spells",
+      "source": "DRK",
+      "page": 66,
+      "className": "Sorcerer",
+      "classSource": "DRK",
+      "subclassShortName": "Arcane Arms",
+      "subclassSource": "DRK",
+      "level": 1,
+      "header": 1,
+      "entries": [
+        "{@i 1st-level Arcane Arms feature}",
+        "You learn additional spells when you reach certain levels in this class, as shown on the Arcane Arms Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.",
+        "Whenever you gain a sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be from the Sorcerer spell list or require a spell attack roll.",
+        {
+          "type": "table",
+          "caption": "Arcane Arms Spells",
+          "colLabels": [
+            "Sorcerer Levels",
+            "Spells"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "1st",
+              "{@spell bladeleap|AspysGuidetoInfinitum}, {@spell guiding bolt}, {@spell phantom weapon|tct}"
+            ],
+            [
+              "3rd",
+              "{@spell flame blade}, {@spell spiritual weapon}"
+            ],
+            [
+              "5th",
+              "{@spell thunder step|XGE}, {@spell blink}"
+            ],
+            [
+              "7th",
+              "{@spell fire shield}, {@spell blight}"
+            ],
+            [
+              "9th",
+              "{@spell animate objects}, {@spell steel wind strike|XPHB}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sorcerous Combatant",
+      "source": "DRK",
+      "page": 68,
+      "className": "Sorcerer",
+      "classSource": "DRK",
+      "subclassShortName": "Arcane Arms",
+      "subclassSource": "DRK",
+      "level": 1,
+      "header": 1,
+      "entries": [
+        "{@i 1st-level Arcane Arms feature}",
+        "You always have the {@spell mage armor} spell prepared. When you cast this spell on yourself, you gain an additional bonus to your armor class equal to your charisma modifier.",
+        "When you miss a creature with a spell attack roll, the creature still takes half of the spells damage (if any) but suffers no additional effect from the spell."
+      ]
+    },
+    {
+      "name": "Spell Striker",
+      "source": "DRK",
+      "page": 68,
+      "className": "Sorcerer",
+      "classSource": "DRK",
+      "subclassShortName": "Arcane Arms",
+      "subclassSource": "DRK",
+      "level": 6,
+      "header": 1,
+      "entries": [
+        "{@i 6th-level Arcane Arms feature}",
+        "You've honed your spells to shatter through any defense. You gain the following benefits:",
+         {
+          "type": "list",
+          "items": [
+            "When you cast a spell targetting a single creature that forces them to make a dexterity or constitution saving throw, you can make an attack roll against the creature instead of the saving throw.",
+            "You learn the transmuted spell metamagic. Additionally, when you use transmuted spell, the following damage types are added to the standard list: force, necrotic, radiant."
+          ]
+        }      
+      ]
+    },
+    {
+      "name": "Arcane Arsenal",
+      "source": "DRK",
+      "page": 68,
+      "className": "Sorcerer",
+      "classSource": "DRK",
+      "subclassShortName": "Arcane Arms",
+      "subclassSource": "DRK",
+      "level": 14,
+      "header": 1,
+      "entries": [
+        "{@i 14th-level Arcane Arms feature}",
+        "You learn to conjure arms out of magic. As a bonus action, you can take on the form of a warrior for 1 minute, manifesting weapons made of magic to complement your spellcasting.",
+        "When you deal damage to a creature with a spell attack roll, you can choose to conjure a weapon, striking your foes again depending on the damage type dealt. You cannot conjure more than one weapon per turn.",
+         {
+          "type": "list",
+          "items": [
+            "{@b Acidic Whip:} Make a melee spell attack against a creature within 20 feet of you. The creature takes {@dice 2d4} + your charisma modifier acid damage and reduce their armor class by two on a hit.",
+            "{@b Frigid Shield:} You gain temporary hitpoints equal to twice your sorcerer level. If a creature hits you with a melee attack roll while you have temporary hitpoints, the creature takes cold damage equal to twice your sorcerer level.",
+            "{@b Flaming Sword:} Make a melee spell attack against a creature within 5 feet of you. The creature takes {@dice 2d10} + your charisma modifier fire damage on a hit.",
+            "{@b Forceful Strike:} Make a melee spell attack against a creature within 5 feet of you. The creature takes {@dice 2d6} + your charisma modifier force damage and the creature is pushed 20 feet away from you on a hit.",
+            "{@b Lightning Arrow:} Make a ranged spell attack against a creature within 120 feet of you. The creature takes {@dice 2d6} + your charisma modifier lightning damage on a hit.",
+            "{@b Necrotic Claws:} Make a melee spell attack against a creature within 5 feet of you. The creature takes {@dice 2d6} necrotic damage and cannot regain hitpoints until the start of your next turn on a hit.",
+            "{@b Envenomed Dagger:} Make a melee spell attack against a creature within 5 feet of you. The creature takes {@dice 2d4} + charisma modifier poison damage and has disadvantage on its next attack roll on a hit.",
+            "{@b Radiant Vessel:} You restore {@dice 2d6} + your charisma modifier hitpoints to each creature of your choice within 60 feet of you.",
+            "{@b Thunderous Maul:} Make a melee spell attack against a creature within 5 feet of you. The creature takes {@dice 2d8} + your charisma modifier damage and has the {@condition prone} condition on a hit."
+          ]
+        },
+        "Once you use this feature, you can't do so again until you finish a long rest, unless you spend 6 sorcery points to use it again."     
+      ]
+    },
+    {
+      "name": "Spellblade Mastery",
+      "source": "DRK",
+      "page": 68,
+      "className": "Sorcerer",
+      "classSource": "DRK",
+      "subclassShortName": "Arcane Arms",
+      "subclassSource": "DRK",
+      "level": 18,
+      "header": 1,
+      "entries": [
+        "{@i 18th-level Arcane Arms feature}",
+        "You've managed to weave your arcane arms seamlessly inbetween your spellcasting. You gain the following features:",
+         {
+          "type": "list",
+          "items": [
+            "If you use your action to cast a leveled spell to make a spell attack roll, you can conjure the corresponding arcane arm as a bonus action, even if you are not under arcane arsenal.",
+            "While your arcane arsenal feature is active, you can conjure the arcane arms after each spell you cast.",
+            "If you use the transmuted spell metamagic and conjure an arcane arm of the transmuted damage type, you take the maximum possible result on the arms damage die."
+          ]
+        }      
+      ]
+    },
     {
       "name": "Clockwork Soul",
       "source": "DRK",
@@ -48756,7 +49225,7 @@
           "entries": [
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Stalker's Mark|DRK"
+              "optionalfeature": "Stalker's Mark (2)|DRK"
             }
           ]
         }
@@ -48778,7 +49247,7 @@
           "entries": [
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Lethal Mark|DRK"
+              "optionalfeature": "Lethal Mark (2)|DRK"
             }
           ]
         }
@@ -48800,7 +49269,7 @@
           "entries": [
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Draconic Mark|DRK"
+              "optionalfeature": "Draconic Mark (2)|DRK"
             }
           ]
         }
@@ -48822,7 +49291,7 @@
           "entries": [
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Feywild Mark|DRK"
+              "optionalfeature": "Feywild Mark (2)|DRK"
             }
           ]
         }
@@ -48844,7 +49313,7 @@
           "entries": [
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Slayer's Mark|DRK"
+              "optionalfeature": "Slayer's Mark (2)|DRK"
             }
           ]
         }
@@ -48866,7 +49335,7 @@
           "entries": [
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Befuddling Mark|DRK"
+              "optionalfeature": "Befuddling Mark (3)|DRK"
             }
           ]
         }
@@ -48888,7 +49357,7 @@
           "entries": [
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Ethereal Mark|DRK"
+              "optionalfeature": "Ethereal Mark (3)|DRK"
             }
           ]
         }
@@ -48911,7 +49380,7 @@
           "entries": [
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Swarming Mark|DRK"
+              "optionalfeature": "Swarming Mark (2)|DRK"
             }
           ]
         }
@@ -49465,7 +49934,7 @@
       "level": 15,
       "header": 2,
       "entries": [
-        "You can add your Wisdom modifier to any saving throw you fail. If this causes you to succeed, you cannot use this feature until you take a short or long rest."
+        "You have advantage on any saving throw you make that you are not proficient in."
       ]
     },
     {
@@ -49531,7 +50000,7 @@
       "header": 2,
       "entries": [
         "You are a master at learning the attack patterns of your foe.",
-        "You gain a +3 bonus to your AC per attack that a creature makes against you on their turn. This bonus lasts until the end of the creature's turn."
+        "Your AC increases by 3 everytime you are hit by an attack. This bonus resets to 0 at the end of each of your turns."
       ]
     },
     {
@@ -50522,14 +50991,14 @@
       "subclassShortName": "Dune Warrior",
       "subclassSource": "DRK",
       "level": 14,
-      "header": 2,
+      "header": 1,
       "entries": [
         {
           "type": "options",
           "entries": [
             {
               "type": "refOptionalfeature",
-              "optionalfeature": "Taxing Mark|DRK"
+              "optionalfeature": "Taxing Mark (2)|DRK"
             }
           ]
         }
@@ -59931,6 +60400,47 @@
       ]
     },
     {
+      "name": "Arcane Arms",
+      "shortName": "Arcane Arms",
+      "source": "DRK",
+      "className": "Sorcerer",
+      "classSource": "DRK",
+      "page": 66,
+      "additionalSpells": [
+        {
+          "known": {
+            "1": [
+              "bladeleap|AspysGuidetoInfinitum",
+              "guiding bolt",
+              "phantom weapon|TCT"
+            ],
+            "3": [
+              "flame blade",
+              "spiritual weapon|XPHB"
+            ],
+            "5": [
+              "thunder step|XGE",
+              "blink"
+            ],
+            "7": [
+              "fire shield",
+              "blight"
+            ],
+            "9": [
+              "animate objects",
+              "steel wind strike"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Arcane Arms|Sorcerer|DRK|Arcane Arms|DRK|1",
+        "Spell Striker|Sorcerer|DRK|Arcane Arms|DRK|6",
+        "Arcane Arsenal|Sorcerer|DRK|Arcane Arms|DRK|14",
+        "Spellblade Mastery|Sorcerer|DRK|Arcane Arms|DRK|18"
+      ]
+    },
+    {
       "name": "Lunar Sorcery",
       "shortName": "Lunar",
       "source": "DRK",
@@ -61549,7 +62059,7 @@
       ],
       "subclassFeatures": [
         "Oath of Glory|Paladin|XPHB|Glory|XPHB|3",
-        "Aura of Alacricity|Paladin|XPHB|Glory|XPHB|7",
+        "Aura of Alacrity|Paladin|XPHB|Glory|XPHB|7",
         "Glorious Defense|Paladin|XPHB|Glory|XPHB|15",
         "Living Legend|Paladin|XPHB|Glory|XPHB|20"
       ],
@@ -66876,7 +67386,7 @@
       ]
     },
     {
-      "name": "Illuminating Mark",
+      "name": "Illuminating Mark (1)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -66890,7 +67400,7 @@
       ]
     },
     {
-      "name": "Pursuing Mark",
+      "name": "Pursuing Mark (1)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -66904,7 +67414,7 @@
       ]
     },
     {
-      "name": "Strafing Mark",
+      "name": "Strafing Mark (1)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -66918,7 +67428,7 @@
       ]
     },
     {
-      "name": "Blinding Mark",
+      "name": "Blinding Mark (1)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -66932,7 +67442,7 @@
       ]
     },
     {
-      "name": "Leashing Mark",
+      "name": "Leashing Mark (1)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -66946,7 +67456,7 @@
       ]
     },
     {
-      "name": "Elusive Mark",
+      "name": "Elusive Mark (1)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -66960,7 +67470,7 @@
       ]
     },
     {
-      "name": "Cardinal Mark",
+      "name": "Cardinal Mark (1)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -66974,7 +67484,7 @@
       ]
     },
     {
-      "name": "Vengeful Mark",
+      "name": "Vengeful Mark (1)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -67000,7 +67510,7 @@
       ]
     },
     {
-      "name": "Focused Mark",
+      "name": "Focused Mark (1)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -67026,7 +67536,7 @@
       ]
     },
     {
-      "name": "Insightful Mark",
+      "name": "Insightful Mark (1)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -67052,7 +67562,7 @@
       ]
     },
     {
-      "name": "Unveiling Mark",
+      "name": "Unveiling Mark (1)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -67078,7 +67588,7 @@
       ]
     },
     {
-      "name": "Rejuvenating Mark",
+      "name": "Rejuvenating Mark (1)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -67104,7 +67614,7 @@
       ]
     },
     {
-      "name": "Crippling Mark",
+      "name": "Crippling Mark (1)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -67130,7 +67640,7 @@
       ]
     },
     {
-      "name": "Seismic Mark",
+      "name": "Seismic Mark (1)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -67156,7 +67666,7 @@
       ]
     },
     {
-      "name": "Blurring Mark",
+      "name": "Blurring Mark (1)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -67182,7 +67692,7 @@
       ]
     },
     {
-      "name": "Convergent Mark",
+      "name": "Convergent Mark (2)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -67209,7 +67719,7 @@
       ]
     },
     {
-      "name": "Ruthless Mark",
+      "name": "Ruthless Mark (2)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -67236,7 +67746,7 @@
       ]
     },
     {
-      "name": "Repressing Mark",
+      "name": "Repressing Mark (2)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -67263,7 +67773,7 @@
       ]
     },
     {
-      "name": "Enfeebling Mark",
+      "name": "Enfeebling Mark (2)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -67290,7 +67800,7 @@
       ]
     },
     {
-      "name": "Apex Mark",
+      "name": "Apex Mark (2)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -67317,7 +67827,7 @@
       ]
     },
     {
-      "name": "Frenzied Mark",
+      "name": "Frenzied Mark (2)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -67344,7 +67854,7 @@
       ]
     },
     {
-      "name": "Divine Mark",
+      "name": "Divine Mark (2)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -67371,7 +67881,7 @@
       ]
     },
     {
-      "name": "Lethal Mark",
+      "name": "Lethal Mark (2)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -67398,7 +67908,7 @@
       ]
     },
     {
-      "name": "Draconic Mark",
+      "name": "Draconic Mark (2)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -67425,7 +67935,7 @@
       ]
     },
     {
-      "name": "Feywild Mark",
+      "name": "Feywild Mark (2)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -67452,7 +67962,7 @@
       ]
     },
     {
-      "name": "Slayer's Mark",
+      "name": "Slayer's Mark (2)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -67479,7 +67989,7 @@
       ]
     },
     {
-      "name": "Befuddling Mark",
+      "name": "Befuddling Mark (3)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -67506,7 +68016,7 @@
       ]
     },
     {
-      "name": "Ethereal Mark",
+      "name": "Ethereal Mark (3)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -67533,7 +68043,7 @@
       ]
     },
     {
-      "name": "Swarming Mark",
+      "name": "Swarming Mark (2)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -67560,7 +68070,7 @@
       ]
     },
     {
-      "name": "Stalker's Mark",
+      "name": "Stalker's Mark (2)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -67587,7 +68097,7 @@
       ]
     },
     {
-      "name": "Taxing Mark",
+      "name": "Taxing Mark (2)",
       "source": "DRK",
       "page": 74,
       "featureType": [
@@ -67758,7 +68268,7 @@
         "RI"
       ],
       "entries": [
-        "You can use your strength modifier rather than your dextirity modifier for attack and damage rolls when using a string bow (shortbow, longbow, etc)."
+        "You can use your strength modifier rather than your dexterity modifier for attack and damage rolls when using a string bow (shortbow, longbow, etc)."
       ]
     },
     {
@@ -67785,6 +68295,113 @@
       ],
       "entries": [
         "When you drop to 0 hitpoints, you can drop to 1 hitpoint instead. Once you use this feature, you cannot do so again until you finish a short or long rest."
+      ]
+    },
+    {
+      "name": "Covert I",
+      "source": "DRK",
+      "page": 71,
+      "isClassFeatureVariant": true,
+      "featureType": [
+        "RI"
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 5,
+            "class": {
+              "name": "Ranger",
+              "source": "DRK",
+              "visible": true
+            }
+          }
+        }
+      ],
+      "entries": [
+        "You can use the {@action hide} action as a bonus action. Additionally, creatures have disadvantage on {@skill Perception} checks against you when you are surrounded by foliage."
+      ]
+    },
+    {
+      "name": "Covert II",
+      "source": "DRK",
+      "page": 71,
+      "isClassFeatureVariant": true,
+      "featureType": [
+        "RI"
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 9,
+            "class": {
+              "name": "Ranger",
+              "source": "DRK",
+              "visible": true
+            }
+          },
+          "optionalfeature": [
+            "Covert I|DRK"
+          ]
+        }
+      ],
+      "entries": [
+        "You draw on the powers of nature to hide yourself from view briefly. As a bonus action, you can magically become {@condition invisible}, along with any equipment you are wearing or carrying, until the start of your next turn.",
+        "You can use this feature a number of times equal to your wisdom modifier, and you regain all expended uses when you finish a long rest."
+      ]
+    },
+    {
+      "name": "Covert III",
+      "source": "DRK",
+      "page": 71,
+      "isClassFeatureVariant": true,
+      "featureType": [
+        "RI"
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 13,
+            "class": {
+              "name": "Ranger",
+              "source": "DRK",
+              "visible": true
+            }
+          },
+          "optionalfeature": [
+            "Covert II|DRK"
+          ]
+        }
+      ],
+      "entries": [
+        "When you or a creature of your choice that you can see makes a dexterity {@skill Stealth} check while in natural terrain, they gain a bonus to that stealth check equal to your wisdom modifier.",
+        "Your critical hit range for attacks is reduced by 1 if you are hidden or invisible from the target."
+      ]
+    },
+    {
+      "name": "Covert IV",
+      "source": "DRK",
+      "page": 71,
+      "isClassFeatureVariant": true,
+      "featureType": [
+        "RI"
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 17,
+            "class": {
+              "name": "Ranger",
+              "source": "DRK",
+              "visible": true
+            }
+          },
+          "optionalfeature": [
+            "Covert III|DRK"
+          ]
+        }
+      ],
+      "entries": [
+        "You always have the {@spell greater invisibility} spell prepared, and you can cast it once per day without expending a spell slot. Additionally, when you cast this spell on yourself, you can forgo the need to concentrate on it."
       ]
     },
     {
@@ -67836,7 +68453,7 @@
         }
       ],
       "entries": [
-        "You ignore non-magical difficult terrain. You also have advantage on athletics or acrobatics checks made to avoid or escape a grapple."
+        "Your speed increases by an additionaly 5 feet and you ignore non-magical difficult terrain. You also have advantage on athletics or acrobatics checks made to avoid or escape a grapple."
       ]
     },
     {
@@ -67863,7 +68480,7 @@
       ],
       "entries": [
         "You automatically succeed on {@skill Medicine} checks in order to stabilise a creature. Additionally, you can create two {@item healing potion} whenever you finish a long rest, provided you have a herbalism kit with you.",
-        "Healing potions created with this line with imbibement lose their potency when you finish your next long rest."
+        "Healing potions created with this imbibement tree lose their potency when you finish your next long rest."
       ]
     },
     {
@@ -68025,7 +68642,7 @@
         }
       ],
       "entries": [
-        "You have resistance to one of bludgeoning, slashing or piercing damage.",
+        "You gain resistance to one of bludgeoning, slashing or piercing damage.",
         "You have advantage on {@skill Perception} and {@skill Survival} checks when in a town or a city."
       ]
     },
@@ -68188,7 +68805,7 @@
         }
       ],
       "entries": [
-        "You have advantage on saving throws against being {@condition frightened}, {@condition charmed}, or magically put to sleep."
+        "You have advantage on saving throws against being {@condition frightened}, {@condition charmed}, or magically being put to sleep."
       ]
     },
     {
@@ -68385,7 +69002,7 @@
         }
       ],
       "entries": [
-        "If a spell that improves the effectiveness of your weapons requires concentration, you can cast that spell without the need to concentrate on it. Once you use this feature, you cannot do so again until you take a long rest, unless your strongest available spell slot."
+        "You can concentrate on two spells as long as one of the spells improve the effectiveness of your weapon attacks. If you are concentrating on multiple spells, you have disadvantage on constitution saving throws made in order to maintain concentration."
       ]
     },
     {
@@ -68517,7 +69134,7 @@
       ],
       "entries": [
         "When you create a familiar with the {@spell find familiar} spell, it can take the from of any beast of CR 1/2 or lower.",
-        "Beasts or fey under your control gain a number of temporary hitpoints equal to your ranger level whenever they are summoned or conjured."
+        "Beasts or fey under your control gain a number of temporary hitpoints equal to your wisdom modifier + your ranger level whenever they are summoned or conjured."
       ]
     },
     {
@@ -68622,7 +69239,7 @@
         }
       ],
       "entries": [
-        "You always have the {@spell stoneskin} spell prepared, and you can cast it once per day without expending a spell slot. Additionally, when you cast the spell on yourself, you gain resistance to magical bludgeoning, piercing and slashing damage."
+        "You always have the {@spell stoneskin} spell prepared, and you can cast it once per day without expending a spell slot. Additionally, when you cast the spell on yourself, you gain a bonus to your constitution saving throws and armor class equal to your wisdom modifier."
       ]
     },
     {
@@ -68674,8 +69291,7 @@
         }
       ],
       "entries": [
-        "When you apply poison on your weapon/ammunition, it stays potent for 10 minutes, rather than 1. You can create two vials of {@item serpent venom} rather than basic poison whenever you finish a long rest.",
-        "When improving your skill in the poisoner profession, the time required to do so is reduced by a quarter."
+        "When you apply poison on your weapon/ammunition, it stays potent for 10 minutes, rather than 1. You can create two vials of {@item serpent venom} in addition to your other poisons whenever you finish a long rest."
       ]
     },
     {
@@ -68701,7 +69317,7 @@
         }
       ],
       "entries": [
-        "You have advantage on saving throws against poisons and disease. You can create two {@item greater healing potions} rather than healing potions whenever you finish a long rest.",
+        "You have advantage on saving throws against poisons and disease. You can create two {@item greater healing potions} in addition to your other healing potions whenever you finish a long rest.",
         "When improving your skill in the herbalist profession, the time required to do so is reduced by a quarter."
       ]
     },
@@ -68754,7 +69370,7 @@
         }
       ],
       "entries": [
-        "You gain advantage on all saving throws when under a quarter of your hitpoints. Additionally, any healing you recieve while under a quarter your hitpoints is doubled."
+        "You gain advantage on all saving throws when under a quarter of your hitpoints. Additionally, any healing you recieve while under a quarter of your hitpoints is doubled."
       ]
     },
     {
@@ -68780,7 +69396,7 @@
         }
       ],
       "entries": [
-        "When you fail a saving throw, you can choose to succeed instead. You can use this feature twice, regaining expended uses on a long rest."
+        "When you fail a saving throw, you can choose to succeed instead. You can use this feature once, regaining expended uses on a short or long rest."
       ]
     },
     {
@@ -68803,7 +69419,7 @@
         }
       ],
       "entries": [
-        "When you fail a saving throw, you can choose to add a bonus to it equal to your hunter's mark die. You can use this feature twice, regaining all expended uses on a long rest. If you run out of uses of this feature, you can expend a use of ranger's quarry to use this feature again."
+        "When you fail a saving throw, you can use your reaction to add a bonus to it equal to your hunter's mark die. You can use this feature twice, regaining all expended uses on a long rest. If you run out of uses of this feature, you can expend a use of ranger's quarry to use this feature again."
       ]
     },
     {
@@ -68852,7 +69468,7 @@
         }
       ],
       "entries": [
-        "If hit a creature with a melee weapon attack while under the benefit of flanking, you can roll damage for the attack twice and choose either total."
+        "If hit a creature with a melee weapon attack while under the benefit of flanking, you can add your proficiency bonus to the damage roll."
       ]
     },
     {
@@ -68905,7 +69521,7 @@
       ],
       "entries": [
         "You impose and benefit from flanking a creature if it is within your attack range.",
-        "Your crit-range is reduced to 16-20 for opportunity attacks made with a reach weapon.",
+        "Your critical hit range is reduced to 16-20 for opportunity attacks made with a reach weapon.",
         "If you land a critical hit on an opportunity attack with a reach weapon, you can use the highest possible result on the damage die, rather than rolling for damage."
       ]
     },
@@ -68960,7 +69576,7 @@
       ],
       "entries": [
         "The range of your thrown weapons are doubled if you move atleast 10 feet before making the attack.",
-        "You can choose to treat a thrown weapon attack as a melee weapon attack (if using strength) or a ranged weapon attack (if using dexterity).",
+        "You can choose to treat a thrown weapon attack as a melee weapon attack (if using strength) or a ranged weapon attack (if using dexterity) for the purpose of benefitting from class and subclass features. This benefit does not extend to other ranger imbibements.",
         "You can choose to gain disadvantage on your attack in order to lob two thrown weapons as part of the same attack. You roll attack and damage rolls seperately for both weapons."
       ]
     },
@@ -69018,7 +69634,8 @@
         }
       ],
       "entries": [
-        "If you run out of uses of ranger's quarry, you can expend a spell slot in order to regain a number of ranger's quarry uses equal to the spell slot level."
+        "If you run out of uses of ranger's quarry, you can perfrom a ritual for ten minute in order to regain a number of ranger's quarry uses equal to the level of the spell slot expended.",
+        "Once you use this feature, you cannot do so again until you finish a long rest."
       ]
     },
     {
@@ -69080,17 +69697,50 @@
         }
       ],
       "entries": [
-        "The following options are added to the types of special ammunition that you can create. Additionally, you can now create a number of arrows equal to twice your proficiency bonus whenever you finish a long rest.",
+        "The following options are added to the types of special ammunition that you can create.",
         {
           "type": "list",
           "items": [
             "{@item Arrow of Explosions|AspysGuidetoInfinitum}",
             "{@item Arrow of Static Discharge|AspysGuidetoInfinitum}",
-            "{@item Arrow of Antimagic|AspysGuidetoInfinitum}",
-            "{@item Arrow of Imprisonment|AspysGuidetoInfinitum}",
             "{@item +3 ammunition}"
           ]
+        },
+        "You can also create no more than 1 arrow from the options below.",
+        {
+          "type": "list",
+          "items": [
+            "{@item Arrow of Antimagic|AspysGuidetoInfinitum}",
+            "{@item Arrow of Imprisonment|AspysGuidetoInfinitum}"
+          ]
         }
+      ]
+    },
+    {
+      "name": "Poisoner III",
+      "source": "DRK",
+      "page": 155,
+      "featureType": [
+        "RI"
+      ],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 9,
+            "class": {
+              "name": "Ranger",
+              "source": "DRK",
+              "visible": true
+            }
+          },
+          "optionalfeature": [
+            "Poisoner II|DRK"
+          ]
+        }
+      ],
+      "entries": [
+        "You can create two vials of {@item wyvern poison} in addition to your other poisons whenever you finish a long rest.",
+        "When improving your skill in the poisoner profession, the time required to do so is reduced by a quarter."
       ]
     },
     {
@@ -69116,7 +69766,7 @@
         }
       ],
       "entries": [
-        "You can create two {@item superior healing potion} rather than healing potions whenever you finish a long rest.",
+        "You can create two {@item superior healing potion} In addition to your other healing potions whenever you finish a long rest.",
         "The time required to improve your skill in the herbalist profession is decreased by half."
       ]
     },
@@ -69143,7 +69793,7 @@
         }
       ],
       "entries": [
-        "You can create two {@item supreme healing potion} rather than healing potions whenever you finish a long rest.",
+        "You can create two {@item supreme healing potion} In addition to your other healing potions whenever you finish a long rest.",
         "The time required to create and enhance potions is reduced by half."
       ]
     },
@@ -69170,7 +69820,7 @@
         }
       ],
       "entries": [
-        "You can create two doses of {@item Purple Worm Poison}, instead of basic poison whenever you finish a long rest.",
+        "You can create two doses of {@item Purple Worm Poison} in addition to your other poisons whenever you finish a long rest.",
         "The time required to create and enhance poisons is reduced by half."
       ]
     },
@@ -74571,17 +75221,6 @@
           "type": "row",
           "style": "row-indent-first",
           "row": [
-            "Dwarf",
-            "Stonecutting",
-            "Whenever you make an Intelligence ({@skill History}) check related to the origin of stonework, you are considered proficient in the {@skill History} skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.",
-            "",
-            "2"
-          ]
-        },
-        {
-          "type": "row",
-          "style": "row-indent-first",
-          "row": [
             "Dwarf (mark of warding)",
             "Warder's intuition",
             "When you make an Intelligence ({@skill Investigation}) check or an ability check using {@item thieves' tools|PHB}, you can roll a {@dice d4} and add the number rolled to the ability check.",
@@ -75042,17 +75681,6 @@
           "type": "row",
           "style": "row-indent-first",
           "row": [
-            "Goliath",
-            "Mountain born",
-            "You have resistance to cold damage. You also naturally acclimate to high altitudes, even if you've never been to one. This includes elevations above 20,000 feet.",
-            "",
-            "15"
-          ]
-        },
-        {
-          "type": "row",
-          "style": "row-indent-first",
-          "row": [
             "Half-leberi",
             "Sour blood",
             "You have advantage on saving throws involving poison damage and disease.",
@@ -75445,6 +76073,17 @@
           "type": "row",
           "style": "row-indent-first",
           "row": [
+            "Dwarf",
+            "Stonecunning",
+            "As a bonus action, you gain {@sense Tremorsense|XPHB} ith a range of 60 feet for 10 minutes. You must be on a stone surface or touching a stone surface to use this {@sense Tremorsense|XPHB}. The stone can be natural or worked. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+            "",
+            "18"
+          ]
+        },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
             "Dwarf (hill)",
             "Dwarven toughness",
             "Your hitpoint maximum increases by 1, and it increases by 1 every time you gain a level.",
@@ -75576,10 +76215,10 @@
           "style": "row-indent-first",
           "row": [
             "Goliath",
-            "Stone's endurance",
-            "You can supernaturally draw on unyielding stone to shrug off harm. When you take damage, you can use your reaction to roll a {@dice d12}. Add your Constitution modifier to the number rolled and reduce the damage by that total.You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+            "Large Form",
+            "Starting at character level 5, you can change your size to lrge as a bonus action if you're in a big enough space. This transformation lasts for 10 minutes or until you end it (no ction required). For tht duration, you have advantage on Strength checks, and your speed increases by 10 feet. Once you use this trait, you can't use it again until you finish a long rest.",
             "",
-            "26"
+            "28"
           ]
         },
         {
@@ -76343,6 +76982,72 @@
             "You can take the {@action Disengage} or {@action Hide} action as a bonus action on each of your turns.",
             "",
             "38"
+          ]
+        },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
+            "Goliath",
+            "Giant ancestry: Cloud's jaunt",
+            "As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see.",
+            "Goliath primary race",
+            "55"
+          ]
+        },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
+            "Goliath",
+            "Giant ancestry: Fire's burn",
+            "When you hit a target with an attack roll and deal damage to it, you can also deal {@damage 1d10} fire damage to that target.",
+            "Goliath primary race, no other giant's ancestry",
+            "27"
+          ]
+        },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
+            "Goliath",
+            "Giant ancestry: Frost's chill",
+            "When you hit a target with an attack roll and deal damage to it, you can also deal {@damage 1d6} cold damage to that target and reduce its speed by 10 feet until the start of your next turn.",
+            "Goliath primary race, no other giant's ancestry",
+            "26"
+          ]
+        },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
+            "Goliath",
+            "Giant ancestry: Hill's tumble",
+            "When you hit a target with an attack roll and deal damage to it, you can give that target the {@condition prone} condition.",
+            "Goliath primary race, no other giant's ancestry",
+            "32"
+          ]
+        },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
+            "Goliath",
+            "Giant ancestry: Stone's endurance",
+            "When you take damage, you can take a reaction to roll {@dice 1d12}. Add your constitution modifier to the number rolled and reduce the damage by that total.",
+            "Goliath primary race, no other giant's ancestry",
+            "26"
+          ]
+        },
+        {
+          "type": "row",
+          "style": "row-indent-first",
+          "row": [
+            "Goliath",
+            "Giant ancestry: Storm's thunder",
+            "When you take damage from a creature within 60 feet of you, you can take a reaction to deal {@damage 1d8} thunder damage to that creature.",
+            "Goliath primary race, no other giant's ancestry",
+            "13"
           ]
         },
         {
@@ -77388,10 +78093,10 @@
           "entries": [
             "Choose your race's {@table Minor traits|DRK}. Consult the table for prerequisites.",
             "<select name=\"creature-minor-natural-weapons\" id=\"creature-minor-natural-weapons\" onchange=\"updateValue()\" style=\"width: 150px;\">\n  <option value=\"Natural Weapons\" data-value=\"0\">Natural Weapons</option>\n  <option value=\"Aarakocra - Talons\" data-value=\"7\">Aarakocra - Talons</option>\n  <option value=\"Centaur - Hooves\" data-value=\"10\">Centaur - Hooves</option>\n  <option value=\"Leonin - Claws\" data-value=\"3\">Leonin - Claws</option>\n  <option value=\"Lizardfolk - Bite\" data-value=\"10\">Lizardfolk - Bite</option>\n  <option value=\"Minotaur - Horns\" data-value=\"10\">Minotaur - Horns</option>\n  <option value=\"Satyr - Ram\" data-value=\"10\">Satyr - Ram</option>\n  <option value=\"Tabaxi; Tortle - Cat's claws; Claws\" data-value=\"5\">Tabaxi; Tortle - Cat's claws; Claws</option>\n</select>\n<input type=\"text\" id=\"creature-minor-natural-weapons-cost\" readonly value=0>",
-            "<select name=\"creature-skill-enhancing-trait\" id=\"creature-skill-enhancing-trait\" onchange=\"updateValue()\" style=\"width: 150px;\">\n  <option value=\"SkillEnhancingTrait\" data-value=\"0\">Skill Enhancing Trait</option>\n  <option value=\"Bugbear - Sneaky\" data-value=\"7\">Bugbear - Sneaky</option>\n  <option value=\"Dhampir; Hexblood; Reborn - Ancestral Legacy\" data-value=\"12\">Dhampir; Hexblood; Reborn - Ancestral Legacy</option>\n  <option value=\"Deep Gnome - Svirfneblin camoflage\" data-value=\"5\">Deep Gnome - Svirfneblin camoflage</option>\n  <option value=\"Dragonborn (draconblood) - Chromatic warding\" data-value=\"5\">Dragonborn (draconblood) - Chromatic warding</option>\n  <option value=\"Dwarf - Stonecutting\" data-value=\"2\">Dwarf - Stonecutting</option>\n  <option value=\"Dwarf (mark of warding) - Warder's intuition\" data-value=\"5\">Dwarf (mark of warding) - Warder's intuition</option>\n  <option value=\"Elf (mark of shadow) - cunning intuition\" data-value=\"4\">Elf (mark of shadow) - cunning intuition</option>\n  <option value=\"Elf (pallid) - Incisive sense\" data-value=\"6\">Elf (pallid) - Incisive sense</option>\n  <option value=\"Giff - Hippo build\" data-value=\"14\">Giff - Hippo build</option>\n  <option value=\"Gnome (mark of scribing) - Gifted scribe\" data-value=\"2\">Gnome (mark of scribing) - Gifted scribe</option>\n  <option value=\"Gnome (rock) - Artificer's lore\" data-value=\"1\">Gnome (rock) - Artificer's lore</option>\n  <option value=\"Goliath - Little giant\" data-value=\"5\">Goliath - Little giant</option>\n  <option value=\"Half-elf (mark of detection) - Deductive intuition\" data-value=\"7\">Half-elf (mark of detection) - Deductive intuition</option>\n  <option value=\"Half-elf (mark of the storm) - Windwright's intuition\" data-value=\"3\">Half-elf (mark of the storm) - Windwright's intuition</option>\n  <option value=\"Half-orc/human (mark of finding) - Hunter's intuition\" data-value=\"5\">Half-orc/human (mark of finding) - Hunter's intuition</option>\n  <option value=\"Halfling (mark of healing) - Medical intuition\" data-value=\"3\">Halfling (mark of healing) - Medical intuition</option>\n  <option value=\"Halfling (mark of hospitality) - Ever hospitable\" data-value=\"4\">Halfling (mark of hospitality) - Ever hospitable</option>\n  <option value=\"Human (mark of handling) - Wild intuition\" data-value=\"3\">Human (mark of handling) - Wild intuition</option>\n  <option value=\"Human (mark of making) - Artisan's intuition\" data-value=\"7\">Human (mark of making) - Artisan's intuition</option>\n  <option value=\"Human (mark of passage) - Intuitive motion\" data-value=\"4\">Human (mark of passage) - Intuitive motion</option>\n  <option value=\"Human (mark of sentinel) - Intuitive motion\" data-value=\"8\">Human (mark of sentinel) - Intuitive motion</option>\n  <option value=\"Kenku - Kenku recall\" data-value=\"23\">Kenku - Kenku recall</option>\n  <option value=\"Loxodon - Keen smell\" data-value=\"6\">Loxodon - Keen smell</option>\n  <option value=\"Minotaur - Labyrinthine recall\" data-value=\"3\">Minotaur - Labyrinthine recall</option>\n  <option value=\"Reborn - Knowledge from a past life\" data-value=\"16\">Reborn - Knowledge from a past life</option>\n  <option value=\"Vedalken - Tireless precision\" data-value=\"8\">Vedalken - Tireless precision</option>\n  <option value=\"Vermkin (longsnout) - Sneaky scurry\" data-value=\"12\">Vermkin (longsnout) - Sneaky scurry</option>\n  <option value=\"Vermkin (softfur) - Bright-eyed and bushy-tailed\" data-value=\"6\">Vermkin (softfur) - Bright-eyed and bushy-tailed</option>\n  <option value=\"Vermkin (longsnout) - Nose for trouble\" data-value=\"3\">Vermkin (longsnout) - Nose for trouble</option>\n</select>\n<input type=\"text\" id=\"creature-skill-enhancing-trait-cost\" readonly value=0>",
+            "<select name=\"creature-skill-enhancing-trait\" id=\"creature-skill-enhancing-trait\" onchange=\"updateValue()\" style=\"width: 150px;\">\n  <option value=\"SkillEnhancingTrait\" data-value=\"0\">Skill Enhancing Trait</option>\n  <option value=\"Bugbear - Sneaky\" data-value=\"7\">Bugbear - Sneaky</option>\n  <option value=\"Dhampir; Hexblood; Reborn - Ancestral Legacy\" data-value=\"12\">Dhampir; Hexblood; Reborn - Ancestral Legacy</option>\n  <option value=\"Deep Gnome - Svirfneblin camoflage\" data-value=\"5\">Deep Gnome - Svirfneblin camoflage</option>\n  <option value=\"Dragonborn (draconblood) - Chromatic warding\" data-value=\"5\">Dragonborn (draconblood) - Chromatic warding</option>\n  <option value=\"Dwarf (mark of warding) - Warder's intuition\" data-value=\"5\">Dwarf (mark of warding) - Warder's intuition</option>\n  <option value=\"Elf (mark of shadow) - cunning intuition\" data-value=\"4\">Elf (mark of shadow) - cunning intuition</option>\n  <option value=\"Elf (pallid) - Incisive sense\" data-value=\"6\">Elf (pallid) - Incisive sense</option>\n  <option value=\"Giff - Hippo build\" data-value=\"14\">Giff - Hippo build</option>\n  <option value=\"Gnome (mark of scribing) - Gifted scribe\" data-value=\"2\">Gnome (mark of scribing) - Gifted scribe</option>\n  <option value=\"Gnome (rock) - Artificer's lore\" data-value=\"1\">Gnome (rock) - Artificer's lore</option>\n  <option value=\"Goliath - Little giant\" data-value=\"5\">Goliath - Little giant</option>\n  <option value=\"Half-elf (mark of detection) - Deductive intuition\" data-value=\"7\">Half-elf (mark of detection) - Deductive intuition</option>\n  <option value=\"Half-elf (mark of the storm) - Windwright's intuition\" data-value=\"3\">Half-elf (mark of the storm) - Windwright's intuition</option>\n  <option value=\"Half-orc/human (mark of finding) - Hunter's intuition\" data-value=\"5\">Half-orc/human (mark of finding) - Hunter's intuition</option>\n  <option value=\"Halfling (mark of healing) - Medical intuition\" data-value=\"3\">Halfling (mark of healing) - Medical intuition</option>\n  <option value=\"Halfling (mark of hospitality) - Ever hospitable\" data-value=\"4\">Halfling (mark of hospitality) - Ever hospitable</option>\n  <option value=\"Human (mark of handling) - Wild intuition\" data-value=\"3\">Human (mark of handling) - Wild intuition</option>\n  <option value=\"Human (mark of making) - Artisan's intuition\" data-value=\"7\">Human (mark of making) - Artisan's intuition</option>\n  <option value=\"Human (mark of passage) - Intuitive motion\" data-value=\"4\">Human (mark of passage) - Intuitive motion</option>\n  <option value=\"Human (mark of sentinel) - Intuitive motion\" data-value=\"8\">Human (mark of sentinel) - Intuitive motion</option>\n  <option value=\"Kenku - Kenku recall\" data-value=\"23\">Kenku - Kenku recall</option>\n  <option value=\"Loxodon - Keen smell\" data-value=\"6\">Loxodon - Keen smell</option>\n  <option value=\"Minotaur - Labyrinthine recall\" data-value=\"3\">Minotaur - Labyrinthine recall</option>\n  <option value=\"Reborn - Knowledge from a past life\" data-value=\"16\">Reborn - Knowledge from a past life</option>\n  <option value=\"Vedalken - Tireless precision\" data-value=\"8\">Vedalken - Tireless precision</option>\n  <option value=\"Vermkin (longsnout) - Sneaky scurry\" data-value=\"12\">Vermkin (longsnout) - Sneaky scurry</option>\n  <option value=\"Vermkin (softfur) - Bright-eyed and bushy-tailed\" data-value=\"6\">Vermkin (softfur) - Bright-eyed and bushy-tailed</option>\n  <option value=\"Vermkin (longsnout) - Nose for trouble\" data-value=\"3\">Vermkin (longsnout) - Nose for trouble</option>\n</select>\n<input type=\"text\" id=\"creature-skill-enhancing-trait-cost\" readonly value=0>",
             "<select name=\"creature-natural-armor-traits\" id=\"creature-natural-armor-traits\" onchange=\"updateValue()\" style=\"width: 150px;\">\n  <option value=\"NaturalArmorTraits\" data-value=\"0\">Natural Armor Traits</option>\n  <option value=\"Autognome - Armored casing\" data-value=\"15\">Autognome - Armored casing</option>\n  <option value=\"Lizardfolk - Natural armor\" data-value=\"8\">Lizardfolk - Natural armor</option>\n  <option value=\"Loxodon - Natural armor\" data-value=\"18\">Loxodon - Natural armor</option>\n  <option value=\"Tortle - Natural armor\" data-value=\"28\">Tortle - Natural armor</option>\n</select>\n<input type=\"text\" id=\"creature-natural-armor-traits-cost\" readonly value=0>",
             "<select name=\"creature-damage-condition-resistance\" id=\"creature-damage-condition-resistance\" onchange=\"updateValue()\" style=\"width: 150px;\">\n  <option value=\"DamageConditionResistance\" data-value=\"0\">Damage and Condition Resistances</option>\n  <option value=\"Aasimar - Celestial resistance\" data-value=\"31\">Aasimar - Celestial resistance</option>\n  <option value=\"Elf, Bugbear, Fairy, etc. - Fey ancestry\" data-value=\"8\">Elf, Bugbear, Fairy, etc. - Fey ancestry</option>\n  <option value=\"Autognome - Mechanical nature\" data-value=\"40\">Autognome - Mechanical nature</option>\n  <option value=\"Dragonborn - Draconic Resilience\" data-value=\"18\">Dragonborn - Draconic Resilience</option>\n  <option value=\"Dragonborn (chromatic) - Chromatic warding\" data-value=\"22\">Dragonborn (chromatic) - Chromatic warding</option>\n  <option value=\"Duergar - Psionic fortitude\" data-value=\"14\">Duergar - Psionic fortitude</option>\n  <option value=\"Dwarf; halfling (stout); yuan-ti - Darven/Stout/poison resilience\" data-value=\"26\">Dwarf; halfling (stout); yuan-ti - Darven/Stout/poison resilience</option>\n  <option value=\"Shadar-kai - Necrotic resistance\" data-value=\"18\">Shadar-kai - Necrotic resistance</option>\n  <option value=\"Genasi (fire); Tiefling - Fire/hellish resistance\" data-value=\"16\">Genasi (fire); Tiefling - Fire/hellish resistance</option>\n  <option value=\"Genasi (water) - Acid resistance\" data-value=\"12\">Genasi (water) - Acid resistance</option>\n  <option value=\"Genasi (air) - Lightning resistance\" data-value=\"13\">Genasi (air) - Lightning resistance</option>\n  <option value=\"Goliath - Mountain born\" data-value=\"15\">Goliath - Mountain born</option>\n  <option value=\"Half-leberi - sour blood\" data-value=\"9\">Half-leberi - sour blood</option>\n  <option value=\"Halfling; kobold - Brave/Defiance\" data-value=\"11\">Halfling; kobold - Brave/Defiance</option>\n  <option value=\"Kalashtar - Mental discipline\" data-value=\"11\">Kalashtar - Mental discipline</option>\n  <option value=\"Vermkin (longsnout) - iron gut\" data-value=\"11\">Vermkin (longsnout) - iron gut</option>\n  <option value=\"Kender - Fearless\" data-value=\"21\">Kender - Fearless</option>\n  <option value=\"Leberi - pungent blood\" data-value=\"17\">Leberi - pungent blood</option>\n  <option value=\"Loxodon - Loxodon serenity\" data-value=\"19\">Loxodon - Loxodon serenity</option>\n  <option value=\"Vermkin (Dykentail) - riverborn\" data-value=\"23\">Vermkin (Dykentail) - river born</option>\n  <option value=\"Vermkin (longsnout) - iron gut\" data-value=\"11\">Vermkin (longsnout) - irongut</option>\n  <option value=\"Warforged - steadfast\" data-value=\"9\">Warforged - steadfast</option>\n  <option value=\"Warforged - Transformative subroutine\" data-value=\"7\">Warforged - Transformative subroutine</option>\n</select>\n<input type=\"text\" id=\"creature-damage-condition-resistance-cost\" readonly value=0>",
-            "<div class=\"dropdown\">\n    <button class=\"my-button\" onclick=\"toggleDropdown('minor-traits-dropdown')\">Other Minor Traits</button>\n    <div id=\"minor-traits-dropdown\" class=\"dropdown-content\">\n        <label><input type=\"checkbox\" value=\"10\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Aasimar - Healing Hands</label>\n        <label><input type=\"checkbox\" value=\"7\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Elf - Trance</label>\n        <label><input type=\"checkbox\" value=\"15\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Autognome - Healing Machine</label>\n        <label><input type=\"checkbox\" value=\"4\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Autognome, Warforged - Sentry's Rest</label>\n        <label><input type=\"checkbox\" value=\"20\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Bugbear - Long-Limbed</label>\n        <label><input type=\"checkbox\" value=\"4\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Bugbear, Goliath, etc. - Powerful Build</label>\n        <label><input type=\"checkbox\" value=\"13\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Centaur - Charge</label>\n        <label><input type=\"checkbox\" value=\"0\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Centaur - Equine Build</label>\n        <label><input type=\"checkbox\" value=\"10\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Dhampir - Deathless Nature</label>\n        <label><input type=\"checkbox\" value=\"25\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Dhampir - Spider Climb</label>\n        <label><input type=\"checkbox\" value=\"18\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Dhampir - Vampire Bite</label>\n        <label><input type=\"checkbox\" value=\"0\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Dragonborn - Draconic Ancestry</label>\n        <label><input type=\"checkbox\" value=\"10\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Dragonborn (Gem) - Psionic Mind</label>\n        <label><input type=\"checkbox\" value=\"5\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Dragonborn (Ravenite) - Vengeful Assault</label>\n        <label><input type=\"checkbox\" value=\"-25\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Duergar, Drow, etc. - Sunlight Sensitivity</label>\n        <label><input type=\"checkbox\" value=\"25\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Dwarf (Hill) - Dwarven Toughness</label>\n        <label><input type=\"checkbox\" value=\"2\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Elf (Sea), Triton - Friend/Emissary of the Sea</label>\n        <label><input type=\"checkbox\" value=\"3\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Elf (Wood) - Mask of the Wild</label>\n        <label><input type=\"checkbox\" value=\"4\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Firbolg - Speech of Beast and Leaf</label>\n        <label><input type=\"checkbox\" value=\"12\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Genasi (Air) - Unending Breath</label>\n        <label><input type=\"checkbox\" value=\"6\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Genasi (Earth) - Earth Walk</label>\n        <label><input type=\"checkbox\" value=\"8\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Genasi (Water), Triton, etc. - Amphibious</label>\n        <label><input type=\"checkbox\" value=\"18\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Giff - Astral Spark</label>\n        <label><input type=\"checkbox\" value=\"5\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Gnome (Rock) - Tinker</label>\n        <label><input type=\"checkbox\" value=\"23\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Goblin - Fury of the Small</label>\n        <label><input type=\"checkbox\" value=\"26\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Goliath - Stone's Endurance</label>\n        <label><input type=\"checkbox\" value=\"3\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Hadozee - Dexterous Feet</label>\n        <label><input type=\"checkbox\" value=\"7\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Hadozee - Glide</label>\n        <label><input type=\"checkbox\" value=\"17\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Hadozee - Hadozee Dodge</label>\n        <label><input type=\"checkbox\" value=\"30\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Half-Orc - Relentless Endurance</label>\n        <label><input type=\"checkbox\" value=\"12\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Half-Orc - Savage Attacks</label>\n        <label><input type=\"checkbox\" value=\"8\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Halfling (Ghostwise) - Silent Speech</label>\n        <label><input type=\"checkbox\" value=\"5\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Halfling (Lightfoot) - Naturally Stealthy</label>\n        <label><input type=\"checkbox\" value=\"7\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Halfling (Lotusden) - Timberwalk</label>\n        <label><input type=\"checkbox\" value=\"8\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Harengon - Lucky Footwork</label>\n        <label><input type=\"checkbox\" value=\"26\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Hexblood - Eerie Token</label>\n        <label><input type=\"checkbox\" value=\"19\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Hobgoblin - Fey Gift</label>\n        <label><input type=\"checkbox\" value=\"12\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Kalashtar - Mind Link</label>\n        <label><input type=\"checkbox\" value=\"3\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Kalashtar - Severed from Dreams</label>\n        <label><input type=\"checkbox\" value=\"21\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Kender - Taunt</label>\n        <label><input type=\"checkbox\" value=\"7\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Kenku - Expert Duplication</label>\n        <label><input type=\"checkbox\" value=\"20\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Kenku - Mimicry</label>\n        <label><input type=\"checkbox\" value=\"11\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Kobold - Kobold Legacy (Craftiness, Defiance)</label>\n        <label><input type=\"checkbox\" value=\"8\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Leonin - Daunting Roar</label>\n        <label><input type=\"checkbox\" value=\"10\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Lizardfolk - Hold Breath</label>\n        <label><input type=\"checkbox\" value=\"14\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Lizardfolk - Hungry Jaws</label>\n        <label><input type=\"checkbox\" value=\"25\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Loxodon - Trunk</label>\n        <label><input type=\"checkbox\" value=\"14\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Minotaur - Goring Rush</label>\n        <label><input type=\"checkbox\" value=\"28\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Orc - Adrenaline Rush</label>\n        <label><input type=\"checkbox\" value=\"2\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Satyr - Mirthful Leaps</label>\n        <label><input type=\"checkbox\" value=\"15\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Tabaxi - Feline Agility</label>\n        <label><input type=\"checkbox\" value=\"10\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Tortle - Shell Defense</label>\n        <label><input type=\"checkbox\" value=\"6\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Vedalken - Partially Amphibious</label>\n        <label><input type=\"checkbox\" value=\"4\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Verdan - Black Blood Healing</label>\n        <label><input type=\"checkbox\" value=\"6\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Verdan - Limited Telepathy</label>\n        <label><input type=\"checkbox\" value=\"3\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Vermkin - Scurry</label>\n        <label><input type=\"checkbox\" value=\"6\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Vermkin - free gliders</label>\n        <label><input type=\"checkbox\" value=\"16\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Vermkin (prickleback) - vengeful prick</label>\n        <label><input type=\"checkbox\" value=\"6\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Vermkin (softfur) - Button-eyed</label>\n        <label><input type=\"checkbox\" value=\"22\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Warforged - Integrated Protection</label>\n    </div>\n</div>\n\n<input type=\"text\" id=\"creature-other-minor-traits-cost\" readonly value=0 style=\"position: relative; left: 6px;\">"
+            "<div class=\"dropdown\">\n    <button class=\"my-button\" onclick=\"toggleDropdown('minor-traits-dropdown')\">Other Minor Traits</button>\n    <div id=\"minor-traits-dropdown\" class=\"dropdown-content\">\n        <label><input type=\"checkbox\" value=\"10\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Aasimar - Healing Hands</label>\n        <label><input type=\"checkbox\" value=\"7\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Elf - Trance</label>\n        <label><input type=\"checkbox\" value=\"15\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Autognome - Healing Machine</label>\n        <label><input type=\"checkbox\" value=\"4\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Autognome, Warforged - Sentry's Rest</label>\n        <label><input type=\"checkbox\" value=\"20\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Bugbear - Long-Limbed</label>\n        <label><input type=\"checkbox\" value=\"4\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Bugbear, Goliath, etc. - Powerful Build</label>\n        <label><input type=\"checkbox\" value=\"13\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Centaur - Charge</label>\n        <label><input type=\"checkbox\" value=\"0\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Centaur - Equine Build</label>\n        <label><input type=\"checkbox\" value=\"10\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Dhampir - Deathless Nature</label>\n        <label><input type=\"checkbox\" value=\"25\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Dhampir - Spider Climb</label>\n        <label><input type=\"checkbox\" value=\"18\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Dhampir - Vampire Bite</label>\n        <label><input type=\"checkbox\" value=\"0\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Dragonborn - Draconic Ancestry</label>\n        <label><input type=\"checkbox\" value=\"10\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Dragonborn (Gem) - Psionic Mind</label>\n        <label><input type=\"checkbox\" value=\"5\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Dragonborn (Ravenite) - Vengeful Assault</label>\n        <label><input type=\"checkbox\" value=\"-25\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Duergar, Drow, etc. - Sunlight Sensitivity</label>\n  <label><input type=\"checkbox\" value=\"18\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Dwarf - Stonecunning</label>\n        <label><input type=\"checkbox\" value=\"25\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Dwarf (Hill) - Dwarven Toughness</label>\n        <label><input type=\"checkbox\" value=\"2\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Elf (Sea), Triton - Friend/Emissary of the Sea</label>\n        <label><input type=\"checkbox\" value=\"3\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Elf (Wood) - Mask of the Wild</label>\n        <label><input type=\"checkbox\" value=\"4\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Firbolg - Speech of Beast and Leaf</label>\n        <label><input type=\"checkbox\" value=\"12\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Genasi (Air) - Unending Breath</label>\n        <label><input type=\"checkbox\" value=\"6\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Genasi (Earth) - Earth Walk</label>\n        <label><input type=\"checkbox\" value=\"8\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Genasi (Water), Triton, etc. - Amphibious</label>\n        <label><input type=\"checkbox\" value=\"18\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Giff - Astral Spark</label>\n        <label><input type=\"checkbox\" value=\"5\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Gnome (Rock) - Tinker</label>\n        <label><input type=\"checkbox\" value=\"23\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Goblin - Fury of the Small</label>\n        <label><input type=\"checkbox\" value=\"28\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Goliath - Large Form</label>\n        <label><input type=\"checkbox\" value=\"3\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Hadozee - Dexterous Feet</label>\n        <label><input type=\"checkbox\" value=\"7\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Hadozee - Glide</label>\n        <label><input type=\"checkbox\" value=\"17\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Hadozee - Hadozee Dodge</label>\n        <label><input type=\"checkbox\" value=\"30\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Half-Orc - Relentless Endurance</label>\n        <label><input type=\"checkbox\" value=\"12\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Half-Orc - Savage Attacks</label>\n        <label><input type=\"checkbox\" value=\"8\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Halfling (Ghostwise) - Silent Speech</label>\n        <label><input type=\"checkbox\" value=\"5\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Halfling (Lightfoot) - Naturally Stealthy</label>\n        <label><input type=\"checkbox\" value=\"7\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Halfling (Lotusden) - Timberwalk</label>\n        <label><input type=\"checkbox\" value=\"8\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Harengon - Lucky Footwork</label>\n        <label><input type=\"checkbox\" value=\"26\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Hexblood - Eerie Token</label>\n        <label><input type=\"checkbox\" value=\"19\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Hobgoblin - Fey Gift</label>\n        <label><input type=\"checkbox\" value=\"12\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Kalashtar - Mind Link</label>\n        <label><input type=\"checkbox\" value=\"3\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Kalashtar - Severed from Dreams</label>\n        <label><input type=\"checkbox\" value=\"21\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Kender - Taunt</label>\n        <label><input type=\"checkbox\" value=\"7\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Kenku - Expert Duplication</label>\n        <label><input type=\"checkbox\" value=\"20\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Kenku - Mimicry</label>\n        <label><input type=\"checkbox\" value=\"11\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Kobold - Kobold Legacy (Craftiness, Defiance)</label>\n        <label><input type=\"checkbox\" value=\"8\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Leonin - Daunting Roar</label>\n        <label><input type=\"checkbox\" value=\"10\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Lizardfolk - Hold Breath</label>\n        <label><input type=\"checkbox\" value=\"14\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Lizardfolk - Hungry Jaws</label>\n        <label><input type=\"checkbox\" value=\"25\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Loxodon - Trunk</label>\n        <label><input type=\"checkbox\" value=\"14\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Minotaur - Goring Rush</label>\n        <label><input type=\"checkbox\" value=\"28\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Orc - Adrenaline Rush</label>\n        <label><input type=\"checkbox\" value=\"2\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Satyr - Mirthful Leaps</label>\n        <label><input type=\"checkbox\" value=\"15\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Tabaxi - Feline Agility</label>\n        <label><input type=\"checkbox\" value=\"10\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Tortle - Shell Defense</label>\n        <label><input type=\"checkbox\" value=\"6\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Vedalken - Partially Amphibious</label>\n        <label><input type=\"checkbox\" value=\"4\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Verdan - Black Blood Healing</label>\n        <label><input type=\"checkbox\" value=\"6\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Verdan - Limited Telepathy</label>\n        <label><input type=\"checkbox\" value=\"3\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Vermkin - Scurry</label>\n        <label><input type=\"checkbox\" value=\"6\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Vermkin - free gliders</label>\n        <label><input type=\"checkbox\" value=\"16\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Vermkin (prickleback) - vengeful prick</label>\n        <label><input type=\"checkbox\" value=\"6\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Vermkin (softfur) - Button-eyed</label>\n        <label><input type=\"checkbox\" value=\"22\" onchange=\"updateCheckboxValue('creature-other-minor-traits-cost', this)\"> Warforged - Integrated Protection</label>\n    </div>\n</div>\n\n<input type=\"text\" id=\"creature-other-minor-traits-cost\" readonly value=0 style=\"position: relative; left: 6px;\">"
           ]
         },
         {
@@ -77399,7 +78104,7 @@
           "name": "Major Traits",
           "entries": [
             "Choose your race's {@table Major traits|DRK}. Consult the table for prerequisites.",
-            "<div class=\"dropdown\">\n    <button class=\"my-button\" onclick=\"toggleDropdown('major-traits-dropdown')\">Major Traits</button>\n    <div id=\"major-traits-dropdown\" class=\"dropdown-content\">\n        <label><input type=\"checkbox\" value=\"26\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Aasimar - Celestial revelation: Necrotic shroud</label>\n        <label><input type=\"checkbox\" value=\"28\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Aasimar - Celestial revelation: radiant consumption</label>\n        <label><input type=\"checkbox\" value=\"36\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Aasimar - Celestial revelation: radiant soul</label>\n        <label><input type=\"checkbox\" value=\"55\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Elf (astral) - Starlight step</label>\n        <label><input type=\"checkbox\" value=\"24\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Autognome - Built for success</label>\n        <label><input type=\"checkbox\" value=\"35\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Bugbear - Surprise attack</label>\n        <label><input type=\"checkbox\" value=\"60\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Changeling - Shapechanger</label>\n        <label><input type=\"checkbox\" value=\"120\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Custom lineage; variant:human - Feat</label>\n        <label><input type=\"checkbox\" value=\"25\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Gnome - Gnomish magic resistance</label>\n        <label><input type=\"checkbox\" value=\"25\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Dragonborn - Breath weapon</label>\n        <label><input type=\"checkbox\" value=\"20\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Dragonborn (gem) - Gem flight</label>\n        <label><input type=\"checkbox\" value=\"20\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Dragonborn (mettalic) - Mettalic breath weapon</label>\n        <label><input type=\"checkbox\" value=\"70\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Eladrin - Fey step</label>\n        <label><input type=\"checkbox\" value=\"35\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Firbolg - Hidden step</label>\n        <label><input type=\"checkbox\" value=\"40\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Giff - Firearms mastery</label>\n        <label><input type=\"checkbox\" value=\"35\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Gnome (forest, rock) - Gnome cunning</label>\n        <label><input type=\"checkbox\" value=\"38\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Goblin - Nimble escape</label>\n        <label><input type=\"checkbox\" value=\"50\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Halfling - Lucky</label>\n        <label><input type=\"checkbox\" value=\"35\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Half leberi - otherworldly trace</label>\n        <label><input type=\"checkbox\" value=\"28\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Harengon - Hare trigger</label>\n        <label><input type=\"checkbox\" value=\"40\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Harengon - Rabbit hop</label>\n        <label><input type=\"checkbox\" value=\"33\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Hobgoblin - Fortune from the many</label>\n        <label><input type=\"checkbox\" value=\"45\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Kalashtar - Dual mind</label>\n        <label><input type=\"checkbox\" value=\"52\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Kobold - Draconic cry</label>\n        <label><input type=\"checkbox\" value=\"40\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Leberi - sensory sacrifice</label>\n        <label><input type=\"checkbox\" value=\"25\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Orc - Adrenaline rush</label>\n        <label><input type=\"checkbox\" value=\"58\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Reborn - Deathless nature</label>\n        <label><input type=\"checkbox\" value=\"35\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Satyr; Yuan-ti - Magic resistance</label>\n        <label><input type=\"checkbox\" value=\"80\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Shadar-kai - Blessing of the raven queen</label>\n        <label><input type=\"checkbox\" value=\"37\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Shifter (beasthide) - Shifting (beasthide)</label>\n        <label><input type=\"checkbox\" value=\"22\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Shifter (longtooth) - Shifting (longtooth)</label>\n        <label><input type=\"checkbox\" value=\"40\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Shifter (swiftstride) - Shifting (swiftstride)</label>\n        <label><input type=\"checkbox\" value=\"31\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Shifter (wildhunt) - Shifting (wildhunt)</label>\n        <label><input type=\"checkbox\" value=\"85\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Vedalken - Vedalken dispassion</label>\n        <label><input type=\"checkbox\" value=\"70\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Verdan - Telepathic insight</label>\n        <label><input type=\"checkbox\" value=\"65\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Vermkin (Dykentail) - masters of the axe</label>\n        <label><input type=\"checkbox\" value=\"45\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Vermkin (Prickleback) - rat tactics</label>\n    </div>\n</div>\n\n<input type=\"text\" id=\"creature-major-traits-cost\" readonly value=0 style=\"position: relative; left: 6px;\">"
+            "<div class=\"dropdown\">\n    <button class=\"my-button\" onclick=\"toggleDropdown('major-traits-dropdown')\">Major Traits</button>\n    <div id=\"major-traits-dropdown\" class=\"dropdown-content\">\n        <label><input type=\"checkbox\" value=\"26\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Aasimar - Celestial revelation: Necrotic shroud</label>\n        <label><input type=\"checkbox\" value=\"28\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Aasimar - Celestial revelation: radiant consumption</label>\n        <label><input type=\"checkbox\" value=\"36\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Aasimar - Celestial revelation: radiant soul</label>\n        <label><input type=\"checkbox\" value=\"55\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Elf (astral) - Starlight step</label>\n        <label><input type=\"checkbox\" value=\"24\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Autognome - Built for success</label>\n        <label><input type=\"checkbox\" value=\"35\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Bugbear - Surprise attack</label>\n        <label><input type=\"checkbox\" value=\"60\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Changeling - Shapechanger</label>\n        <label><input type=\"checkbox\" value=\"120\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Custom lineage; variant:human - Feat</label>\n        <label><input type=\"checkbox\" value=\"25\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Gnome - Gnomish magic resistance</label>\n        <label><input type=\"checkbox\" value=\"25\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Dragonborn - Breath weapon</label>\n        <label><input type=\"checkbox\" value=\"20\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Dragonborn (gem) - Gem flight</label>\n        <label><input type=\"checkbox\" value=\"20\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Dragonborn (mettalic) - Mettalic breath weapon</label>\n        <label><input type=\"checkbox\" value=\"70\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Eladrin - Fey step</label>\n        <label><input type=\"checkbox\" value=\"35\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Firbolg - Hidden step</label>\n        <label><input type=\"checkbox\" value=\"40\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Giff - Firearms mastery</label>\n        <label><input type=\"checkbox\" value=\"35\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Gnome (forest, rock) - Gnome cunning</label>\n        <label><input type=\"checkbox\" value=\"38\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Goblin - Nimble escape</label>\n        <label><input type=\"checkbox\" value=\"55\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Goliath - Giant ancestry: Cloud's jaunt</label>\n        <label><input type=\"checkbox\" value=\"27\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Goliath - Giant ancestry: Fire's burn</label>\n        <label><input type=\"checkbox\" value=\"26\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Goliath - Giant ancestry: Frost's chill</label>\n        <label><input type=\"checkbox\" value=\"32\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Goliath - Giant ancestry: Hill's tumble</label>\n        <label><input type=\"checkbox\" value=\"26\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Goliath - Giant ancestry: Stone's endurance</label>\n        <label><input type=\"checkbox\" value=\"13\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Goliath - Giant ancestry: Storm's thunder</label>\n        <label><input type=\"checkbox\" value=\"50\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Halfling - Lucky</label>\n        <label><input type=\"checkbox\" value=\"35\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Half leberi - otherworldly trace</label>\n        <label><input type=\"checkbox\" value=\"28\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Harengon - Hare trigger</label>\n        <label><input type=\"checkbox\" value=\"40\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Harengon - Rabbit hop</label>\n        <label><input type=\"checkbox\" value=\"33\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Hobgoblin - Fortune from the many</label>\n        <label><input type=\"checkbox\" value=\"45\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Kalashtar - Dual mind</label>\n        <label><input type=\"checkbox\" value=\"52\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Kobold - Draconic cry</label>\n        <label><input type=\"checkbox\" value=\"40\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Leberi - sensory sacrifice</label>\n        <label><input type=\"checkbox\" value=\"25\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Orc - Adrenaline rush</label>\n        <label><input type=\"checkbox\" value=\"58\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Reborn - Deathless nature</label>\n        <label><input type=\"checkbox\" value=\"35\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Satyr; Yuan-ti - Magic resistance</label>\n        <label><input type=\"checkbox\" value=\"80\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Shadar-kai - Blessing of the raven queen</label>\n        <label><input type=\"checkbox\" value=\"37\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Shifter (beasthide) - Shifting (beasthide)</label>\n        <label><input type=\"checkbox\" value=\"22\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Shifter (longtooth) - Shifting (longtooth)</label>\n        <label><input type=\"checkbox\" value=\"40\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Shifter (swiftstride) - Shifting (swiftstride)</label>\n        <label><input type=\"checkbox\" value=\"31\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Shifter (wildhunt) - Shifting (wildhunt)</label>\n        <label><input type=\"checkbox\" value=\"85\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Vedalken - Vedalken dispassion</label>\n        <label><input type=\"checkbox\" value=\"70\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Verdan - Telepathic insight</label>\n        <label><input type=\"checkbox\" value=\"65\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Vermkin (Dykentail) - masters of the axe</label>\n        <label><input type=\"checkbox\" value=\"45\" onchange=\"updateCheckboxValue('creature-major-traits-cost', this)\"> Vermkin (Prickleback) - rat tactics</label>\n    </div>\n</div>\n\n<input type=\"text\" id=\"creature-major-traits-cost\" readonly value=0 style=\"position: relative; left: 6px;\">"
           ]
         },
         {
