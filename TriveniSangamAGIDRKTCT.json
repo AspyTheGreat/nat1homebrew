@@ -46979,7 +46979,7 @@
       "header": 1,
       "entries": [
         "{@i 1st-level Arcane Arms feature}",
-        "You always have the {@spell mage armor} spell prepared. When you cast this spell on yourself, you gain an additional bonus to your armor class equal to your charisma modifier.",
+        "You always have the {@spell mage armor} spell prepared. When you cast this spell on yourself, your base armor class becomes 13+ your dexterity modifier + your charisma modifier.",
         "When you miss a creature with a spell attack roll, the creature still takes half of the spells damage (if any) but suffers no additional effect from the spell."
       ]
     },
@@ -47023,7 +47023,7 @@
           "type": "list",
           "items": [
             "{@b Acidic Whip:} Make a melee spell attack against a creature within 20 feet of you. The creature takes {@dice 2d4} + your charisma modifier acid damage and reduce their armor class by two on a hit.",
-            "{@b Frigid Shield:} You gain temporary hitpoints equal to twice your sorcerer level. If a creature hits you with a melee attack roll while you have temporary hitpoints, the creature takes cold damage equal to twice your sorcerer level.",
+            "{@b Frigid Shield:} You gain temporary hitpoints equal to {@dice 2d8} + your charisma modifier. If a creature hits you with a melee attack roll while you have temporary hitpoints, the creature's movement speed is reduced by 10 feet until the start of its next turn.",
             "{@b Flaming Sword:} Make a melee spell attack against a creature within 5 feet of you. The creature takes {@dice 2d10} + your charisma modifier fire damage on a hit.",
             "{@b Forceful Strike:} Make a melee spell attack against a creature within 5 feet of you. The creature takes {@dice 2d6} + your charisma modifier force damage and the creature is pushed 20 feet away from you on a hit.",
             "{@b Lightning Arrow:} Make a ranged spell attack against a creature within 120 feet of you. The creature takes {@dice 2d6} + your charisma modifier lightning damage on a hit.",
@@ -49919,7 +49919,7 @@
       "level": 11,
       "header": 2,
       "entries": [
-        "You can use your action to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target."
+        "You can use your action to make a melee attack against any number of creatures within your reach, with a separate attack roll for each target."
       ]
     },
     {
@@ -69521,8 +69521,8 @@
       ],
       "entries": [
         "You impose and benefit from flanking a creature if it is within your attack range.",
-        "Your critical hit range is reduced to 16-20 for opportunity attacks made with a reach weapon.",
-        "If you land a critical hit on an opportunity attack with a reach weapon, you can use the highest possible result on the damage die, rather than rolling for damage."
+        "Your critical hit range is reduced to 16-20 for reaction attacks made with a melee weapon.",
+        "If you land a critical hit on an opportunity attack with a melee weapon, you can use the highest possible result on the damage die, rather than rolling for damage."
       ]
     },
     {
