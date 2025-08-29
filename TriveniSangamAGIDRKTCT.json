@@ -134,6 +134,2525 @@
       }
     },
     {
+			"name": "Chill Touch",
+			"source": "DRK",
+			"page": 249,
+			"srd52": true,
+			"basicRules2024": true,
+			"level": 0,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes {@damage 1d8} necrotic damage, and it can't regain hit points until the start of your next turn. Until then, the hand clings to the target.",
+				"If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.",
+				"This spell's damage increases by {@damage 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
+			],
+			"scalingLevelDice": {
+				"label": "necrotic damage",
+				"scaling": {
+					"1": "1d8",
+					"5": "2d8",
+					"11": "3d8",
+					"17": "4d8"
+				}
+			},
+			"damageInflict": [
+				"necrotic"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+    {
+			"name": "Friends",
+			"source": "DRK",
+			"page": 277,
+			"level": 0,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a small amount of makeup applied to the face as this spell is cast"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"For the duration, you have advantage on all Charisma checks directed at one creature of your choice that isn't hostile toward you. When the spell ends, the creature realizes that you used magic to influence its mood and becomes hostile toward you. A creature prone to violence might attack you. Another creature might seek retribution in other ways (at the DM's discretion), depending on the nature of your interaction with it."
+			],
+			"miscTags": [
+				"ADV"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+    {
+			"name": "Guidance",
+			"source": "DRK",
+			"page": 282,
+			"srd52": true,
+			"basicRules2024": true,
+			"level": 0,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Artificer",
+            "source": "PHB"
+          },
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You touch one willing creature. Once before the spell ends, the target can roll a {@dice d4} and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends."
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+    {
+			"name": "Light",
+			"source": "DRK",
+			"page": 292,
+			"srd52": true,
+			"basicRules2024": true,
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Artificer",
+            "source": "PHB"
+          },
+           {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+           {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a firefly or phosphorescent moss"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.",
+				"If you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell."
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"LGT",
+				"OBJ"
+			]
+		},
+    {
+			"name": "Shocking Grasp",
+			"source": "DRK",
+			"page": 316,
+			"srd52": true,
+			"basicRules2024": true,
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Artificer",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes {@damage 1d8} lightning damage, and it can't take reactions until the start of its next turn.",
+				"The spell's damage increases by {@damage 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
+			],
+			"scalingLevelDice": {
+				"label": "lightning damage",
+				"scaling": {
+					"1": "1d8",
+					"5": "2d8",
+					"11": "3d8",
+					"17": "4d8"
+				}
+			},
+			"damageInflict": [
+				"lightning"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+    {
+			"name": "Dissonant Whispers",
+			"source": "DRK",
+			"page": 264,
+			"srd52": true,
+			"basicRules2024": true,
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Mesmer",
+            "source": "AspysGuidetoInfinitum"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You whisper a discordant melody that only one creature of your choice within range can hear, wracking it with terrible pain. The target must make a Wisdom saving throw. On a failed save, it takes {@damage 3d6} psychic damage and must immediately use its reaction, if available, to move as far as its speed allows away from you. The creature doesn't move into obviously dangerous ground, such as a fire or a pit. On a successful save, the target takes half as much damage and doesn't have to move away. A {@condition deafened} creature automatically succeeds on the save."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 3d6|1-9|1d6} for each slot level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+    {
+			"name": "Detect Evil and Good",
+			"source": "DRK",
+			"page": 261,
+			"srd52": true,
+			"basicRules2024": true,
+			"level": 1,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}     
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated.",
+				"The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt."
+			],
+			"affectsCreatureType": [
+				"aberration",
+				"celestial",
+				"elemental",
+				"fey",
+				"fiend",
+				"undead"
+			]
+		},
+    {
+			"name": "Inflict Wounds",
+			"source": "DRK",
+			"page": 288,
+			"srd52": true,
+			"basicRules2024": true,
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Make a melee spell attack against a creature you can reach. On a hit, the target takes {@damage 3d10} necrotic damage."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@scaledamage 3d10|1-9|1d10} for each slot level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+    {
+			"name": "Purify Food and Drink",
+			"source": "DRK",
+			"page": 310,
+			"srd52": true,
+			"basicRules2024": true,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Artificer",
+            "source": "PHB"
+          },
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"All nonmagical food and drink within a 5-foot-radius sphere centered on a point of your choice within range is purified and rendered free of poison and disease."
+			],
+			"areaTags": [
+				"S"
+			]
+		},
+    {
+			"name": "Augury",
+			"source": "DRK",
+			"page": 244,
+			"srd52": true,
+			"basicRules2024": true,
+			"level": 2,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "specially marked sticks, bones, or similar tokens worth at least 25 gp",
+					"cost": 2500
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"By casting gem-inlaid sticks, rolling dragon bones, laying out ornate cards, or employing some other divining tool, you receive an omen from an otherworldly entity about the results of a specific course of action that you plan to take within the next 30 minutes. The DM chooses from the following possible omens:",
+				{
+					"type": "list",
+					"items": [
+						"Weal, for good results",
+						"Woe, for bad results",
+						"Weal and woe, for both good and bad results",
+						"Nothing, for results that aren't especially good or bad"
+					]
+				},
+				"The spell doesn't take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion.",
+				"If you cast the spell two or more times before completing your next long rest, there is a cumulative {@chance 25|||Random reading!|Regular reading} chance for each casting after the first that you get a random reading. The DM makes this roll in secret."
+			]
+		},
+    {
+			"name": "Enhance Ability",
+			"source": "DRK",
+			"page": 268,
+			"srd52": true,
+			"basicRules2024": true,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Artificer",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "fur or a feather from a beast"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You touch a creature and bestow upon it a magical enhancement. Choose one of the following effects; the target gains that effect until the spell ends.",
+				{
+					"type": "entries",
+					"name": "Bear's Endurance",
+					"entries": [
+						"The target has advantage on Constitution checks. It also gains {@dice 2d6} temporary hit points, which are lost when the spell ends."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Bull's Strength",
+					"entries": [
+						"The target has advantage on Strength checks, and his or her carrying capacity doubles."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Cat's Grace",
+					"entries": [
+						"The target has advantage on Dexterity checks. It also doesn't take damage from falling 20 feet or less if it isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Eagle's Splendor",
+					"entries": [
+						"The target has advantage on Charisma checks."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fox's Cunning",
+					"entries": [
+						"The target has advantage on Intelligence checks."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Owl's Wisdom",
+					"entries": [
+						"The target has advantage on Wisdom checks."
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
+					]
+				}
+			],
+			"miscTags": [
+				"ADV",
+				"SCT",
+				"THP"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+    {
+			"name": "Nystul's Magic Aura",
+			"source": "DRK",
+			"page": 302,
+			"srd52": "Arcanist's Magic Aura",
+			"basicRules2024": true,
+			"level": 2,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Mesmer",
+            "source": "AspysGuidetoInfinitum"
+          },
+           {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a small square of silk"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24
+					}
+				}
+			],
+			"entries": [
+				"You place an illusion on a creature or an object you touch so that divination spells reveal false information about it. The target can be a willing creature or an object that isn't being carried or worn by another creature.",
+				"When you cast the spell, choose one or both of the following effects. The effect lasts for the duration. If you cast this spell on the same creature or object every day for 30 days, placing the same effect on it each time, the illusion lasts until it is dispelled.",
+				{
+					"type": "entries",
+					"name": "False Aura",
+					"entries": [
+						"You change the way the target appears to spells and magical effects, such as {@spell detect magic}, that detect magical auras. You can make a nonmagical object appear magical, a magical object appear nonmagical, or change the object's magical aura so that it appears to belong to a specific school of magic that you choose. When you use this effect on an object, you can make the false magic apparent to any creature that handles the item."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Mask",
+					"entries": [
+						"You change the way the target appears to spells and magical effects that detect creature types, such as a paladin's {@classFeature Divine Sense|Paladin|PHB|1} or the trigger of a {@spell symbol} spell. You choose a creature type and other spells and magical effects treat the target as if it were a creature of that type or of that alignment."
+					]
+				}
+			],
+			"miscTags": [
+				"OBJ",
+				"PIR",
+				"PRM"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+    {
+			"name": "Suggestion",
+			"source": "DRK",
+			"page": 321,
+			"srd52": true,
+			"basicRules2024": true,
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+         "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Mesmer",
+            "source": "AspysGuidetoInfinitum"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a snake's tongue and either a bit of honeycomb or a drop of sweet oil"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You suggest a course of activity (limited to a sentence or two) and magically influence a creature you can see within range that can hear and understand you. Creatures that can't be {@condition charmed} are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act ends the spell.",
+				"The target must make a Wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability. The suggested course of action can continue for the entire duration. If the suggested activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do.",
+				"You can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a knight give her warhorse to the first beggar she meets. If the condition isn't met before the spell expires, the activity isn't performed.",
+				"If you or any of your companions damage the target, the spell ends."
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+    {
+			"name": "Bestow Curse",
+			"source": "DRK",
+			"page": 246,
+			"srd52": true,
+			"basicRules2024": true,
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+        "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following options:",
+				{
+					"type": "list",
+					"items": [
+						"Choose one ability score. While cursed, the target has disadvantage on ability checks and saving throws made with that ability score.",
+						"While cursed, the target has disadvantage on attack rolls against you.",
+						"While cursed, the target must make a Wisdom saving throw at the start of each of its turns. If it fails, it wastes its action that turn doing nothing.",
+						"While the target is cursed, your attacks and spells deal an extra {@damage 1d8} necrotic damage to the target."
+					]
+				},
+				"A {@spell remove curse} spell ends this effect. At the DM's option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The DM has final say on such a curse's effect."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"If you cast this spell using a spell slot of 4th level or higher, the duration is {@status concentration}, up to 10 minutes. If you use a spell slot of 5th level or higher, the duration is 8 hours. If you use a spell slot of 7th level or higher, the duration is 24 hours. If you use a 9th level spell slot, the spell lasts until it is dispelled. Using a spell slot of 5th level or higher grants a duration that doesn't require {@status concentration}."
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"PRM"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+    {
+			"name": "Slow",
+			"source": "DRK",
+			"page": 318,
+			"srd52": true,
+			"basicRules2024": true,
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+       "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a drop of molasses"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You alter time around up to six creatures of your choice in a 40-foot cube within range. Each target must succeed on a Wisdom saving throw or be affected by this spell for the duration.",
+				"An affected target's speed is halved, it takes a \u22122 penalty to AC and Dexterity saving throws, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn.",
+				"If the creature attempts to cast a spell with a casting time of 1 action, roll a {@dice d20}. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted.",
+				"A creature affected by this spell makes another Wisdom saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"MAC"
+			],
+			"areaTags": [
+				"C",
+				"MT"
+			]
+		},
+    {
+			"name": "Speak with Plants",
+			"source": "DRK",
+			"page": 319,
+			"srd52": true,
+			"basicRules2024": true,
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+				"You imbue plants within 30 feet of you with limited sentience and animation, giving them the ability to communicate with you and follow your simple commands. You can question plants about events in the spell's area within the past day, gaining information about creatures that have passed, weather, and other circumstances.",
+				"You can also turn {@quickref difficult terrain||3} caused by plant growth (such as thickets and undergrowth) into ordinary terrain that lasts for the duration. Or you can turn ordinary terrain where plants are present into {@quickref difficult terrain||3} that lasts for the duration, causing vines and branches to hinder pursuers, for example.",
+				"Plants might be able to perform other tasks on your behalf, at the DM's discretion. The spell doesn't enable plants to uproot themselves and move about, but they can freely move branches, tendrils, and stalks.",
+				"If a plant creature is in the area, you can communicate with it as if you shared a common language, but you gain no magical ability to influence it.",
+				"This spell can cause the plants created by the {@spell entangle} spell to release a {@condition restrained} creature."
+			]
+		},
+    {
+			"name": "Stinking Cloud",
+			"source": "DRK",
+			"page": 321,
+			"srd52": true,
+			"basicRules2024": true,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+       "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a rotten egg or several skunk cabbage leaves"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You create a 20-foot-radius sphere of yellow, nauseating gas centered on a point within range. The cloud spreads around corners, and its area is {@quickref Vision and Light|PHB|2||heavily obscured}. The cloud lingers in the air for the duration.",
+				"Each creature that is completely within the cloud at the start of its turn must make a Constitution saving throw against poison. On a failed save, the creature spends its action that turn retching and reeling. Creatures that don't need to breathe or are immune to poison automatically succeed on this saving throw.",
+				"A moderate wind (at least 10 miles per hour) disperses the cloud after 4 rounds. A strong wind (at least 20 miles per hour) disperses it after 1 round."
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"OBS"
+			],
+			"areaTags": [
+				"S"
+			]
+		},
+    {
+			"name": "Water Walk",
+			"source": "DRK",
+			"page": 340,
+			"srd52": true,
+			"basicRules2024": true,
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Artificer",
+            "source": "PHB"
+          },
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of cork"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"This spell grants the ability to move across any liquid surface\u2014such as water, acid, mud, snow, quicksand, or lava\u2014as if it were harmless solid ground (creatures crossing molten lava can still take damage from the heat). Up to ten willing creatures you can see within range gain this ability for the duration.",
+				"If you target a creature submerged in a liquid, the spell carries the target to the surface of the liquid at a rate of 60 feet per round."
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"MT"
+			]
+		},
+    {
+			"name": "Banishment",
+			"source": "DRK",
+			"page": 245,
+			"srd52": true,
+			"basicRules2024": true,
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an item distasteful to the target"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You attempt to send one creature that you can see within range to another plane of existence. The target must succeed on a Charisma saving throw or be banished.",
+				"If the target is native to the plane of existence you're on, you banish the target to a harmless demiplane. While there, the target is {@condition incapacitated}. The target remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.",
+				"If the target is native to a different plane of existence than the one you're on, the target is banished with a faint popping noise, returning to its home plane. If the spell ends before 1 minute has passed, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Otherwise, the target doesn't return."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th."
+					]
+				}
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"SCT",
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+    {
+			"name": "Blight",
+			"source": "DRK",
+			"page": 247,
+			"srd52": true,
+			"basicRules2024": true,
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+		"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Necromantic energy washes over a creature of your choice that you can see within range, draining moisture and vitality from it. The target must make a Constitution saving throw. The target takes {@damage 8d8} necrotic damage on a failed save, or half as much damage on a successful one. This spell has no effect on undead or constructs.",
+				"If you target a plant creature or a magical plant, it makes the saving throw with disadvantage, and the spell deals maximum damage to it.",
+				"If you target a nonmagical plant that isn't a creature, such as a tree or shrub, it doesn't make a saving throw, it simply withers and dies."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@scaledamage 8d8|4-9|1d8} for each slot level above 4th."
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"affectsCreatureType": [
+				"aberration",
+				"beast",
+				"celestial",
+				"dragon",
+				"elemental",
+				"fey",
+				"fiend",
+				"giant",
+				"humanoid",
+				"monstrosity",
+				"ooze",
+				"plant"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+    {
+			"name": "Compulsion",
+			"source": "DRK",
+			"page": 252,
+			"srd52": true,
+			"basicRules2024": true,
+			"level": 4,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Mesmer",
+            "source": "AspysGuidetoInfinitum"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Creatures of your choice that you can see within range and that can hear you must make a Wisdom saving throw. A target automatically succeeds on this saving throw if it can't be {@condition charmed}. On a failed save, a target is affected by this spell. Until the spell ends, you can use a bonus action on each of your turns to designate a direction that is horizontal to you. Each affected target must use as much of its movement as possible to move in that direction on its next turn. It can take its action before it moves. After moving in this way, it can make another Wisdom saving throw to try to end the effect.",
+				"A target isn't compelled to move into an obviously deadly hazard, such as a fire or pit, but it will provoke opportunity attacks to move in the designated direction."
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT",
+				"UBA"
+			],
+			"areaTags": [
+				"MT"
+			]
+		},
+    {
+			"name": "Animate Objects",
+			"source": "DRK",
+			"page": 240,
+			"srd52": true,
+			"basicRules2024": true,
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Artificer",
+            "source": "PHB"
+          },
+         {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },    
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Objects come to life at your command. Choose up to ten nonmagical objects within range that are not being worn or carried. Medium targets count as two objects, Large targets count as four objects, Huge targets count as eight objects. You can't animate any object larger than Huge. Each target animates and becomes a creature under your control until the spell ends or until reduced to 0 hit points.",
+				"As a bonus action, you can mentally command any creature you made with this spell if the creature is within 500 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.",
+				{
+					"type": "table",
+					"caption": "Animated Object Statistics",
+					"colLabels": [
+						"Size",
+						"HP",
+						"AC",
+						"Attack",
+						"Str",
+						"Dex"
+					],
+					"colStyles": [
+						"col-2",
+						"col-1 text-center",
+						"col-1 text-center",
+						"col-6",
+						"col-1 text-center",
+						"col-1 text-center"
+					],
+					"rows": [
+						[
+							"{@creature animated object (tiny)|phb|Tiny}",
+							"20",
+							"18",
+							"{@hit +8} to hit, {@damage 1d4 + 4} damage",
+							"{@dice 1d20 - 3|4}",
+							"{@dice 1d20 + 4|18}"
+						],
+						[
+							"{@creature animated object (small)|phb|Small}",
+							"25",
+							"16",
+							"{@hit +6} to hit, {@damage 1d8 + 2} damage",
+							"{@dice 1d20 - 2|6}",
+							"{@dice 1d20 + 2|14}"
+						],
+						[
+							"{@creature animated object (medium)|phb|Medium}",
+							"40",
+							"13",
+							"{@hit +5} to hit, {@damage 2d6 + 1} damage",
+							"{@dice 1d20|10}",
+							"{@dice 1d20 + 1|12}"
+						],
+						[
+							"{@creature animated object (large)|phb|Large}",
+							"50",
+							"10",
+							"{@hit +6} to hit, {@damage 2d10 + 2} damage",
+							"{@dice 1d20 + 2|14}",
+							"{@dice 1d20|10}"
+						],
+						[
+							"{@creature animated object (huge)|phb|Huge}",
+							"80",
+							"10",
+							"{@hit +8} to hit, {@damage 2d12 + 4} damage",
+							"{@dice 1d20 + 4|18}",
+							"{@dice 1d20 - 3|6}"
+						]
+					]
+				},
+				"An animated object is a construct with AC, hit points, attacks, Strength, and Dexterity determined by its size. Its Constitution is 10 and its Intelligence and Wisdom are 3, and its Charisma is 1. Its speed is 30 feet; if the object lacks legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or a larger object, such as a chain bolted to a wall, its speed is 0. It has blindsight with a radius of 30 feet and is blind beyond that distance. When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form.",
+				"If you command an object to attack, it can make a single melee attack against a creature within 5 feet of it. It makes a slam attack with an attack bonus and bludgeoning damage determined by its size. The DM might rule that a specific object inflicts slashing or piercing damage based on its form."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"If you cast this spell using a spell slot of 6th level or higher, you can animate two additional objects for each slot level above 5th."
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"miscTags": [
+				"OBJ",
+				"SMN",
+				"UBA"
+			],
+			"areaTags": [
+				"MT"
+			]
+		},
+    {
+			"name": "Contact Other Plane",
+			"source": "DRK",
+			"page": 255,
+			"srd52": true,
+			"basicRules2024": true,
+			"level": 5,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },  
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You mentally contact a demigod, the spirit of a long-dead sage, or some other mysterious entity from another plane. Contacting this extraplanar intelligence can strain or even break your mind. When you cast this spell, make a {@dc 15} Intelligence saving throw. On a failure, you take {@damage 6d6} psychic damage and are insane until you finish a long rest. While insane, you can't take actions, can't understand what other creatures say, can't read, and speak only in gibberish. A {@spell greater restoration} spell cast on you ends this effect.",
+				"On a successful save, you can ask the entity up to five questions. You must ask your questions before the spell ends. The DM answers each question with one word, such as \"yes,\" \"no,\" \"maybe,\" \"never,\" \"irrelevant,\" or \"unclear\" (if the entity doesn't know the answer to the question). If a one-word answer would be misleading, the DM might instead offer a short phrase as an answer."
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"intelligence"
+			]
+		},
+    {
+			"name": "Command",
+			"source": "DRK",
+			"page": 251,
+			"srd52": true,
+			"basicRules2024": true,
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+       "classes": {
+        "fromClassList": [
+          {
+            "name": "Bard",
+            "source": "PHB"
+          },
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Mesmer",
+            "source": "AspysGuidetoInfinitum"
+          },
+          {
+            "name": "Paladin",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if your command is directly harmful to it.",
+				"Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can't follow your command, the spell ends.",
+				{
+					"type": "entries",
+					"name": "Approach",
+					"entries": [
+						"The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Drop",
+					"entries": [
+						"The target drops whatever it is holding and then ends its turn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Flee",
+					"entries": [
+						"The target spends its turn moving away from you by the fastest available means."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Grovel",
+					"entries": [
+						"The target falls {@condition prone} and then ends its turn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Halt",
+					"entries": [
+						"The target doesn't move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air."
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them."
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"affectsCreatureType": [
+				"aberration",
+				"beast",
+				"celestial",
+				"construct",
+				"dragon",
+				"elemental",
+				"fey",
+				"fiend",
+				"giant",
+				"humanoid",
+				"monstrosity",
+				"ooze",
+        "undead",
+				"plant"
+			],
+			"miscTags": [
+				"SCT",
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+    {
+			"name": "Grease",
+			"source": "DRK",
+			"page": 280,
+			"srd52": true,
+			"basicRules2024": true,
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Artificer",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a bit of pork rind or butter"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"flammable grease covers the ground in a 10-foot square centered on a point within range and turns it into {@variantrule Difficult Terrain|XPHB} for the duration.",
+				"When the grease appears, each creature standing in its area must succeed on a Dexterity saving throw or have the {@condition Prone|XPHB} condition. A creature that enters the area or ends its turn there must also succeed on that save or fall {@condition Prone|XPHB}.",
+        "If the grease is lit on fire, it deals {@damage 2d4} fire damage to each creature in its area and burns away over the course of a round."
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"DFT"
+			],
+			"areaTags": [
+				"Q"
+			]
+		},
+    {
+			"name": "Spiritual Weapon",
+			"source": "DRK",
+			"page": 278,
+			"srd": true,
+			"basicRules": true,
+			"otherSources": [
+				{
+					"source": "RMR",
+					"page": 60
+				}
+			],
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You create a floating, spectral weapon within range that lasts for the duration or until you cast this spell again. When you cast the spell, you can make a melee spell attack against a creature within 5 feet of the weapon. On a hit, the target takes force damage equal to {@damage 1d8} + your spellcasting ability modifier.",
+				"As a bonus action on your turn, you can move the weapon up to 20 feet and repeat the attack against a creature within 5 feet of it.",
+				"The weapon can take whatever form you choose. Clerics of deities who are associated with a particular weapon (as St. Cuthbert is known for his mace and Thor for his hammer) make this spell's effect resemble that weapon."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@scaledamage 1d8|2,3,4,5,6,7,8,9|1d8} for every slot level above 2nd."
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"miscTags": [
+				"UBA"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+    {
+			"name": "Contagion",
+			"source": "DRK",
+			"page": 227,
+			"srd": true,
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "day",
+						"amount": 7
+					}
+				}
+			],
+			"entries": [
+				"Your touch inflicts disease. Make a melee spell attack against a creature within your reach. On a hit, the target takes {@damage 11d8} necrotic damage and is {@condition poisoned}.",
+				"At the end of each of the {@condition poisoned} target's turns, the target must make a Constitution saving throw. If the target succeeds on three of these saves, it is no longer {@condition poisoned}, and the spell ends. If the target fails three of these saves, the target is no longer {@condition poisoned}, but choose one of the diseases below. The target is subjected to the chosen disease for the spell's duration.",
+				"Since this spell induces a natural disease in its target, any effect that removes a disease or otherwise ameliorates a disease's effects apply to it.",
+				{
+					"type": "entries",
+					"name": "Blinding Sickness",
+					"entries": [
+						"Pain grips the creature's mind, and its eyes turn milky white. The creature has disadvantage on Wisdom checks and Wisdom saving throws and is {@condition blinded}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Filth Fever",
+					"entries": [
+						"A raging fever sweeps through the creature's body. The creature has disadvantage on Strength checks, Strength saving throws, and attack rolls that use Strength."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Flesh Rot",
+					"entries": [
+						"The creature's flesh decays. The creature has disadvantage on Charisma checks and vulnerability to all damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Mindfire",
+					"entries": [
+						"The creature's mind becomes feverish. The creature has disadvantage on Intelligence checks and Intelligence saving throws, and the creature behaves as if under the effects of the {@spell confusion} spell during combat."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Seizure",
+					"entries": [
+						"The creature is overcome with shaking. The creature has disadvantage on Dexterity checks, Dexterity saving throws, and attack rolls that use Dexterity."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Slimy Doom",
+					"entries": [
+						"The creature begins to bleed uncontrollably. The creature has disadvantage on Constitution checks and Constitution saving throws. In addition, whenever the creature takes damage, it is {@condition stunned} until the end of its next turn."
+					]
+				}
+			],
+			"conditionInflict": [
+				"blinded",
+				"stunned",
+				"poisoned"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+    {
+			"name": "Conjure Animals (PHB14)",
+			"source": "DRK",
+			"page": 225,
+			"srd": true,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You summon fey spirits that take the form of beasts and appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:",
+				{
+					"type": "list",
+					"items": [
+						"One {@filter beast of challenge rating 2 or lower|bestiary|challenge rating=[&0;&2]|type=beast|miscellaneous=!swarm}",
+						"Two {@filter beasts of challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|type=beast|miscellaneous=!swarm}",
+						"Four {@filter beasts of challenge rating 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|type=beast|miscellaneous=!swarm}",
+						"Eight {@filter beasts of challenge rating 1/4 or lower|bestiary|challenge rating=[&0;&1/4]|type=beast|miscellaneous=!swarm}"
+					]
+				},
+				"Each beast is also considered fey, and it disappears when it drops to 0 hit points or when the spell ends.",
+				"The summoned creatures are friendly to you and your companions. Roll initiative for all of the summoned creatures as a single group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.",
+				"The DM has the creatures' statistics."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 5th-level slot, three times as many with a 7th-level slot, and four times as many with a 9th-level slot."
+					]
+				}
+			],
+			"miscTags": [
+				"SGT",
+				"SMN"
+			]
+		},
+    {
+			"name": "Conjure Minor Elementals (PHB14)",
+			"source": "DRK",
+			"page": 226,
+			"srd": true,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You summon elementals that appear in unoccupied spaces that you can see within range. You choose one the following options for what appears:",
+				{
+					"type": "list",
+					"items": [
+						"One {@filter elemental of challenge rating 2 or lower|bestiary|challenge rating=[&0;&2]|type=elemental|miscellaneous=!swarm}",
+						"Two {@filter elementals of challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|type=elemental|miscellaneous=!swarm}",
+						"Four {@filter elementals of challenge rating 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|type=elemental|miscellaneous=!swarm}",
+						"Eight {@filter elementals of challenge rating 1/4 or lower|bestiary|challenge rating=[&0;&1/4]|type=elemental|miscellaneous=!swarm}."
+					]
+				},
+				"An elemental summoned by this spell disappears when it drops to 0 hit points or when the spell ends.",
+				"The summoned creatures are friendly to you and your companions. Roll initiative for all of the summoned creatures as a single group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.",
+				"The DM has the creatures' statistics."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 6th-level slot and three times as many with an 8th-level slot."
+					]
+				}
+			],
+			"miscTags": [
+				"SGT",
+				"SMN"
+			]
+		},
+    {
+			"name": "Conjure Woodland Beings (PHB14)",
+			"source": "DRK",
+			"page": 226,
+			"srd": true,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "one holly berry per creature summoned"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You summon fey creatures that appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:",
+				{
+					"type": "list",
+					"items": [
+						"One {@filter fey creature of challenge rating 2 or lower|bestiary|challenge rating=[&0;&2]|type=fey|miscellaneous=!swarm}",
+						"Two {@filter fey creatures of challenge rating 1 or lower|bestiary|challenge rating=[&0;&1]|type=fey|miscellaneous=!swarm}",
+						"Four {@filter fey creatures of challenge rating 1/2 or lower|bestiary|challenge rating=[&0;&1/2]|type=fey|miscellaneous=!swarm}",
+						"Eight {@filter fey creatures of challenge rating 1/4 or lower|bestiary|challenge rating=[&0;&1/4]|type=fey|miscellaneous=!swarm}"
+					]
+				},
+				"A summoned creature disappears when it drops to 0 hit points or when the spell ends.",
+				"The summoned creatures are friendly to you and your companions. Roll initiative for all of the summoned creatures as a single group, which have their own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.",
+				"The DM has the creatures' statistics."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 6th-level slot and three times as many with an 8th-level slot."
+					]
+				}
+			],
+			"miscTags": [
+				"SGT",
+				"SMN"
+			]
+		},
+    {
+			"name": "Conjure Elemental (PHB14)",
+			"source": "DRK",
+			"page": 225,
+			"srd": true,
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "burning incense for air, soft clay for earth, sulfur and phosphorus for fire, or water and sand for water"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You call forth an elemental servant. Choose an area of air, earth, fire, or water that fills a 10-foot cube within range. An {@filter elemental of challenge rating 5 or lower|bestiary|challenge rating=[&0;&5]|type=elemental|miscellaneous=!swarm} appropriate to the area you chose appears in an unoccupied space within 10 feet of it. For example, a {@creature fire elemental} emerges from a bonfire, and an {@creature earth elemental} rises up from the ground. The elemental disappears when it drops to 0 hit points or when the spell ends.",
+				"The elemental is friendly to you and your companions for the duration. Roll initiative for the elemental, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the elemental, it defends itself from hostile creatures but otherwise takes no actions.",
+				"If your {@status concentration} is broken, the elemental doesn't disappear. Instead, you lose control of the elemental, it becomes hostile toward you and your companions, and it might attack. An uncontrolled elemental can't be dismissed by you, and it disappears 1 hour after you summoned it.",
+				"The DM has the elemental's statistics."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the challenge rating increases by 1 for each slot level above 5th."
+					]
+				}
+			],
+			"miscTags": [
+				"SMN"
+			]
+		},
+    {
+			"name": "Conjure Fey (PHB14)",
+			"source": "DRK",
+			"page": 226,
+			"srd": true,
+			"level": 6,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You summon a {@filter fey creature of challenge rating 6 or lower|bestiary|challenge rating=[&0;&6]|type=fey|miscellaneous=!swarm}, or a fey spirit that takes the form of a {@filter beast of challenge rating 6 or lower|bestiary|challenge rating=[&0;&6]|type=beast|miscellaneous=!swarm}. It appears in an unoccupied space that you can see within range. The fey creature disappears when it drops to 0 hit points or when the spell ends.",
+				"The fey creature is friendly to you and your companions for the duration. Roll initiative for the creature, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you), as long as they don't violate its alignment. If you don't issue any commands to the fey creature, it defends itself from hostile creatures but otherwise takes no actions.",
+				"If your {@status concentration} is broken, the fey creature doesn't disappear. Instead, you lose control of the fey creature, it becomes hostile toward you and your companions, and it might attack. An uncontrolled fey creature can't be dismissed by you, and it disappears 1 hour after you summoned it.",
+				"The DM has the fey creature's statistics."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 7th level or higher, the challenge rating increases by 1 for each slot level above 6th."
+					]
+				}
+			],
+			"miscTags": [
+				"SGT",
+				"SMN"
+			]
+		},
+    {
+			"name": "Conjure Celestial (PHB14)",
+			"source": "PHB",
+			"page": 225,
+			"srd": true,
+			"level": 7,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Cleric",
+            "source": "PHB"
+          }
+        ]
+      },
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You summon a {@filter celestial of challenge rating 4 or lower|bestiary|challenge rating=[&0;&4]|type=celestial|miscellaneous=!swarm}, which appears in an unoccupied space that you can see within range. The celestial disappears when it drops to 0 hit points or when the spell ends.",
+				"The celestial is friendly to you and your companions for the duration. Roll initiative for the celestial, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you), as long as they don't violate its alignment. If you don't issue any commands to the celestial, it defends itself from hostile creatures but otherwise takes no actions.",
+				"The DM has {@creature couatl||the celestial}'s statistics."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a 9th-level spell slot, you summon a {@filter celestial of challenge rating 5 or lower|bestiary|challenge rating=[&0;&5]|type=celestial|miscellaneous=!swarm}."
+					]
+				}
+			],
+			"miscTags": [
+				"SGT",
+				"SMN"
+			]
+		},
+    {
       "name": "Dark Star",
       "source": "DRK",
       "page": 186,
@@ -1942,159 +4461,6 @@
       ]
     },
     {
-      "name": "Sorcerous Burst",
-      "source": "DRK",
-      "page": 211,
-      "srd": true,
-      "basicRules": true,
-      "level": 0,
-      "school": "V",
-      "time": [
-        {
-          "number": 1,
-          "unit": "action"
-        }
-      ],
-      "range": {
-        "type": "point",
-        "distance": {
-          "type": "feet",
-          "amount": 120
-        }
-      },
-      "classes": {
-        "fromClassList": [
-          {
-            "name": "Sorcerer",
-            "source": "DRK"
-          },
-          {
-            "name": "Sorcerer",
-            "source": "PHB"
-          }
-        ]
-      },
-      "components": {
-        "v": true,
-        "s": true
-      },
-      "duration": [
-        {
-          "type": "instant"
-        }
-      ],
-      "entries": [
-        "You cast sorcerous energy at one creature or object within range. Make a ranged attack roll against the target. On a hit, the target takes {@dice d8} damage. If you roll an 8 on the d8 for this spell, you can roll another d8, and add it to the damage.",
-        "Whenever you cast this spell, the maximum number of these d8s you can add to the spell's damage equals your spellcasting ability modifier. You choose the damage type each time you cast this spell: Acid, Cold, Fire, Lightning, Poison, Psychic or Thunder.",
-        "This spell's damage increases by {@dice 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
-      ],
-      "scalingLevelDice": {
-        "label": "damage type",
-        "scaling": {
-          "1": "1d8",
-          "5": "2d8",
-          "11": "3d8",
-          "17": "4d8"
-        }
-      },
-      "damageInflict": [
-        "acid",
-        "cold",
-        "fire",
-        "lightning",
-        "poison",
-        "psychic",
-        "thunder"
-      ],
-      "spellAttack": [
-        "R"
-      ],
-      "miscTags": [
-        "OBJ",
-        "SCL"
-      ],
-      "areaTags": [
-        "ST"
-      ]
-    },
-    {
-      "name": "Starry Wisp",
-      "source": "DRK",
-      "page": 242,
-      "srd": true,
-      "basicRules": true,
-      "level": 0,
-      "school": "V",
-      "time": [
-        {
-          "number": 1,
-          "unit": "action"
-        }
-      ],
-      "range": {
-        "type": "point",
-        "distance": {
-          "type": "feet",
-          "amount": 60
-        }
-      },
-      "classes": {
-        "fromClassList": [
-          {
-            "name": "Bard",
-            "source": "PHB"
-          },
-          {
-            "name": "Bard",
-            "source": "DRK"
-          },
-          {
-            "name": "Druid",
-            "source": "DRK"
-          },
-          {
-            "name": "Druid",
-            "source": "PHB"
-          }
-        ]
-      },
-      "components": {
-        "v": true,
-        "s": true
-      },
-      "duration": [
-        {
-          "type": "instant"
-        }
-      ],
-      "entries": [
-        "You launch a mote of light at one creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d8} Radiant damage, and until the end of your next turn, it emits Dim Light in a 10-foot radius and can't benefit from the {@condition invisible} condition.",
-        "This spell's damage increases by {@dice 1d8} when you reach 5th level ({@damage 2d8}), 11th level ({@damage 3d8}), and 17th level ({@damage 4d8})."
-      ],
-      "scalingLevelDice": {
-        "label": "fire damage",
-        "scaling": {
-          "1": "1d8",
-          "5": "2d8",
-          "11": "3d8",
-          "17": "4d8"
-        }
-      },
-      "damageInflict": [
-        "radiant"
-      ],
-      "spellAttack": [
-        "R"
-      ],
-      "miscTags": [
-        "OBJ",
-        "SCL"
-      ],
-      "areaTags": [
-        "ST"
-      ]
-    },
-    {
       "name": "Barkskin",
       "source": "DRK",
       "page": 256,
@@ -2761,65 +5127,6 @@
       ]
     },
     {
-      "name": "Power Word Fortify",
-      "source": "DRK",
-      "page": 266,
-      "srd": true,
-      "basicRules": true,
-      "level": 7,
-      "school": "E",
-      "time": [
-        {
-          "number": 1,
-          "unit": "action"
-        }
-      ],
-      "range": {
-        "type": "point",
-        "distance": {
-          "type": "feet",
-          "amount": 60
-        }
-      },
-      "classes": {
-        "fromClassList": [
-          {
-            "name": "Bard",
-            "source": "PHB"
-          },
-          {
-            "name": "Bard",
-            "source": "DRK"
-          },
-          {
-            "name": "Cleric",
-            "source": "DRK"
-          },
-          {
-            "name": "Cleric",
-            "source": "PHB"
-          }
-        ]
-      },
-      "components": {
-        "v": true
-      },
-      "duration": [
-        {
-          "type": "instant"
-        }
-      ],
-      "entries": [
-        "You utter a word of power that fortifies up to six creatures you can see within range. The spell bestows 120 Temporary Hit Points, which are divided equally among the spell's recipients."
-      ],
-      "miscTags": [
-        "SGT"
-      ],
-      "areaTags": [
-        "ST"
-      ]
-    },
-    {
       "name": "Conjure Woodland Beings",
       "source": "DRK",
       "page": 278,
@@ -2904,74 +5211,6 @@
       ],
       "areaTags": [
         "S"
-      ]
-    },
-    {
-      "name": "Fount of Moonlight",
-      "source": "DRK",
-      "page": 222,
-      "level": 4,
-      "school": "V",
-      "time": [
-        {
-          "number": 1,
-          "unit": "action"
-        }
-      ],
-      "range": {
-        "type": "radius",
-        "distance": {
-          "type": "feet",
-          "amount": 20
-        }
-      },
-      "classes": {
-        "fromClassList": [
-          {
-            "name": "Druid",
-            "source": "PHB"
-          },
-          {
-            "name": "Druid",
-            "source": "DRK"
-          },
-          {
-            "name": "Bard",
-            "source": "DRK"
-          },
-          {
-            "name": "Bard",
-            "source": "PHB"
-          }
-        ]
-      },
-      "components": {
-        "v": true,
-        "s": true
-      },
-      "duration": [
-        {
-          "type": "timed",
-          "duration": {
-            "type": "minute",
-            "amount": 10
-          },
-          "concentration": true
-        }
-      ],
-      "entries": [
-        "A cool light wreathes your body for the duration, emitting Bright Light in a 20-foot radius and Dim Light for an additional 20 feet.",
-        "Until the spell ends, you have Resistance to Radiant damage, and your melee attacks deal an extra {@damage 2d6} Radiant damage on a hit.",
-        "In addition, immediately after you take damage from a creature you can see within 60 feet of yourself, you can use your Reaction to force the creature to make a Constitution saving throw. On a failed save, the creature has the {@condition blinded} condition until the end of your next turn."
-      ],
-      "damageInflict": [
-        "Radiant"
-      ],
-      "savingThrow": [
-        "constitution"
-      ],
-      "areaTags": [
-        "C"
       ]
     },
     {
@@ -20838,7 +23077,7 @@
         "otto's irresistible dance|phb",
         "programmed illusion|phb",
         "mirage arcane|phb",
-        "power word fortify|drk",
+        "power word fortify|phb",
         "power word pain|xge",
         "project image|phb",
         "simulacrum|phb",
@@ -20866,8 +23105,8 @@
         "snowball|tct",
         "resistance|phb",
         "produce flame|phb",
-        "sorcerous burst|drk",
-        "starry wisp|drk",
+        "sorcerous burst|phb",
+        "starry wisp|phb",
         "thaumaturgy|phb",
         "true strike|phb",
         "absorb elements|xge"
