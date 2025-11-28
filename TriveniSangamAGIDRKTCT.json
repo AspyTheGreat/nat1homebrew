@@ -13656,7 +13656,126 @@
           }
         ]
       }
-    }
+    },
+    {
+			"name": "YEET",
+			"source": "HEC",
+			"page": 69,
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+      		"classes": {
+        		"fromClassList": [
+          			{
+            			"name": "Bard",
+            			"source": "PHB"
+          			},
+          			{
+            			"name": "Druid",
+            			"source": "PHB"
+          			},
+          			{
+            			"name": "Cleric",
+            			"source": "PHB"
+          			},
+          			{
+            			"name": "Paladin",
+            			"source": "PHB"
+          			},
+          			{
+            			"name": "Bard",
+            			"source": "DRK"
+          			},
+          			{
+            			"name": "Druid",
+            			"source": "DRK"
+          			},
+          			{
+            			"name": "Cleric",
+            			"source": "DRK"
+          			},
+          			{
+            			"name": "Paladin",
+            			"source": "DRK"
+          			},
+          			{
+            			"name": "Sorcerer",
+            			"source": "PHB"
+          			},
+          			{
+            			"name": "Wizard",
+            			"source": "PHB"
+          			},
+          			{
+            			"name": "Artificer",
+            			"source": "TCE"
+          			},
+          			{
+            			"name": "Sorcerer",
+            			"source": "DRK"
+          			},
+          			{
+            			"name": "Wizard",
+            			"source": "DRK"
+          			},
+          			{
+            			"name": "Artificer",
+            			"source": "DRK"
+          			}
+        		]
+      		},
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an object or creature that fits the description of the spell"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"For a brief moment, your entire arm becomes ripped and muscular granting you an abnormal physical strength. Immediately afterwards you grab a Tiny object or creature within 5ft of you. An unwilling creature can resist the grab on a successful Strength save against your spell save DC. If you have grabbed an object or a creature, you can then throw it at another creature within 60ft of you by making a ranged spell attack against it. On a hit, both the object(only if it is non-magical) or creature thrown and the creature that is hit take the same {@dice 1d4} bludgeoning damage. After you make the attack, your arm returns to normal.",
+				"This spell's damage and size restriction for the target you can grab increases when you reach 5th level ({@damage 1d6} and Small), 11th level ({@damage 1d8} and Medium), and 17th level ({@damage 1d10} and Large)."
+			],
+			"scalingLevelDice": {
+				"label": "bludgeoning damage",
+				"scaling": {
+					"1": "1d4",
+					"5": "1d6",
+					"11": "1d8",
+					"17": "1d10"
+				}
+			},
+			"damageInflict": [
+				"bludgeoning"
+			],
+      		"savingThrow": [
+        		"strength"
+      		],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"SCL",
+				"OBJ",
+				"FMV"
+			],
+			"areaTags": [
+				"ST"
+			]
+		}
   ],
   "itemProperty": [
     {
@@ -46768,91 +46887,6 @@
       ]
     },
     {
-      "name": "Path of the Supreme Mind",
-      "source": "HEC",
-      "page": 49,
-      "srd": true,
-      "className": "Barbarian",
-      "classSource": "DRK",
-      "subclassShortName": "Psionics",
-      "subclassSource": "HEC",
-      "level": 3,
-      "entries": [
-        "You realise that you have a guest residing inside you. Whether your will is your own or the creature's is unclear because it seems that they have merged together completely. As you ascertain yourself as a being of one mind and two bodies in a symbiosis, your abilities seem to reflect your change. As you gain levels in this class, your control over your mutation increases and you will be able to pioneer a path that has never been explored before.",
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Awakening|Barbarian|DRK|Psionics|HEC|3"
-        }
-      ]
-    },
-    {
-      "name": "Awakening",
-      "source": "HEC",
-      "page": 69,
-      "srd": true,
-      "className": "Barbarian",
-      "classSource": "DRK",
-      "subclassShortName": "Psionics",
-      "subclassSource": "HEC",
-      "level": 3,
-      "header": 1,
-      "entries": [
-        "You can now communicate telepathically with one creature within 60 ft of you at a time and they can respond back to you telepathically. The creature must not be hostile to you and must understand atleast one language. You also understand and can communicate in Deep Speech.",
-        "As part of the bonus action when you enter rage and as a bonus action while raging you can attempt to grapple a creature. If a creature is moved forcibly while being grappled by you, you also move to keep grappling the creature. The amount of movement used up in such a way cannot exceed your total movement speed and is reduced from the distance you can move on your next turn."
-      ]
-    },
-    {
-      "name": "Transmogrification",
-      "source": "HEC",
-      "page": 69,
-      "srd": true,
-      "className": "Barbarian",
-      "classSource": "DRK",
-      "subclassShortName": "Psionics",
-      "subclassSource": "HEC",
-      "level": 6,
-      "header": 2,
-      "entries": [
-        "When attempting to grapple, you can do so telekinetically as translucent tentacles visible only to you and the target creature, wraps around the target creature. The maximum range for the telekinetic grapple extends to within 10 ft of you or upto the reach of your melee weapon, if it is higher. You also get to choose the focus of your path from the two options listed below. You can choose a different option each time you get to choose a new focus.",
-        "Mind Path - You are immune to magic that allows other creatures to read your thoughts or determine whether you are lying. Creatures can communicate telepathically with you only if you allow it. You gain resistance to psychic dmg.",
-        "Body Path - When a creature is grappled and as a bonus action while it is grappled, it must succeed on a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Strength modifier) or take psychic dmg equal to one roll of your wrath die + strength modifier."
-      ]
-    },
-    {
-      "name": "Metamorphosis",
-      "source": "HEC",
-      "page": 69,
-      "srd": true,
-      "className": "Barbarian",
-      "classSource": "DRK",
-      "subclassShortName": "Psionics",
-      "subclassSource": "HEC",
-      "level": 10,
-      "header": 2,
-      "entries": [
-        "You have immunity to the {@condition charmed} and {@condition frightened} conditions while your Rage is active and you have advantage against such effects while not raging. When a grappled creature deals damage to you or breaks free from your grapple, you can immediately use your reaction and a wrath charge to attack the target creature and on a hit, you add the number rolled on the wrath die to the damage dealt. You also get to choose the focus of your path from the two options listed below. You can now change any of your selected focuses to another one during a long rest.",
-        "Mind Path - Whenever you take more than 10 damage while raging, you can deal psychic dmg to the grappled creature equal to two rolls of your wrath die.",
-        "Body Path - When you are grappling a creature and you use the reckless attack feature, the grappled creature must roll a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Strength modifier) and on a failure, it is stunned until the start of your next turn. This effect is dispelled from the grappled creature if your rage ends or if it is not grappled by you anymore."
-      ]
-    },
-    {
-      "name": "Transcendent Causatum",
-      "source": "HEC",
-      "page": 69,
-      "srd": true,
-      "className": "Barbarian",
-      "classSource": "DRK",
-      "subclassShortName": "Psionics",
-      "subclassSource": "HEC",
-      "level": 14,
-      "header": 2,
-      "entries": [
-        "When attempting to grapple a creature telekinetically, a translucent illithid form of you appears instead of tentacles, and is visible only to you and the target creature. Your illithid form is one size larger than you and grows or shrinks to maintain the size difference if your size changes. When you successfully grapple a creature or start your turn while grappling a creature, you gain one charge of wrath. You also get to choose the focus of your path from the two options listed below. You can now change any of your selected focuses to another one during a short rest.",
-        "Mind Path - A grappled creature benefitting from magical effects or any feature that help it end the grappled condition on itself, must succeed on a Wisdom ability check against your Strength ability check to be able to use those features. You have advantage on this Strength ability check if you are raging. You can spend one minute concentrating on a restrained or incapacitated creature and it is charmed by you at the end of that duration. The charmed condition lasts for 24 hrs and you can telepathically communicate with it during this time, if it is on the same plane of existence as you. You can only have one creature charmed at a time from this feature and if the charmed condition ends on the creature, you become aware of it.",
-        "Body Path - When you take damage while grappling a creature, you can expend your reaction and all your wrath charges to halve the damage you take and redirect the other half to the grappled creature as psychic damage. You also deal additional psychic damage equal to the wrath die expended when using this feature. You can only use this feature once every short rest."
-      ]
-    },
-    {
       "name": "Champion",
       "source": "DRK",
       "page": 72,
@@ -57286,1050 +57320,1578 @@
       ]
     },
     {
-      "name": "Path of the Aberrant Scourge",
-      "source": "HEC",
-      "page": 69,
-      "className": "Barbarian",
-      "classSource": "DRK",
-      "subclassShortName": "Aberrant Scourge",
-      "subclassSource": "HEC",
-      "level": 3,
-      "entries": [
-        "You realise that you have a guest residing inside you. Whether your will is your own or the creature's is unclear because it seems that they have merged together completely. As you ascertain yourself as a being of one mind and two bodies in a symbiosis, your abilities seem to reflect your change. As you gain levels in this class, your control over your mutation increases and you will be able to pioneer a path that has never been explored before.",
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Awakening|Barbarian|DRK|Aberrant Scourge|HEC|3"
-        }
-      ]
-    },
-    {
-      "name": "Awakening",
-      "source": "HEC",
-      "page": 69,
-      "className": "Barbarian",
-      "classSource": "DRK",
-      "subclassShortName": "Aberrant Scourge",
-      "subclassSource": "HEC",
-      "level": 3,
-      "header": 1,
-      "entries": [
-        "{@i 3rd-level Aberrant Scourge feature}",
-        "You can now communicate telepathically with one creature within 60 ft of you at a time and they can respond back to you telepathically. The creature must not be hostile to you and must understand atleast one language. You also understand and can communicate in Deep Speech.",
-        "As part of the bonus action when you enter rage and as a bonus action while raging you can attempt to grapple a creature. If a creature is moved forcibly while being {@condition grappled} by you, you can also move to keep grappling the creature. The amount of movement used up in such a way cannot exceed your total movement speed and is reduced from the distance you can move on your next turn."
-      ]
-    },
-    {
-      "name": "Transmogrification",
-      "source": "HEC",
-      "page": 69,
-      "className": "Barbarian",
-      "classSource": "DRK",
-      "subclassShortName": "Aberrant Scourge",
-      "subclassSource": "HEC",
-      "level": 6,
-      "header": 2,
-      "entries": [
-        "{@i 6th-level Aberrant Scourge feature}",
-        "When you successfully grapple a creature or start your turn while grappling a creature, you gain one charge of wrath. When attempting to grapple, you can do so telekinetically as translucent tentacles visible only to you and the target creature, wraps around the target creature. The maximum range for the telekinetic grapple extends to within 10 ft of you or upto the reach of your melee weapon, if it is higher.",
-        "You also get to choose one focus from the two options listed below. You can change your chosen focus on a long rest.",
-        {
-          "type": "options",
-          "entries": [
-            {
-              "type": "refSubclassFeature",
-              "subclassFeature": "Mind Path|Barbarian|DRK|Aberrant Scourge|HEC|6"
-            },
-            {
-              "type": "refSubclassFeature",
-              "subclassFeature": "Body Path|Barbarian|DRK|Aberrant Scourge|HEC|6"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Mind Path",
-      "source": "HEC",
-      "page": 69,
-      "className": "Barbarian",
-      "classSource": "DRK",
-      "subclassShortName": "Aberrant Scourge",
-      "subclassSource": "HEC",
-      "level": 6,
-      "header": 1,
-      "entries": [
-        "You are immune to magic that allows other creatures to read your thoughts or determine whether you are lying. Creatures can communicate telepathically with you only if you allow it. You gain resistance to Psychic damage (the resistance becomes immunity when you reach level 17 in this subclass)."
-      ]
-    },
-    {
-      "name": "Body Path",
-      "source": "HEC",
-      "page": 69,
-      "className": "Barbarian",
-      "classSource": "DRK",
-      "subclassShortName": "Aberrant Scourge",
-      "subclassSource": "HEC",
-      "level": 6,
-      "header": 1,
-      "entries": [
-        "When you enter rage, you can choose to grow upto one size larger (upto two sizes larger when you reach level 17 in this subclass) and while you are raging, you have advantage on saving throws against being {@condition incapacitated}, {@condition stunned}, {@condition paralyzed} or {@condition unconscious}."
-      ]
-    },
-    {
-      "name": "Metamorphosis",
-      "source": "HEC",
-      "page": 69,
-      "className": "Barbarian",
-      "classSource": "DRK",
-      "subclassShortName": "Aberrant Scourge",
-      "subclassSource": "HEC",
-      "level": 10,
-      "header": 2,
-      "entries": [
-        "{@i 10th-level Aberrant Scourge feature}",
-        "You have immunity to the {@condition charmed} and {@condition frightened} conditions while you are raging and while you are {@condition charmed} or {@condition frightened}, you can still use a bonus action to enter a rage (even if you can't otherwise take actions). You dispel any of these conditions on you when you start raging. When a {@condition grappled} creature deals damage to you, you can immediately use your reaction to make one melee weapon attack against it.",
-        "When a {@condition grappled} creature breaks free from your grapple, you can use your reaction and expend a wrath charge to attempt to grapple the creature again, and you add the number rolled on the wrath die to the Athletics check. You also get to choose one focus from the two options listed below and you can choose a different focus from the one you chose previously. You can now change your chosen focus on a short rest.",
-        {
-          "type": "options",
-          "entries": [
-            {
-              "type": "refSubclassFeature",
-              "subclassFeature": "Mind Path|Barbarian|DRK|Aberrant Scourge|HEC|10"
-            },
-            {
-              "type": "refSubclassFeature",
-              "subclassFeature": "Body Path|Barbarian|DRK|Aberrant Scourge|HEC|10"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Mind Path",
-      "source": "HEC",
-      "page": 69,
-      "className": "Barbarian",
-      "classSource": "DRK",
-      "subclassShortName": "Aberrant Scourge",
-      "subclassSource": "HEC",
-      "level": 10,
-      "header": 1,
-      "entries": [
-        "When you are grappling a creature and you use the Reckless Attack feature, the {@condition grappled} creature must roll an Intelligence saving throw (DC equal to 8 + your proficiency bonus + your Strength/Constitution modifier) and on a failure, it is {@condition stunned} until the start of your next turn. This effect is dispelled from the {@condition grappled} creature if your rage ends or if it is not {@condition grappled} by you anymore."
-      ]
-    },
-    {
-      "name": "Body Path",
-      "source": "HEC",
-      "page": 69,
-      "className": "Barbarian",
-      "classSource": "DRK",
-      "subclassShortName": "Aberrant Scourge",
-      "subclassSource": "HEC",
-      "level": 10,
-      "header": 1,
-      "entries": [
-        "For every 12 damage you take while raging, you can deal psychic dmg to the {@condition grappled} creature equal to two rolls of your wrath die."
-      ]
-    },
-    {
-      "name": "Transcendent Causatum",
-      "source": "HEC",
-      "page": 69,
-      "className": "Barbarian",
-      "classSource": "DRK",
-      "subclassShortName": "Aberrant Scourge",
-      "subclassSource": "HEC",
-      "level": 14,
-      "header": 2,
-      "entries": [
-        "{@i 14th-level Aberrant Scourge feature}",
-        "When attempting to grapple a creature telekinetically, a translucent illithid form of you appears instead of tentacles to grapple the target, and is visible only to you and the target creature. Your illithid form is one size larger than you and grows or shrinks to maintain the size difference if your size changes. Any creature can move freely through or end it's turn inside the space occupied by your illithid form and it provides no cover to other creatures.",
-        "You can now spend one minute concentrating on a {@condition restrained} or {@condition incapacitated} creature and it is {@condition charmed} by you at the end of that duration. The {@condition charmed} condition lasts for a number of days equal to half your Strength modifier(rounded down) and you can telepathically communicate with it during this time, if it is on the same plane of existence as you. You can only have one creature {@condition charmed} at a time from this feature and if the {@condition charmed} condition ends on the creature, you become aware of it.",
-        "You also get to choose one focus from the two options listed below and you can choose a different focus from the one you chose previously. You can now change your chosen focus when you enter rage.",
-        {
-          "type": "options",
-          "entries": [
-            {
-              "type": "refSubclassFeature",
-              "subclassFeature": "Mind Path|Barbarian|DRK|Aberrant Scourge|HEC|14"
-            },
-            {
-              "type": "refSubclassFeature",
-              "subclassFeature": "Body Path|Barbarian|DRK|Aberrant Scourge|HEC|14"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Mind Path",
-      "source": "HEC",
-      "page": 69,
-      "className": "Barbarian",
-      "classSource": "DRK",
-      "subclassShortName": "Aberrant Scourge",
-      "subclassSource": "HEC",
-      "level": 14,
-      "header": 1,
-      "entries": [
-        "A {@condition grappled} creature attempting to use any means to end the {@condition grappled} condition on itself without using an action to make a contested ability check as normal, must succeed on an Intelligence saving throw (DC equal to 8 + your proficiency bonus + your Strength/Constitution modifier) to be able to use those features. It gains a penalty to the save equal to the number of turns it spent being grappled by you in the last minute. When a creature dies while it is {@condition grappled} by you, you regain hitpoints equal to your barbarian level and you gain 3 wrath charges."
-      ]
-    },
-    {
-      "name": "Body Path",
-      "source": "HEC",
-      "page": 69,
-      "className": "Barbarian",
-      "classSource": "DRK",
-      "subclassShortName": "Aberrant Scourge",
-      "subclassSource": "HEC",
-      "level": 14,
-      "header": 1,
-      "entries": [
-        "You can grapple a maximum of three creatures at the same time with your illithid form. When you use a subclass feature to affect a creature that you have {@condition grappled}, you can choose any number of creatures that are also {@condition grappled} by you to be affected simultaneously. When a creature dies while it is {@condition grappled} by you, you regain hitpoints equal to half your barbarian level and you gain 2 wrath charges."
-      ]
-    },
-    {
-      "name": "The Raven Queen",
-      "source": "HEC",
-      "page": 69,
-      "className": "Warlock",
-      "classSource": "DRK",
-      "subclassShortName": "Raven Queen",
-      "subclassSource": "HEC",
-      "level": 1,
-      "entries": [
-        "Your patron is the Raven Queen, a mysterious being who rules the Shadowfell from a palace of ice deep within that dread realm. The Raven Queen watches over the world, anticipating each creature's death and ensuring that it meets its end at the proscribed time and place. Warlocks sworn to the Raven Queen receive visions and whispers from her in their dreams, sending them on quests and warning them of impending dangers.",
-        {
-          "type": "entries",
-          "name": "Expanded Spell List",
-          "entries": [
-            "The Raven Queen lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
-            {
-              "type": "table",
-              "caption": "Raven Queen Expanded Spells",
-              "colLabels": [
-                "Spell Level",
-                "Spells"
-              ],
-              "colStyles": [
-                "col-2 text-center",
-                "col-10"
-              ],
-              "rows": [
-                [
-                  "1st",
-                  "{@spell inflict wounds}, {@spell heroism}"
-                ],
-                [
-                  "2nd",
-                  "{@spell rime's binding ice|FTD}, {@spell gentle repose}"
-                ],
-                [
-                  "3rd",
-                  "{@spell life transference|XGE}, {@spell spirit guardians}"
-                ],
-                [
-                  "4th",
-                  "{@spell phantasmal killer}, {@spell fire shield}"
-                ],
-                [
-                  "5th",
-                  "{@spell cone of cold}, {@spell commune}"
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Sentinel's Vigilance|Warlock|DRK|Raven Queen|HEC|1"
-        }
-      ]
-    },
-    {
-      "name": "Sentinel's Vigilance",
-      "source": "HEC",
-      "page": 69,
-      "className": "Warlock",
-      "classSource": "DRK",
-      "subclassShortName": "Raven Queen",
-      "subclassSource": "HEC",
-      "level": 1,
-      "header": 1,
-      "entries": [
-        "{@i 1st-level Raven Queen feature}",
-        "Starting at 1st level, the Raven Queen grants you a Raven spirit that watches over you. A spectral raven only you or a creature with truesight can see, appears perched on your shoulders. It cannot be targeted by any spell or attack and cannot take any damage. It grants you advantage on Death saving throws and bonus to Perception checks equal to your Charisma modifier.",
-        "You can send your raven spirit to protect those on the border of life and death. As a bonus action on your turn or as a reaction when a creature is about to roll a Death Saving Throw while within 30 ft of you, you stabilize the dying creature and grant it the effects of the {@spell Sanctuary} spell. A creature stabilized from a use of this feature can choose to make death saving throws at the start of each of it's turns and it regains 1 hitpoint after one minute or when it rolls 3 successes on it's death saving throws. You can use this feature a number of times equal to your proficiency bonus per long rest."
-      ]
-    },
-    {
-      "name": "Boon of the Raven Spirit",
-      "source": "HEC",
-      "page": 69,
-      "className": "Warlock",
-      "classSource": "DRK",
-      "subclassShortName": "Raven Queen",
-      "subclassSource": "HEC",
-      "level": 6,
-      "header": 2,
-      "entries": [
-        "{@i 6th-level Raven Queen feature}",
-        "Starting at 6th level, the raven spirit empowers your mind and the modicum of power granted to you by your patron. You gain immunity to the {@condition frightened} condition. In addition, one of your chosen pact boons becomes your Prime Pact Boon and it is improved as shown below.",
-        {
-          "type": "options",
-          "entries": [
-            {
-              "type": "refSubclassFeature",
-              "subclassFeature": "Pact of the Chain|Warlock|DRK|Raven Queen|HEC|6"
-            },
-            {
-              "type": "refSubclassFeature",
-              "subclassFeature": "Pact of the Blade|Warlock|DRK|Raven Queen|HEC|6"
-            },
-            {
-              "type": "refSubclassFeature",
-              "subclassFeature": "Pact of the Talisman|Warlock|DRK|Raven Queen|HEC|6"
-            },
-            {
-              "type": "refSubclassFeature",
-              "subclassFeature": "Pact of the Tome|Warlock|DRK|Raven Queen|HEC|6"
-            },
-            {
-              "type": "refSubclassFeature",
-              "subclassFeature": "Pact of the Cloak|Warlock|DRK|Raven Queen|HEC|6"
-            },
-            {
-              "type": "refSubclassFeature",
-              "subclassFeature": "Pact of the Marksman|Warlock|DRK|Raven Queen|HEC|6"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Pact of the Chain",
-      "source": "HEC",
-      "page": 69,
-      "className": "Warlock",
-      "classSource": "DRK",
-      "subclassShortName": "Raven Queen",
-      "subclassSource": "HEC",
-      "level": 6,
-      "header": 1,
-      "entries": [
-        "Your familiar gains a bonus to it's hit point maximum equal to thrice your warlock level and it's proficiency bonus scales with your proficiency bonus. While your familiar is alive, you and your familiar get advantage on ability checks using skills for which the both of you share proficiency. Your familiar can now share the same initiative as you and take it's turn during your turn."
-      ]
-    },
-    {
-      "name": "Pact of the Blade",
-      "source": "HEC",
-      "page": 69,
-      "className": "Warlock",
-      "classSource": "DRK",
-      "subclassShortName": "Raven Queen",
-      "subclassSource": "HEC",
-      "level": 6,
-      "header": 1,
-      "entries": [
-        "Your pact weapon deals an extra {@dice 1d6} damage when it hits. When you hit a creature with your pact weapon, you can cause the pact weapon to deal Cold damage. Additionally when you hit a creature with your pact weapon, you can choose to mark it until you take a short or long rest. A marked creature has disadvantage on Stealth checks and you have advantage on Perception checks against it. The mark counts as a curse for any of your warlock features. You can only have one creature marked at a time and when you mark a second creature, the first creature loses it's mark."
-      ]
-    },
-    {
-      "name": "Pact of the Talisman",
-      "source": "HEC",
-      "page": 69,
-      "className": "Warlock",
-      "classSource": "DRK",
-      "subclassShortName": "Raven Queen",
-      "subclassSource": "HEC",
-      "level": 6,
-      "header": 1,
-      "entries": [
-        "When you perform the ritual to receive an amulet, you receive a number of amulets equal to half your proficiency bonus(rounded up). The number of uses on the features provided by these talismans are shared by all the talismans, but they recharge on a short rest instead of a long rest. When a talisman wearer uses one of it's expendable/rechargeable features, they get temporary hitpoints equal to your warlock level."
-      ]
-    },
-    {
-      "name": "Pact of the Tome",
-      "source": "HEC",
-      "page": 69,
-      "className": "Warlock",
-      "classSource": "DRK",
-      "subclassShortName": "Raven Queen",
-      "subclassSource": "HEC",
-      "level": 6,
-      "header": 1,
-      "entries": [
-        "When you deal necrotic or cold damage through spells, you can add your Charisma modifier to one damage roll of that spell. During a long rest, you can prepare a number of spells equal to your proficiency bonus from the spell list of any fullcaster class, for which you have spell slots for, and these spells are considered as warlock spells for you. The spells prepared in such a way do not count towards the number of spells known by you."
-      ]
-    },
-    {
-      "name": "Pact of the Cloak",
-      "source": "HEC",
-      "page": 69,
-      "className": "Warlock",
-      "classSource": "DRK",
-      "subclassShortName": "Raven Queen",
-      "subclassSource": "HEC",
-      "level": 6,
-      "header": 1,
-      "entries": [
-        "While wearing the cloak, you are always under the effects of {@spell Nondetection}. You can cast {@spell Misty Step} without expending a spell slot for a number of times equal to your proficiency bonus per long rest. When you do so, you can teleport to a point upto 60 ft from you if the space is within Dim Light or Darkness. Your cloak can now erase tracks you leave while moving, and suppress your smell and normal sounds you make to within 5 ft of you."
-      ]
-    },
-    {
-      "name": "Pact of the Marksman",
-      "source": "HEC",
-      "page": 69,
-      "className": "Warlock",
-      "classSource": "DRK",
-      "subclassShortName": "Raven Queen",
-      "subclassSource": "HEC",
-      "level": 6,
-      "header": 1,
-      "entries": [
-        "Your pact weapon's short and long range is increased by 15 ft and 60 ft respectively. When you attack a creature with your pact weapon, you can have it deal Force, Necrotic or Cold damage instead of its normal damage type. The sound of shots fired with your pact weapon can only be heard while within 60 ft of you."
-      ]
-    },
-    {
-      "name": "Aegis of the Ravens",
-      "source": "HEC",
-      "page": 69,
-      "className": "Warlock",
-      "classSource": "DRK",
-      "subclassShortName": "Raven Queen",
-      "subclassSource": "HEC",
-      "level": 10,
-      "header": 2,
-      "entries": [
-        "{@i 10th-level Raven Queen feature}",
-        "The Raven spirit granted to you has influenced your physique, over the course of it's companionship. You gain resistance to Cold and Necrotic damage. As a bonus action, you can manifest spectral raven wings that give you magical flight with flying speed equal to your movement speed for one minute. You can use this feature a number of times equal to your proficiency bonus per long rest.",
-        "You also gain one Eldritch Invocation of your choice, which must have a prerequisite of your chosen Prime Pact Boon and you must meet the warlock level requirement(if any). You also gain one more Eldritch Invocation in the same manner when you reach the 16th level in this warlock subclass."
-      ]
-    },
-    {
-      "name": "Queen's Eminent",
-      "source": "HEC",
-      "page": 69,
-      "className": "Warlock",
-      "classSource": "DRK",
-      "subclassShortName": "Raven Queen",
-      "subclassSource": "HEC",
-      "level": 14,
-      "header": 2,
-      "entries": [
-        "{@i 14th-level Raven Queen feature}",
-        "You get blessed by the Raven Queen herself for your service that has been matched by few. You can choose to replace your 6th and 7th level Mystic Arcanum with a spell of the same level from the Wizard spell list. Your Prime Pact Boon is improved and as a bonus action you can now channel your Raven spirit to supercharge your Prime Pact Boon for one minute, as described below. The effect remains until you end it as an action, the duration ends, or you die. You can use this feature once per short rest.",
-        {
-          "type": "options",
-          "entries": [
-            {
-              "type": "refSubclassFeature",
-              "subclassFeature": "Pact of the Chain|Warlock|DRK|Raven Queen|HEC|14"
-            },
-            {
-              "type": "refSubclassFeature",
-              "subclassFeature": "Pact of the Blade|Warlock|DRK|Raven Queen|HEC|14"
-            },
-            {
-              "type": "refSubclassFeature",
-              "subclassFeature": "Pact of the Talisman|Warlock|DRK|Raven Queen|HEC|14"
-            },
-            {
-              "type": "refSubclassFeature",
-              "subclassFeature": "Pact of the Tome|Warlock|DRK|Raven Queen|HEC|14"
-            },
-            {
-              "type": "refSubclassFeature",
-              "subclassFeature": "Pact of the Cloak|Warlock|DRK|Raven Queen|HEC|14"
-            },
-            {
-              "type": "refSubclassFeature",
-              "subclassFeature": "Pact of the Marksman|Warlock|DRK|Raven Queen|HEC|14"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Pact of the Chain",
-      "source": "HEC",
-      "page": 69,
-      "className": "Warlock",
-      "classSource": "DRK",
-      "subclassShortName": "Raven Queen",
-      "subclassSource": "HEC",
-      "level": 14,
-      "header": 1,
-      "entries": [
-        "",
-        "{@b Passive effect} - Your familiar gains a +2 bonus to it's AC and saving throws, and your familiar does not provoke attack of opportunity from a creature it hasn't attacked, targeted with a harmful effect or dealt damage to. You can cast a spell as if you were in your familiar's space, by having your familiar use it's reaction, while it is within 100 ft of you.",
-        "{@b Supercharge effect} - For one minute, your familiar starts exuding a soothing aura or a sinister aura for upto 30 ft. You can choose the aura as part of the bonus action used to activate this ability and your familiar can use a bonus action on it's turn to change the aura.",
-        "When your familiar exudes a soothing aura, any allied creature in the aura regains the maximum number of hit points possible from any healing. It also gains the ability to use it's action to grant itself and one allied creature within the aura, temporary hitpoints equal to your warlock level.",
-        "When your familiar exudes a sinister aura, any hostile creature in the aura takes an extra {@dice 1d10} cold damage when it takes damage for the first time on a turn. When your familiar attacks a hostile creature in the aura, it can do so with your spell attack and damage modifier instead of it's own attack and damage modifier."
-      ]
-    },
-    {
-      "name": "Pact of the Blade",
-      "source": "HEC",
-      "page": 69,
-      "className": "Warlock",
-      "classSource": "DRK",
-      "subclassShortName": "Raven Queen",
-      "subclassSource": "HEC",
-      "level": 14,
-      "header": 1,
-      "entries": [
-        "",
-        "{@b Passive effect} - Your pact weapon deals a critical hit when you roll 19 or 20 on the {@dice d20} for the attack roll and a creature marked by you does not benefit from being {@condition Invisible}. You now regain all your hit die when you finish a long rest.",
-        "{@b Supercharge effect} - Once per turn for one minute, you can take the maximum possible result on all damage die when you hit a creature with your pact weapon, by expending one of your hit die. You can choose to gain temporary hitpoints equal to the number rolled on the hit die plus your Constitution modifier."
-      ]
-    },
-    {
-      "name": "Pact of the Talisman",
-      "source": "HEC",
-      "page": 69,
-      "className": "Warlock",
-      "classSource": "DRK",
-      "subclassShortName": "Raven Queen",
-      "subclassSource": "HEC",
-      "level": 14,
-      "header": 1,
-      "entries": [
-        "",
-        "{@b Passive effect} - The dice for features provided by the talisman increase by one size. When any of the wearers regain hitpoints from any healing except from resting, all of the wearers regain hitpoints equal to your Charisma modifier. The creature that gains temporary health from using a feature of the talisman, adds your Charisma modifier when calculating the total temporary health it receives.",
-        "{@b Supercharge effect} - For one minute, each talisman wearer can choose to be resistant to one type of damage of their choice at the start of their turn (no action required). For the same duration, all talisman wearers roll twice and take the higher result on dice rolls when using any of the features granted by the talisman."
-      ]
-    },
-    {
-      "name": "Pact of the Tome",
-      "source": "HEC",
-      "page": 69,
-      "className": "Warlock",
-      "classSource": "DRK",
-      "subclassShortName": "Raven Queen",
-      "subclassSource": "HEC",
-      "level": 14,
-      "header": 1,
-      "entries": [
-        "",
-        "{@b Passive effect} - When you roll damage for your spells that deal cold or necrotic damage, you can reroll a number of the damage dice up to your Charisma modifier(minimum of one). You gain an amount of sorcery points equal to your proficiency bonus and 3 metamagic options. You can expend a warlock spell slot to regain a number of sorcery points equal to the spell slot level and when you gain a level in this class, you can change one metamagic option.",
-        "{@b Supercharge effect} - Once during this one minute duration when you cast a warlock spell that deals damage, you take the maximum possible result on all damage dice on the turn you cast the spell. If you reduce any creature to zero hitpoints while using this feature to deal maximum damage with your spell, you regain the use of this feature. You can regain the use of this feature only once per short rest."
-      ]
-    },
-    {
-      "name": "Pact of the Cloak",
-      "source": "HEC",
-      "page": 69,
-      "className": "Warlock",
-      "classSource": "DRK",
-      "subclassShortName": "Raven Queen",
-      "subclassSource": "HEC",
-      "level": 14,
-      "header": 1,
-      "entries": [
-        "",
-        "{@b Passive effect} - Your cloak's storage space is now connected to a Demiplane of 15 ft in each dimension. Once per long rest, you can open a stable portal controlled by you, to let yourself and creatures you choose to move freely in and out of the Demiplane for one hour. When the one hour is up, any creatures that remain inside are shunted out and any objects left inside remain there and you can retrieve them as you normally would (the weight restriction is removed). The entire area of the Demiplane is under all the effects provided by {@spell Mordenkainen's Private Sanctum}.",
-        "{@b Supercharge effect} - For one minute, you can influence a 30 ft radius and 15 ft height cylindrical area with the energy of Shadowfell within 60 ft of you. You can move this area as a bonus action upto 30 ft on each of your turns. The ground is covered in thick frost and for one continuous movement, a hostile creature that moves atleast 5 ft in the area must make a Dexterity saving throw against your spell save dc, falling {@condition Prone} on a failure. Spectral raven spirits fly around in the area, harming anyone in the area who makes an attack roll against you or forces you to make a saving throw, dealing {@dice 2d10} Necrotic or Cold damage, once per turn. The area is also filled with Dim Light unless illuminated by Magical sources of light cast with a spell slot. When you are in the area, you are Heavily Obscured to creatures of your choice and you gain a +2 bonus to your saving throws."
-      ]
-    },
-    {
-      "name": "Pact of the Marksman",
-      "source": "HEC",
-      "page": 69,
-      "className": "Warlock",
-      "classSource": "DRK",
-      "subclassShortName": "Raven Queen",
-      "subclassSource": "HEC",
-      "level": 14,
-      "header": 1,
-      "entries": [
-        "",
-        "{@b Passive effect} - Your pact weapon's damage die is increased by one of the same dice. You also reroll any 1 or 2 on your pact weapon's damage die when you roll damage.",
-        "{@b Supercharge effect} - For one minute, once per turn you can reroll an attack you make with your pact weapon that misses. Once during this one minute duration, before you make an attack against a creature, you can mark it. The next time you hit the marked creature with an attack from your pact weapon, within the end of your next turn, it has vulnerability to all damage dealt by that attack and it loses the mark after taking damage."
-      ]
-    },
-    {
-      "name": "The Crazed Architect",
-      "source": "HEC",
-      "page": 69,
-      "className": "Warlock",
-      "classSource": "DRK",
-      "subclassShortName": "Crazed Architect",
-      "subclassSource": "HEC",
-      "level": 1,
-      "entries": [
-        "Your patron is the Crazed Architect, a being who severed itself from reality in it's obsession to make the most technologically advanced weapons. Now it reaches out to mortals from it's workshop and shares with them a fraction of it's works to test their performance. Pactmakers that show promise might even be blessed with some of it's knowledge and access to it's workshop.",
-        {
-          "type": "entries",
-          "name": "Expanded Spell List",
-          "entries": [
-            "The Crazed Architect lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
-            {
-              "type": "table",
-              "caption": "Crazed Architect Expanded Spells",
-              "colLabels": [
-                "Spell Level",
-                "Spells"
-              ],
-              "colStyles": [
-                "col-2 text-center",
-                "col-10"
-              ],
-              "rows": [
-                [
-                  "1st",
-                  "{@spell longstrider}, {@spell magnify gravity|DRK}"
-                ],
-                [
-                  "2nd",
-                  "{@spell branding smite}, {@spell heat metal}"
-                ],
-                [
-                  "3rd",
-                  "{@spell haste}, {@spell aristo's affluent armoury|TCT}"
-                ],
-                [
-                  "4th",
-                  "{@spell otiluke's resilient sphere}, {@spell fabricate}"
-                ],
-                [
-                  "5th",
-                  "{@spell banishing smite}, {@spell swift quiver}"
-                ],
-                [
-                  "9th",
-                  "{@spell time stop}"
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Tools for the Job|Warlock|DRK|Crazed Architect|HEC|1"
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "The Crazed Architect's Accord|Warlock|DRK|Crazed Architect|HEC|1"
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Synchronicity|Warlock|DRK|Crazed Architect|HEC|1"
-        }
-      ]
-    },
-    {
-      "name": "Tools for the Job",
-      "source": "HEC",
-      "page": 69,
-      "className": "Warlock",
-      "classSource": "DRK",
-      "subclassShortName": "Crazed Architect",
-      "subclassSource": "HEC",
-      "level": 1,
-      "header": 1,
-      "entries": [
-        "{@i 1st-level Crazed Architect feature}",
-        "Starting at 1st level, you gain proficiency in firearms or one exotic weapon and {@item tinker's tools|PHB}. If you already have proficiency in {@item tinker's tools|PHB}, you can get proficiency in another {@item artisan's tools|PHB} of your choice."
-      ]
-    },
-    {
-      "name": "The Crazed Architect's Accord",
-      "source": "HEC",
-      "page": 69,
-      "className": "Warlock",
-      "classSource": "DRK",
-      "subclassShortName": "Crazed Architect",
-      "subclassSource": "HEC",
-      "level": 1,
-      "header": 1,
-      "entries": [
-        "{@i 1st-level Crazed Architect feature}",
-        "Your patron gifts you the {@b Composite Weapons Casing(CWC)}. The CWC let's you copy the data of any firearm but destroys them in the process. As a free action, you can generate a firearm whose data has already been analysed and stored in the CWC. A firearm generated by the CWC disintegrates after ten minutes or if a creature other than you tries to wield it.",
-        "You can use your CWC as a spellcasting focus for your warlock spells and you ignore any misfire chance on a firearm generated by your CWC. As an action, you can transform your CWC into a trinket that you can wear on yourself and back to it's original form. When you generate a firearm that has the two-handed property, your CWC transforms into a trinket on your person as part of the free action. When you try to attack using a firearm that is not generated by the CWC, it automatically misfires.",
-        "Additionally, when you are holding your CWC in one of your hands, you gain a bonus to your AC as if you were holding a shield and the hand holding the CWC counts as a free hand for the purpose of casting spells with somatic component. Your CWC qualifies as a weapon for your pact boon and it's invocations. Any firearm generated by the CWC automatically benefits from those features as well."
-      ]
-    },
-    {
-      "name": "Synchronicity",
-      "source": "HEC",
-      "page": 69,
-      "className": "Warlock",
-      "classSource": "DRK",
-      "subclassShortName": "Crazed Architect",
-      "subclassSource": "HEC",
-      "level": 1,
-      "header": 1,
-      "entries": [
-        "{@i 1st-level Crazed Architect feature}",
-        "Whenever you make an attack with a firearm, you gain a stack of {@b 'Synchronicity'}. You can have a maximum of three stacks and you lose one stack of {@b 'Synchronicity'} when you end a turn without attacking with your firearm. You gain the following benefits based on the number of {@b 'Synchronicity'} stacks you have:",
-        "1 - Your movement speed increases by 10 ft.",
-        "2 - Attacks against you are made with disadvantage.",
-        "3 - Once until the start of your next turn, you can prevent one of your rolls from being affected with disadvantage."
-      ]
-    },
-    {
-      "name": "Armament Barrage",
-      "source": "HEC",
-      "page": 69,
-      "className": "Warlock",
-      "classSource": "DRK",
-      "subclassShortName": "Crazed Architect",
-      "subclassSource": "HEC",
-      "level": 6,
-      "header": 2,
-      "entries": [
-        "{@i 6th-level Crazed Architect feature}",
-        "When an allied creature(including you) within 45 ft of you is critically hit by a hostile creature, or an allied creature(excluding you) critically hits a hostile creature, you can use your reaction to make an attack with a firearm against that hostile creature, provided it is within the range of your firearm.",
-        "Your CWC also offers limited arcane capabilities, as you are now able to store one spell in it, that you cast with an action and a spell slot. The spell is stored in your CWC until you finish a long rest, at which point the spell effect dissipates without activating. You can activate the spell stored in your CWC as a bonus action."
-      ]
-    },
-    {
-      "name": "Zero Energy Loss",
-      "source": "HEC",
-      "page": 69,
-      "className": "Warlock",
-      "classSource": "DRK",
-      "subclassShortName": "Crazed Architect",
-      "subclassSource": "HEC",
-      "level": 10,
-      "header": 2,
-      "entries": [
-        "{@i 10th-level Crazed Architect feature}",
-        "You gain expertise in {@item tinker's tools|PHB} and if a magical effect or spell affects Space(ex: Graviturgy magic) or Time(ex: Chronurgy magic), you can identify that nature without an ability check. However you must make an Arcana check to identify the complete effects and you get a bonus to the check equal to your Charisma modifier.",
-        "Whenever you expend a Warlock spell slot, your CWC gains a {@b 'ZEL'} charge. Your CWC can have a maximum amount of 'ZEL' charges equal to the maximum amount of Warlock spell slots you have according to your Warlock level. Your CWC retains the charges until you take a short or long rest, at which point it resets to zero charges. You can expend a charge as a bonus action to perform one of the following special actions:",
-        "{@bold Falling Blast} - You throw your CWC upto 30 ft away and then teleport to catch it, landing in the spot you threw it. You may then make one weapon attack against a creature within 10 ft of where you left.",
-        "{@bold Glimpse Maneuver} - You can only choose this special action if your movement speed is not 0 from any condition affecting you and when you do so, choose a space within 10 ft of you. Until the end of your turn, your movement speed increases by an amount equal to (5*proficiency bonus)ft, and you are not affected by difficult terrain or reductions to your speed. For the duration, you can also move freely in any direction and move through any matter but you cannot end your movement in a space that is occupied. At the end of your turn, you teleport back to the space you chose or in the nearest unoccupied space if that space is occupied.",
-        "{@bold Bullet Raid} - You choose a point within 5 ft of you and then teleport 20 ft away from where you are. Hostile creatures within 20 ft of the point you chose must make a Strength saving throw against your spell save DC and on a failure they are pulled in a straight line towards the point, ending in an unoccupied space as close as possible (even if that space is in the air). Immediately after that you spray fire with your firearm at creatures in a 30 ft cone originating from you in any direction, and each creature in the cone must make a Dexterity saving throw against your spell save DC, taking {@dice 3d8} piercing damage on a failure or half as much on a success.",
-        "{@bold Collapsing Realm} - Until the end of your turn, you do not provoke attack of opportunity and your movement speed is doubled. When you move within 5 ft of a hostile creature you deal {@dice 4d4} fire, lightning or thunder(your choice when you activate special action) damage and when you move within 5 ft of an allied creature, you can move them upto 10 ft in any direction."
-      ]
-    },
-    {
-      "name": "Hypermatrix",
-      "source": "HEC",
-      "page": 69,
-      "className": "Warlock",
-      "classSource": "DRK",
-      "subclassShortName": "Crazed Architect",
-      "subclassSource": "HEC",
-      "level": 14,
-      "header": 2,
-      "entries": [
-        "{@i 14th-level Crazed Architect feature}",
-        "You are now able to perceive the Hypermatrix, a tessellated abstraction of Reality, upto a range of 60 ft from you and you gain a bonus to Perception and Investigation within the same range equal to your Charisma modifier. You also know the orientation of the cardinal directions and the current time, similar to the benefits of {@feat Keen Mind|DRK} feat.",
-        {
-          "type": "options",
-          "entries": [
-            {
-              "type": "refSubclassFeature",
-              "subclassFeature": "Hyperspace Rift|Warlock|DRK|Crazed Architect|HEC|14"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Hyperspace Rift",
-      "source": "HEC",
-      "page": 69,
-      "className": "Warlock",
-      "classSource": "DRK",
-      "subclassShortName": "Crazed Architect",
-      "subclassSource": "HEC",
-      "level": 14,
-      "header": 2,
-      "entries": [
-        "You are now able to briefly manipulate space-time around you to your advantage. As a bonus action, you can create a rift in space-time that extends upto 30 ft from you for one minute, or until you die. Once you use this feature, you can't use it again until you finish a long rest, unless you expend a Warlock spell slot to use it again.",
-        "The Hyperspace Rift grants the following effects:",
-        {
-          "type": "list",
-          "items": [
-            "You gain a Nixie tube counter which shows the amount of turns left for the duration of this ability. When the counter reaches zero at the start of your turn, the rift implodes as explained later.",
-            "When you create the rift, two alternate reality versions(echoes) of yourself appear. They cannot go beyond the range of the rift and stay for the duration of the rift. They appear as intangible images of yourself, that appear visually distinct from you but wield the CWC and the same firearm you generate from your CWC. On your turn, you can mentally command them to move within the rift in any direction (no action required) and when you move, they mimick your movement as well. When the Nixie tube counter reaches zero, they move into your space and vanish. Your echoes also have special reactions which they each can take once per round.",
-            "When you attack a creature with a firearm, your echoes also attack the creature making you deal an extra {@dice 1d6} force damage for each echo, totalling {@dice 2d6} force damage on each hit. If any of your echoes use their special reaction, the damage bonus from that echo can only be applied once when you hit a creature until the end of your next turn.",
-            "When a creature within the rift tries to teleport, one of your echoes can use it's special reaction to force a Charisma saving throw on it against your spell save dc. On a success it's movement speed is halved for one turn after the teleportation, and on a failure, it's teleportation is foiled and it gains the {@b Anchored} condition until the start of it's next turn. An {@b Anchored} creature cannot use teleportation or planar travel spells and abilities.",
-            "When a creature within the rift rolls an attack roll, ability check or saving throw, one of your echoes can use it's special reaction to reroll the die. You can do so after the roll has been made but before the DM declares any effects of the roll."
-          ]
-        },
-        "At the start of your turns while the rift is active, you can voluntarily accelerate the Nixie tube counter to zero. When the Nixie tube counter reaches zero, the rift automatically implodes and you can temporarily store the destructive energy generated from the implosion in your CWC, until the end of your turn. During your turn, as an action you can choose a point within 120 ft of you and shoot the stored destructive energy as a projectile at that point with a firearm generated by your CWC. Your firearm is destroyed in the process and the projectile explodes in a 60 ft radius sphere from the point you chose, dealing force damage to all creatures within the explosion radius equal to ({@dice 4d8} * no. of turns the rift existed) on a failed Dexterity saving throw against your spell save dc or half as much on a success.",
-        "If you do not take this action by the end of your turn, the rift ends as a result of you dying or you are {@condition incapacitated} by any means at the start of your turn when the Nixie tube counter reaches zero, the rift energy is dispersed by your CWC as a harmless gravitational wave that pushes creatures within 45 ft of you by an additional 30 ft away from you, on a failed Constitution saving throw against your spell save dc or 15 ft away on a success."
-      ]
-    },
-    {
-      "name": "Blessing Domain",
-      "source": "HEC",
-      "page": 69,
-      "className": "Cleric",
-      "classSource": "DRK",
-      "subclassShortName": "Blessing",
-      "subclassSource": "HEC",
-      "level": 1,
-      "entries": [
-        "The Blessing Domain consists of priests who follow deities that are symbols of good luck and prosperity. As such, their baptisms and blessings are much more potent than other clerics, making them extremely important figures that partake in rituals of large magnitudes and religious importance. The Nobility and Royalty would also pay hefty donations to these clerics to have them bless their lineage and ensure their prosperity.",
-        "At each indicated cleric level, add the listed spells to your spells prepared. They do not count towards your limit.",
-        {
-          "type": "table",
-          "caption": " Domain Spells",
-          "colLabels": [
-            "Cleric Level",
-            "Spells"
-          ],
-          "colStyles": [
-            "col-2 text-center",
-            "col-10"
-          ],
-          "rows": [
-            [
-              "1st",
-              "{@spell Bless}, {@spell Feather Fall}"
-            ],
-            [
-              "3rd",
-              "{@spell Prayer of Healing}, {@spell Augury}"
-            ],
-            [
-              "5th",
-              "{@spell Mass Healing Word|DRK}, {@spell Nondetection}"
-            ],
-            [
-              "7th",
-              "{@spell Divination}, {@spell Mordenkainen's Private Sanctum}"
-            ],
-            [
-              "9th",
-              "{@spell Commune}, {@spell Rary's Telepathic Bond}"
-            ]
-          ]
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Sanctified Grace|Cleric|DRK|Blessing|HEC|1"
-        }
-      ]
-    },
-    {
-      "name": "Sanctified Grace",
-      "source": "HEC",
-      "page": 69,
-      "className": "Cleric",
-      "classSource": "DRK",
-      "subclassShortName": "Blessing",
-      "subclassSource": "HEC",
-      "level": 1,
-      "header": 1,
-      "entries": [
-        "At 1st level, you can cast {@spell Bless} twice per long rest without expending spell slots, at a spell level equal to your (proficiency bonus - 1). Your casting of Bless is also more potent and versatile. The bonus from your Bless also applies to ability checks and you can alternatively cast Bless as a spell requiring concentration for a duration of one hour instead but the bonus from Bless can only be applied once per round for each creature.",
-        "When casting spells to communicate with your deity, you do not need to provide costly material components, including ones that will be consumed by the spell."
-      ]
-    },
-    {
-      "name": "Pious Invocation",
-      "source": "HEC",
-      "page": 69,
-      "className": "Cleric",
-      "classSource": "DRK",
-      "subclassShortName": "Blessing",
-      "subclassSource": "HEC",
-      "level": 2,
-      "header": 2,
-      "consumes": {
-        "name": "Channel Divinity"
-      },
-      "entries": [
-        "When you cast Bless or at the start of your turns while concentrating on Bless, you can expend a use of your channel divinity to empower the effect of your Bless. At 3rd spell level or 4th spell level, the bonus granted by Bless increases to {@dice 1d6} and the total number of creatures affected by it reduces by one. At 5th spell level or higher, the bonus granted by Bless increases to {@dice 1d8} and the total number of creatures affected by it reduces by two. You can now cast and concentrate on another Cleric spell while concentrating on Bless but the minimum DC for your concentration saves increases by an amount equal to the Spell level at which Bless was cast. Afterwards if you fail the concentration save, you lose concentration on both spells.",
-        "When a spell you cast with a spell slot restores hit points to a creature, all creatures affected by your Bless regain hitpoints equal to {@dice 1d4}, increasing to {@dice 2d4} when you reach level 9 in this subclass and {@dice 3d4} when you reach level 16 in this subclass."
-      ]
-    },
-    {
-      "name": "Seraphic Orison",
-      "source": "HEC",
-      "page": 69,
-      "className": "Cleric",
-      "classSource": "DRK",
-      "subclassShortName": "Blessing",
-      "subclassSource": "HEC",
-      "level": 6,
-      "header": 2,
-      "entries": [
-        "Starting at 6th level, you can enchance one particular bonus granted by your Bless. When you cast Bless and as bonus action on your turn while concentrating on Bless, you choose one from attack roll, ability check or saving throw for each creature affected by Bless. Depending on what you chose, the creature gets another buff as listed below for the duration of the Bless.",
-        "{@b Attack roll} - Once per turn, the bonus from Bless also applies to damage rolls whenever you hit a creature with an attack. This bonus increases to twice on your turns at 11th level.",
-        "{@b Ability check} - Once per round when you roll 9 or less on an ability check, you can make it a 10 on the {@dice d20}.",
-        "{@b Saving throw} - You gain resistance to one damage type of your choice.",
-        "Additionally, once per round a creature can reroll the bonus granted to itself by your Bless."
-      ]
-    },
-    {
-      "name": "Blessed Strikes",
-      "source": "TCE",
-      "page": 30,
-      "className": "Cleric",
-      "classSource": "DRK",
-      "subclassShortName": "Blessing",
-      "subclassSource": "HEC",
-      "level": 8,
-      "isClassFeatureVariant": true,
-      "header": 2,
-      "entries": [
-        "{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Strike feature}",
-        "You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-      ]
-    },
-    {
-      "name": "Exalted Benediction",
-      "source": "HEC",
-      "page": 69,
-      "className": "Cleric",
-      "classSource": "DRK",
-      "subclassShortName": "Blessing",
-      "subclassSource": "HEC",
-      "level": 17,
-      "header": 2,
-      "entries": [
-        "Starting at 17th level, when you cast a spell that heals creatures with a spell slot of 5th level or lower, roll a {@dice 1d6}, and you regain the spell slot spent in the casting of the spell on a 5 or 6. Whenever a creature rolls a 1 on the bonus granted by Bless, it must reroll it once and take the new roll. Additionally, the particular bonus is increased again as described below.",
-        "{@b Attack roll} - The bonus to damage rolls now applies thrice on your turns and you deal extra Necrotic/Radiant damage equal to the Cleric's Wisdom modifier on a critical hit. Once per casting of Bless, you can use your reaction to turn a normal hit into a critical hit.",
-        "{@b Ability check} - You roll the bonus to ability checks from Bless twice and choose the higher result, and you can use your reaction to reroll a failed ability check. Once per casting of Bless, you can add the cleric's Wisdom modifier to the ability check you roll.",
-        "{@b Saving throw} - You gain a +2 bonus to your ac and you regain extra hitpoints equal to the Cleric's Wisdom modifier whenever you receive healing. Once per casting of Bless, you can use your reaction to reroll a failed saving throw with a bonus equal to the cleric's Wisdom modifier."
-      ]
-    },
-    {
-      "name": "Hunt Domain",
-      "source": "HEC",
-      "page": 69,
-      "className": "Cleric",
-      "classSource": "DRK",
-      "subclassShortName": "Hunt",
-      "subclassSource": "HEC",
-      "level": 1,
-      "entries": [
-        "The Hunt Domain is a reclusive order of clerics that have been trained to the extreme for one purpose - to kill all that is unholy. Clerics of this domain are extremely well versed in tracking and eliminating dangerous creatures. They are also known for their ability to survive against all odds and keep fighting in unfair conditions for extended amounts of time.",
-        "At each indicated cleric level, add the listed spells to your spells prepared. They do not count towards your limit.",
-        {
-          "type": "table",
-          "caption": " Domain Spells",
-          "colLabels": [
-            "Cleric Level",
-            "Spells"
-          ],
-          "colStyles": [
-            "col-2 text-center",
-            "col-10"
-          ],
-          "rows": [
-            [
-              "1st",
-              "{@spell Absorb Elements|XGE}, {@spell Hunter's Mark|DRK}"
-            ],
-            [
-              "3rd",
-              "{@spell Kinetic Jaunt|SCC}, {@spell Lesser Restoration}"
-            ],
-            [
-              "5th",
-              "{@spell Aura of Vitality}, {@spell Discharge Defense|TCT}"
-            ],
-            [
-              "7th",
-              "{@spell Freedom of Movement}, {@spell Shadow of Moil|XGE}"
-            ],
-            [
-              "9th",
-              "{@spell Greater Restoration}, {@spell Mantle of Dread|AspysGuidetoInfinitum}"
-            ]
-          ]
-        },
-        {
-          "type": "refSubclassFeature",
-          "subclassFeature": "Faithbound Arsenal|Cleric|DRK|Hunt|HEC|1"
-        }
-      ]
-    },
-    {
-      "name": "Faithbound Arsenal",
-      "source": "HEC",
-      "page": 69,
-      "className": "Cleric",
-      "classSource": "DRK",
-      "subclassShortName": "Hunt",
-      "subclassSource": "HEC",
-      "level": 1,
-      "header": 1,
-      "entries": [
-        "At 1st level, you gain proficiency in Survival skill and with firearms. You have advantage on Death Saving Throws. When you are flanked by two or more creatures, you also gain advantage on attacks against them while you remain flanked.",
-        "As a special ritual that takes 10 minutes to complete, you can expend one flask of Holy Water to consecrate a weapon that you are proficient with. Once the ritual is complete, you form a divine bond with the weapon granting you the following benefits - you can use it as a spellcasting focus for your cleric spells and you can deal Necrotic or Radiant damage with your consecrated weapons instead of their usual damage type. You can have upto two consecrated weapons at a time and when you try to bond with a third one, your bond with the first consecrated weapon ends."
-      ]
-    },
-    {
-      "name": "Hallowed Pursuit",
-      "source": "HEC",
-      "page": 69,
-      "className": "Cleric",
-      "classSource": "DRK",
-      "subclassShortName": "Hunt",
-      "subclassSource": "HEC",
-      "level": 2,
-      "header": 2,
-      "consumes": {
-        "name": "Channel Divinity"
-      },
-      "entries": [
-        "When you hit a creature, you can expend a use of your Channel Divinity, to mark the creature as {@b Prey} for 1 hour and begin the {@b Hunt} for 1 minute. You know the exact location of your {@b Prey} while it is within 1000 ft of you and when it is beyond 1000 ft but in the same plane of existence as you, you know it's general direction from you. At the start of each of your turns, when the {@b Prey} is alive during the {@b Hunt}, you regain {@dice 1d4} hitpoints. A {@b Prey} hit by your consecrated weapons cannot regain hitpoints until the start of your next turn.",
-        "When a {@b Prey} dies during the {@b Hunt} while within 120 ft of you, you can end the {@b Hunt} to regain one expended spell slot, the level of which can be no higher than half your proficiency bonus (rounded down). Alternatively, you can mark another creature within 120 ft of you as {@b Prey} (no action required) for the remaining duration of the {@b Hunt}. During a {@b Hunt}, you can only have one creature marked as {@b Prey}."
-      ]
-    },
-    {
-      "name": "Divine Cascade",
-      "source": "HEC",
-      "page": 69,
-      "className": "Cleric",
-      "classSource": "DRK",
-      "subclassShortName": "Hunt",
-      "subclassSource": "HEC",
-      "level": 6,
-      "header": 2,
-      "entries": [
-        "Starting at 6th level, you can attack twice with your consecrated weapon, instead of once, whenever you take the {@action Attack} action on your turn. If you choose the Divine Strike feature at level 7 in this subclass, you can use that feature twice on each of your turns when you reach level 11 in this subclass."
-      ]
-    },
-    {
-      "name": "Blessed Strikes",
-      "source": "TCE",
-      "page": 30,
-      "className": "Cleric",
-      "classSource": "DRK",
-      "subclassShortName": "Hunt",
-      "subclassSource": "HEC",
-      "level": 8,
-      "isClassFeatureVariant": true,
-      "header": 2,
-      "entries": [
-        "{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Strike feature}",
-        "You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-      ]
-    },
-    {
-      "name": "Sacrosanct Carnage",
-      "source": "HEC",
-      "page": 69,
-      "className": "Cleric",
-      "classSource": "DRK",
-      "subclassShortName": "Hunt",
-      "subclassSource": "HEC",
-      "level": 17,
-      "header": 2,
-      "entries": [
-        "Starting at 17th level, you gain increasing bonuses based on the intensity of the battle. When the {@b Hunt} is active, you gain the {@b Fervour} counter which increases whenever you heal creatures, deal damage or receive damage by an amount equal to the total calculated for each instance. You gain all the bonuses for which the {@b Fervour} counter is more than or equal to at any given time. The bonuses last for the duration of the current {@b Hunt} and the {@b Fervour} counter resets to zero when your current {@b Hunt} ends or when you start a new {@b Hunt}.",
-        "{@b Fervour count} - {@b Bonus gained}",
-        "{@b 50} - A 60 ft aura expands from you and remains centered on you. Whenever a creature within the aura deals or receives a critical hit, the total calculated is added to your {@b Fervour} counter.",
-        "{@b 150} - You gain Truesight upto 60 ft from you. Allied creatures within the aura perceive the {@b Prey} as if they had Truesight while it is within 60 ft of them.",
-        "{@b 250} - You and allied creatures within the aura gain immunity to {@condition Charmed} condition and additionally gain advantage on saving throws that apply any condition when you fail them.",
-        "{@b 400} - When you cast Cleric spells that require an Action with a 5th level spell slot or lower, you can now cast them with a Bonus Action instead.",
-        "{@b 550} - You can attack three times whenever you take the {@action Attack} action on your turn.",
-        "{@b 750} - When you kill a hostile creature or when a hostile creature dies within 10 ft of you, you can use a reaction to gain one of the hostile creature's resistances until you take a short or long rest. When the {@b Prey} dies, you receive this benefit as long as you are within 1000 ft of it and you do not need to use a reaction to gain the resistance.",
-        "{@b 999} - You extend the duration of the {@b Hunt} by one round everytime you deal a critical hit. When you deal a critical hit to a creature, it is {@b Maddened} until the start of your next turn. A {@b Maddened} creature cannot differentiate between friend or foe, and it must attack the nearest creature that it can see. In this instance, a {@b Maddened} creature cannot perceive you as a target to attack when choosing the nearest creature to attack."
-      ]
-    }
+			"name": "Path of the Aberrant Scourge",
+			"source": "HEC",
+			"page": 69,
+			"className": "Barbarian",
+			"classSource": "DRK",
+			"subclassShortName": "Aberrant Scourge",
+			"subclassSource": "HEC",
+			"level": 3,
+			"entries": [
+				"One fine morning, you wake up to realise that you have a worm companion residing in your brain. Whether it obeys your will or you have been completely subdued by it is unclear. However, what is clear is that you have formed an unusual relationship with it - Symbiosis. As you gain levels in this class, your control over your mutation increases and you will be able to pioneer a path that has never been explored before.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Awakening|Barbarian|DRK|Aberrant Scourge|HEC|3"
+				}
+			]
+		},
+		{
+			"name": "Awakening",
+			"source": "HEC",
+			"page": 69,
+			"className": "Barbarian",
+			"classSource": "DRK",
+			"subclassShortName": "Aberrant Scourge",
+			"subclassSource": "HEC",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Aberrant Scourge feature}",
+				"You can now communicate telepathically with one creature within 60 ft of you at a time and they can respond back to you telepathically. The creature must not be hostile to you and must understand atleast one language. You also understand and can communicate in Deep Speech.",
+				"You can attempt to grapple a creature when you enter rage and once per turn, when you hit a creature with a melee weapon attack or an unarmed strike. If a creature is moved forcibly while being {@condition grappled} by you, you can also move to keep grappling the creature. The amount of movement used up in such a way cannot exceed your total movement speed and is reduced from the distance you can move on your next turn."
+			]
+		},
+		{
+			"name": "Transmogrification",
+			"source": "HEC",
+			"page": 69,
+			"className": "Barbarian",
+			"classSource": "DRK",
+			"subclassShortName": "Aberrant Scourge",
+			"subclassSource": "HEC",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Aberrant Scourge feature}",
+				"When you successfully grapple a creature or start your turn while grappling a creature, you can choose to deal Psychic damage equal to your Strength modifier and gain one charge of wrath.",
+				"When attempting to grapple, you can do so telekinetically as translucent tentacles visible only to you and the target creature, wraps around the target creature. The maximum range for the telekinetic grapple extends to within 10 ft of you or upto the reach of your melee weapon, if it is higher.",
+				"You also get to choose one focus from the two options listed below. You can change your chosen focus on a long rest.",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Mind Path|Barbarian|DRK|Aberrant Scourge|HEC|6"				
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Body Path|Barbarian|DRK|Aberrant Scourge|HEC|6"				
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Mind Path",
+			"source": "HEC",
+			"page": 69,
+			"className": "Barbarian",
+			"classSource": "DRK",
+			"subclassShortName": "Aberrant Scourge",
+			"subclassSource": "HEC",
+			"level": 6,
+			"header": 1,
+			"entries": [
+				"You are immune to magic that allows other creatures to read your thoughts or determine whether you are lying. You gain resistance to Psychic damage (the resistance becomes immunity when you reach level 17 in this subclass). While raging, you can use your Strength modifier in place of Intelligence when subjected to Intelligence saving throws."
+			]
+		},
+		{
+			"name": "Body Path",
+			"source": "HEC",
+			"page": 69,
+			"className": "Barbarian",
+			"classSource": "DRK",
+			"subclassShortName": "Aberrant Scourge",
+			"subclassSource": "HEC",
+			"level": 6,
+			"header": 1,
+			"entries": [
+				"When you enter rage, you can choose to grow upto one size larger (upto two sizes larger when you reach level 17 in this subclass) and while you are raging, you have advantage on saving throws against being {@condition incapacitated}, {@condition stunned}, {@condition paralyzed} or {@condition unconscious}."
+			]
+		},
+		{
+			"name": "Metamorphosis",
+			"source": "HEC",
+			"page": 69,
+			"className": "Barbarian",
+			"classSource": "DRK",
+			"subclassShortName": "Aberrant Scourge",
+			"subclassSource": "HEC",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Aberrant Scourge feature}",
+				"You have immunity to the {@condition charmed} and {@condition frightened} conditions while you are raging and you dispel any of these conditions on yourself when you start raging. When a {@condition grappled} creature deals damage to you, you can immediately use your reaction to make one melee weapon attack or unarmed strike against it.",
+				"You also get to choose one focus from the two options listed below and you can choose a different focus from the one you chose previously. You can now change your chosen focus on a short rest.",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Mind Path|Barbarian|DRK|Aberrant Scourge|HEC|10"				
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Body Path|Barbarian|DRK|Aberrant Scourge|HEC|10"				
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Mind Path",
+			"source": "HEC",
+			"page": 69,
+			"className": "Barbarian",
+			"classSource": "DRK",
+			"subclassShortName": "Aberrant Scourge",
+			"subclassSource": "HEC",
+			"level": 10,
+			"header": 1,
+			"entries": [
+				"When you are grappling a creature and you use the Reckless Attack feature, the {@condition grappled} creature must roll an Intelligence saving throw (DC equal to 8 + your proficiency bonus + your Strength modifier) and on a failure, it is {@condition stunned} until the start of your next turn. This effect is dispelled from the {@condition grappled} creature if your rage ends or if it is not {@condition grappled} by you anymore."
+			]
+		},
+		{
+			"name": "Body Path",
+			"source": "HEC",
+			"page": 69,
+			"className": "Barbarian",
+			"classSource": "DRK",
+			"subclassShortName": "Aberrant Scourge",
+			"subclassSource": "HEC",
+			"level": 10,
+			"header": 1,
+			"entries": [
+				"For every 7 damage you take while raging, you can deal Psychic damage equal to one roll of your wrath die to the {@condition grappled} creature."
+			]
+		},
+		{
+			"name": "Transcendent Causatum",
+			"source": "HEC",
+			"page": 69,
+			"className": "Barbarian",
+			"classSource": "DRK",
+			"subclassShortName": "Aberrant Scourge",
+			"subclassSource": "HEC",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Aberrant Scourge feature}",
+				"When attempting to grapple a creature telekinetically, a translucent illithid form of you appears instead of tentacles to grapple the target, and it is visible only to you and the target creature. Your illithid form is one size larger than you and grows or shrinks to maintain the size difference if your size changes. Any creature can move freely through or end it's turn inside the space occupied by your illithid form and it provides no cover to other creatures.",
+				"When you are grappling a creature, you gain a +2 bonus to your AC and your movement speeds increase by 10ft. While raging you also gain a bonus to your Attack Rolls, Ability Checks and Saving Throws equal to the number of creatures you are grappling.",
+				"You also get to choose one focus from the two options listed below and you can choose a different focus from the one you chose previously. You can now change your chosen focus when you enter rage.",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Mind Path|Barbarian|DRK|Aberrant Scourge|HEC|14"				
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Body Path|Barbarian|DRK|Aberrant Scourge|HEC|14"				
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Mind Path",
+			"source": "HEC",
+			"page": 69,
+			"className": "Barbarian",
+			"classSource": "DRK",
+			"subclassShortName": "Aberrant Scourge",
+			"subclassSource": "HEC",
+			"level": 14,
+			"header": 1,
+			"entries": [
+				"A {@condition grappled} creature attempting to use any means to end the {@condition grappled} condition on itself must succeed on an Intelligence saving throw (DC equal to 8 + your proficiency bonus + your Strength modifier) to be able to use those features. It gains a penalty to the save equal to the number of turns it spent being grappled by you in the last minute. When a creature dies while it is {@condition grappled} by you, you regain hitpoints equal to your barbarian level and you gain 4 wrath charges."
+			]
+		},
+		{
+			"name": "Body Path",
+			"source": "HEC",
+			"page": 69,
+			"className": "Barbarian",
+			"classSource": "DRK",
+			"subclassShortName": "Aberrant Scourge",
+			"subclassSource": "HEC",
+			"level": 14,
+			"header": 1,
+			"entries": [
+				"You can grapple a maximum of three creatures at the same time with your illithid form. When you use a subclass feature to affect a creature that you have {@condition grappled}, you can choose any number of creatures that are also {@condition grappled} by you to be affected simultaneously. When a creature dies while it is {@condition grappled} by you, you regain hitpoints equal to half your barbarian level and you gain 2 wrath charges."
+			]
+		},
+		{
+			"name": "Path of the Frostwarden",
+			"source": "HEC",
+			"page": 69,
+			"className": "Barbarian",
+			"classSource": "DRK",
+			"subclassShortName": "Frostwarden",
+			"subclassSource": "HEC",
+			"level": 3,
+			"entries": [
+				"There exist a small but tight knit community of people that brave the harsh winters and the frozen lands. Growing in such extreme weather has conditioned their physique extensively and many of these people are also blessed by the Beast of Winter. Thus they become powerful guardians of their land and are adept at protecting their kinsman. As you gain levels in this class, your abilities will shape you to become an exemplary protector that commands the cold.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Rimed Aegis|Barbarian|DRK|Frostwarden|HEC|3"
+				}
+			]
+		},
+		{
+			"name": "Rimed Aegis",
+			"source": "HEC",
+			"page": 69,
+			"className": "Barbarian",
+			"classSource": "DRK",
+			"subclassShortName": "Frostwarden",
+			"subclassSource": "HEC",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Frostwarden feature}",
+				"When you finish a long rest, you can sacrifice any amount of hitpoints that you have to the Beast of Winter. Your maximum hitpoints is also reduced by that amount but you obtain the {@b Frozen Bulwark} that has hitpoints equal to the amount of hitpoints you sacrificed, until you finish your next long rest. When you take damage, it is reduced from your {@b Frozen Bulwark} before it is reduced from your hitpoints and your {@b Frozen Bulwark} always counts towards your hitpoint total. However you can only restore hitpoints to your {@b Frozen Bulwark} when you deal wrath damage by an amount equal to the total rolled by your wrath dice.",
+				"As a bonus action, you can emit a blast of chillness around you upto 30ft away. Hostile creatures within range must roll a Constitution saving throw(DC equal to 8 + your proficiency bonus + your Strength modifier) and on a failure they receive the {@b Winter's Mark} until the end of your next turn. Creatures with {@b Winter's Mark} have their movement speed reduced by 10ft and when they take Cold damage, they take additional Cold damage equal to one roll of your Wrath die. When you use this bonus action when a creature already has {@b Winter's Mark}, it must roll the saving throw again regardless of how far away it is from you.",
+				"While raging, whenever a creature hits you with an attack roll, it takes Cold damage equal to your Barbarian level."
+			]
+		},
+		{
+			"name": "Frigid Mantle",
+			"source": "HEC",
+			"page": 69,
+			"className": "Barbarian",
+			"classSource": "DRK",
+			"subclassShortName": "Frostwarden",
+			"subclassSource": "HEC",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Frostwarden feature}",
+				"While raging, you gain resistance to Cold damage and your weapon can deal Cold damage instead of it's usual damage type. While your {@b Frozen Bulwark} has atleast 1 hitpoint, you radiate the {@b Sentinel Aura} upto 15ft from you. Hostile creatures within the aura are taunted and cannot target other creatures until they miss an attack roll against you."
+			]
+		},
+		{
+			"name": "Arctic Retribution",
+			"source": "HEC",
+			"page": 69,
+			"className": "Barbarian",
+			"classSource": "DRK",
+			"subclassShortName": "Frostwarden",
+			"subclassSource": "HEC",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Frostwarden feature}",
+				"You permanently gain Cold resistance and all Cold damage you deal pierces resistance to it. While raging, you now gain one wrath die and restore hitpoints to your {@b Frozen Bulwark} equal to your Strength modifier at the start of your turns. Additionally while raging, you now deal the Cold damage equal to your Barbarian level whenever a creature deals damage to you instead of just when they hit you."
+			]
+		},
+		{
+			"name": "Cryogenic Ire",
+			"source": "HEC",
+			"page": 69,
+			"className": "Barbarian",
+			"classSource": "DRK",
+			"subclassShortName": "Frostwarden",
+			"subclassSource": "HEC",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Frostwarden feature}",
+				"While raging you also gain resistance to Fire damage and immunity to the {@condition prone} condition.",
+				"When you deal a critical hit to a creature, you apply {@b Winter's Mark} to it and halve it's movement speed until the end of your next turn. Creatures with the {@b Winter's Mark} are now affected by {@b Sentinel Aura} regardless of how far away it is from you."
+			]
+		},
+		{
+			"name": "The Raven Queen",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 1,
+			"entries": [
+				"Your patron is the Raven Queen, a mysterious being who rules the Shadowfell from a palace of ice deep within that dread realm. The Raven Queen watches over the world, anticipating each creature's death and ensuring that it meets its end at the proscribed time and place. Warlocks sworn to the Raven Queen receive visions and whispers from her in their dreams, sending them on quests and warning them of impending dangers.",
+				{
+					"type": "entries",
+					"name": "Expanded Spell List",
+					"entries": [
+						"The Raven Queen lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+						{
+							"type": "table",
+							"caption": "Raven Queen Expanded Spells",
+							"colLabels": [
+								"Spell Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1st",
+									"{@spell inflict wounds}, {@spell heroism}"
+								],
+								[
+									"2nd",
+									"{@spell rime's binding ice|FTD}, {@spell gentle repose}"
+								],
+								[
+									"3rd",
+									"{@spell life transference|XGE}, {@spell spirit guardians}"
+								],
+								[
+									"4th",
+									"{@spell phantasmal killer}, {@spell fire shield}"
+								],
+								[
+									"5th",
+									"{@spell cone of cold}, {@spell commune}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sentinel's Vigilance|Warlock|DRK|Raven Queen|HEC|1"
+				}
+			]
+		},
+		{
+			"name": "Sentinel's Vigilance",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"{@i 1st-level Raven Queen feature}",
+				"Starting at 1st level, the Raven Queen grants you a Raven spirit that watches over you. A spectral raven that only you, a creature you allow or a creature with truesight can see appears perched on your shoulders. It cannot be targeted by any spell, magical effect or attack and cannot take any damage. It grants you advantage on Death saving throws and can keep watch while you are resting, waking you up when it senses anything within 60ft of you using your senses and ability checks.",
+				"You can send your Raven spirit to protect those on the border of life and death. As a bonus action on your turn or as a reaction when a creature is about to roll a Death Saving Throw while within 30 ft of you, you stabilize the dying creature and grant it the effects of the {@spell Sanctuary} spell. A creature stabilized from a use of this feature can choose to make Death saving throws at the start of each of it's turns and it regains 1 hitpoint after one minute or when it rolls 3 successes on it's Death saving throws. You can use this feature a number of times equal to your proficiency bonus per long rest."
+			]
+		},
+		{
+			"name": "Boon of the Raven Spirit",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Raven Queen feature}",
+				"Starting at 6th level, the raven spirit empowers your mind and the modicum of power granted to you by your patron. You gain immunity to the {@condition frightened} condition. In addition, one of your chosen pact boons becomes your Prime Pact Boon and it is improved as shown below.",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Pact of the Chain|Warlock|DRK|Raven Queen|HEC|6"				
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Pact of the Blade|Warlock|DRK|Raven Queen|HEC|6"				
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Pact of the Talisman|Warlock|DRK|Raven Queen|HEC|6"				
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Pact of the Tome|Warlock|DRK|Raven Queen|HEC|6"				
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Pact of the Cloak|Warlock|DRK|Raven Queen|HEC|6"				
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Pact of the Marksman|Warlock|DRK|Raven Queen|HEC|6"				
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Pact of the Chain",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 6,
+			"header": 1,
+			"entries": [
+				{
+					"type":"list",
+					"items":[
+						"Your familiar can now share the same initiative as you and take it's turn during your turn. You can telepathically communicate with your familiar and perceive through it's senses as long as you are on the same plane of existence.",
+						"Your familiar's proficiency bonus is equal to your proficiency bonus. While your familiar is alive, you and your familiar get advantage on ability checks using skills for which the both of you share proficiency.",
+						"When your familiar is targeted by an attack or is about to roll a saving throw, you can use your reaction to dismiss your familiar to it's pocket dimension and return to that space at the start of your next turn. When you do so, it does not take any damage from the triggering effect."
+					]
+				}
+			]
+		},
+		{
+			"name": "Pact of the Blade",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 6,
+			"header": 1,
+			"entries": [
+				{
+					"type":"list",
+					"items":[
+						"Your pact weapon deals an extra {@dice 1d6} damage when it hits.",
+						"When you hit a creature with your pact weapon, you can cause the pact weapon to deal Cold damage.",
+						"When you hit a creature with your pact weapon, you can choose to curse it until you take a short or long rest. You can only have one creature cursed at a time. You have advantage on Wisdom(Perception) checks against the cursed creature and it does not benefit from the {@condition Invisible} condition against you."
+					]
+				}
+			]
+		},
+		{
+			"name": "Pact of the Talisman",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 6,
+			"header": 1,
+			"entries": [
+				{
+					"type":"list",
+					"items":[
+						"When you perform the ritual to receive an amulet, you receive a number of amulets equal to your proficiency bonus.",
+						"The number of uses on the features provided by these talismans are shared by all the talismans, but they recharge on a short rest instead of a long rest.",
+						"When a talisman wearer uses one of it's expendable/rechargeable features, they can choose to gain temporary hitpoints equal to your Warlock level."
+					]
+				}
+			]
+		},
+		{
+			"name": "Pact of the Tome",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 6,
+			"header": 1,
+			"entries": [
+				{
+					"type":"list",
+					"items":[
+						"When you deal Necrotic or Cold damage through spells, you can add your Charisma modifier to one damage roll of that spell.",
+						"Once per long rest, when you can cast a Warlock spell with a spell slot you can do so as if the spell slot expended was one level higher.",
+						"During a long rest, you can prepare 2 spells(upto 5th lvl) from the Wizard, Sorcerer or Bard spell list and these spells are considered as Warlock spells for you. The spells prepared in such a way do not count towards the number of spells known by you."
+					]
+				}
+			]
+		},
+		{
+			"name": "Pact of the Cloak",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 6,
+			"header": 1,
+			"entries": [
+				{
+					"type":"list",
+					"items":[
+						"While wearing the cloak, you are under the effects of {@spell Nondetection} spell.",
+						"You have the {@spell Blink} spell always prepared and you can cast it once per short rest without expending a spell slot. For the duration of the spell, you can use your reaction to reroll the {@dice d6} and if either roll succeeds you can choose either yourself or an allied creature within 30ft of you to be affected by the spell.",
+						"You gain proficiency in Dexterity(Stealth) checks and your proficiency bonus is doubled when making them."
+					]
+				}
+			]
+		},
+		{
+			"name": "Pact of the Marksman",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 6,
+			"header": 1,
+			"entries": [
+				{
+					"type":"list",
+					"items":[
+						"Your pact weapon's short and long range is increased by 15 ft and 45 ft respectively. The sound of shots fired with your pact weapon can only be heard while within 60 ft of you.",
+						"When you attack a creature with your pact weapon, you can have it deal Necrotic or Cold damage instead of its normal damage type.",
+						"When a hostile creature ends it's turn within 5ft of you, you can move upto 10ft without provoking attack of opportunity."
+					]
+				}
+			]
+		},
+		{
+			"name": "Aegis of the Ravens",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Raven Queen feature}",
+				"The Raven spirit granted to you has influenced your physique, over the course of it's companionship. You gain resistance to Cold and Necrotic damage. You also gain one Eldritch Invocation of your choice, which must have a prerequisite of your chosen Prime Pact Boon and you must meet the warlock level requirement(if any).",
+				"As a bonus action, you can manifest spectral raven wings that give you magical flight with flying speed equal to your movement speed for one minute. You can use this feature a number of times equal to your proficiency bonus per long rest."
+			]
+		},
+		{
+			"name": "Queen's Eminent",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Raven Queen feature}",
+				"You get blessed by the Raven Queen herself for your service that has been matched by few. You can choose to replace your 6th and 7th level Mystic Arcanum with a spell of the same level from the Wizard spell list.",
+				"The Raven spirit grants you celerity and an uncanny sense of intuition. Your movement speed increases by 10ft and a hostile creature cannot benefit from advantage on attacks against you as a result of being unseen.",
+				"Your Prime Pact Boon is also improved as described below.",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Pact of the Chain|Warlock|DRK|Raven Queen|HEC|14"				
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Pact of the Blade|Warlock|DRK|Raven Queen|HEC|14"				
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Pact of the Talisman|Warlock|DRK|Raven Queen|HEC|14"				
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Pact of the Tome|Warlock|DRK|Raven Queen|HEC|14"				
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Pact of the Cloak|Warlock|DRK|Raven Queen|HEC|14"				
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Pact of the Marksman|Warlock|DRK|Raven Queen|HEC|14"				
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Pact of the Chain",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 14,
+			"header": 1,
+			"entries": [
+				{
+					"type":"list",
+					"items":[
+						"When you cast a Warlock spell that doesn't have a range of 'self', you can do so as if you were in your familiar's place. Your familiar adds your Charisma modifier as a bonus to all Attack Rolls, Ability Checks and Saving Throws it makes."
+					]
+				}
+			]
+		},
+		{
+			"name": "Pact of the Blade",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 14,
+			"header": 1,
+			"entries": [
+				{
+					"type":"list",
+					"items":[
+						"Attacks you make with your pact weapon are critical hits on a roll of 19 or 20 on the {@dice d20}. You can take the maximum possible result on the base damage die of your pact weapon when you hit a creature with it."
+					]
+				}
+			]
+		},
+		{
+			"name": "Pact of the Talisman",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 14,
+			"header": 1,
+			"entries": [
+				{
+					"type":"list",
+					"items":[
+						"The dice for features provided by the talismans increase by one size. Once per round when a talisman wearer rolls dice for a feature granted by the talisman, they can roll twice and choose the higher result.",
+						"At the end of a rest, each talisman wearer gains resistance to one damage type of your choice until the next time they take a rest."
+					]
+				}
+			]
+		},
+		{
+			"name": "Pact of the Tome",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 14,
+			"header": 1,
+			"entries": [
+				{
+					"type":"list",
+					"items":[
+						"When you cast a Warlock spell with a spell slot, you can reroll a number of damage dice equal to your Charisma modifier. Once per short rest when you cast a Warlock spell that deals Cold or Necrotic damage, you take the maximum possible result on all damage dice on the turn you cast the spell."
+					]
+				}
+			]
+		},
+		{
+			"name": "Pact of the Cloak",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 14,
+			"header": 1,
+			"entries": [
+				{
+					"type":"list",
+					"items":[
+						"Your cloak's storage space is now connected to a Demiplane. When storing or retrieving items in the cloak the weight and size restrictions no longer apply. You can also store and retrieve allied creatures that are directly under your command (ex: Summons, familiars, etc) in the cloak.",
+						"Once per short rest as a bonus action you can fill a sphere of 30ft radius with the energy of Shadowfell plane for one minute, and you can move the area upto 30ft as a bonus action. The area is filled with magical Dim Light and hostile creatures have disadvantage on attacks against allied creatures in the area. Allied creatures are unaffected by the Dim Light and when they enter or are inside the sphere, they can spend 10ft of movement to teleport and end up in another space of their choice within the sphere."
+					]
+				}
+			]
+		},
+		{
+			"name": "Pact of the Marksman",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Raven Queen",
+			"subclassSource": "HEC",
+			"level": 14,
+			"header": 1,
+			"entries": [
+				{
+					"type":"list",
+					"items":[
+						"You reroll any 1 or 2 on your pact weapon's damage die when you roll damage. When a creature targets you with an attack or forces you to make a saving throw, immediately after that roll is resolved you can use your reaction to make one attack with your pact weapon against that creature, provided it is within the range of your pact weapon."
+					]
+				}
+			]
+		},
+		{
+			"name": "The Crazed Architect",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Crazed Architect",
+			"subclassSource": "HEC",
+			"level": 1,
+			"entries": [
+				"Your patron is the Crazed Architect, a being who severed itself from reality in it's obsession to make the most technologically advanced weapons. Now it reaches out to mortals from it's workshop and shares with them a fraction of it's works to test their performance. Pactmakers that show promise might even be blessed with some of it's knowledge and access to it's workshop.",
+				{
+					"type": "entries",
+					"name": "Expanded Spell List",
+					"entries": [
+						"The Crazed Architect lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+						{
+							"type": "table",
+							"caption": "Crazed Architect Expanded Spells",
+							"colLabels": [
+								"Spell Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1st",
+									"{@spell longstrider}, {@spell magnify gravity|DRK}"
+								],
+								[
+									"2nd",
+									"{@spell vortex warp|SCC}, {@spell heat metal}"
+								],
+								[
+									"3rd",
+									"{@spell haste}, {@spell aristo's affluent armoury|TCT}"
+								],
+								[
+									"4th",
+									"{@spell otiluke's resilient sphere}, {@spell fabricate}"
+								],
+								[
+									"5th",
+									"{@spell electromagnetic pulse|AspysGuidetoInfinitum}, {@spell swift quiver}"
+								],
+								[
+									"9th",
+									"{@spell time stop}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tools for the Job|Warlock|DRK|Crazed Architect|HEC|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "The Crazed Architect's Accord|Warlock|DRK|Crazed Architect|HEC|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Synchronicity|Warlock|DRK|Crazed Architect|HEC|1"
+				}
+			]
+		},
+		{
+			"name": "Tools for the Job",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Crazed Architect",
+			"subclassSource": "HEC",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"{@i 1st-level Crazed Architect feature}",
+				"Starting at 1st level, you gain proficiency in firearms and {@item tinker's tools|PHB}. If you already have proficiency in {@item tinker's tools|PHB}, you can get proficiency in another {@item artisan's tools|PHB} of your choice."
+			]
+		},
+		{
+			"name": "The Crazed Architect's Accord",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Crazed Architect",
+			"subclassSource": "HEC",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"{@i 1st-level Crazed Architect feature}",
+				"Your patron gifts you the {@b Composite Weapons Casing(CWC)}. The CWC let's you copy the data of any firearm but destroys them in the process. As a free action, you can generate a firearm whose data has already been analysed and stored in the CWC. A firearm generated by the CWC disintegrates after ten minutes or if a creature other than you tries to wield it.",
+				"You ignore any misfire chance on a firearm generated by your CWC. As an action, you can transform your CWC into a trinket that you can wear on yourself and back to it's original form. When you generate a firearm that has the two-handed property, your CWC transforms into a trinket on your person as part of the free action. When you try to attack using a firearm that is not generated by the CWC, it automatically misfires.",
+				"Additionally, when you are holding your CWC in one of your hands, you gain a bonus to your AC as if you were holding a shield and the hand holding the CWC counts as a free hand for the purpose of casting spells with somatic component. Your CWC qualifies as a weapon for your pact boon and it's invocations. Any firearm generated by the CWC automatically benefits from those features as well."
+			]
+		},
+		{
+			"name": "Synchronicity",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Crazed Architect",
+			"subclassSource": "HEC",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"{@i 1st-level Crazed Architect feature}",
+				"Whenever you make an attack with a firearm, you gain a stack of {@b 'Synchronicity'}. You can have a maximum of three stacks and you lose all stacks of {@b 'Synchronicity'} when you end your turn without attacking with your firearm. You gain the following benefits based on the number of {@b 'Synchronicity'} stacks you have:",
+				"1 - Your movement speed increases by 10 ft.",
+				"2 - You gain +1 to your AC and Saving Throws.",
+				"3 - Attack rolls you make with firearms cannot be affected by disadvantage."
+			]
+		},
+		{
+			"name": "Armament Barrage",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Crazed Architect",
+			"subclassSource": "HEC",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Crazed Architect feature}",
+				"When an allied creature(including you) within 40 ft of you is critically hit by a hostile creature, or an allied creature(excluding you) within 40 ft of you critically hits a hostile creature, you can use your reaction to make one attack with a firearm against that hostile creature, provided it is within the range of your firearm.",
+				"Your CWC also offers limited arcane capabilities, as you are now able to store one spell in it, that you cast with an action and a spell slot. The spell is stored in your CWC until you finish a long rest, at which point the spell effect dissipates without activating. You can activate the spell stored in your CWC as a bonus action."
+			]
+		},
+		{
+			"name": "Zero Energy Loss",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Crazed Architect",
+			"subclassSource": "HEC",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Crazed Architect feature}",
+				"You gain expertise in {@item tinker's tools|PHB} and if a magical effect or spell affects Space(ex: Graviturgy magic) or Time(ex: Chronurgy magic), you can identify that nature without an ability check. However you must make the required ability check to identify the complete effects and you get a bonus to the check equal to your Charisma modifier.",
+				"Whenever you expend a Warlock spell slot, your CWC gains a {@b 'ZEL'} charge. Your CWC can have a maximum amount of {@b 'ZEL'} charges equal to the maximum amount of Warlock spell slots you have according to your Warlock level. Your CWC retains the charges until you take a short or long rest, at which point it resets to zero charges. You can expend a charge as a bonus action to perform one of the following special actions:",
+				"{@bold Falling Blast} - You throw your CWC upto 30 ft away and then teleport to catch it, landing in the spot you threw it. You may then make one weapon attack against a creature within 10 ft of where you left.",
+				"{@bold Glimpse Maneuver} - You can only choose this special action if your movement speed is not 0 from any condition affecting you and when you do so, choose a space within 10 ft of you. Until the end of your turn, your movement speed increases by an amount equal to (5*proficiency bonus)ft, and you are not affected by difficult terrain or reductions to your speed. For the duration, you can also move freely in any direction and move through any matter but you cannot end your movement in a space that is occupied. At the end of your turn, you teleport back to the space you chose or in the nearest unoccupied space if that space is occupied.",
+				"{@bold Bullet Raid} - You choose a point within 5 ft of you and then teleport 20 ft away from where you are. Hostile creatures within 20 ft of the point you chose must make a Strength saving throw against your spell save DC and on a failure they are pulled in a straight line towards the point, ending in an unoccupied space as close as possible (even if that space is in the air). Immediately after that you spray fire with your firearm at creatures in a 30 ft cone originating from you in any direction, and each creature in the cone must make a Dexterity saving throw against your spell save DC, taking {@dice 3d8} piercing damage on a failure or half as much on a success.",
+				"{@bold Collapsing Realm} - Until the end of your turn, you do not provoke attack of opportunity and your movement speed is doubled. When you move within 5 ft of a creature, you can move them upto 10 ft in any direction. A hostile creature also takes Force damage equal to your Charisma modifier."
+			]
+		},
+		{
+			"name": "Hypermatrix",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Crazed Architect",
+			"subclassSource": "HEC",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Crazed Architect feature}",
+				"You are now able to perceive the Hypermatrix, a tessellated abstraction of Reality, upto a range of 60 ft from you and you gain a bonus to Wisdom(Perception) and Intelligence(Investigation) within the same range equal to your Charisma modifier.",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Hyperspace Rift|Warlock|DRK|Crazed Architect|HEC|14"				
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Hyperspace Rift",
+			"source": "HEC",
+			"page": 69,
+			"className": "Warlock",
+			"classSource": "DRK",
+			"subclassShortName": "Crazed Architect",
+			"subclassSource": "HEC",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"You distort spacetime around you and create the Hyperspace Rift to bring in support from the Multiverse. You can do this as a bonus action, and it lasts for one minute or until you die. Once you use this feature, you can't use it again until you finish a long rest, unless you expend a Warlock spell slot to use it again.",
+				"The Hyperspace Rift grants the following effects:",
+                {
+                    "type":"list",
+                    "items":[
+						"You can now perceive the Hypermatrix upto a range of 300ft.",
+						"You gain one additional reaction you can take each round. You can use only one reaction per triggering effect.",
+						"Whenever you gain a Synchronicity stack, an identical looking version of yourself from another timeline appears as a tangible illusion(includes audible, visual, tactile, and olfactory elements) from your space and ends in the nearest unoccupied space to you. The illusion occupies it's space and a creature can physically interact with the illusion but doing so let's it make a relevant ability check against your Spell save DC to realise the illusory nature on a success. At any time you have a number of these illusions equal to the number of Synchronicity stacks you have. When you lose Synchronicity stacks or when this ability ends, all the illusions enter the space you are in and disappear.",
+						"Each of these illusions can be individually controlled with mental commands(no action) and they can move upto your movement speed in a turn but cannot leave the range of your Hypermatrix. When you move or take an action you can have your illusions mimic your movements and when you hit a creature with a firearm, all the illusions also attack the creature simultaneously adding 3 extra Force damage for each illusion you have.",
+						"While this ability is active, you can use an action to compress the energy used to distort the spacetime around you, thereby ending this ability and creating a gravitational bomb that you shoot at a point within 120ft of you. The bomb then explodes dealing {@dice 4d8} Force damage to all creatures in a 60ft radius and an additional {@dice 3d8} Force damage for each {@b 'ZEL'} charge used since your last rest. A creature takes half the damage on a successful Constitution Saving Throw against your Spell Save DC."
+                    ]
+                }
+			]
+		},
+		{
+			"name": "Omen Domain",
+			"source": "HEC",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "DRK",
+			"subclassShortName": "Omen",
+			"subclassSource": "HEC",
+			"level": 1,
+			"entries": [
+				"The Omen Domain consists of priests who act as agents of Fate instead of a particular deity. Their enigmatic personalities and occultic practices earn them a dubious reputation, however there are many accounts of great disasters averted by their forewarning and exemplary people whose lives were turned around by fortuitous encounters that were predicted by them. They are also known to be masters of rituals and divinations, and often choose to remain elusive until they believe their intervention is necessary.",
+				"At each indicated cleric level, add the listed spells to your spells prepared. They do not count towards your limit.",
+				{
+					"type": "table",
+					"caption": " Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell Bless}, {@spell Feather Fall}"
+						],
+						[
+							"3rd",
+							"{@spell Prayer of Healing}, {@spell See Invisibility}"
+						],
+						[
+							"5th",
+							"{@spell Mass Healing Word|DRK}, {@spell Nondetection}"
+						],
+						[
+							"7th",
+							"{@spell Arcane Eye}, {@spell Mordenkainen's Private Sanctum}"
+						],
+						[
+							"9th",
+							"{@spell Far Step|XGE}, {@spell Skill Empowerment|XGE}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Seraphic Orison|Cleric|DRK|Omen|HEC|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Third Eye|Cleric|DRK|Omen|HEC|1"
+				}
+			]
+		},
+		{
+			"name": "Seraphic Orison",
+			"source": "HEC",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "DRK",
+			"subclassShortName": "Omen",
+			"subclassSource": "HEC",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"When you cast a spell with a spell slot to restore hitpoints, you can give one of the creatures affected by the spell a {@b Blessing} die until the end of your next turn. A creature can only hold one {@b Blessing} die at a time and it can expend the die to roll a {@dice d4} and add it to one Attack roll, Ability check or Saving throw."
+			]
+		},
+		{
+			"name": "Third Eye",
+			"source": "HEC",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "DRK",
+			"subclassShortName": "Omen",
+			"subclassSource": "HEC",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"You gain proficiency in Insight skill. You also gain proficiency in either {@item Playing Cards} or {@item Three-Dragon Ante Set} and you can use it as a spellcasting focus for your cleric spells.",
+				"Your Mind's Eye grants you knowledge of mystical rituals. You learn two 1st-level spells with the Ritual tag from any class's spell list and can cast them only as rituals. These spells do not count towards the number of spells you can prepare. You can learn more spells with the Ritual tag by spending 2 hours in meditation and 50 gp of incense for each level of the spell. You can only learn Ritual spells that are equal to or less than the highest Spell level you get to cast from your Cleric levels."
+			]
+		},
+		{
+			"name": "Sanctified Grace",
+			"source": "HEC",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "DRK",
+			"subclassShortName": "Omen",
+			"subclassSource": "HEC",
+			"level": 2,
+			"header": 2,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"Starting at 2nd level, you can use your Channel Divinity as a bonus action to open your spectral eye that appears embedded in your forehead between your brows and gain supernatural means to influence the fate of other creatures for one minute.",
+				"During this one minute, whenever you cast a Cleric spell with a spell slot to heal a creature, you can choose another creature within 30ft of yourself to regain {@dice 1d8} hitpoints and also gain a {@b Blessing} die. For the same duration, whenever a creature expends your {@b Blessing} die, it can choose a creature within 30ft of itself to regain hitpoints equal to your Wisdom modifier."
+			]
+		},
+		{
+			"name": "Fortune-teller's Paraphernalia",
+			"source": "HEC",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "DRK",
+			"subclassShortName": "Omen",
+			"subclassSource": "HEC",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, you gain access to the {@table Major Arcana|HEC} of the Tarot Cards. You also gain a {@b Concealed Hand} and a {@b Board}. Your {@b Concealed Hand} holds all of your Tarot Cards and a creature other than you cannot see the face of the card, only seeing vibrant colours in a swirling pattern on both sides of the card. Once per turn, you can play a Tarot Card from your {@b Concealed Hand} onto the {@b Board} and activate either it's {@b Upright} or {@b Reversed} effect.",
+				"The conditions to play the card are in the description of their effects and the {@b Board} can hold upto 5 cards at a time. Once played, a card remains on the board for the duration of it's effect after which it disappears in a flash of bright light. You cannot play a card when the {@b Board} is already full. When you finish a long rest, all the expended Tarot Cards reappear in your {@b Concealed Hand}."
+			]
+		},
+		{
+			"name": "Fateweaver's Stratagem",
+			"source": "HEC",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "DRK",
+			"subclassShortName": "Omen",
+			"subclassSource": "HEC",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"Starting at 17th level, when you cast a spell that heals creatures with a 5th level spell slot or lower, roll a {@dice 1d6} and on a 6 you regain the spell slot spent in the casting of the spell.",
+				"The {@b Board} can now hold upto 9 cards at a time. Your Tarot cards now return to your {@b Concealed Hand} after the first time they are played and can be played once more before they are expended. You can now play two Tarot Cards in a turn."
+			]
+		},
+		{
+			"name": "Hunt Domain",
+			"source": "HEC",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "DRK",
+			"subclassShortName": "Hunt",
+			"subclassSource": "HEC",
+			"level": 1,
+			"entries": [
+				"The Hunt Domain is a reclusive order of clerics that have been trained to the extreme for one purpose - to kill all that is unholy. Clerics of this domain are extremely well versed in tracking and eliminating dangerous creatures. They are also known for their ability to survive against all odds and keep fighting in unfair conditions for extended amounts of time.",
+				"At each indicated cleric level, add the listed spells to your spells prepared. They do not count towards your limit.",
+				{
+					"type": "table",
+					"caption": " Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell Absorb Elements|XGE}, {@spell Hunter's Mark|DRK}"
+						],
+						[
+							"3rd",
+							"{@spell Kinetic Jaunt|SCC}, {@spell Lesser Restoration}"
+						],
+						[
+							"5th",
+							"{@spell Aura of Vitality}, {@spell Discharge Defense|TCT}"
+						],
+						[
+							"7th",
+							"{@spell Freedom of Movement}, {@spell Shadow of Moil|XGE}"
+						],
+						[
+							"9th",
+							"{@spell Greater Restoration}, {@spell Mantle of Dread|AspysGuidetoInfinitum}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Faithbound Arsenal|Cleric|DRK|Hunt|HEC|1"
+				}
+			]
+		},
+		{
+			"name": "Faithbound Arsenal",
+			"source": "HEC",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "DRK",
+			"subclassShortName": "Hunt",
+			"subclassSource": "HEC",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"At 1st level, you gain proficiency in Survival skill and with firearms. You have advantage on Death Saving Throws. When you are flanked by two or more creatures, you also gain advantage on attacks against them while you remain flanked.",
+				"As a special ritual that takes 10 minutes to complete, you consecrate upto two weapons of your choice, thereby forming a divine bond with them and granting you the following benefits - you can use it as a spellcasting focus for your cleric spells and the hand wielding the weapon can do the somatic component of your cleric spells. You can expend one flask of Holy Water as a bonus action to make one of your consecrated weapons deal Necrotic or Radiant damage instead of their usual damage type for one minute."
+			]
+		},
+		{
+			"name": "Hallowed Pursuit",
+			"source": "HEC",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "DRK",
+			"subclassShortName": "Hunt",
+			"subclassSource": "HEC",
+			"level": 2,
+			"header": 2,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"When you hit a creature, you can expend a use of your Channel Divinity, to mark the creature as {@b Prey} for 1 hour and begin the {@b Hunt} for 1 minute. You know the exact location of your {@b Prey} while it is within 1000 ft of you and when it is beyond 1000 ft but in the same plane of existence as you, you know it's general direction from you. At the start of each of your turns, when the {@b Prey} is alive during the {@b Hunt}, you regain {@dice 1d4} hitpoints. A {@b Prey} hit by your consecrated weapons cannot regain hitpoints until the start of your next turn.",
+				"When a {@b Prey} dies during the {@b Hunt} while within 120 ft of you, you can end the {@b Hunt} to regain one expended spell slot, the level of which can be no higher than half your proficiency bonus (rounded down). Alternatively, you can mark another creature within 120 ft of you as {@b Prey} (no action required) for the remaining duration of the {@b Hunt}. During a {@b Hunt}, you can only have one creature marked as {@b Prey}."
+			]
+		},
+		{
+			"name": "Divine Cascade",
+			"source": "HEC",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "DRK",
+			"subclassShortName": "Hunt",
+			"subclassSource": "HEC",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, you can attack twice with your consecrated weapon, instead of once, whenever you take the {@action Attack} action on your turn. If you choose the Divine Strike feature at level 7 in this subclass, you can use that feature twice on each of your turns when you reach level 11 in this subclass."
+			]
+		},
+		{
+			"name": "Sacrosanct Carnage",
+			"source": "HEC",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "DRK",
+			"subclassShortName": "Hunt",
+			"subclassSource": "HEC",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"Starting at 17th level, you gain increasing bonuses based on the intensity of the battle. When the {@b Hunt} is active, you gain the {@b Fervour Counter} which increases whenever you heal creatures, deal damage or receive damage by an amount equal to the total calculated for each instance. You can only gain 300 {@b Fervour} in a round of combat. You gain all the bonuses whose {@b Fervour} count is less than or equal to your {@b Fervour Counter} at any given time. The bonuses last for the duration of the current {@b Hunt} and the {@b Fervour Counter} resets to zero when your current {@b Hunt} ends or when you start a new {@b Hunt}.",
+				{
+					"type": "table",
+					"caption": "Fervour Counter",
+					"colLabels": [
+						"Fervour Stacks",
+						"Bonus Gained"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"50",
+							"A 60 ft aura expands from you and remains centered on you. Whenever a creature within the aura deals or receives a critical hit, the total calculated is added to your {@b Fervour} counter."
+						],
+						[
+							"150",
+							"You gain Truesight upto 30 ft from you. Allied creatures within the aura perceive the {@b Prey} as if they had Truesight while it is within 30 ft of them."
+						],
+						[
+							"250",
+							"You and allied creatures within the aura gain immunity to {@condition Charmed} condition and additionally gain advantage on saving throws that apply any condition when you fail them(the DM secretly applies this advantage)."
+						],
+						[
+							"400",
+							"When you kill a hostile creature or when a hostile creature dies within 10 ft of you, you can use a reaction to gain one of the hostile creature's resistances or an immunity as a resistance until you take a rest. You can have at most two resistances from this ability and you can replace a previously gained resistance with a new one. When the {@b Prey} dies, you receive this benefit as long as you are within 1000 ft of it and you do not need to use a reaction to gain the resistance."
+						],
+						[
+							"550",
+							"When you cast Cleric spells that require an Action with a 5th level spell slot or lower, you can now cast them with a Bonus Action instead."
+						],
+						[
+							"750",
+							"You can attack three times when you take the {@action Attack} action on your turn."
+						],
+						[
+							"999",
+							"You extend the duration of the {@b Hunt} by one round everytime you deal a critical hit. You regain the maximum number of Hit Points possible from any healing. Your consecrated weapons' base damage dice increases by one of the same type."
+						]
+					],
+					"data": {
+						"tableInclude": true
+					}
+				}
+			]
+		},
+		{
+			"name": "Oblivion Domain",
+			"source": "HEC",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "DRK",
+			"subclassShortName": "Oblivion",
+			"subclassSource": "HEC",
+			"level": 1,
+			"entries": [
+				"The Oblivion Domain consists of eerie clerics who are in service of beings forgotten by most. Though sparse in number, there will always be traces of these clerics throughout history. The beginnings and purpose of these clerics have remained as incomprehensible as the deities they serve. However, they are known to bring cosmic horror to their aid and twist the laws of divinity to create paradoxical phenomenon.",
+				"At each indicated cleric level, add the listed spells to your spells prepared. They do not count towards your limit.",
+				{
+					"type": "table",
+					"caption": " Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell Arms of Hadar}, {@spell Dissonant Whispers|DRK}"
+						],
+						[
+							"3rd",
+							"{@spell Calm Emotions}, {@spell Detect Thoughts}"
+						],
+						[
+							"5th",
+							"{@spell Bestow Curse|DRK}, {@spell Hunger of Hadar}"
+						],
+						[
+							"7th",
+							"{@spell Banishment|DRK}, {@spell Evard's Black Tentacles}"
+						],
+						[
+							"9th",
+							"{@spell Legend Lore}, {@spell Synaptic Static|XPHB}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Void-Touched Revelation|Cleric|DRK|Oblivion|HEC|1"
+				}
+			]
+		},
+		{
+			"name": "Void-Touched Revelation",
+			"source": "HEC",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "DRK",
+			"subclassShortName": "Oblivion",
+			"subclassSource": "HEC",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Your blood increases in viscosity and becomes a darker shade of red, granting you increased vitality and a chilling visage. Your hitpoint maximum increases by 1 for every level you gain in this class. You add your Wisdom modifier to any Intimidation check you make.",
+				"You gain anomalous abilities akin to the nature of your deity. When you cast a Cleric spell(upto 5th level) to restore hitpoints to another creature, you can instead cause it to deal Psychic damage equal to the total healing it would normally do, on a failed Intelligence saving throw against your spell save DC or half as much on a success."
+			]
+		},
+		{
+			"name": "Blessing of the Inscrutable Madness",
+			"source": "HEC",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "DRK",
+			"subclassShortName": "Oblivion",
+			"subclassSource": "HEC",
+			"level": 2,
+			"header": 2,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"Starting at 2nd level, when you cast a Cleric spell that applies an effect over an area, you can expend a use of your Channel Divinity to increase one parameter by 5ft or 10ft and you take Psychic damage(pierces resistance and immunity) equal to 2*PB or 4*PB respectively, at the end of each of your turns for the duration of the spell. This damage cannot make you roll Concentration saving throws.",
+				"Additionally, the next Cleric spell that you cast to restore hitpoints gains a bonus to the healing done equal to your Cleric level for one creature."
+			]
+		},
+		{
+			"name": "Mantle of the Waking Nightmare",
+			"source": "HEC",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "DRK",
+			"subclassShortName": "Oblivion",
+			"subclassSource": "HEC",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, you gain resistance to Psychic damage and your thoughts can't be read by telepathy or other means unless you allow it. Once per turn when you take Psychic damage, you can give one creature within 60ft of you disadvantage on saving throws using one ability score until the end of your next turn."
+			]
+		},
+		{
+			"name": "Herald of the Crawling Chaos",
+			"source": "HEC",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "DRK",
+			"subclassShortName": "Oblivion",
+			"subclassSource": "HEC",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"Starting at 17th level, you gain immunity to Psychic damage. You also gain immunity to the {@condition charmed} and {@condition frightened} conditions.",
+				"Once per turn, when you cast a Cleric spell that deals damage to a creature by imposing a saving throw, you can heal another creature within 30ft of you by an amount equal to half the highest damage dealt by the spell to one creature."
+			]
+		},
+		{
+			"name": "Oath of The Sanctified Knuckle",
+			"source": "HEC",
+			"className": "Paladin",
+			"classSource": "DRK",
+			"subclassShortName": "Sanctified Knuckle",
+			"subclassSource": "HEC",
+			"level": 3,
+			"entries": [
+				"Something awakened within you when you first slapped a person. Maybe it was the repressed anger, maybe it was the annoying nagging, or maybe it was something else entirely. Regardless, you realised that it felt good to feel power and strength in a body you once considered weak. Thus hit the profound realisation, a perpetual effort towards becoming a true GIGACHAD or GIGACHADESS. As you focus on your Workout regime and using your newfound strength for the betterment of others, you follow in the steps of the first SIGMA MALE or FEMALE, and create your own legacy that would inspire others for years to come.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of The Sanctified Knuckle|Paladin|DRK|Sanctified Knuckle|HEC|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oath Spells|Paladin|DRK|Sanctified Knuckle|HEC|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Adaptive Conduit|Paladin|DRK|Sanctified Knuckle|HEC|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity|Paladin|DRK|Sanctified Knuckle|HEC|3"
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity",
+			"source": "HEC",
+			"className": "Paladin",
+			"classSource": "DRK",
+			"subclassShortName": "Sanctified Knuckle",
+			"subclassSource": "HEC",
+			"level": 3,
+			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"You gain the following Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.",
+				{
+					"type": "entries",
+					"name": "Triune Incarnation",
+					"entries": [
+						"You can use your Channel Divinity to bring out your latent potential and indomitable physique. As a bonus action you can expend a use of your Channel Divinity to gain a Perfect Physique of your choice for 10 minutes. You can also increase or decrease your size by one category for the same duration.",
+						{
+							"type": "table",
+							"caption": "Triune Incarnation",
+							"colLabels": [
+								"Physique Type",
+								"Benefits"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"Heavyweight",
+									"You use your Strength modifier for unarmed attacks and you cannot wield a shield. You gain advantage on Strength Checks and Strength Saves. When you hit a creature you deal additional damage equal to your Strength modifier to the target and creatures within 10ft of it."
+								],
+								[
+									"Middleweight",
+									"You use your Charisma modifier for unarmed attacks and you can wield a shield. You gain advantage on Constitution Checks and Constitution Saves. You gain +2 to unarmed attack rolls, unarmed damage rolls, and grapple checks."
+								],
+								[
+									"Lightweight",
+									"You use your Dexterity modifier for unarmed attacks and you cannot wield a shield. You gain advantage on Dexterity Checks and Dexterity Saves. Your unarmed damage die is one die type lower and when you use your action to make unarmed attacks, you can make one extra unarmed attack as part of the action."
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Unyielding Spirit",
+					"entries": [
+						"You can use your Channel Divinity to bolster the vitality of your allies. As an action you can expend a use of your Channel Divinity to choose two creatures within 30ft of you and dispel one of {@condition restrained}, {@condition stunned}, {@condition paralyzed} or {@condition petrified} conditions from them. The creatures can then gain temporary hitpoints equal to twice your Proficiency Bonus."
+					]
+				}
+			]
+		},
+		{
+			"name": "Adaptive Conduit",
+			"source": "HEC",
+			"className": "Paladin",
+			"classSource": "DRK",
+			"subclassShortName": "Sanctified Knuckle",
+			"subclassSource": "HEC",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Your body becomes a valid target for any effect that requires a weapon target and they benefit any unarmed attacks you make.",
+				"Any unarmed attacks you make can deal Radiant damage instead of their usual damage type. Your unarmed damage die becomes a {@dice 1d8} and your natural weapon damage die also becomes the same if it was lower. When you reach level 9 in this class, they both become a {@dice 1d10} instead."
+			]
+		},
+		{
+			"name": "Oath Spells",
+			"source": "HEC",
+			"className": "Paladin",
+			"classSource": "DRK",
+			"subclassShortName": "Sanctified Knuckle",
+			"subclassSource": "HEC",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You gain oath spells at the paladin levels listed in the Oath of Sanctified Knuckle table. See the Sacred Oath class feature for how oath spells work.",
+				{
+					"type": "table",
+					"caption": "Oath of Sanctified Knuckle Spells",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell Gravity Pulse|AspysGuidetoInfinitum}, {@spell Jump}"
+						],
+						[
+							"5th",
+							"{@spell Weapon of Wind|TCT}, {@spell Kinetic Jaunt|SCC}"
+						],
+						[
+							"9th",
+							"{@spell Elemental Weapon}, {@spell Thunder Step|XGE}"
+						],
+						[
+							"13th",
+							"{@spell Earthburst|AspysGuidetoInfinitum}, {@spell Stoneskin}"
+						],
+						[
+							"17th",
+							"{@spell Holy Weapon|XGE}, {@spell Yolande's Regal Presence|XPHB}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Tenets of The Sanctified Knuckle",
+			"source": "HEC",
+			"className": "Paladin",
+			"classSource": "DRK",
+			"subclassShortName": "Sanctified Knuckle",
+			"subclassSource": "HEC",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"These paladins share the following tenets:",
+				{
+					"type": "entries",
+					"name": "Never stop the Grind",
+					"entries": [
+						"The hustle never ends. You must always keep working to become Stronger, Faster and Smarter. No Pain, No Gain BABY!"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Compassion to All",
+					"entries": [
+						"Strength must be used to help others overcome their struggles and not oppress them for your own benefit. You lead by example and punish those that exploit others."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Haters gonna Hate",
+					"entries": [
+						"{@b 'A Lion Does Not Concern Himself With The Opinions Of The Sheep'}. Ignore those that seek to drag you down to their level of Depravity. If ignoring does not work, a tight Bitch-slap will."
+					]
+				}
+			]
+		},
+		{
+			"name": "Aura of Boundless Resolve",
+			"source": "HEC",
+			"className": "Paladin",
+			"classSource": "DRK",
+			"subclassShortName": "Sanctified Knuckle",
+			"subclassSource": "HEC",
+			"level": 7,
+			"header": 1,
+			"entries": [
+				"Starting at 7th level, You emit an aura of celerity. Allies within the aura can spend 5 feet of movement to automatically end {@condition prone} and {@condition grappled} conditions. Additionally, a creature that starts it's turn in the aura can use a bonus action to {@action Dash|XPHB} or {@action Disengage|XPHB} until the end of their turn.",
+				"At level 18, the range of this aura increases to 30 feet."
+			]
+		},
+		{
+			"name": "Ascendant Strike",
+			"source": "HEC",
+			"className": "Paladin",
+			"classSource": "DRK",
+			"subclassShortName": "Sanctified Knuckle",
+			"subclassSource": "HEC",
+			"level": 15,
+			"header": 1,
+			"entries": [
+				"Your body has now reached the pinnacle of your race's anatomy. You suffer none of the frailty of old age, and you can't be aged magically. Regardless of physical traits that would appear due to age, you always look attractive. You gain proficiency in Persuasion or Intimidation. If you already have proficiency in either skill, you can gain expertise in it instead.",
+				"You gain additional benefits from your Channel Divinity: Triune Incarnation, as shown below:",
+				{
+					"type": "table",
+					"caption": "Triune Incarnation Improvement",
+					"colLabels": [
+						"Physique Type",
+						"Benefits"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"Heavyweight",
+							"Your unarmed damage die is doubled in count. Additionally, when you hit a creature with an unarmed attack, you can push it upto 10ft in any direction."
+						],
+						[
+							"Middleweight",
+							"Your shield's AC bonus is added to the unarmed damage you deal. You are considered one size larger for checks you make to grapple a creature and all creatures have advantage on attacks against a creature {@condition grappled} by you."
+						],
+						[
+							"Lightweight",
+							"When you take the {@action Attack|XPHB} action, you can make one additional attack as part of the action. Your movement speed increases by 15ft and on your turn, you can move along vertical surfaces and across liquids on your turn without falling during the move while you are unarmored or wearing light armor."
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Inexorable Riposte",
+			"source": "HEC",
+			"className": "Paladin",
+			"classSource": "DRK",
+			"subclassShortName": "Sanctified Knuckle",
+			"subclassSource": "HEC",
+			"level": 20,
+			"header": 1,
+			"entries": [
+				"You have reached a major milestone in your journey and receive an enlightenment: {@b 'The Best Defense Is A Good Offense'}. As an action, you transform yourself into an Avatar of Peerless Form, granting you the following benefits for one minute:",
+				{
+					"type": "list",
+					"items": [
+						"Your reach for unarmed attacks increases by 10 feet.",
+						"You reroll any 1 or 2 once on your unarmed damage dice and smite damage dice, and choose the new result.",
+						"When a creature hits you with an attack roll, you can use your reaction to immediately make one unarmed attack against that creature regardless of the distance between you two. On a hit you halve the damage you take and on a critical hit, you instead take no damage from the attack."
+					]
+				},
+				"Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required)."
+			]
+		}
   ],
   "magicvariant": [
     {
@@ -58382,7 +58944,25 @@
           "The result of a failed enchantment. These weapons' blade edge throb with a volatile keenness"
         ]
       }
-    }
+    },
+    {
+			"name": "Arcenyx Weapon",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"weapon": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "Arcenyx ",
+				"source": "HEC",
+				"page": 69,
+				"rarity": "rare",
+				"entries": [
+					"These sleek black weapons have a faint blue hue in their edges and arcane runes run along the center of the blade. While attuned, you may use your Spellcasting ability modifier for attack and damage rolls made with this weapon."
+				]
+			}
+		}
   ],
   "subclass": [
     {
@@ -61437,21 +62017,6 @@
         "Last Judgement|Barbarian|DRK|Four Horsemen|DRK|6",
         "Chronicle of Convulsion|Barbarian|DRK|Four Horsemen|DRK|10",
         "Relics of Cataclysm|Barbarian|DRK|Four Horsemen|DRK|14"
-      ]
-    },
-    {
-      "name": "Path of the Supreme Mind",
-      "shortName": "Psionics",
-      "source": "HEC",
-      "className": "Barbarian",
-      "classSource": "DRK",
-      "page": 69,
-      "srd": true,
-      "subclassFeatures": [
-        "Path of the Supreme Mind|Barbarian|DRK|Psionics|HEC|3",
-        "Transmogrification|Barbarian|DRK|Psionics|HEC|6",
-        "Metamorphosis|Barbarian|DRK|Psionics|HEC|10",
-        "Transcendent Causatum|Barbarian|DRK|Psionics|HEC|14"
       ]
     },
     {
@@ -64571,185 +65136,277 @@
       ]
     },
     {
-      "name": "Path of the Aberrant Scourge",
-      "shortName": "Aberrant Scourge",
-      "source": "HEC",
-      "className": "Barbarian",
-      "classSource": "DRK",
-      "page": 69,
-      "srd": true,
-      "subclassFeatures": [
-        "Path of the Aberrant Scourge|Barbarian|DRK|Aberrant Scourge|HEC|3",
-        "Transmogrification|Barbarian|DRK|Aberrant Scourge|HEC|6",
-        "Metamorphosis|Barbarian|DRK|Aberrant Scourge|HEC|10",
-        "Transcendent Causatum|Barbarian|DRK|Aberrant Scourge|HEC|14"
-      ]
-    },
-    {
-      "name": "The Raven Queen",
-      "shortName": "Raven Queen",
-      "source": "HEC",
-      "className": "Warlock",
-      "classSource": "DRK",
-      "page": 69,
-      "additionalSpells": [
-        {
-          "expanded": {
-            "s1": [
-              "Inflict Wounds",
-              "Heroism"
-            ],
-            "s2": [
-              "Rime's Binding Ice",
-              "Gentle Repose"
-            ],
-            "s3": [
-              "Life Transference",
-              "Spirit Guardians"
-            ],
-            "s4": [
-              "Phantasmal Killer",
-              "Fire Shield"
-            ],
-            "s5": [
-              "Cone of Cold",
-              "Commune"
-            ]
-          }
-        }
-      ],
-      "subclassFeatures": [
-        "The Raven Queen|Warlock|DRK|Raven Queen|HEC|1",
-        "Boon of the Raven Spirit|Warlock|DRK|Raven Queen|HEC|6",
-        "Aegis of the Ravens|Warlock|DRK|Raven Queen|HEC|10",
-        "Queen's Eminent|Warlock|DRK|Raven Queen|HEC|14"
-      ]
-    },
-    {
-      "name": "The Crazed Architect",
-      "shortName": "Crazed Architect",
-      "source": "HEC",
-      "className": "Warlock",
-      "classSource": "DRK",
-      "page": 69,
-      "additionalSpells": [
-        {
-          "expanded": {
-            "s1": [
-              "Longstrider",
-              "Magnify Gravity"
-            ],
-            "s2": [
-              "Branding Smite",
-              "Heat Metal"
-            ],
-            "s3": [
-              "Haste",
-              "Aristo's Affluent Armoury"
-            ],
-            "s4": [
-              "Otiluke's Resilient Sphere",
-              "Fabricate"
-            ],
-            "s5": [
-              "Banishing Smite",
-              "Swift Quiver"
-            ],
-            "s9": [
-              "Time Stop"
-            ]
-          }
-        }
-      ],
-      "subclassFeatures": [
-        "The Crazed Architect|Warlock|DRK|Crazed Architect|HEC|1",
-        "Armament Barrage|Warlock|DRK|Crazed Architect|HEC|6",
-        "Zero Energy Loss|Warlock|DRK|Crazed Architect|HEC|10",
-        "Hypermatrix|Warlock|DRK|Crazed Architect|HEC|14"
-      ]
-    },
-    {
-      "name": "Blessing Domain",
-      "shortName": "Blessing",
-      "source": "HEC",
-      "className": "Cleric",
-      "classSource": "DRK",
-      "page": 69,
-      "additionalSpells": [
-        {
-          "prepared": {
-            "1": [
-              "Bless",
-              "Feather Fall"
-            ],
-            "3": [
-              "Prayer of Healing",
-              "Augury"
-            ],
-            "5": [
-              "Mass Healing Word",
-              "Nondetection"
-            ],
-            "7": [
-              "Divination",
-              "Mordenkainen's Private Sanctum"
-            ],
-            "9": [
-              "Commune",
-              "Rary's Telepathic Bond"
-            ]
-          }
-        }
-      ],
-      "subclassFeatures": [
-        "Blessing Domain|Cleric|DRK|Blessing|HEC|1",
-        "Pious Invocation|Cleric|DRK|Blessing|HEC|2",
-        "Seraphic Orison|Cleric|DRK|Blessing|HEC|6",
-        "Blessed Strikes|Cleric|DRK|Blessing|HEC|8|TCE",
-        "Exalted Benediction|Cleric|DRK|Blessing|HEC|17"
-      ]
-    },
-    {
-      "name": "Hunt Domain",
-      "shortName": "Hunt",
-      "source": "HEC",
-      "className": "Cleric",
-      "classSource": "DRK",
-      "page": 69,
-      "additionalSpells": [
-        {
-          "prepared": {
-            "1": [
-              "Absorb Elements",
-              "Hunter's Mark"
-            ],
-            "3": [
-              "Kinetic Jaunt",
-              "Lesser Restoration"
-            ],
-            "5": [
-              "Aura of Vitality",
-              "Discharge Defense"
-            ],
-            "7": [
-              "Freedom of Movement",
-              "Shadow of Moil"
-            ],
-            "9": [
-              "Greater Restoration",
-              "Mantle of Dread"
-            ]
-          }
-        }
-      ],
-      "subclassFeatures": [
-        "Hunt Domain|Cleric|DRK|Hunt|HEC|1",
-        "Hallowed Pursuit|Cleric|DRK|Hunt|HEC|2",
-        "Divine Cascade|Cleric|DRK|Hunt|HEC|6",
-        "Blessed Strikes|Cleric|DRK|Hunt|HEC|8|TCE",
-        "Sacrosanct Carnage|Cleric|DRK|Hunt|HEC|17"
-      ]
-    }
+			"name": "Path of the Aberrant Scourge",
+			"shortName": "Aberrant Scourge",
+			"source": "HEC",
+			"className": "Barbarian",
+			"classSource": "DRK",
+			"page": 69,
+			"srd": true,
+			"subclassFeatures": [
+				"Path of the Aberrant Scourge|Barbarian|DRK|Aberrant Scourge|HEC|3",
+				"Transmogrification|Barbarian|DRK|Aberrant Scourge|HEC|6",
+				"Metamorphosis|Barbarian|DRK|Aberrant Scourge|HEC|10",
+				"Transcendent Causatum|Barbarian|DRK|Aberrant Scourge|HEC|14"
+			]
+		},
+		{
+			"name": "Path of the Frostwarden",
+			"shortName": "Frostwarden",
+			"source": "HEC",
+			"className": "Barbarian",
+			"classSource": "DRK",
+			"page": 69,
+			"srd": true,
+			"subclassFeatures": [
+				"Path of the Frostwarden|Barbarian|DRK|Frostwarden|HEC|3",
+				"Frigid Mantle|Barbarian|DRK|Frostwarden|HEC|6",
+				"Arctic Retribution|Barbarian|DRK|Frostwarden|HEC|10",
+				"Cryogenic Ire|Barbarian|DRK|Frostwarden|HEC|14"
+			]
+		},
+		{
+			"name": "The Raven Queen",
+			"shortName": "Raven Queen",
+			"source": "HEC",
+			"className": "Warlock",
+			"classSource": "DRK",
+			"page": 69,
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"Inflict Wounds",
+							"Heroism"
+						],
+						"s2": [
+							"Rime's Binding Ice",
+							"Gentle Repose"
+						],
+						"s3": [
+							"Life Transference",
+							"Spirit Guardians"
+						],
+						"s4": [
+							"Phantasmal Killer",
+							"Fire Shield"
+						],
+						"s5": [
+							"Cone of Cold",
+							"Commune"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"The Raven Queen|Warlock|DRK|Raven Queen|HEC|1",
+				"Boon of the Raven Spirit|Warlock|DRK|Raven Queen|HEC|6",
+				"Aegis of the Ravens|Warlock|DRK|Raven Queen|HEC|10",
+				"Queen's Eminent|Warlock|DRK|Raven Queen|HEC|14"
+			]
+		},
+		{
+			"name": "The Crazed Architect",
+			"shortName": "Crazed Architect",
+			"source": "HEC",
+			"className": "Warlock",
+			"classSource": "DRK",
+			"page": 69,
+			"additionalSpells": [
+				{
+					"expanded": {
+						"s1": [
+							"Longstrider",
+							"Magnify Gravity"
+						],
+						"s2": [
+							"Vortex Warp",
+							"Heat Metal"
+						],
+						"s3": [
+							"Haste",
+							"Aristo's Affluent Armoury"
+						],
+						"s4": [
+							"Otiluke's Resilient Sphere",
+							"Fabricate"
+						],
+						"s5": [
+							"Electromagnetic Pulse",
+							"Swift Quiver"
+						],
+						"s9": [
+							"Time Stop"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"The Crazed Architect|Warlock|DRK|Crazed Architect|HEC|1",
+				"Armament Barrage|Warlock|DRK|Crazed Architect|HEC|6",
+				"Zero Energy Loss|Warlock|DRK|Crazed Architect|HEC|10",
+				"Hypermatrix|Warlock|DRK|Crazed Architect|HEC|14"
+			]
+		},
+		{
+			"name": "Omen Domain",
+			"shortName": "Omen",
+			"source": "HEC",
+			"className": "Cleric",
+			"classSource": "DRK",
+			"page": 69,
+			"additionalSpells": [
+			  {
+				"prepared": {
+				  "1": [
+					"Bless",
+					"Feather Fall"
+				  ],
+				  "3": [
+					"Prayer of Healing",
+					"See Invisibility"
+				  ],
+				  "5": [
+					"Mass Healing Word",
+					"Nondetection"
+				  ],
+				  "7": [
+					"Arcane Eye",
+					"Mordenkainen's Private Sanctum"
+				  ],
+				  "9": [
+					"Far Step",
+					"Skill Empowerment"
+				  ]
+				}
+			  }
+			],
+			"subclassFeatures": [
+			  "Omen Domain|Cleric|DRK|Omen|HEC|1",
+			  "Sanctified Grace|Cleric|DRK|Omen|HEC|2",
+			  "Fortune-teller's Paraphernalia|Cleric|DRK|Omen|HEC|6",
+			  "Fateweaver's Stratagem|Cleric|DRK|Omen|HEC|17"
+			]
+		},
+		{
+			"name": "Hunt Domain",
+			"shortName": "Hunt",
+			"source": "HEC",
+			"className": "Cleric",
+			"classSource": "DRK",
+			"page": 69,
+			"additionalSpells": [
+			  {
+				"prepared": {
+				  "1": [
+					"Absorb Elements",
+					"Hunter's Mark"
+				  ],
+				  "3": [
+					"Kinetic Jaunt",
+					"Lesser Restoration"
+				  ],
+				  "5": [
+					"Aura of Vitality",
+					"Discharge Defense"
+				  ],
+				  "7": [
+					"Freedom of Movement",
+					"Shadow of Moil"
+				  ],
+				  "9": [
+					"Greater Restoration",
+					"Mantle of Dread"
+				  ]
+				}
+			  }
+			],
+			"subclassFeatures": [
+			  "Hunt Domain|Cleric|DRK|Hunt|HEC|1",
+			  "Hallowed Pursuit|Cleric|DRK|Hunt|HEC|2",
+			  "Divine Cascade|Cleric|DRK|Hunt|HEC|6",
+			  "Sacrosanct Carnage|Cleric|DRK|Hunt|HEC|17"
+			]
+		},
+		{
+			"name": "Oblivion Domain",
+			"shortName": "Oblivion",
+			"source": "HEC",
+			"className": "Cleric",
+			"classSource": "DRK",
+			"page": 69,
+			"additionalSpells": [
+			  {
+				"prepared": {
+				  "1": [
+					"Arms of Hadar",
+					"Dissonant Whispers"
+				  ],
+				  "3": [
+					"Calm Emotions",
+					"Detect Thoughts"
+				  ],
+				  "5": [
+					"Bestow Curse",
+					"Hunger of Hadar"
+				  ],
+				  "7": [
+					"Banishment",
+					"Evard's Black Tentacles"
+				  ],
+				  "9": [
+					"Legend Lore",
+					"Synaptic Static"
+				  ]
+				}
+			  }
+			],
+			"subclassFeatures": [
+			  "Oblivion Domain|Cleric|DRK|Oblivion|HEC|1",
+			  "Blessing of the Inscrutable Madness|Cleric|DRK|Oblivion|HEC|2",
+			  "Mantle of the Waking Nightmare|Cleric|DRK|Oblivion|HEC|6",
+			  "Herald of the Crawling Chaos|Cleric|DRK|Oblivion|HEC|17"
+			]
+		},
+    	{
+      		"name": "Oath of The Sanctified Knuckle",
+      		"shortName": "Sanctified Knuckle",
+      		"source": "HEC",
+      		"className": "Paladin",
+      		"classSource": "DRK",
+      		"additionalSpells": [
+        		{
+          			"prepared": {
+            			"3": [
+              				"Gravity Pulse",
+              				"Jump"
+            			],
+            			"5": [
+              				"Weapon of Wind",
+              				"Kinetic Jaunt"
+            			],
+            			"9": [
+              				"Elemental Weapon",
+              				"Thunder Step"
+            			],
+            			"13": [
+              				"Earthburst",
+              				"Stoneskin"
+            			],
+            			"17": [
+              				"Holy Weapon",
+              				"Yolande's Regal Presence"
+            			]
+          			}
+        		}
+      		],
+      		"subclassFeatures": [
+        		"Oath of The Sanctified Knuckle|Paladin|DRK|Sanctified Knuckle|HEC|3",
+        		"Aura of Boundless Resolve|Paladin|DRK|Sanctified Knuckle|HEC|7",
+        		"Ascendant Strike|Paladin|DRK|Sanctified Knuckle|HEC|15",
+        		"Inexorable Riposte|Paladin|DRK|Sanctified Knuckle|HEC|20"
+      		]
+    	}
   ],
   "legendaryGroup": [
     {
@@ -73680,215 +74337,267 @@
       ]
     },
     {
-      "name": "Pact of the Marksman",
-      "source": "HEC",
-      "page": 69,
-      "entries": [
-        "You gain proficiency in firearms and {@item tinker's tools|PHB}. If you already have proficiency in {@item tinker's tools|PHB}, you can get proficiency in another {@item artisan's tools|PHB} of your choice. You can transform one firearm into your pact weapon when you touch it, and it ceases being your pact weapon if you make another firearm your pact weapon, if it is more than 5 feet away from you for 1 minute or more, or if you die.",
-        "You ignore the loading property of firearms. If the pact weapon lacks ammunition, it produces its own, automatically creating one piece of magic ammunition when the wielder makes a ranged attack with it. The ammunition created by the pact weapon vanishes the instant after it hits or misses a target. You can use your pact weapon as a spellcasting focus for your warlock spells.",
-        "Additionally, when you attack with your pact weapon, you can use your Charisma modifier, instead of Strength or Dexterity, for the attack and damage rolls. If your pact weapon is more than 5 feet away from you, you can use a bonus action to make your pact weapon disappear from wherever it is and reappear in your hands. You can also fix your pact weapon that is broken from a failed misfire check by stowing it away for a number of rounds equal to your pact weapon's misfire score."
-      ],
-      "featureType": [
-        "EI"
-      ]
-    },
-    {
-      "name": "Arcane Bond",
-      "source": "HEC",
-      "page": 69,
-      "prerequisite": [
-        {
-          "pact": "Pact of the Chain",
-          "level": 5
+			"name": "Pact of the Marksman",
+			"source": "HEC",
+			"page": 69,
+			"entries": [
+			  "You gain proficiency in firearms. You can transform one firearm into your pact weapon when you touch it, and it ceases being your pact weapon if you make another firearm your pact weapon, if it is more than 5 feet away from you for 1 minute or more, or if you die. When you deal damage with your pact weapon, you can deal Force damage instead of your normal damage type.",
+			  "You ignore the loading property of firearms. If the pact weapon lacks ammunition, it produces its own, automatically creating one piece of magic ammunition when the wielder makes a ranged attack with it. The ammunition created by the pact weapon vanishes the instant after it hits or misses a target. You can use your pact weapon as a spellcasting focus for your Warlock spells.",
+			  "Additionally, when you attack with your pact weapon, you can use your Charisma modifier, instead of Strength or Dexterity, for the attack and damage rolls. You can also fix your pact weapon that is broken from a failed misfire check by stowing it away for a number of rounds equal to your pact weapon's misfire score."
+			],
+			"featureType": [
+			  "EI"
+			]
+		},
+		{
+            "name": "Arcane Bond",
+            "source": "HEC",
+            "page": 69,
+            "prerequisite": [
+                {
+                    "pact": "Pact of the Chain|XPHB",
+                    "level": 7
+                }
+            ],
+            "entries": [
+                "Choose 3 spells from your warlock spell list whose level is less than or equal to half your proficiency bonus(rounded down). Your familiar can cast each spell at their lowest level with your spellcasting total, once per short rest. If your familiar benefits from the effects of the spell, you also benefit from it as if you had cast it.",
+				"The familiar can cast a spell with Verbal, Somatic or Material(without a gold cost) component even if it is normally incapable of speech or does not have hands or an arcane focus. For material components that have a gold cost, it must have that component on itself as well to cast the spell."
+            ],
+            "featureType": [
+                "EI"
+            ]
+        },
+		{
+            "name": "Eldritch Emissaries",
+            "source": "HEC",
+            "page": 69,
+            "prerequisite": [
+                {
+                    "pact": "Pact of the Tome|XPHB",
+                    "level": 12
+                }
+            ],
+            "entries": [
+                "Choose 2 spells that summon the spirit of a creature from any class list. These spells count as warlock spells for you and are not included in the number of spells you know. You can also cast each spell once per long rest without expending a spell slot and you cast them at a level equal to your proficiency bonus.",
+				"When you cast these spells and they require concentration, you can choose to cast them as usual or cast them without concentration for a duration of one minute."
+            ],
+            "featureType": [
+                "EI"
+            ]
+        },
+		{
+            "name": "Rejuvenating Sigil",
+            "source": "HEC",
+            "page": 69,
+            "prerequisite": [
+                {
+                    "pact": "Pact of the Talisman|XPHB"
+                }
+            ],
+            "entries": [
+                "When the wearer is about to roll a death saving throw, they can instead spend a number of hitdie upto their proficiency bonus and heal themselves equal to the total plus your Charisma modifier, once per long rest. When the Warlock is healed by a spell cast using a spell slot, the wearer also heals for an amount equal to your Charisma modifier on the turn the spell is cast."
+            ],
+            "featureType": [
+                "EI"
+            ]
+        },
+		{
+            "name": "Warding Sigil",
+            "source": "HEC",
+            "page": 69,
+            "prerequisite": [
+                {
+                    "pact": "Pact of the Talisman|XPHB",
+                    "level": 5
+                }
+            ],
+            "entries": [
+                "The wearer gets +1 bonus to their AC and saving throws. When the wearer is hit by an attack or fails a saving throw, they can use their reaction to reroll the dice used for the attack roll or saving throw and use the new roll. This feature can be used a number of times equal to your proficiency bonus per long rest."
+            ],
+            "featureType": [
+                "EI"
+            ]
+        },
+		{
+            "name": "Echoing Shots",
+            "source": "HEC",
+            "page": 69,
+            "prerequisite": [
+                {
+                    "pact": "Pact of the Marksman"
+                }
+            ],
+            "entries": [
+                "You can now turn a second firearm into your pact weapon. You can draw or stow both pact weapons at the same time. You can perform the somatic components of spells when you are wielding both pact weapons simultaneously.",
+				"When both your pact weapons do not have the 'heavy' or 'two-handed' property, you can treat them as 'light' weapons when wielding them in each hand."
+            ],
+            "featureType": [
+                "EI"
+            ]
+        },
+		{
+            "name": "Frenetic Rapidshot",
+            "source": "HEC",
+            "page": 69,
+            "prerequisite": [
+                {
+                    "pact": "Pact of the Marksman",
+                    "level": 5
+                }
+            ],
+            "entries": [
+                "You gain the Extra Attack feature for your pact weapon only. With that feature, you can attack twice with the weapon instead of once when you take the {@action Attack} action on your turn."
+            ],
+            "featureType": [
+                "EI"
+            ]
+        },
+		{
+            "name": "Relentless Fusillade",
+            "source": "HEC",
+            "page": 69,
+            "prerequisite": [
+                {
+					"pact": "Pact of the Marksman",
+					"optionalfeature": "Frenetic Rapidshot|HEC",
+                    "level": 15
+                }
+            ],
+            "entries": [
+                "The Extra Attack of your {@optfeature Frenetic Rapidshot|HEC} invocation confers two extra attacks rather than one."
+            ],
+            "featureType": [
+                "EI"
+            ]
+        },
+		{
+            "name": "Loaded Rounds",
+            "source": "HEC",
+            "page": 69,
+            "prerequisite": [
+                {
+                    "pact": "Pact of the Marksman",
+                    "level": 5
+                }
+            ],
+            "entries": [
+                "At the start of your turn, you can expend one Warlock spell slot to gain a bonus to your pact weapon attacks until the end of your turn. You gain a +2 bonus to the attack rolls and you gain a +(3*Spell slot level) bonus to the damage rolls."
+            ],
+            "featureType": [
+                "EI"
+            ]
+        },
+		{
+            "name": "Critical Clarity",
+            "source": "HEC",
+            "page": 69,
+            "prerequisite": [
+                {
+                    "pact": "Pact of the Marksman",
+                    "level": 9
+                }
+            ],
+            "entries": [
+                "You can see up to 1 mile away and discern fine details as though you are looking from 100 ft away. Your vision is not affected by lightly obscured areas and you treat heavily obscured areas within 10 ft of you as if they were just dimly lit.",
+				"Attacks you make with your pact weapon are critical hits on a roll of 19 or 20 on the {@dice d20}."
+            ],
+            "featureType": [
+                "EI"
+            ]
+        },
+		{
+            "name": "Sinuous Deliverance of Eternal Rest",
+            "source": "HEC",
+            "page": 69,
+            "prerequisite": [
+                {
+                    "pact": "Pact of the Marksman",
+                    "level": 12
+                }
+            ],
+            "entries": [
+                "When you hit a creature with your pact weapon, you mark it until the end of your next turn. You know the location of creatures marked by you, even if they are {@condition invisible} or behind total cover, unless the creature successfully hides from you or is more than 1000 ft away from you.",
+				"When you make an attack with your pact weapon against a creature whose location you know, you can make the projectiles take a path from you to the creature that does not exceed the range of your weapon and bends around any obstruction."
+            ],
+            "featureType": [
+                "EI"
+            ]
+        },
+		{
+            "name": "Phantom Shells of the Veilpiercer",
+            "source": "HEC",
+            "page": 69,
+            "prerequisite": [
+                {
+                    "pact": "Pact of the Marksman",
+                    "level": 7
+                }
+            ],
+            "entries": [
+                "You add your Charisma modifier to your initiative. You also unlock a special set of ammunition that have a +1 bonus to attack and damage rolls with them alongside their special properties. You gain 2 of these every short or long rest and you can expend a warlock spell slot as an action to gain an amount equal to your spell slot level. These special ammunition last until the next time you complete a rest, at which point they disappear harmlessly.",
+				"You must declare the special shot before you make the attack roll. The properties of the special ammunition are listed below and you can choose any combination of them whenever you gain the special ammunition.",
+				"{@b Ethereal} - A target hit by this bullet is affected by {@spell faerie fire} until the start of your next turn. Additionally, you can choose two creatures within 60 ft of you that are {@condition charmed} or {@condition frightened} and they can immediately roll the saving throw for the effect with advantage, ending the effect on a success.",
+				"{@b Malevolent} - A target hit by this bullet takes {@dice 3d8} additional fire damage that pierces resistance but not immunity.",
+				"{@b Maddening} - A target hit by this bullet has disadvantage on attack rolls, and on saving throws made with an ability score that you choose, until the end of your next turn.",
+				"{@b Insatiable} - A target hit by this bullet has all the damage dealt to it from the attack converted to Necrotic damage that pierces resistance but not immunity. You also heal for half the damage you deal with this attack.",
+				"{@b Benevolent} - A target hit by this bullet takes no damage from the attack and is instead healed for {@dice 3d8} + your Charisma modifier. You can also neutralize one disease, poison or condition as listed in the {@spell lesser restoration} spell.",
+				"{@b Haunting} - A target hit by this bullet is cursed for one minute and at the end of each of it's turns, it can make a Charisma saving throw against your Spell Save DC, ending the curse on a success. Your critical hit range increases by 1 for attack rolls against the target while it is cursed and on a critical hit, you deal additional Pyschic damage equal to your Charisma modifier."
+            ],
+            "featureType": [
+                "EI"
+            ]
+        },
+		{
+            "name": "Legacy of the Shadowstrider",
+            "source": "HEC",
+            "page": 69,
+            "prerequisite": [
+                {
+                    "pact": "Pact of the Chain|XPHB",
+                    "level": 9
+                }
+            ],
+            "entries": [
+                "Your familiar gains a bonus to it's hitpoints equal to twice your Warlock level. Your familiar can now use a bonus action to {@action Dash|XPHB}, {@action Disengage|XPHB}, or {@action Hide|XPHB}."
+            ],
+            "featureType": [
+                "EI"
+            ]
+        },
+		{
+            "name": "Transient Whisper",
+            "source": "HEC",
+            "page": 69,
+            "prerequisite": [
+                {
+                    "pact": "Pact of the Tome|XPHB",
+                    "level": 7
+                }
+            ],
+            "entries": [
+                "You can cast one Warlock spell(upto 5th level) that you have not prepared, without expending a Warlock spell slot once per long rest."
+            ],
+            "featureType": [
+                "EI"
+            ]
+        },
+		{
+            "name": "Momentary Precision",
+            "source": "HEC",
+            "page": 69,
+            "prerequisite": [
+                {
+                	"pact": "Pact of the Talisman|XPHB",
+            		"level": 9
+                }
+            ],
+            "entries": [
+                "When the wearer fails an attack roll, they can add a {@dice d4} to the roll, and on a hit the attack deals {@dice d4} extra Force damage. This benefit can be used a number of times equal to your proficiency bonus, and all expended uses are restored when you finish a long rest."
+            ],
+            "featureType": [
+                "EI"
+            ]
         }
-      ],
-      "entries": [
-        "Choose 3 spells from your warlock spell list whose level is less than or equal to half your proficiency bonus(rounded down). Your familiar can cast each spell at their lowest level with your spellcasting total, once per short rest. If your familiar benefits from the effects of the spell, you also benefit from it as if you had cast it.",
-        "The familiar can cast a spell with Verbal, Somatic or Material(without a gold cost) component even if it is normally incapable of speech or does not have hands as long as it is wearing an arcane focus or has a component pouch on itself. For material components that have a gold cost, it must have that component on itself as well to cast the spell."
-      ],
-      "featureType": [
-        "EI"
-      ]
-    },
-    {
-      "name": "Eldritch Emissaries",
-      "source": "HEC",
-      "page": 69,
-      "prerequisite": [
-        {
-          "pact": "Pact of the Tome",
-          "level": 12
-        }
-      ],
-      "entries": [
-        "Choose 2 spells that summon the spirit of a creature from any class list. These spells count as warlock spells for you and are not included in the number of spells you know. You can also cast each spell once per long rest without expending a spell slot and you cast them at a level equal to your proficiency bonus.",
-        "When you cast these spells and they require concentration, you can choose to cast them as usual or cast them without concentration for a duration of one minute."
-      ],
-      "featureType": [
-        "EI"
-      ]
-    },
-    {
-      "name": "Rejuvenating Sigil",
-      "source": "HEC",
-      "page": 69,
-      "prerequisite": [
-        {
-          "pact": "Pact of the Talisman"
-        }
-      ],
-      "entries": [
-        "When the wearer is about to roll a death saving throw, they can instead spend one of their hitdie and heal themselves equal to the result from the hitdie plus their constitution modifier, once per long rest. When you are healed by a spell cast using a spell slot, the wearer also heals for an amount equal to your Charisma modifier."
-      ],
-      "featureType": [
-        "EI"
-      ]
-    },
-    {
-      "name": "Warding Sigil",
-      "source": "HEC",
-      "page": 69,
-      "prerequisite": [
-        {
-          "pact": "Pact of the Talisman",
-          "level": 5
-        }
-      ],
-      "entries": [
-        "The wearer gets +1 bonus to their AC and saving throws. When the wearer is hit by an attack or fails a saving throw, they can use their reaction to reroll the dice used for the attack roll or saving throw and use the new roll. This feature can be used a number of times equal to your proficiency bonus per long rest."
-      ],
-      "featureType": [
-        "EI"
-      ]
-    },
-    {
-      "name": "Echoing Shots",
-      "source": "HEC",
-      "page": 69,
-      "prerequisite": [
-        {
-          "pact": "Pact of the Marksman"
-        }
-      ],
-      "entries": [
-        "You can now turn a second firearm into your pact weapon. You can draw or stow both pact weapons at the same time. You can perform the somatic components of spells when you are wielding both pact weapons simultaneously.",
-        "When both your pact weapons do not have the 'heavy' or 'two-handed' property, you can treat them as 'light' weapons when wielding them in each hand."
-      ],
-      "featureType": [
-        "EI"
-      ]
-    },
-    {
-      "name": "Frenetic Rapidshot",
-      "source": "HEC",
-      "page": 69,
-      "prerequisite": [
-        {
-          "pact": "Pact of the Marksman",
-          "level": 5
-        }
-      ],
-      "entries": [
-        "You gain the Extra Attack feature for your pact weapon only. With that feature, you can attack twice with the weapon instead of once when you take the {@action Attack} action on your turn."
-      ],
-      "featureType": [
-        "EI"
-      ]
-    },
-    {
-      "name": "Relentless Fusillade",
-      "source": "HEC",
-      "page": 69,
-      "prerequisite": [
-        {
-          "pact": "Frenetic Rapidshot",
-          "level": 15
-        }
-      ],
-      "entries": [
-        "The Extra Attack of your {@optfeature Frenetic Rapidshot|HEC} invocation confers two extra attacks rather than one."
-      ],
-      "featureType": [
-        "EI"
-      ]
-    },
-    {
-      "name": "Loaded Rounds",
-      "source": "HEC",
-      "page": 69,
-      "prerequisite": [
-        {
-          "pact": "Pact of the Marksman",
-          "level": 5
-        }
-      ],
-      "entries": [
-        "At the start of your turn, you can expend one warlock spell slot to gain a bonus to your pact weapon attacks until the end of your turn. You gain a +2 bonus to the attack rolls and you gain a +(3*Spell slot level) bonus to the damage rolls."
-      ],
-      "featureType": [
-        "EI"
-      ]
-    },
-    {
-      "name": "Critical Clarity",
-      "source": "HEC",
-      "page": 69,
-      "prerequisite": [
-        {
-          "pact": "Pact of the Marksman",
-          "level": 9
-        }
-      ],
-      "entries": [
-        "You can see up to 1 mile away and discern fine details as though you are looking from 100 ft away. Your vision is not affected by lightly obscured areas and you treat heavily obscured areas within 10 ft of you as if they were just dimly lit.",
-        "Attacks you make with your pact weapon are critical hits on a roll of 19 or 20 on the {@dice d20}."
-      ],
-      "featureType": [
-        "EI"
-      ]
-    },
-    {
-      "name": "Sinuous Deliverance of Eternal Rest",
-      "source": "HEC",
-      "page": 69,
-      "prerequisite": [
-        {
-          "pact": "Pact of the Marksman",
-          "level": 12
-        }
-      ],
-      "entries": [
-        "When you hit a creature with your pact weapon, you mark it until the end of your next turn. You know the location of creatures marked by you, even if they are {@condition invisible} or behind total cover, unless the creature successfully hides from you or is more than 1000 ft away from you.",
-        "When you make an attack with your pact weapon against a creature whose location you know, you can make the projectiles take a path from you to the creature that does not exceed the range of your weapon and bends around any obstruction."
-      ],
-      "featureType": [
-        "EI"
-      ]
-    },
-    {
-      "name": "Phantom Shells of the Veilpiercer",
-      "source": "HEC",
-      "page": 69,
-      "prerequisite": [
-        {
-          "pact": "Pact of the Marksman",
-          "level": 7
-        }
-      ],
-      "entries": [
-        "You add your Charisma modifier to your initiative. You also unlock a special set of ammunition that have a +1 bonus to attack and damage rolls with them alongside their special properties. You gain 2 of these every short or long rest and you can expend a warlock spell slot as an action to gain an amount equal to your spell slot level. These special ammunition last until the next time you complete a rest, at which point they disappear harmlessly.",
-        "You must declare the special shot before you make the attack roll. The properties of the special ammunition are listed below and you can choose any combination of them whenever you gain the special ammunition.",
-        "{@b Ethereal} - A target hit by this bullet is affected by {@spell faerie fire} until the start of your next turn. Additionally, you can choose a number of creatures equal to (your proficiency bonus - 2) within 60 ft of you that are {@condition charmed} or {@condition frightened} and they can immediately roll the saving throw for the effect with advantage, ending the effect on a success.",
-        "{@b Malevolent} - A target hit by this bullet takes {@dice 3d8} additional fire damage that pierces resistance but not immunity.",
-        "{@b Maddening} - A target hit by this bullet has disadvantage on attack rolls, and on saving throws made with an ability score that you choose, until the end of your next turn.",
-        "{@b Insatiable} - A target hit by this bullet has all the damage dealt to it from the attack converted to necrotic damage that pierces resistance but not immunity. You also heal for half the damage you deal with this attack.",
-        "{@b Benevolent} - A target hit by this bullet is healed for {@dice 3d8} + your Charisma modifier and you can neutralize one disease, poison or condition as listed in the {@spell lesser restoration} spell.",
-        "{@b Haunting} - A target hit by this bullet is cursed for one minute and at the end of each of it's turns, it can make a Charisma saving throw against your spell save dc, ending the curse on a success. Your critical hit range increases by 1 for attack rolls against the target while it is cursed and on a critical hit, you deal additional weapon's type damage equal to your Charisma modifier."
-      ],
-      "featureType": [
-        "EI"
-      ]
-    }
   ],
   "variantrule": [
     {
@@ -79525,7 +80234,134 @@
           ]
         }
       ]
-    }
+    },
+    {
+			"name": "Major Arcana",
+			"source": "HEC",
+			"caption": "Tarot Cards (Any effect that forces a saving throw uses your Spell save DC)",
+			"colLabels": [
+				"Card",
+				"Upright Effect",
+				"Reversed Effect"
+			],
+			"colStyles": [
+				"col text-center",
+				"col ",
+				"col "
+			],
+			"rows": [
+				[
+					"The Fool",
+					"When this card is played, it does not take up a card slot on the {@b Board}. When you finish a long rest, choose upto Wisdom modifier number of creatures within sight. For 8 hrs when they fail an Attack roll, Ability check or Saving throw they can roll a {@dice 1d100} and on a 91-100 the result becomes exactly what they would need to succeed. Each creature can force the success once without rolling the dice for the duration of this effect.",
+					"When this card is played, it does not take up a card slot on the {@b Board}. On your turn, choose a creature within 60ft and force it to roll a Charisma saving throw. On a failure it must roll a (@dice 1d6) and reduce it from the first Attack roll, Ability check or Saving throw it makes on a turn for one minute. The creature can attempt the Charisma saving throw again at the end of each of it's turns(the penalty effect does not apply to this save)."
+				],
+				[
+					"The Magician",
+					"On your turn, choose a creature within 30ft. For 10 minutes, the creature gains +2 to Concentration saving throws, Intelligence saving throws and Intelligence checks.",
+					"On your turn, choose a creature within 60ft and force it to roll an Intelligence saving throw. On a failure, it has disadvantage on all attack rolls and it's Intelligence checks are reduced by 5 for one minute. The creature can make the save again at the end of each of it's turns."
+				],
+				[
+					"The High Priestess",
+					"On your turn, choose a creature within 30ft. For 10 minutes, the creature gains +2 to Wisdom checks and Wisdom saving throws. It also has advantage on Perception and Insight checks for the duration.",
+					"On your turn, choose a creature within 60ft and force it to roll a Wisdom saving throw. On a failure, one of it's Senses is suppressed and it's Wisdom checks are reduced by 5 for one minute. The creature can make the save again at the end of each of it's turns."
+				],
+				[
+					"The Empress",
+					"On your turn, choose a creature within 30ft. For 10 minutes, the creature gains +2 to Charisma checks and Charisma saving throws. Additionally when the creature regains hitpoints, both the creature and all of it's minions/summons regain 3 extra hitpoints.",
+					"On your turn, choose a creature within 60ft and force it to roll a Charisma saving throw. On a failure, it cannot regain hitpoints and instead takes {@dice 1d6} Necrotic damage when it attempts to do so for one minute. Additionally it's Charisma checks are reduced by 5 for the same duration and it can make the save again at the end of each of it's turns."
+				],
+				[
+					"The Emperor",
+					"On your turn, choose a number of creatures within 30ft equal to your proficiency bonus. They gain temporary hitpoints equal to your Cleric level and a Blessing die. Immediately afterwards they can use their reaction to move upto their movement speed without provoking attack of opportunity.",
+					"When a creature within 60ft of you starts it's turn, you force it to roll a Wisdom saving throw and on a failure it considers one creature you choose that it can see as it's mortal enemy for one minute. It spends it's turns focusing only on killing it's mortal enemy. The creature can make the save again at the start of each of it's turns."
+				],
+				[
+					"The Hierophant",
+					"When you roll initiative, give yourself and Wisdom modifier amount of creatures, a +2 bonus to the initiative roll.",
+					"On your turn, choose 3 creatures within 60ft. You can swap positions among those creatures and an unwilling creature must succeed on a Constitution saving throw against your Spell save DC to resist the effect."
+				],
+				[
+					"The Lovers",
+					"On your turn, choose 2 creatures within 30ft. For one hour they gain 10ft movement speed, and they additionally gain +2 to AC and Saving throws when they are within 30ft of each other.",
+					"When a creature within 60ft fails a saving throw, choose another creature within 30ft of it to make the same saving throw and be subject to the same effect on a failure."
+				],
+				[
+					"The Chariot",
+					"At the end of any creature's turn, choose one creature within 30ft of you. It interrupts the turn order to take one action before the start of the next creature's turn.",
+					"On your turn, choose a creature within 60ft and force it to roll an Intelligence saving throw. On a failure, whenever the creature tries to cast a spell it rolls a {@dice 1d6} and on a 1-3 the spell fizzles, wasting both the action and the spell slot. The creature can make the save again at the start of each of it's turns."
+				],
+				[
+					"Strength",
+					"On your turn, choose 2 creatures within 60ft and dispel both the {@condition frightened} and {@condition charmed} conditions from them.",
+					"When a creature within 60ft succeeds on a saving throw against an Enchantment spell or magical effect, you force the creature to reroll the save with a {@dice 1d4} penalty and use the resulting total. This effect cannot be applied on saves succeeded using legendary resistance."
+				],
+				[
+					"The Hermit",
+					"On your turn, choose a creature within 30ft. For one hour, it gains +5 bonus to it's Stealth and Survival checks. Additionally, when there are no creatures within 15ft of it, it is lightly obscured and has advantage on saving throws it makes to avoid being {@condition frightened} or {@condition charmed} or to end those conditions on itself.",
+					"When a creature within 60ft starts it's turn, you force it to roll a Wisdom saving throw. On a failure, the creature must take {@action Dash|XPHB} and use all it's movement on it's turn to move away from all other creatures. If it cannot move, it must take {@action Dodge|XPHB} instead. This effect ends if the creature takes damage."
+				],
+				[
+					"Wheel of Fortune",
+					"When a creature within 30ft is about to roll an Attack roll, Ability check or Saving throw, you forgo the roll and make the result a 20.",
+					"When a creature within 30ft is about to roll an Attack roll, Ability check or Saving throw, you forgo the roll and make the result a 1."
+				],
+				[
+					"Justice",
+					"When a creature within 30ft heals another creature, it also receives the same amount of healing. Alternatively, when a creature within 60ft deals damage to another creature, it also receives the same amount of damage on a failed Dexterity saving throw or half as much on a success.",
+					"On your turn, choose a creature within 60ft and force it to roll a Constitution saving throw. On a failure, choose one damage type and the creature loses any resistance to it for one minute. Once per turn when the creature takes damage of the same type during this one minute, it takes additional damage equal to your Wisdom modifier."
+				],
+				[
+					"The Hanged Man",
+					"On your turn, choose a creature within 30ft. For one minute, the creature gains resistance to all damage types until the end of it's next turn when it ends it's turn without making an attack, casting a spell or moving.",
+					"When a creature within 60ft starts it's turn, you force it to roll a Wisdom saving throw and on a failure it is {@condition restrained} in it's space by spectral chains for one minute. While it is {@condition restrained}, it cannot be moved by any means."
+				],
+				[
+					"Death",
+					"When a creature within 30ft drops to 0 hitpoints, it is immediately healed for half it's maximum hitpoints and end the {@condition prone} condition on it.",
+					"When a creature within 60ft takes damage, it takes additional {@dice 4d8} damage of the same type as the triggering damage."
+				],
+				[
+					"Temperance",
+					"On your turn, choose a creature within 30ft. For ten minutes, the creature can use their reaction to treat a {@dice d20} roll of 9 or lower as a 10.",
+					"When a creature within 60ft rolls damage, you force it to roll a {@dice 1d6}. On a 1 all the damage dice become the lowest value it can roll and on a 6 all the damage die become the highest value it can roll."
+				],
+				[
+					"The Devil",
+					"On your turn, choose a creature within 30ft and force it to make a Charisma saving throw. On a failure, it is {@condition Restrained} by unbreakable red ropes and enters a delirious state for 10 minutes. While it is delirious it mumbles about it's deepest, darkest desires and requests for affection from other creatures, giving them advantage on all Charisma checks when interacting with it.",
+					"On your turn, choose 2 creatures within 30ft. The {@condition Restrained} and {@condition Paralyzed} conditions end on them, and they gain 10ft extra movement speed until the end of their next turn."
+				],
+				[
+					"The Tower",
+					"When you roll initiative, choose upto 2 creatures that you can see and force them to make a Wisdom saving throw. On a failure, they cannot move, take actions or reactions on their first turn of combat.",
+					"When a creature within 60ft takes damage that would put it at 25% of it's maximum hitpoints or less, the creature can instead drop to 1 hitpoint and gains temporary hitpoints equal to half it's maximum hitpoints. Additionally until the end of it's next turn it has advantage on all Attack rolls, Ability checks and Saving throws."
+				],
+				[
+					"The Star",
+					"On your turn, choose a creature within 30ft. It emits dim light upto 30ft away for one minute. It's allies that are in the dim light can reroll any healing die once and add +2 to each die's total. It's enemies that are in the dim light have disadvantage on Stealth checks.",
+					"When a creature within 60ft starts it's turn, you force it to roll a Charisma saving throw. On a failure, it is {@condition Incapacitated} for one minute as despair fills it's mind. The creature can make the save again at the start of each of it's turns."
+				],
+				[
+					"The Moon",
+					"On your turn, choose 2 creatures within 60ft and force them to make a Wisdom saving throw. On a failure, they are put under a psychedelic trip for one minute. For the duration they are {@condition dazed} and their movement speed is halved. Each creature can make the save again at the start of it's turn.",
+					"On your turn, you emit bright moonlight that reaches upto 60ft from yourself and dispel all illusions in the area. The {@condition invisible} condition also ends on all creatures within the area."
+				],
+				[
+					"The Sun",
+					"On your turn, you blast sunlight that reaches upto 60ft from yourself and banish magical darkness in the area. Creatures you choose that were hit by the sunlight regain hitpoints equal to your Cleric level.",
+					"When a creature within 60ft takes damage, you can force it to roll a Constitution saving throw. On a failure, it is cursed for one minute. The first time it takes damage on a turn, it takes an extra {@dice 1d8} Necrotic damage and heals the creature dealing that damage for the same amount."
+				],
+				[
+					"Judgment",
+					"On your turn, choose a creature within 30ft. For one minute, when it fails an Attack roll, Ability check or Saving throw it gains advantage on the next Attack roll, Ability check or Saving throw it makes. Additionally, when it rolls a 1 on the {@dice d20}, it can spend 2 of it's hitdie to roll again and take the new result.",
+					"When a creature within 60ft rolls a critical hit, it is judged for it's actions and it has vulnerability to all of the damage from the next attack that hits it within a minute."
+				],
+				[
+					"The World",
+					"When you finish a short rest, choose a number of creatures that you can see equal to your Wisdom modifier. These creatures can regain one spell slot whose level can be as high as your (proficiency bonus - 1), or they can regain one use of a class/subclass feature that recharges on a long rest.",
+					"On your turn, choose a creature within 60ft and force it to make a Wisdom saving throw. On a failure for one minute, anytime it rolls a 20 on the {@dice d20} it is turned into a 19 and anytime it rolls 1-4 on the {@dice d20} it is turned into a 5. The creature can make the save again at the end of it's turn."
+				]
+			]
+		}
   ],
   "action": [
     {
