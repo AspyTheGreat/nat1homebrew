@@ -13726,6 +13726,14 @@
           			{
             			"name": "Artificer",
             			"source": "DRK"
+          			},
+          			{
+            			"name": "Flickwrist",
+            			"source": "TCT"
+          			},
+          			{
+            			"name": "Mesmer",
+            			"source": "AspysGuidetoInfinitum"
           			}
         		]
       		},
@@ -57554,9 +57562,9 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level Frostwarden feature}",
-				"When you finish a long rest, you can sacrifice any amount of hitpoints that you have to the Beast of Winter. Your maximum hitpoints is also reduced by that amount but you obtain the {@b Frozen Bulwark} that has hitpoints equal to the amount of hitpoints you sacrificed, until you finish your next long rest. When you take damage, it is reduced from your {@b Frozen Bulwark} before it is reduced from your hitpoints and your {@b Frozen Bulwark} always counts towards your hitpoint total. However you can only restore hitpoints to your {@b Frozen Bulwark} when you deal wrath damage by an amount equal to the total rolled by your wrath dice.",
-				"As a bonus action, you can emit a blast of chillness around you upto 30ft away. Hostile creatures within range must roll a Constitution saving throw(DC equal to 8 + your proficiency bonus + your Strength modifier) and on a failure they receive the {@b Winter's Mark} until the end of your next turn. Creatures with {@b Winter's Mark} have their movement speed reduced by 10ft and when they take Cold damage, they take additional Cold damage equal to one roll of your Wrath die. When you use this bonus action when a creature already has {@b Winter's Mark}, it must roll the saving throw again regardless of how far away it is from you.",
-				"While raging, whenever a creature hits you with an attack roll, it takes Cold damage equal to your Barbarian level."
+				"When you finish a long rest, you can sacrifice any amount of hitpoints that you have to the Beast of Winter. Your maximum hitpoints is also reduced by that amount but you obtain the {@b Frozen Bulwark} that has hitpoints equal to the amount of hitpoints you sacrificed, until you finish your next long rest. When you take damage, it is reduced from your {@b Frozen Bulwark} before it is reduced from your hitpoints and your {@b Frozen Bulwark} always counts towards your maximum hitpoint total. However you can only restore hitpoints to your {@b Frozen Bulwark} when you deal wrath damage by an amount equal to the total rolled by your wrath dice.",
+				"As a bonus action, you can emit a blast of chillness around you upto 30ft away. Hostile creatures within range must roll a Constitution saving throw(DC equal to 8 + your proficiency bonus + your Strength modifier) and on a failure they receive the {@b Winter's Mark} until the end of your next turn. Creatures with {@b Winter's Mark} have their movement speed reduced by 10ft and once per turn when they take Cold damage, they take additional Cold damage equal to one roll of your Wrath die. When you use this bonus action when a creature already has {@b Winter's Mark}, it must roll the saving throw again regardless of how far away it is from you.",
+				"While raging, whenever a creature hits you for the first time on a turn, it takes Cold damage equal to your Barbarian level."
 			]
 		},
 		{
@@ -57571,7 +57579,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Frostwarden feature}",
-				"While raging, you gain resistance to Cold damage and your weapon can deal Cold damage instead of it's usual damage type. While your {@b Frozen Bulwark} has atleast 1 hitpoint, you radiate the {@b Sentinel Aura} upto 15ft from you. Hostile creatures within the aura are taunted and cannot target other creatures until they miss an attack roll against you."
+				"While raging, you gain resistance to Cold damage and your weapon can deal Cold damage instead of it's usual damage type. While your {@b Frozen Bulwark} has atleast 1 hitpoint, you radiate the {@b Sentinel Aura} upto 5ft from you. Hostile creatures within the aura are taunted and they cannot target other creatures with an attack until they miss an attack roll against you."
 			]
 		},
 		{
@@ -58313,7 +58321,7 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"You gain proficiency in Insight skill. You also gain proficiency in either {@item Playing Cards} or {@item Three-Dragon Ante Set} and you can use it as a spellcasting focus for your cleric spells.",
+				"You gain proficiency in Insight skill. You also gain proficiency in either {@item Playing Cards|XPHB} or {@item Three-Dragon Ante Set|XPHB} and you can use it as a spellcasting focus for your cleric spells.",
 				"Your Mind's Eye grants you knowledge of mystical rituals. You learn two 1st-level spells with the Ritual tag from any class's spell list and can cast them only as rituals. These spells do not count towards the number of spells you can prepare. You can learn more spells with the Ritual tag by spending 2 hours in meditation and 50 gp of incense for each level of the spell. You can only learn Ritual spells that are equal to or less than the highest Spell level you get to cast from your Cleric levels."
 			]
 		},
@@ -58332,7 +58340,7 @@
 			},
 			"entries": [
 				"Starting at 2nd level, you can use your Channel Divinity as a bonus action to open your spectral eye that appears embedded in your forehead between your brows and gain supernatural means to influence the fate of other creatures for one minute.",
-				"During this one minute, whenever you cast a Cleric spell with a spell slot to heal a creature, you can choose another creature within 30ft of yourself to regain {@dice 1d8} hitpoints and also gain a {@b Blessing} die. For the same duration, whenever a creature expends your {@b Blessing} die, it can choose a creature within 30ft of itself to regain hitpoints equal to your Wisdom modifier."
+				"During this one minute, whenever you cast a Cleric spell with a spell slot to heal a creature, you can choose another creature within 30ft of yourself to regain {@dice 1d8} hitpoints and also gain a {@b Blessing} die. You also have advantage on Perception and Insight checks for the duration."
 			]
 		},
 		{
@@ -58346,8 +58354,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Starting at 6th level, you gain access to the {@table Major Arcana|HEC} of the Tarot Cards. You also gain a {@b Concealed Hand} and a {@b Board}. Your {@b Concealed Hand} holds all of your Tarot Cards and a creature other than you cannot see the face of the card, only seeing vibrant colours in a swirling pattern on both sides of the card. Once per turn, you can play a Tarot Card from your {@b Concealed Hand} onto the {@b Board} and activate either it's {@b Upright} or {@b Reversed} effect.",
-				"The conditions to play the card are in the description of their effects and the {@b Board} can hold upto 5 cards at a time. Once played, a card remains on the board for the duration of it's effect after which it disappears in a flash of bright light. You cannot play a card when the {@b Board} is already full. When you finish a long rest, all the expended Tarot Cards reappear in your {@b Concealed Hand}."
+				"Starting at 6th level, you gain access to the {@table Major Arcana|HEC} of the Tarot Cards. When you finish a long rest you can choose a number of Tarot Cards equal to twice your proficiency bonus from the deck and store it in your {@b Concealed Hand}. A creature other than you cannot see the face of the card, only seeing vibrant colours in a swirling pattern on both sides of the card.",
+				"You can only play a Tarot Card from your {@b Concealed Hand} and activate either it's {@b Upright} or {@b Reversed} effect when you do so. Once you do so, you cannot play another Tarot card until the start of your next turn. The conditions to play the card are in the description of their effects. Once played, a card hovers beside you for the duration of it's effect after which it disappears in a flash of bright light returning to your deck."
 			]
 		},
 		{
@@ -58362,7 +58370,7 @@
 			"header": 2,
 			"entries": [
 				"Starting at 17th level, when you cast a spell that heals creatures with a 5th level spell slot or lower, roll a {@dice 1d6} and on a 6 you regain the spell slot spent in the casting of the spell.",
-				"The {@b Board} can now hold upto 9 cards at a time. Your Tarot cards now return to your {@b Concealed Hand} after the first time they are played and can be played once more before they are expended. You can now play two Tarot Cards in a turn."
+				"When you cast healing spells with a spell slot, you can now give all creatures affected by it a {@b Blessing} die until the end of your next turn. Once per long rest, you can play one Tarot Card from the Major Arcana deck that you do not have in your {@b Concealed Hand}."
 			]
 		},
 		{
@@ -58565,7 +58573,7 @@
 						],
 						[
 							"9th",
-							"{@spell Legend Lore}, {@spell Synaptic Static|XPHB}"
+							"{@spell Legend Lore}, {@spell Temporal Shunt|DRK}"
 						]
 					]
 				},
@@ -58587,7 +58595,7 @@
 			"header": 1,
 			"entries": [
 				"Your blood increases in viscosity and becomes a darker shade of red, granting you increased vitality and a chilling visage. Your hitpoint maximum increases by 1 for every level you gain in this class. You add your Wisdom modifier to any Intimidation check you make.",
-				"You gain anomalous abilities akin to the nature of your deity. When you cast a Cleric spell(upto 5th level) to restore hitpoints to another creature, you can instead cause it to deal Psychic damage equal to the total healing it would normally do, on a failed Intelligence saving throw against your spell save DC or half as much on a success."
+				"Once per turn, when you force a saving throw on a creature using a Cleric spell, you can heal another creature within 30ft of it by an amount equal to the spell level."
 			]
 		},
 		{
@@ -58633,8 +58641,9 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"Starting at 17th level, you gain immunity to Psychic damage. You also gain immunity to the {@condition charmed} and {@condition frightened} conditions.",
-				"Once per turn, when you cast a Cleric spell that deals damage to a creature by imposing a saving throw, you can heal another creature within 30ft of you by an amount equal to half the highest damage dealt by the spell to one creature."
+				"Starting at 17th level, you gain immunity to Psychic damage. You also gain immunity to the {@condition charmed} and {@condition frightened} conditions. You can target creatures that you have banished with your 6th level subclass feature as long as you are within 60ft of the space that they would reappear in when those effects end.",
+				"When a creature fails the saving throw against your Cleric spells, you can force it to roll an additional Intelligence saving throw, and on a failure you banish only it's conciousness to a Demiplane at the edge of the Far Realms for the one minute, leaving it's body behind. You can only banish one creature in such a way at a time and that creature also has the {@condition incapacitated} condition for the duration of it's banishment.",
+				"While the creature starts it's turn with it's conciousness in the Demiplane it can roll the Intelligence saving throw again and on a success it escapes the Demiplane, ending the banishment. On a failure it takes Psychic damage equal to twice your Wisdom modifier as it starts bleeding black ooze from all of it's orifices from the maddening voices and sinister noises assaulting it's mind. If any creature other than you deals damage to the creature, you must make a Constitution saving throw to maintain concentration as if you took the damage, and on a failure this banishment ends immediately."
 			]
 		},
 		{
@@ -58702,7 +58711,7 @@
 								],
 								[
 									"Middleweight",
-									"You use your Charisma modifier for unarmed attacks and you can wield a shield. You gain advantage on Constitution Checks and Constitution Saves. You gain +2 to unarmed attack rolls, unarmed damage rolls, and grapple checks."
+									"You use your Charisma modifier for unarmed attacks and you can wield a shield. You gain advantage on Constitution Checks and Constitution Saves. You gain a bonus to your grapple checks equal to your Constitution modifier."
 								],
 								[
 									"Lightweight",
@@ -58856,11 +58865,11 @@
 					"rows": [
 						[
 							"Heavyweight",
-							"Your unarmed damage die is doubled in count. Additionally, when you hit a creature with an unarmed attack, you can push it upto 10ft in any direction."
+							"Your unarmed damage dice is doubled in count. Additionally, when you hit a creature with an unarmed attack, you can push it upto 10ft in any direction."
 						],
 						[
 							"Middleweight",
-							"Your shield's AC bonus is added to the unarmed damage you deal. You are considered one size larger for checks you make to grapple a creature and all creatures have advantage on attacks against a creature {@condition grappled} by you."
+							"You gain +2 to unarmed attack rolls and +4 to unarmed damage rolls. You are considered one size larger for checks you make to grapple a creature and all creatures have advantage on attacks against a creature {@condition grappled} by you."
 						],
 						[
 							"Lightweight",
@@ -58946,7 +58955,7 @@
       }
     },
     {
-			"name": "Arcenyx Weapon",
+			"name": "+1 Arcenyx Weapon",
 			"type": "GV|XDMG",
 			"requires": [
 				{
@@ -58954,12 +58963,54 @@
 				}
 			],
 			"inherits": {
-				"namePrefix": "Arcenyx ",
+				"namePrefix": "+1 Arcenyx ",
+				"source": "HEC",
+				"page": 69,
+				"rarity": "uncommon",
+				"reqAttune": true,
+				"bonusWeapon": "+1",
+				"entries": [
+					"These sleek black weapons have a faint blue hue in their edges and arcane runes run along the center of the blade. While attuned, you may use your Spellcasting ability modifier for attack and damage rolls made with this weapon. You have a +1 bonus to attack and damage rolls made with this magic weapon."
+				]
+			}
+		},
+		{
+			"name": "+2 Arcenyx Weapon",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"weapon": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "+2 Arcenyx ",
 				"source": "HEC",
 				"page": 69,
 				"rarity": "rare",
+				"reqAttune": true,
+				"bonusWeapon": "+2",
 				"entries": [
-					"These sleek black weapons have a faint blue hue in their edges and arcane runes run along the center of the blade. While attuned, you may use your Spellcasting ability modifier for attack and damage rolls made with this weapon."
+					"These sleek black weapons have a faint blue hue in their edges and arcane runes run along the center of the blade. While attuned, you may use your Spellcasting ability modifier for attack and damage rolls made with this weapon. You have a +2 bonus to attack and damage rolls made with this magic weapon."
+				]
+			}
+		},
+		{
+			"name": "+3 Arcenyx Weapon",
+			"type": "GV|XDMG",
+			"requires": [
+				{
+					"weapon": true
+				}
+			],
+			"inherits": {
+				"namePrefix": "+3 Arcenyx ",
+				"source": "HEC",
+				"page": 69,
+				"rarity": "very rare",
+				"reqAttune": true,
+				"bonusWeapon": "+3",
+				"entries": [
+					"These sleek black weapons have a faint blue hue in their edges and arcane runes run along the center of the blade. While attuned, you may use your Spellcasting ability modifier for attack and damage rolls made with this weapon. You have a +3 bonus to attack and damage rolls made with this magic weapon."
 				]
 			}
 		}
@@ -65356,7 +65407,7 @@
 				  ],
 				  "9": [
 					"Legend Lore",
-					"Synaptic Static"
+					"Temporal Shunt"
 				  ]
 				}
 			  }
@@ -65368,45 +65419,45 @@
 			  "Herald of the Crawling Chaos|Cleric|DRK|Oblivion|HEC|17"
 			]
 		},
-    	{
-      		"name": "Oath of The Sanctified Knuckle",
-      		"shortName": "Sanctified Knuckle",
-      		"source": "HEC",
-      		"className": "Paladin",
-      		"classSource": "DRK",
-      		"additionalSpells": [
-        		{
-          			"prepared": {
-            			"3": [
-              				"Gravity Pulse",
-              				"Jump"
-            			],
-            			"5": [
-              				"Weapon of Wind",
-              				"Kinetic Jaunt"
-            			],
-            			"9": [
-              				"Elemental Weapon",
-              				"Thunder Step"
-            			],
-            			"13": [
-              				"Earthburst",
-              				"Stoneskin"
-            			],
-            			"17": [
-              				"Holy Weapon",
-              				"Yolande's Regal Presence"
-            			]
-          			}
-        		}
-      		],
-      		"subclassFeatures": [
-        		"Oath of The Sanctified Knuckle|Paladin|DRK|Sanctified Knuckle|HEC|3",
-        		"Aura of Boundless Resolve|Paladin|DRK|Sanctified Knuckle|HEC|7",
-        		"Ascendant Strike|Paladin|DRK|Sanctified Knuckle|HEC|15",
-        		"Inexorable Riposte|Paladin|DRK|Sanctified Knuckle|HEC|20"
-      		]
-    	}
+    {
+     		"name": "Oath of The Sanctified Knuckle",
+     		"shortName": "Sanctified Knuckle",
+     		"source": "HEC",
+     		"className": "Paladin",
+     		"classSource": "DRK",
+     		"additionalSpells": [
+       		{
+         			"prepared": {
+           			"3": [
+             				"Gravity Pulse",
+             				"Jump"
+          			],
+           			"5": [
+             				"Weapon of Wind",
+             				"Kinetic Jaunt"
+           			],
+           			"9": [
+             				"Elemental Weapon",
+             				"Thunder Step"
+           			],
+           			"13": [
+             				"Earthburst",
+             				"Stoneskin"
+           			],
+           			"17": [
+             				"Holy Weapon",
+             				"Yolande's Regal Presence"
+           			]
+         			}
+       		}
+     		],
+     		"subclassFeatures": [
+      		"Oath of The Sanctified Knuckle|Paladin|DRK|Sanctified Knuckle|HEC|3",
+       		"Aura of Boundless Resolve|Paladin|DRK|Sanctified Knuckle|HEC|7",
+      		"Ascendant Strike|Paladin|DRK|Sanctified Knuckle|HEC|15",
+       		"Inexorable Riposte|Paladin|DRK|Sanctified Knuckle|HEC|20"
+     		]
+    }
   ],
   "legendaryGroup": [
     {
@@ -68789,7 +68840,7 @@
       "source": "tct",
       "prerequisite": [
         {
-          "pact": "Cloak"
+          "pact": "Pact of the Cloak"
         }
       ],
       "entries": [
@@ -68804,7 +68855,7 @@
       "source": "tct",
       "prerequisite": [
         {
-          "pact": "Cloak"
+          "pact": "Pact of the Cloak"
         }
       ],
       "entries": [
@@ -68819,12 +68870,12 @@
       "source": "tct",
       "prerequisite": [
         {
-          "pact": "Cloak",
+          "pact": "Pact of the Cloak",
           "level": 5
         }
       ],
       "entries": [
-        "The wearer of the cloak descends at 60 feet per round and may move 2 feet horizontally for every foot they descend. The wearer experiences no damage from falling this way."
+        "The wearer of the Pact of the Cloak descends at 60 feet per round and may move 2 feet horizontally for every foot they descend. The wearer experiences no damage from falling this way."
       ],
       "featureType": [
         "EI"
@@ -68835,7 +68886,7 @@
       "source": "tct",
       "prerequisite": [
         {
-          "pact": "Cloak",
+          "pact": "Pact of the Cloak",
           "level": 10
         }
       ],
@@ -68851,7 +68902,7 @@
       "source": "tct",
       "prerequisite": [
         {
-          "pact": "Cloak",
+          "pact": "Pact of the Cloak",
           "level": 7
         }
       ],
@@ -68867,7 +68918,7 @@
       "source": "tct",
       "prerequisite": [
         {
-          "pact": "Cloak",
+          "pact": "Pact of the Cloak",
           "level": 7
         }
       ],
@@ -68915,7 +68966,7 @@
       "source": "tct",
       "prerequisite": [
         {
-          "pact": "tome",
+          "pact": "Tome",
           "patron": "The Archivist"
         }
       ],
@@ -69927,17 +69978,11 @@
       ],
       "prerequisite": [
         {
-          "level": {
-            "level": 15,
-            "class": {
-              "name": "Warlock",
-              "source": "XPHB",
-              "visible": true
-            }
-          },
+          "level": 15,
           "optionalfeature": [
             "thirsting blade|xphb"
-          ]
+          ],
+          "pact": "Blade"
         }
       ],
       "entries": [
@@ -74346,7 +74391,7 @@
 			  "Additionally, when you attack with your pact weapon, you can use your Charisma modifier, instead of Strength or Dexterity, for the attack and damage rolls. You can also fix your pact weapon that is broken from a failed misfire check by stowing it away for a number of rounds equal to your pact weapon's misfire score."
 			],
 			"featureType": [
-			  "EI"
+				"EI"
 			]
 		},
 		{
@@ -74355,8 +74400,8 @@
             "page": 69,
             "prerequisite": [
                 {
-                    "pact": "Pact of the Chain|XPHB",
-                    "level": 7
+                    "level": 7,
+					"pact": "Chain"
                 }
             ],
             "entries": [
@@ -74373,8 +74418,8 @@
             "page": 69,
             "prerequisite": [
                 {
-                    "pact": "Pact of the Tome|XPHB",
-                    "level": 12
+                    "level": 12,
+					"pact": "Tome"
                 }
             ],
             "entries": [
@@ -74391,7 +74436,7 @@
             "page": 69,
             "prerequisite": [
                 {
-                    "pact": "Pact of the Talisman|XPHB"
+                    "pact": "Talisman"
                 }
             ],
             "entries": [
@@ -74407,8 +74452,8 @@
             "page": 69,
             "prerequisite": [
                 {
-                    "pact": "Pact of the Talisman|XPHB",
-                    "level": 5
+                    "level": 5,
+					"pact": "Talisman"
                 }
             ],
             "entries": [
@@ -74441,8 +74486,8 @@
             "page": 69,
             "prerequisite": [
                 {
-                    "pact": "Pact of the Marksman",
-                    "level": 5
+                    "level": 5,
+					"pact": "Pact of the Marksman"
                 }
             ],
             "entries": [
@@ -74458,9 +74503,11 @@
             "page": 69,
             "prerequisite": [
                 {
-					"pact": "Pact of the Marksman",
-					"optionalfeature": "Frenetic Rapidshot|HEC",
-                    "level": 15
+                    "level": 15,
+					"optionalfeature": [
+						"Frenetic Rapidshot|HEC"
+					],
+					"pact": "Pact of the Marksman"
                 }
             ],
             "entries": [
@@ -74476,8 +74523,8 @@
             "page": 69,
             "prerequisite": [
                 {
-                    "pact": "Pact of the Marksman",
-                    "level": 5
+                    "level": 5,
+					"pact": "Pact of the Marksman"
                 }
             ],
             "entries": [
@@ -74493,8 +74540,8 @@
             "page": 69,
             "prerequisite": [
                 {
-                    "pact": "Pact of the Marksman",
-                    "level": 9
+                    "level": 9,
+					"pact": "Pact of the Marksman"
                 }
             ],
             "entries": [
@@ -74511,8 +74558,8 @@
             "page": 69,
             "prerequisite": [
                 {
-                    "pact": "Pact of the Marksman",
-                    "level": 12
+                    "level": 12,
+					"pact": "Pact of the Marksman"
                 }
             ],
             "entries": [
@@ -74529,8 +74576,8 @@
             "page": 69,
             "prerequisite": [
                 {
-                    "pact": "Pact of the Marksman",
-                    "level": 7
+                    "level": 7,
+					"pact": "Pact of the Marksman"
                 }
             ],
             "entries": [
@@ -74553,8 +74600,8 @@
             "page": 69,
             "prerequisite": [
                 {
-                    "pact": "Pact of the Chain|XPHB",
-                    "level": 9
+                    "level": 9,
+					"pact": "Chain"
                 }
             ],
             "entries": [
@@ -74570,8 +74617,8 @@
             "page": 69,
             "prerequisite": [
                 {
-                    "pact": "Pact of the Tome|XPHB",
-                    "level": 7
+                    "level": 7,
+					"pact": "Tome"
                 }
             ],
             "entries": [
@@ -74587,8 +74634,8 @@
             "page": 69,
             "prerequisite": [
                 {
-                	"pact": "Pact of the Talisman|XPHB",
-            		"level": 9
+            		"level": 9,
+					"pact": "Talisman"
                 }
             ],
             "entries": [
@@ -80252,8 +80299,8 @@
 			"rows": [
 				[
 					"The Fool",
-					"When this card is played, it does not take up a card slot on the {@b Board}. When you finish a long rest, choose upto Wisdom modifier number of creatures within sight. For 8 hrs when they fail an Attack roll, Ability check or Saving throw they can roll a {@dice 1d100} and on a 91-100 the result becomes exactly what they would need to succeed. Each creature can force the success once without rolling the dice for the duration of this effect.",
-					"When this card is played, it does not take up a card slot on the {@b Board}. On your turn, choose a creature within 60ft and force it to roll a Charisma saving throw. On a failure it must roll a (@dice 1d6) and reduce it from the first Attack roll, Ability check or Saving throw it makes on a turn for one minute. The creature can attempt the Charisma saving throw again at the end of each of it's turns(the penalty effect does not apply to this save)."
+					"When you finish a long rest, choose upto Wisdom modifier number of creatures within sight. For 8 hrs when they fail an Attack roll, Ability check or Saving throw they can roll a {@dice 1d100} and on a 91-100 the result becomes exactly what they would need to succeed.",
+					"On your turn, choose a creature within 60ft and force it to roll a Charisma saving throw. On a failure it must roll a {@dice 1d6} and reduce it from the first Attack roll, Ability check or Saving throw it makes on a turn for one minute. The creature can attempt the Charisma saving throw again at the end of each of it's turns(the penalty effect does not apply to this save)."
 				],
 				[
 					"The Magician",
@@ -80302,8 +80349,8 @@
 				],
 				[
 					"Wheel of Fortune",
-					"When a creature within 30ft is about to roll an Attack roll, Ability check or Saving throw, you forgo the roll and make the result a 20.",
-					"When a creature within 30ft is about to roll an Attack roll, Ability check or Saving throw, you forgo the roll and make the result a 1."
+					"When a creature within 30ft is about to roll an Attack roll, Ability check or Saving throw, you make the creature roll thrice and keep the highest result.",
+					"When a creature within 30ft is about to roll an Attack roll, Ability check or Saving throw, you make the creature roll thrice and keep the lowest result."
 				],
 				[
 					"Justice",
@@ -80313,7 +80360,7 @@
 				[
 					"The Hanged Man",
 					"On your turn, choose a creature within 30ft. For one minute, the creature gains resistance to all damage types until the end of it's next turn when it ends it's turn without making an attack, casting a spell or moving.",
-					"When a creature within 60ft starts it's turn, you force it to roll a Wisdom saving throw and on a failure it is {@condition restrained} in it's space by spectral chains for one minute. While it is {@condition restrained}, it cannot be moved by any means."
+					"When a creature within 60ft starts it's turn, you force it to roll a Wisdom saving throw and on a failure it is {@condition restrained} in it's space by spectral chains for one minute. While it is {@condition restrained}, it cannot be moved by any means. The creature can make the save again at the end of each of it's turns."
 				],
 				[
 					"Death",
@@ -80357,7 +80404,7 @@
 				],
 				[
 					"The World",
-					"When you finish a short rest, choose a number of creatures that you can see equal to your Wisdom modifier. These creatures can regain one spell slot whose level can be as high as your (proficiency bonus - 1), or they can regain one use of a class/subclass feature that recharges on a long rest.",
+					"When you finish a short rest, choose 3 creatures that you can see. These creatures can regain one spell slot whose level can be as high as your (proficiency bonus - 1), or they can regain one use of a class/subclass feature that recharges on a long rest.",
 					"On your turn, choose a creature within 60ft and force it to make a Wisdom saving throw. On a failure for one minute, anytime it rolls a 20 on the {@dice d20} it is turned into a 19 and anytime it rolls 1-4 on the {@dice d20} it is turned into a 5. The creature can make the save again at the end of it's turn."
 				]
 			]
