@@ -22696,14 +22696,14 @@
       },
       "startingEquipment": {
         "additionalFromBackground": true,
-        "default": [
+        "dDRKult": [
           "(a) a {@item rapier|tct} or (b) a {@item shortsword|tct}",
           "(a) an {@item arcane focus|tct} or (b) a {@item component pouch|tct}",
           "(a) an {@item entertainer's pack|tct} or (b) a {@item scholar's pack|tct}",
           "Two {@item dagger|tct|daggers}"
         ],
         "goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
-        "defaultData": [
+        "dDRKultData": [
           {
             "a": [
               "rapier|tct"
@@ -23350,13 +23350,13 @@
         ]
       },
       "startingEquipment": {
-        "default": [
+        "dDRKult": [
           "(a) Two {@filter simple weapons|items|category=basic|type=simple weapon} or (b) {@item rapier|phb}",
           "(a) {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) Two {@item dagger|phb|daggers}",
           "One set of tools of your choice",
           "{@item leather armor|phb} and {@item scholar's pack|phb}"
         ],
-        "defaultData": [
+        "dDRKultData": [
           {
             "a": [
               {
@@ -23895,13 +23895,13 @@
       },
       "startingEquipment": {
         "additionalFromBackground": true,
-        "default": [
+        "dDRKult": [
           "(a) A {@item scimitar|tct|scimitars} , {@item shortsword|tct|shortsword} or (b) {@filter a simple weapon|items|source=tct|category=basic|type=simple weapon}",
           "(a) A dungeoneer's pack or (b) an entertainer's pack",
           "(a) {@item dart|tct|20 darts} or (b) {@item dagger|tct|2 daggers}",
           "One of {@item disguise kit|phb}, {@item calligrapher's supplies|phb}, {@item painter's supplies|phb}, {@item weaver's tools|phb}, {@item woodcarver's tools|phb}, {@item jeweler's tools|phb} or {@item musical instrument|phb|a musical instrument}."
         ],
-        "defaultData": [
+        "dDRKultData": [
           {
             "a": [
               "a shortsword|tct or scimitar|tct"
@@ -24100,7 +24100,7 @@
       },
       "startingEquipment": {
         "additionalFromBackground": true,
-        "default": [
+        "dDRKult": [
           "(a) a {@item mace|phb} or (b) a {@item warhammer|phb} (if proficient)",
           "(a) {@item scale mail|phb}, (b) {@item leather armor|phb}, or (c) {@item chain mail|phb} (if proficient)",
           "(a) a {@item light crossbow|phb} and {@item Crossbow Bolts (20)|phb|20 bolts} or (b) any {@filter simple weapon|items|source=tct|category=basic|type=simple weapon}",
@@ -24108,7 +24108,7 @@
           "A {@item shield|phb} and a {@item holy symbol|phb}"
         ],
         "goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
-        "defaultData": [
+        "dDRKultData": [
           {
             "a": [
               "mace|phb"
@@ -24928,13 +24928,13 @@
       },
       "startingEquipment": {
         "additionalFromBackground": true,
-        "default": [
+        "dDRKult": [
           "(a) a wooden {@item shield|phb} or (b) any {@filter simple weapon|items|source=tct|category=basic|type=simple weapon}",
           "(a) a {@item scimitar|phb} or (b) any {@filter simple melee weapon|items|source=tct|category=basic|type=simple weapon;melee weapon=u~u~sand}",
           "{@item Leather armor|phb}, an {@item explorer's pack|phb}, and a {@item druidic focus|phb}"
         ],
         "goldAlternative": "{@dice 2d4 × 10|2d4 × 10|Starting Gold}",
-        "defaultData": [
+        "dDRKultData": [
           {
             "a": [
               "shield|phb"
@@ -26857,14 +26857,14 @@
       },
       "startingEquipment": {
         "additionalFromBackground": true,
-        "default": [
+        "dDRKult": [
           "any two {@filter simple weapons|items|source=tct|category=basic|type=simple weapon} of your choice",
           "a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts}",
           "(a) {@item studded leather armor|phb} or (b) {@item scale mail|phb}",
           "{@item thieves' tools|phb} and a {@item dungeoneer's pack|phb}"
         ],
         "goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
-        "defaultData": [
+        "dDRKultData": [
           {
             "_": [
               {
@@ -27413,14 +27413,14 @@
       },
       "startingEquipment": {
         "additionalFromBackground": true,
-        "default": [
+        "dDRKult": [
           "(a) a {@filter martial weapon|items|source=tct|category=basic|type=martial weapon} and a {@item shield|phb} or (b) two {@filter martial weapons|items|source=tct|category=basic|type=martial weapon}",
           "(a) five {@item javelin|tct|javelins} or (b) any {@filter simple melee weapon|items|source=tct|category=basic|type=simple weapon;melee weapon=u~u~sand}",
           "(a) a {@item priest's pack|phb} or (b) an {@item explorer's pack|phb}",
           "{@item Chain mail|phb} and a {@item holy symbol|phb}"
         ],
         "goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
-        "defaultData": [
+        "dDRKultData": [
           {
             "a": [
               {
@@ -28251,14 +28251,14 @@
       },
       "startingEquipment": {
         "additionalFromBackground": true,
-        "default": [
+        "dDRKult": [
           "(a) a {@item rapier|phb}, (b) a {@item longsword|phb}, or (c) any {@filter simple weapon|items|source=tct|category=basic|type=simple weapon}",
           "(a) a {@item diplomat's pack|phb} or (b) an {@item entertainer's pack|phb}",
           "(a) a {@item lute|phb} or (b) any other {@filter musical instrument|items|miscellaneous=mundane|type=instrument}",
           "{@item Leather armor|phb}, and a {@item dagger|phb}"
         ],
         "goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
-        "defaultData": [
+        "dDRKultData": [
           {
             "a": [
               "rapier|phb"
@@ -29078,13 +29078,13 @@
       },
       "startingEquipment": {
         "additionalFromBackground": true,
-        "default": [
+        "dDRKult": [
           "(a) a {@item greataxe|tct} or (b) any {@filter martial melee weapon|items|source=tct|category=basic|type=martial weapon;melee weapon=u~u~sand}",
           "(a) two {@item handaxe|tct|handaxes} or (b) any {@filter simple weapon|items|source=tct|category=basic|type=simple weapon}",
           "An {@item explorer's pack|phb}, and four {@item javelin|phb|javelins}"
         ],
         "goldAlternative": "{@dice 2d4 × 10|2d4 × 10|Starting Gold}",
-        "defaultData": [
+        "dDRKultData": [
           {
             "a": [
               "greataxe|phb"
@@ -29792,14 +29792,14 @@
       },
       "startingEquipment": {
         "additionalFromBackground": true,
-        "default": [
+        "dDRKult": [
           "(a) {@item chain mail|phb} or (b) {@item leather armor|phb}, {@item longbow|phb}, and {@item arrows (20)|phb|20 arrows}",
           "(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} and a {@item shield|phb} or (b) two {@filter martial weapons|items|source=phb|category=basic|type=martial weapon}",
           "(a) a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) two {@item handaxe|phb|handaxes}",
           "(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}"
         ],
         "goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
-        "defaultData": [
+        "dDRKultData": [
           {
             "a": [
               "chain mail|phb"
@@ -30319,13 +30319,13 @@
       },
       "startingEquipment": {
         "additionalFromBackground": true,
-        "default": [
+        "dDRKult": [
           "(a) a {@item shortsword|tct} or (b) any {@filter simple weapon|items|source=tct|type=simple weapon}",
           "(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
           "10 {@item dart|tct|darts}"
         ],
         "goldAlternative": "{@dice 5d4|5d4|Starting Gold}",
-        "defaultData": [
+        "dDRKultData": [
           {
             "a": [
               "shortsword|tct"
@@ -31165,14 +31165,14 @@
       },
       "startingEquipment": {
         "additionalFromBackground": true,
-        "default": [
+        "dDRKult": [
           "(a) {@item scale mail|phb} or (b) {@item leather armor|phb}",
           "(a) two {@item shortsword|tct|shortswords} or (b) two {@filter simple melee weapons|items|source=tct|type=simple weapon;melee weapon=u~u~sand}",
           "(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
           "A {@item longbow|tct} and a {@item quiver|phb} of {@item arrows (20)|phb|20 arrows}"
         ],
         "goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
-        "defaultData": [
+        "dDRKultData": [
           {
             "a": [
               "scale mail|phb"
@@ -32146,14 +32146,14 @@
       },
       "startingEquipment": {
         "additionalFromBackground": true,
-        "default": [
+        "dDRKult": [
           "(a) a {@item rapier|tct} or (b) a {@item shortsword|tct}",
           "(a) a {@item shortbow|tct} and {@item quiver|phb} of {@item arrows (20)|phb|20 arrows} or (b) a {@item shortsword|tct}",
           "(a) a {@item burglar's pack|phb}, (b) a {@item dungeoneer's pack|phb}, or (c) an {@item explorer's pack|phb}",
           "{@item Leather armor|phb}, two {@item dagger|tct|daggers}, and {@item thieves' tools|phb}"
         ],
         "goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
-        "defaultData": [
+        "dDRKultData": [
           {
             "a": [
               "rapier|tct"
@@ -32663,7 +32663,7 @@
               "name": "Adversaries",
               "entries": [
                 "Naturally, those who enforce the law are bound to come up against those who break it, and it's the rare rogue who isn't featured on at least one wanted poster. Beyond that, it's in the nature of their profession that rogues often come into contact with criminal elements, whether out of choice or necessity. Some of those people can be adversaries too, and they're likely to be harder to deal with than the average member of the city watch.",
-                "If your character's backstory doesn't already include a personage of this sort, you could work with your DM to come up with a reason why an adversary has appeared in your life. Perhaps you've been the subject of scrutiny for a while from someone who wants to use you for nefarious purposes and has just now become known to you. Such an incident could be the basis for an upcoming adventure.",
+                "If your character's backstory doesn't already include a personage of this sort, you could work with your DM to come up with a reason why an adversary has appeared in your life. Perhaps you've been the subject of scrutiny for a while from someone who wants to use you for nDRKrious purposes and has just now become known to you. Such an incident could be the basis for an upcoming adventure.",
                 "Does your rogue character have an adversary who also happens to be a criminal? If so, how is this relationship affecting your life?",
                 {
                   "type": "table",
@@ -32737,16 +32737,16 @@
             },
             {
               "type": "entries",
-              "name": "Benefactor",
+              "name": "BenDRKctor",
               "entries": [
-                "Few rogues make it far in life before needing someone's help, which means thereafter owing that benefactor a significant debt.",
-                "If your character's backstory doesn't already include a personage of this sort, you could work with your DM to determine why a benefactor has appeared in your life. Perhaps you benefited from something your benefactor did for you without realizing who was responsible, and that person has now just become known to you. Who helped you in the past, whether or not you knew it at the time, and what do you owe that person as recompense?",
+                "Few rogues make it far in life before needing someone's help, which means thereafter owing that benDRKctor a significant debt.",
+                "If your character's backstory doesn't already include a personage of this sort, you could work with your DM to determine why a benDRKctor has appeared in your life. Perhaps you benefited from something your benDRKctor did for you without realizing who was responsible, and that person has now just become known to you. Who helped you in the past, whether or not you knew it at the time, and what do you owe that person as recompense?",
                 {
                   "type": "table",
-                  "caption": "Benefactors",
+                  "caption": "BenDRKctors",
                   "colLabels": [
                     "{@dice d6}",
-                    "Benefactor"
+                    "BenDRKctor"
                   ],
                   "colStyles": [
                     "col-1 text-center",
@@ -32805,7 +32805,7 @@
                           "exact": 6
                         }
                       },
-                      "A druid once helped you out of a tight spot; now any random animal you see could be that benefactor, perhaps come to claim a return favor."
+                      "A druid once helped you out of a tight spot; now any random animal you see could be that benDRKctor, perhaps come to claim a return favor."
                     ]
                   ]
                 }
@@ -32915,14 +32915,14 @@
       },
       "startingEquipment": {
         "additionalFromBackground": true,
-        "default": [
+        "dDRKult": [
           "(a) a {@item light crossbow|tct} and {@item crossbow bolts (20)|phb|20 bolts} or (b) any {@filter simple weapon|items|source=tct|category=basic|type=simple weapon}",
           "(a) a {@item component pouch|phb} or (b) an {@item arcane focus|phb}",
           "(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
           "Two {@item dagger|tct|daggers}"
         ],
         "goldAlternative": "{@dice 3d4 × 10|3d4 × 10|Starting Gold}",
-        "defaultData": [
+        "dDRKultData": [
           {
             "a": [
               "light crossbow|tct",
@@ -33850,14 +33850,14 @@
       },
       "startingEquipment": {
         "additionalFromBackground": true,
-        "default": [
+        "dDRKult": [
           "(a) a {@item quarterstaff|phb} or (b) a {@item dagger|phb}",
           "(a) a {@item component pouch|phb} or (b) an {@item arcane focus|phb}",
           "(a) a {@item scholar's pack|phb} or (b) an {@item explorer's pack|phb}",
           "A {@item spellbook|phb}"
         ],
         "goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
-        "defaultData": [
+        "dDRKultData": [
           {
             "a": [
               "quarterstaff|phb"
@@ -34657,14 +34657,14 @@
       },
       "startingEquipment": {
         "additionalFromBackground": true,
-        "default": [
+        "dDRKult": [
           "(a) a {@item light crossbow|tct} and {@item crossbow bolts (20)|phb|20 bolts} or (b) any {@filter simple weapon|items|source=tct|category=basic|type=simple weapon}",
           "(a) a {@item component pouch|phb} or (b) an {@item arcane focus|phb}",
           "(a) a {@item scholar's pack|phb} or (b) a {@item dungeoneer's pack|phb}",
           "{@item Leather armor|phb}, any {@filter simple weapon|items|source=tct|category=basic|type=simple weapon}, and two {@item dagger|tct|daggers}"
         ],
         "goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
-        "defaultData": [
+        "dDRKultData": [
           {
             "a": [
               "light crossbow|tct",
@@ -39953,7 +39953,7 @@
           "name": "Roll20 Macro",
           "entries": [
             "A nifty macro for Premonition checks in Roll20. In your Roll20 character sheet look for the 'Attributes & Abilities' tab. Then create an ability called something like 'Premonition check' and in the larger text field paste this bit of code:-",
-            "&{template:default}{{name=Premonition Check}}{{ [[ {1d20+@{< Character name >|wisdom_mod}}>[[15]] ]] }}",
+            "&{template:dDRKult}{{name=Premonition Check}}{{ [[ {1d20+@{< Character name >|wisdom_mod}}>[[15]] ]] }}",
             "Then replace '< Character name >' with the case sensitive name on the sheet (remove the < & >). click the tick mark, then check 'Show in Macro Bar'."
           ]
         }
@@ -40274,7 +40274,7 @@
       "header": 1,
       "entries": [
         "You have offered service to a vengeful being driven by hatred or the collective spirits of the damned who still bear grudges that need be satisfied. A patron of this kind might be a powerful being living in eternal agony due to another, one who through a betrayal most foul seeks the most terrible demise for their enemy or even a being who caters to the lost souls who still hold truck with those in the world of the living.",
-        "Those who join them in pact are usually seeking revenge themselves or seek to placate them, lest their ire befall upon someone else. Beneficiaries of their power unleash their wrath as strong curses that chase their foes till their graves.",
+        "Those who join them in pact are usually seeking revenge themselves or seek to placate them, lest their ire bDRKll upon someone else. Beneficiaries of their power unleash their wrath as strong curses that chase their foes till their graves.",
         {
           "type": "refSubclassFeature",
           "subclassFeature": "Vengeful Pact Spells|Warlock|DRK|Vengeful|tct|1"
@@ -43663,7 +43663,7 @@
       "level": 3,
       "entries": [
         "The Cockpit is where you sit and control your Mech from. It is a cramped space is just big enough for a small or a medium creature wearing light armour to fit but only you know how to fully operate it. While you are adjacent to it, you can mount it by spending half your movement and dismount by spending the same.",
-        "By default, the mech remains 'Unpowered' and to use most of the Mech's features you must 'Empower' it by spending an action while sitting in the cockpit. 'Empowering' it grants the Mech an action, allows it to move and activates certain features of the Mech.",
+        "By dDRKult, the mech remains 'Unpowered' and to use most of the Mech's features you must 'Empower' it by spending an action while sitting in the cockpit. 'Empowering' it grants the Mech an action, allows it to move and activates certain features of the Mech.",
         "For most features and spells treat the mech as yourself.",
         "The following is a list of the Cockpit designs available to a Mechanut.:-",
         {
@@ -45233,7 +45233,7 @@
           "rows": [
             [
               "1",
-              "{@b Healing}. The drinker regains a number of hit points equal to {@dice 2d4} + your Intelligence modifier (add your artificer level to the healing)."
+              "{@b Restoration}. The drinker regains a number of hit points equal to {@dice 2d8} + your Intelligence modifier (add your artificer level to the healing)."
             ],
             [
               "2",
@@ -45241,7 +45241,7 @@
             ],
             [
               "3",
-              "{@b Robust}. The drinker gains a +1 bonus to Ability checks, AC and saving throws for 10 minutes (the bonus is increased to +2)."
+              "{@b Robust}. The drinker gains a +1 bonus to their armor class and saving throws for 10 minutes (the bonus is increased to +2)."
             ],
             [
               "4",
@@ -45249,11 +45249,11 @@
             ],
             [
               "5",
-              "{@b Flight}. The drinker gains a flying speed of 20 feet for 10 minutes (You gain a flying speed of 40 ft.)."
+              "{@b Flight}. The drinker gains a flying speed of 15 feet for 10 minutes (You gain a flying speed of 30 ft)."
             ],
             [
               "6",
-              "{@b Transformation}. The drinker's body is transformed as if by the {@spell alter self} spell. The drinker determines the transformation caused by the spell, the effects of which last for 10 minutes (You can choose to gain any number of the benefits of the alter self spell)."
+              "{@b Transformation}. The drinker's size increases by one category for 10 minutes (Your size increases by two categories)."
             ]
           ]
         }
@@ -45271,7 +45271,8 @@
       "header": 1,
       "entries": [
         "{@i 3rd-level Alchemist feature}",
-        "You gain proficiency with {@item alchemist's supplies|PHB}. If you already have this proficiency, you gain proficiency with one other type of {@item artisan's tools|PHB} of your choice."
+        "You gain proficiency with {@item alchemist's supplies|PHB}. If you already have this proficiency, you gain proficiency with one other type of {@item artisan's tools|PHB} of your choice.",
+        "When you brew a potion using the crafting rules in the {@book Dungeon Master's Guide|XDMG|6|Crafting Magic Items} or through {@variantrule The Herbalist|AspysGuidetoInfinitum|The Herbalist} profession, the amount of time required to craft it is halved."
       ]
     },
     {
@@ -45292,7 +45293,7 @@
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Armament Coatings|Artificer|DRK|Alchemist|DRK|5"
+          "subclassFeature": "Potent Spellcasting|Artificer|DRK|Alchemist|DRK|5"
         }
       ]
     },
@@ -45309,11 +45310,10 @@
       "entries": [
         "{@i 5th-level Alchemist feature}",
         "Whenever you cast a spell using your {@item alchemist's supplies|PHB} as the spellcasting focus, you gain a bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, fire, necrotic, or poison damage, and the bonus equals your Intelligence modifier (minimum of +1).",
-        "Additionally, you gain the ability to brew more potent but less endurable potions. If a creature attempts to drink multiple refined potions which have a duration, it will only gain the benefit of the latest one. You can now also administer your potion to any creature within 30 feet of you.",
-        "You can create two Refined Potions of your choice at the end of a long rest",
+        "Additionally, you can expend an additional spell slot level when creating an experimental potion to create a refined potion. You always create refined potions when you finish a long rest.",
         {
           "type": "table",
-          "caption": "Refined Potions",
+          "caption": "Refined potions",
           "colLabels": [
             "d6",
             "Effect"
@@ -45325,34 +45325,34 @@
           "rows": [
             [
               "1",
-              "{@b Heroism}. The drinker regains a number of temporary hit points equal to your Intelligence modifier at the start of each of their turns. Additionally, it gains immunity to the {@condition charmed} and {@condition frightened} conditions. This benefit lasts for 1 minute (Any wasted temporary hitpoints are turned into healing)."
+              "{@b Restoration}. The drinker gains a number of temporary hit points equal to your Intelligence modifier at the start of each of their turns for the next minute in addition to the initial healing (Any wasted temporary hitpoints are turned into healing)."
             ],
             [
               "2",
-              "{@b Speed}. While the potion is active, the drinker can make an additional weapon attack whenever they take the {@action Attack} action (You gain an additional action similar to the {@spell haste} spell)."
+              "{@b Swiftness}. the drinker can make a single weapon attack whenever they take the {@action Dash} action (You can dash as a bonus action)."
             ],
             [
               "3",
-              "{@b Mobile}. The drinker's movement speed is doubled for 1 minute. During that time, opportunity attacks made against the drinker are made at disadvantage (Your movement does not proc opportunity attacks)."
+              "{@b Robust}. The drinker gains advantage on constitution saving throws made in order to maintain concentration. (You gain advantage on all constitution saving throws)."
             ],
             [
               "4",
-              "{@b Resistance}. when the potion is used, The drinker gains resistance to a damage type of their choosing for 1 hour (You can choose two damage types when you drink the potion)."
+              "{@b Boldness}. The duration of the potion is increased to 10 minutes (The duration of the potion is increased to 1 hour)."
             ],
             [
               "5",
-              "{@b Colossus}. The drinker's size increases by 1 level. Additionally, its weapons deal an additional {@dice 1d8} damage against creatures whose size is equal to or smaller than the drinker. (Your size increases by two levels, and the damage bonus is increased to {@dice 1d12})."
+              "{@b Flight}. The drinker gains a flying speed of 30 feet (You gain a flying speed of 60 feet)."
             ],
             [
               "6",
-              "{@b Hill Giant}. The drinker's Strength score is increased to 21 for 1 hour (Your strength score is increased to 23)."
+              "{@b Transformation}. The drinker's non-spell attacks deal an additional {@damage 1d4} damage for every size catagory they have increased by (You count as one size larger when attempting to grapple a creature)."
             ]
           ]
         }
       ]
     },
     {
-      "name": "Armament Coatings",
+      "name": "Potent Spellcasting",
       "source": "DRK",
       "page": 14,
       "className": "Artificer",
@@ -45362,47 +45362,7 @@
       "level": 5,
       "header": 1,
       "entries": [
-        "You can create coatings that magically enhance the effectiveness of mundane weapons.",
-        "The coatings can only be applied to non-magical weapons or weapons turned magical by artificer infusions or spells such as {@spell magic weapon} or {@spell elemental weapon}.",
-        "A weapon can only gain the benefit of one coating at a time. The coatings last for 1 minute, and takes a bonus action to apply to a weapon.",
-        {
-          "type": "table",
-          "caption": "Coatings (2nd level spell slot)",
-          "colLabels": [
-            "d6",
-            "Effect"
-          ],
-          "colStyles": [
-            "col-2 text-center",
-            "col-10"
-          ],
-          "rows": [
-            [
-              "1",
-              "{@b Sharpness}. The weapon gains a +1 bonus to its attack and damage rolls."
-            ],
-            [
-              "2",
-              "{@b Accuracy}. The weapon gains a +2 bonus to its attack rolls."
-            ],
-            [
-              "3",
-              "{@b Slaying}. Choose a creature type when you create this coating. The weapon gains an additional {@dice 2d6} damage against the creature. Additionally, any damage dealt by the coated weapons attack ignores damage resistances against the chosen creature type."
-            ],
-            [
-              "4",
-              "{@b Gleaming}. The weapon gains a +1 bonus to its damage rolls. Additionally, it emits an aura of bright light for 10 feet, and dim light for an additional 10 feet. As a reaction after being hit by an attack, the wielder can use their reaction to blind the attacker unless they make a constitution save against your spell save dc."
-            ],
-            [
-              "5",
-              "{@b Bane}. If the weapon lands an attack on a creature, the creature has a {@dice 1d4} penalty on its next attack roll or saving throw."
-            ],
-            [
-              "6",
-              "{@b Viciousness}. The roll required to land a critical hit while wielding this weapon is reduced by one."
-            ]
-          ]
-        }
+        "Whenever you cast a spell using your {@item Alchemist's Supplies|XPHB} as the {@variantrule Spellcasting Focus|XPHB}, you gain a bonus to one roll of the spell. That roll must restore {@variantrule Hit Points|XPHB} or be a damage roll that deals Acid, Fire, or Poison damage. The bonus equals your Intelligence modifier (minimum bonus of +1)."
       ]
     },
     {
@@ -45453,8 +45413,8 @@
       "level": 9,
       "header": 2,
       "entries": [
-        "You have learnt to produce more durable and effective kinds of potions, which last until the end of a long rest.",
-        "Once a creature consumes an elixir, they cannot benefit from another elixir until they finish a long rest.",
+        "You have learnt to produce longer lasting but less potent potions, which last until the end of a long rest.",
+        "Once a creature drinks an elixir, they cannot benefit from another elixir until they finish a long rest.",
         "You can create two Experimental elixirs of your choice at the end of a long rest.",
         {
           "type": "table",
@@ -45470,27 +45430,27 @@
           "rows": [
             [
               "1",
-              "{@b Bloodlust}. At any point after the elixir is used, the drinker can activate its magic, gaining an additional action during that turn. Once its property has been used, it cannot be used again until the drinker takes a Short Rest (You regain the use of this feature whenever you roll initiative)."
+              "{@b Bloodlust}. The drinker deals additional damage equal to one roll of their weapon damage die when damaging a creature that is {@condition bloodied}."
             ],
             [
               "2",
-              "{@b Arcane Cultivation}. The drinker gains an additional 5th spell slot (You gain a 6th level spell slot)."
+              "{@b Arcane Potency}. When the drinker casts a spell with a spell slot, they can upcast the level of the spell by 1. They can do so a number of times equal to your intelligence modifier (minimum of 1), and the spell cannot be upcasted to a level above 5."
             ],
             [
               "3",
-              "{@b Focus}. If the drinker fails a constitution saving throw in order to maintain concentration on a spell, they can choose to succeed instead. They can choose to do so a number of times equal to the alchemist's Intelligence modifier (minimum of 1)."
+              "{@b Focus}. The drinker has advantage on saving throws made against being {@condition charmed} or {@condition frightened}."
             ],
             [
               "4",
-              "{@b Cleansing}. The drinker gains the ability to shrug off the gravest of wounds. If you are affected by any of the conditions affected by the {@spell lesser restoration} and {@spell greater restoration}, as well as the {@condition stunned} or {@condition incapacitated} conditions, you can choose to end one of those conditions on you at the start of your turn. Once you cleanse any of those conditions, you cannot do so again until 10 minutes pass."
+              "{@b Cleansing}. The drinker gains the ability to shrug off the gravest of wounds. If you are affected by any of the conditions affected by the {@spell lesser restoration} and {@spell greater restoration}, as well as the {@condition stunned} or {@condition incapacitated} conditions, you can choose to end one of those conditions on you at the start of your turn. Once you cleanse any of those conditions, you cannot do so again until you take a short rest."
             ],
             [
               "5",
-              "{@b Drake}. After drinking the potion, the creature can use its bonus action on any subsequent turn to exhale a 30-foot cone or a 60 foot line of damaging breath. Choose acid, cold, fire, lightning, thunder or poison damage (your choice). Each creature in its area must make a dexterity saving throw against your spell save DC, taking {@dice 4d8} damage on a failed save, or half as much on a succesful one. Once the breath is used, you cannot use it again unless it is recharged. The breath recharges when you Roll a 6 on a {@dice d6} at the start of your turn (The damage increases to {@dice 6d8} for you)."
+              "{@b Drake}. The drinker can use their bonus action on any subsequent turn to exhale a 30-foot cone or a 60 foot line of damaging breath. Choose acid, cold, fire, lightning, thunder or poison damage (your choice). Each creature in its area must make a dexterity saving throw against your spell save DC, taking {@dice 4d8} damage on a failed save, or half as much on a succesful one. Once the breath is used, you cannot use it again unless it is recharged. The breath recharges when you Roll a 6 on a {@dice d6} at the start of your turn."
             ],
             [
               "6",
-              "{@b Vigilant}. The drinker can't be {@quickref Surprise|PHB|3|0|surprised} while they are conscious, and they gain advantage on Wisdom ({@skill Perception}) checks. Once before the elixir ends, you can give yourself a +10 bonus to an Initiative roll (you can give yourself the initiative bonus twice)."
+              "{@b Vigilant}. The drinker can't be {@quickref Surprise|PHB|3|0|surprised} while they are conscious, and they gain advantage on Wisdom ({@skill Perception}) checks. Additionally, they gain a bonus to their initiative equal to your intelligence modifier (minimum of 1)."
             ]
           ]
         }
@@ -45508,16 +45468,113 @@
       "header": 1,
       "entries": [
         "{@i 15th-level Alchemist feature}",
-        "You have been exposed to so many chemicals that they pose little risk to you, and you can use them to quickly end certain ailments:",
-        {
-          "type": "list",
-          "items": [
-            "You gain resistance to acid damage and poison damage, and you are immune to the {@condition poisoned} condition.",
-            "You can cast {@spell greater restoration} and {@spell heal} without expending a spell slot, without preparing the spell, and without material components, provided you use {@item alchemist's supplies|PHB} as the spellcasting focus. Once you cast either spell with this feature, you can't cast that spell with it again until you finish a long rest. If you cast the spells on a creature other than yourself, you can gain the benefits of that spell as well."
-          ]
-        }
+        "You gain the following benefits.",
+				{
+					"type": "entries",
+					"name": "Alchemical Eruption",
+					"entries": [
+						"When you cast an Artificer spell that deals Acid, Fire, or Poison damage to a target, you can also deal {@damage 2d8} Force damage to that target. You can use this benefit only once on each of your turns."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Chemical Resistance",
+					"entries": [
+						"You gain {@variantrule Resistance|XPHB} to Acid damage and Poison damage. You also gain {@variantrule Immunity|XPHB} to the {@condition Poisoned|XPHB} condition."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Conjured Cauldron",
+					"entries": [
+						"You can cast {@spell Tasha's Bubbling Cauldron|XPHB} and as an action and {@spell heal} without expending a spell slot, without preparing the spell, and without Material components, provided you use {@item Alchemist's Supplies|XPHB} as the {@variantrule Spellcasting Focus|XPHB}. Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|XPHB}."
+					]
+				}
       ]
     },
+    {
+			"name": "Cartographer",
+			"source": "DRK",
+			"className": "Artificer",
+			"classSource": "DRK",
+			"subclassShortName": "Cartographer",
+			"subclassSource": "DRK",
+			"level": 3,
+			"entries": [
+				"{@i Chart Advantageous Courses through Turmoil}",
+				"Cartographers are the premier navigators and reconnaissance agents. Using their creations, Cartographers can highlight threats, safeguard allies, and carve portals to distant locations.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tools of the Trade|Artificer|EFA|Cartographer|EFA|3|EFA"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Cartographer Spells|Artificer|EFA|Cartographer|EFA|3|EFA"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Adventurer's Atlas|Artificer|EFA|Cartographer|EFA|3|EFA"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mapping Magic|Artificer|EFA|Cartographer|EFA|3|EFA"
+				}
+			]
+		},
+    {
+			"name": "Guided Precision",
+			"source": "DRK",
+			"className": "Artificer",
+			"classSource": "DRK",
+			"subclassShortName": "Cartographer",
+			"subclassSource": "DRK",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"Once per turn, whenever you cast a spell from your Cartographer Spells list or hit a creature affected by your {@spell Faerie Fire|XPHB} with an attack roll, you can add your Intelligence modifier to one damage roll of the spell or attack.",
+				"In addition, taking damage can't cause you to lose {@status Concentration|XPHB} on {@spell Faerie Fire|XPHB}."
+			]
+		},
+    {
+			"name": "Ingenious Movement",
+			"source": "DRK",
+			"className": "Artificer",
+			"classSource": "DRK",
+			"subclassShortName": "Cartographer",
+			"subclassSource": "DRK",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"When you use your {@classFeature Flash of Genius|Artificer|DRK|7|DRK}, you or a willing creature of your choice that you can see within 30 feet of yourself can teleport up to 30 feet to an unoccupied space you can see as part of that same {@variantrule Reaction|XPHB}."
+			]
+		},
+    {
+			"name": "Superior Atlas",
+			"source": "DRK",
+			"className": "Artificer",
+			"classSource": "DRK",
+			"subclassShortName": "Cartographer",
+			"subclassSource": "DRK",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Your Adventurer's Atlas improves, gaining the following benefits.",
+				{
+					"type": "entries",
+					"name": "Safe Haven",
+					"entries": [
+						"When a map holder would be reduced to 0 {@variantrule Hit Points|XPHB} but not killed outright, that creature can destroy its map. The creature's {@variantrule Hit Points|XPHB} instead change to a number equal to twice your Artificer level, and the creature is teleported to an unoccupied space within 5 feet of you or another map holder of its choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Unerring Path",
+					"entries": [
+						"If you are one of the map holders for your Adventurer's Atlas, you can cast {@spell Find the Path|XPHB} without expending a spell slot, without preparing the spell, and without needing spell components. Once you use this benefit, you can't use it again until you finish a {@variantrule Long Rest|XPHB}."
+					]
+				}
+			]
+		},
     {
       "name": "Path of the Berserker",
       "source": "DRK",
@@ -55479,6 +55536,154 @@
       ]
     },
     {
+			"name": "Knowledge Domain",
+			"source": "DRK",
+			"className": "Cleric",
+			"classSource": "DRK",
+			"subclassShortName": "Knowledge",
+			"subclassSource": "DRK",
+			"level": 1,
+			"entries": [
+				"{@i Unearth Secrets and Master the Mind}",
+				"The Knowledge Domain values learning and understanding above all. Clerics who tap into this domain study esoteric lore, collect old tomes, delve into secret places, and examine the processes of the mind. To them, knowledge is more valuable than material wealth, and learning is an act of worship. Libraries, universities, and other educational institutions also draw on the power of the Knowledge Domain.",
+				"Gods of knowledge vary from masters of arcane magic to patrons of craft and invention. In Faerûn, Clerics of the Knowledge Domain worship deities of learning and ingenuity such as {@deity Oghma|Faerûnian|FRHoF} and {@deity Gond|Faerûnian|FRHoF}, among many others.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Blessings of Knowledge|Cleric|DRK|Knowledge|DRK|1|DRK"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Knowledge Domain Spells|Cleric|DRK|Knowledge|DRK|1|DRK"
+				}		
+			]
+		},
+    {
+			"name": "Blessings of Knowledge",
+			"source": "DRK",
+			"className": "Cleric",
+			"classSource": "DRK",
+			"subclassShortName": "Knowledge",
+			"subclassSource": "DRK",
+			"level": 1,
+			"entries": [
+				"You gain proficiency with one type of {@item Artisan's Tools|XPHB} of your choice and in two of the following skills of your choice: {@skill Arcana|XPHB}, {@skill History|XPHB}, {@skill Nature|XPHB}, or {@skill Religion|XPHB}. You have {@variantrule Expertise|XPHB} in those two skills."
+			]
+		},
+    {
+			"name": "Knowledge Domain Spells",
+			"source": "DRK",
+			"page": 2,
+			"className": "Cleric",
+			"classSource": "DRK",
+			"subclassShortName": "Knowledge",
+			"subclassSource": "DRK",
+			"level": 1,
+			"entries": [
+				"When you reach a Cleric level specified in the Knowledge Domain Spells table, you thereafter always have the listed spells prepared.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+            [
+							"1",
+							"{@spell Command|DRK}, {@spell Comprehend Languages|XPHB}*, {@spell Detect Magic|XPHB}*, {@spell Identify|XPHB}*"
+						],
+						[
+							"3",
+							"{@spell Detect Thoughts|XPHB}*, {@spell Mind Spike|XPHB}*"
+						],
+						[
+							"5",
+							"{@spell Dispel Magic|XPHB}, {@spell Nondetection|XPHB}, {@spell Tongues|XPHB}*"
+						],
+						[
+							"7",
+							"{@spell Arcane Eye|XPHB}*, {@spell Banishment|DRK}, {@spell Confusion|XPHB}"
+						],
+						[
+							"9",
+							"{@spell Legend Lore|XPHB}*, {@spell Scrying|XPHB}*, {@spell Synaptic Static|XPHB}"
+						]
+					],
+					"footnotes": [
+						"*Spell of the Divination school"
+					]
+				}
+			]
+		},
+    {
+			"name": "Unfettered Mind",
+			"source": "DRK",
+			"className": "Cleric",
+			"classSource": "DRK",
+			"subclassShortName": "Knowledge",
+			"subclassSource": "DRK",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"You gain {@variantrule telepathy|XPHB} out to 60 feet. When you use this {@variantrule telepathy|XPHB}, you can simultaneously contact a number of creatures equal to your Wisdom modifier (minimum of one).",
+				"Additionally, you gain proficiency in Intelligence saving throws. If you already have this proficiency, you instead gain saving throw proficiency with one ability in which you lack it."
+			]
+		},
+    {
+			"name": "Visions of the Past",
+			"source": "DRK",
+			"page": 59,
+			"className": "Cleric",
+			"classSource": "DRK",
+			"subclassShortName": "Knowledge",
+			"subclassSource": "DRK",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"Starting at 17th level, you can call up visions of the past that relate to an object you hold or your immediate surroundings. You spend at least 1 minute in meditation and prayer, then receive dreamlike, shadowy glimpses of recent events. You can meditate in this way for a number of minutes equal to your Wisdom score and must maintain {@status concentration} during that time, as if you were casting a spell.",
+				"Once you use this feature, you can't use it again until you finish a short or long rest.",
+        {
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Divine Foreknowledge",
+							"entries": [
+								"As a {@variantrule Bonus Action|XPHB}, you magically expand your mind to the future. For 1 hour, you have {@variantrule Advantage|XPHB} on {@variantrule D20 Test|XPHB|D20 Tests}. Once you use this feature, you can't use it again until you finish a {@variantrule Long Rest|XPHB}. You can also restore your use of this feature by expending a level 6+ spell slot (no action required)."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Object Reading",
+							"entries": [
+								"Holding an object as you meditate, you can see visions of the object's previous owner. After meditating for 1 minute, you learn how the owner acquired and lost the object, as well as the most recent significant event involving the object and that owner. If the object was owned by another creature in the recent past (within a number of days equal to your Wisdom score), you can spend 1 additional minute for each owner to learn the same information about that creature."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Area Reading",
+							"entries": [
+								"As you meditate, you see visions of recent events in your immediate vicinity (a room, street, tunnel, clearing, or the like, up to a 50-foot cube), going back a number of days equal to your Wisdom score. For each minute you meditate, you learn about one significant event, beginning with the most recent. Significant events typically involve powerful emotions, such as battles and betrayals, marriages and murders, births and funerals. However, they might also include more mundane events that are nevertheless important in your current situation."
+							]
+						}
+					]
+				}
+			]
+		},
+    {
       "name": "Life Domain",
       "source": "DRK",
       "page": 60,
@@ -57327,6 +57532,69 @@
         "You always have the {@spell Otto's irresistible dance} spell prepared. You can cast it without expending a spell slot. Once you cast this spell in this way, you can't do so again until you finish a Long Rest. You can also restore your use of the feature by expending three uses of your bardic inspiration (no action required)."
       ]
     },
+    {
+			"name": "College of the Moon",
+			"source": "DRK",
+			"className": "Bard",
+			"classSource": "DRK",
+			"subclassShortName": "Moon",
+			"subclassSource": "DRK",
+			"level": 3,
+			"entries": [
+				"{@i Inspire Allies with Primal Tales}",
+				"The College of the Moon traces its origins to the ancient druidic circles of the Moonshae Isles, who entrusted the first Bards of this tradition with chronicling the stories of the islands and their people. Bards of this college draw from the isles' fey magic and the primal power of the moonwells to bolster their allies, protect the natural world, and inspire their bardic works.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Moon's Inspiration|Bard|XPHB|Moon|FRHoF|3|FRHoF"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Primal Lore|Bard|XPHB|Moon|FRHoF|3|FRHoF"
+				}
+			]
+		},
+    {
+			"name": "Blessing of Moonlight",
+			"source": "DRK",
+			"className": "Bard",
+			"classSource": "DRK",
+			"subclassShortName": "Moon",
+			"subclassSource": "DRK",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"You always have the {@spell Moonbeam|XPHB} spell prepared.",
+				"When you cast {@spell Moonbeam|XPHB}, you can modify the spell so that you glow faintly while the spell is active. While glowing, you shed {@variantrule Dim Light|XPHB} out to 5 feet, and whenever a creature fails its saving throw against the effects of this Moonbeam, another creature of your choice that you can see within 60 feet of yourself regains {@dice 2d4} {@variantrule Hit Points|XPHB}.",
+				"Once you use this feature to modify a casting of Moonbeam, you can't use it again until you finish a {@variantrule Long Rest|XPHB}."
+			]
+		},
+		{
+			"name": "Eventide's Splendor",
+			"source": "DRK",
+			"className": "Bard",
+			"classSource": "DRK",
+			"subclassShortName": "Moon",
+			"subclassSource": "DRK",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"You become suffused with the might of the moon, improving your Moon's Inspiration in the following ways.",
+				{
+					"type": "entries",
+					"name": "Shadow of the New Moon",
+					"entries": [
+						"When you use Inspired Eclipse, the creature who received the Bardic Inspiration die can also have the {@condition Invisible|XPHB} condition and immediately take a {@variantrule Reaction|XPHB} to teleport up to 30 feet to an unoccupied space it can see. The creature remains {@condition Invisible|XPHB} until the start of its next turn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Vibrance of the Full Moon",
+					"entries": [
+						"When you use Lunar Vitality, you can roll {@dice 1d6} and use the number rolled in place of expending a Bardic Inspiration die."
+					]
+				}
+			]
+		},
     {
 			"name": "Path of the Aberrant Scourge",
 			"source": "HEC",
@@ -60146,35 +60414,40 @@
         {
           "prepared": {
             "1": [
-              "command",
+              "command|DRK",
+              "comprehend languages|xphb",
+              "detect magic|xphb",
               "identify"
             ],
             "3": [
-              "augury",
-              "suggestion"
+              "detect thoughts|xphb",
+              "mind spike|xphb"
             ],
             "5": [
+              "dispel magic|xphb",
               "nondetection",
-              "speak with dead"
+              "tongues|xphb"
             ],
             "7": [
               "arcane eye",
+              "banishment|DRK",
               "confusion"
             ],
             "9": [
               "legend lore",
-              "scrying"
+              "scrying",
+              "synaptic static|xphb"
             ]
           }
         }
       ],
       "subclassFeatures": [
-        "Knowledge Domain|Cleric||Knowledge||1",
+        "Knowledge Domain|Cleric|DRK|Knowledge|DRK|1",
         "Channel Divinity: Knowledge of the Ages|Cleric||Knowledge||2",
-        "Channel Divinity: Read Thoughts|Cleric||Knowledge||6",
+        "Unfettered Mind|Cleric|DRK|Knowledge|DRK|6|DRK",
         "Potent Spellcasting|Cleric||Knowledge||8",
         "Blessed Strikes|Cleric||Knowledge||8|TCE",
-        "Visions of the Past|Cleric||Knowledge||17"
+        "Visions of the Past|Cleric|DRK|Knowledge|DRK|17"
       ]
     },
     {
@@ -61826,6 +62099,47 @@
       ]
     },
     {
+			"name": "Cartographer",
+			"shortName": "Cartographer",
+			"source": "DRK",
+			"className": "Artificer",
+			"classSource": "DRK",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"faerie fire|xphb",
+							"guiding bolt|xphb",
+							"healing word|xphb"
+						],
+						"5": [
+							"locate object|xphb",
+							"mind spike|xphb"
+						],
+						"9": [
+							"call lightning|xphb",
+							"clairvoyance|xphb"
+						],
+						"13": [
+							"banishment|xphb",
+							"locate creature|xphb"
+						],
+						"17": [
+							"scrying|xphb",
+							"teleportation circle|xphb"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Cartographer|Artificer|DRK|Cartographer|DRK|3|DRK",
+				"Guided Precision|Artificer|DRK|Cartographer|DRK|5|DRK",
+				"Ingenious Movement|Artificer|DRK|Cartographer|DRK|9|DRK",
+				"Superior Atlas|Artificer|DRK|Cartographer|DRK|15|DRK"
+			],
+			"hasFluffImages": true
+		},
+    {
       "name": "Circle of Wildfire",
       "shortName": "Wildfire",
       "source": "DRK",
@@ -63416,6 +63730,48 @@
       ]
     },
     {
+			"name": "Spellfire Sorcery",
+			"shortName": "Spellfire",
+			"source": "DRK",
+			"className": "Sorcerer",
+			"classSource": "DRK",
+			"edition": "one",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"cure wounds|xphb",
+							"guiding bolt|xphb",
+							"lesser restoration|xphb",
+							"scorching ray|xphb"
+						],
+						"5": [
+							"aura of vitality|xphb",
+							"dispel magic|xphb"
+						],
+						"6": [
+							"counterspell|xphb"
+						],
+						"7": [
+							"fire shield|xphb",
+							"wall of fire|xphb"
+						],
+						"9": [
+							"greater restoration|xphb",
+							"flame strike|xphb"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Spellfire Sorcery|Sorcerer|XPHB|Spellfire|FRHoF|3|FRHoF",
+				"Absorb Spells|Sorcerer|XPHB|Spellfire|FRHoF|6|FRHoF",
+				"Honed Spellfire|Sorcerer|XPHB|Spellfire|FRHoF|14|FRHoF",
+				"Crown of Spellfire|Sorcerer|XPHB|Spellfire|FRHoF|18|FRHoF"
+			],
+			"hasFluffImages": true
+		},
+    {
       "name": "Way of Shadow",
       "shortName": "Shadow",
       "source": "DRK",
@@ -63904,6 +64260,42 @@
       ]
     },
     {
+			"name": "Winter Walker",
+			"shortName": "Winter Walker",
+			"source": "DRK",
+			"className": "Ranger",
+			"classSource": "DRK",
+			"edition": "one",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"ice knife|xphb"
+						],
+						"5": [
+							"hold person|xphb"
+						],
+						"9": [
+							"remove curse|xphb"
+						],
+						"13": [
+							"ice storm|xphb"
+						],
+						"17": [
+							"cone of cold|xphb"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Winter Walker|Ranger|XPHB|Winter Walker|FRHoF|3|FRHoF",
+				"Fortifying Soul|Ranger|XPHB|Winter Walker|FRHoF|7|FRHoF",
+				"Chilling Retribution|Ranger|XPHB|Winter Walker|FRHoF|11|FRHoF",
+				"Frozen Haunt|Ranger|XPHB|Winter Walker|FRHoF|15|FRHoF"
+			],
+			"hasFluffImages": true
+		},
+    {
       "name": "Arcane Trickster",
       "shortName": "Arcane Trickster",
       "source": "DRK",
@@ -64356,6 +64748,40 @@
         "Rend Mind|Rogue|DRK|Soulknife|DRK|17"
       ]
     },
+    {
+			"name": "Scion of the Three",
+			"shortName": "Scion of the Three",
+			"source": "DRK",
+			"className": "Rogue",
+			"classSource": "DRK",
+			"edition": "one",
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": [
+							{
+								"choose": {
+									"from": [
+										"minor illusion|xphb#c",
+										"blade ward|xphb#c",
+										"chill touch|xphb#c"
+									],
+									"count": 1
+								}
+							}
+						]
+					},
+					"ability": "int"
+				}
+			],
+			"subclassFeatures": [
+				"Scion of the Three|Rogue|XPHB|Scion of the Three|FRHoF|3|FRHoF",
+				"Strike Fear|Rogue|XPHB|Scion of the Three|FRHoF|9|FRHoF",
+				"Aura of Malevolence|Rogue|XPHB|Scion of the Three|FRHoF|13|FRHoF",
+				"Dread Incarnate|Rogue|XPHB|Scion of the Three|FRHoF|17|FRHoF"
+			],
+			"hasFluffImages": true
+		},
     {
       "name": "School of Abjuration",
       "shortName": "Abjuration",
@@ -65002,6 +65428,48 @@
       ]
     },
     {
+			"name": "Oath of the Noble Genies",
+			"shortName": "Noble Genies",
+			"source": "DRK",
+			"className": "Paladin",
+			"classSource": "DRK",
+			"edition": "one",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"chromatic orb|xphb",
+							"elementalism|xphb#c",
+							"thunderous smite|xphb"
+						],
+						"5": [
+							"mirror image|xphb",
+							"phantasmal force|xphb"
+						],
+						"9": [
+							"fly|xphb",
+							"gaseous form|xphb"
+						],
+						"13": [
+							"conjure minor elementals|xphb",
+							"summon elemental|xphb"
+						],
+						"17": [
+							"banishing smite|xphb",
+							"contact other plane|xphb"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Oath of the Noble Genies|Paladin|XPHB|Noble Genies|FRHoF|3|FRHoF",
+				"Aura of Elemental Shielding|Paladin|XPHB|Noble Genies|FRHoF|7|FRHoF",
+				"Elemental Rebuke|Paladin|XPHB|Noble Genies|FRHoF|15|FRHoF",
+				"Noble Scion|Paladin|XPHB|Noble Genies|FRHoF|20|FRHoF"
+			],
+			"hasFluffImages": true
+		},
+    {
       "name": "College of Lore",
       "shortName": "Lore",
       "source": "DRK",
@@ -65186,6 +65654,41 @@
         "Irresistible Dance|Bard|DRK|Dance|DRK|14"
       ]
     },
+    {
+			"name": "College of the Moon",
+			"shortName": "Moon",
+			"source": "DRK",
+			"className": "Bard",
+			"classSource": "DRK",
+			"edition": "one",
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": [
+							{
+								"choose": "level=0|class=druid",
+								"count": 1
+							}
+						]
+					},
+					"prepared": {
+						"6": {
+							"daily": {
+								"1e": [
+									"moonbeam|xphb"
+								]
+							}
+						}
+					}
+				}
+			],
+			"subclassFeatures": [
+				"College of the Moon|Bard|DRK|Moon|DRK|3|DRK",
+				"Blessing of Moonlight|Bard|DRK|Moon|DRK|6|DRK",
+				"Eventide's Splendor|Bard|DRK|Moon|DRK|14|DRK"
+			],
+			"hasFluffImages": true
+		},
     {
 			"name": "Path of the Aberrant Scourge",
 			"shortName": "Aberrant Scourge",
@@ -72708,7 +73211,7 @@
       ],
       "entries": [
         "You can create two {@item superior healing potion} In addition to your other healing potions whenever you finish a long rest.",
-        "The time required to improve your skill in the herbalist profession is decreased by half."
+        "The time required to improve your skill in {@variantrule The Herbalist|AspysGuidetoInfinitum|Herbalist} profession is decreased by half."
       ]
     },
     {
