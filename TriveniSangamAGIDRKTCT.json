@@ -13734,6 +13734,22 @@
           			{
             			"name": "Mesmer",
             			"source": "AspysGuidetoInfinitum"
+          			},
+          			{
+            			"name": "Warlock",
+            			"source": "DRK"
+          			},
+          			{
+            			"name": "Ranger",
+            			"source": "DRK"
+          			},
+          			{
+            			"name": "Warlock",
+            			"source": "PHB"
+          			},
+          			{
+            			"name": "Ranger",
+            			"source": "PHB"
           			}
         		]
       		},
@@ -13778,6 +13794,220 @@
 			"miscTags": [
 				"SCL",
 				"OBJ",
+				"FMV"
+			],
+			"areaTags": [
+				"ST"
+			]
+		},
+		{
+			"name": "Synthesize Ink",
+			"source": "HEC",
+			"page": 69,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+      		"classes": {
+        		"fromClassList": [
+          			{
+            			"name": "Wizard",
+            			"source": "PHB"
+          			},
+          			{
+            			"name": "Wizard",
+            			"source": "DRK"
+          			}
+        		]
+      		},
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "100 gp, which the spell consumes",
+					"cost": 100,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You transmute gold pieces using strands of the weave to create rare ink worth 100gp, which is sufficient for wizards transcribing spells into their spellbooks without additional cost."
+			],
+			"miscTags": [
+				"OBJ"
+			]
+		},
+		{
+			"name": "Provocateur's Sneer",
+			"source": "HEC",
+			"page": 69,
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+      		"classes": {
+        		"fromClassList": [
+          			{
+            			"name": "Bard",
+            			"source": "PHB"
+          			},
+          			{
+            			"name": "Cleric",
+            			"source": "PHB"
+          			},
+          			{
+            			"name": "Paladin",
+            			"source": "PHB"
+          			},
+          			{
+            			"name": "Bard",
+            			"source": "DRK"
+          			},
+          			{
+            			"name": "Cleric",
+            			"source": "DRK"
+          			},
+          			{
+            			"name": "Paladin",
+            			"source": "DRK"
+          			},
+          			{
+            			"name": "Warlock",
+            			"source": "DRK"
+          			},
+          			{
+            			"name": "Warlock",
+            			"source": "PHB"
+          			}
+        		]
+      		},
+			"range": {
+				"type": "cube",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"duration": {
+            			"amount": 1,
+            			"type": "minute"
+          			},
+          			"type": "timed"
+				}
+			],
+			"entries": [
+				"You utter derisive words at creatures of your choice that you can see within 10 feet of you and force them to make a Wisdom saving throw. On a failed save they feel compelled to put you down while you remain within line of sight, making it impossible for them to willingly move more than 30ft away from you and they also have disadvantage on attack rolls on targets other than you. Affected creatures can repeat the saving throw whenever they take damage from a creature other than you. This effect ends on the creature if you are incapacitated or you die or if the creature is more than 30 feet away from you.",
+				"If at least one target fails the saving throw you gain 10 temporary hit points."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the temporary hit points you gain are increased by 5 and the range of the spell is increased by 5ft for each slot level above 3rd."
+					]
+				}
+			],
+      		"savingThrow": [
+        		"wisdom"
+      		],
+			"miscTags": [
+				"THP",
+				"SGT"
+			],
+			"areaTags": [
+				"MT"
+			]
+		},
+		{
+			"name": "Displacing Maw",
+			"source": "HEC",
+			"page": 69,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+      		"classes": {
+        		"fromClassList": [
+          			{
+            			"name": "Wizard",
+            			"source": "PHB"
+          			},
+          			{
+            			"name": "Wizard",
+            			"source": "DRK"
+          			},
+					{
+            			"name": "Warlock",
+            			"source": "PHB"
+          			},
+          			{
+            			"name": "Warlock",
+            			"source": "DRK"
+          			}
+        		]
+      		},
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Your rib cage opens up violently, trying to devour an enemy in range. The creature must succeed a Strength saving throw or be devoured by the maw formed by your rib bones, taking {@dice 4d8} piercing damage and be transported to a point of your choice on the ground within 60 feet of you, where the maw reappears and regurgitates them. On a success they take half as much damage and are not transported."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d8} and the teleportation range by 10ft for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"piercing"
+			],
+      		"savingThrow": [
+        		"strength"
+      		],
+			"miscTags": [
 				"FMV"
 			],
 			"areaTags": [
@@ -57830,9 +58060,9 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level Frostwarden feature}",
-				"When you finish a long rest, you can sacrifice any amount of hitpoints that you have to the Beast of Winter. Your maximum hitpoints is also reduced by that amount but you obtain the {@b Frozen Bulwark} that has hitpoints equal to the amount of hitpoints you sacrificed, until you finish your next long rest. When you take damage, it is reduced from your {@b Frozen Bulwark} before it is reduced from your hitpoints and your {@b Frozen Bulwark} always counts towards your maximum hitpoint total. However you can only restore hitpoints to your {@b Frozen Bulwark} when you deal wrath damage by an amount equal to the total rolled by your wrath dice.",
-				"As a bonus action, you can emit a blast of chillness around you upto 30ft away. Hostile creatures within range must roll a Constitution saving throw(DC equal to 8 + your proficiency bonus + your Strength modifier) and on a failure they receive the {@b Winter's Mark} until the end of your next turn. Creatures with {@b Winter's Mark} have their movement speed reduced by 10ft and once per turn when they take Cold damage, they take additional Cold damage equal to one roll of your Wrath die. When you use this bonus action when a creature already has {@b Winter's Mark}, it must roll the saving throw again regardless of how far away it is from you.",
-				"While raging, whenever a creature hits you for the first time on a turn, it takes Cold damage equal to your Barbarian level."
+				"While raging, whenever a creature hits you for the first time on a turn, it takes Cold damage equal to your Barbarian level.",
+				"When you finish a long rest, you can sacrifice any amount of hitpoints that you have to the Beast of Winter. Your maximum hitpoints is also reduced by that amount but you obtain the {@b Frozen Bulwark} that has hitpoints equal to the amount of hitpoints you sacrificed, until you finish your next long rest. When you take damage, it is reduced from your {@b Frozen Bulwark} before it is reduced from your hitpoints. However you can only restore hitpoints to your {@b Frozen Bulwark} when you deal wrath damage by an amount equal to the total rolled by your wrath dice.",
+				"As a bonus action, you can emit a blast of chillness around you upto 20ft away. Hostile creatures within range must roll a Constitution saving throw(DC equal to 8 + your proficiency bonus + your Strength modifier) and on a failure they receive the {@b Winter's Mark} until the end of your next turn. Creatures with {@b Winter's Mark} have their movement speed reduced by 10ft and once per turn when they take Cold damage, they take additional Cold damage equal to one roll of your Wrath die. When you use this bonus action when a creature already has {@b Winter's Mark}, it must roll the saving throw again regardless of how far away it is from you."
 			]
 		},
 		{
@@ -57847,7 +58077,9 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Frostwarden feature}",
-				"While raging, you gain resistance to Cold damage and your weapon can deal Cold damage instead of it's usual damage type. While your {@b Frozen Bulwark} has atleast 1 hitpoint, you radiate the {@b Sentinel Aura} upto 5ft from you. Hostile creatures within the aura are taunted and they cannot target other creatures with an attack until they miss an attack roll against you."
+				"While raging, you gain resistance to Cold damage and your weapon can deal Cold damage instead of it's usual damage type.",
+				"While your {@b Frozen Bulwark} has atleast 1 hitpoint, you radiate the {@b Sentinel Aura} upto 10ft from you. Hostile creatures within the aura are taunted and have disadvantage on any attack roll that isn't against you.",
+				"When you Reckless Attack, your critical hit range is increased by 1 for any opportunity attack you make against creatures within your {@b Sentinel Aura}."
 			]
 		},
 		{
@@ -57862,7 +58094,9 @@
 			"header": 2,
 			"entries": [
 				"{@i 10th-level Frostwarden feature}",
-				"You permanently gain Cold resistance and all Cold damage you deal pierces resistance to it. While raging, you now gain one wrath die and restore hitpoints to your {@b Frozen Bulwark} equal to your Strength modifier at the start of your turns. Additionally while raging, you now deal the Cold damage equal to your Barbarian level whenever a creature deals damage to you instead of just when they hit you."
+				"You permanently gain Cold resistance and all Cold damage you deal pierces resistance to it.",
+				"While raging, you now deal the Cold damage equal to your Barbarian level whenever a creature deals damage to you for the first time on a turn instead of just when they hit you.",
+				"While raging, whenever a hostile creature starts it's turn within 10ft of you while you are not {@condition incapacitated}, you apply {@b Winter's Mark} on it."
 			]
 		},
 		{
@@ -57878,7 +58112,8 @@
 			"entries": [
 				"{@i 14th-level Frostwarden feature}",
 				"While raging you also gain resistance to Fire damage and immunity to the {@condition prone} condition.",
-				"When you deal a critical hit to a creature, you apply {@b Winter's Mark} to it and halve it's movement speed until the end of your next turn. Creatures with the {@b Winter's Mark} are now affected by {@b Sentinel Aura} regardless of how far away it is from you."
+				"When you Reckless Attack, your critical hit range is now increased by 1 for any melee attack roll you make against creatures within your {@b Sentinel Aura}, instead of just opportunity attacks.",
+				"Creatures with {@b Winter's Mark} are now affected by {@b Sentinel Aura} regardless of how far away it is from you."
 			]
 		},
 		{
@@ -58607,8 +58842,8 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Starting at 2nd level, you can use your Channel Divinity as a bonus action to open your spectral eye that appears embedded in your forehead between your brows and gain supernatural means to influence the fate of other creatures for one minute.",
-				"During this one minute, whenever you cast a Cleric spell with a spell slot to heal a creature, you can choose another creature within 30ft of yourself to regain {@dice 1d8} hitpoints and also gain a {@b Blessing} die. You also have advantage on Perception and Insight checks for the duration."
+				"Starting at 2nd level, you can use your Channel Divinity as a bonus action to open your spectral eye that appears embedded in your forehead between your brows and gain supernatural means to influence the fate of other creatures for 10 minutes.",
+				"During this 10 minutes, whenever you cast a Cleric spell with a spell slot to heal a creature, you can choose another creature within 30ft of yourself to regain {@dice 1d6} hitpoints and also gain a {@b Blessing} die. You also have advantage on Perception and Insight checks for the duration."
 			]
 		},
 		{
@@ -58622,7 +58857,7 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Starting at 6th level, you gain access to the {@table Major Arcana|HEC} of the Tarot Cards. When you finish a long rest you can choose a number of Tarot Cards equal to twice your proficiency bonus from the deck and store it in your {@b Concealed Hand}. A creature other than you cannot see the face of the card, only seeing vibrant colours in a swirling pattern on both sides of the card.",
+				"Starting at 6th level, you gain access to the {@table Major Arcana|HEC} deck of the Tarot Cards. When you finish a long rest you can choose a number of Tarot Cards equal to twice your proficiency bonus from the deck and store it in your {@b Concealed Hand}. A creature other than you cannot see the face of the card, only seeing vibrant colours in a swirling pattern on both sides of the card.",
 				"You can only play a Tarot Card from your {@b Concealed Hand} and activate either it's {@b Upright} or {@b Reversed} effect when you do so. Once you do so, you cannot play another Tarot card until the start of your next turn. The conditions to play the card are in the description of their effects. Once played, a card hovers beside you for the duration of it's effect after which it disappears in a flash of bright light returning to your deck."
 			]
 		},
@@ -58638,7 +58873,7 @@
 			"header": 2,
 			"entries": [
 				"Starting at 17th level, when you cast a spell that heals creatures with a 5th level spell slot or lower, roll a {@dice 1d6} and on a 6 you regain the spell slot spent in the casting of the spell.",
-				"When you cast healing spells with a spell slot, you can now give all creatures affected by it a {@b Blessing} die until the end of your next turn. Once per long rest, you can play one Tarot Card from the Major Arcana deck that you do not have in your {@b Concealed Hand}."
+				"When you cast healing spells with a spell slot, you can now give all creatures affected by it a {@b Blessing} die until the end of your next turn. You can expend a use of your Channel Divinity to play one Tarot Card from the {@table Major Arcana|HEC} deck that you do not have in your {@b Concealed Hand}."
 			]
 		},
 		{
@@ -58705,7 +58940,8 @@
 			"header": 1,
 			"entries": [
 				"At 1st level, you gain proficiency in Survival skill and with firearms. You have advantage on Death Saving Throws. When you are flanked by two or more creatures, you also gain advantage on attacks against them while you remain flanked.",
-				"As a special ritual that takes 10 minutes to complete, you consecrate upto two weapons of your choice, thereby forming a divine bond with them and granting you the following benefits - you can use it as a spellcasting focus for your cleric spells and the hand wielding the weapon can do the somatic component of your cleric spells. You can expend one flask of Holy Water as a bonus action to make one of your consecrated weapons deal Necrotic or Radiant damage instead of their usual damage type for one minute."
+				"As a special ritual that takes 10 minutes to complete, you {@b Consecrate} upto two weapons of your choice, thereby forming a divine bond with them and granting you the following benefits - you can use them as spellcasting focus for your cleric spells and the hand wielding the weapon can perform the somatic component of your cleric spells.",
+				"You can expend one flask of Holy Water as a bonus action to make one of your consecrated weapons deal either Necrotic or Radiant damage in addition to it's usual damage type for one minute."
 			]
 		},
 		{
@@ -58722,8 +58958,9 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"When you hit a creature, you can expend a use of your Channel Divinity, to mark the creature as {@b Prey} for 1 hour and begin the {@b Hunt} for 1 minute. You know the exact location of your {@b Prey} while it is within 1000 ft of you and when it is beyond 1000 ft but in the same plane of existence as you, you know it's general direction from you. At the start of each of your turns, when the {@b Prey} is alive during the {@b Hunt}, you regain {@dice 1d4} hitpoints. A {@b Prey} hit by your consecrated weapons cannot regain hitpoints until the start of your next turn.",
-				"When a {@b Prey} dies during the {@b Hunt} while within 120 ft of you, you can end the {@b Hunt} to regain one expended spell slot, the level of which can be no higher than half your proficiency bonus (rounded down). Alternatively, you can mark another creature within 120 ft of you as {@b Prey} (no action required) for the remaining duration of the {@b Hunt}. During a {@b Hunt}, you can only have one creature marked as {@b Prey}."
+				"When you cast {@spell Hunter's Mark|DRK}, you can expend a use of your Channel Divinity, to enter the {@b Bloodlust} state for one minute. Your {@b Bloodlust} state ends when you are {@condition incapacitated} or you die. When your {@b Bloodlust} state is about to end by any other means, you can use your reaction to expend another use of your Channel Divinity to extend the duration of your {@b Bloodlust} state by one minute.",
+				"While in {@b Bloodlust} state your movement speed increases by 10ft and you gain the ability to concentrate on another Cleric spell alongside {@spell Hunter's Mark|DRK}. When you fail a concentration saving throw, you lose concentration on both spells and when your {@b Bloodlust} state ends, you must choose one of the two spells to drop concentration on.",
+				"While in {@b Bloodlust} state you consider a creature marked by your {@spell Hunter's Mark|DRK} spell as {@b Prey}. You know the exact location of your {@b Prey} while it is within 300ft of you and when you hit it with a weapon attack, you can learn whether it is resistant, vulnerable or immune to a single damage type."
 			]
 		},
 		{
@@ -58737,7 +58974,7 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Starting at 6th level, you can attack twice with your consecrated weapon, instead of once, whenever you take the {@action Attack} action on your turn. If you choose the Divine Strike feature at level 7 in this subclass, you can use that feature twice on each of your turns when you reach level 11 in this subclass."
+				"Starting at 6th level, you can attack twice with your consecrated weapon, instead of once, whenever you take the {@action Attack} action on your turn. Your consecrated weapons ignore resistance to the weapon's damage type on hit."
 			]
 		},
 		{
@@ -58751,7 +58988,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"Starting at 17th level, you gain increasing bonuses based on the intensity of the battle. When the {@b Hunt} is active, you gain the {@b Fervour Counter} which increases whenever you heal creatures, deal damage or receive damage by an amount equal to the total calculated for each instance. You can only gain 300 {@b Fervour} in a round of combat. You gain all the bonuses whose {@b Fervour} count is less than or equal to your {@b Fervour Counter} at any given time. The bonuses last for the duration of the current {@b Hunt} and the {@b Fervour Counter} resets to zero when your current {@b Hunt} ends or when you start a new {@b Hunt}.",
+				"Starting at 17th level, you gain increasing bonuses based on the intensity of the battle. You gain the {@b Fervour Counter} which increases whenever you heal creatures, deal damage or receive damage by an amount equal to the total calculated for each instance. You can only gain 350 {@b Fervour} in a round. You gain all the bonuses whose {@b Fervour} count is less than or equal to your {@b Fervour Counter} at any given time. The {@b Fervour Counter} resets to zero at the end of your turn, except when you are in the {@b Bloodlust} state, in which case it resets to zero when your {@b Bloodlust} state ends.",
 				{
 					"type": "table",
 					"caption": "Fervour Counter",
@@ -58770,27 +59007,27 @@
 						],
 						[
 							"150",
-							"You gain Truesight upto 30 ft from you. Allied creatures within the aura perceive the {@b Prey} as if they had Truesight while it is within 30 ft of them."
+							"You gain Truesight upto 30 ft from you. The {@b Prey} cannot benefit from being {@b Heavily Obscured} against allied creatures that are within the aura."
 						],
 						[
 							"250",
-							"You and allied creatures within the aura gain immunity to {@condition Charmed} condition and additionally gain advantage on saving throws that apply any condition when you fail them(the DM secretly applies this advantage)."
+							"You gain immunity to {@condition Charmed} condition. Additionally you and allied creatures within the aura gain advantage on saving throws that apply any condition when you fail them (the DM secretly applies this advantage)."
 						],
 						[
 							"400",
-							"When you kill a hostile creature or when a hostile creature dies within 10 ft of you, you can use a reaction to gain one of the hostile creature's resistances or an immunity as a resistance until you take a rest. You can have at most two resistances from this ability and you can replace a previously gained resistance with a new one. When the {@b Prey} dies, you receive this benefit as long as you are within 1000 ft of it and you do not need to use a reaction to gain the resistance."
+							"You regain the maximum number of Hit Points possible from any healing. When you roll a 1 or 2 on a damage die of your consecrated weapons, you can reroll the damage dice and must use the new roll."
 						],
 						[
 							"550",
-							"When you cast Cleric spells that require an Action with a 5th level spell slot or lower, you can now cast them with a Bonus Action instead."
+							"When you kill a hostile creature or when a hostile creature dies within 10 ft of you, you can use your reaction to gain one of the hostile creature's resistances or an immunity as a resistance until you complete a short or long rest. You can have at most two resistances from this ability and you can replace a previously gained resistance with a new one. When the {@b Prey} dies, you receive this benefit as long as you are within 300ft of it and you do not need to use your reaction to gain the resistance."
 						],
 						[
 							"750",
-							"You can attack three times when you take the {@action Attack} action on your turn."
+							"Cleric spells of 5th level or lower that require an Action to be cast, can now be cast by you with a Bonus Action instead."
 						],
 						[
 							"999",
-							"You extend the duration of the {@b Hunt} by one round everytime you deal a critical hit. You regain the maximum number of Hit Points possible from any healing. Your consecrated weapons' base damage dice increases by one of the same type."
+							"Any attack roll you make with your consecrated weapon is a critical hit on a roll of 19 or 20 on the {@dice d20}. When you deal a critical hit with your consecrated weapons, you momentarily inflict {@b Madness} on that creature, forcing it to immediately use it's reaction to make one attack against another random creature within reach or itself if there are no other creatures within it's reach."
 						]
 					],
 					"data": {
@@ -58909,9 +59146,9 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"Starting at 17th level, you gain immunity to Psychic damage. You also gain immunity to the {@condition charmed} and {@condition frightened} conditions. You can target creatures that you have banished with your 6th level subclass feature as long as you are within 60ft of the space that they would reappear in when those effects end.",
-				"When a creature fails the saving throw against your Cleric spells, you can force it to roll an additional Intelligence saving throw, and on a failure you banish only it's conciousness to a Demiplane at the edge of the Far Realms for the one minute, leaving it's body behind. You can only banish one creature in such a way at a time and that creature also has the {@condition incapacitated} condition for the duration of it's banishment.",
-				"While the creature starts it's turn with it's conciousness in the Demiplane it can roll the Intelligence saving throw again and on a success it escapes the Demiplane, ending the banishment. On a failure it takes Psychic damage equal to twice your Wisdom modifier as it starts bleeding black ooze from all of it's orifices from the maddening voices and sinister noises assaulting it's mind. If any creature other than you deals damage to the creature, you must make a Constitution saving throw to maintain concentration as if you took the damage, and on a failure this banishment ends immediately."
+				"Starting at 17th level, you gain immunity to Psychic damage. You also gain immunity to the {@condition charmed} and {@condition frightened} conditions. You can target creatures that you have banished with disadvantage on one saving throw from your 6th level subclass feature as long as you are within 60ft of the space that they would reappear in when those effects end.",
+				"When a creature fails the saving throw against your Cleric spells, you can force it to roll an additional Intelligence saving throw, and on a failure you banish only it's conciousness to a Demiplane at the edge of the Far Realms for one minute, leaving it's body behind. You can only banish one creature in such a way at a time and that creature also has the {@condition incapacitated} condition for the duration of it's banishment.",
+				"While the creature starts it's turn with it's conciousness in the Demiplane it can roll the Intelligence saving throw again and on a success it escapes the Demiplane, ending the banishment. On a failure it takes Psychic damage equal to twice your Wisdom modifier as it starts bleeding black ooze from all of it's orifices because of the maddening voices and sinister noises assaulting it's mind. If any creature other than you deals damage to the creature, you must make a Constitution saving throw to maintain concentration as if you took the damage, and on a failure this banishment ends immediately."
 			]
 		},
 		{
@@ -58975,15 +59212,15 @@
 							"rows": [
 								[
 									"Heavyweight",
-									"You use your Strength modifier for unarmed attacks and you cannot wield a shield. You gain advantage on Strength Checks and Strength Saves. When you hit a creature you deal additional damage equal to your Strength modifier to the target and creatures within 10ft of it."
+									"You use your Strength modifier for unarmed attacks and you cannot wield a shield. You gain advantage on Strength Checks and Strength Saves. When you take the {@action Attack|XPHB} action and hit a creature with unarmed strikes, you deal additional damage equal to your Strength modifier to the target and creatures within 10ft of it."
 								],
 								[
 									"Middleweight",
-									"You use your Charisma modifier for unarmed attacks and you can wield a shield. You gain advantage on Constitution Checks and Constitution Saves. You gain a bonus to your grapple checks equal to your Constitution modifier."
+									"You use your Charisma modifier for unarmed attacks and you can wield a shield. You gain advantage on Constitution Checks and Constitution Saves. You gain a bonus to your grapple checks equal to your Constitution modifier and once per turn, you can attempt to {@condition grapple} a creature as part of an unarmed strike."
 								],
 								[
 									"Lightweight",
-									"You use your Dexterity modifier for unarmed attacks and you cannot wield a shield. You gain advantage on Dexterity Checks and Dexterity Saves. Your unarmed damage die is one die type lower and when you use your action to make unarmed attacks, you can make one extra unarmed attack as part of the action."
+									"You use your Dexterity modifier for unarmed attacks and you cannot wield a shield. You gain advantage on Dexterity Checks and Dexterity Saves. Your unarmed damage die is one die type lower and when you take the {@action Attack|XPHB} action to make unarmed strikes, you can make one extra unarmed strike as part of the action."
 								]
 							]
 						}
@@ -59074,12 +59311,12 @@
 					"type": "entries",
 					"name": "Never stop the Grind",
 					"entries": [
-						"The hustle never ends. You must always keep working to become Stronger, Faster and Smarter. No Pain, No Gain BABY!"
+						"The hustle never ends. You must always keep working to become Stronger, Faster and Smarter. NO PAIN, NO GAIN BABY!"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Compassion to All",
+					"name": "Exemplary Strength",
 					"entries": [
 						"Strength must be used to help others overcome their struggles and not oppress them for your own benefit. You lead by example and punish those that exploit others."
 					]
@@ -59088,7 +59325,7 @@
 					"type": "entries",
 					"name": "Haters gonna Hate",
 					"entries": [
-						"{@b 'A Lion Does Not Concern Himself With The Opinions Of The Sheep'}. Ignore those that seek to drag you down to their level of Depravity. If ignoring does not work, a tight Bitch-slap will."
+						"As a wise man once said, {@b 'The Lion Does Not Concern Himself With The Opinions Of The Sheep'}. Ignore those that seek to drag you down to their level of Depravity. If ignoring does not work, a tight Bitch-slap will."
 					]
 				}
 			]
@@ -59117,8 +59354,9 @@
 			"level": 15,
 			"header": 1,
 			"entries": [
-				"Your body has now reached the pinnacle of your race's anatomy. You suffer none of the frailty of old age, and you can't be aged magically. Regardless of physical traits that would appear due to age, you always look attractive. You gain proficiency in Persuasion or Intimidation. If you already have proficiency in either skill, you can gain expertise in it instead.",
-				"You gain additional benefits from your Channel Divinity: Triune Incarnation, as shown below:",
+				"Your body has now reached the pinnacle of your race's anatomy. Regardless of physical traits that would appear due to age, you always look attractive. You also suffer none of the frailty of old age, and you can't be aged magically.",
+				"You gain proficiency in Persuasion or Intimidation. If you already have proficiency in either skill, you can gain expertise in it instead.",
+				"You gain additional benefits from your {@b Channel Divinity: Triune Incarnation}, as shown below:",
 				{
 					"type": "table",
 					"caption": "Triune Incarnation Improvement",
@@ -59133,15 +59371,15 @@
 					"rows": [
 						[
 							"Heavyweight",
-							"Your unarmed damage dice is doubled in count. Additionally, when you hit a creature with an unarmed attack, you can push it upto 10ft in any direction."
+							"Your unarmed damage dice is doubled in count. Additionally, when you hit a creature with an unarmed strike, you can push it upto 10ft in any direction."
 						],
 						[
 							"Middleweight",
-							"You gain +2 to unarmed attack rolls and +4 to unarmed damage rolls. You are considered one size larger for checks you make to grapple a creature and all creatures have advantage on attacks against a creature {@condition grappled} by you."
+							"You gain +2 to unarmed attack rolls, unarmed damage rolls and concentration saving throws. While you are concentrating on a spell, you gain a bonus to your unarmed damage equal to the level of the spell. All creatures have advantage on attack rolls against a creature {@condition grappled} by you."
 						],
 						[
 							"Lightweight",
-							"When you take the {@action Attack|XPHB} action, you can make one additional attack as part of the action. Your movement speed increases by 15ft and on your turn, you can move along vertical surfaces and across liquids on your turn without falling during the move while you are unarmored or wearing light armor."
+							"When you take the {@action Attack|XPHB} action to make unarmed strikes, you can now make two extra unarmed strikes as part of the action. Your movement speed increases by 15ft and on your turn, you can move along vertical surfaces and across liquids on your turn without falling during the move while you are unarmored or wearing light armor. During your turn, if you make an unarmed strike against a creature, that creature can't make opportunity attacks against you for the rest of your turn."
 						]
 					]
 				}
@@ -59162,8 +59400,8 @@
 					"type": "list",
 					"items": [
 						"Your reach for unarmed attacks increases by 10 feet.",
-						"You reroll any 1 or 2 once on your unarmed damage dice and smite damage dice, and choose the new result.",
-						"When a creature hits you with an attack roll, you can use your reaction to immediately make one unarmed attack against that creature regardless of the distance between you two. On a hit you halve the damage you take and on a critical hit, you instead take no damage from the attack."
+						"When you roll a 1 or a 2 on your unarmed or smite damage dice, you can reroll the damage dice once and you must use the new result.",
+						"When a creature hits you with an attack roll, you can use your reaction to immediately make one unarmed strike against that creature regardless of the distance between you two. On a hit you halve the damage you take, and on a critical hit you take no damage from the attack."
 					]
 				},
 				"Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 5 spell slot (no action required)."
@@ -65930,34 +66168,34 @@
      		"classSource": "DRK",
      		"additionalSpells": [
        		{
-         			"prepared": {
-           			"3": [
-             				"Gravity Pulse",
-             				"Jump"
+       			"prepared": {
+         			"3": [
+           				"Gravity Pulse",
+           				"Jump"
+         			],
+         			"5": [
+           				"Weapon of Wind",
+           				"Kinetic Jaunt"
+         			],
+         			"9": [
+           				"Elemental Weapon",
+           				"Thunder Step"
+         			],
+         			"13": [
+           				"Earthburst",
+           				"Stoneskin"
           			],
-           			"5": [
-             				"Weapon of Wind",
-             				"Kinetic Jaunt"
-           			],
-           			"9": [
-             				"Elemental Weapon",
-             				"Thunder Step"
-           			],
-           			"13": [
-             				"Earthburst",
-             				"Stoneskin"
-           			],
-           			"17": [
-             				"Holy Weapon",
-             				"Yolande's Regal Presence"
-           			]
-         			}
+         			"17": [
+           				"Holy Weapon",
+           				"Yolande's Regal Presence"
+         			]
+       			}
        		}
      		],
      		"subclassFeatures": [
-      		"Oath of The Sanctified Knuckle|Paladin|DRK|Sanctified Knuckle|HEC|3",
+       		"Oath of The Sanctified Knuckle|Paladin|DRK|Sanctified Knuckle|HEC|3",
        		"Aura of Boundless Resolve|Paladin|DRK|Sanctified Knuckle|HEC|7",
-      		"Ascendant Strike|Paladin|DRK|Sanctified Knuckle|HEC|15",
+       		"Ascendant Strike|Paladin|DRK|Sanctified Knuckle|HEC|15",
        		"Inexorable Riposte|Paladin|DRK|Sanctified Knuckle|HEC|20"
      		]
     }
@@ -74358,7 +74596,7 @@
       ]
     },
     {
-      "name": "Herbal Incense",
+      "name": "Herbal poultice",
       "source": "AspysGuidetoInfinitum",
       "prerequisite": [
         {
@@ -74374,7 +74612,7 @@
       "entries": [
         {
           "type": "table",
-          "caption": "Herbal Incense",
+          "caption": "Herbal poultice",
           "colLabels": [
             "Item Level",
             "Crafting Cost",
