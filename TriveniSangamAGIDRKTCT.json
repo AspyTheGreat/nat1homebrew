@@ -81903,7 +81903,7 @@
 			],
 			"entries": [
 				"Instead of choosing one of the game's races for your character at 1st level, you can choose different traits depending on your own unique history, giving you full control over how your character's origin shaped them:",
-        "You can build your race through this link: https://infinitum-wiki.netlify.app/",
+        "You can build your race through this link: {@link https://infinitum-wiki.netlify.app/}",
 				"You pick one of the races of which you have chosen a feature from as your primary race for the purposes of feat and feature prerequisites. You can only have one primary race."
 			],
 			"_versions": [
