@@ -21650,6 +21650,7 @@
     {
       "name": "Acuity",
       "source": "tct",
+      "category": "G",
       "ability": [
         {
           "choose": {
@@ -21677,6 +21678,7 @@
     {
       "name": "Spell Sniper",
       "source": "tct",
+      "category": "G",
       "entries": [
         "You have learned techniques to enhance your attacks with certain kinds of spells, gaining the following benefits:",
         {
@@ -21714,6 +21716,7 @@
     {
       "name": "Wakeful",
       "source": "tct",
+      "category": "G",
       "ability": [
         {
           "choose": {
@@ -21732,6 +21735,7 @@
     {
       "name": "Versatile Weapons Master",
       "source": "tct",
+      "category": "G",
       "ability": [
         {
           "choose": {
@@ -21778,6 +21782,7 @@
     {
       "name": "Master of Armaments",
       "source": "tct",
+      "category": "G",
       "ability": [
         {
           "choose": {
@@ -21806,6 +21811,18 @@
     {
       "name": "Weapon Master",
       "source": "tct",
+      "category": "G",
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "dex",
+              "str"
+            ],
+            "amount": 1
+          }
+        }
+      ],
       "prerequisite": [
         {
           "proficiency": [
@@ -21863,6 +21880,7 @@
     {
       "name": "Heavy Armor Master",
       "source": "tct",
+      "category": "G",
       "ability": [
         {
           "choose": {
@@ -21975,6 +21993,7 @@
     {
       "name": "Bountiful Luck",
       "source": "DRK",
+      "category": "G",
       "page": 73,
       "ability": [
         {
@@ -22010,6 +22029,7 @@
     {
       "name": "Dragon Hide",
       "source": "DRK",
+      "category": "G",
       "page": 74,
       "prerequisite": [
         {
@@ -22047,7 +22067,20 @@
     {
       "name": "Gift of the Chromatic Dragon",
       "source": "DRK",
+      "category": "G",
       "page": 17,
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "str",
+              "dex",
+              "con"
+            ],
+            "amount": 1
+          }
+        }
+      ],
       "entries": [
         "You've manifested some of the power of chromatic dragons, granting you the following benefits:",
         {
@@ -22075,6 +22108,7 @@
     {
       "name": "Gift of the Gem Dragon",
       "source": "DRK",
+      "category": "G",
       "page": 17,
       "ability": [
         {
@@ -22108,7 +22142,20 @@
     {
       "name": "Gift of the Metallic Dragon",
       "source": "DRK",
+      "category": "G",
       "page": 17,
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "amount": 1
+          }
+        }
+      ],
       "additionalSpells": [
         {
           "ability": {
@@ -22156,7 +22203,20 @@
     {
       "name": "Drow High Magic",
       "source": "DRK",
+      "category": "G",
       "page": 74,
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "amount": 1
+          }
+        }
+      ],
       "prerequisite": [
         {
           "race": [
@@ -22220,6 +22280,7 @@
     {
       "name": "Dwarven Fortitude",
       "source": "DRK",
+      "category": "G",
       "page": 74,
       "prerequisite": [
         {
@@ -22248,6 +22309,7 @@
     {
       "name": "Fade Away",
       "source": "DRK",
+      "category": "G",
       "page": 74,
       "prerequisite": [
         {
@@ -22282,6 +22344,7 @@
     {
       "name": "Fey Teleportation",
       "source": "DRK",
+      "category": "G",
       "page": 74,
       "prerequisite": [
         {
@@ -22340,6 +22403,7 @@
     {
       "name": "Flames of Phlegethos",
       "source": "DRK",
+      "category": "G",
       "page": 74,
       "prerequisite": [
         {
@@ -22375,8 +22439,20 @@
     {
       "name": "Grappler",
       "source": "DRK",
+      "category": "G",
       "page": 167,
       "srd": true,
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "str",
+              "dex"
+            ],
+            "amount": 1
+          }
+        }
+      ],
       "prerequisite": [
         {
           "ability": [
@@ -22391,11 +22467,10 @@
         {
           "type": "list",
           "items": [
-            "You have advantage on attack rolls against a creature you are grappling. You also have advantage on grapple checks",
-            "When you hit a creature with an unarmed strike as part of the attack action on your turn, you can deal damage to it along with attempting a grapple. You can do so only once per turn.",
+            "You have advantage on grapple checks",
             "You do not suffer a penalty to your movement speed when dragging a creature whose size is equal to or smaller than yours.",
             "If the grappled creature is pushed away from your grapple through forced movement (such as through a {@spell thunderwave} spell, you can use your reaction to hold on to the creature. To do so, make another grapple check. You maintain your hold on the creature on a successful check.",
-            "You can attempt to grapple a creature whose size is two levels larger than you. When you do so, you make your grapple check with disadvantage. If you successfully grapple the creature, it's speed is reduced by 15 feet, and you are dragged with the creature when it moves."
+            "You can attempt to grapple a creature whose size is two levels larger than you. When you do so, you make your grapple check with disadvantage. If you successfully grapple the creature, it's speed is reduced by an amount equal to your strength or dex score (your choice, rounded up), and you are dragged with the creature when it moves."
           ]
         }
       ]
@@ -22403,6 +22478,7 @@
     {
       "name": "Heavily Armored",
       "source": "DRK",
+      "category": "G",
       "page": 167,
       "prerequisite": [
         {
@@ -22459,6 +22535,7 @@
     {
       "name": "Pyromancer",
       "source": "DRK",
+      "category": "G",
       "page": 166,
       "ability": [
         {
@@ -22496,6 +22573,7 @@
     {
       "name": "Cryomancer",
       "source": "DRK",
+      "category": "G",
       "page": 166,
       "ability": [
         {
@@ -22533,6 +22611,7 @@
     {
       "name": "Acetomancer",
       "source": "DRK",
+      "category": "G",
       "page": 166,
       "ability": [
         {
@@ -22570,6 +22649,7 @@
     {
       "name": "Thunemancer",
       "source": "DRK",
+      "category": "G",
       "page": 166,
       "ability": [
         {
@@ -22607,6 +22687,7 @@
     {
       "name": "Fulmimancer",
       "source": "DRK",
+      "category": "G",
       "page": 166,
       "ability": [
         {
@@ -22741,11 +22822,23 @@
     {
       "name": "Mystic Empowerment",
       "source": "DRK",
+      "category": "G",
       "page": 166,
       "prerequisite": [
         {
           "spellcasting": true,
           "level": 4
+        }
+      ],
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "int",
+              "wis",
+              "cha"
+            ]
+          }
         }
       ],
       "entries": [
@@ -22802,7 +22895,21 @@
     {
       "name": "Festering Condition",
       "source": "DRK",
+      "category": "G",
       "page": 166,
+       "ability": [
+        {
+          "choose": {
+            "from": [
+              "str",
+              "dex",
+              "int",
+              "wis",
+              "cha"
+            ]
+          }
+        }
+      ],
       "entries": [
         "Conditions you inflict grow more and more potent the longer a creature is affected by them. The condition festers after the creature has been affected by the original condition for one turn, applying a more debilitating condition for the duration of the original condition, and is lost whenever the original condition ends. The condition festers as shown in the table below:",
         {
@@ -22852,6 +22959,7 @@
     {
       "name": "Lightly Armored",
       "source": "DRK",
+      "category": "G",
       "page": 167,
       "ability": [
         {
@@ -22918,7 +23026,7 @@
         {
           "type": "list",
           "items": [
-            "When a creature within 5 feet of you casts a spell, you can use your reaction to make a melee weapon attack against that creature. If you hit, the creature must make a constitution saving throw as if it were concentrating on the spell. If it fails, the spell is lost and the creature's action is wasted.",
+            "When a creature within your reach casts a spell, you can use your reaction to make a melee weapon attack against that creature. If you hit, the creature must make a constitution saving throw as if it were concentrating on the spell. If it fails, the spell is lost and the creature's action is wasted.",
             "When you damage a creature that is {@status concentration||concentrating} on a spell, that creature has disadvantage on saving throws it makes to maintain its {@status concentration} until the end of your next turn.",
             "You have advantage on saving throws against spells cast by creatures whom you have dealt damage to within your last turn."
           ]
@@ -23118,6 +23226,7 @@
     {
       "name": "Medium Armor Master",
       "source": "DRK",
+      "category": "G",
       "page": 168,
       "ability": [
         {
@@ -23181,6 +23290,7 @@
     {
       "name": "Orcish Fury",
       "source": "DRK",
+      "category": "G",
       "page": 75,
       "prerequisite": [
         {
@@ -23349,6 +23459,7 @@
     {
       "name": "Second Chance",
       "source": "DRK",
+      "category": "G",
       "page": 75,
       "prerequisite": [
         {
@@ -23381,6 +23492,105 @@
         }
       ]
     },
+    {
+			"name": "Cartomancer",
+			"source": "DRK",
+      "category": "G",
+			"page": 49,
+			"prerequisite": [
+				{
+					"level": 4,
+					"spellcastingFeature": true
+				}
+			],
+       "ability": [
+        {
+          "choose": {
+            "from": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+			"additionalSpells": [
+				{
+					"known": {
+						"_": [
+							"prestidigitation#c"
+						]
+					}
+				}
+			],
+			"entries": [
+				"You have learned to channel your magic through a deck of cards. You can use a card deck as your spellcasting focus, and you gain the following benefits:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Card Tricks",
+							"entries": [
+								"You learn the {@spell Prestidigitation} cantrip and can use it to create illusions that duplicate the effects of stage magic. When you use {@spell Prestidigitation} in this way, you can conceal the verbal and somatic components of the spell as ordinary conversation and card handling."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Hidden Ace",
+							"entries": [
+								"When you finish a long rest, you can choose one spell from your class's spell list and imbue that spell into a card. The chosen spell must have a casting time of 1 action, and it must be a level for which you have spell slots (maximum of level 5). The card remains imbued with this spell for 8 hours. While the card is imbued with the spell, you can use a bonus action to flourish the card and cast the spell within. The card then immediately loses its magic."
+							]
+						}
+					]
+				}
+			]
+		},
+    {
+			"name": "Sharpshooter",
+			"source": "DRK",
+      "category": "G",
+      "ability": [
+				{
+					"dex": 1
+				}
+			],
+			"page": 170,
+			"entries": [
+				"You have mastered ranged weapons and can make shots that others find impossible. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls.",
+						"Your ranged weapon attacks ignore {@quickref Cover||3||half cover} and {@quickref Cover||3||three-quarters cover}.",
+						"Before you make an attack with a ranged weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage."
+					]
+				}
+			]
+		},
+    {
+			"name": "Great Weapon Master",
+			"source": "DRK",
+      "category": "G",
+      "ability": [
+				{
+					"str": 1
+				}
+			],
+			"page": 167,
+			"entries": [
+				"You've learned to put the weight of a weapon to your advantage, letting its momentum empower your strikes. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"On your turn, when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can make one melee weapon attack as a bonus action.",
+						"Before you make a melee attack with a heavy weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage."
+					]
+				}
+			]
+		},
     {
       "name": "Martial Artist",
       "source": "DRK",
@@ -23569,6 +23779,7 @@
     {
       "name": "Squat Nimbleness",
       "source": "DRK",
+      "category": "G",
       "page": 75,
       "prerequisite": [
         {
@@ -23620,6 +23831,7 @@
     {
       "name": "Wood Elf Magic",
       "source": "DRK",
+      "category": "G",
       "page": 75,
       "prerequisite": [
         {
@@ -23629,6 +23841,18 @@
               "subrace": "wood"
             }
           ]
+        }
+      ],
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "amount": 1
+          }
         }
       ],
       "additionalSpells": [
@@ -23813,6 +24037,7 @@
     {
       "name": "Aberrant Precision",
       "source": "DRK",
+      "category": "G",
       "page": 74,
       "ability": [
         {
@@ -23871,16 +24096,165 @@
           "type": "list",
           "items": [
             "You have advantage on Wisdom ({@skill Perception}) and Intelligence ({@skill Investigation}) checks made to detect the presence of secret doors.",
-            "You have advantage on saving throws made to avoid or resist traps.",
-            "You have resistance to the damage dealt by traps.",
+            "You have evasion against damage from traps.",
             "Traveling at a fast pace doesn't impose the normal -5 penalty on your passive Wisdom ({@skill Perception}) score."
           ]
         }
       ]
     },
     {
+			"name": "Eldritch Adept",
+			"source": "DRK",
+      "category": "G",
+			"page": 79,
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+			"prerequisite": [
+				{
+					"spellcasting2020": true
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "Eldritch Invocations",
+					"featureType": [
+						"EI"
+					],
+					"progression": {
+						"*": 1
+					}
+				}
+			],
+			"entries": [
+				"Studying occult lore, you learn one {@filter Eldritch Invocation|optionalfeatures|Feature Type=EI} option of your choice from the warlock class. Your spellcasting ability for the invocation is Intelligence, Wisdom, or Charisma (choose when you select this feat). If the invocation has a prerequisite of any kind, you can choose that invocation only if you're a warlock who meets the prerequisite.",
+				"Whenever you gain a level, you can replace the invocation with another one from the warlock class."
+			],
+			"hasFluffImages": true
+		},
+    {
+			"name": "Metamagic Adept",
+			"source": "DRK",
+      "category": "G",
+			"page": 80,
+      "ability": [
+        {
+          "choose": {
+            "from": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "amount": 1
+          }
+        }
+      ],
+			"prerequisite": [
+				{
+					"spellcasting2020": true
+				}
+			],
+			"optionalfeatureProgression": [
+				{
+					"name": "Metamagic",
+					"featureType": [
+						"MM"
+					],
+					"progression": {
+						"*": 2
+					}
+				}
+			],
+			"entries": [
+				"You've learned how to exert your will on your spells to alter how they function:",
+				{
+					"type": "list",
+					"items": [
+						"You learn two {@filter Metamagic|optionalfeatures|Feature Type=MM} options of your choice from the sorcerer class. You can use only one Metamagic option on a spell when you cast it, unless the option says otherwise. Whenever you reach a level that grants the Ability Score Improvement feature, you can replace one of these Metamagic options with another one from the sorcerer class.",
+						"You gain 2 sorcery points to spend on Metamagic (these points are added to any sorcery points you have from another source but can be used only on Metamagic). You regain all spent sorcery points when you finish a long rest."
+					]
+				}
+			]
+		},
+    {
+			"name": "Mystic conflux",
+			"source": "DRK",
+			"page": 168,
+      "category": "G",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						],
+						"amount": 1,
+						"entry": "Increase the chosen ability score by 1, to a maximum of 20."
+					}
+				}
+			],
+			"entries": [
+				"Choose one ability score. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You can attune to up to four magic items at once.",
+            "you can cast the {@spell identify} spell without expending a spell slot or material components. You must finish a long rest before you can do so again."
+					]
+				}
+			]
+		},
+    {
+			"name": "Spelldriver",
+			"source": "DRK",
+			"page": 190,
+      "category": "G",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						],
+						"amount": 1,
+						"entry": "Increase the chosen ability score by 1, to a maximum of 20."
+					}
+				}
+			],
+			"prerequisite": [
+				{
+					"level": 11,
+					"spellcasting2020": true
+				}
+			],
+			"entries": [
+				"Through intense focus, training, and dedication, you've harnessed the techniques of rapid spellcasting.",
+				"When you use your bonus action to cast a spell of 1st level or higher, you can also use your action to cast another spell of 1st level or higher. However, if you cast two or more spells in a single turn, only one of them can be 3rd level or higher.",
+				{
+					"type": "inset",
+					"name": "Rules Tip: Casting Multiple Spells",
+					"page": 190,
+					"entries": [
+						"Normally, when you cast a spell as a bonus action, you can't use your action to also cast a spell that turn unless that spell is a cantrip—{@note see {@book PHB p202|PHB|10|Bonus Action}.} The Spelldriver feat removes that restriction, but the focus necessary to channel multiple spells in the same round still limits the overall power of those spells."
+					]
+				}
+			]
+		},
+    {
       "name": "Elemental Adept",
       "source": "DRK",
+      "category": "G",
       "page": 166,
       "ability": [
         {
@@ -28514,7 +28888,7 @@
             ],
             [
               6,
-              4,
+              3,
               2
             ],
             [
@@ -30253,17 +30627,19 @@
         },
         "Ability Score Improvement|Rogue|DRK|8",
         "Song of Rest (d8)|Bard||9",
+        "Magical Secrets|Bard|DRK|9",
         "Bardic Inspiration (d10)|Bard||10",
         "Expertise|Bard||10",
-        "Magical Secrets|Bard||10",
         "Ability Score Improvement|Rogue|DRK|12",
+        "Magical Secrets|Bard|DRK|12",
         "Song of Rest (d10)|Bard||13",
-        "Magical Secrets|Bard||14",
+        "Magical Secrets|Bard|DRK|14",
         {
           "classFeature": "Bard College feature|Bard||14",
           "gainSubclassFeature": true
         },
-        "Bardic Inspiration (d12)|Bard||15",
+        "Wondrous inspiration|Bard|DRK|15",
+        "Magical Secrets|Bard|DRK|15",
         "Ability Score Improvement|Rogue|DRK|16",
         "Song of Rest (d12)|Bard||17",
         "Magical Secrets|Bard||18",
@@ -34418,25 +34794,25 @@
       ],
       "spellsKnownProgression": [
         2,
-        3,
         4,
-        5,
         6,
         7,
-        8,
         9,
         10,
         11,
         12,
-        12,
-        13,
-        13,
-        14,
         14,
         15,
-        15,
-        15,
-        15
+        16,
+        16,
+        17,
+        17,
+        18,
+        18,
+        19,
+        20,
+        21,
+        22
       ],
       "optionalfeatureProgression": [
         {
@@ -34607,27 +34983,15 @@
             ],
             [
               4,
-              3
-            ],
-            [
-              4,
               4
             ],
             [
-              5,
-              5
-            ],
-            [
-              5,
+              4,
               6
             ],
             [
               5,
               7
-            ],
-            [
-              5,
-              8
             ],
             [
               5,
@@ -34638,31 +35002,15 @@
               10
             ],
             [
-              6,
+              5,
               11
             ],
             [
-              6,
+              5,
               12
             ],
             [
-              6,
-              12
-            ],
-            [
-              6,
-              13
-            ],
-            [
-              6,
-              13
-            ],
-            [
-              6,
-              14
-            ],
-            [
-              6,
+              5,
               14
             ],
             [
@@ -34671,15 +35019,43 @@
             ],
             [
               6,
-              15
+              16
             ],
             [
               6,
-              15
+              16
             ],
             [
               6,
-              15
+              17
+            ],
+            [
+              6,
+              17
+            ],
+            [
+              6,
+              18
+            ],
+            [
+              6,
+              18
+            ],
+            [
+              6,
+              19
+            ],
+            [
+              6,
+              20
+            ],
+            [
+              6,
+              21
+            ],
+            [
+              6,
+              22
             ]
           ]
         },
@@ -38043,7 +38419,7 @@
       "classSource": "DRK",
       "level": 2,
       "entries": [
-        "Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength until the start of your next turn, but attack rolls against you have advantage until your next turn."
+        "Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on weapon attack rolls using Strength until the start of your next turn, but attack rolls against you have advantage until your next turn."
       ]
     },
     {
@@ -38086,6 +38462,64 @@
         "At 20th level, you embody the power of the wilds. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 26."
       ]
     },
+    {
+			"name": "Magical Secrets",
+			"source": "DRK",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "DRK",
+			"level": 9,
+			"entries": [
+				"At 9th level, choose two additional spells from any classes, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip.",
+				"The chosen spells count as bard spells for you and are not included in the number in the Spells Known column of the Bard table."
+			]
+		},
+    {
+			"name": "Magical Secrets",
+			"source": "DRK",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "DRK",
+			"level": 12,
+			"entries": [
+				"At 12th level, choose two additional spells from any classes, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip.",
+				"The chosen spells count as bard spells for you and are not included in the number in the Spells Known column of the Bard table."
+			]
+		},
+    {
+			"name": "Magical Secrets",
+			"source": "DRK",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "DRK",
+			"level": 15,
+			"entries": [
+				"At 15th level, choose two additional spells from any classes, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip.",
+				"The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table."
+			]
+		},
+    {
+			"name": "Wondrous Inspiration",
+			"source": "DRK",
+			"page": 51,
+			"srd": true,
+			"className": "Bard",
+			"classSource": "DRK",
+			"level": 15,
+			"entries": [
+				"Your mere presence inspires those around you. You gain the following benefits:",
+        {
+					"type": "list",
+					"items": [
+						"Your bardic inspiration die increases to a d12.",
+						"You can expend a use of inspiration to inspire a creature of your choice within range as part of casting a levelled spell. You can only inspire a creature like this once per round."
+					]
+				}
+			]
+		},
     {
       "name": "Divine Intervention",
       "source": "DRK",
@@ -74201,7 +74635,7 @@
       ],
       "entries": [
         "You gain proficiency in an {@item artisan's tools|PHB} of your choice.",
-        "The time required to craft an item is halved if you are using a tool that you are proficient with."
+        "The time required to craft an item is reduced by a percentage equal to 10 time your proficiency bonus if you are using a tool that you are proficient with."
       ]
     },
     {
@@ -74736,7 +75170,7 @@
         }
       ],
       "entries": [
-        "During a short rest, you can regain a number of spell slot levels equal to your wisdom modifier."
+        "You can regain spell slots with a combined level equal to half your ranger level whenever you finish a short rest."
       ]
     },
     {
@@ -75449,7 +75883,7 @@
         }
       ],
       "entries": [
-        "If hit a creature with a melee weapon attack while under the benefit of flanking, you can add your proficiency bonus to the damage roll."
+        "If you hit a creature with a melee weapon attack while under the benefit of flanking, you can add your proficiency bonus to the damage roll."
       ]
     },
     {
@@ -75475,7 +75909,7 @@
         }
       ],
       "entries": [
-        "Each consecutive attack you land against a creature increases the next attack's damage by an amount equal to your mark dice. If you miss an attack, attack a different creature, or take an action other than the attack action, the bonus damage goes back to zero."
+        "You can make an additional attack when you take the attack action as long as all of them are targeting the same creature."
       ]
     },
     {
@@ -75615,7 +76049,7 @@
         }
       ],
       "entries": [
-        "If you run out of uses of ranger's quarry, you can perfrom a ritual for ten minute in order to regain a number of ranger's quarry uses equal to the level of the spell slot expended.",
+        "If you run out of uses of ranger's quarry, you can expend a spell slot as a bonus action in order to regain a number of ranger's quarry uses equal to the level of the spell slot expended.",
         "Once you use this feature, you cannot do so again until you finish a long rest."
       ]
     },
