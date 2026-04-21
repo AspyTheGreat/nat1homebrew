@@ -74683,7 +74683,7 @@
         "RI"
       ],
       "entries": [
-        "You can use your strength modifier rather than your dexterity modifier for attack and damage rolls when using a string bow (shortbow, longbow, etc)."
+        "You can use your strength modifier rather than your dexterity modifier for attack and damage rolls when using a hand-drawn bow (shortbow, longbow, etc)."
       ]
     },
     {
@@ -75090,7 +75090,7 @@
           "type": "list",
           "items": [
             "{@b Light:} The wearer gains an additional 5 feet of movement speed.",
-            "{@b Medium:} The wearer does not suffer from disadvantage on {@skill Stealth} checks.",
+            "{@b Medium:} The wearer does not suffer from disadvantage on {@skill Stealth} checks and have advantage on saving throws made against going prone or being moved against your will.",
             "{@b Heavy:} The wearer gains an additional +1 bonus to their armor class."
           ]
         }
@@ -75120,7 +75120,16 @@
       ],
       "entries": [
         "You gain proficiency with {@item smiths's tools|phb} and {@item leatherworker's tools|phb} and {@item woodcarver's tools|phb}.",
-        "you can spend one hour as part of a rest in order to maintain up to two weapons. the maintained weapons deal an additional amount of damage equal to your proficiency bonus whenever they land a critical hit."
+        "you can spend one hour as part of a rest in order to maintain up to two weapons. the maintained weapons Gain a benefit for the next 24 hours depending on their property:",
+         {
+          "type": "list",
+          "items": [
+            "{@b Melee:} The weapon deals additional damage equal to your proficiency bonus when the wielder lands a critical hit.",
+            "{@b Reach:} Oppurtunity attacks with this weapon are made at advantage.",
+            "{@b Thrown:} You deal an additional {@damage 1d4} damage when you hit a creature with a thrown weapon attack.",
+            "{@b Ranged:} You ignore the loading property of the weapon and its short and long range increases by a number of feet equal to 10 times your proficiency bonus."
+          ]
+        }
       ]
     },
     {
@@ -75248,7 +75257,7 @@
       ]
     },
     {
-      "name": "Primal Warrior",
+      "name": "Primal Warrior I",
       "source": "DRK",
       "page": 155,
       "featureType": [
@@ -75268,7 +75277,7 @@
       ],
       "entries": [
         "You can form a magical bond with up to two weapons of your choice whenever you finish a long rest.",
-        "When you make an attack with a bonded weapon, you can use your wisdom modifier for attack and damage rolls with that weapon."
+        "When you make an attack with a bonded weapon, you can use your wisdom attack and damage rolls, and can use the weapon as your spellcasting focus."
       ]
     },
     {
@@ -75337,7 +75346,7 @@
         }
       ],
       "entries": [
-        "You can use your spell save DC instead of your weapon mastery DC.",
+        "You can use your spell save DC in place of your weapon mastery DC.",
         "You gain a +2 bonus to saving throws and damage rolls as long as you are concentrating on a spell."
       ]
     },
@@ -75417,7 +75426,7 @@
         }
       ],
       "entries": [
-        "You can concentrate on two spells as long as one of the spells improve the effectiveness of your weapon attacks. If you are concentrating on multiple spells, you have disadvantage on constitution saving throws made in order to maintain concentration."
+        "You can concentrate on two spells as long as one of the spells improve the effectiveness of your weapon attacks (eg: swift quiver, holy weapon, Haste, bless, etc). If you are concentrating on multiple spells, you have disadvantage on constitution saving throws made in order to maintain concentration."
       ]
     },
     {
@@ -75575,7 +75584,7 @@
         }
       ],
       "entries": [
-        "You can create two familiars when you cast the {@spell find familiar} spell.",
+        "You can summon an additional creature whenever you use a spell that summons a single friendly creature.",
         "Beasts or fey under your control can make an additional attack when they take the attack action."
       ]
     },
@@ -75759,7 +75768,7 @@
         }
       ],
       "entries": [
-        "If a creature lands a critical hit on you, you can use your reaction to turn that attack into a normal hit. Once you use this feature, you cannot do so again until you finish a long rest."
+        "If a creature lands a critical hit on you, you can use your reaction to turn that attack into a normal hit. Once you use this feature, you cannot do so again until you finish a long rest, unless you expend a use of ranger's quarry to do so."
       ]
     },
     {
@@ -75883,7 +75892,7 @@
         }
       ],
       "entries": [
-        "If you hit a creature with a melee weapon attack while under the benefit of flanking, you can add your proficiency bonus to the damage roll."
+        "If you hit a creature with a melee weapon attack while under the benefit of flanking, your critical hit range is improved by one."
       ]
     },
     {
