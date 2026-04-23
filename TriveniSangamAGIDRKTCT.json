@@ -33585,7 +33585,7 @@
         {
           "name": "Magical Secrets",
           "known": {
-            "10": [
+            "9": [
               {
                 "choose": "level=0;1;2;3;4;5"
               },
@@ -33593,7 +33593,15 @@
                 "choose": "level=0;1;2;3;4;5"
               }
             ],
-            "14": [
+            "12": [
+              {
+                "choose": "level=0;1;2;3;4;5;6"
+              },
+              {
+                "choose": "level=0;1;2;3;4;5;6"
+              }
+            ],
+            "15": [
               {
                 "choose": "level=0;1;2;3;4;5;6;7"
               },
@@ -34085,7 +34093,6 @@
         "Ability Score Improvement|Rogue|DRK|12",
         "Magical Secrets|Bard|DRK|12",
         "Song of Rest (d10)|Bard||13",
-        "Magical Secrets|Bard|DRK|14",
         {
           "classFeature": "Bard College feature|Bard||14",
           "gainSubclassFeature": true
@@ -60853,14 +60860,94 @@
         "Gods who grant the power of the Blood Domain, including {@deity The Ruiner|Exandria|TDCSR} and {@deity The Matron of Ravens|Exandria|TDCSR}, direct their followers to tap into the connection between body and soul, exploit the hidden reserves of will within one's own vitality, and corrupt the bodies of others through the secret rites of {@variantrule hemocraft|TDCSR}. Clerics of good gods use {@variantrule hemocraft|TDCSR} to fill their self-sacrifice with purpose and power, while clerics with fewer morals use the blood of others to achieve their own malevolent ends.",
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Domain Spells|Cleric|PHB|Blood|TDCSR|1"
+          "subclassFeature": "Domain Spells|Cleric|DRK|Blood|DRK|1"
         },
         {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Cleric|DRK|Blood|DRK|1"
+				},
+        {
           "type": "refSubclassFeature",
-          "subclassFeature": "Bloodletting Focus|Cleric|PHB|Blood|TDCSR|1"
+          "subclassFeature": "Bloodletting Focus|Cleric|DRK|Blood|DRK|1"
         }
       ]
     },
+    {
+			"name": "Bloodletting Focus",
+			"source": "DRK",
+			"page": 169,
+			"className": "Cleric",
+			"classSource": "DRK",
+			"subclassShortName": "Blood",
+			"subclassSource": "DRK",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"Starting at 1st level, your divine magic draws the blood from magically inflicted wounds, worsening the agony of your foes. When you cast a damage-dealing spell of 1st level or higher whose duration is instantaneous, any creature with blood that takes damage from the spell takes extra necrotic damage equal to 2 + the spell's level."
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"source": "DRK",
+			"page": 169,
+			"className": "Cleric",
+			"classSource": "DRK",
+			"subclassShortName": "Blood",
+			"subclassSource": "DRK",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"When you choose this domain at 1st level, you gain proficiency with martial weapons."
+			]
+		},
+		{
+			"name": "Domain Spells",
+			"source": "DRK",
+			"page": 169,
+			"className": "Cleric",
+			"classSource": "DRK",
+			"subclassShortName": "Blood",
+			"subclassSource": "DRK",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"You gain domain spells at the cleric levels listed in the Blood Domain Spells table.",
+				{
+					"type": "table",
+					"caption": "Blood Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell false life}, {@spell sleep}"
+						],
+						[
+							"3rd",
+							"{@spell hold person}, {@spell ray of enfeeblement}"
+						],
+						[
+							"5th",
+							"{@spell haste}, {@spell slow}"
+						],
+						[
+							"7th",
+							"{@spell blight}, {@spell stoneskin}"
+						],
+						[
+							"9th",
+							"{@spell dominate person}, {@spell hold monster}"
+						]
+					]
+				}
+			]
+		},
     {
       "name": "Death Domain",
       "source": "DRK",
@@ -65378,15 +65465,15 @@
         "Gods who grant the power of the Blood Domain, including The Ruiner and The Matron of Ravens, direct their followers to tap into the connection between body and soul, exploit the hidden reserves of will within one's own vitality, and corrupt the bodies of others through the secret rites of hemocraft. Clerics of good gods use hemocraft to fill their self-sacrifice with purpose and power, while clerics with fewer morals use the blood of others to achieve their own malevolent ends.",
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Domain Spells|Cleric|DRK|Blood|TalDoreiCampaignSettingReborn|1"
+          "subclassFeature": "Domain Spells|Cleric|DRK|Blood|DRK|1"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Bonus Proficiencies|Cleric|DRK|Blood|TalDoreiCampaignSettingReborn|1"
+          "subclassFeature": "Bonus Proficiencies|Cleric|DRK|Blood|DRK|1"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Bloodletting Focus|Cleric|DRK|Blood|TalDoreiCampaignSettingReborn|1"
+          "subclassFeature": "Bloodletting Focus|Cleric|DRK|Blood|DRK|1"
         }
       ]
     },
