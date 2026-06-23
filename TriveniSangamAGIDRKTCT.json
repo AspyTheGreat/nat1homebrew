@@ -5136,7 +5136,7 @@
         }
       ],
       "entries": [
-        "You magically twist space around another creature you can see within range, attempting to put it out or in harms way. The target is teleported to an unoccupied space of your choice that you can see within range. The chosen space must be on a surface or in a liquid that can support the target without the target having to squeeze."
+        "You magically twist space around a willing creature other than you within range, attempting to put it out or in harms way. The target is teleported to an unoccupied space of your choice that you can see within range. The chosen space must be on a surface or in a liquid that can support the target without the target having to squeeze."
       ],
       "entriesHigherLevel": [
         {
@@ -68487,7 +68487,7 @@
         "Sentinel at Death's Door|Cleric||Grave|XGE|6",
         "Potent Spellcasting|Cleric||Grave|XGE|8",
         "Blessed Strikes|Cleric||Grave|XGE|8|TCE",
-        "Keeper of Souls|Cleric||Grave|XGE|17"
+        "Divine Reaper|Cleric|XPHB|Grave|RHW|17|RHW"
       ]
     },
     {
@@ -69352,9 +69352,9 @@
       ],
       "subclassFeatures": [
         "The Undead|Warlock||Undead|VRGR|1",
-        "Grave Touched|Warlock||Undead|VRGR|6",
-        "Necrotic Husk|Warlock||Undead|VRGR|10",
-        "Spirit Projection|Warlock||Undead|VRGR|14"
+        "Grave Touched|Warlock|XPHB|Undead|RHW|6|RHW",
+        "Necrotic Husk|Warlock|XPHB|Undead|RHW|10|RHW",
+        "Superior Dread|Warlock|XPHB|Undead|RHW|14|RHW"
       ]
     },
     {
@@ -69566,6 +69566,48 @@
         "Guided Precision|Artificer|DRK|Cartographer|DRK|5|DRK",
         "Ingenious Movement|Artificer|DRK|Cartographer|DRK|9|DRK",
         "Superior Atlas|Artificer|DRK|Cartographer|DRK|15|DRK"
+      ],
+      "hasFluffImages": true
+    },
+    {
+      "name": "Reanimator",
+      "shortName": "Reanimator",
+      "source": "DRK",
+      "className": "Artificer",
+      "classSource": "DRK",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "3": [
+              "false life|xphb",
+              "spare the dying|xphb",
+              "witch bolt|xphb"
+            ],
+            "5": [
+              "blindness/deafness|xphb",
+              "enhance ability|xphb"
+            ],
+            "9": [
+              "animate dead|xphb",
+              "lightning bolt|xphb"
+            ],
+            "13": [
+              "blight|xphb",
+              "death ward|xphb"
+            ],
+            "17": [
+              "antilife shell|xphb",
+              "raise dead|xphb"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Reanimator|Artificer|EFA|Reanimator|RHW|3|RHW",
+        "Strange Modifications|Artificer|EFA|Reanimator|RHW|5|RHW",
+        "Improved Reanimation|Artificer|EFA|Reanimator|RHW|9|RHW",
+        "Macabre Modifications|Artificer|EFA|Reanimator|RHW|9|RHW",
+        "Refined Reanimation|Artificer|EFA|Reanimator|RHW|15|RHW"
       ],
       "hasFluffImages": true
     },
@@ -70832,9 +70874,9 @@
       ],
       "subclassFeatures": [
         "Shadow Magic|Sorcerer|DRK|Shadow|DRK|1",
-        "Hound of Ill Omen|Sorcerer|DRK|Shadow|DRK|6",
+        "Beasts of Ill Omen|Sorcerer|XPHB|Shadow|RHW|6|RHW",
         "Shadow Walk|Sorcerer|DRK|Shadow|DRK|14",
-        "Umbral Form|Sorcerer|DRK|Shadow|DRK|18"
+        "Umbral Form|Sorcerer|XPHB|Shadow|RHW|18|RHW"
       ]
     },
     {
@@ -71645,6 +71687,42 @@
         "Fortifying Soul|Ranger|XPHB|Winter Walker|FRHoF|7|FRHoF",
         "Chilling Retribution|Ranger|XPHB|Winter Walker|FRHoF|11|FRHoF",
         "Frozen Haunt|Ranger|XPHB|Winter Walker|FRHoF|15|FRHoF"
+      ],
+      "hasFluffImages": true
+    },
+    {
+      "name": "Hollow Warden",
+      "shortName": "Hollow Warden",
+      "source": "DRK",
+      "className": "Ranger",
+      "classSource": "DRK",
+      "edition": "one",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "3": [
+              "wrathful smite|xphb"
+            ],
+            "5": [
+              "alter self|xphb"
+            ],
+            "9": [
+              "phantom steed|xphb"
+            ],
+            "13": [
+              "dominate beast|xphb"
+            ],
+            "17": [
+              "steel wind strike|xphb"
+            ]
+          }
+        }
+      ],
+      "subclassFeatures": [
+        "Hollow Warden|Ranger|XPHB|Hollow Warden|RHW|3|RHW",
+        "Hungering Might|Ranger|XPHB|Hollow Warden|RHW|7|RHW",
+        "Rot and Violence|Ranger|XPHB|Hollow Warden|RHW|11|RHW",
+        "Ancient Might|Ranger|XPHB|Hollow Warden|RHW|15|RHW"
       ],
       "hasFluffImages": true
     },
@@ -72917,8 +72995,8 @@
         }
       ],
       "subclassFeatures": [
-        "College of Spirits|Bard||Spirits|VRGR|3",
-        "Spirit Session|Bard||Spirits|VRGR|6",
+        "College of Spirits|Bard|XPHB|Spirits|RHW|3",
+        "Empowered Channeling|Bard|XPHB|Spirits|RHW|6|RHW",
         "Mystical Connection|Bard||Spirits|VRGR|14"
       ]
     },
